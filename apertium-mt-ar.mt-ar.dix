@@ -103,6 +103,7 @@
      <e><p><l>imma<s n="cnjcoo"/></l><r>لكن<s n="cnjcoo"/></r></p></e>
      <e><p><l>meta<s n="cnjcoo"/></l><r>عندما<s n="cnjcoo"/></r></p></e>
 
+
      <e><p><l>jew<s n="cnjcoo"/></l><r>או<s n="cnjcoo"/></r></p></e>
      <e><p><l>jekk<s n="cnjcoo"/></l><r>אם<s n="cnjcoo"/></r></p></e>
      <e><p><l>mentri<s n="cnjcoo"/></l><r>תוך<s n="cnjcoo"/></r></p></e>
@@ -114,7 +115,11 @@
      <e><p><l>mela<s n="cnjcoo"/></l><r>אז<s n="cnjcoo"/></r></p></e>
      <e><p><l>iżda<s n="cnjcoo"/></l><r>אולם<s n="cnjcoo"/></r></p></e>
 
-     <e><p><l>li<s n="cnjsub"/></l><r>ל<s n="cnjsub"/></r></p></e>
+     <!-- miri -->
+     <!-- this requires subjunctive in Arabic -->
+     <e><p><l>għalkemm<s n="cnjcoo"/></l><r>رغم<b/>أن<s n="cnjsub"/></r></p></e>
+     <e><p><l>li<s n="cnjsub"/></l><r>أن<s n="cnjsub"/></r></p></e>
+
      <e><p><l>għax<s n="cnjsub"/></l><r>כי<s n="cnjsub"/></r></p></e>
      <e><p><l>bħalma<s n="cnjsub"/></l><r>כ<s n="cnjsub"/></r></p></e>
      <e><p><l>sabiex<s n="cnjsub"/></l><r>בשביל<s n="cnjsub"/></r></p></e>
@@ -135,38 +140,39 @@
 
      <e><p><l>fi<s n="pr"/></l><r>في<s n="pr"/></r></p></e>
      <e><p><l>madwar<s n="pr"/></l><r>عبر<s n="pr"/></r></p></e>
-     <e><p><l>għand<s n="pr"/></l><r>عند<s n="pr"/></r></p></e>  <!-- MIRI: ב in Hebrew?! -->
+     <e><p><l>għand<s n="pr"/></l><r>عند<s n="pr"/></r></p></e>  <!-- miri: ב in Hebrew?! -->
      <e><p><l>ma'<s n="pr"/></l><r>مع<s n="pr"/></r></p></e>
+     <e><p><l>ġo<s n="pr"/></l><r>داخل<s n="pr"/></r></p></e>
+     <e><p><l>minn<s n="pr"/></l><r>من<s n="pr"/></r></p></e>
+     <e><p><l>sa<s n="pr"/></l><r>إلى<s n="pr"/></r></p></e> <!-- miri: more than 1 meaning -->
+     <e><p><l>ħdejn<s n="pr"/></l><r>قرب<s n="pr"/></r></p></e>
+     <e><p><l>għal<s n="pr"/></l><r>ل<s n="pr"/></r></p></e>
+     <e><p><l>lejn<s n="pr"/></l><r>إلى<s n="pr"/></r></p></e>
+     <e><p><l>taħt<s n="pr"/></l><r>تحت<s n="pr"/></r></p></e>
 
      <e><p><l>kontra<s n="pr"/></l><r>נגד<s n="pr"/></r></p></e>
      <e><p><l>dwar<s n="pr"/></l><r>על<s n="pr"/></r></p></e>
-     <e><p><l>minn<s n="pr"/></l><r>מן<s n="pr"/></r></p></e>
      <e><p><l>fuq<s n="pr"/></l><r>על<s n="pr"/></r></p></e>
      <e><p><l>wara<s n="pr"/></l><r>לאחר<s n="pr"/></r></p></e>
      <e><p><l>lil<s n="pr"/></l><r>אל<s n="pr"/></r></p></e>
-     <e><p><l>għal<s n="pr"/></l><r>ל<s n="pr"/></r></p></e>
      <e><p><l>bħal<s n="pr"/></l><r>כ<s n="pr"/></r></p></e>
      <e><p><l>favur<s n="pr"/></l><r>למען<s n="pr"/></r></p></e>
      <e><p><l>ta'<s n="pr"/></l><r>של<s n="pr"/></r></p></e>
      <e><p><l>kif<s n="pr"/></l><r>כ<s n="pr"/></r></p></e>
      <e><p><l>matul<s n="pr"/></l><r>בזמן<b/>ש<s n="pr"/></r></p></e>
      <e><p><l>bi<s n="pr"/></l><r>עם<s n="pr"/></r></p></e>
-     <e><p><l>sa<s n="pr"/></l><r>אל<s n="pr"/></r></p></e>
-     <e><p><l>lejn<s n="pr"/></l><r>אל<s n="pr"/></r></p></e>
      <e><p><l>bejn<s n="pr"/></l><r>בין<s n="pr"/></r></p></e>
      <e><p><l>fost<s n="pr"/></l><r>בין<s n="pr"/></r></p></e>
      <e><p><l>minħabba<s n="pr"/></l><r>בגלל<s n="pr"/></r></p></e>
      <e><p><l>waqt<s n="pr"/></l><r>בזמן<b/>ש<s n="pr"/></r></p></e>
      <e><p><l>qabel<s n="pr"/></l><r>לפני<s n="pr"/></r></p></e>
      <e><p><l>nhar<s n="pr"/></l><r>ב<s n="pr"/></r></p></e>
-     <e><p><l>taħt<s n="pr"/></l><r>תחת<s n="pr"/></r></p></e>
      <e><p><l>mingħajr<s n="pr"/></l><r>ללא<s n="pr"/></r></p></e>
      <e><p><l>permezz<s n="pr"/></l><r>דרך<s n="pr"/></r></p></e>
      <e><p><l>milli<s n="pr"/></l><r>מאשר<s n="pr"/></r></p></e>
      <e><p><l>minkejja<s n="pr"/></l><r>למרות<b/>ש<s n="pr"/></r></p></e>
      <e><p><l>skond<s n="pr"/></l><r>לפי<s n="pr"/></r></p></e>
      <e><p><l>qrib<s n="pr"/></l><r>ליד<s n="pr"/></r></p></e>
-     <e><p><l>ġo<s n="pr"/></l><r>לתוך<s n="pr"/></r></p></e>
      <e><p><l>skont<s n="pr"/></l><r>מתחת<s n="pr"/></r></p></e>
      <e><p><l>fil<s n="pr"/></l><r>ב<s n="pr"/></r></p></e>
      <e><p><l>ħlief<b/>għal<s n="pr"/></l><r>חוץ<b/>מ<s n="pr"/></r></p></e>
@@ -199,7 +205,8 @@
      <e r="RL"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
      <e r="RL"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
 
-     <e><p><l>li<s n="rel"/></l><r>כי<s n="rel"/></r></p></e>
+     <!-- miri -->
+     <e><p><l>li<s n="rel"/></l><r>أن<s n="rel"/></r></p></e>
 
      <e><p><l>kollu<s n="prn"/></l><r>כל<s n="prn"/></r></p></e>
      <e><p><l>jew<s n="prn"/></l><r>או<s n="prn"/></r></p></e>
@@ -210,7 +217,7 @@
      <e><p><l>kollox<s n="prn"/></l><r>הכל<s n="prn"/></r></p></e>
      <!-- miri -->
      <e><p><l>ħadd<s n="prn"/></l><r>أحد<s n="prn"/></r></p></e> <!-- אף<b/>אחד -->
-     <e><p><l>xejn<s n="prn"/></l><r>כלום<s n="prn"/></r></p></e>
+     <e><p><l>xejn<s n="prn"/></l><r>شيئاً<s n="prn"/></r></p></e> <!-- Acc hidden inside -->
      <e><p><l>xi<b/>hadd<s n="prn"/></l><r>מישהו<s n="prn"/></r></p></e>
      <e><p><l>kull<s n="prn"/></l><r>כל<s n="prn"/></r></p></e>
      <e><p><l>dak<b/>kollu<s n="prn"/></l><r>כלשהו<s n="prn"/></r></p></e>
@@ -220,15 +227,15 @@
      <e><p><l>xi<b/>haga<s n="prn"/></l><r>משהו<s n="prn"/></r></p></e>
      <e><p><l>b'xi mod jew<b/>iehor<s n="prn"/></l><r>איפשהו<s n="prn"/></r></p></e>
 
-     <e><p><l>xi<s n="prn"/></l><r>חלק<s n="prn"/></r></p></e>
+     <e><p><l>xi<s n="prn"/></l><r>ماذا<s n="prn"/></r></p></e>
      <e><p><l>kemm<s n="prn"/></l><r>הן<s n="prn"/></r></p></e>
      <e><p><l>hafna<s n="prn"/></l><r>רבים<s n="prn"/></r></p></e>
-     <e><p><l>ftit<s n="prn"/></l><r>כמה<s n="prn"/></r></p></e>
+     <e><p><l>ftit<s n="prn"/></l><r>بعض<s n="prn"/></r></p></e> <!-- כמה -->
      <e><p><l>oħrajn<s n="prn"/></l><r>אחרים<s n="prn"/></r></p></e>
      <e><p><l>diversi<s n="prn"/></l><r>מספר<s n="prn"/></r></p></e>
      <e><p><l>l-iktar<s n="prn"/></l><r>מרבית<s n="prn"/></r></p></e>
 
-     <e><p><l>min<s n="prn"/></l><r>מי<s n="prn"/></r></p></e>
+     <e><p><l>min<s n="prn"/></l><r>من<s n="prn"/></r></p></e> 
      <e><p><l>dak<b/>li<s n="prn"/></l><r>מה<s n="prn"/></r></p></e>
      <e><p><l>liema<s n="prn"/></l><r>איזה<s n="prn"/></r></p></e>
      <e><p><l>kemm<b/>huma<s n="prn"/></l><r>כמה<s n="prn"/></r></p></e>
@@ -236,7 +243,7 @@
 
      <!-- There's no dak/dan-distinction in Hebrew: -->
      <e>       <p><l>dak<s n="prn"/></l><r>זה<s n="prn"/></r></p></e>
-     <e r="LR"><p><l>dan<s n="prn"/></l><r>זה<s n="prn"/></r></p></e>
+     <e r="LR"><p><l>dan<s n="prn"/></l><r>هذا<s n="prn"/></r></p></e>
 
      <e><p><l>i<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
      <e><p><l>na<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
@@ -296,14 +303,14 @@
 
      <!-- There's no dak/dan-distinction in Hebrew: -->
      <e>       <p><l>dak<s n="det"/><s n="dem"/></l><r>זה<s n="det"/><s n="dem"/></r></p></e>
-     <e r="LR"><p><l>dan<s n="det"/><s n="dem"/></l><r>זה<s n="det"/><s n="dem"/></r></p></e>
+     <e r="LR"><p><l>dan<s n="det"/><s n="dem"/></l><r>هذا<s n="det"/><s n="dem"/></r></p></e>
 
 <!-- SECTION: Numerals -->
 
 <!-- 1..10 -->
 <e>       <p><l>wieħed<s n="num"/></l>      <r>אחד<s n="num"/></r></p></e>
 <e r="LR"><p><l>waħda<s n="num"/></l>       <r>אחת<s n="num"/></r></p><par n="mf_m_f"/></e>
-<e>       <p><l>tnejn<s n="num"/></l>       <r>שניים<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>tnejn<s n="num"/></l>       <r>اثنان<s n="num"/></r></p><par n="mf_m_f"/></e>
 <e>       <p><l>tli<s n="num"/></l>         <r>שלושה<s n="num"/></r></p><par n="mf_m_f"/></e>
 <e>       <p><l>erbgħa<s n="num"/></l>      <r>ארבעה<s n="num"/></r></p><par n="mf_m_f"/></e>
 <e>       <p><l>ħam<s n="num"/></l>         <r>خمس<s n="num"/></r></p></e>
@@ -380,13 +387,17 @@
      <e><p><l>logħoba<s n="n"/><s n="f"/></l><r>لعبة<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>dar<s n="n"/></l><r>بيت<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>siġra<s n="n"/><s n="f"/></l><r>شجرة<s n="n"/><s n="f"/></r></p></e>
-     <e><p><l>tweġiba<s n="n"/><s n="f"/></l><r>إجابة<s n="n"/><s n="f"/></r></p></e>  <!-- not תשובה? -->
+     <e><p><l>tweġiba<s n="n"/><s n="f"/></l><r>جواب<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>omm<s n="n"/><s n="f"/></l><r>أم<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>oħt<s n="n"/><s n="f"/></l><r>أخت<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>sena<s n="n"/><s n="f"/></l><r>سنة<s n="n"/><s n="f"/></r></p></e>
-
-<!--     <e><p><l>temp<s n="n"/><s n="m"/></l><r>מזג<b/>אוויר<s n="n"/><s n="m"/></r></p></e>  -->
-
+     <e><p><l>tieqa<s n="n"/><s n="f"/></l><r>نافذة<s n="n"/><s n="f"/></r></p></e>
+     <e><p><l>id<s n="n"/><s n="f"/></l><r>يد<s n="n"/><s n="f"/></r></p></e>
+     <e><p><l>għajn<s n="n"/><s n="f"/></l><r>عين<s n="n"/><s n="f"/></r></p></e>
+     <e><p><l>mistoqsija<s n="n"/><s n="f"/></l><r>سؤال<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>mejda<s n="n"/><s n="f"/></l><r>طاولة<s n="n"/><s n="f"/></r></p></e>
+     <e><p><l>siġġu<s n="n"/><s n="m"/></l><r>كرسي<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>għasfur<s n="n"/><s n="m"/></l><r>عصفور<s n="n"/><s n="m"/></r></p></e>
 
      <e><p><l>gramafown<s n="n"/><s n="m"/></l><r>פטיפון<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>reliġjon<s n="n"/><s n="m"/></l><r>דת<s n="n"/><s n="f"/></r></p></e>
@@ -720,7 +731,6 @@
      <e><p><l>unur<s n="n"/><s n="m"/></l><r>כבוד<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>abbuż<s n="n"/><s n="m"/></l><r>התעללות<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>sewwieq<s n="n"/><s n="m"/></l><r>נהג<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>siġġu<s n="n"/><s n="m"/></l><r>כסא<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>kontroll<s n="n"/><s n="m"/></l><r>שליטה<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>rigal<s n="n"/><s n="m"/></l><r>מתנה<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>talent<s n="n"/><s n="m"/></l><r>כשרון<s n="n"/><s n="m"/></r></p></e>
@@ -753,7 +763,6 @@
      <e><p><l>kurrent<s n="n"/><s n="m"/></l><r>זרם<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>riskju<s n="n"/><s n="m"/></l><r>סיכון<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>intervent<s n="n"/><s n="m"/></l><r>התערבות<s n="n"/><s n="f"/></r></p></e>
-     <e><p><l>għasfur<s n="n"/><s n="m"/></l><r>ציפור<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>turiżmu<s n="n"/><s n="m"/></l><r>תיירות<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>xifer<s n="n"/><s n="m"/></l><r>קצה<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>limitu<s n="n"/><s n="m"/></l><r>גבול<s n="n"/><s n="m"/></r></p></e>
@@ -1307,7 +1316,6 @@
      <e><p><l>festa<s n="n"/><s n="f"/></l><r>חג<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>istorja<s n="n"/><s n="f"/></l><r>היסטוריה<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>storja<s n="n"/><s n="f"/></l><r>היסטוריה<s n="n"/><s n="f"/></r></p></e>
-     <e><p><l>id<s n="n"/><s n="f"/></l><r>יד<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>poeżija<s n="n"/><s n="f"/></l><r>שירה<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>intervista<s n="n"/><s n="f"/></l><r>ראיון<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>karozza<s n="n"/><s n="f"/></l><r>מכונית<s n="n"/><s n="f"/></r></p></e>
@@ -1337,7 +1345,6 @@
      <e><p><l>ras<s n="n"/><s n="f"/></l><r>ראש<s n="n"/><s n="m"/></r></p></e>
      <e c="  0"><p><l>tazza<s n="n"/><s n="f"/></l><r>ספל<s n="n"/><s n="f"/></r></p></e>
      <e slr="1"><p><l>tazza<s n="n"/><s n="f"/></l><r>כוס<s n="n"/><s n="f"/></r></p></e>
-     <e><p><l>mistoqsija<s n="n"/><s n="f"/></l><r>שאילתא<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>idea<s n="n"/><s n="f"/></l><r>רעיון<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>xemx<s n="n"/><s n="f"/></l><r>שמש<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>imħabba<s n="n"/><s n="f"/></l><r>אהבה<s n="n"/><s n="f"/></r></p></e>
@@ -1444,7 +1451,6 @@
      <e><p><l>opra<s n="n"/><s n="f"/></l><r>אופרה<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>kompetizzjoni<s n="n"/><s n="f"/></l><r>תחרות<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>edizzjoni<s n="n"/><s n="f"/></l><r>מהדורה<s n="n"/><s n="f"/></r></p></e>
-     <e><p><l>tieqa<s n="n"/><s n="f"/></l><r>חלון<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>identità<s n="n"/><s n="f"/></l><r>זהותk<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>pubblikazzjoni<s n="n"/><s n="f"/></l><r>פרסום<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>data<s n="n"/><s n="f"/></l><r>מידע<s n="n"/><s n="m"/></r></p></e>
@@ -1460,7 +1466,6 @@
      <e c="  0"><p><l>skola<s n="n"/><s n="f"/></l><r>בית<b/>ספר<s n="n"/><s n="m"/></r></p></e>
      <e slr="1"><p><l>skola<s n="n"/><s n="f"/></l><r>אסכולה<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>proprjetà<s n="n"/><s n="f"/></l><r>רכוש<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>mejda<s n="n"/><s n="f"/></l><r>שולחן<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>kuxjenza<s n="n"/><s n="f"/></l><r>מודעות<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>missjoni<s n="n"/><s n="f"/></l><r>משימה<s n="n"/><s n="f"/></r></p></e>
      <e><p><l>tradizzjoni<s n="n"/><s n="f"/></l><r>מסורת<s n="n"/><s n="f"/></r></p></e>
@@ -2836,17 +2841,25 @@
      <e><p><l>ilbieraħ<s n="adv"/></l><r>امس<s n="adv"/></r></p></e>
      <e><p><l>barra<s n="adv"/></l><r>خارجاً<s n="adv"/></r></p></e> <!-- החוצה -->
      <e><p><l>il<b/>barra<s n="adv"/></l><r>الخارج<s n="adv"/></r></p></e>
-     <e><p><l>flimkien<s n="adv"/></l><r>معا<s n="adv"/></r></p></e>
-     <e><p><l>ovvjament<s n="adv"/></l><r>طبعا<s n="adv"/></r></p></e> <!-- ברור -->
-     <e><p><l>quddiem<s n="adv"/></l><r>امام<s n="adv"/></r></p></e> <!-- TODO -->
+     <e><p><l>flimkien<s n="adv"/></l><r>معاً<s n="adv"/></r></p></e>
+     <e><p><l>ovvjament<s n="adv"/></l><r>طبعاً<s n="adv"/></r></p></e> <!-- ברור -->
+     <!-- quddiem should be a preposition (too?) -->
+     <e><p><l>quddiem<s n="adv"/></l><r>أمام<s n="adv"/></r></p></e>
      <e><p><l>dakinhar<s n="adv"/></l><r>ذاك<b/>اليوم<s n="adv"/></r></p></e>
      <e><p><l>ukoll<s n="adv"/></l><r>أيضاً<s n="adv"/></r></p></e>
-     <e><p><l>dejjem<s n="adv"/></l><r>دائما<s n="adv"/></r></p></e>
+     <e><p><l>dejjem<s n="adv"/></l><r>دائماً<s n="adv"/></r></p></e>
      <e><p><l>bil-mogħod<s n="adv"/></l><r>ببطء<s n="adv"/></r></p></e>
      <e><p><l>bħalissa<s n="adv"/></l><r>الآن<s n="adv"/></r></p></e>
      <e><p><l>imbagħad<s n="adv"/></l><r>عندئذ<s n="adv"/></r></p></e> <!-- TODO -->
      <e><p><l>anke<s n="adv"/></l><r>أيضاً<s n="adv"/></r></p></e><!-- אפילו -->
      <e><p><l>allura<s n="adv"/></l><r>لذلك<s n="adv"/></r></p></e>
+     <e><p><l>issa<s n="adv"/></l><r>الآن<s n="adv"/></r></p></e>
+     <e><p><l>hekk<s n="adv"/></l><r>هكذا<s n="adv"/></r></p></e>
+     <e><p><l>ma<s n="adv"/></l><r>لا<s n="adv"/></r></p></e>  <!-- miri: neg, not adv? -->
+     <e><p><l>taħt<s n="adv"/></l><r>تحت<s n="pr"/></r></p></e> <!-- miri: prep, not adv? -->
+     <e><p><l>kullimkien<s n="adv"/></l><r>في<b/>كل<b/>مكان<s n="adv"/></r></p></e> 
+     <e><p><l>hemm<s n="adv"/></l><r>هناك<s n="adv"/></r></p></e>
+     <e><p><l>sew<s n="adv"/></l><r>جيداً<s n="adv"/></r></p></e>
 
      <e><p><l>se<s n="adv"/></l><r></r></p></e> <!-- Future particle -->
      <e><p><l>qed<s n="adv"/></l><r></r></p></e> <!-- Progressive particle -->
@@ -2856,9 +2869,6 @@
      <e><p><l>biss<s n="adv"/></l><r>רק<s n="adv"/></r></p></e>
      <e><p><l>internazzjonalment<s n="adv"/></l><r>באופן<b/>בינלאומי<s n="adv"/></r></p></e>
      <e><p><l>anki<s n="adv"/></l><r>אפילו<s n="adv"/></r></p></e>
-     <e><p><l>ma<s n="adv"/></l><r>לא<s n="adv"/></r></p></e>
-     <e><p><l>hekk<s n="adv"/></l><r>כך<s n="adv"/></r></p></e>
-     <e><p><l>issa<s n="adv"/></l><r>עכשיו<s n="adv"/></r></p></e>
      <e><p><l>hawn<s n="adv"/></l><r>כאן<s n="adv"/></r></p></e>
      <e><p><l>qatt<s n="adv"/></l><r>אף<b/>פעם<s n="adv"/></r></p></e>
      <e><p><l>darba<s n="adv"/></l><r>פעם<s n="adv"/></r></p></e> <!-- TODO -->
@@ -2868,7 +2878,6 @@
      <e><p><l>madwar<s n="adv"/></l><r>על<s n="adv"/></r></p></e>
      <e><p><l>wisq<s n="adv"/></l><r>מדי<s n="adv"/></r></p></e>
      <e><p><l>diġà<s n="adv"/></l><r>כבר<s n="adv"/></r></p></e>
-     <e><p><l>sew<s n="adv"/></l><r>טוב<s n="adv"/></r></p></e> <!-- TODO -->
      <e><p><l>qabel<s n="adv"/></l><r>לפני<s n="adv"/></r></p></e><!-- TODO -->
      <e><p><l>iżjed<s n="adv"/></l><r>יותר<s n="adv"/></r></p></e>
      <e c="  0"><p><l>aktarx<s n="adv"/></l><r>כנראה<s n="adv"/></r></p></e>
@@ -2894,7 +2903,7 @@
      <e><p><l>kultant<s n="adv"/></l><r>לפעמים<s n="adv"/></r></p></e>
      <e><p><l>soltu<s n="adv"/></l><r>לרוב<s n="adv"/></r></p></e>
      <e><p><l>madankollu<s n="adv"/></l><r>אולם<s n="adv"/></r></p></e>
-     <e c="  0"><p><l>malajr<s n="adv"/></l><r>מיד<s n="adv"/></r></p></e>
+     <e c="  0"><p><l>malajr<s n="adv"/></l><r>بسرعة<s n="adv"/></r></p></e>
      <!-- MIRI -->
      <e slr="1"><p><l>malajr<s n="adv"/></l><r>بسرعة<s n="adv"/></r></p></e>
      <e slr="2"><p><l>malajr<s n="adv"/></l><r>פתאום<s n="adv"/></r></p></e>
@@ -2903,7 +2912,6 @@
      <e><p><l>sfortunatament<s n="adv"/></l><r>למרבה<b/>הצער<s n="adv"/></r></p></e>
      <e><p><l>'l<b/>hawn<s n="adv"/></l><r>קדימה<s n="adv"/></r></p></e>
      <e><p><l>sempliċiment<s n="adv"/></l><r>בפשטות<s n="adv"/></r></p></e><!-- TODO -->
-     <e><p><l>taħt<s n="adv"/></l><r>מתחת<s n="adv"/></r></p></e>
      <e><p><l>ilu<s n="adv"/></l><r>לפני<s n="adv"/></r></p></e>
      <e><p><l>ġeneralment<s n="adv"/></l><r>בדרך<b/>כלל<s n="adv"/></r></p></e>
      <e><p><l>naturalment<s n="adv"/></l><r>אופן<b/>טבעי<s n="adv"/></r></p></e>
@@ -2960,7 +2968,7 @@
      <e><p><l>mnejn<s n="adv"/><s n="itg"/></l><r>מאיפה<s n="adv"/><s n="itg"/></r></p></e>
      <e><p><l>safejn<s n="adv"/><s n="itg"/></l><r>עד<b/>לאן<s n="adv"/><s n="itg"/></r></p></e>
      <e><p><l>minn<b/>sa<b/>fejn<s n="adv"/><s n="itg"/></l><r>באיזו<b/>זכות<s n="adv"/><s n="itg"/></r></p></e>
-     <e><p><l>għaliex<s n="adv"/><s n="itg"/></l><r>למה<s n="adv"/><s n="itg"/></r></p></e>
+     <e><p><l>għaliex<s n="adv"/><s n="itg"/></l><r>لماذا<s n="adv"/><s n="itg"/></r></p></e>
      <e><p><l>fejn<s n="adv"/><s n="itg"/></l><r>أين<s n="adv"/><s n="itg"/></r></p></e>
      <e><p><l>xiex<s n="adv"/><s n="itg"/></l><r>מה<s n="adv"/><s n="itg"/></r></p></e>
 
@@ -2968,7 +2976,6 @@
      <e><p><l>mħumiex<s n="adv"/></l><r>לא<s n="adv"/></r></p></e><!-- TODO -->
      <e><p><l>mħix<s n="adv"/></l><r>לא<s n="adv"/></r></p></e><!-- TODO -->
 
-     <e><p><l>hemm<s n="adv"/></l><r>שם<s n="adv"/></r></p></e>
      <e><p><l>hemmhekk<s n="adv"/></l><r>שם<s n="adv"/></r></p></e>
      <e><p><l>'l<b/>hemm<s n="adv"/></l><r>שם<s n="adv"/></r></p></e>
      <e c="  0"><p><l>għad<s n="adv"/></l><r>ל<s n="adv"/></r></p></e>
@@ -2989,34 +2996,48 @@
      <!-- SECTION: Verbs -->
 
      <e><p><l>kien<s n="vaux"/></l><r>كان<s n="vaux"/></r></p></e>
+
      <e><p><l>ħabb<s n="vblex"/></l><r>حب<s n="vblex"/></r></p></e>
      <e><p><l>seta<s n="vblex"/></l><r>استطاع<s n="vblex"/></r></p></e>
+     <e><p><l>ried<s n="vblex"/></l><r>أراد<s n="vblex"/></r></p></e>
+     <e><p><l>ipprova<s n="vblex"/></l><r>حاول<s n="vblex"/></r></p></e>
 
      <e><p><l>lagħab<s n="vblex"/></l><r>لعب<s n="vblex"/></r></p></e>
      <e><p><l>mexa<s n="vblex"/></l><r>مشى<s n="vblex"/></r></p></e>
-     <e><p><l>spiċċa<s n="vblex"/></l><r>اَنهى<s n="vblex"/></r></p></e>
+     <e><p><l>spiċċa<s n="vblex"/></l><r>أنهى<s n="vblex"/></r></p></e>
      <e><p><l>għadd<s n="vblex"/></l><r>عد<s n="vblex"/></r></p></e>
      <e><p><l>ħares<s n="vblex"/></l><r>نظر<s n="vblex"/></r></p></e>
      <e><p><l>mar<s n="vblex"/></l><r>ذهب<s n="vblex"/></r></p></e>
      <e><p><l>raqad<s n="vblex"/></l><r>نام<s n="vblex"/></r></p></e>
      <e><p><l>ġara<s n="vblex"/></l><r>جرى<s n="vblex"/></r></p></e>
      <e><p><l>ra<s n="vblex"/></l><r>رأى<s n="vblex"/></r></p></e>
+<!-- <e><p><l>qagħad<s n="vblex"/></l><r>ישב<s n="vblex"/></r></p></e> -->
+     <e><p><l>nħeba<s n="vblex"/></l><r>اختبأ<s n="vblex"/></r></p></e>
+     <e><p><l>poġġa<s n="vblex"/></l><r>جلس<s n="vblex"/></r></p></e>
+     <e><p><l>jaf<s n="vblex"/></l><r>عرف<s n="vblex"/></r></p></e>
+     <e><p><l>għamel<s n="vblex"/></l><r>فعل<s n="vblex"/></r></p></e>
+     <e><p><l>fittex<s n="vblex"/></l><r>بحث<b/>عن<s n="vblex"/></r></p></e>
+     <e><p><l>staqsa<s n="vblex"/></l><r>سأل<s n="vblex"/></r></p></e>
+     <e><p><l>tkellem<s n="vblex"/></l><r>تكلم<s n="vblex"/></r></p></e>
+     <e><p><l>rċieva<s n="vblex"/></l><r>حصل<b/>على<s n="vblex"/></r></p></e>
+     <e><p><l>daħak<s n="vblex"/></l><r>ضحك<s n="vblex"/></r></p></e>
+     <e><p><l>ħaseb<s n="vblex"/></l><r>فكر<s n="vblex"/></r></p></e>
+     <e><p><l>qal<b/>lil<s n="vblex"/></l><r>قال<b/>ل<s n="vblex"/></r></p></e>
+     <e><p><l>qal<s n="vblex"/></l><r>قال<s n="vblex"/></r></p></e>
+     <e><p><l>wieġeb<s n="vblex"/></l><r>أجاب<s n="vblex"/></r></p></e>
+     <e><p><l>sab<s n="vblex"/></l><r>وجد<s n="vblex"/></r></p></e>
 
-     <e><p><l>jaf<s n="vblex"/></l><r>ידע<s n="vblex"/></r></p></e>
+
      <e><p><l>ġie<s n="vblex"/></l><r>בא<s n="vblex"/></r></p></e>
      <e c="  0"><p><l>għax<s n="vblex"/></l><r>חי<s n="vblex"/></r></p></e>
      <e slr="1"><p><l>għax<s n="vblex"/></l><r>קיים<s n="vblex"/></r></p></e>
      <e><p><l>sar<s n="vblex"/></l><r>הפך<s n="vblex"/></r></p></e>
-     <e><p><l>ried<s n="vblex"/></l><r>רצה<s n="vblex"/></r></p></e>
      <e><p><l>beda<s n="vblex"/></l><r>התחיל<s n="vblex"/></r></p></e>
-     <e><p><l>qagħad<s n="vblex"/></l><r>ישב<s n="vblex"/></r></p></e>
-     <e><p><l>sab<s n="vblex"/></l><r>מצא<s n="vblex"/></r></p></e>
      <e><p><l>deher<s n="vblex"/></l><r>נראה<s n="vblex"/></r></p></e>
      <e><p><l>dar<s n="vblex"/></l><r>פנה<s n="vblex"/></r></p></e>
      <e><p><l>baqa'<s n="vblex"/></l><r>נשאר<s n="vblex"/></r></p></e>
      <e><p><l>ħareġ<s n="vblex"/></l><r>יצא<s n="vblex"/></r></p></e>
      <e><p><l>dahal<s n="vblex"/></l><r>נכנס<s n="vblex"/></r></p></e>
-     <e><p><l>tkellem<s n="vblex"/></l><r>דיבר<s n="vblex"/></r></p></e>
      <e><p><l>ħass<s n="vblex"/></l><r>הרגיש<s n="vblex"/></r></p></e>
      <e><p><l>qara<s n="vblex"/></l><r>קרא<s n="vblex"/></r></p></e>
      <e><p><l>xtaq<s n="vblex"/></l><r>רצה<s n="vblex"/></r></p></e>
@@ -3093,7 +3114,6 @@
      <e><p><l>għar<s n="vblex"/></l><r>קינא<s n="vblex"/></r></p></e>
      <e><p><l>ħolom<s n="vblex"/></l><r>חלם<s n="vblex"/></r></p></e>
      <e><p><l>kixef<s n="vblex"/></l><r>חשף<s n="vblex"/></r></p></e>
-     <e><p><l>daħak<s n="vblex"/></l><r>צחק<s n="vblex"/></r></p></e>
      <e><p><l>ħeba<s n="vblex"/></l><r>החביא<s n="vblex"/></r></p></e>
      <e><p><l>gideb<s n="vblex"/></l><r>שיקר<s n="vblex"/></r></p></e>
      <e><p><l>għam<s n="vblex"/></l><r>שחה<s n="vblex"/></r></p></e>
@@ -3210,7 +3230,6 @@
      <e><p><l>talab<s n="vblex"/></l><r>שאל<s n="vblex"/></r></p></e>
      <e><p><l>ħanaq<s n="vblex"/></l><r>חנק<s n="vblex"/></r></p></e>
      <e><p><l>ħadem<s n="vblex"/></l><r>עבד<s n="vblex"/></r></p></e>
-     <e><p><l>għamel<s n="vblex"/></l><r>עשה<s n="vblex"/></r></p></e>
      <e><p><l>fetaħ<s n="vblex"/></l><r>פתח<s n="vblex"/></r></p></e>
      <e><p><l>qala'<s n="vblex"/></l><r>הרוויח<s n="vblex"/></r></p></e>
      <e><p><l>qata'<s n="vblex"/></l><r>גזר<s n="vblex"/></r></p></e>
@@ -3223,7 +3242,6 @@
      <e><p><l>ivvjola<s n="vblex"/></l><r>חילל<s n="vblex"/></r></p></e>
      <e><p><l>indika<s n="vblex"/></l><r>הצביע<s n="vblex"/></r></p></e>
      <e><p><l>eżerċita<s n="vblex"/></l><r>תרגל<s n="vblex"/></r></p></e>
-     <e><p><l>ipprova<s n="vblex"/></l><r>ניסה<s n="vblex"/></r></p></e>
      <e><p><l>esperjenza<s n="vblex"/></l><r>התנסה<s n="vblex"/></r></p></e>
      <e><p><l>iddeċide<s n="vblex"/></l><r>החליט<s n="vblex"/></r></p></e>
      <e><p><l>ordna<s n="vblex"/></l><r>סידר<s n="vblex"/></r></p></e>

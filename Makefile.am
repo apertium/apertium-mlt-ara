@@ -36,7 +36,6 @@ $(PREFIX1).autogen.bin: $(BASENAME).$(LANG2).dix
 
 EXTRA_DIST=$(BASENAME).$(LANG1).dix $(BASENAME).$(PREFIX1).dix \
 	   $(BASENAME).$(LANG2).dix \
-           $(PREFIX1).prob \
 	   $(BASENAME).$(PREFIX1).t1x \
 	   modes.xml
 
@@ -49,7 +48,6 @@ modes/$(PREFIX1).mode: modes.xml
 	cp *.mode modes/
 
 apertium_mt_ar_DATA=$(TARGETS_COMMON) \
-                    $(PREFIX1).prob \
 		    modes.xml
 
 noinst_DATA=modes/$(PREFIX1).mode

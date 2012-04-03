@@ -41,7 +41,13 @@
       <cat-item tags="vblex.*"/>
     </def-cat>
     <def-cat n="modalvrb">
-      <cat-item tags="vmod.*"/>
+      <cat-item tags="vblex.*" lemma="ħabb"/>
+      <cat-item tags="vblex.*" lemma="seta"/>
+      <cat-item tags="vblex.*" lemma="ried"/>
+      <cat-item tags="vblex.*" lemma="ipprova"/>
+    </def-cat>
+    <def-cat n="vrbpres">
+      <cat-item tags="vblex.pres.*"/>
     </def-cat>
     <def-cat n="kien">
       <cat-item tags="vaux.*" lemma="kien"/>
@@ -49,8 +55,20 @@
     <def-cat n="kellu">
       <cat-item tags="vaux.*" lemma="kellu"/>
     </def-cat>
+    <def-cat n="qagħad">
+      <cat-item tags="vaux.pprs.*" lemma="qagħad"/>
+    </def-cat>
     <def-cat n="neg">
       <cat-item tags="neg"/>
+    </def-cat>
+     <def-cat n="dualis_num">   
+        <cat-item tags="num.mf.sp" lemma="żewġ"/>
+     </def-cat>
+    <def-cat n="d_obj">  <!-- this way it will match lil/indirect obj too -->
+      <cat-item tags="pr" lemma="lil"/>
+    </def-cat>
+    <def-cat n="ma_neg">  <!-- -->
+      <cat-item tags="adv" lemma="ma"/>
     </def-cat>
   </section-def-cats>
 
@@ -133,6 +151,16 @@
     <def-attr n="a_neg">
        <attr-item tags="neg"/>
     </def-attr>
+    <def-attr n="case">    <!-- Arabic only: noun cases -->
+       <attr-item tags="nom"/>
+       <attr-item tags="gen"/>
+       <attr-item tags="acc"/>
+    </def-attr>
+     <def-attr n="mode">   <!-- Arabic only: verb (imperfectum) modes -->
+        <attr-item tags="indic"/>
+        <attr-item tags="apocop"/>
+        <attr-item tags="subjun"/>
+     </def-attr>
   </section-def-attrs>
 
 
@@ -277,7 +305,8 @@
     <!-- <equal><var n="genero"/><lit-tag v="f"/></equal> -->
     <def-macro n="modify_verb_and_genero" npar="1" c="Guess verb gender, remove person from present, no gender for inf/p1">
 
-      <choose><when c="Default genero to 'm' unless set to 'm' or 'f'">
+      <choose>
+      <when c="Default genero to 'm' unless set to 'm' or 'f'">
         <test><not><or>
           <equal><clip pos="1" side="tl" part="gen"/><lit-tag v="m"/></equal>
           <equal><clip pos="1" side="tl" part="gen"/><lit-tag v="f"/></equal>
@@ -302,75 +331,15 @@
           <var n="genero"/><lit-tag v="f"/>
         </let>
       </when>
-</choose>
-<!--
-      <choose><when c="Hebrew past (ie. perfect, with no vaux) might correspond with Maltese perfect participle(?) TODO check this
-                       Also, append person, since pp has no person.">
-        <test><equal>
-          <clip pos="1" side="tl" part="temps"/><lit-tag v="pp"/>
-        </equal></test>
-        <let>
-          <clip pos="1" side="tl" part="temps"/><lit-tag v="past"/>
-        </let>
-
-        <choose><when c="Maltese pp has no person, guess one and append it to temps">
-          <test><equal>
-            <clip pos="1" side="tl" part="pers"/><lit v=""/>
-          </equal></test>
-          <choose><when c="Set default person to 'p3' if unset">
-            <test><not><or>
-              <equal><var n="person"/><lit-tag v="p1"/></equal>
-              <equal><var n="person"/><lit-tag v="p2"/></equal>
-              <equal><var n="person"/><lit-tag v="p3"/></equal>
-            </or></not></test>
-            <let><var n="person"/><lit-tag v="p3"/></let>
-          </when></choose>
-          <let>
-            <clip pos="1" side="tl" part="temps"/>
-            <concat><clip pos="1" side="tl" part="temps"/><var n="person"/></concat>
-          </let>
-        </when></choose>
-
-      </when></choose>
-
-      <choose><when c="Hebrew present (ie. imperfect) might correspond with Maltese gerund(?) TODO check this
-                       Also, append number (default sg), since ger has no number.">
-        <test><equal>
-          <clip pos="1" side="tl" part="temps"/><lit-tag v="ger"/>
-        </equal></test>
-        <let>
-          <clip pos="1" side="tl" part="temps"/><lit-tag v="pres.sg"/>
-        </let>
-      </when></choose>
-
-      <choose><when c="Hebrew present (ie. imperfect) might correspond with Maltese present participle(?) TODO check this">
-        <test><equal>
-          <clip pos="1" side="tl" part="temps"/><lit-tag v="pprs"/>
-        </equal></test>
-        <let>
-          <clip pos="1" side="tl" part="temps"/><lit-tag v="pres"/>
-        </let>
-      </when></choose>
-
-      <choose><when c="Hebrew present tense verbs have no person distinction (but have gender)">
-        <test><equal>
-          <clip pos="1" side="tl" part="temps"/><lit-tag v="pres"/>
-        </equal></test>
-        <let>
-          <clip pos="1" side="tl" part="pers"/><lit v=""/>
-        </let>
-      </when></choose>
-
-      <choose><when c="infinitives and first-persons have no gender
-                       (do this after removing person from the present, which does have gender)">
-        <test><or>
-          <equal><clip pos="1" side="tl" part="temps"/><lit-tag v="inf"/></equal>
+      </choose>
+      <choose><when c="first-persons have no gender">
+        <test>
           <equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p1"/></equal>
-        </or></test>
+        </test>
         <let>
           <var n="genero"/><lit v=""/>
         </let>
-      </when></choose>  -->
+      </when></choose>
     </def-macro> 
 
 
@@ -604,6 +573,7 @@
        </action>
     </rule>
 
+
     <rule comment="rule: prep artic nom">
       <pattern>
         <pattern-item n="prep"/>
@@ -655,6 +625,7 @@
         </choose>
       </action>
     </rule>
+
 
     <rule comment="rule: prep artic numeral">
       <pattern>
@@ -751,6 +722,7 @@
       </action>
     </rule>
 
+
     <rule comment="rule: numeral">
        <pattern>
          <pattern-item n="numeral"/>
@@ -844,6 +816,7 @@
              <var n="genero"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="a_neg"/>
+             <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
          </out>
@@ -851,34 +824,81 @@
     </rule>
 
 
-    <rule comment="rule: modal verb">
+
+    <rule comment="rule: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in Accusativ ">
+       <pattern>
+         <pattern-item n="kien"/>
+         <pattern-item n="adj"/>
+       </pattern>
+       <action>
+         <out>
+	   <mlu>
+	   <lu>
+             <clip pos="1" side="tl" part="whole"/>
+	   </lu>
+	   </mlu>
+	   <b/>
+	   <mlu>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_adj"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   </mlu>
+	   </out>
+       </action>
+    </rule> 
+
+
+    <rule comment="rule: modal verbs ('want', 'like', 'can' etc.): in Arabic followed by أن + so-called subjunctive mood ">
        <pattern>
          <pattern-item n="modalvrb"/>
+         <pattern-item n="vrbpres"/>
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
-
          <out>
-           <lu>
+	   <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
              <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="a_neg"/>
+             <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
+	   </lu>
+	   <b/><lu><lit v="أن"/><lit-tag v="cnjsubj"/></lu><b/>
+	 </out>
+         <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
+         <out>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="temps"/>
+             <lit-tag v="subjun"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="a_neg"/>
+             <clip pos="1" side="tl" part="poss"/>
+             <clip pos="2" side="tl" part="lemq"/>
            </lu>
-         </out>
+	   </out>
        </action>
-    </rule>
+    </rule> 
 
-<!--    <rule comment="rule: kien ('to be')">
+    <rule comment="rule: qagħad ('to stay')">
        <pattern>
-         <pattern-item n="kien"/>
+         <pattern-item n="qagħad"/>
        </pattern>
        <action>
        </action>
-    </rule> -->
+    </rule>
 
     <rule comment="rule: kellu ('to have')">
        <pattern>
@@ -887,6 +907,69 @@
        <action>
        </action>
     </rule>
+
+
+    <rule comment="rule: dualis ">   <!-- 2 + noun/pl -> noun/du -->
+       <pattern>
+         <pattern-item n="dualis_num"/>
+         <pattern-item n="nom"/>
+       </pattern>
+       <action>
+         <out>
+	   <mlu>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <lit-tag v="du"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   </mlu>
+	   </out>
+       </action>
+    </rule> 
+
+    <rule comment="rule: direct object determined">
+       <pattern>
+         <pattern-item n="d_obj"/>
+         <pattern-item n="det"/>
+       </pattern>
+       <action>
+	 <out>
+	   <lu>
+             <clip pos="2" side="tl" part="whole"/>
+	   </lu>
+	 </out>
+       </action>
+    </rule> 
+
+    <rule comment="rule: direct object">
+       <pattern>
+         <pattern-item n="d_obj"/>
+       </pattern>
+       <action>
+       </action>
+    </rule>
+
+
+    <rule comment="rule: negation">
+       <pattern>
+         <pattern-item n="ma_neg"/>
+         <pattern-item n="pron"/>
+       </pattern>
+       <action>
+	  <out>
+           <lu>
+             <clip pos="2" side="tl" part="whole"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+	  </out>
+       </action>
+    </rule> 
+
 
   </section-rules>
 </transfer>
