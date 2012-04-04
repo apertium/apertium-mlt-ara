@@ -19,3 +19,4 @@ dev/story.ar.txt -text svneol=unset#application/octet-stream
 dev/story.mt.txt -text
 /lexchoicebil.xsl -text
 /modes.xml -text
+/mt-ar.prob -text
