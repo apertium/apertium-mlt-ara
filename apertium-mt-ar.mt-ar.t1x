@@ -156,11 +156,14 @@
        <attr-item tags="gen"/>
        <attr-item tags="acc"/>
     </def-attr>
-     <def-attr n="mode">   <!-- Arabic only: verb (imperfectum) modes -->
+     <def-attr n="mode">   <!-- Arabic only: verb (imperfectum) moods -->
         <attr-item tags="indic"/>
         <attr-item tags="apocop"/>
         <attr-item tags="subjun"/>
      </def-attr>
+    <def-attr n="a_numeral">
+       <attr-item tags="num"/>
+    </def-attr>
   </section-def-attrs>
 
 
@@ -302,8 +305,10 @@
     </def-macro>
 
 
+
+
     <!-- <equal><var n="genero"/><lit-tag v="f"/></equal> -->
-    <def-macro n="modify_verb_and_genero" npar="1" c="Guess verb gender, remove person from present, no gender for inf/p1">
+    <def-macro n="modify_verb_and_genero" npar="1" c="Guess verb gender, no gender for p1">
 
       <choose>
       <when c="Default genero to 'm' unless set to 'm' or 'f'">
@@ -340,6 +345,16 @@
           <var n="genero"/><lit v=""/>
         </let>
       </when></choose>
+      <choose><when c="in Maltese there is only plural, in Arabic - dual and plural; for the sake of the story dual is chosen here">
+        <test><and>
+          <equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p3"/></equal>
+          <equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
+        </and></test>
+        <let>
+          <clip pos="1" side="tl" part="nbr"/><lit-tag v="du"/>
+        </let>
+      </when>
+    </choose>
     </def-macro> 
 
 
@@ -436,7 +451,6 @@
     </rule>
 
 
-    <!-- miri -->
     <rule comment="rule: artic adj">
        <pattern>
          <pattern-item n="artic"/>
@@ -455,6 +469,25 @@
                <clip pos="2" side="tl" part="gen"/>
                <clip pos="2" side="tl" part="nbr"/>
                <clip pos="2" side="tl" part="lemq"/>
+             </lu>
+           </mlu>
+         </out>
+       </action>
+    </rule>
+
+    <rule comment="rule: artic numeral">
+       <pattern>
+         <pattern-item n="artic"/>
+         <pattern-item n="numeral"/>
+       </pattern>
+       <action>
+         <out>
+           <mlu>
+             <lu>
+               <clip pos="1" side="tl" part="whole"/>
+             </lu>
+             <lu>
+               <clip pos="2" side="tl" part="whole"/>
              </lu>
            </mlu>
          </out>
@@ -574,154 +607,6 @@
     </rule>
 
 
-    <rule comment="rule: prep artic nom">
-      <pattern>
-        <pattern-item n="prep"/>
-        <pattern-item n="artic"/>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
-        <choose>
-          <when>
-            <test>
-              <or>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="ב"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="ל"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="כ"/>
-                </equal>
-              </or>
-            </test>
-            <out>
-              <lu>
-                <clip pos="1" side="tl" part="whole"/>
-              </lu>
-              <lu>
-                <clip pos="3" side="tl" part="whole"/>
-              </lu>
-            </out>
-          </when>
-          <otherwise>
-            <out>
-              <lu>
-                <clip pos="1" side="tl" part="whole"/>
-              </lu>
-              <b pos="1"/>
-              <lu>
-                <clip pos="2" side="tl" part="whole"/>
-              </lu>
-              <lu>
-                <clip pos="3" side="tl" part="whole"/>
-              </lu>
-            </out>
-          </otherwise>
-        </choose>
-      </action>
-    </rule>
-
-
-    <rule comment="rule: prep artic numeral">
-      <pattern>
-        <pattern-item n="prep"/>
-        <pattern-item n="artic"/>
-        <pattern-item n="numeral"/>
-      </pattern>
-      <action>
-        <call-macro n="f_concord1"><with-param pos="3"/></call-macro>
-        <choose>
-          <when>
-            <test>
-              <or>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="ב"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="אחרי"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="את"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="בין"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="כמו"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="ל"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="לאחר"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="לפני"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="מ"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="מאז"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="עד"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="של"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="tl" part="lemh"/>
-                  <lit v="ב"/>
-                </equal>
-              </or>
-            </test>
-            <out>
-              <lu>
-                <clip pos="1" side="tl" part="whole"/>
-              </lu>
-              <b pos="1"/>
-              <lu>
-                <clip pos="3" side="tl" part="whole"/>
-              </lu>
-            </out>
-          </when>
-          <otherwise>
-            <out>
-              <lu>
-                <clip pos="1" side="tl" part="whole"/>
-              </lu>
-              <b pos="1"/>
-              <lu>
-                <clip pos="2" side="tl" part="whole"/>
-              </lu>
-              <b pos="2"/>
-              <lu>
-                <clip pos="3" side="tl" part="whole"/>
-              </lu>
-            </out>
-          </otherwise>
-        </choose>
-      </action>
-    </rule>
-
 
     <rule comment="rule: numeral">
        <pattern>
@@ -806,7 +691,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
-
+         <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
          <out>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -823,6 +708,34 @@
        </action>
     </rule>
 
+
+
+    <rule comment="rule: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in Accusativ ">
+       <pattern>
+         <pattern-item n="kien"/>
+         <pattern-item n="nom"/>
+       </pattern>
+       <action>
+         <out>
+	   <mlu>
+	   <lu>
+             <clip pos="1" side="tl" part="whole"/>
+	   </lu>
+	   </mlu>
+	   <b/>
+	   <mlu>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   </mlu>
+	   </out>
+       </action>
+    </rule> 
 
 
     <rule comment="rule: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in Accusativ ">
@@ -851,7 +764,6 @@
 	   </out>
        </action>
     </rule> 
-
 
     <rule comment="rule: modal verbs ('want', 'like', 'can' etc.): in Arabic followed by أن + so-called subjunctive mood ">
        <pattern>
@@ -891,6 +803,7 @@
 	   </out>
        </action>
     </rule> 
+
 
     <rule comment="rule: qagħad ('to stay')">
        <pattern>

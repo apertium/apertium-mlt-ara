@@ -41,6 +41,6 @@
     <equiv-char value="ġ"/>
   </char>
   <char value="ħ">
-    <equiv-char value="h"/>
+    <equiv-char value="ħ"/>
   </char>
 </analysis-chars>
