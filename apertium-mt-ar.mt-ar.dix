@@ -33,6 +33,14 @@
      <sdef n="p2"/>
      <sdef n="p3"/>
 
+     <sdef n="px1sg"/>
+     <sdef n="px2sg"/>
+     <sdef n="px3sg_m"/>
+     <sdef n="px3sg_f"/>
+     <sdef n="px1pl"/>
+     <sdef n="px2pl"/>
+     <sdef n="px3pl"/>
+
      <sdef n="def"/>
      <sdef n="ind"/>
      <sdef n="ord"/>
@@ -104,7 +112,7 @@
      <e><p><l>u<s n="cnjcoo"/></l><r>و<s n="cnjcoo"/></r></p></e>
      <e><p><l>imma<s n="cnjcoo"/></l><r>لكن<s n="cnjcoo"/></r></p></e>
      <e><p><l>meta<s n="cnjcoo"/></l><r>عندما<s n="cnjcoo"/></r></p></e>
-
+     <e><p><l>li<s n="cnjsub"/></l><r>ل<s n="cnjsub"/></r></p></e>
 
      <e><p><l>jew<s n="cnjcoo"/></l><r>أو<s n="cnjcoo"/></r></p></e>
 
@@ -117,10 +125,10 @@
      <!-- SECTION: Prepositions -->
 
      <e><p><l>fi<s n="pr"/></l><r>في<s n="pr"/></r></p></e>
-     <e><p><l>madwar<s n="pr"/></l><r>عبر<s n="pr"/></r></p></e>
+     <e><p><l>madwar<s n="pr"/></l><r>حول<s n="pr"/></r></p></e>
      <e><p><l>għand<s n="pr"/></l><r>عند<s n="pr"/></r></p></e>  <!-- miri: ב in Hebrew?! -->
      <e><p><l>ma'<s n="pr"/></l><r>مع<s n="pr"/></r></p></e>
-     <e><p><l>ġo<s n="pr"/></l><r>داخل<s n="pr"/></r></p></e>
+     <e><p><l>ġo<s n="pr"/></l><r>خلال<s n="pr"/></r></p></e>
      <e><p><l>minn<s n="pr"/></l><r>من<s n="pr"/></r></p></e>
      <e><p><l>sa<s n="pr"/></l><r>إلى<s n="pr"/></r></p></e> <!-- miri: more than 1 meaning -->
      <e><p><l>ħdejn<s n="pr"/></l><r>قرب<s n="pr"/></r></p></e>
@@ -129,6 +137,7 @@
      <e><p><l>taħt<s n="pr"/></l><r>تحت<s n="pr"/></r></p></e>
      <e><p><l>qrib<s n="pr"/></l><r>أقرب<s n="pr"/></r></p></e>
      <e><p><l>wara<s n="pr"/></l><r>وراء<s n="pr"/></r></p></e>
+     <e><p><l>ta'<s n="pr"/></l><r>لدى<s n="pr"/></r></p></e>
 
      <!-- SECTION: Pronouns -->
 
@@ -157,13 +166,14 @@
      <e r="RL"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
      <e r="RL"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
 
-     <e><p><l>li<s n="rel"/></l><r>أن<s n="rel"/></r></p></e>
+
+     <e><p><l>li<s n="rel"/></l><r>أن<s n="cnjsub"/></r></p></e>
      <e><p><l>jew<s n="prn"/></l><r>أو<s n="prn"/></r></p></e>
 
-     <e><p><l>ħadd<s n="prn"/></l><r>أحد<s n="prn"/></r></p></e> <!-- אף<b/>אחד -->
-     <e><p><l>xejn<s n="prn"/></l><r>شيئاً<s n="prn"/></r></p></e> <!-- Acc hidden inside -->
-     <e><p><l>xi<b/>ħaġa<s n="prn"/><s n="ind"/></l><r>شيئاً<s n="prn"/><s n="ind"/></r></p></e>
-     <e><p><l>xi<b/>haga<s n="prn"/></l><r>شيئاً<s n="prn"/></r></p></e>
+     <e><p><l>ħadd<s n="prn"/></l><r>أحد<s n="prn"/></r></p></e> 
+     <e><p><l>xejn<s n="prn"/></l><r>شيء<s n="prn"/></r></p></e> 
+     <e><p><l>xi<b/>ħaġa<s n="prn"/><s n="ind"/></l><r>شيء<s n="prn"/><s n="ind"/></r></p></e>
+     <e><p><l>xi<b/>haga<s n="prn"/></l><r>شيء<s n="prn"/></r></p></e>
 
      <e><p><l>xi<s n="prn"/></l><r>ماذا<s n="prn"/></r></p></e>
      <e><p><l>ftit<s n="prn"/></l><r>بعض<s n="prn"/></r></p></e> 
@@ -171,9 +181,10 @@
      <e><p><l>min<s n="prn"/></l><r>من<s n="prn"/></r></p></e> 
 
      <!-- There's no dak/dan-distinction in Hebrew: -->
+     <!-- but there is in Arabic - never mind for now -->
      <e>       <p><l>dak<s n="prn"/></l><r>هذا<s n="prn"/></r></p></e>
      <e r="LR"><p><l>dan<s n="prn"/></l><r>هذا<s n="prn"/></r></p></e>
-     <e><p><l>ieħor<s n="prn"/><s n="ind"/></l><r>أخر<s n="prn"/><s n="ind"/></r></p></e>
+     <e><p><l>ieħor<s n="prn"/><s n="ind"/></l><r>آخر<s n="prn"/><s n="ind"/></r></p></e>
 
      <e><p><l>i<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
      <e><p><l>na<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
@@ -197,13 +208,13 @@
 
 
      <!-- SECTION: Possessive pronouns -->
-     <e><p><l>tiegħi<s n="prn"/><s n="pos"/></l><r>لدي<s n="prn"/><s n="pos"/></r></p></e>
-     <e><p><l>tagħna<s n="prn"/><s n="pos"/></l><r>لدينا<s n="prn"/><s n="pos"/></r></p></e>
-     <e><p><l>tiegħek<s n="prn"/><s n="pos"/></l><r>لديك<s n="prn"/><s n="pos"/></r></p></e>
-     <e><p><l>tagħkom<s n="prn"/><s n="pos"/></l><r>لديكم<s n="prn"/><s n="pos"/></r></p></e>
-     <e><p><l>tiegħu<s n="prn"/><s n="pos"/></l><r>لديه<s n="prn"/><s n="pos"/></r></p></e>
-     <e><p><l>tagħha<s n="prn"/><s n="pos"/></l><r>لديها<s n="prn"/><s n="pos"/></r></p></e>
-     <e><p><l>tagħhom<s n="prn"/><s n="pos"/></l><r>لديهم<s n="prn"/><s n="pos"/></r></p></e>
+     <e><p><l>tiegħi<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px1sg"/><s n="pos"/></r></p></e>
+     <e><p><l>tagħna<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px1pl"/><s n="pos"/></r></p></e>
+     <e><p><l>tiegħek<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px2sg"/><s n="pos"/></r></p></e>
+     <e><p><l>tagħkom<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px2pl"/><s n="pos"/></r></p></e>
+     <e><p><l>tiegħu<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px3sg_m"/><s n="pos"/></r></p></e>
+     <e><p><l>tagħha<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px3sg_f"/><s n="pos"/></r></p></e>
+     <e><p><l>tagħhom<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px3pl"/><s n="pos"/></r></p></e>
 
      <!-- SECTION: Determiners -->
 
@@ -303,7 +314,7 @@
      <e><p><l>dejjem<s n="adv"/></l><r>دائماً<s n="adv"/></r></p></e>
      <e><p><l>bil-mogħod<s n="adv"/></l><r>ببطء<s n="adv"/></r></p></e>
      <e><p><l>bħalissa<s n="adv"/></l><r>الآن<s n="adv"/></r></p></e>
-     <e><p><l>imbagħad<s n="adv"/></l><r>عندئذ<s n="adv"/></r></p></e> <!-- TODO -->
+     <e><p><l>imbagħad<s n="adv"/></l><r>حينئذ<s n="adv"/></r></p></e> 
      <e><p><l>anke<s n="adv"/></l><r>أيضاً<s n="adv"/></r></p></e><!-- אפילו -->
      <e><p><l>allura<s n="adv"/></l><r>لذلك<s n="adv"/></r></p></e>
      <e><p><l>issa<s n="adv"/></l><r>الآن<s n="adv"/></r></p></e>
@@ -338,6 +349,7 @@
      <!-- SECTION: Verbs -->
 
      <e><p><l>kien<s n="vaux"/></l><r>كان<s n="vaux"/></r></p></e>
+     <e><p><l>għad<s n="vaux"/></l><r>ما<b/>زال<s n="vaux"/></r></p></e> 
 
      <e><p><l>ħabb<s n="vblex"/></l><r>حب<s n="vblex"/></r></p></e>
      <e><p><l>seta<s n="vblex"/></l><r>استطاع<s n="vblex"/></r></p></e>
@@ -353,7 +365,6 @@
      <e><p><l>raqad<s n="vblex"/></l><r>نام<s n="vblex"/></r></p></e>
      <e><p><l>ġara<s n="vblex"/></l><r>جرى<s n="vblex"/></r></p></e>
      <e><p><l>ra<s n="vblex"/></l><r>رأى<s n="vblex"/></r></p></e>
-<!-- <e><p><l>qagħad<s n="vblex"/></l><r>ישב<s n="vblex"/></r></p></e> -->
      <e><p><l>nħeba<s n="vblex"/></l><r>اختبأ<s n="vblex"/></r></p></e>
      <e><p><l>poġġa<s n="vblex"/></l><r>جلس<s n="vblex"/></r></p></e>
      <e><p><l>jaf<s n="vblex"/></l><r>عرف<s n="vblex"/></r></p></e>
@@ -367,6 +378,7 @@
      <e><p><l>qal<b/>lil<s n="vblex"/></l><r>قال<b/>ل<s n="vblex"/></r></p></e>
      <e><p><l>qal<s n="vblex"/></l><r>قال<s n="vblex"/></r></p></e>
      <e><p><l>wieġeb<s n="vblex"/></l><r>أجاب<s n="vblex"/></r></p></e>
+     <e><p><l>wieġeb<b/>lura<s n="vblex"/></l><r>رد<s n="vblex"/></r></p></e>
      <e><p><l>sab<s n="vblex"/></l><r>وجد<s n="vblex"/></r></p></e>
      <e><p><l>feraħ<s n="vblex"/></l><r>فرح<s n="vblex"/></r></p></e>
      <e><p><l>xorob<s n="vblex"/></l><r>شرب<s n="vblex"/></r></p></e>

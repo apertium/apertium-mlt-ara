@@ -17,6 +17,9 @@
       <program name="lt-proc $1">
         <file name="mt-ar.autogen.bin"/>
       </program>
+      <program name="lt-proc -p">
+        <file name="mt-ar.autopgen.bin"/>
+      </program>
     </pipeline>
   </mode>
   

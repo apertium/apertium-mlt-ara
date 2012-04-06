@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+  <alphabet/>
+  <sdefs>
+    <sdef n="test"/>
+  </sdefs>
+
+  <pardefs>
+
+    <pardef n="letters">
+      <!-- all letters should be put here -->
+      <e>
+        <p>
+          <l>أ</l>
+          <r>أ</r>
+        </p>
+        <p>
+          <l>ا</l>
+          <r>ا</r>
+        </p>
+        <p>
+          <l>أ</l>
+          <r>أ</r>
+        </p>
+        <p>
+          <l>إ</l>
+          <r>إ</r>
+        </p>
+        <p>
+          <l>ب</l>
+          <r>ب</r>
+        </p>
+        <p>
+          <l>ت</l>
+          <r>ت</r>
+        </p>
+        <p>
+          <l>ث</l>
+          <r>ث</r>
+        </p>
+        <p>
+          <l>ج</l>
+          <r>ج</r>
+        </p>
+        <p>
+          <l>ح</l>
+          <r>ح</r>
+        </p>
+        <p>
+          <l>خ</l>
+          <r>خ</r>
+        </p>
+        <p>
+          <l>د</l>
+          <r>د</r>
+        </p>
+        <p>
+          <l>ذ</l>
+          <r>ذ</r>
+        </p>
+        <p>
+          <l>ر</l>
+          <r>ر</r>
+        </p>
+        <p>
+          <l>ز</l>
+          <r>ز</r>
+        </p>
+        <p>
+          <l>س</l>
+          <r>س</r>
+        </p>
+        <p>
+          <l>ش</l>
+          <r>ش</r>
+        </p>
+        <p>
+          <l>ص</l>
+          <r>ص</r>
+        </p>
+        <p>
+          <l>ط</l>
+          <r>ط</r>
+        </p>
+        <p>
+          <l>ظ</l>
+          <r>ظ</r>
+        </p>
+        <p>
+          <l>ع</l>
+          <r>ع</r>
+        </p>
+        <p>
+          <l>غ</l>
+          <r>غ</r>
+        </p>
+        <p>
+          <l>ف</l>
+          <r>ف</r>
+        </p>
+        <p>
+          <l>ق</l>
+          <r>ق</r>
+        </p>
+        <p>
+          <l>ك</l>
+          <r>ك</r>
+        </p>
+        <p>
+          <l>ل</l>
+          <r>ل</r>
+        </p>
+        <p>
+          <l>م</l>
+          <r>م</r>
+        </p>
+        <p>
+          <l>ن</l>
+          <r>ن</r>
+        </p>
+        <p>
+          <l>ه</l>
+          <r>ه</r>
+        </p>
+        <p>
+          <l>و</l>
+          <r>و</r>
+        </p>
+        <p>
+          <l>ي</l>
+          <r>ي</r>
+        </p>
+      </e>
+    </pardef>
+
+    <pardef n="freepron">
+      <!-- all personal pronouns should be put here -->
+      <e>
+        <p>
+          <l>هي</l>
+          <r>ها</r>
+        </p>
+      </e>
+    </pardef>
+
+
+  </pardefs>
+
+  <section id="main" type="standard">
+      <e>
+        <p>
+          <l><a/>ل<b/></l>
+          <r>ل</r>
+        </p>
+        <par n="letters"/>
+      </e>  <!-- but ل with ال should give لل -->
+
+      <e>
+        <p>
+          <l><a/>و<b/></l>
+          <r>و</r>
+        </p>
+        <par n="letters"/>
+      </e>
+
+      <e>
+        <p>
+          <l><a/>أن<b/></l>
+          <r>أن</r>
+        </p>
+        <par n="freepron"/>
+      </e>
+
+  </section>
+
+</dictionary>

@@ -57,18 +57,25 @@
     </def-cat>
     <def-cat n="qagħad">
       <cat-item tags="vaux.pprs.*" lemma="qagħad"/>
+      <cat-item tags="vaux.pres.*" lemma="qagħad"/>
     </def-cat>
     <def-cat n="neg">
       <cat-item tags="neg"/>
     </def-cat>
-     <def-cat n="dualis_num">   
-        <cat-item tags="num.mf.sp" lemma="żewġ"/>
-     </def-cat>
+    <def-cat n="dualis_num">   
+      <cat-item tags="num.mf.sp" lemma="żewġ"/>
+    </def-cat>
     <def-cat n="d_obj">  <!-- this way it will match lil/indirect obj too -->
       <cat-item tags="pr" lemma="lil"/>
     </def-cat>
-    <def-cat n="ma_neg">  <!-- -->
+    <def-cat n="ma_neg"> 
       <cat-item tags="adv" lemma="ma"/>
+    </def-cat>
+    <def-cat n="ta_poss"> 
+      <cat-item tags="pr.px3sg_f" lemma="ta'"/>
+    </def-cat>
+    <def-cat n="biex"> 
+      <cat-item tags="cnjsub" lemma="biex"/>
     </def-cat>
   </section-def-cats>
 
@@ -119,9 +126,11 @@
        <attr-item tags="px3sg_m"/>
        <attr-item tags="px3sg_f"/>
        <attr-item tags="px1pl"/>
+       <attr-item tags="px2du"/> <!-- arabic only -->
        <attr-item tags="px2pl"/> <!-- maltese only -->
        <attr-item tags="px2pl_m"/> <!-- hebrew only -->
        <attr-item tags="px2pl_f"/> <!-- hebrew only -->
+       <attr-item tags="px3du"/> <!-- maltese only -->
        <attr-item tags="px3pl"/> <!-- maltese only -->
        <attr-item tags="px3pl_m"/> <!-- hebrew only -->
        <attr-item tags="px3pl_f"/> <!-- hebrew only -->
@@ -295,7 +304,7 @@
         </when>
         <when>
           <test><equal><clip pos="1" side="tl" part="poss"/><lit-tag v="px3pl"/></equal></test>
-          <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px3pl_m"/></let>
+          <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px3du"/></let>
           <choose><when>
             <test><equal><var n="genero"/><lit-tag v="f"/></equal></test>
             <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px3pl_f"/></let>
@@ -482,14 +491,14 @@
        </pattern>
        <action>
          <out>
-           <mlu>
+            <mlu> 
              <lu>
                <clip pos="1" side="tl" part="whole"/>
              </lu>
-             <lu>
+             <lu> 
                <clip pos="2" side="tl" part="whole"/>
              </lu>
-           </mlu>
+          </mlu> 
          </out>
        </action>
     </rule>
@@ -787,6 +796,7 @@
 	   <b/><lu><lit v="أن"/><lit-tag v="cnjsubj"/></lu><b/>
 	 </out>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
+         <call-macro n="set_px_gen"><with-param pos="2"/></call-macro> 
          <out>
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
@@ -796,8 +806,37 @@
              <clip pos="2" side="tl" part="pers"/>
              <var n="genero"/>
              <clip pos="2" side="tl" part="nbr"/>
-             <clip pos="2" side="tl" part="a_neg"/>
-             <clip pos="1" side="tl" part="poss"/>
+             <clip pos="2" side="tl" part="a_neg"/> 
+             <clip pos="2" side="tl" part="poss"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   </out>
+       </action>
+    </rule> 
+
+
+    <rule comment="rule: biex (in order that) in Arabic is followed subjunctive mood ">
+       <pattern>
+         <pattern-item n="biex"/>
+         <pattern-item n="vrbpres"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
+         <call-macro n="set_px_gen"><with-param pos="2"/></call-macro> 
+         <out>
+	   <lu>
+             <clip pos="1" side="tl" part="whole"/>   
+	   </lu><b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="temps"/>
+             <lit-tag v="subjun"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="a_neg"/> 
+             <clip pos="2" side="tl" part="poss"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
 	   </out>
@@ -824,23 +863,34 @@
 
     <rule comment="rule: dualis ">   <!-- 2 + noun/pl -> noun/du -->
        <pattern>
+         <pattern-item n="prep"/>
+         <pattern-item n="det"/>
          <pattern-item n="dualis_num"/>
          <pattern-item n="nom"/>
        </pattern>
        <action>
          <out>
+	   <lu>
+             <clip pos="1" side="tl" part="whole"/>
+	   </lu><b/>
 	   <mlu>
+	   <lu>
+             <clip pos="2" side="tl" part="whole"/>
+	   </lu>
            <lu>
-             <clip pos="2" side="tl" part="lemh"/>
-             <clip pos="2" side="tl" part="a_nom"/>
-             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_nom"/>
+             <clip pos="4" side="tl" part="gen"/>
              <lit-tag v="du"/>
-             <clip pos="2" side="tl" part="lemq"/>
+             <lit-tag v="gen"/>
+             <clip pos="4" side="tl" part="lemq"/>
            </lu>
 	   </mlu>
 	   </out>
        </action>
     </rule> 
+
+
 
     <rule comment="rule: direct object determined">
        <pattern>

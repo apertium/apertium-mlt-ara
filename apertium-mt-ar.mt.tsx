@@ -15326,5 +15326,21 @@
       <label-item label="NEG"/>
     </sequence>
   </def-mult>
+
+  <forbid>
+    <label-sequence>
+      <label-item label="VBLEX-SG1"/>
+      <label-item label="VBLEX-IMP-SG"/>
+    </label-sequence>
+    <label-sequence>
+      <label-item label="VBLEX-SG2"/>
+      <label-item label="VBLEX-IMP-SG"/>
+    </label-sequence>
+    <label-sequence>
+      <label-item label="VBLEX-SG3"/>
+      <label-item label="VBLEX-IMP-SG"/>
+    </label-sequence>
+  </forbid>
+
 </tagset>
 </tagger>

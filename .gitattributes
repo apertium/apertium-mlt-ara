@@ -13,6 +13,7 @@
 /apertium-mt-ar.mt.acx -text
 /apertium-mt-ar.mt.dix -text
 /apertium-mt-ar.mt.tsx -text
+/apertium-mt-ar.post-ar.dix -text
 /autogen.sh -text
 /configure.ac -text
 dev/story.ar.apertium.txt -text
