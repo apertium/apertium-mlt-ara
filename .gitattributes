@@ -15,6 +15,8 @@
 /apertium-mt-ar.mt.tsx -text
 /autogen.sh -text
 /configure.ac -text
+dev/story.ar.apertium.txt -text
+dev/story.ar.googletranslate.txt -text svneol=unset#application/octet-stream
 dev/story.ar.txt -text svneol=unset#application/octet-stream
 dev/story.mt.txt -text
 /lexchoicebil.xsl -text
