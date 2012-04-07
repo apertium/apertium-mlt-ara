@@ -1,0 +1,14 @@
+Files in /dev directory:
+
+- story.mt.txt: Maltese translation of English "Where is James" story, translated by John J. Camilleri
+
+- story.ar.txt: Arabic translation of story.mt.txt, translated by Maria Fronczak
+
+- story.ar.apertium.txt: apertium-mt-ar Arabic translation of story.mt.txt
+
+- story.ar-en.apertium.txt: story.ar.apertium.txt + English translation of story.ar.apertium.txt + comments to errors in story.ar.apertium.txt
+
+- story.ar.googletranslate.txt: Google Translate Arabic translation of story.mt.txt
+
+- story.ar-en.googletranslate.txt: story.ar.googletranslate.txt + English translation of story.ar.googletranslate.txt (ouch!)
+

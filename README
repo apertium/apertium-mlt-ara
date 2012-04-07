@@ -1,1 +1,48 @@
+This is a prototype of Maltese-Arabic pair. It has been built upon the existing Maltese-Hebrew pair with as little effort as possible; it means that not only the Maltese analyser has been reused, but also the Hebrew monodix, and some of the transfer rules.
+
+
+
+The solution is ugly, but it works. Also, it was quite easy to write for several reasons:
+- I had the Maltese analyser from mt-he pair
+- Maltese and Arabic have similar grammar and syntax, they even share some ambiguities (for example, in Maltese verbs pres. 2 sg and pres. 3 sg f look the same, in Arabic pres. 2 sg m and pres. 3 sg f look the same)
+- I didn't have to analyse Arabic, I only had to generate it.
+Arabic words, when written without vocalisation (that's the standard way of writing), are often highly ambiguous. For example, different cases of a noun or different moods of a verb may have the same unvocalised form; ambiguities between parts of speech are also quite common. Luckily, I didn't have to think about disambiguation of Arabic.
+
+
+
+Errors in apertium-mt-ar translation are explained in dev/story.ar-en.apertium.txt.
+
+
+
+I have uploaded to dev directory files containing Maltese and Arabic "Where is James" story, apertium-mt-ar Arabic translation of the Maltese story, Google Translate Arabic translation of the Maltese story etc., see dev/README for the list of files.
+
+
+
+
+Things that definitely should be written in a different way:
+
+- apertium.mt-ar.ar.dix: in many entries I used the Hebrew tagset only, neglecting noun cases and verb moods, as well as other categories (animate/inanimate nouns etc.) The story "Fejn huwa James" is simple, so I got good results without introducing these categories - for example, most nouns occuring in the story have identical Nom, Gen & Acc forms, so just one noun entry without specified noun case is enough.
+However, there are some transfer rules introducing Acc, subjunctive etc., as well as some Arabic monodix entries with case or mood specified.
+
+- mt.dix & ar.dix: possesive pronouns as tags in verbal entries. I have to see how 'possessive pronouns' are actually treated in mt.dix, when attached to verbs or prepositions.
+
+- apertium-mt-ar.mt-ar.t1x: Maltese verbs have one 3 pl form, which may correspond in Arabic to 3 pl m form, 3 pl f form or 3 dualis form. I have written a rule translating Maltese 3 pl to Arabic 3 du: a stupid choice, but 100% justified from the point of view of the "Where is James" story.
+
+
+
+
+Things I didn't do at all:
+
+- I didn't have time to work on Maltese disambiguation, although there is only one place where this is a real problem: Maltese ħoss is either ħoss/ħoss<n><GD><sg> or ħass<vblex><imp><p2><sg>, the first analysis is correct, but the second one is chosen.
+
+- I didn't write postgeneration rules, but every freestanding و should be attached to the next word, same for freestanding ل-s, and أن هي should be replaced by أنها.
+
+
+
+
+Some remarks on the Maltese analyser and mt-he in general:
+
+- 'ma' is an immanent part of Maltese negation patterns and it should be treated as such. That's simply how it is, but it is especially important when translating to Arabic: in Hebrew, you can simply translate 'ma' to 'לא', in Arabic there are many negation particles and you have to know what is being negated in order to choose the right one. 
+
+- many verbs go with prepositions and such prepositions should be taken into account in verbal entries (discontinuous multiwords approach may be the right one, I used a dirty simple multiwords solution). It is important because in such cases verb and preposition shouldn't be translated separately.
 

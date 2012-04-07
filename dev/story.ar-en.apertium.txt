@@ -1,0 +1,53 @@
+"Fejn huwa James": apertium mt-ar translation
+
+Errors are marked with [] and explained.
+
+There are some differences between English "Where is James" and English translation below, that is English translation of the Arabic translation of the Maltese version. These are not apertium-mt-ar translation errors. They are caused by differences between English "Where is James" and Maltese "Fejn huwa James" (for example, "mother is inside the house" in English and in Maltese "mother is inside"; or "she can't see anything" in English and "she doesn't see anything" in Maltese).
+
+Every freestanding و and ل should be attached to the next word in postgeneration.
+
+
+1	أين هو جيمس? 
+
+Where is James?
+
+2	جيمس و مريم  في الحديقة. الطقس جميل اليوم, حار جداً. لكن امس كان بارداً جداً! لم يستطيعا أن يلعبا خارجاً ذاك اليوم. جيمس و مريم يحبان أن يلعبا, دائماً يلعبان معاً في الحديقة أمام البيت الكبيرة.
+
+James and Mary are in the garden. The weather is nice today, it is very warm. But yesterday it was very cold! They could not play outside then. James and Mary love to play, they always play together in the garden in front of the big house [adj sg f, n sg m; should be: adj sg m, n sg m, in Maltese: adj f sg, n f sg].
+
+3	جيمس هو ولد صغير و عنده  ست سنوات. البنت الصغيرة هي أخته, عندها  خمس سنوات. جيمس عنده  كلب صغير, الكلب أيضاً  في الحديقة الآن. الكلب يحب أن يلعب مع الطفلين. الكلب فرح جداً الآن.
+
+James is a little boy and he is six years old. The little girl is his sister, she is five years old. James has a small dog, the dog is also in the garden now. The dog likes to play with the two children. The dog is very happy now.
+
+4	مريم أيضاً عندها  كلب? لا, مريم ليس عندها  كلب, عندها  قط. لكن القط  داخلاً, القط   ينام.
+
+Does Mary also have a dog? No, Mary does not have a dog, she has a cat. But the cat is inside, the cat is sleeping.
+
+5	أمهما  داخلاً مع القط, تنظر من خلال النافذة و ترى  جيمس و  مريم يلعبان. جيمس يجري بسرعة إلى شجرة كبيرة قديمة, هو   يختبئ من مريم. تعرفون لماذا? مريم   تجلس و عندها  يداها أمام عيناها. هي لا   ترى شيء و   تعد. لماذا   تفعل هكذا? و ماذا   يفعل جيمس قرب الشجرة?
+
+Their mother is inside with the cat, she looks through the window and sees James and Mary playing. James runs quickly to a big old tree, he is hiding from Mary. Do you know why? Mary is sitting and has ["has" should be omitted] her hands in front of her eyes [Nom instead of Gen, in Arabic prepositions always with Gen]. She doesn't see anything [Nom instead of Acc, in Arabic direct object always in Acc] and she is counting. Why does she do that? And what is James doing near the tree?
+
+6	هذه هي لعبة. عندما مريم تنهي تعد تنظر حولها .   تبحث عن  جيمس: أين ذهب? رأيتواه?
+
+It is a game. When Mary has finished counting she looks around. She is searching for James: where did he go? Did you see him?
+
+7	مريم لا تعرف أين هو جيمس. تسأل  كلب: "رأيت  جيمس?". لكن الكلب لا يتكلم طبعاً! لذلك مريم لا تحصل على جواب ل السؤال لديها . أحد لا يحصل على جواب عندما يتكلم مع الكلاب!
+
+Mary does not know where James is. She asks a dog [Nom instead of Acc, the rule I wrote for Maltese "lil" after verb is too simple]: "Did you see James?". But the dog can not speak of course! So Mary gets no answer to the question she has [a bit unnatural, should be rather: to her question, noun with possessive pronoun, in Maltese there is an analytical possessive construction here]. One never gets an answer when he speaks to the dogs!
+
+8	مريم تنظر إلى أمها في النافذة, أمها   تضحك. مريم تفكر #أن هي رأت أين ذهب جيمس: "قول لي أين هو!", تقول ل أمها. "لا مريم, لا أستطيع أن أقول لك!", ترد عليها. رغم أن من المحتمل تعرف أين هو, لا تريد أن تقول.
+
+Mary looks at her mother in the window, her mother is laughing. Mary thinks that she
+[here "that" + free pronoun should be converted to "that" + poss. pronoun in postgeneration] has seen where James went: "Tell [imperat. 2 sg m instead of imperat. 2 sg f, in Maltese no gender distinction for 2 sg] me where he is!", she says to her mother. "No Mary, I can't tell you!", she replies. Although probably she knows [a bit unnatural syntax] where he is, she does not want to tell.
+
+9	مريم تمشي ببطء حول الحديقة. لا تزال   تحاول أن تجد  جيمس. تنظر تحت الطاولة و تحت الكراسي, لكن جيمس ليس هناك. تنظر في كل مكان لكن لا تستطيع أن تجد  جيمس.
+
+Mary walks slowly around the garden. She is still trying to find James. She looks under the table and under the chairs, but James is not there. She looks everywhere but she can not find James.
+
+10	حينئذ تسمع @ħass جاء من وراء الشجرة الكبيرة القديمة. تقول هذا جيمس? هناك هو هذا #ال @ħass رجع!  منتبهة تستمع. هذا ليس عصفوراً أو حيوان آخر. الآن   تسمعه جيداً. بالتأكيد جيمس هذا!
+
+Then she hears ħass [Maltese disambiguation problem] coming from behind the big old tree. She says/You say that James? [instead of "could that be James": seems it is possible to use Maltese għad (qal) verb, 'to say', in order to express possibility, certainty etc.] There is that ħass [again, disambiguation problem] again! Carefully she listens [syntactical error, should be: she listens carefully]. It is not a bird or another animal. She hears it well now. Certainly James is that! [wrong syntax]
+
+11	حينئذ ترى أيضاً يد صغير و عندما تمشي أقرب ترى أيضاً رأسه! تضحك و تقول: "وجدتك!". الاثنان يفرحان و يمشيان إلى البيت, حان الوقت كي يأكلان شيء و يشربان بعض ماء!
+
+Then she also sees a little hand [both noun and adj are in Nom, should be in Acc] and when she walks closer she also sees his head! She laughs and says: "I found you!". They are both happy and go to the house, it is time they eat something [Nom instead of Acc] and drink some water! ["eat" and "drink" are in indicative, should be in subjuntive]

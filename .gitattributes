@@ -16,6 +16,9 @@
 /apertium-mt-ar.post-ar.dix -text
 /autogen.sh -text
 /configure.ac -text
+dev/README -text
+dev/story.ar-en.apertium.txt -text
+dev/story.ar-en.googletranslate.txt -text
 dev/story.ar.apertium.txt -text
 dev/story.ar.googletranslate.txt -text svneol=unset#application/octet-stream
 dev/story.ar.txt -text svneol=unset#application/octet-stream
