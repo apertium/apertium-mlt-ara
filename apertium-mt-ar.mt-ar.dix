@@ -29,6 +29,8 @@
      <sdef n="mf"/>
      <sdef n="nt"/>
 
+     <sdef n="an"/>
+
      <sdef n="p1"/>
      <sdef n="p2"/>
      <sdef n="p3"/>
@@ -167,7 +169,7 @@
      <e r="RL"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
 
 
-     <e><p><l>li<s n="rel"/></l><r>أن<s n="cnjsub"/></r></p></e>
+     <e><p><l>li<s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></l><r>أن<s n="cnjsub"/></r></p></e>
      <e><p><l>jew<s n="prn"/></l><r>أو<s n="prn"/></r></p></e>
 
      <e><p><l>ħadd<s n="prn"/></l><r>أحد<s n="prn"/></r></p></e> 
@@ -220,7 +222,7 @@
 
      <e><p><l>l<s n="det"/><s n="def"/></l><r>ال<s n="det"/><s n="def"/></r></p></e>
      <e r="LR"><p><l>l<s n="det"/><s n="def"/><s n="mf"/><s n="sp"/></l><r>ال<s n="det"/><s n="def"/></r></p></e>
-     <e><p><l>ħafna<s n="det"/><s n="qnt"/><s n="mf"/></l><r>جداً<s n="det"/><s n="qnt"/><s n="mf"/></r></p></e>
+     <e><p><l>ħafna<s n="det"/><s n="qnt"/><s n="mf"/></l><r>جدا<s n="det"/><s n="qnt"/><s n="mf"/></r></p></e>
 
      <!-- There's no dak/dan-distinction in Hebrew: -->
      <e>       <p><l>dak<s n="det"/><s n="dem"/></l><r>هذا<s n="det"/><s n="dem"/></r></p></e>
@@ -303,19 +305,19 @@
      <e><p><l>illum<s n="adv"/></l><r>اليوم<s n="adv"/></r></p></e>
      <e><p><l>llum<s n="adv"/></l><r>اليوم<s n="adv"/></r></p></e>
      <e><p><l>ilbieraħ<s n="adv"/></l><r>امس<s n="adv"/></r></p></e>
-     <e><p><l>barra<s n="adv"/></l><r>خارجاً<s n="adv"/></r></p></e> <!-- החוצה -->
+     <e><p><l>barra<s n="adv"/></l><r>خارجا<s n="adv"/></r></p></e> <!-- החוצה -->
      <e><p><l>il<b/>barra<s n="adv"/></l><r>الخارج<s n="adv"/></r></p></e>
-     <e><p><l>flimkien<s n="adv"/></l><r>معاً<s n="adv"/></r></p></e>
-     <e><p><l>ovvjament<s n="adv"/></l><r>طبعاً<s n="adv"/></r></p></e> <!-- ברור -->
+     <e><p><l>flimkien<s n="adv"/></l><r>معا<s n="adv"/></r></p></e>
+     <e><p><l>ovvjament<s n="adv"/></l><r>طبعا<s n="adv"/></r></p></e> <!-- ברור -->
      <!-- quddiem should be a preposition (too?) -->
      <e><p><l>quddiem<s n="adv"/></l><r>أمام<s n="adv"/></r></p></e>
      <e><p><l>dakinhar<s n="adv"/></l><r>ذاك<b/>اليوم<s n="adv"/></r></p></e>
-     <e><p><l>ukoll<s n="adv"/></l><r>أيضاً<s n="adv"/></r></p></e>
-     <e><p><l>dejjem<s n="adv"/></l><r>دائماً<s n="adv"/></r></p></e>
+     <e><p><l>ukoll<s n="adv"/></l><r>أيضا<s n="adv"/></r></p></e>
+     <e><p><l>dejjem<s n="adv"/></l><r>دائما<s n="adv"/></r></p></e>
      <e><p><l>bil-mogħod<s n="adv"/></l><r>ببطء<s n="adv"/></r></p></e>
      <e><p><l>bħalissa<s n="adv"/></l><r>الآن<s n="adv"/></r></p></e>
      <e><p><l>imbagħad<s n="adv"/></l><r>حينئذ<s n="adv"/></r></p></e> 
-     <e><p><l>anke<s n="adv"/></l><r>أيضاً<s n="adv"/></r></p></e><!-- אפילו -->
+     <e><p><l>anke<s n="adv"/></l><r>أيضا<s n="adv"/></r></p></e><!-- אפילו -->
      <e><p><l>allura<s n="adv"/></l><r>لذلك<s n="adv"/></r></p></e>
      <e><p><l>issa<s n="adv"/></l><r>الآن<s n="adv"/></r></p></e>
      <e><p><l>hekk<s n="adv"/></l><r>هكذا<s n="adv"/></r></p></e>
@@ -323,7 +325,7 @@
      <e><p><l>taħt<s n="adv"/></l><r>تحت<s n="pr"/></r></p></e> <!-- miri: prep, not adv? -->
      <e><p><l>kullimkien<s n="adv"/></l><r>في<b/>كل<b/>مكان<s n="adv"/></r></p></e> 
      <e><p><l>hemm<s n="adv"/></l><r>هناك<s n="adv"/></r></p></e>
-     <e><p><l>sew<s n="adv"/></l><r>جيداً<s n="adv"/></r></p></e>
+     <e><p><l>sew<s n="adv"/></l><r>جيدا<s n="adv"/></r></p></e>
      <e><p><l>bilfors<s n="adv"/></l><r>بالتأكيد<s n="adv"/></r></p></e>
      <e><p><l>biex<s n="adv"/><s n="itg"/></l><r>كي<s n="adv"/><s n="itg"/></r></p></e>
 
@@ -333,9 +335,9 @@
 
 
      <!-- miri (פנימה, בתוך, בפנים) -->
-     <e c="  0"><p><l>ġewwa<s n="adv"/></l><r>داخلاً<s n="adv"/></r></p></e>
-     <e slr="1"><p><l>ġewwa<s n="adv"/></l><r>داخلاً<s n="adv"/></r></p></e>
-     <e slr="2"><p><l>ġewwa<s n="adv"/></l><r>داخلاً<s n="adv"/></r></p></e>
+     <e c="  0"><p><l>ġewwa<s n="adv"/></l><r>داخلا<s n="adv"/></r></p></e>
+     <e slr="1"><p><l>ġewwa<s n="adv"/></l><r>داخلا<s n="adv"/></r></p></e>
+     <e slr="2"><p><l>ġewwa<s n="adv"/></l><r>داخلا<s n="adv"/></r></p></e>
 
      <e c="  0"><p><l>malajr<s n="adv"/></l><r>بسرعة<s n="adv"/></r></p></e>
      <e slr="1"><p><l>malajr<s n="adv"/></l><r>بسرعة<s n="adv"/></r></p></e>
