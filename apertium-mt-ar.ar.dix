@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dictionary>
-  <alphabet>אבגדהוזחטיכךלמםנןסעפףצץקרשת•ﭏ</alphabet>
+  <alphabet>اأإآبتثجحخدذرزسشصضطظعغفقكلمنهويىءؤئ</alphabet>
   <sdefs>
     <sdef n="n"           c="Noun"/>
     <sdef n="pr"          c="Preposition"/>
@@ -23,7 +23,7 @@
     <sdef n="nom"         c="Nominative"/>
     <sdef n="gen"         c="Genitive"/>
     <sdef n="acc"         c="Accusative"/>
-    <sdef n="genacc"         c="Genitive / Accusative"/>
+    <sdef n="genacc"      c="Genitive / Accusative"/>
 
     <sdef n="top"         c="Toponym"/>
     <sdef n="ant"         c="Anthroponym"/>
@@ -90,7 +90,7 @@
     <!-- SECTION: Punctuation -->
 
     <pardef n="separa">
-      <e><re>[.\?;:!]</re><p>          <l></l><r><s n="sent"/></r></p></e>
+      <e><re>[.\?;:!؟؛]</re><p>          <l></l><r><s n="sent"/></r></p></e>
     </pardef>
     <pardef n="coma">
       <e><p>          <l>,</l><r>,<s n="cm"/></r></p></e>
@@ -220,8 +220,8 @@
     <!-- SECTION: Pronouns -->
 
     <pardef n="prsubj__prn">
-      <e><p><l>אני</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-      <e><p><l>אנחנו</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e><p><l>أنا</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e><p><l>نحن</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
       <e r="LR"><p><l>אנו</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
       <e><p><l>אתה</l><r>prpers<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
       <e><p><l>את</l><r>prpers<s n="prn"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
@@ -297,8 +297,10 @@
         <e><p><l>هن</l><r><s n="px3pl_f"/></r></p></e>
     </pardef>
 
+
     <pardef n="حد/يقة__n_f"> 
         <e><p><l>يقة</l><r>يقة<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+        <e><p><l>يقة</l><r>يقة<s n="n"/><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
         <e><p><l>ائق</l><r>يقة<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
 
@@ -321,6 +323,7 @@
 
     <pardef n="كل/ب__n_m"> 
         <e><p><l>ب</l><r>ب<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+        <e><p><l>با</l><r>ب<s n="n"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
         <e><p><l>اب</l><r>ب<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     </pardef>
 
@@ -347,6 +350,7 @@
 
     <pardef n="حيوان__n_m">
         <e><p><l></l><r><s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+        <e><p><l>ا</l><r><s n="n"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
         <e><p><l>ات</l><r><s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     </pardef>
 
@@ -374,9 +378,12 @@
 
     <pardef n="يد__n_f">  
         <e><p><l></l><r><s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+        <e><p><l>ا</l><r><s n="n"/><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
         <e><p><l></l><r><s n="n"/><s n="f"/><s n="sg"/></r></p><par n="S__مدرس"/></e>
         <e><p><l>ان</l><r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+        <e><p><l>ين</l><r><s n="n"/><s n="f"/><s n="pl"/><s n="gen"/></r></p></e>
         <e><p><l>ا</l><r><s n="n"/><s n="f"/><s n="pl"/></r></p><par n="S__مدرس"/></e>
+        <e><p><l>ي</l><r><s n="n"/><s n="f"/><s n="pl"/><s n="gen"/></r></p><par n="S__مدرس"/></e>
     </pardef>
 
 
@@ -387,6 +394,7 @@
 
     <pardef n="/سؤال__n_m">  
         <e><p><l>سؤال</l><r>سؤال<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+        <e><p><l>سؤالها</l><r>سؤال<s n="n"/><s n="m"/><s n="sg"/><s n="px3sg_f"/></r></p></e>
         <e><p><l>أسئلة</l><r>سؤال<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     </pardef>
 
@@ -419,6 +427,7 @@
 
     <pardef n="/صوت__n_m">  
         <e><p><l>صوت</l><r>صوت<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+        <e><p><l>صوتا</l><r>صوت<s n="n"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
         <e><p><l>أصوات</l><r>أصوات<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     </pardef>
 
@@ -428,10 +437,12 @@
 
     <pardef n="مريم__np">
       <e><p><l></l><r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l></l><r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
     </pardef>
 
     <pardef n="جيمس__np">
       <e><p><l></l><r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l></l><r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
     </pardef>
 
 
@@ -455,6 +466,7 @@
     <pardef n="صغ/ير__adj"> 
         <e><p><l>ير</l><r>ير<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
         <e><p><l>يرة</l><r>ير<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
+        <e><p><l>يرة</l><r>ير<s n="adj"/><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
         <e><p><l>ار</l><r>ير<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
         <e><p><l>راء</l><r>ير<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
     </pardef>
@@ -493,30 +505,28 @@
 
     <e lm="لكن"><i>لكن</i><par n="ו__cnjcoo"/></e>
     <e lm="أن"><i>أن</i><par n="أن__cnjsubj"/></e>
+    <e lm="كي"><i>كي</i><par n="أن__cnjsubj"/></e>
+
+    <e lm="و" r="RL"><p><l><a/>و</l><r>و<s n="cnjcoo"/></r></p></e>
+    <e lm="أو"><i>أو</i><par n="ו__cnjcoo"/></e>
+    <e lm="عندما"><i>عندما</i><par n="ו__cnjcoo"/></e>
+    <e lm="أن" r="RL">  <p><l><a/>أن</l><r>أن<s n="cnjsub"/></r></p></e>
+<!--     <e lm="أن"><i>أن</i><par n="כאשר__cnjsub"/></e> -->
+    <e lm="رغم أن"><i>رغم<b/>أن</i><par n="כאשר__cnjsub"/></e>
+
 
     <!-- SECTION: Pronouns -->
     <e lm="personal subject pronouns"><i/><par n="prsubj__prn"/></e>
-    <e lm="شيء" c="nothing"><i>شيء</i><par n="אחר__prn"/></e>   
-    <e lm="شيء" c="nothing"><i>شيء</i><par n="משהו__prn"/></e>    
+    <e lm="شيء" c="something"><p><l>شيء</l><r>شيء<s n="prn"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
+    <e lm="شيء" c="something"><p><l>شيئا</l><r>شيء<s n="prn"/><s n="ind"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>       
     <e lm="ماذا" c=""><i>ماذا</i><par n="חלק__prn"/></e>
     <e lm="هذا" c="this"><i></i><par n="/זה__prn"/></e>
     <e lm="أحد"><i>أحد</i><par n="אחר__prn"/></e>
     <e lm="أخر" c="another"><i>آخر</i><par n="אחר__prn"/></e>
-    <e lm="بعض" c="a little, few"><i>بعض</i><par n="חלק__prn"/></e>
+    <e lm="بعض" c="a little, few"><p><l>بعض</l><r>بعض<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
+    <e lm="بعض" c="a little, few"><p><l>بعض</l><r>بعض<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/><s n="acc"/></r></p></e>
 
     
-    <!-- Possessive pronouns -->
-    <e lm="שלי" c="mine"><i>שלי</i><par n="שלי__prn"/></e>
-    <e lm="שלנו" c="ours"><i>שלנו</i><par n="שלי__prn"/></e>
-    <e lm="שלך" c="yours (sg)"><i>שלך</i><par n="שלי__prn"/></e>
-    <e lm="שלכם" c="yours (pl)"><i>שלכם</i><par n="שלי__prn"/></e>
-    <e lm="שלו" c="his"><i>שלו</i><par n="שלי__prn"/></e>
-    <e lm="שלה" c="hers"><i>שלה</i><par n="שלי__prn"/></e>
-    <e lm="שלהם" c="theirs (m)"><i>שלהם</i><par n="שלי__prn"/></e>
-    <e lm="שלהן" c="theirs (f)"><i>שלהן</i><par n="שלי__prn"/></e>
-
-    <e lm="כי"><i>כי</i><par n="כי__rel"/></e>
-
     <!-- SECTION: Prepositions -->
 
     <e lm="في"><i>في</i><par n="ללא__pr"/></e>
@@ -532,6 +542,7 @@
     <e lm="تحت"><i>تحت</i><par n="ללא__pr"/></e>
     <e lm="أقرب"><i>أقرب</i><par n="ללא__pr"/></e>
     <e lm="وراء"><i>وراء</i><par n="ללא__pr"/></e>
+    <e lm="أمام"><i>أمام</i><par n="ללא__pr"/></e>
 
     <e lm="حول"><p><l>حول</l><r>حول<s n="pr"/></r></p></e>
     <!-- there should be paradigms for prep + suffixes, both in Ar. and in Malt. -->
@@ -603,7 +614,6 @@
     <e lm="معا"><i>معا</i><par n="עכשיו__adv"/></e>
     <e lm="طبعا"><i>طبعا</i><par n="עכשיו__adv"/></e>
     <e lm="ذاك اليوم"><i>ذاك<b/>اليوم</i><par n="עכשיו__adv"/></e>
-    <e lm="أمام"><i>أمام</i><par n="עכשיו__adv"/></e>
     <e lm="أيضا"><i>أيضا</i><par n="עכשיו__adv"/></e>
     <e lm="دائما"><i>دائما</i><par n="עכשיו__adv"/></e>
     <e lm="بسرعة" c="quickly"><i>بسرعة</i><par n="עכשיו__adv"/></e>
@@ -619,7 +629,6 @@
     <e lm="هناك"><i>هناك</i><par n="עכשיו__adv"/></e>
     <e lm="جيدا"><i>جيدا</i><par n="עכשיו__adv"/></e>
     <e lm="بالتأكيد"><i>بالتأكيد</i><par n="עכשיו__adv"/></e>
-    <e lm="كي"><i>كي</i><par n="איך__adv"/></e>
 
 
     <!-- SECTION: Verbs -->
@@ -708,8 +717,8 @@
 <e lm="فكر"><p><l>تفكر</l><r>فكر<s n="vblex"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e lm="فكر"><p><l>تفكر</l><r>فكر<s n="vblex"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 
-<e lm="قال ل"><p><l>تقول<b/>ل</l><r>قال<b/>ل<s n="vblex"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
-<e lm="قال ل"><p><l>تقول<b/>ل</l><r>قال<b/>ل<s n="vblex"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e lm="قال ل" r="RL"><p><l>تقول<b/><a/>ل</l><r>قال<b/>ل<s n="vblex"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e lm="قال ل" r="RL"><p><l>تقول<b/><a/>ل</l><r>قال<b/>ل<s n="vblex"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 <e lm="قال ل"><p><l>قول<b/>لي</l><r>قال<b/>ل<s n="vblex"/><s n="imp"/><s n="p2"/><s n="m"/><s n="sg"/><s n="px1sg"/></r></p></e>
 <e lm="قال ل"><p><l>قولي<b/>لي</l><r>قال<b/>ل<s n="vblex"/><s n="imp"/><s n="p2"/><s n="f"/><s n="sg"/><s n="px1sg"/></r></p></e>
 <e lm="قال ل"><p><l>أقول<b/>لك</l><r>قال<b/>ل<s n="vblex"/><s n="pres"/><s n="subjun"/><s n="p1"/><s n="sg"/><s n="px2sg_m"/></r></p></e>
@@ -754,6 +763,7 @@
 <e lm="استمع"><p><l>تستمع</l><r>استمع<s n="vblex"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 
 <e lm="جاء"><p><l>جاء</l><r>جاء<s n="vblex"/><s n="pprs"/><s n="m"/><s n="sg"/></r></p></e>
+<e lm="جاء"><p><l>جائيا</l><r>جاء<s n="vblex"/><s n="pprs"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
 
 <e lm="رجع"><p><l>رجع</l><r>رجع<s n="vblex"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
 
@@ -764,19 +774,9 @@
   </section>
 
   <!-- Post-blank words -->
-  <section id="stuff" type="postblank">
+<!--  <section id="stuff" type="postblank">
 
-    <!-- SECTION: Conjunctions -->
-
-    <e lm="و" r="RL"><p><l><a/>و</l><r>و<s n="cnjcoo"/></r></p></e>
-    <e lm="أو"><i>أو</i><par n="ו__cnjcoo"/></e>
-    <e lm="عندما"><i>عندما</i><par n="ו__cnjcoo"/></e>
-    <e lm="أن" r="RL">  <p><l><a/>أن</l><r>أن<s n="cnjsub"/></r></p></e>
-<!--     <e lm="أن"><i>أن</i><par n="כאשר__cnjsub"/></e> -->
-    <e lm="رغم أن"><i>رغم<b/>أن</i><par n="כאשר__cnjsub"/></e>
-
-
- </section>
+ </section> -->
 
   <!-- Inconditionals -->
   <section id="final" type="inconditional">

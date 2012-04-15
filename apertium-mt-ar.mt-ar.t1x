@@ -11,6 +11,7 @@
     </def-cat>
     <def-cat n="nom">
       <cat-item tags="n.*"/>
+      <cat-item tags="np.*"/>
     </def-cat>
     <def-cat n="numeral">
       <cat-item tags="num"/>
@@ -21,7 +22,7 @@
     </def-cat>
     <def-cat n="prep">
       <cat-item tags="pr"/>
-      <cat-item tags="pr.*"/>
+      <cat-item tags="pr.*"/> 
     </def-cat>
     <def-cat n="pron">
       <cat-item tags="prn.*"/>
@@ -77,6 +78,22 @@
     <def-cat n="biex"> 
       <cat-item tags="cnjsub" lemma="biex"/>
     </def-cat>
+    <def-cat n="prepgen">
+      <cat-item tags="pr" lemma="quddiem"/>
+    </def-cat>
+    <def-cat n="pron_ind"> 
+      <cat-item tags="prn.ind.*"/>
+    </def-cat>
+    <def-cat n="nom_attr"> 
+      <cat-item tags="adj.*"/>
+      <cat-item tags="vblex.pprs.*"/>
+    </def-cat>
+    <def-cat n="cnjcoo"> 
+      <cat-item tags="cnjcoo"/>
+    </def-cat>
+    <def-cat n="adv"> 
+      <cat-item tags="adv"/>
+    </def-cat>
   </section-def-cats>
 
 
@@ -120,20 +137,20 @@
     <def-attr n="poss">
        <attr-item tags="px1sg"/>
        <attr-item tags="px2sg"/> <!-- maltese-only -->
-       <attr-item tags="px2sg_m"/> <!-- hebrew-only -->
-       <attr-item tags="px2sg_f"/> <!-- hebrew-only -->
+       <attr-item tags="px2sg_m"/> <!-- arabic-only -->
+       <attr-item tags="px2sg_f"/> <!-- arabic-only -->
        <attr-item tags="px3sg"/>
        <attr-item tags="px3sg_m"/>
        <attr-item tags="px3sg_f"/>
        <attr-item tags="px1pl"/>
        <attr-item tags="px2du"/> <!-- arabic only -->
        <attr-item tags="px2pl"/> <!-- maltese only -->
-       <attr-item tags="px2pl_m"/> <!-- hebrew only -->
-       <attr-item tags="px2pl_f"/> <!-- hebrew only -->
-       <attr-item tags="px3du"/> <!-- maltese only -->
+       <attr-item tags="px2pl_m"/> <!-- arabic only -->
+       <attr-item tags="px2pl_f"/> <!-- arabic only -->
+       <attr-item tags="px3du"/>
        <attr-item tags="px3pl"/> <!-- maltese only -->
-       <attr-item tags="px3pl_m"/> <!-- hebrew only -->
-       <attr-item tags="px3pl_f"/> <!-- hebrew only -->
+       <attr-item tags="px3pl_m"/> <!-- arabic only -->
+       <attr-item tags="px3pl_f"/> <!-- arabic only -->
     </def-attr>
     <def-attr n="pers">
        <attr-item tags="p1"/>
@@ -149,6 +166,9 @@
        <attr-item tags="prn.itg"/>
        <attr-item tags="prn.pers"/>
        <attr-item tags="prn.pos"/>
+    </def-attr>
+    <def-attr n="a_prn_ind">
+       <attr-item tags="prn.ind"/>
     </def-attr>
     <def-attr n="a_verb">
        <attr-item tags="vblex"/>
@@ -173,6 +193,10 @@
     <def-attr n="a_numeral">
        <attr-item tags="num"/>
     </def-attr>
+    <def-attr n="a_nom_attr">
+       <attr-item tags="adj"/>
+       <attr-item tags="vblex.pprs"/>
+    </def-attr>
   </section-def-attrs>
 
 
@@ -180,6 +204,10 @@
     <def-var n="numero"/>
     <def-var n="genero"/>
     <def-var n="person"/>
+
+    <def-var n="gen_chunk"/>
+    <def-var n="nbr_chunk"/>
+    <def-var n="paraula1"/>
   </section-def-vars>
 
 
@@ -315,36 +343,21 @@
 
 
 
-
-    <!-- <equal><var n="genero"/><lit-tag v="f"/></equal> -->
     <def-macro n="modify_verb_and_genero" npar="1" c="Guess verb gender, no gender for p1">
 
       <choose>
-      <when c="Default genero to 'm' unless set to 'm' or 'f'">
-        <test><not><or>
-          <equal><clip pos="1" side="tl" part="gen"/><lit-tag v="m"/></equal>
-          <equal><clip pos="1" side="tl" part="gen"/><lit-tag v="f"/></equal>
-        </or></not></test>
-        <let>
-          <var n="genero"/><lit-tag v="m"/>
-        </let>
-      </when>
-      <when>
-	<test>
-          <equal><clip pos="1" side="tl" part="gen"/><lit-tag v="m"/></equal>
-	</test>
-        <let>
-          <var n="genero"/><lit-tag v="m"/>
-        </let>
-      </when>
-      <when>
-	<test>
-          <equal><clip pos="1" side="tl" part="gen"/><lit-tag v="f"/></equal>
-	</test>
-        <let>
-          <var n="genero"/><lit-tag v="f"/>
-        </let>
-      </when>
+        <when> 
+          <test>
+            <equal>
+              <clip pos="1" side="tl" part="gen"/>
+              <lit-tag v="f"/>
+            </equal>
+          </test>
+          <let><var n="genero"/><lit-tag v="f"/></let>
+        </when>
+        <otherwise>
+          <let><var n="genero"/><lit-tag v="m"/></let>
+        </otherwise>
       </choose>
       <choose><when c="first-persons have no gender">
         <test>
@@ -367,11 +380,374 @@
     </def-macro> 
 
 
+
+    <!-- copied from apertium-en-es.en-es.t1x -->
+    <!-- case agreement should be added -->
+
+    <def-macro n="f_concord2" npar="2"><!--1 = main parameter (typically noun); 2 = secondary parameter (typically adj or det) -->
+      <let>
+	<var n="gen_chunk"/>
+	<lit v=""/>
+      </let>
+      <let>
+	<var n="nbr_chunk"/>
+	<lit v=""/>
+      </let>
+      <choose><!--posa GD i ND a la paraula si no té valor per a gènere o per a nombre (excepte números) -->
+	<when>
+	  <test>
+	    <equal>
+	      <clip pos="2" side="tl" part="a_num"/>
+	      <lit v=""/>
+	    </equal>
+	  </test>
+	  <choose><!--si no te valor per a gènere i , per tant, tampoc per a nombre: -->
+	    <when>
+	      <test>
+		<equal>
+		  <clip pos="2" side="tl" part="gen"/>
+		  <lit v=""/>
+		</equal>
+	      </test>
+	      <let>
+		<var n="paraula1"/>
+		<clip pos="2" side="tl" part="lemh"/>
+	      </let>
+	      <append n="paraula1">
+		<clip pos="2" side="tl" part="tags"/>
+		<lit-tag v="GD"/>
+		<lit-tag v="ND"/>
+		<clip pos="2" side="tl" part="lemq"/>
+	      </append>
+	      <let>
+		<clip pos="2" side="tl" part="whole"/>
+		<var n="paraula1"/>
+	      </let>
+	    </when>
+	    <when><!--si la paraula no té valor per a nombre (però sí per a gènere, ja que sinó hauria entrat pel when anterior) -->
+	      <test>
+		<equal>
+		  <clip pos="2" side="tl" part="nbr"/>
+		  <lit v=""/>
+		</equal>
+	      </test>
+	      <let>
+		<var n="paraula1"/>
+		<clip pos="2" side="tl" part="lemh"/>
+	      </let>
+	      <append n="paraula1">
+		<clip pos="2" side="tl" part="tags"/>
+		<lit-tag v="ND"/>
+		<clip pos="2" side="tl" part="lemq"/>
+	      </append>
+	      <let>
+		<clip pos="2" side="tl" part="whole"/>
+		<var n="paraula1"/>
+	      </let>
+	    </when>
+	  </choose>
+	</when>
+      </choose>
+
+
+      <!--OPERACIONS DE GÈNERE -->
+      <choose>
+	<when>
+	  <test>
+	    <equal>
+	      <clip pos="2" side="tl" part="gen"/>
+	      <lit-tag v="GD"/>
+	    </equal>
+	  </test>
+	  <choose>
+	    <when>
+	      <test>
+		<equal>
+		  <clip pos="1" side="tl" part="gen"/>
+		  <lit-tag v="GD"/>
+		</equal>
+	      </test>
+	      <let>
+		<var n="gen_chunk"/>
+		<lit-tag v="GD"/>
+	      </let>
+	    </when>
+	    <when>
+	      <test>
+		<not><!--si gènere de pos 1 és masc o fem -->
+		  <or>
+		    <equal>
+		      <clip pos="1" side="tl" part="gen"/>
+		      <lit-tag v="mf"/>
+		    </equal>
+		    <equal>
+		      <clip pos="1" side="tl" part="gen"/>
+		      <lit v=""/>
+		    </equal>
+		  </or>
+		</not>
+	      </test>
+	      <let>
+		<clip pos="2" side="tl" part="gen"/>
+		<clip pos="1" side="tl" part="gen"/>
+	      </let>
+	      <let>
+		<var n="gen_chunk"/>
+		<clip pos="1" side="tl" part="gen"/>
+	      </let>
+	    </when>
+	    <otherwise><!--si gènere pos 1 és mf o no té gènere-->
+	      <let>
+		<var n="gen_chunk"/>
+		<lit-tag v="GD"/>
+	      </let>
+	    </otherwise>
+	  </choose>
+	</when>
+      </choose>
+      <choose>
+	<when>
+	  <test>
+	    <equal>
+	      <clip pos="1" side="tl" part="gen"/>
+	      <lit-tag v="GD"/>
+	    </equal>
+	  </test>
+	  <let>
+	    <var n="gen_chunk"/>
+	    <lit-tag v="GD"/>
+	  </let>	
+	</when>
+	<when>
+	  <test>
+	    <not>
+	      <or>
+		<equal>
+		  <clip pos="1" side="tl" part="gen"/>
+		  <lit-tag v="mf"/>
+		</equal>
+		<equal>
+		  <clip pos="1" side="tl" part="gen"/>
+		  <lit v=""/>
+		</equal>
+	      </or>
+	    </not>
+	  </test>
+	  <let>
+	    <var n="gen_chunk"/>
+	    <clip pos="1" side="tl" part="gen"/>
+	  </let>
+	</when>
+	<otherwise><!--si gènere de pos 1 és mf -->
+	  <choose>
+	    <when>
+	      <test><!--si el gènere de pos 2 és GD, el gènere del chunk serà tb GD (deixant pos 1 com a mf) per si es pot assignar gènere a pos 2 (p. ex. 'the pacient - el/la pacient') -->
+		<not>
+		  <equal>
+		    <clip pos="2" side="tl" part="gen"/>
+		    <lit-tag v="GD"/>
+		  </equal>
+		</not>
+	      </test>
+	      <let>
+		<var n="gen_chunk"/>
+		<clip pos="1" side="tl" part="gen"/>
+	      </let>
+	    </when>
+	  </choose>
+	</otherwise>
+      </choose>
+      <!--OPERACIONS DE NOMBRE -->
+
+      <choose>
+	<when>
+	  <test>
+	    <equal>
+	      <clip pos="2" side="tl" part="nbr"/>
+	      <lit-tag v="ND"/>
+	    </equal>
+	  </test>
+	  <choose>
+	    <when>
+	      <test>
+		<equal>
+		  <clip pos="1" side="tl" part="nbr"/>
+		  <lit-tag v="ND"/>
+		</equal>
+	      </test>
+	      <let>
+		<var n="nbr_chunk"/>
+		<lit-tag v="ND"/>
+	      </let>
+	    </when>
+	    <when>
+	      <test>
+		<not><!--si nombre de pos 1 és masc o fem -->
+		  <or>
+		    <equal>
+		      <clip pos="1" side="tl" part="nbr"/>
+		      <lit-tag v="sp"/>
+		    </equal>
+		    <equal>
+		      <clip pos="1" side="tl" part="nbr"/>
+		      <lit v=""/>
+		    </equal>
+		  </or>
+		</not>
+	      </test>
+	      <let>
+		<clip pos="2" side="tl" part="nbr"/>
+		<clip pos="1" side="tl" part="nbr"/>
+	      </let>
+	      <let>
+		<var n="nbr_chunk"/>
+		<clip pos="1" side="tl" part="nbr"/>
+	      </let>
+	    </when>
+	    <otherwise><!--si nombre pos 1 és sp o no té nombre -->
+	      <let>
+		<var n="nbr_chunk"/>
+		<lit-tag v="ND"/>
+	      </let>
+	    </otherwise>
+	  </choose>
+	</when>
+      </choose>
+      <choose>
+	<when>
+	  <test>
+	    <equal>
+	      <clip pos="1" side="tl" part="nbr"/>
+	      <lit-tag v="ND"/>
+	    </equal>
+	  </test>
+	  <let>
+	    <var n="nbr_chunk"/>
+	    <lit-tag v="ND"/>
+	  </let>	
+	</when>
+	<when>
+	  <test>
+	    <not>
+	      <or>
+		<equal>
+		  <clip pos="1" side="tl" part="nbr"/>
+		  <lit-tag v="sp"/>
+		</equal>
+		<equal>
+		  <clip pos="1" side="tl" part="nbr"/>
+		  <lit v=""/>
+		</equal>
+	      </or>
+	    </not>
+	  </test>
+	  <let>
+	    <var n="nbr_chunk"/>
+	    <clip pos="1" side="tl" part="nbr"/>
+	  </let>
+	</when>
+	<otherwise><!--si nombre de pos 1 és sp -->
+	  <choose>
+	    <when>
+	      <test>
+		<or>
+		  <equal>
+		    <clip pos="2" side="tl" part="nbr"/>
+		    <lit-tag v="sg"/>
+		  </equal>
+		  <equal>
+		    <clip pos="2" side="tl" part="nbr"/>
+		    <lit-tag v="pl"/>
+		  </equal>
+		</or>
+	      </test>
+	      <let>
+		<var n="nbr_chunk"/>
+		<clip pos="2" side="tl" part="nbr"/>
+	      </let>
+	    </when>
+	    <when>
+	      <test><!--si pos 2 és també sp-->
+		<equal>
+		    <clip pos="2" side="tl" part="nbr"/>
+		    <lit-tag v="sp"/>
+		  </equal>
+	      </test>	      
+	      <let>
+		<var n="nbr_chunk"/>
+		<clip pos="1" side="tl" part="nbr"/>
+	      </let>
+	    </when>
+	    <when>
+	      <test><!--si pos 2 no té nombre (ex: xifres) -->
+		<equal>
+		    <clip pos="2" side="tl" part="nbr"/>
+		    <lit v=""/>
+		  </equal>
+	      </test>
+	      <let> <!-- el nombre del chunk serà sp, que no estarà enllaçat amb la posició 2 (pq no té valor per a l'atribut nbr"-->
+		<var n="nbr_chunk"/>
+		<clip pos="1" side="tl" part="nbr"/>
+	      </let>
+	    </when>
+	  </choose>
+	</otherwise>
+      </choose>
+    </def-macro>
+
+
+
+
   </section-def-macros>
 
 
+
   <section-rules>
-    <rule comment="rule: adj">
+
+
+    <rule comment="rule: nom + adj">
+       <pattern>
+         <pattern-item n="artic"/>
+         <pattern-item n="nom"/>
+         <pattern-item n="artic"/>
+         <pattern-item n="adj"/>
+       </pattern>
+       <action>
+         <call-macro n="f_concord2">
+           <with-param pos="2"/>
+           <with-param pos="4"/>
+         </call-macro>
+         <out>
+           <mlu>
+             <lu>
+               <clip pos="1" side="tl" part="whole"/>
+             </lu>
+             <lu>
+               <clip pos="2" side="tl" part="lemh"/>
+               <clip pos="2" side="tl" part="a_nom"/>
+               <clip pos="2" side="tl" part="gen"/>
+               <clip pos="2" side="tl" part="nbr"/>
+               <clip pos="2" side="tl" part="lemq"/>
+             </lu>
+           </mlu>
+	   <b/>
+           <mlu>
+             <lu>
+               <clip pos="3" side="tl" part="whole"/>
+             </lu>
+             <lu>
+               <clip pos="4" side="tl" part="lemh"/>
+               <clip pos="4" side="tl" part="a_adj"/>
+               <var n="gen_chunk"/>
+               <var n="nbr_chunk"/>
+               <clip pos="4" side="tl" part="lemq"/>
+             </lu>
+           </mlu>
+         </out>
+       </action>
+    </rule>
+
+<!--    <rule comment="rule: adj">
        <pattern>
          <pattern-item n="adj"/>
        </pattern>
@@ -390,9 +766,9 @@
            </lu>
          </out>
        </action>
-    </rule>
+    </rule> -->
 
-
+<!--
     <rule comment="rule: pron">
        <pattern>
          <pattern-item n="pron"/>
@@ -413,7 +789,7 @@
          </out>
        </action>
     </rule>
-
+-->
 
     <rule comment="rule: nom">
        <pattern>
@@ -440,6 +816,7 @@
          <pattern-item n="nom"/>
        </pattern>
        <action>
+	 <!-- how is it possible to have both artic. and poss. suffix ? -->
          <call-macro n="set_px_gen"><with-param pos="2"/></call-macro>
          <out>
            <mlu>
@@ -458,6 +835,27 @@
          </out>
        </action>
     </rule>
+
+
+    <rule comment="rule: ta' possessive forms -> possessive suffixes">
+       <pattern>
+         <pattern-item n="artic"/>
+         <pattern-item n="nom"/>
+         <pattern-item n="ta_poss"/>
+       </pattern>
+       <action>
+         <out>
+           <lu>
+             <clip pos="2" side="tl" part="lem"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="3" side="tl" part="poss"/>
+           </lu>
+         </out>
+       </action>
+    </rule>
+
 
 
     <rule comment="rule: artic adj">
@@ -631,6 +1029,7 @@
        </action>
     </rule>
 
+<!--
     <rule comment="rule: artic np">
       <pattern>
         <pattern-item n="artic"/>
@@ -644,17 +1043,20 @@
         </out>
       </action>
     </rule>
+-->
 
     <rule comment="rule: qed">
        <pattern>
          <pattern-item n="qed"/>
        </pattern>
        <action>
-         <out c="Delete 'qed' when followed by unknown">
+	 <!-- miri: but with no additional blank -->
+<!--         <out c="Delete 'qed' when followed by unknown">
            <b/>
-         </out>
+         </out>  -->
        </action>
     </rule>
+
 
     <rule comment="rule: se">
        <pattern>
@@ -694,6 +1096,7 @@
     </rule>
 
 
+
     <rule comment="rule: verb">
        <pattern>
          <pattern-item n="vrb"/>
@@ -717,6 +1120,138 @@
        </action>
     </rule>
 
+
+    <rule comment="rule: dir object in Accusativ ">
+       <pattern>
+         <pattern-item n="vrb"/>
+         <pattern-item n="nom"/>
+         <pattern-item n="nom_attr"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+         <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
+         <call-macro n="f_concord2">
+           <with-param pos="2"/>
+           <with-param pos="3"/>
+	 </call-macro>
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="temps"/>
+             <clip pos="1" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="a_neg"/> 
+             <clip pos="1" side="tl" part="poss"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="3" side="tl" part="lem"/>
+             <clip pos="3" side="tl" part="a_nom_attr"/>
+             <var n="gen_chunk"/>
+             <var n="nbr_chunk"/>
+             <lit-tag v="acc"/>
+           </lu>
+	   </out>
+       </action>
+    </rule> 
+
+
+    <rule comment="rule: dir object in Accusativ ">
+       <pattern>
+         <pattern-item n="vrb"/>
+         <pattern-item n="adv"/>
+         <pattern-item n="nom"/>
+         <pattern-item n="nom_attr"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+         <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
+         <call-macro n="f_concord2">
+           <with-param pos="3"/>
+           <with-param pos="4"/>
+	 </call-macro>
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="temps"/>
+             <clip pos="1" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="a_neg"/> 
+             <clip pos="1" side="tl" part="poss"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+	   <lu>
+             <clip pos="2" side="tl" part="whole"/>
+	   </lu>
+	   <b/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_nom"/>
+             <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="4" side="tl" part="lem"/>
+             <clip pos="4" side="tl" part="a_nom_attr"/>
+             <var n="gen_chunk"/>
+             <var n="nbr_chunk"/>
+             <lit-tag v="acc"/>
+           </lu>
+	   </out>
+       </action>
+    </rule> 
+
+
+    <rule comment="rule: dir object in Accusativ ">
+       <pattern>
+         <pattern-item n="vrb"/>
+         <pattern-item n="pron_ind"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+         <call-macro n="set_px_gen"><with-param pos="1"/></call-macro> 
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="temps"/>
+             <clip pos="1" side="tl" part="mode"/>
+             <clip pos="1" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="a_neg"/> 
+             <clip pos="1" side="tl" part="poss"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lem"/>
+             <clip pos="2" side="tl" part="a_prn_ind"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+           </lu>
+	 </out>
+       </action>
+    </rule> 
 
 
     <rule comment="rule: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in Accusativ ">
@@ -773,6 +1308,46 @@
 	   </out>
        </action>
     </rule> 
+
+
+    <rule comment="rule: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in Accusativ ">
+       <pattern>
+         <pattern-item n="kien"/>
+         <pattern-item n="nom"/>
+         <pattern-item n="cnjcoo"/>
+         <pattern-item n="nom"/>
+       </pattern>
+       <action>
+         <out>
+	   <lu>
+             <clip pos="1" side="tl" part="whole"/>
+	   </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+	   <lu>
+             <clip pos="3" side="tl" part="whole"/>
+	   </lu>
+	   <b/>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_nom"/>
+             <clip pos="4" side="tl" part="gen"/>
+             <clip pos="4" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+	   </out>
+       </action>
+    </rule> 
+
 
     <rule comment="rule: modal verbs ('want', 'like', 'can' etc.): in Arabic followed by أن + so-called subjunctive mood ">
        <pattern>
@@ -844,7 +1419,47 @@
     </rule> 
 
 
+
+    <rule comment="rule: biex (in order that) in Arabic is followed subjunctive mood ">
+       <pattern>
+         <pattern-item n="biex"/>
+         <pattern-item n="vrbpres"/>
+         <pattern-item n="pron_ind"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
+         <call-macro n="set_px_gen"><with-param pos="2"/></call-macro> 
+         <out>
+	   <lu>
+             <clip pos="1" side="tl" part="whole"/>   
+	   </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="temps"/>
+             <lit-tag v="subjun"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="a_neg"/> 
+             <clip pos="2" side="tl" part="poss"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="3" side="tl" part="lem"/>
+             <clip pos="3" side="tl" part="a_prn_ind"/>
+             <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+           </lu>
+	   </out>
+       </action>
+    </rule> 
+
     <rule comment="rule: qagħad ('to stay')">
+    <!-- but double blank is left :( -->
        <pattern>
          <pattern-item n="qagħad"/>
        </pattern>
@@ -891,6 +1506,30 @@
     </rule> 
 
 
+    <rule comment="rule: prep noun">   <!-- prep + noun -> prep + noun/gen -->
+       <pattern>
+         <pattern-item n="prepgen"/>
+         <pattern-item n="nom"/>
+       </pattern>
+       <action>
+         <out>
+	   <lu>
+             <clip pos="1" side="tl" part="whole"/>
+	   </lu><b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <lit-tag v="gen"/>
+             <clip pos="2" side="tl" part="poss"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   </out>
+       </action>
+    </rule> 
+
+
 
     <rule comment="rule: direct object determined">
        <pattern>
@@ -909,8 +1548,20 @@
     <rule comment="rule: direct object">
        <pattern>
          <pattern-item n="d_obj"/>
+         <pattern-item n="nom"/>
        </pattern>
        <action>
+	 <out>
+	   <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+             <clip pos="2" side="tl" part="poss"/>
+             <clip pos="2" side="tl" part="lemq"/>
+	   </lu>
+	 </out>
        </action>
     </rule>
 

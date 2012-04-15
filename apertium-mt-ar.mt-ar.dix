@@ -19,6 +19,7 @@
      <sdef n="abbr"/>
      <sdef n="adv"/>
      <sdef n="adj"/>
+     <sdef n="cnjsubj"/>
 
      <sdef n="sg"/>
      <sdef n="pl"/>
@@ -128,7 +129,7 @@
 
      <e><p><l>fi<s n="pr"/></l><r>في<s n="pr"/></r></p></e>
      <e><p><l>madwar<s n="pr"/></l><r>حول<s n="pr"/></r></p></e>
-     <e><p><l>għand<s n="pr"/></l><r>عند<s n="pr"/></r></p></e>  <!-- miri: ב in Hebrew?! -->
+     <e><p><l>għand<s n="pr"/></l><r>عند<s n="pr"/></r></p></e>  <!-- miri: only ב in Hebrew?! -->
      <e><p><l>ma'<s n="pr"/></l><r>مع<s n="pr"/></r></p></e>
      <e><p><l>ġo<s n="pr"/></l><r>خلال<s n="pr"/></r></p></e>
      <e><p><l>minn<s n="pr"/></l><r>من<s n="pr"/></r></p></e>
@@ -140,6 +141,7 @@
      <e><p><l>qrib<s n="pr"/></l><r>أقرب<s n="pr"/></r></p></e>
      <e><p><l>wara<s n="pr"/></l><r>وراء<s n="pr"/></r></p></e>
      <e><p><l>ta'<s n="pr"/></l><r>لدى<s n="pr"/></r></p></e>
+     <e><p><l>quddiem<s n="pr"/></l><r>أمام<s n="pr"/></r></p></e>
 
      <!-- SECTION: Pronouns -->
 
@@ -174,8 +176,7 @@
 
      <e><p><l>ħadd<s n="prn"/></l><r>أحد<s n="prn"/></r></p></e> 
      <e><p><l>xejn<s n="prn"/></l><r>شيء<s n="prn"/></r></p></e> 
-     <e><p><l>xi<b/>ħaġa<s n="prn"/><s n="ind"/></l><r>شيء<s n="prn"/><s n="ind"/></r></p></e>
-     <e><p><l>xi<b/>haga<s n="prn"/></l><r>شيء<s n="prn"/></r></p></e>
+     <e><p><l>xi<b/>ħaġa<s n="prn"/><s n="ind"/><s n="mf"/><s n="sg"/></l><r>شيء<s n="prn"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
 
      <e><p><l>xi<s n="prn"/></l><r>ماذا<s n="prn"/></r></p></e>
      <e><p><l>ftit<s n="prn"/></l><r>بعض<s n="prn"/></r></p></e> 
@@ -201,12 +202,6 @@
      <e r="LR"><p><l>hom<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
      <e r="RL"><p><l>hom<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
      <e r="RL"><p><l>hom<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
-
-<!--     <e><p><l>ħafna<s n="prn"/><s n="ind"/></l><r>كثير<s n="prn"/><s n="ind"/></r></p></e> -->
-
-
-     <e><p><l>kulħadd<s n="prn"/><s n="ind"/></l><r>כולם<s n="prn"/><s n="ind"/></r></p></e>
-     <e><p><l>bosta<s n="prn"/><s n="ind"/></l><r>כמה<s n="prn"/><s n="ind"/></r></p></e>
 
 
      <!-- SECTION: Possessive pronouns -->
@@ -270,7 +265,7 @@
      <e><p><l>ras<s n="n"/><s n="f"/></l><r>رأس<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>ilma<s n="n"/><s n="f"/></l><r>ماء<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>ħin<s n="n"/><s n="m"/></l><r>وقت<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>ħoss<s n="n"/><s n="GD"/></l><r>صوت<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>ħoss<s n="n"/><s n="m"/></l><r>صوت<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>par<s n="n"/><s n="m"/></l><r>زوج<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>annimal<s n="n"/><s n="m"/></l><r>حيوان<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>kelb<s n="n"/><s n="m"/></l><r>كلب<s n="n"/><s n="m"/></r></p></e>
@@ -309,8 +304,6 @@
      <e><p><l>il<b/>barra<s n="adv"/></l><r>الخارج<s n="adv"/></r></p></e>
      <e><p><l>flimkien<s n="adv"/></l><r>معا<s n="adv"/></r></p></e>
      <e><p><l>ovvjament<s n="adv"/></l><r>طبعا<s n="adv"/></r></p></e> <!-- ברור -->
-     <!-- quddiem should be a preposition (too?) -->
-     <e><p><l>quddiem<s n="adv"/></l><r>أمام<s n="adv"/></r></p></e>
      <e><p><l>dakinhar<s n="adv"/></l><r>ذاك<b/>اليوم<s n="adv"/></r></p></e>
      <e><p><l>ukoll<s n="adv"/></l><r>أيضا<s n="adv"/></r></p></e>
      <e><p><l>dejjem<s n="adv"/></l><r>دائما<s n="adv"/></r></p></e>
@@ -327,7 +320,7 @@
      <e><p><l>hemm<s n="adv"/></l><r>هناك<s n="adv"/></r></p></e>
      <e><p><l>sew<s n="adv"/></l><r>جيدا<s n="adv"/></r></p></e>
      <e><p><l>bilfors<s n="adv"/></l><r>بالتأكيد<s n="adv"/></r></p></e>
-     <e><p><l>biex<s n="adv"/><s n="itg"/></l><r>كي<s n="adv"/><s n="itg"/></r></p></e>
+     <e><p><l>biex<s n="cnjsub"/></l><r>كي<s n="cnjsubj"/></r></p></e>
 
      <e><p><l>se<s n="adv"/></l><r></r></p></e> <!-- Future particle -->
      <e><p><l>qed<s n="adv"/></l><r></r></p></e> <!-- Progressive particle -->

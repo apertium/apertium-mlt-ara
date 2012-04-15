@@ -21,9 +21,6 @@ I have uploaded to dev directory files containing Maltese and Arabic "Where is J
 
 Things that definitely should be written in a different way:
 
-- apertium.mt-ar.ar.dix: in many entries I used the Hebrew tagset only, neglecting noun cases and verb moods, as well as other categories (animate/inanimate nouns etc.) The story "Fejn huwa James" is simple, so I got good results without introducing these categories - for example, most nouns occuring in the story have identical Nom, Gen & Acc forms, so just one noun entry without specified noun case is enough.
-However, there are some transfer rules introducing Acc, subjunctive etc., as well as some Arabic monodix entries with case or mood specified.
-
 - mt.dix & ar.dix: possesive pronouns as tags in verbal entries. I have to see how 'possessive pronouns' are actually treated in mt.dix, when attached to verbs or prepositions.
 
 - apertium-mt-ar.mt-ar.t1x: Maltese verbs have one 3 pl form, which may correspond in Arabic to 3 pl m form, 3 pl f form or 3 dualis form. I have written a rule translating Maltese 3 pl to Arabic 3 du: a stupid choice, but 100% justified from the point of view of the "Where is James" story.
@@ -34,10 +31,6 @@ However, there are some transfer rules introducing Acc, subjunctive etc., as wel
 Things I didn't do at all:
 
 - I didn't have time to work on Maltese disambiguation, although there is only one place where this is a real problem: Maltese ħoss is either ħoss/ħoss<n><GD><sg> or ħass<vblex><imp><p2><sg>, the first analysis is correct, but the second one is chosen.
-
-- I didn't write postgeneration rules, but every freestanding و should be attached to the next word, same for freestanding ل-s, and أن هي should be replaced by أنها.
-
-
 
 
 Some remarks on the Maltese analyser and mt-he in general:

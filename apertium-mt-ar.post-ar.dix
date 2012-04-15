@@ -120,12 +120,27 @@
           <l><a/>ل<b/>ال</l>
           <r>لل</r>
         </p>
-        <!-- <par n="letters"/> -->
-      </e>  <!-- but ل with ال should give لل -->
+      </e> 
+
+      <e>
+        <p>
+          <l><a/>ل<b/></l>
+          <r>ل</r>
+        </p> 
+        <par n="letters"/>
+      </e>
 
       <e>
         <p>
           <l><a/>و<b/></l>
+          <r>و</r>
+        </p>
+        <par n="letters"/>
+      </e>
+
+      <e>
+        <p>
+          <l><a/>و<b/><b/></l>
           <r>و</r>
         </p>
         <par n="letters"/>
