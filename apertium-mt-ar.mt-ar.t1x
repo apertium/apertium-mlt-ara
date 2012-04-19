@@ -66,7 +66,7 @@
     <def-cat n="dualis_num">   
       <cat-item tags="num.mf.sp" lemma="żewġ"/>
     </def-cat>
-    <def-cat n="d_obj">  <!-- this way it will match lil/indirect obj too -->
+    <def-cat n="d_obj">
       <cat-item tags="pr" lemma="lil"/>
     </def-cat>
     <def-cat n="ma_neg"> 
@@ -382,7 +382,6 @@
 
 
     <!-- copied from apertium-en-es.en-es.t1x -->
-    <!-- case agreement should be added -->
 
     <def-macro n="f_concord2" npar="2"><!--1 = main parameter (typically noun); 2 = secondary parameter (typically adj or det) -->
       <let>
@@ -705,7 +704,7 @@
   <section-rules>
 
 
-    <rule comment="rule: nom + adj">
+    <rule comment="rule: nom + adj gender and number agreement">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="nom"/>
@@ -723,11 +722,10 @@
                <clip pos="1" side="tl" part="whole"/>
              </lu>
              <lu>
-               <clip pos="2" side="tl" part="lemh"/>
+               <clip pos="2" side="tl" part="lem"/>
                <clip pos="2" side="tl" part="a_nom"/>
                <clip pos="2" side="tl" part="gen"/>
                <clip pos="2" side="tl" part="nbr"/>
-               <clip pos="2" side="tl" part="lemq"/>
              </lu>
            </mlu>
 	   <b/>
@@ -736,62 +734,18 @@
                <clip pos="3" side="tl" part="whole"/>
              </lu>
              <lu>
-               <clip pos="4" side="tl" part="lemh"/>
+               <clip pos="4" side="tl" part="lem"/>
                <clip pos="4" side="tl" part="a_adj"/>
                <var n="gen_chunk"/>
                <var n="nbr_chunk"/>
-               <clip pos="4" side="tl" part="lemq"/>
              </lu>
            </mlu>
          </out>
        </action>
     </rule>
 
-<!--    <rule comment="rule: adj">
-       <pattern>
-         <pattern-item n="adj"/>
-       </pattern>
-       <action>
-         <call-macro n="f_concord1">
-           <with-param pos="1"/>
-         </call-macro>
-         <out>
-           <lu>
-             <clip pos="1" side="tl" part="lemh"/>
-             <clip pos="1" side="tl" part="a_adj"/>
-             <clip pos="1" side="tl" part="grau"/>
-             <clip pos="1" side="tl" part="gen"/>
-             <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="lemq"/>
-           </lu>
-         </out>
-       </action>
-    </rule> -->
 
-<!--
-    <rule comment="rule: pron">
-       <pattern>
-         <pattern-item n="pron"/>
-       </pattern>
-       <action>
-         <call-macro n="f_concord1">
-           <with-param pos="1"/>
-         </call-macro>
-         <out>
-           <lu>
-             <clip pos="1" side="tl" part="lemh"/>
-             <clip pos="1" side="tl" part="a_prn"/>
-             <clip pos="1" side="tl" part="pers"/>
-             <clip pos="1" side="tl" part="gen"/>
-             <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="lemq"/>
-           </lu>
-         </out>
-       </action>
-    </rule>
--->
-
-    <rule comment="rule: nom">
+    <rule comment="rule: nom">  <!-- possessive pronouns conversion -->
        <pattern>
          <pattern-item n="nom"/>
        </pattern>
@@ -816,7 +770,7 @@
          <pattern-item n="nom"/>
        </pattern>
        <action>
-	 <!-- how is it possible to have both artic. and poss. suffix ? -->
+	 <!-- is it possible to have both artic. and poss. suffix ?? -->
          <call-macro n="set_px_gen"><with-param pos="2"/></call-macro>
          <out>
            <mlu>
@@ -837,7 +791,7 @@
     </rule>
 
 
-    <rule comment="rule: ta' possessive forms -> possessive suffixes">
+    <rule comment="rule: no analytic genitive construction in Arabic, possessive pronouns used instead: ta' possessive forms -> possessive suffixes">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="nom"/>
@@ -857,14 +811,12 @@
     </rule>
 
 
-
     <rule comment="rule: artic adj">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="adj"/>
        </pattern>
        <action>
-         <call-macro n="set_px_gen"><with-param pos="2"/></call-macro>
          <out>
            <mlu>
              <lu>
@@ -880,7 +832,8 @@
            </mlu>
          </out>
        </action>
-    </rule>
+    </rule> 
+
 
     <rule comment="rule: artic numeral">
        <pattern>
@@ -900,7 +853,6 @@
          </out>
        </action>
     </rule>
-
 
 
     <rule comment="rule: nom det">
@@ -972,7 +924,8 @@
            </lu>
          </out>
        </action>
-    </rule>
+    </rule> 
+
 
     <rule comment="rule: det">
        <pattern>
@@ -1014,7 +967,6 @@
     </rule>
 
 
-
     <rule comment="rule: numeral">
        <pattern>
          <pattern-item n="numeral"/>
@@ -1029,21 +981,6 @@
        </action>
     </rule>
 
-<!--
-    <rule comment="rule: artic np">
-      <pattern>
-        <pattern-item n="artic"/>
-        <pattern-item n="np"/>
-      </pattern>
-      <action>
-        <out>
-          <lu>
-            <clip pos="2" side="tl" part="whole"/>
-          </lu>
-        </out>
-      </action>
-    </rule>
--->
 
     <rule comment="rule: qed">
        <pattern>
@@ -1121,7 +1058,7 @@
     </rule>
 
 
-    <rule comment="rule: dir object in Accusativ ">
+    <rule comment="rule: dir object (nom + adj etc.) in accusative ">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="nom"/>
@@ -1168,7 +1105,7 @@
     </rule> 
 
 
-    <rule comment="rule: dir object in Accusativ ">
+    <rule comment="rule: dir object in accusative, constructions with with adverb between verb and direct object ">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="adv"/>
@@ -1220,7 +1157,7 @@
     </rule> 
 
 
-    <rule comment="rule: dir object in Accusativ ">
+    <rule comment="rule: dir object in accusative ">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="pron_ind"/>
@@ -1254,7 +1191,7 @@
     </rule> 
 
 
-    <rule comment="rule: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in Accusativ ">
+    <rule comment="rule: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
        <pattern>
          <pattern-item n="kien"/>
          <pattern-item n="nom"/>
@@ -1282,7 +1219,7 @@
     </rule> 
 
 
-    <rule comment="rule: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in Accusativ ">
+    <rule comment="rule: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
        <pattern>
          <pattern-item n="kien"/>
          <pattern-item n="adj"/>
@@ -1310,7 +1247,7 @@
     </rule> 
 
 
-    <rule comment="rule: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in Accusativ ">
+    <rule comment="rule: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
        <pattern>
          <pattern-item n="kien"/>
          <pattern-item n="nom"/>
@@ -1420,7 +1357,7 @@
 
 
 
-    <rule comment="rule: biex (in order that) in Arabic is followed subjunctive mood ">
+    <rule comment="rule: biex (in order that) in Arabic is followed subjunctive mood; direct object in accusative ">
        <pattern>
          <pattern-item n="biex"/>
          <pattern-item n="vrbpres"/>
@@ -1476,7 +1413,7 @@
     </rule>
 
 
-    <rule comment="rule: dualis ">   <!-- 2 + noun/pl -> noun/du -->
+    <rule comment="rule: dualis ">   <!-- 2 numeral + plural noun -> dualis -->
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="det"/>
@@ -1506,7 +1443,7 @@
     </rule> 
 
 
-    <rule comment="rule: prep noun">   <!-- prep + noun -> prep + noun/gen -->
+    <rule comment="rule: prep noun">   <!-- genitive after prepositions -->
        <pattern>
          <pattern-item n="prepgen"/>
          <pattern-item n="nom"/>
@@ -1531,7 +1468,7 @@
 
 
 
-    <rule comment="rule: direct object determined">
+    <rule comment="rule: direct object determined">  <!-- to get rid of lil when used as Hebrew את after verbs -->
        <pattern>
          <pattern-item n="d_obj"/>
          <pattern-item n="det"/>
@@ -1566,7 +1503,7 @@
     </rule>
 
 
-    <rule comment="rule: negation">
+    <rule comment="rule: negation"> <!-- constructions like "M'hi (qed tara)" -->
        <pattern>
          <pattern-item n="ma_neg"/>
          <pattern-item n="pron"/>
@@ -1582,7 +1519,7 @@
            </lu>
 	  </out>
        </action>
-    </rule> 
+    </rule>
 
 
   </section-rules>

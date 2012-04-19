@@ -129,7 +129,7 @@
 
      <e><p><l>fi<s n="pr"/></l><r>في<s n="pr"/></r></p></e>
      <e><p><l>madwar<s n="pr"/></l><r>حول<s n="pr"/></r></p></e>
-     <e><p><l>għand<s n="pr"/></l><r>عند<s n="pr"/></r></p></e>  <!-- miri: only ב in Hebrew?! -->
+     <e><p><l>għand<s n="pr"/></l><r>عند<s n="pr"/></r></p></e>
      <e><p><l>ma'<s n="pr"/></l><r>مع<s n="pr"/></r></p></e>
      <e><p><l>ġo<s n="pr"/></l><r>خلال<s n="pr"/></r></p></e>
      <e><p><l>minn<s n="pr"/></l><r>من<s n="pr"/></r></p></e>
@@ -310,7 +310,7 @@
      <e><p><l>bil-mogħod<s n="adv"/></l><r>ببطء<s n="adv"/></r></p></e>
      <e><p><l>bħalissa<s n="adv"/></l><r>الآن<s n="adv"/></r></p></e>
      <e><p><l>imbagħad<s n="adv"/></l><r>حينئذ<s n="adv"/></r></p></e> 
-     <e><p><l>anke<s n="adv"/></l><r>أيضا<s n="adv"/></r></p></e><!-- אפילו -->
+     <e><p><l>anke<s n="adv"/></l><r>أيضا<s n="adv"/></r></p></e> <!-- אפילו -->
      <e><p><l>allura<s n="adv"/></l><r>لذلك<s n="adv"/></r></p></e>
      <e><p><l>issa<s n="adv"/></l><r>الآن<s n="adv"/></r></p></e>
      <e><p><l>hekk<s n="adv"/></l><r>هكذا<s n="adv"/></r></p></e>

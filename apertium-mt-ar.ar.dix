@@ -181,13 +181,6 @@
       <e><p>          <l>ال</l><r>ال<s n="det"/><s n="def"/><j/></r></p></e>
     </pardef>
 
-    <pardef n="אחרון__det">
-      <e><p>          <l>ן</l><r>ן<s n="det"/><s n="ord"/><s n="m"/><s n="sg"/></r></p></e>
-      <e><p>          <l>נה</l><r>ן<s n="det"/><s n="ord"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p>          <l>נים</l><r>ן<s n="det"/><s n="ord"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p>          <l>נות</l><r>ן<s n="det"/><s n="ord"/><s n="f"/><s n="pl"/></r></p></e>
-    </pardef>
-
     <pardef n="פחות__det">
       <e><p>          <l></l><r><s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
     </pardef>
@@ -210,27 +203,20 @@
       <e><p><l></l><r><s n="det"/><s n="qnt"/><s n="mf"/><s n="pl"/></r></p></e>
     </pardef>
 
-    <pardef n="אחר__det" c="other">
-      <e><p><l></l><r><s n="det"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
-      <e><p><l>ת</l><r><s n="det"/><s n="ind"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p><l>ים</l><r><s n="det"/><s n="ind"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p><l>ות</l><r><s n="det"/><s n="ind"/><s n="f"/><s n="pl"/></r></p></e>
-    </pardef>
 
     <!-- SECTION: Pronouns -->
 
     <pardef n="prsubj__prn">
       <e><p><l>أنا</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
       <e><p><l>نحن</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-      <e r="LR"><p><l>אנו</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-      <e><p><l>אתה</l><r>prpers<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
-      <e><p><l>את</l><r>prpers<s n="prn"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p><l>אתם</l><r>prpers<s n="prn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p><l>אתן</l><r>prpers<s n="prn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>أنت</l><r>prpers<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l>أنت</l><r>prpers<s n="prn"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>أنتم</l><r>prpers<s n="prn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>أنتن</l><r>prpers<s n="prn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
       <e><p><l>هو</l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
       <e><p><l>هي</l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p><l>הם</l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p><l>הן</l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>هم</l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>هن</l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
     
     <pardef n="כי__rel">
