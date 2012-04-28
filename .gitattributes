@@ -16,6 +16,7 @@
 /autogen.sh -text
 /configure.ac -text
 dev/README -text
+dev/mt_verbs/verb.py -text
 dev/story.ar-en.apertium.txt -text
 dev/story.ar-en.googletranslate.txt -text
 dev/story.ar.apertium.txt -text
