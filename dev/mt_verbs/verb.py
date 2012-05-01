@@ -3,6 +3,7 @@
 # -*- encoding: utf-8 -*-
 
 import sys, codecs, copy;
+#import classes;
 
 sys.stdin  = codecs.getreader('utf-8')(sys.stdin);
 sys.stdout = codecs.getwriter('utf-8')(sys.stdout);
@@ -1293,6 +1294,291 @@ def quad_pp(root, vowels, pref): #{
 
 
 
+## ----------------------------------------------------------------------------##
+## loan
+## ----------------------------------------------------------------------------##
+
+
+# ???
+#def loan_pprs(root): #{
+#}
+
+
+def loan_pp(pp): #{
+
+	forms = {};
+	
+	forms['pp.m.sg'] = [(pp, '-', '-')] ;
+	forms['pp.f.sg'] = [(pp + 'a', '-', '-')] ;
+	forms['pp.mf.pl'] = [(pp + 'i', '-', '-')] ;
+
+	return forms;
+#}
+
+
+def loan_consonant_forms (form_sg, form_sg_suff, r): #{
+# only past.p3.sg.f have different forms with and without suffixes
+
+	forms = [(form_sg, '-', r),
+		 (form_sg_suff, 'S__qtalt/x', r),
+		 (form_sg_suff, 'S__qtalt/ni', r),
+		 (form_sg_suff, 'S__qtalt/nix', r),
+		 (form_sg_suff, 'S__qtalt/ilha', r),
+		 (form_sg_suff, 'S__qtalt/ilhiex', r),
+		 (form_sg_suff, 'S__qtaltu/hielha', r),
+		 (form_sg_suff, 'S__qtaltu/hielhiex', r)];
+
+	return forms;
+#}
+
+
+def loan_vowel_forms (form_pl, form_pl_suff, r): #{
+# different with/without suffix forms only for past.p1.pl
+
+# jittradíxxi: both ma jittradíx or ma jittradixxíx!!!
+# but there is only one form ending with -ixxix or -ixxax in the corpus:
+# tissostitwixxix
+
+# oh, but there are also forms like
+#      1 ^ttrasferixxiet/*ttrasferixxiet$
+#      1 ^stabbilixxiet/*stabbilixxiet$
+#      1 ^rreaġixxiet/*rreaġixxiet$
+#      1 ^ipprojbixxiet/*ipprojbixxiet$
+#      1 ^esegwixxiet/*esegwixxiet$
+#      1 ^esebixxiet/*esebixxiet$
+#      1 ^aġixxiet/*aġixxiet$
+# also with pron. suffixes - only 2:
+#      1 ^jissostitwixxihom/*jissostitwixxihom$
+#      1 ^issostwixxihom/*issostwixxihom$
+
+# so what? LR for ixx + suffixes ?
+
+	forms = [(form_pl, '-', r),
+		 (form_pl_suff, 'S__qtalt/x', r),
+		 (form_pl_suff, 'S__qtaltu/ni', r),
+		 (form_pl_suff, 'S__qtaltu/nix', r),
+		 (form_pl_suff, 'S__qtaltu/lha', r),
+		 (form_pl_suff, 'S__qtaltu/lhiex', r),
+		 (form_pl_suff, 'S__qtaltu/hielha', r),
+		 (form_pl_suff, 'S__qtaltu/hielhiex', r)];
+
+	return forms;
+#}
+
+
+
+def loan_past_forms(forms, stem, ixx, vowel_pres, r): #{
+
+	if vowel_pres == 'i': #{
+		# stabilixxa, but stabilieni, stabiliek
+		forms['past.p3.m.sg'] += loan_vowel_forms(stem + ixx + 'a', stem + 'ie', r);
+		# falliet - ma fallitx? or ma fallietx?
+		forms['past.p3.f.sg'] += loan_consonant_forms(stem + 'iet', stem + 'it', r);
+		forms['past.p2.sg'] += loan_consonant_forms(stem + 'ejt', stem + 'ejt', r);	
+		forms['past.p1.sg'] += loan_consonant_forms(stem + 'ejt', stem + 'ejt', r);
+		forms['past.p3.pl'] += loan_vowel_forms(stem + 'ew', stem + 'ew', r);
+		forms['past.p2.pl'] += loan_vowel_forms(stem + 'ejtu', stem + 'ejtu', r);
+		forms['past.p1.pl'] += loan_vowel_forms(stem + 'ejna', stem + 'ejnie', r);
+	#}
+	else : #{   vowel_pres == a
+		forms['past.p3.m.sg'] += loan_vowel_forms(stem + ixx + 'a', stem + 'a', r);
+		forms['past.p3.f.sg'] += loan_consonant_forms(stem + 'at', stem + 'at', r);
+		forms['past.p2.sg'] += loan_consonant_forms(stem + 'ajt', stem + 'ajt', r);	
+		forms['past.p1.sg'] += loan_consonant_forms(stem + 'ajt', stem + 'ajt', r);
+		forms['past.p3.pl'] += loan_vowel_forms(stem + 'aw', stem + 'aw', r);
+		forms['past.p2.pl'] += loan_vowel_forms(stem + 'ajtu', stem + 'ajtu', r);
+		forms['past.p1.pl'] += loan_vowel_forms(stem + 'ajna', stem + 'ajnie', r);
+	#}
+
+	return forms;
+#}
+
+
+
+def loan_past_double_cons(base, ixx, vowel_pres): #{
+
+	forms = {};
+
+	forms['past.p3.m.sg'] = [];
+	forms['past.p3.f.sg'] = [];
+	forms['past.p2.sg'] = [];
+	forms['past.p1.sg'] = [];
+	forms['past.p3.pl'] = [];
+	forms['past.p2.pl'] = []; 
+	forms['past.p1.pl'] = []; 
+
+	loan_past_forms(forms, base, ixx, vowel_pres, 'LR');
+	loan_past_forms(forms, 'i' + base, ixx, vowel_pres, 'LR');
+#	loan_past_forms(forms, first_cons + base, ixx, vowel_pres, 'LR');
+#	loan_past_forms(forms, 'i' + first_cons + base, ixx, vowel_pres, 'LR');
+	loan_past_forms(forms, 'i' + base, ixx, vowel_pres, 'RL');
+
+	return forms;
+#}
+
+
+
+def loan_past(base, ixx, vowel_pres): #{
+
+	forms = {};
+
+	forms['past.p3.m.sg'] = [];
+	forms['past.p3.f.sg'] = [];
+	forms['past.p2.sg'] = [];
+	forms['past.p1.sg'] = [];
+	forms['past.p3.pl'] = [];
+	forms['past.p2.pl'] = []; 
+	forms['past.p1.pl'] = []; 
+
+	loan_past_forms(forms, base, ixx, vowel_pres, '-');
+
+	return forms;
+#}
+
+
+
+def loan_pres_first_vowel(first_vowel, stem, ixx, vowel_pres): #{
+
+	forms = {};
+
+	if vowel_pres == 'i' : #{
+		sg_suffix = 'i';
+		pl_suffix = 'u';
+	#}
+	else : #{ # vowel_pres == 'a'
+		sg_suffix = 'a';
+		pl_suffix = "aw";
+	#}
+
+	if first_vowel == 'i' : #{
+	# jistabilixxa, but jistabilini
+		forms['pres.p3.m.sg'] = loan_vowel_forms(stem + ixx + sg_suffix, stem + sg_suffix, 'LR');
+		forms['pres.p3.m.sg'] += loan_vowel_forms('j' + stem + ixx + sg_suffix, 'j' + stem + sg_suffix, 'LR');
+		forms['pres.p3.m.sg'] += loan_vowel_forms(stem + ixx + sg_suffix, stem + sg_suffix, 'RL');
+
+		forms['pres.p3.pl'] = loan_vowel_forms(stem + ixx + pl_suffix, stem + pl_suffix, 'LR');
+		forms['pres.p3.pl'] += loan_vowel_forms('j' + stem + ixx + pl_suffix, 'j' + stem + pl_suffix, 'LR');
+		forms['pres.p3.pl'] += loan_vowel_forms(stem + ixx + pl_suffix, stem + pl_suffix, 'RL');
+	#}
+	else : #{
+		forms['pres.p3.m.sg'] = loan_vowel_forms('j' + stem + ixx + sg_suffix, 'j' + stem + sg_suffix, '-');
+		forms['pres.p3.pl'] = loan_vowel_forms('j' + stem + ixx + pl_suffix, 'j' + stem + pl_suffix, 'LR');
+	#}
+
+	forms['pres.p3.f.sg'] = loan_vowel_forms('t' + stem + ixx + sg_suffix, 't' + stem + sg_suffix, '-');
+	forms['pres.p2.sg'] = loan_vowel_forms('t' + stem + ixx + sg_suffix, 't' + stem + sg_suffix, '-')
+	forms['pres.p1.sg'] = loan_vowel_forms('n' + stem + ixx + sg_suffix, 'n' + stem + sg_suffix, '-');
+
+	forms['pres.p2.pl'] = loan_vowel_forms('t' + stem + ixx + pl_suffix, 't' + stem + pl_suffix, '-');
+	forms['pres.p1.pl'] = loan_vowel_forms('n' + stem + ixx  + pl_suffix, 'n' + stem + pl_suffix, '-');
+
+	return forms;
+
+#}
+
+
+
+def loan_pres_first_cons(first_cons, stem, ixx, vowel_pres): #{
+
+	forms = {};
+
+	if vowel_pres == 'i' : #{
+		sg_suffix = 'i';
+		pl_suffix = 'u';
+	#}
+	else : #{ # vowel_pres == 'a'
+		sg_suffix = 'a';
+		pl_suffix = "aw";
+	#}
+
+	forms['pres.p3.m.sg'] = loan_vowel_forms('i' + stem + ixx + sg_suffix, 'i' + stem + sg_suffix, 'LR');
+	forms['pres.p3.m.sg'] += loan_vowel_forms('j' + stem + ixx + sg_suffix, 'j' + stem + sg_suffix, 'LR');
+	forms['pres.p3.m.sg'] += loan_vowel_forms('i' + stem + ixx + sg_suffix, 'i' + stem + sg_suffix, 'RL');
+
+	forms['pres.p3.f.sg'] = loan_vowel_forms('t' + stem + ixx + sg_suffix, 't' + stem + sg_suffix, 'LR');
+	forms['pres.p3.f.sg'] += loan_vowel_forms(first_cons + stem + ixx + sg_suffix, first_cons + stem + sg_suffix, 'LR');
+	forms['pres.p3.f.sg'] += loan_vowel_forms('it' + stem + ixx + sg_suffix, 'it' + stem + sg_suffix, 'LR');
+	forms['pres.p3.f.sg'] += loan_vowel_forms('i' + first_cons + stem + ixx + sg_suffix, 'i' + first_cons + stem + sg_suffix, 'LR');
+	forms['pres.p3.f.sg'] += loan_vowel_forms('it' + stem + ixx + sg_suffix, 'it' + stem + sg_suffix, 'RL');
+
+	forms['pres.p2.sg'] = loan_vowel_forms('t' + stem + ixx + sg_suffix, 't' + stem + sg_suffix, 'LR');
+	forms['pres.p2.sg'] += loan_vowel_forms(first_cons + stem + ixx + sg_suffix, first_cons + stem + sg_suffix, 'LR');
+	forms['pres.p2.sg'] += loan_vowel_forms('it' + stem + ixx + sg_suffix, 'it' + stem + sg_suffix, 'LR');
+	forms['pres.p2.sg'] += loan_vowel_forms('i' + first_cons + stem + ixx + sg_suffix, 'i' + first_cons + stem + sg_suffix, 'LR');
+	forms['pres.p2.sg'] += loan_vowel_forms('it' + stem + ixx + sg_suffix, 'it' + stem + sg_suffix, 'RL');
+
+	forms['pres.p1.sg'] = loan_vowel_forms('n' + stem + ixx + sg_suffix, 'n' + stem + sg_suffix, 'LR');
+	forms['pres.p1.sg'] += loan_vowel_forms('in' + stem + ixx + sg_suffix, 'in' + stem + sg_suffix, 'LR');
+	forms['pres.p1.sg'] += loan_vowel_forms('in' + stem + ixx + sg_suffix, 'in' + stem + sg_suffix, 'RL');
+
+	forms['pres.p3.pl'] = loan_vowel_forms('i' + stem + ixx + pl_suffix, 'i' + stem + pl_suffix, 'LR');
+	forms['pres.p3.pl'] += loan_vowel_forms('j' + stem + ixx + pl_suffix, 'j' + stem + pl_suffix, 'LR');
+	forms['pres.p3.pl'] += loan_vowel_forms('i' + stem + ixx + pl_suffix, 'i' + stem + pl_suffix, 'RL');
+
+	forms['pres.p2.pl'] = loan_vowel_forms('t' + stem + ixx + pl_suffix, 't' + stem + pl_suffix, 'LR');
+	forms['pres.p2.pl'] += loan_vowel_forms(first_cons + stem + ixx + pl_suffix, first_cons + stem + pl_suffix, 'LR');
+	forms['pres.p2.pl'] += loan_vowel_forms('it' + stem + ixx + pl_suffix, 'it' + stem + pl_suffix, 'LR');
+	forms['pres.p2.pl'] += loan_vowel_forms('i' + first_cons + stem + ixx + pl_suffix, 'i' + first_cons + stem + pl_suffix, 'LR');
+	forms['pres.p2.pl'] += loan_vowel_forms('it' + stem + ixx + pl_suffix, 'it' + stem + pl_suffix, 'RL');
+
+	forms['pres.p1.pl'] = loan_vowel_forms('n' + stem + ixx  + pl_suffix, 'n' + stem + pl_suffix, 'LR');
+	forms['pres.p1.pl'] += loan_vowel_forms('in' + stem + ixx  + pl_suffix, 'in' + stem + pl_suffix, 'LR');
+	forms['pres.p1.pl'] += loan_vowel_forms('in' + stem + ixx  + pl_suffix, 'in' + stem + pl_suffix, 'RL');
+
+	return forms;
+
+#}
+
+
+
+def loan_pres_two_cons(stem, ixx, vowel_pres): #{
+# two or double
+
+	forms = {};
+
+	if vowel_pres == 'i' : #{
+		sg_suffix = 'i';
+		pl_suffix = 'u';
+	#}
+	else : #{ # vowel_pres == 'a'
+		sg_suffix = 'a';
+		pl_suffix = "aw";
+	#}
+
+	# only 1 form? that may be too optimistic 
+	forms['pres.p3.m.sg'] = loan_vowel_forms('ji' + stem + ixx + sg_suffix, 'ji' + stem + sg_suffix, '-');
+	forms['pres.p3.f.sg'] = loan_vowel_forms('ti' + stem + ixx + sg_suffix, 'ti' + stem + sg_suffix, '-');
+	forms['pres.p2.sg'] = loan_vowel_forms('ti' + stem + ixx + sg_suffix, 'ti' + stem + sg_suffix, '-');
+	forms['pres.p1.sg'] = loan_vowel_forms('ni' + stem + ixx + sg_suffix, 'ni' + stem + sg_suffix, '-');
+
+	forms['pres.p3.pl'] = loan_vowel_forms('ji' + stem + ixx + pl_suffix, 'ji' + stem + pl_suffix, '-');
+	forms['pres.p2.pl'] = loan_vowel_forms('ti' + stem + ixx + pl_suffix, 'ti' + stem + pl_suffix, 'LR');
+	forms['pres.p1.pl'] = loan_vowel_forms('ni' + stem + ixx  + pl_suffix, 'ni' + stem + pl_suffix, 'LR');
+
+	return forms;
+
+#}
+
+
+def loan_imp(stem, ixx, vowel_pres): #{
+
+	forms = {};
+
+	if vowel_pres == 'i': #{
+		# jistabilixxa, but jistabilini
+		forms['imp.p2.sg'] = loan_vowel_forms(stem + ixx + 'i', stem + 'i', '-')
+		forms['imp.p2.pl'] = loan_vowel_forms(stem + ixx + 'u', stem + 'u', '-');
+	#}
+	else : #{   vowel_pres == a
+		forms['imp.p2.sg'] = loan_vowel_forms(stem + ixx + 'a', stem + 'a', '-')
+		forms['imp.p2.pl'] = loan_vowel_forms(stem + ixx + 'aw', stem + 'aw', '-');
+	#}
+
+	return forms;
+
+#}
+
+
 
 ##-----------------------------------------------------------------------------##
 
@@ -1522,6 +1808,44 @@ stems = [
 	{'stem': 'biddel', 'type': 'quad', 'gloss': 'alter', 'root': 'b-d-d-l', 'vowel_perf': 'i-e', 'vowel_impf': 'i-e', 'trans': 'tv', 'pp': 'im'}, # strong pattern 2
 	{'stem': 'berbaq', 'type': 'quad', 'gloss': 'squander', 'root': 'b-r-b-q', 'vowel_perf': 'e-a', 'vowel_impf': 'e-a', 'trans': 'tv', 'pp': 'im'},
 
+# loan
+	{'stem': 'kanta', 'type': 'loan', 'gloss': 'sing', 'subtype': 'first_cons', 'first_cons': 'k', 'base': 'kant', 'vowel_impf': 'a', 'pp': 'kantat'},
+	{'stem': 'ammira', 'type': 'loan', 'gloss': 'admire', 'subtype': 'first_vowel', 'first_vowel': 'a', 'base': 'ammir', 'vowel_impf': 'a', 'pp': 'ammirat'},
+	{'stem': 'stimula', 'type': 'loan', 'gloss': 'stimulate', 'subtype': 'two_cons', 'base': 'stimul', 'vowel_impf': 'a', 'pp': 'stimulat'},
+	{'stem': 'ipparteċipa', 'type': 'loan', 'gloss': 'participate', 'subtype': 'double_cons', 'base': 'pparteċip', 'imp_base': 'ipparteċip', 'vowel_impf': 'a', 'pp': 'parteċipat'},
+#irrappreżenta, loan, represent, r-r-p-r-ż-n-t-a, a-a, romance, unchecked
+#ippenetra, loan, penetrate, p-p-n-t-r, a-a, romance, checked
+#ivvjola, loan, violate, v-v-j-l, a-a, romance, checked
+#indika, loan, indicate, i-n-d-k, a-a, romance, checked
+#eżerċita, loan, exercise, e-ż-r-ċ-t, a-a, romance, checked
+#ipprova, loan, try, i-p-p-r-v, a-a, romance, checked
+#esperjenza, loan, experience, s-p-r-j-n-z, a-a, romance, checked
+#iddeċide, loan, decide, d-e-ċ-d, a-a, romance, checked
+#ordna, loan, order, o-r-d-n, a-a, romance, unchecked
+#
+	{'stem': 'falla', 'type': 'loan', 'gloss': 'be·absent', 'subtype': 'first_cons', 'first_cons': 'f', 'base': 'fall', 'vowel_impf': 'i', 'pp': 'fallut'}, # also pp mfalli?
+#iddeskriva, loan, describe, d-s-k-r-v, a-i, romance, checked
+#aggredixxa, loan, agress, a-g-g-r-s, a-i, romance, checked
+#irrisponda, loan, respond, r-s-p-n-d, a-i, romance, checked
+#ittraduċa, loan, translate, t-r-a-c-d-c, a-i, romance, checked
+	{'stem': 'irreaġixxa', 'type': 'loan', 'gloss': 'react', 'subtype': 'double_cons', 'base': 'rreaġ', 'ixx': 'ixx', 'vowel_impf': 'i'},
+#ipprojbixxa, loan, prohibit, p-r-j-b-x, a-i, romance, checked
+#ippromwova, loan, promote, p-r-m-w-v, a-i, romance, checked
+#inkluda, loan, include, i-n-k-l-u-d, a-i, romance, unchecked
+#ikkonsista, loan, consist, k-k-n-s-s-t, a-i, romance, unchecked
+#iżviluppa, loan, develop, ż-v-l-p-p, a-i, romance, unchecked
+#
+#espressa, loan, express, e-s-p-r-s-s, e-e, romance # that's pp of esprima
+#
+#aġġastja, loan, adjust, ġ-s-t-j, a-a, english, checked
+#iddawnlowdja, loan, download, d-w-n-l-w-d, a-a, english, checked
+#infurza, loan, enforce, i-n-f-u-r-z, a-a, english, unchecked
+#vjola, loan, violate, v-j-o-l, a-a, english, unchecked
+#vvjola, loan, breach, v-v-j-o-l, a-a, english, unchecked
+#ikklassifika, loan, classify, k-l-s-f-k, a-i, english, unchecked
+#ikkonsidra, loan, consider, k-k-n-s-d-r, a-i, english, unchecked
+#
+
 ];
 
 ##-----------------------------------------------------------------------------##
@@ -1583,6 +1907,43 @@ for stem in stems: #{
 		if 'pp' in stem: #{
 			infl[stem['stem']].update(quad_pp(stem['root'], stem['vowel_perf'], stem['pp']));
 	#}
+
+	elif stem['type'] == 'loan': #{
+
+		infl[stem['stem']] = {};
+
+		ixx = '';
+		if 'ixx' in stem:
+			ixx = stem['ixx'];   # ixx = 'ixx';
+
+		if stem['subtype'] == 'first_vowel': #{
+			infl[stem['stem']] = loan_past(stem['base'], ixx, stem['vowel_impf']);
+			infl[stem['stem']].update(loan_pres_first_vowel(stem['first_vowel'], stem['base'], ixx, stem['vowel_impf']));
+			infl[stem['stem']].update(loan_imp(stem['base'], ixx, stem['vowel_impf']));
+		#}
+
+		elif stem['subtype'] == 'first_cons': #{
+			infl[stem['stem']] = loan_past(stem['base'], ixx, stem['vowel_impf']);
+			infl[stem['stem']].update(loan_pres_first_cons(stem['first_cons'], stem['base'], ixx, stem['vowel_impf']));
+			infl[stem['stem']].update(loan_imp(stem['base'], ixx, stem['vowel_impf']));
+		#}
+
+		elif stem['subtype'] == 'two_cons' : #{
+			infl[stem['stem']] = loan_past(stem['base'], ixx, stem['vowel_impf']);
+			infl[stem['stem']].update(loan_pres_two_cons(stem['base'], ixx, stem['vowel_impf']));
+			infl[stem['stem']].update(loan_imp(stem['base'], ixx, stem['vowel_impf']));
+		#}
+
+		elif stem['subtype'] == 'double_cons' : #{
+			infl[stem['stem']] = loan_past_double_cons(stem['base'], ixx, stem['vowel_impf']);
+			infl[stem['stem']].update(loan_pres_two_cons(stem['base'], ixx, stem['vowel_impf']));
+			infl[stem['stem']].update(loan_imp('i' + stem['base'], ixx, stem['vowel_impf']));
+		#}
+
+		if 'pp' in stem: #{
+			infl[stem['stem']].update(loan_pp(stem['pp']));
+# pprs
+
 #}
 
 print header().decode('utf-8');
