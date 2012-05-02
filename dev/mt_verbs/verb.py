@@ -351,6 +351,11 @@ def footer(): #{
 # KoTaB		għola(j), għoxa(j), ħola(j)
 
 
+## ----------------------------------------------------------------------------##
+## strong verbs
+## ----------------------------------------------------------------------------##
+
+
 def strong_pp(root, vowels, pref): #{
 	r = root.split('-'); # radicals
 	v = vowels.split('-'); # vowels
@@ -445,6 +450,7 @@ def strong_pres(root, vowels): #{
 	# When the second radical of the verb is 'l', 'm', 'n' or 'għ', a euphonic 
 	# vowel must be inserted
 # miri what if v[1] == 'e', e->i?
+# yes!
 	if r[1] == 'l' or r[1] == 'm' or r[1] == 'n' or r[1] == 'għ': #{
 		forms['pres.p3.pl'] = strong_pres_pl_forms('j', v[0] + r[0] + v[1] + r[1] + r[2] + 'u', '-'); # j-iDĦL-u j-iFTĦ-u
 		forms['pres.p2.pl'] = strong_pres_pl_forms('t', v[0] + r[0] + v[1] + r[1] + r[2] + 'u', '-');
@@ -589,10 +595,20 @@ def strong_past(root, vowels): #{
 
 	if r[0] == 'w' or r[0] == 'għ': #{
 		# If the first radical is 'w' or 'għ' then we have a full disyllabic form
-		forms['past.p2.sg'] = [(r[0] + v[0] + r[1] + v[1] + r[2] + 't', '-', '-')];	
-		forms['past.p1.sg'] = [(r[0] + v[0] + r[1] + v[1] + r[2] + 't', '-', '-')];	
-	#}
+		if v[1] == 'e' : #{
+			forms['past.p2.sg'] = strong_past_sg_forms(r[0] + v[0] + r[1] + 'i' + r[2] + 't', r[0] + v[0] + r[1] + 'i' + r[2] + 't', '-');	
+			forms['past.p1.sg'] = strong_past_sg_forms(r[0] + v[0] + r[1] + 'i' + r[2] + 't', r[0] + v[0] + r[1] + 'i' + r[2] + 't', '-');
+			forms['past.p2.pl'] = strong_past_pl_forms(r[0] + v[0] + r[1] + 'i' + r[2] + 'tu', r[0] + v[0] + r[1] + 'i' + r[2] + 'tu', '-');
+			forms['past.p1.pl'] = strong_past_pl_forms(r[0] + v[0] + r[1] + 'i' + r[2] + 'na', r[0] + v[0] + r[1] + 'i' + r[2] + 'nie', '-');
+		#}
+		else : #{
+			forms['past.p2.sg'] = strong_past_sg_forms(r[0] + v[0] + r[1] + v[1] + r[2] + 't', r[0] + v[0] + r[1] + v[1] + r[2] + 't', '-');
+			forms['past.p1.sg'] = strong_past_sg_forms(r[0] + v[0] + r[1] + v[1] + r[2] + 't', r[0] + v[0] + r[1] + v[1] + r[2] + 't', '-');
+			forms['past.p2.pl'] = strong_past_pl_forms(r[0] + v[0] + r[1] + v[1] + r[2] + 'tu', r[0] + v[0] + r[1] + v[1] + r[2] + 'tu', '-');
+			forms['past.p1.pl'] = strong_past_pl_forms(r[0] + v[0] + r[1] + v[1] + r[2] + 'na', r[0] + v[0] + r[1] + v[1] + r[2] + 'nie', '-');
+		#}
 
+	#}
 
 	return forms;
 #}
@@ -684,7 +700,7 @@ def hollow_past(root, vowels): #{
 
 
 	forms['past.p3.f.sg'] = hollow_sg_forms('', r[0] + v[0] + r[2] + 'et', r[0] + v[0] + r[2] + 'it', '-');
-# what daritlha? daritilha? both?
+# daritlha? daritilha? both?
 
 	# This form is obtained by the insertion of 'o' for second radical 'w' and
 	# 'i' for second radical 'j'
@@ -699,14 +715,28 @@ def hollow_past(root, vowels): #{
 
 	forms['past.p2.pl'] = hollow_pl_forms('', r[0] + link_vowel + r[2] + 'tu', r[0] + link_vowel + r[2] + 'tu', '-');
 	forms['past.p1.pl'] = hollow_pl_forms('', r[0] + link_vowel + r[2] + 'na', r[0] + link_vowel + r[2] + 'nie', '-');
-	forms['past.p3.pl'] = hollow_pl_forms('', r[0] + 'a' + r[2] + 'u', r[0] + 'a' + r[2] + 'u', '-');
 
-	# This is not in the grammar, but it seems that 'ie' (mutation of long 'a')
-	# does not have the usual rules applied
-# maybe it's pattern 8, not pattern 1 ?
-	if v[0] == 'ie': #{
-		forms['past.p1.pl'] = [(r[0] + 'ie' + r[2] + 'na', '-', '-')];
-		forms['past.p3.pl'] = [(r[0] + 'ie' + r[2] + 'u', '-', '-')];	
+# v[0]/'a'
+	forms['past.p3.pl'] = hollow_pl_forms('', r[0] + v[0] + r[2] + 'u', r[0] + v[0] + r[2] + 'u', '-');
+
+
+#	# This is not in the grammar, but it seems that 'ie' (mutation of long 'a')
+#	# does not have the usual rules applied
+#	if v[0] == 'ie': #{
+#
+#		# I'm not so  sure
+#		# usually past.p1.pl share rules with 
+#		# past.p2.pl, past.p2.sg, past.p1.sg
+#		# and r[0] + 'ie' + r[2] + 'na' can be
+#		# past.3.sg.m + prn.p1.pl d.o. 
+#
+#		# or maybe past.3.sg.m + prn.p1.pl d.o. is
+#		# r[0] + 'i/o' + r[2] + 'na' too?
+#
+#		forms['past.p1.pl'] = [(r[0] + 'ie' + r[2] + 'na', '-', '-')];
+#		
+#		# that's the usual rule though
+#		forms['past.p3.pl'] = [(r[0] + 'ie' + r[2] + 'u', '-', '-')];	
 	#}
 
 	return forms;
@@ -1462,7 +1492,7 @@ def loan_pres_first_vowel(first_vowel, stem, ixx, vowel_pres): #{
 	#}
 	else : #{
 		forms['pres.p3.m.sg'] = loan_vowel_forms('j' + stem + ixx + sg_suffix, 'j' + stem + sg_suffix, '-');
-		forms['pres.p3.pl'] = loan_vowel_forms('j' + stem + ixx + pl_suffix, 'j' + stem + pl_suffix, 'LR');
+		forms['pres.p3.pl'] = loan_vowel_forms('j' + stem + ixx + pl_suffix, 'j' + stem + pl_suffix, '-');
 	#}
 
 	forms['pres.p3.f.sg'] = loan_vowel_forms('t' + stem + ixx + sg_suffix, 't' + stem + sg_suffix, '-');
@@ -1552,8 +1582,8 @@ def loan_pres_two_cons(stem, ixx, vowel_pres): #{
 	forms['pres.p1.sg'] = loan_vowel_forms('ni' + stem + ixx + sg_suffix, 'ni' + stem + sg_suffix, '-');
 
 	forms['pres.p3.pl'] = loan_vowel_forms('ji' + stem + ixx + pl_suffix, 'ji' + stem + pl_suffix, '-');
-	forms['pres.p2.pl'] = loan_vowel_forms('ti' + stem + ixx + pl_suffix, 'ti' + stem + pl_suffix, 'LR');
-	forms['pres.p1.pl'] = loan_vowel_forms('ni' + stem + ixx  + pl_suffix, 'ni' + stem + pl_suffix, 'LR');
+	forms['pres.p2.pl'] = loan_vowel_forms('ti' + stem + ixx + pl_suffix, 'ti' + stem + pl_suffix, '-');
+	forms['pres.p1.pl'] = loan_vowel_forms('ni' + stem + ixx  + pl_suffix, 'ni' + stem + pl_suffix, '-');
 
 	return forms;
 
@@ -1566,11 +1596,11 @@ def loan_imp(stem, ixx, vowel_pres): #{
 
 	if vowel_pres == 'i': #{
 		# jistabilixxa, but jistabilini
-		forms['imp.p2.sg'] = loan_vowel_forms(stem + ixx + 'i', stem + 'i', '-')
+		forms['imp.p2.sg'] = loan_vowel_forms(stem + ixx + 'i', stem + 'i', '-');
 		forms['imp.p2.pl'] = loan_vowel_forms(stem + ixx + 'u', stem + 'u', '-');
 	#}
 	else : #{   vowel_pres == a
-		forms['imp.p2.sg'] = loan_vowel_forms(stem + ixx + 'a', stem + 'a', '-')
+		forms['imp.p2.sg'] = loan_vowel_forms(stem + ixx + 'a', stem + 'a', '-');
 		forms['imp.p2.pl'] = loan_vowel_forms(stem + ixx + 'aw', stem + 'aw', '-');
 	#}
 
@@ -1578,6 +1608,417 @@ def loan_imp(stem, ixx, vowel_pres): #{
 
 #}
 
+
+## ----------------------------------------------------------------------------##
+## irregular
+## ----------------------------------------------------------------------------##
+
+
+
+def irreg_consonant_forms (form_sg, form_sg_suff, r, ek): #{
+
+	if ek == 'ok' :
+		forms = [(form_sg, '-', r),
+			 (form_sg_suff, 'S__qtalt/x', r),
+			 (form_sg_suff, 'S__xrobt/ni', r),
+			 (form_sg_suff, 'S__xrobt/nix', r),
+			 (form_sg_suff, 'S__xrobt/ilha', r),
+			 (form_sg_suff, 'S__xrobt/ilhiex', r),
+			 (form_sg_suff, 'S__qtaltu/hielha', r),
+			 (form_sg_suff, 'S__qtaltu/hielhiex', r)];
+	else :
+		forms = [(form_sg, '-', r),
+			 (form_sg_suff, 'S__qtalt/x', r),
+			 (form_sg_suff, 'S__qtalt/ni', r),
+			 (form_sg_suff, 'S__qtalt/nix', r),
+			 (form_sg_suff, 'S__qtalt/ilha', r),
+			 (form_sg_suff, 'S__qtalt/ilhiex', r),
+			 (form_sg_suff, 'S__qtaltu/hielha', r),
+			 (form_sg_suff, 'S__qtaltu/hielhiex', r)];
+
+	return forms;
+#}
+
+
+def irreg_vowel_forms (form_pl, form_pl_suff, r): #{
+
+	forms = [(form_pl, '-', r),
+		 (form_pl_suff, 'S__qtalt/x', r),
+		 (form_pl_suff, 'S__qtaltu/ni', r),
+		 (form_pl_suff, 'S__qtaltu/nix', r),
+		 (form_pl_suff, 'S__qtaltu/lha', r),
+		 (form_pl_suff, 'S__qtaltu/lhiex', r),
+		 (form_pl_suff, 'S__qtaltu/hielha', r),
+		 (form_pl_suff, 'S__qtaltu/hielhiex', r)];
+
+	return forms;
+#}
+
+
+def irregular_forms (stem): #{
+
+	forms = {};
+
+	if stem == 'ta' : #{
+		forms['past.p3.m.sg'] = irreg_vowel_forms('ta', 'ta', '-');
+		forms['past.p3.f.sg'] = irreg_consonant_forms('tat', 'tat', '-', 'ek');
+		forms['past.p2.sg'] = irreg_consonant_forms('tajt', 'tajt', '-', 'ek');	
+		forms['past.p1.sg'] = irreg_consonant_forms('tajt', 'tajt', '-', 'ek');
+		forms['past.p3.pl'] = irreg_vowel_forms('taw', 'taw', '-');
+		forms['past.p2.pl'] = irreg_vowel_forms('tajtu', 'tajtu', '-');
+		forms['past.p1.pl'] = irreg_vowel_forms('tajna', 'tajnie', '-');
+
+		forms['pres.p3.m.sg'] = irreg_vowel_forms('jagħti', 'jagħti', '-');
+		forms['pres.p3.f.sg'] = irreg_vowel_forms('tagħti', 'tagħti', '-');
+		forms['pres.p2.sg'] = irreg_vowel_forms('tagħti', 'tagħti', '-');
+		forms['pres.p1.sg'] = irreg_vowel_forms('nagħti', 'nagħti', '-');
+		forms['pres.p3.pl'] = irreg_vowel_forms('jagħtu', 'jagħtu', '-');
+		forms['pres.p2.pl'] = irreg_vowel_forms('tagħtu', 'tagħtu', '-');
+		forms['pres.p1.pl'] = irreg_vowel_forms('nagħtu', 'nagħtu', '-');
+
+		forms['imp.p2.sg'] = irreg_vowel_forms('agħti', 'agħti', '-');
+		forms['imp.p2.pl'] = irreg_vowel_forms('agħtu', 'agħtu', '-');
+
+		forms['pp.m.sg'] = [('mogħti', '-', '-')] ;
+		forms['pp.f.sg'] = [('mogħtija', '-', '-')] ;
+		forms['pp.mf.pl'] = [('mogħtijin', '-', '-')] ;
+	#}
+
+	elif stem == 'ħa' : #{
+		# ħa, but ħad-ha
+		# what with negation suffix? 
+		# only ma ħadx or both ma ħadx and ma hax? 
+		forms['past.p3.m.sg'] = irreg_consonant_forms('ħa', 'ħad', '-', 'ek');
+		forms['past.p3.f.sg'] = irreg_consonant_forms('ħadet', 'ħadit', '-', 'ek');
+		forms['past.p2.sg'] = irreg_consonant_forms('ħadt', 'ħadt', '-', 'ek');	
+		forms['past.p1.sg'] = irreg_consonant_forms('ħadt', 'ħadt', '-', 'ek');
+		forms['past.p3.pl'] = irreg_vowel_forms('ħadu', 'ħadu', '-');
+		forms['past.p2.pl'] = irreg_vowel_forms('ħadtu', 'ħadtu', '-');
+		forms['past.p1.pl'] = irreg_vowel_forms('ħadna', 'ħadnie', '-');
+
+		# hm. jieħu with suff: jiħdu-? jieħdu-? jiħu-? jieħu-?
+		# oh. jeħu-! TYM 201
+		# min jagħti jieħu, min ma jagħtix ma jeħux
+		forms['pres.p3.m.sg'] = irreg_vowel_forms('jieħu', 'jeħu', '-');
+		forms['pres.p3.f.sg'] = irreg_vowel_forms('tieħu', 'teħu', '-');
+		forms['pres.p2.sg'] = irreg_vowel_forms('tieħu', 'teħu', '-');
+		forms['pres.p1.sg'] = irreg_vowel_forms('nieħu', 'neħu', '-');
+		# so here: jieħdu with suffixes - jeħdu-?
+		# we have
+		# 2 ^jeħduh/*jeħduh$, 1 ^jeħduli/*jeħduli$, 1 ^jeħduhulhom/*jeħduhulhom$
+		# but we also have
+		# 1 ^nieħduh/*nieħduh$, 1 ^jieħdux/*jieħdux$, 1 ^jieħduh/*jieħduh$
+		# so probably there should also be LR-only form jieħdu-
+		forms['pres.p3.pl'] = irreg_vowel_forms('jieħdu', 'jeħdu', '-');
+		forms['pres.p3.pl'] += irreg_vowel_forms('jieħdu', 'jieħdu', 'LR');
+		forms['pres.p2.pl'] = irreg_vowel_forms('tieħdu', 'teħdu', '-');
+		forms['pres.p2.pl'] = irreg_vowel_forms('tieħdu', 'tieħdu', 'LR');
+		forms['pres.p1.pl'] = irreg_vowel_forms('nieħdu', 'neħdu', '-');
+		forms['pres.p1.pl'] = irreg_vowel_forms('nieħdu', 'nieħdu', '-');
+
+		forms['imp.p2.sg'] = irreg_consonant_forms('ħu', 'ħud', '-', 'ek');
+		forms['imp.p2.pl'] = irreg_vowel_forms('ħudu', 'ħudu', '-');
+
+		forms['pp.m.sg'] = [('meħud', '-', '-')] ;
+		forms['pp.f.sg'] = [('meħuda', '-', '-')] ;
+		forms['pp.mf.pl'] = [('meħudin', '-', '-')] ;
+	#}
+
+	elif stem == 'ra' : #{
+		forms['past.p3.m.sg'] = irreg_vowel_forms('ra', 'ra', '-');
+		forms['past.p3.f.sg'] = irreg_consonant_forms('rat', 'rat', '-', 'ek');
+		forms['past.p2.sg'] = irreg_consonant_forms('rajt', 'rajt', '-', 'ek');	
+		forms['past.p1.sg'] = irreg_consonant_forms('rajt', 'rajt', '-', 'ek');
+		forms['past.p3.pl'] = irreg_vowel_forms('raw', 'raw', '-');
+		forms['past.p2.pl'] = irreg_vowel_forms('rajtu', 'rajtu', '-');
+		forms['past.p1.pl'] = irreg_vowel_forms('rajna', 'rajnie', '-');
+
+		forms['pres.p3.m.sg'] = irreg_vowel_forms('jara', 'jara', '-');
+		forms['pres.p3.f.sg'] = irreg_vowel_forms('tara', 'tara', '-');
+		forms['pres.p2.sg'] = irreg_vowel_forms('tara', 'tara', '-');
+		forms['pres.p1.sg'] = irreg_vowel_forms('nara', 'nara', '-');
+		forms['pres.p3.pl'] = irreg_vowel_forms('jaraw', 'jaraw', '-');
+		forms['pres.p2.pl'] = irreg_vowel_forms('taraw', 'taraw', '-');
+		forms['pres.p1.pl'] = irreg_vowel_forms('naraw', 'naraw', '-');
+
+		forms['imp.p2.sg'] = irreg_vowel_forms('ara', 'ara', '-');
+		forms['imp.p2.pl'] = irreg_vowel_forms('araw', 'araw', '-');
+
+		forms['pp.m.sg'] = [('muri', '-', '-')] ;
+		forms['pp.f.sg'] = [('murija', '-', '-')] ;
+		forms['pp.mf.pl'] = [('murijin', '-', '-')] ;
+	#}
+
+	elif stem == 'qal' : #{
+		# qal-hu-li or qal-u-li? 
+		forms['past.p3.m.sg'] = irreg_consonant_forms('qal', 'qal', '-', 'ek');
+		forms['past.p3.f.sg'] = irreg_consonant_forms('qalet', 'qalit', '-', 'ek');
+		forms['past.p2.sg'] = irreg_consonant_forms('għedt', 'għedt', '-', 'ek');
+		forms['past.p2.sg'] += irreg_consonant_forms('għidt', 'għidt', 'LR', 'ek');	
+		forms['past.p1.sg'] = irreg_consonant_forms('għedt', 'għedt', '-', 'ek');
+		forms['past.p1.sg'] += irreg_consonant_forms('għidt', 'għidt', 'LR', 'ek');
+
+		forms['past.p3.pl'] = irreg_vowel_forms('qalu', 'qalu', '-');
+		forms['past.p2.pl'] = irreg_vowel_forms('għedtu', 'għedtu', '-');
+		forms['past.p2.pl'] += irreg_vowel_forms('għidtu', 'għidtu', 'LR');
+		forms['past.p1.pl'] = irreg_vowel_forms('għedna', 'għednie', '-');
+		forms['past.p1.pl'] += irreg_vowel_forms('għidna', 'għidnie', 'LR');
+
+		forms['pres.p3.m.sg'] = irreg_consonant_forms('igħid', 'igħid', 'LR', 'ek');
+		forms['pres.p3.m.sg'] += irreg_consonant_forms('jgħid', 'jgħid', 'LR', 'ek');
+		forms['pres.p3.m.sg'] += irreg_consonant_forms('igħid', 'igħid', 'RL', 'ek');
+
+		forms['pres.p3.f.sg'] = irreg_consonant_forms('tgħid', 'tgħid', '-', 'ek');
+		forms['pres.p2.sg'] = irreg_consonant_forms('tgħid', 'tgħid', '-', 'ek');
+		forms['pres.p1.sg'] = irreg_consonant_forms('ngħid', 'ngħid', '-', 'ek');
+
+		forms['pres.p3.pl'] = irreg_vowel_forms('igħidu', 'igħidu', 'LR');
+		forms['pres.p3.pl'] += irreg_vowel_forms('jgħidu', 'jgħidu', 'LR');
+		forms['pres.p3.pl'] += irreg_vowel_forms('igħidu', 'igħidu', 'RL');
+
+		forms['pres.p2.pl'] = irreg_vowel_forms('tgħidu', 'tgħidu', '-');
+		forms['pres.p1.pl'] = irreg_vowel_forms('ngħidu', 'ngħidu', '-');
+
+		forms['imp.p2.sg'] = irreg_consonant_forms('għed', 'għed', '-', 'ek');
+		forms['imp.p2.sg'] += irreg_consonant_forms('għid', 'għid', '-', 'ek');
+		forms['imp.p2.pl'] = irreg_consonant_forms('għedu', 'għedu', '-', 'ek');
+		forms['imp.p2.pl'] += irreg_consonant_forms('għidu', 'għidu', '-', 'ek');
+
+#		forms['pp.m.sg'] = [('mogħti', '-', '-')] ;
+#		forms['pp.f.sg'] = [('mogħtija', '-', '-')] ;
+#		forms['pp.mf.pl'] = [('mogħtijin', '-', '-')] ;
+	#}
+
+	elif stem == 'ġie' : #{
+		# with suffixes: hemm ġiethom darba waħda li raw
+		# meta tiġik, ħudha - hm - 
+		# 'do not miss a good opportunity when it comes your way'
+		# also 2 ^ġietni/*ġietni$, 1 ^ġietu/*ġietu$, 1 ^ġiethom/*ġiethom$
+
+		# what about i.o. andd d.o. + i.o.?
+		forms['past.p3.m.sg'] = irreg_vowel_forms('ġie', 'ġie', '-');
+		forms['past.p3.f.sg'] = irreg_consonant_forms('ġiet', 'ġiet', '-', 'ek');
+		forms['past.p2.sg'] = irreg_consonant_forms('ġejt', 'ġejt', '-', 'ek');	
+		forms['past.p1.sg'] = irreg_consonant_forms('ġejt', 'ġejt', '-', 'ek');
+		forms['past.p3.pl'] = irreg_vowel_forms('ġew', 'ġew', '-');
+		forms['past.p2.pl'] = irreg_vowel_forms('ġejtu', 'ġejtu', '-');
+		forms['past.p1.pl'] = irreg_vowel_forms('ġejna', 'ġejnie', '-');
+
+		forms['pres.p3.m.sg'] = irreg_vowel_forms('jiġi', 'jiġi', '-');
+		forms['pres.p3.f.sg'] = irreg_vowel_forms('tiġi', 'tiġi', '-');
+		forms['pres.p2.sg'] = irreg_vowel_forms('tiġi', 'tiġi', '-');
+		forms['pres.p1.sg'] = irreg_vowel_forms('niġi', 'niġi', '-');
+		forms['pres.p3.pl'] = irreg_vowel_forms('jiġu', 'jiġu', '-');
+		forms['pres.p2.pl'] = irreg_vowel_forms('tiġu', 'tiġu', '-');
+		forms['pres.p1.pl'] = irreg_vowel_forms('niġu', 'niġu', '-');
+
+		forms['imp.p2.sg'] = irreg_vowel_forms('ejja', 'ejja', '-');
+		forms['imp.p2.pl'] = irreg_vowel_forms('ejjew', 'ejjew', '-');
+
+		forms['pprs.m.sg'] = [('ġej', '-', '-')] ;
+		forms['pprs.f.sg'] = [('ġejja', '-', '-')] ;
+		forms['pprs.mf.pl'] = [('ġejjin', '-', '-')] ;
+	#}
+
+	elif stem == 'mar' : #{
+		# it's possible to use mar + d.o.
+		# but no sign of mar + d.o. suffix
+
+		forms['past.p3.m.sg'] = irreg_consonant_forms('mar', 'mar', '-', 'ek');
+		forms['past.p3.f.sg'] = irreg_consonant_forms('marret', 'marrit', '-', 'ek');
+		forms['past.p2.sg'] = irreg_consonant_forms('mort', 'mort', '-', 'ok');	
+		forms['past.p1.sg'] = irreg_consonant_forms('mort', 'mort', '-', 'ok');
+		forms['past.p3.pl'] = irreg_vowel_forms('marru', 'marru', '-');
+		forms['past.p2.pl'] = irreg_vowel_forms('mortu', 'mortu', '-');
+		forms['past.p1.pl'] = irreg_vowel_forms('morna', 'mornie', '-');
+
+		forms['pres.p3.m.sg'] = irreg_consonant_forms('imur', 'imur', 'LR', 'ek');
+		forms['pres.p3.m.sg'] = irreg_consonant_forms('jmur', 'jmur', 'LR', 'ek');
+		forms['pres.p3.m.sg'] = irreg_consonant_forms('imur', 'imur', 'RL', 'ek');
+
+		forms['pres.p3.f.sg'] = irreg_consonant_forms('tmur', 'tmur', '-', 'ek');
+		forms['pres.p2.sg'] = irreg_consonant_forms('tmur', 'tmur', '-', 'ek');
+
+		# there is also 1 ^inmorru/*inmorru$
+		forms['pres.p1.sg'] = irreg_consonant_forms('immur', 'immur', 'LR', 'ek');
+		forms['pres.p1.sg'] = irreg_consonant_forms('mmur', 'mmur', 'LR', 'ek');
+		forms['pres.p1.sg'] = irreg_consonant_forms('immur', 'immur', 'RL', 'ek');
+
+		forms['pres.p3.pl'] = irreg_vowel_forms('imorru', 'imorru', 'LR');
+		forms['pres.p3.pl'] = irreg_vowel_forms('jmorru', 'jmorru', 'LR');
+		forms['pres.p3.pl'] = irreg_vowel_forms('imorru', 'imorru', 'RL');
+
+		forms['pres.p2.pl'] = irreg_vowel_forms('tmorru', 'tmorru', '-');
+
+		forms['pres.p1.pl'] = irreg_vowel_forms('immorru', 'immorru', 'LR');
+		forms['pres.p1.pl'] = irreg_vowel_forms('mmorru', 'mmorru', 'LR');
+		forms['pres.p1.pl'] = irreg_vowel_forms('immorru', 'immorru', 'RL');
+
+		forms['imp.p2.sg'] = irreg_consonant_forms('mur', 'mur', '-', 'ek');
+		forms['imp.p2.pl'] = loan_vowel_forms('morru', 'morru', '-');
+
+	#}
+
+# isn't it a special -ie type of hollow verbs (in Arabic primae hamza though)
+	elif stem == 'kiel' : #{
+
+		# kiel-u, kiel-x? not kilu, kilx? or maybe kielu, but kilha?
+		forms['past.p3.m.sg'] = irreg_consonant_forms('kiel', 'kiel', '-', 'ek');
+		forms['past.p3.f.sg'] = irreg_consonant_forms('kielet', 'kielit', '-', 'ek');
+		forms['past.p2.sg'] = irreg_consonant_forms('kilt', 'kilt', '-', 'ek');	
+		forms['past.p1.sg'] = irreg_consonant_forms('kilt', 'kilt', '-', 'ek');
+		forms['past.p3.pl'] = irreg_vowel_forms('kielu', 'kielu', '-');
+		forms['past.p2.pl'] = irreg_vowel_forms('kiltu', 'kiltu', '-');
+		forms['past.p1.pl'] = irreg_vowel_forms('kilna', 'kilnie', '-');
+
+		# 1 ^jiekolhom/*jiekolhom$  1 ^jiekolhielu/*jiekolhielu$
+		forms['pres.p3.m.sg'] = irreg_consonant_forms('jiekol', 'jiekol', '-', 'ok');
+		forms['pres.p3.f.sg'] = irreg_consonant_forms('tiekol', 'tiekol', '-', 'ok');
+		forms['pres.p2.sg'] = irreg_consonant_forms('tiekol', 'tiekol', '-', 'ok');
+		forms['pres.p1.sg'] = irreg_consonant_forms('niekol', 'niekol', '-', 'ok');
+
+		forms['pres.p3.pl'] = irreg_vowel_forms('jieklu', 'jieklu', '-');
+		forms['pres.p2.pl'] = irreg_vowel_forms('tieklu', 'tieklu', '-');
+		forms['pres.p1.pl'] = irreg_vowel_forms('nieklu', 'nieklu', '-');
+
+		forms['imp.p2.sg'] = irreg_consonant_forms('kul', 'kul', '-', 'ek');
+		forms['imp.p2.pl'] = irreg_vowel_forms('kulu', 'kulu', '-');
+
+	#}
+
+	return forms;
+
+#}
+
+
+## ----------------------------------------------------------------------------##
+## defective
+## ----------------------------------------------------------------------------##
+
+
+def auxiliary_forms (stem): #{
+
+	forms = {};
+
+	if stem == 'kien' : #{
+		forms['past.p3.m.sg'] = [('kien', '-', '-'),
+					 ('kien', 'S__qtalt/x', '-')];
+		forms['past.p3.f.sg'] = [('kienet', '-', '-'),
+					 ('kienit', 'S__qtalt/x', '-')];
+		forms['past.p2.sg'] =  [('kont', '-', '-'),
+					('kont', 'S__qtalt/x', '-')];	
+		forms['past.p1.sg'] =  [('kont', '-', '-'),
+					('kont', 'S__qtalt/x', '-')];
+		forms['past.p3.pl'] =  [('kienu', '-', '-'),
+					('kienu', 'S__qtalt/x', '-')];
+		forms['past.p2.pl'] =  [('kontu', '-', '-'),
+					('kontu', 'S__qtalt/x', '-')];
+		forms['past.p1.pl'] =  [('konna', '-', '-'),
+					('konnie', 'S__qtalt/x', '-')];
+
+		forms['pres.p3.m.sg'] = [('ikun', '-', 'LR'),
+					 ('jkun', '-', 'LR'),
+					 ('ikun', '-', 'RL'),
+					 ('ikun', 'S__qtalt/x', 'LR'), 
+					 ('jkun', 'S__qtalt/x', 'LR'),
+					 ('ikun', 'S__qtalt/x', 'RL')];
+		forms['pres.p3.f.sg'] = [('tkun', '-', '-'),
+					 ('tkun', 'S__qtalt/x', '-')];
+		forms['pres.p2.sg'] =  [('tkun', '-', '-'),
+					('tkun', 'S__qtalt/x', '-')];
+		forms['pres.p1.sg'] =  [('inkun', '-', 'LR'),
+					('nkun', '-', 'LR'),
+					('inkun', '-', 'RL'),
+					('inkun', 'S__qtalt/x', 'LR'), 
+					('nkun', 'S__qtalt/x', 'LR'),
+					('inkun', 'S__qtalt/x', 'RL')];
+		forms['pres.p3.pl'] =  [('ikunu', '-', 'LR'),
+					('jkunu', '-', 'LR'),
+					('ikunu', '-', 'RL'),
+					('ikunu', 'S__qtalt/x', 'LR'), 
+					('jkunu', 'S__qtalt/x', 'LR'),
+					('ikunu', 'S__qtalt/x', 'RL')];
+		forms['pres.p2.pl'] =  [('tkunu', '-', '-'),
+					('tkunu', 'S__qtalt/x', '-')];
+		forms['pres.p1.pl'] =  [('inkunu', '-', 'LR'),
+					('nkunu', '-', 'LR'),
+					('inkunu', '-', 'RL'),
+					('inkunu', 'S__qtalt/x', 'LR'), 
+					('nkunu', 'S__qtalt/x', 'LR'),
+					('inkunu', 'S__qtalt/x', 'RL')];
+
+		# I'm guessing here
+		forms['imp.p2.sg'] = [('kun', '-', '-'),
+				      ('kun', 'S__qtalt/x', '-')];
+		forms['imp.p2.pl'] = [('kunu', '-', '-'),
+				      ('kunu', 'S__qtalt/x', '-')];
+
+	#}
+
+	elif stem == 'kellu' : #{
+		forms['past.p3.m.sg'] = [('kellu', '-', '-'),
+					 ('kellu', 'S__qtalt/x', '-')];
+		forms['past.p3.f.sg'] = [('kellha', '-', '-'),
+					 ('kellhie', 'S__qtalt/x', '-')];
+		forms['past.p2.sg'] =  [('kellek', '-', '-'),
+					('kellek', 'S__qtalt/x', '-')];	
+		forms['past.p1.sg'] =  [('kelli', '-', '-'),
+					('kelli', 'S__qtalt/x', '-')];
+		forms['past.p3.pl'] =  [('kellhom', '-', '-'),
+					('kellhom', 'S__qtalt/x', '-')];
+		forms['past.p2.pl'] =  [('kellkom', '-', '-'),
+					('kellkom', 'S__qtalt/x', '-')];
+		forms['past.p1.pl'] =  [('kellna', '-', '-'),
+					('kellnie', 'S__qtalt/x', '-')];
+
+		forms['pres.p3.m.sg'] = [('ikollu', '-', 'LR'),
+					 ('jkollu', '-', 'LR'),
+					 ('ikollu', '-', 'RL'),
+					 ('ikollu', 'S__qtalt/x', 'LR'), 
+					 ('jkollu', 'S__qtalt/x', 'LR'),
+					 ('ikollu', 'S__qtalt/x', 'RL')];
+		forms['pres.p3.f.sg'] = [('ikollha', '-', 'LR'),
+					 ('jkollha', '-', 'LR'),
+					 ('ikollha', '-', 'RL'),
+					 ('ikollhie', 'S__qtalt/x', 'LR'), 
+					 ('jkollhie', 'S__qtalt/x', 'LR'),
+					 ('ikollhie', 'S__qtalt/x', 'RL')];
+		forms['pres.p2.sg'] =  [('ikollok', '-', 'LR'),
+					('jkollok', '-', 'LR'),
+					('ikollok', '-', 'RL'),
+					('ikollok', 'S__qtalt/x', 'LR'), 
+					('jkollok', 'S__qtalt/x', 'LR'),
+					('ikollok', 'S__qtalt/x', 'RL')];
+		forms['pres.p1.sg'] =  [('ikolli', '-', 'LR'),
+					('jkolli', '-', 'LR'),
+					('ikolli', '-', 'RL'),
+					('ikolli', 'S__qtalt/x', 'LR'), 
+					('jkolli', 'S__qtalt/x', 'LR'),
+					('ikolli', 'S__qtalt/x', 'RL')];
+		forms['pres.p3.pl'] =  [('ikollhom', '-', 'LR'),
+					('jkollhom', '-', 'LR'),
+					('ikollhom', '-', 'RL'),
+					('ikollhom', 'S__qtalt/x', 'LR'), 
+					('jkollhom', 'S__qtalt/x', 'LR'),
+					('ikollhom', 'S__qtalt/x', 'RL')];
+		forms['pres.p2.pl'] =  [('ikollkom', '-', 'LR'),
+					('jkollkom', '-', 'LR'),
+					('ikollkom', '-', 'RL'),
+					('ikollkom', 'S__qtalt/x', 'LR'), 
+					('jkollkom', 'S__qtalt/x', 'LR'),
+					('ikollkom', 'S__qtalt/x', 'RL')];
+		forms['pres.p1.pl'] =  [('ikollna', '-', 'LR'),
+					('jkollna', '-', 'LR'),
+					('ikollna', '-', 'RL'),
+					('ikollnie', 'S__qtalt/x', 'LR'), 
+					('jkollnie', 'S__qtalt/x', 'LR'),
+					('ikollnie', 'S__qtalt/x', 'RL')];
+
+	#}
+
+	return forms;
+
+#}
 
 
 ##-----------------------------------------------------------------------------##
@@ -1846,6 +2287,19 @@ stems = [
 #ikkonsidra, loan, consider, k-k-n-s-d-r, a-i, english, unchecked
 #
 
+# irregular
+	{'stem': 'ta', 'type': 'irregular', 'gloss': 'give', 'root': 'għ-t-j'}, # Arabic 4th form أعطى
+	{'stem': 'ħa', 'type': 'irregular', 'gloss': 'take', 'root': 'hamza-ħ-d'}, # Arabic أخذ
+	{'stem': 'ra', 'type': 'irregular', 'gloss': 'see', 'root': 'hamza-ħ-d'}, # Arabic أخذ
+	{'stem': 'qal', 'type': 'irregular', 'gloss': 'say', 'root': 'q-w-l'}, # Arabic قال
+	{'stem': 'ġie', 'type': 'irregular', 'gloss': 'come', 'root': 'ġ-j-hamza'}, # Arabic جاء
+	{'stem': 'mar', 'type': 'irregular', 'gloss': 'go'},
+	{'stem': 'kiel', 'type': 'irregular', 'gloss': 'eat'}, # أكل
+
+# auxiliary
+	{'stem': 'kien', 'type': 'auxiliary', 'gloss': 'be'},
+	{'stem': 'kellu', 'type': 'auxiliary', 'gloss': 'have'},
+
 ];
 
 ##-----------------------------------------------------------------------------##
@@ -1943,6 +2397,13 @@ for stem in stems: #{
 		if 'pp' in stem: #{
 			infl[stem['stem']].update(loan_pp(stem['pp']));
 # pprs
+	#}
+
+	elif stem['type'] == 'irregular' : #{
+		infl[stem['stem']] = irregular_forms(stem['stem']);
+
+	elif stem['type'] == 'auxiliary' : #{
+		infl[stem['stem']] = auxiliary_forms(stem['stem']);
 
 #}
 
