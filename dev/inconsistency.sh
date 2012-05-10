@@ -3,8 +3,8 @@
 TMPDIR=/tmp
 
 # Use the first one for a quick random sample testvoc, second for the full thing
-maybe-sample () { N=10000; echo "($0: only running on a random sample of $N entries)" >&2; shuf | head "-$N"; }
-#maybe-sample () { cat; }
+#maybe-sample () { N=10000; echo "($0: only running on a random sample of $N entries)" >&2; shuf | head "-$N"; }
+maybe-sample () { cat; }
 
 expansion-to-pretransfer () {
     grep -v ':<:' | sort -u | maybe-sample | sed 's/:>:/:/g' | cut -f2 -d':' | sed 's%\/%\\/%g' | sed 's/^/^/' | sed 's/$/$ ^.<sent><clb>$/'
