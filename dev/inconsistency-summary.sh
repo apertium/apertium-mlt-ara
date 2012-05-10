@@ -1,5 +1,7 @@
-INC=$1
-OUT=testvoc-summary.$2.txt
+#!/bin/bash
+
+INC="$1"
+OUT="testvoc-summary.$2.txt"
 POS="adj adv cm cnjcoo det guio ij n np num pr prn vblex vaux cnjsub"
 
 ECHOE="echo -e"
@@ -11,61 +13,57 @@ if test x$(uname -s) = xDarwin; then
 fi
 
 
-echo "" > $OUT;
+echo "" > "$OUT";
 
-date >> $OUT
-$ECHOE  "===============================================" >> $OUT
-$ECHOE  "POS\tTotal\tClean\tWith @\tWith #\tClean %" >> $OUT
+date >> "$OUT"
+$ECHOE  "===============================================" >> "$OUT"
+$ECHOE  "POS\tTotal\tClean\tWith @\tWith #\tClean %" >> "$OUT"
+
+aterrors=$(mktemp -t testvoc.XXXXXXXXXX)
+hasherrors=$(mktemp -t testvoc.XXXXXXXXXX)
+
+<"$INC" sed 's/~#/#/g' | grep -v -e '->  *#'   -e REGEX | grep -e '->  *\^@' > "$aterrors"
+<"$INC" sed 's/~#/#/g' | grep -v -e '->  *\^@' -e REGEX | grep -e '>  *#'    > "$hasherrors"
+
+
 for i in $POS; do
 	if [ "$i" = "det" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<n>' -e '<np>' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v -e '<n>' -e '<np>'  | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" |  sed 's/~#/#/g' |grep '>  *#' | grep -v -e '<n>' -e '<np>' | grep -v REGEX |  wc -l`;
+		remove-other-pos () { grep -v -e '<n>' -e '<np>'; }
 	elif [ "$i" = "preadv" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<adj>' -e '<adv>' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v -e '<adj>' -e '<adv>'  | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" |  sed 's/~#/#/g' |grep '>  *#' | grep -v -e '<adj>' -e '<adv>' | grep -v REGEX |  wc -l`;
+		remove-other-pos () { grep -v -e '<adj>' -e '<adv>'; }
 	elif [ "$i" = "adj" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<part>' -e '<qst>' -e '<cnj' -e '<v'  | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v -e '<part>' -e '<qst>' -e '<cnj' -e '<v'  | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" |  sed 's/~#/#/g' |grep '>  *#' | grep -v -e '<part>' -e '<qst>' -e '<cnj' -e '<v' | grep -v REGEX |  wc -l`;
+		remove-other-pos () { grep -v -e '<part>' -e '<qst>' -e '<cnj' -e '<v' ; }
 	elif [ "$i" = "adv" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<part>' -e '<qst>' -e '<cnj' -e '<v' -e '<adj>' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v -e '<part>' -e '<qst>' -e '<cnj' -e '<v' -e '<adj>'  | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" |  sed 's/~#/#/g' |grep '>  *#' | grep -v -e '<part>' -e '<qst>' -e '<cnj' -e '<v' -e '<adj>' | grep -v REGEX |  wc -l`;
+		remove-other-pos () { grep -v -e '<part>' -e '<qst>' -e '<cnj' -e '<v' -e '<adj>'; }
 	elif [ "$i" = "cnjcoo" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<v>' -e '<n>' -e '<adj>' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v -e '<v>' -e '<n>' -e '<adj>' | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" |  sed 's/~#/#/g' |grep '>  *#' | grep -v -e '<v>' -e '<n>' -e '<adj>' | grep -v REGEX |  wc -l`;
+		remove-other-pos () { grep -v -e '<v>' -e '<n>' -e '<adj>'; }
 	elif [ "$i" = "np" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<part>' -e '<qst>' -e '<cnj' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v -e '<part>' -e '<qst>' -e '<cnj'  | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" |  sed 's/~#/#/g' |grep '>  *#' | grep -v -e '<part>' -e '<qst>' -e '<cnj' | grep -v REGEX |  wc -l`;
+		remove-other-pos () { grep -v -e '<part>' -e '<qst>' -e '<cnj'; }
 	elif [ "$i" = "n" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<part>' -e '<qst>' -e '<cnj' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v -e '<part>' -e '<qst>' -e '<cnj'  | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" |  sed 's/~#/#/g' |grep '>  *#' | grep -v -e '<part>' -e '<qst>' -e '<cnj' | grep -v REGEX |  wc -l`;
+		remove-other-pos () { grep -v -e '<part>' -e '<qst>' -e '<cnj'; }
 	elif [ "$i" = "v" ]; then
-		TOTAL=`cat $INC | grep "<$i>" | grep -v -e '<part>' -e '<qst>' -e '<cnj' | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@' | grep -v -e '<part>' -e '<qst>' -e '<cnj'  | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" |  sed 's/~#/#/g' |grep '>  *#' | grep -v -e '<part>' -e '<qst>' -e '<cnj' | grep -v REGEX |  wc -l`;
+		remove-other-pos () { grep -v -e '<part>' -e '<qst>' -e '<cnj'; }
 	else
-		TOTAL=`cat $INC | grep "<$i>" | grep -v REGEX | wc -l`; 
-		AT=`cat $INC | grep "<$i>" | grep '@'  | grep -v REGEX | wc -l`;
-		HASH=`cat $INC | grep "<$i>" |  sed 's/~#/#/g' |grep '>  *#' | grep -v REGEX |  wc -l`;
+		remove-other-pos () { cat; }
 	fi
-	UNCLEAN=`calc $AT+$HASH`;
-	CLEAN=`calc $TOTAL-$UNCLEAN`;
-	PERCLEAN=`calc $UNCLEAN/$TOTAL*100 |sed 's/^\W*//g' | sed 's/~//g' | head -c 5`;
+	TOTAL=$(grep -v REGEX "$INC" | remove-other-pos | grep "<$i>" -c )
+	AT=$(<"$aterrors" remove-other-pos | grep -c "<$i>" )
+	HASH=$(<"$hasherrors" remove-other-pos |  grep -c "<$i>" )
+
+	UNCLEAN=$(calc -p "$AT+$HASH")
+	CLEAN=$(calc -p "$TOTAL-$UNCLEAN")
+	PERCLEAN=$(calc -p "$UNCLEAN/$TOTAL*100" | sed 's/~//g' | head -c 5)
 	echo $PERCLEAN | grep "Err" > /dev/null;
 	if [ $? -eq 0 ]; then
 		TOTPERCLEAN="100";
 	else
-		TOTPERCLEAN=`calc 100-$PERCLEAN | sed 's/^\W*//g' | sed 's/~//g' | head -c 5`;
+		TOTPERCLEAN=$(calc -p "100-$PERCLEAN" | sed 's/~//g' | head -c 5)
 	fi
 
-	$ECHOE $TOTAL";"$i";"$CLEAN";"$AT";"$HASH";"$TOTPERCLEAN;
-done | sort -gr | awk -F';' '{print $2"\t"$1"\t"$3"\t"$4"\t"$5"\t"$6}' >> $OUT
+	$ECHOE "$TOTAL;$i;$CLEAN;$AT;$HASH;$TOTPERCLEAN"
+done | sort -gr | awk -F';' '{print $2"\t"$1"\t"$3"\t"$4"\t"$5"\t"$6}' >> "$OUT"
 
-$ECHOE "===============================================" >> $OUT
-cat $OUT;
+rm -f "$aterrors" "$hasherrors"
+
+$ECHOE "===============================================" >> "$OUT"
+cat "$OUT"

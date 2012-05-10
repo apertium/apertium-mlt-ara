@@ -1,3 +1,7 @@
+#!/bin/bash
+
+cd $(dirname $0)
+
 #echo "==Arabic->Maltese===========================";
 #bash inconsistency.sh ar-mt > /tmp/ar-mt.testvoc; bash inconsistency-summary.sh /tmp/ar-mt.testvoc ar-mt
 #echo ""
