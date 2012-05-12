@@ -1,0 +1,75 @@
+{| class="wikitable" 
+ |-
+ ! Stem 
+ ! Type 
+ ! Subtype 
+ ! Gloss 
+ ! Base 
+ ! Ixx_infix 
+ ! Vowel_impf 
+ ! Trans 
+ ! Pp 
+
+|-
+| kanta || loan || first_cons || sing || kant ||  || a || tv || kantat
+|-
+| ammira || loan || first_vowel || admire || ammir ||  || a || tv || ammirat
+|-
+| stimula || loan || two_cons || stimulate || stimul ||  || a || TD || stimulat
+|-
+| ipparteċipa || loan || double_cons || participate || pparteċip ||  || a || TD || parteċipat
+|-
+| irrappreżenta || loan || double_cons || represent || rrappreżent ||  || a || TD || rappreżentat
+|-
+| ippenetra || loan || double_cons || penetrate || ppenetr ||  || a || tv || penetrat
+|-
+| ivvjola || loan || double_cons || violate || vvjol ||  || a || tv || vjolat
+|-
+| indika || loan || first_vowel || indicate || indik ||  || a || TD || indikat
+|-
+| eżerċita || loan || first_vowel || exercise || eżerċit ||  || a || tv || eżerċitat
+|-
+| ipprova || loan || double_cons || try || pprov ||  || a || TD ||
+|-
+| esperjenza || loan || first_vowel || experience || esperjenz ||  || a || TD ||
+|-
+| iddeċida || loan || double_cons || decide || ddeċid ||  || i || TD || deċiż
+|-
+| ordna || loan || first_vowel || order || ordn ||  || a || TD || 
+|-
+| falla || loan || first_cons || be·absent || fall ||  || i || TD || fallut
+|-
+| iddeskriva || loan || double_cons || describe || ddeskriv ||  || i || tv || deskritt
+|-
+| aggredixxa || loan || first_vowel || agress || aggred || ixx || i || tv || aggredit
+|-
+| irrisponda || loan || double_vowel || respond || rrispond ||  || i || tv || rispost
+|-
+| ittraduċa || loan || double_vowel || translate || ttraduċ ||  || i || tv || tradott
+|-
+| irreaġixxa || loan || double_cons || react || rreaġ || ixx || i || TD || reaġit
+|-
+| ipprojbixxa || loan || double_cons || prohibit || pprojb || ixx || i || tv || projbit
+|-
+| ippromwova || loan || double_cons || promote || ppromwov ||  || i || tv || promoss
+|-
+| inkluda || loan || first_vowel || include || inklud ||  || i || tv || inkluż
+|-
+| ikkonsista || loan || double_cons || consist || kkonsist ||  || i || tv || konsistit
+|-
+| iżviluppa || loan || two_cons || develop || żvilupp ||  || i || TD || żviluppat
+|-
+| esprima || loan || first_vowel || express || esprim ||  || i || tv || espress
+|-
+| aġġastja || loan || first_vowel || adjust || aġġastj ||  || a || tv || aġġustat
+|-
+| iddawnlowdja || loan || double_vowel || download || ddawnlowdj ||  || a || tv || 
+|-
+| infurza || loan || first_vowel || enforce || infurz ||  || a || tv || infurzat
+|-
+| ikklassifika || loan || double_vowel || classify || kklassifik ||  || i || tv || klassifikat
+|-
+| ikkonsidra || loan || double_vowel || consider || kkonsidr ||  || i || TD || konsidrat
+|-
+| ivvota || loan || double_vowel || vote || vvot ||  || a || TD || vvotat
+|}

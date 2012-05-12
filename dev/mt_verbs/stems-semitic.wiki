@@ -1,0 +1,456 @@
+{| class="wikitable" 
+ |-
+ ! Stem 
+ ! Type 
+ ! Pattern 
+ ! Gloss 
+ ! Root 
+ ! Vowel_perf 
+ ! Vowel_impf 
+ ! Trans 
+ ! Pprs 
+ ! Pp 
+
+|-
+| qasam || strong || 1 || break || q-s-m || a-a || a-a || tv ||  || ma
+|-
+| ħabat || strong || 1 || strike || ħ-b-t || a-a || a-a || tv ||  || ma
+|-
+| ħaqar || strong || 1 || oppress || ħ-q-r || a-a || a-a || tv ||  || ma
+|-
+| ħalaq || strong || 1 || create || ħ-l-q || a-a || a-a || tv ||  || ma
+|-
+| ħaraq || strong || 1 || burn || ħ-r-q || a-a || a-a || tv ||  || ma
+|-
+| ħataf || strong || 1 || snatch || ħ-t-f || a-a || a-a || tv ||  || ma
+|-
+| għalaq || strong || 1 || shut || għ-l-q || a-a || a-a || tv ||  || ma
+|-
+| għasar || strong || 1 || squeeze || għ-s-r || a-a || a-a || tv ||  || ma
+|-
+| għażaq || strong || 1 || dig || għ-ż-q || a-a || a-a || tv ||  || ma
+|-
+| bagħat || strong || 1 || send || b-għ-t || a-a || i-a || tv ||  || mi
+|-
+| ċaħad || strong || 1 || deny || ċ-ħ-d || a-a || i-a || tv ||  || mi
+|-
+| daħak || strong || 1 || laugh || d-ħ-k || a-a || i-a || tv ||  || mi
+|-
+| dalam || strong || 1 || grow·dark || d-l-m || a-a || i-a || iv ||  || mu
+|-
+| fadal || strong || 1 || be·left·over || f-d-l || a-a || i-a || iv ||  || mi
+|-
+| fasad || strong || 1 || bleed || f-s-d || a-a || i-a || iv ||  || mi
+|-
+| laħaq || strong || 1 || reach || l-ħ-q || a-a || i-a || tv ||  || mi
+|-
+| lagħab || strong || 1 || play || l-għ-b || a-a || i-a || itv ||  || mi
+|-
+| bagħad || strong || 1 || hate || b-għ-d || a-a || i-a || tv ||  || mi
+|-
+| lagħaq || strong || 1 || lick || l-għ-q || a-a || i-a || tv ||  || mi
+|-
+| marad || strong || 1 || fall·sick || m-r-d || a-a || i-a || TD ||  || 
+|-
+| sahar || strong || 1 || work·overtime || s-h-r || a-a || i-a || TD ||  || 
+|-
+| taħan || strong || 1 || grind || t-ħ-n || a-a || i-a || TD ||  || 
+|-
+| wasal || strong || 1 || arrive || w-s-l || a-a ||  || iv ||  || 
+|-
+| daħal || strong || 1 || enter || d-ħ-l || a-a || i-o || TD ||  || 
+|-
+| ġabar || strong || 1 || collect || ġ-b-r || a-a || i-o || TD ||  || 
+|-
+| saħan || strong || 1 || become·warm || s-ħ-n || a-a || i-o || TD ||  || 
+|-
+| talab || strong || 1 || pray, ask || t-l-b || a-a || i-o || TD ||  || 
+|-
+| maxat || strong || 1 || comb || m-x-t || a-a || o-o || TD ||  || 
+|-
+| qagħad || strong || 1 || stand || q-għ-d || a-a || o-o || iv ||  || ma
+|-
+| bagħad || strong || 1 || hate || b-għ-d || a-a || o-o || TD ||  || 
+|-
+| baram || strong || 1 || twist || b-r-m || a-a || o-o || TD ||  || 
+|-
+| ħanaq || strong || 1 || make || ħ-n-q || a-a || o-o || TD ||  || 
+|-
+| laqat || strong || 1 || hit || l-q-t || a-a || o-o || TD ||  || 
+|-
+| qaras || strong || 1 || pinch || q-r-s || a-a || o-o || TD ||  || 
+|-
+| rabat || strong || 1 || tie, bind || r-b-t || a-a || o-o || TD ||  || ma
+|-
+| raqad || strong || 1 || sleep || r-q-d || a-a || o-o || iv ||  || 
+|-
+| ħatar || strong || 1 || elect || ħ-t-r || a-a || a-a || tv ||  || ma
+|-
+| ħarab || strong || 1 || escape || ħ-r-b || a-a || a-a || TD ||  || ma
+|-
+| qabad || strong || 1 || catch || q-b-d || a-a || a-a || TD ||  || ma
+|-
+| naqas || strong || 1 || wane || n-q-s || a-a || o-o || TD ||  || mi
+|-
+| laħaq || strong || 1 || reach || l-ħ-q || a-a || i-a || tv ||  || mi
+|-
+| qala || strong || 1 || earn || q-l-għ || a-a || a-a || tv ||  || ma
+|-
+| qata || strong || 1 || cut || q-t-għ || a-a || a-a || tv ||  || 
+|-
+| seta || strong || 1 || can || s-t-għ || e-a || i-a || tv ||  || mi
+|-
+| baqa || strong || 1 || remain || b-q-għ || a-a || i-a || tv ||  || mi
+|-
+| bela || strong || 1 || swallow || b-l-għ || e-a || i-a || tv ||  || mi
+|-
+| ħareġ || strong || 1 || go·out || ħ-r-ġ || a-e || o-o || TD ||  || 
+|-
+| ħadem || strong || 1 || work || ħ-d-m || a-e || a-e || TD ||  || 
+|-
+| ħafer || strong || 1 || forgive || ħ-f-r || a-e || a-e || TD ||  || 
+|-
+| ħaleb || strong || 1 || milk || ħ-l-b || a-e || a-e || TD ||  || 
+|-
+| ħalef || strong || 1 || swear || ħ-l-f || a-e || a-e || TD ||  || 
+|-
+| għalef || strong || 1 || feed·animals || għ-l-f || a-e || a-e || TD ||  || 
+|-
+| ħasel || strong || 1 || wash || ħ-s-l || a-e || a-e || TD ||  || ma
+|-
+| għamel || strong || 1 || make || għ-m-l || a-e || a-e || TD ||  || 
+|-
+| qabel || strong || 1 || agree || q-b-l || a-e || a-e || TD ||  || 
+|-
+| qabeż || strong || 1 || jump || q-b-ż || a-e || a-e || TD ||  || 
+|-
+| għażel || strong || 1 || choose || għ-ż-l || a-e || a-e || TD ||  || 
+|-
+| qatel || strong || 1 || kill || q-t-l || a-e || o-o || TD ||  || ma
+|-
+| ħaseb || strong || 1 || think || ħ-s-b || a-e || a-e || TD ||  || ma
+|-
+| ħeles || strong || 1 || deliver || ħ-l-s || e-e || e-e || tv ||  || me
+|-
+| għereq || strong || 1 || stink || għ-r-q || e-e || e-e || TD ||  || 
+|-
+| hemeż || strong || 1 || fasten·with·pin || h-m-ż || e-e || e-e || TD ||  || 
+|-
+| heġem || strong || 1 || devour || h-ġ-m || e-e || e-e || TD ||  || 
+|-
+| hebeż || strong || 1 || recede || h-b-ż || e-e || e-e || TD ||  || 
+|-
+| heres || strong || 1 || pestle || h-r-s || e-e || e-e || TD ||  || 
+|-
+| ħebel || strong || 1 || rave || ħ-b-l || e-e || e-e || TD ||  || 
+|-
+| ħemer || strong || 1 || ferment || ħ-m-r || e-e || e-e || TD ||  || 
+|-
+| ħerek || strong || 1 || rise·early || ħ-r-k || e-e || e-e || TD ||  || 
+|-
+| deher || strong || 1 || appear || d-h-r || e-e || i-e || TD ||  || 
+|-
+| fehem || strong || 1 || understand || f-h-m || e-e || i-e || TD ||  || 
+|-
+| xeher || strong || 1 || wail || x-h-r || e-e || i-e || TD ||  || 
+|-
+| xegħel || strong || 1 || light || x-għ-l || e-e ||  || iv ||  || 
+|-
+| resaq || strong || 1 || approach || r-s-q || e-a || e-a || TD ||  || 
+|-
+| feraħ || strong || 1 || rejoice || f-r-ħ || e-a || i-a || TD ||  || 
+|-
+| refa || strong || 1 || raise || r-f-għ || e-a || i-a || TD ||  || me
+|-
+| fetaħ || strong || 1 || open || f-t-ħ || e-a || i-a || tv ||  || mi
+|-
+| felaħ || strong || 1 || be·strong || f-l-ħ || e-a || i-a || TD ||  || 
+|-
+| kesaħ || strong || 1 || be·cold || k-s-ħ || e-a || i-a || TD ||  || 
+|-
+| mesaħ || strong || 1 || wipe || m-s-ħ || e-a || i-a || TD ||  || 
+|-
+| lemaħ || strong || 1 || perceive || l-m-ħ || e-a || i-a || TD ||  || 
+|-
+| rebaħ || strong || 1 || win || r-b-ħ || e-a || i-a || TD ||  || 
+|-
+| reżaħ || strong || 1 || shiver || r-ż-ħ || e-a || i-a || TD ||  || 
+|-
+| sebaħ || strong || 1 || dawn || s-b-ħ || e-a || i-a || TD ||  || 
+|-
+| seraq || strong || 1 || steal || s-r-q || e-a || i-a || TD ||  || 
+|-
+| telaq || strong || 1 || depart || t-l-q || e-a || i-a || TD ||  || 
+|-
+| selaħ || strong || 1 || skin || s-l-ħ || e-a || i-o || TD ||  || 
+|-
+| żebagħ || strong || 1 || paint || ż-b-għ || e-a || i-o || TD ||  || 
+|-
+| żelaq || strong || 1 || slip || ż-l-q || e-a || i-o || TD ||  || 
+|-
+| sebaq || strong || 1 || outstrip || s-b-q || e-a || i-o || TD ||  || 
+|-
+| nefaħ || strong || 1 || blow || n-f-ħ || e-a || o-o || iv ||  || 
+|-
+| nefaq || strong || 1 || spend || n-f-q || e-a || o-o || TD ||  || 
+|-
+| beżaq || strong || 1 || spit || b-ż-q || e-a || o-o || TD ||  || 
+|-
+| fetaq || strong || 1 || unstitch || f-t-q || e-a || o-o || TD ||  || 
+|-
+| ġema || strong || 1 || gather || ġ-m-għ || e-a ||  || TD ||  || 
+|-
+| rebaħ || strong || 1 || win || r-b-ħ || e-a || i-a || tv ||  || mi
+|-
+| kiteb || strong || 1 || write || k-t-b || i-e || i-e || tv ||  || mi
+|-
+| kiser || strong || 1 || break || k-s-r || i-e || i-e || TD ||  || 
+|-
+| niżel || strong || 1 || descend || n-ż-l || i-e || i-e || TD ||  || mi
+|-
+| bidel || strong || 1 || change || b-d-l || i-e || i-e || TD ||  || 
+|-
+| difen || strong || 1 || bury || d-f-n || i-e || i-e || TD ||  || 
+|-
+| dilek || strong || 1 || smear || d-l-k || i-e || i-e || TD ||  || 
+|-
+| fired || strong || 1 || separate || f-r-d || i-e || i-e || TD ||  || 
+|-
+| firex || strong || 1 || spread || f-r-x || i-e || i-e || TD ||  || 
+|-
+| ġibed || strong || 1 || pull || ġ-b-d || i-e || i-e || TD ||  || 
+|-
+| gideb || strong || 1 || lie || g-d-b || i-e || i-e || TD ||  || 
+|-
+| gidem || strong || 1 || bite || g-d-m || i-e || i-e || TD ||  || 
+|-
+| kiber || strong || 1 || grow || k-b-r || i-e || i-e || TD ||  || 
+|-
+| kines || strong || 1 || sweep || k-n-s || i-e || i-e || TD ||  || 
+|-
+| giref || strong || 1 || scratch || g-r-f || i-e || i-e || TD ||  || 
+|-
+| nidem || strong || 1 || repent || n-d-m || i-e || i-e || TD ||  || 
+|-
+| kixef || strong || 1 || unveil || k-x-f || i-e || i-e || TD ||  || mi
+|-
+| siker || strong || 1 || get·drunk || s-k-r || i-e || i-e || TD ||  || 
+|-
+| silef || strong || 1 || lend || s-l-f || i-e || i-e || TD ||  || 
+|-
+| tilef || strong || 1 || lose || t-l-f || i-e || i-e || TD ||  || 
+|-
+| żifen || strong || 1 || dance || ż-f-n || i-e || i-e || TD ||  || 
+|-
+| wiżen || strong || 1 || weigh || w-ż-n || i-e ||  || TD ||  || 
+|-
+| siket || strong || 1 || be·silent || s-k-t || i-e || i-o || TD ||  || 
+|-
+| rikeb || strong || 1 || ride || r-k-b || i-e || i-e || tv ||  || mi
+|-
+| kiseb || strong || 1 || obtain || k-s-b || i-e || i-e || TD ||  || mi
+|-
+| sogħol || strong || 1 || cough || s-għ-l || o-o || i-o || TD ||  || 
+|-
+| sogħob || strong || 1 || be·sorry || s-għ-b || o-o || i-o || TD ||  || 
+|-
+| xorob || strong || 1 || drink || x-r-b || o-o || i-o || TD ||  || 
+|-
+| ħolom || strong || 1 || dream || ħ-l-m || o-o || o-o || TD ||  || 
+|-
+| korob || strong || 1 || groan || k-r-b || o-o || o-o || TD ||  || 
+|-
+| ħoloq || strong || 1 || be·created || ħ-l-q || o-o || o-o || TD ||  || 
+|-
+| forogħ || strong || 1 || ebb || f-r-għ || o-o || o-o || TD ||  || 
+|-
+| kotor || strong || 1 || abound || k-t-r || o-o || o-o || TD ||  || 
+|-
+| għodos || strong || 1 || dive || għ-d-s || o-o || o-o || TD ||  || 
+|-
+| għokos || strong || 1 || decay || għ-k-s || o-o || o-o || TD ||  || 
+|-
+| għorok || strong || 1 || rub || għ-r-k || o-o || o-o || TD ||  || 
+|-
+| għolob || strong || 1 || grow·thin || għ-l-b || o-o || o-o || iv ||  || 
+|-
+| qorob || strong || 1 || get·near || q-r-b || o-o || o-o || iv ||  || 
+|-
+| kisser || quad || 1 || smash || k-s-s-r || i-e || i-e || tv ||  || 
+|-
+| fisser || quad || 1 || mean || f-s-s-r || i-e || i-e || TD ||  || 
+|-
+| tkellem || quad || 2 || speak || k-l-l-m || e-e || e-e || iv ||  || mi
+|-
+| dar || hollow || 1 || turn || d-w-r || a-a ||  || iv ||  || 
+|-
+| sar || hollow || 1 || become || s-j-r || a-a ||  || iv ||  || mi
+|-
+| miet || hollow || 1 || die || m-w-t || ie-a ||  || iv ||  || 
+|-
+| dieq || hollow || 1 || taste || d-w-q || ie-a ||  || iv ||  || 
+|-
+| daq || hollow || 1 || taste || d-w-q || a-a ||  || iv ||  || 
+|-
+| dam || hollow || 1 || take.time || d-w-m || a-a ||  || iv ||  || 
+|-
+| sam || hollow || 1 || fast || s-w-m || a-a ||  || iv ||  || 
+|-
+| far || hollow || 1 || boil || f-w-r || a-a ||  || iv ||  || 
+|-
+| sab || hollow || 1 || find || s-j-b || a-a ||  || iv ||  || mi
+|-
+| għam || hollow || 1 || swim || għ-w-m || a-a ||  || iv ||  || 
+|-
+| qam || hollow || 1 || rise || q-w-m || a-a ||  || iv ||  || 
+|-
+| żar || hollow || 1 || visit || ż-w-r || a-a ||  || iv ||  || 
+|-
+| ġab || hollow || 1 || bring || ġ-j-b || a-a ||  || iv ||  || me
+|-
+| ġieb || hollow || 1 || bring || ġ-j-b || ie-a ||  || iv ||  || me
+|-
+| biegħ || hollow || 1 || sell || b-j-għ || ie-a ||  || iv ||  || mi
+|-
+| fieq || hollow || 1 || recuperate || f-j-q || ie-a ||  || iv ||  || 
+|-
+| għab || hollow || 1 || disappear || għ-j-b || a-a ||  || iv ||  || 
+|-
+| għan || hollow || 1 || help || għ-j-n || a-a ||  || iv ||  || me
+|-
+| għar || hollow || 1 || envy || għ-j-r || a-a ||  || iv ||  || 
+|-
+| għax || hollow || 1 || live || għ-j-x || a-a ||  || iv ||  || 
+|-
+| qies || hollow || 1 || measure || q-j-s || ie-a ||  || iv ||  || mi
+|-
+| ried || hollow || 1 || want || r-j-d || ie-a ||  || tv ||  || 
+|-
+| tar || hollow || 1 || fly || t-j-r || a-a ||  || tv ||  || 
+|-
+| żied || hollow || 1 || increase || ż-j-d || ie-a ||  || tv ||  || mi
+|-
+| qiem || hollow || 1 || venerate || q-w-m || ie-a ||  || tv ||  || me
+|-
+| qara || weak || 1 || read || q-r-j || a-a || a-a || tv ||  || mo
+|-
+| mexa || weak || 1 || walk || m-x-j || e-a || i-i || iv ||  || 
+|-
+| beda || weak || 1 || start || b-d-j || e-a || i-a || tv ||  || mi
+|-
+| mela || weak || 1 || fill || m-l-j || e-a || i-a || tv ||  || mi
+|-
+| reħa || weak || 1 || let·go || r-ħ-j || e-a || i-a || tv ||  || me
+|-
+| ħela || weak || 1 || waste || ħ-l-j || e-a || i-a || tv ||  || mo
+|-
+| ħeba || weak || 1 || hide || ħ-b-j || e-a || i-a || tv ||  || mo
+|-
+| rema || weak || 1 || throw·away || r-m-j || e-a || a-i || tv ||  || mo
+|-
+| ġara || weak || 1 || happen || ġ-r-j || a-a || a-i || TD ||  || 
+|-
+| radd || doubled || 1 || restore || r-d-d || a-a || a-o || tv ||  || mi
+|-
+| mess || doubled || 1 || touch || m-s-s || e-e || e-i || tv ||  || mi
+|-
+| qarr || doubled || 1 || go·to·confession || q-r-r || a-a || i-e || iv ||  || ma
+|-
+| raqq || doubled || 1 || become·thin || r-q-q || a-a || i-e || iv ||  || ma
+|-
+| saħħ || doubled || 1 || materialise || s-ħ-ħ || a-a || i-e || iv ||  || ma
+|-
+| xaħħ || doubled || 1 || be·stingy || x-ħ-ħ || a-a || i-e || iv ||  || ma
+|-
+| damm || doubled || 1 || string·together || d-m-m || a-a || i-o || iv ||  || mi
+|-
+| daqq || doubled || 1 || play || d-q-q || a-a || i-o || iv ||  || mi
+|-
+| ġarr || doubled || 1 || carry || ġ-r-r || a-a || i-o || tv ||  || mi
+|-
+| ħakk || doubled || 1 || scratch || ħ-k-k || a-a || i-o || tv ||  || ma
+|-
+| ħall || doubled || 1 || loosen || ħ-l-l || a-a || i-o || tv ||  || ma
+|-
+| ħass || doubled || 1 || feel || ħ-s-s || a-a || i-o || tv ||  || ma
+|-
+| ħatt || doubled || 1 || unload || ħ-t-t || a-a || i-o || tv ||  || ma
+|-
+| għażż || doubled || 1 || cherish || għ-ż-ż || a-a || i-o || tv ||  || ma
+|-
+| rass || doubled || 1 || press || r-s-s || a-a || i-o || tv ||  || ma
+|-
+| sadd || doubled || 1 || plug || s-d-d || a-a || i-o || tv ||  || mi
+|-
+| xaqq || doubled || 1 || crack || x-q-q || a-a || i-o || tv ||  || mi
+|-
+| żamm || doubled || 1 || hold || ż-m-m || a-a || i-o || tv ||  || mi
+|-
+| leqq || doubled || 1 || glitter || l-q-q || e-e || i-e || iv ||  || 
+|-
+| temm || doubled || 1 || finish || t-m-m || e-e || i-e || tv ||  || mi
+|-
+| bell || doubled || 1 || wet || b-l-l || e-e || i-e || tv ||  || mi
+|-
+| bexx || doubled || 1 || sprinkle || b-x-x || e-e || i-e || tv ||  || mi
+|-
+| ġeżż || doubled || 1 || shear || ġ-ż-ż || e-e || i-e || tv ||  || mi
+|-
+| kedd || doubled || 1 || vex || k-d-d || e-e || i-e || tv ||  || mi
+|-
+| qaħqaħ || quad || 1 || hack || q-ħ-q-ħ || a-a || a-a || tv ||  || im
+|-
+| dardar || quad || 1 || make·turbid || d-r-d-r || a-a || a-a || tv ||  || im
+|-
+| farfar || quad || 1 || shake·off·dust || f-r-f-r || a-a || a-a || tv ||  || im
+|-
+| ħarbat || quad || 1 || rout || ħ-r-b-t || a-a || a-a || tv ||  || im
+|-
+| każbar || quad || 1 || revile || k-ż-b-r || a-a || a-a || tv ||  || im
+|-
+| bandal || quad || 1 || swing || b-n-d-l || a-a || a-a || tv ||  || im
+|-
+| ċaflas || quad || 1 || splash || ċ-f-l-s || a-a || a-a || tv ||  || im
+|-
+| ċaħħad || quad || 1 || deprive || ċ-ħ-ħ-d || a-a || a-a || tv ||  || im
+|-
+| ċanfar || quad || 1 || reproach || ċ-n-f-r || a-a || a-a || tv ||  || im
+|-
+| ċapċap || quad || 1 || clap || ċ-p-ċ-p || a-a || a-a || tv ||  || im
+|-
+| ċappas || quad || 1 || smear || ċ-p-p-s || a-a || a-a || tv ||  || im
+|-
+| ċaqlaq || quad || 1 || shake || ċ-q-l-q || a-a || a-a || tv ||  || im
+|-
+| qarmeċ || quad || 1 || crunch || q-r-m-ċ || a-e || a-e || tv ||  || im
+|-
+| ħawtel || quad || 1 || be·diligent || ħ-w-t-l || a-e || a-e || tv ||  || im
+|-
+| kexkex || quad || 1 || shock || k-x-k-x || e-e || e-e || tv ||  || im
+|-
+| petpet || quad || 1 || blink || p-t-p-t || e-e || e-e || tv ||  || im
+|-
+| temtem || quad || 1 || stutter || t-m-t-m || e-e || e-e || tv ||  || im
+|-
+| xengel || quad || 1 || swing || x-n-g-l || e-e || e-e || tv ||  || im
+|-
+| ċempel || quad || 1 || ring || ċ-m-p-l || e-e || e-e || tv ||  || im
+|-
+| dendel || quad || 1 || hang || d-n-d-l || e-e || e-e || tv ||  || im
+|-
+| gerbeb || quad || 1 || roll || g-r-b-b || e-e || e-e || tv ||  || im
+|-
+| fesdaq || quad || 1 || shell·peas || f-s-d-q || e-a || e-a || tv ||  || im
+|-
+| tertaq || quad || 1 || shatter || t-r-t-q || e-a || e-a || tv ||  || im
+|-
+| werżaq || quad || 1 || scream || w-r-ż-q || e-a || e-a || tv ||  || im
+|-
+| fixkel || quad || 1 || obstruct || f-x-k-l || i-e || i-e || tv ||  || im
+|-
+| bixkel || quad || 1 || cheat || b-x-k-l || i-e || i-e || iv ||  || im
+|-
+| biddel || quad || 1 || alter || b-d-d-l || i-e || i-e || tv ||  || im
+|-
+| berbaq || quad || 1 || squander || b-r-b-q || e-a || e-a || tv ||  || im
+|}

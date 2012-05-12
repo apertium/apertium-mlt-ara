@@ -1,0 +1,27 @@
+{| class="wikitable" 
+ |-
+ ! Stem 
+ ! Type 
+ ! Gloss 
+
+|-
+| ta || irregular || give
+|-
+| ħa || irregular || take
+|-
+| ra || irregular || see
+|-
+| qal || irregular || say
+|-
+| ġie || irregular || come
+|-
+| mar || irregular || go
+|-
+| kiel || irregular || eat
+|-
+| wera || irregular || show
+|-
+| kien || auxiliary || be
+|-
+| kellu || auxiliary || have
+|}
