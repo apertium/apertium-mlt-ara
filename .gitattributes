@@ -16,6 +16,10 @@
 /autogen.sh -text
 /configure.ac -text
 dev/README -text
+dev/ar_verbs/classes/__init__.py -text
+dev/ar_verbs/classes/sound.py -text
+dev/ar_verbs/stems.wiki -text
+dev/ar_verbs/verb.py -text
 dev/inconsistency-summary.sh -text
 dev/inconsistency.sh -text
 dev/mt_verbs/classes/__init__.py -text

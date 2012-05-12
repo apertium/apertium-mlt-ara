@@ -1,0 +1,30 @@
+{| class="wikitable" 
+ |-
+ ! Stem 
+ ! Type 
+ ! Theme 
+ ! Gloss 
+ ! Root
+ ! Trans
+ ! Category 
+
+|-
+| لعب || sound || 1 || play || ل-ع-ب || iv || vblex
+|-
+| نظر || sound || 1 || look || ن-ظ-ر || iv || vblex
+|-
+| ذهب || sound || 1 || go || ذ-ه-ب || iv || vblex
+|-
+| جلس || sound || 1 || sit || ج-ل-س || iv || vblex
+|-
+| عرف || sound || 1 || know || ع-ر-ف || tv || vblex
+|-
+| فعل || sound || 1 || do || ف-ع-ل || tv || vblex
+|-
+| ضحك || sound || 1 || laugh || ض-ح-ك || iv || vblex
+|-
+| شرب || sound || 1 || drink || ش-ر-ب || tv || vblex
+|-
+| سمع || sound || 1 || hear || س-م-ع || iv || vblex
+|}
+
