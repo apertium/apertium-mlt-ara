@@ -21,6 +21,9 @@ def header(): #{
 	header = header + '    <sdef n="vblex"/>\n';
 	header = header + '    <sdef n="vaux"/>\n';
 	header = header + '    <sdef n="prn"/>\n';
+	header = header + '    <sdef n="tv"/>\n';
+	header = header + '    <sdef n="iv"/>\n';
+	header = header + '    <sdef n="TD"/>\n';
 	header = header + '    <sdef n="past"/>\n';
 	header = header + '    <sdef n="neg"/>\n';
 	header = header + '    <sdef n="pres"/>\n';
@@ -343,7 +346,7 @@ for line in lines: #{
 	line = line.lstrip('|');
 	row = line.split('||'); 
 
-	stems = stems + [{'stem': row[0].strip(), 'type': row[1].strip(), 'theme': row[2].strip(), 'gloss': row[3].strip(), 'root': row[4].strip(), 'vowel_perf': row[5].strip(), 'vowel_impf': row[6].strip(), 'trans': row[7].strip(), 'pprs': row[8].strip(), 'pp': row[9].strip()}];
+	stems = stems + [{'stem': row[0].strip(), 'cat': row[1].strip(), 'type': row[2].strip(), 'theme': row[3].strip(), 'gloss': row[4].strip(), 'root': row[5].strip(), 'vowel_perf': row[6].strip(), 'vowel_impf': row[7].strip(), 'trans': row[8].strip(), 'pprs': row[9].strip(), 'pp': row[10].strip()}];
 
 #}
 
@@ -356,8 +359,6 @@ except IOError as e:
         sys.exit(1);
 
 
-aux_verbs = [];
-
 for line in lines: #{
 
 	line = line.strip(); 
@@ -369,7 +370,7 @@ for line in lines: #{
 	line = line.lstrip('|');
 	row = line.split('||'); 
 
-	stem = {'stem': row[0].strip(), 'type': row[1].strip(), 'gloss': row[2].strip()};
+	stem = {'stem': row[0].strip(), 'cat': row[1].strip(), 'type': row[2].strip(), 'gloss': row[3].strip(), 'trans': row[4].strip()};
 	stems = stems + [stem];
 
 	if stem['type'] == 'auxiliary' :
@@ -397,7 +398,7 @@ for line in lines: #{
 	line = line.lstrip('|');
 	row = line.split('||'); 
 
-	stems = stems + [{'stem': row[0].strip(), 'type': row[1].strip(), 'subtype': row[2].strip(), 'gloss': row[3].strip(), 'base': row[4].strip(), 'ixx': row[5].strip(), 'vowel_impf': row[6].strip(), 'trans': row[7].strip(), 'pp': row[8].strip()}];
+	stems = stems + [{'stem': row[0].strip(), 'cat': row[1].strip(), 'type': row[2].strip(), 'subtype': row[3].strip(), 'gloss': row[4].strip(), 'base': row[5].strip(), 'ixx': row[6].strip(), 'vowel_impf': row[7].strip(), 'trans': row[8].strip(), 'pp': row[9].strip()}];
 
 #}
 
@@ -406,6 +407,7 @@ for line in lines: #{
 ##-----------------------------------------------------------------------------##
 
 infl = {};
+verb_cat = {};
 
 for stem in stems: #{
 
@@ -415,7 +417,9 @@ for stem in stems: #{
     	    sys.stderr.write("Error: Missing class '{0}'\n".format(stem['type']));
     	    sys.exit(1);
 
-    	infl[stem['stem']] = stem_class.main(stem);
+    	infl[stem['stem'] + '.' + stem['trans']] = stem_class.main(stem);
+	verb_cat[stem['stem'] + '.' + stem['trans']] = stem['cat'];
+
 #}
 
 
@@ -423,12 +427,16 @@ print header().decode('utf-8');
 
 for stem in infl: #{
 
+	s = stem.split('.');
+	stem_stem = s[0];
+	stem_trans = s[1];
+
 	for flex in infl[stem]: #{
 		for subflex in infl[stem][flex]: #{
 			# restriction attribute, lm attribute, postgenerator tag:
 			r, lm, a = '', '', ''	 
 			if flex == 'past.p3.m.sg' and subflex[1] == '-':  
-				lm = ' lm="%s"' % (stem,)
+				lm = ' lm="%s"' % (stem_stem,)
 			if subflex[2] == 'LR':
 				r = ' r="%s"' % (subflex[2],)
 				a = ''
@@ -437,14 +445,15 @@ for stem in infl: #{
 				a = '<a/>'
 
 			left = subflex[0];
-			if stem in aux_verbs :
-				right = stem + '<s n="vaux"/>' + sym(flex);
-			else :
-				right = stem + '<s n="vblex"/>' + sym(flex);
+			right = '%s<s n="%s"/><s n="%s"/>%s' % (stem_stem, verb_cat[stem], stem_trans, sym(flex));
+#			if stem in aux_verbs :
+#				right = stem + '<s n="vaux"/>' + sym(flex);
+#			else :
+#				right = stem + '<s n="vblex"/>' + sym(flex);
 			paradigm = subflex[1];
 
 			if paradigm == "-": # no suffix
-				entry  = '<e%s%s><p><l>%s%s</l><r>%s</r></p></e>' % (r, lm, a, left,right);
+				entry  = '<e%s%s><p><l>%s%s</l><r>%s</r></p></e>' % (r, lm, a, left, right);
 			else :  # suffix, in this case subflex[1] tells us which paradigm should be used
 				entry = '<e%s><p><l>%s%s</l><r>%s</r></p><par n="%s"/></e>' % (r, a, left, right, paradigm);
 

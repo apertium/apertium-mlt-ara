@@ -5,7 +5,6 @@ import doubled
 import quad
 
 import irregular
-import auxiliary
 
 import loan
 

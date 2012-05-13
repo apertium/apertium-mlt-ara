@@ -23,7 +23,6 @@ dev/ar_verbs/verb.py -text
 dev/inconsistency-summary.sh -text
 dev/inconsistency.sh -text
 dev/mt_verbs/classes/__init__.py -text
-dev/mt_verbs/classes/auxiliary.py -text
 dev/mt_verbs/classes/defective.py -text
 dev/mt_verbs/classes/doubled.py -text
 dev/mt_verbs/classes/hollow.py -text

@@ -1,27 +1,31 @@
 {| class="wikitable" 
  |-
- ! Stem 
+ ! Stem
+ ! Category 
  ! Type 
  ! Gloss 
+ ! Trans
 
 |-
-| ta || irregular || give
+| ta || vblex || irregular || give || TD
 |-
-| ħa || irregular || take
+| ħa || vblex || irregular || take || TD
 |-
-| ra || irregular || see
+| ra || vblex || irregular || see || TD
 |-
-| qal || irregular || say
+| qal || vblex || irregular || say || TD
 |-
-| ġie || irregular || come
+| ġie || vblex || irregular || come || TD
 |-
-| mar || irregular || go
+| mar || vblex || irregular || go || TD
 |-
-| kiel || irregular || eat
+| kiel || vblex || irregular || eat || TD
 |-
-| wera || irregular || show
+| jaf || vblex || irregular || know || TD
 |-
-| kien || auxiliary || be
+| wera || vblex || irregular || show || TD
 |-
-| kellu || auxiliary || have
+| kien || vaux || irregular || be || TD
+|-
+| kellu || vaux || irregular || have || TD
 |}
