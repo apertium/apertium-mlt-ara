@@ -14,16 +14,12 @@
     <sdef n="p2"          c="Second person"/>
     <sdef n="p3"          c="Third person"/>
     
-    <sdef n="an"          c="Animate / inanimate"/>
+    <sdef n="aa"          c="Animate"/>
+    <sdef n="nn"          c="Inanimate"/>
 
     <sdef n="m"           c="Masculine"/>
     <sdef n="f"           c="Feminine"/>
     <sdef n="mf"          c="Masculine / feminine"/>
-
-    <sdef n="mp"          c="Masculine, person"/>
-    <sdef n="mnp"         c="Masculine, non-person"/>
-    <sdef n="fp"          c="Feminine, person"/>
-    <sdef n="fnp"         c="Feminine, non-person"/>
 
     <sdef n="nom"         c="Nominative"/>
     <sdef n="gen"         c="Genitive"/>
@@ -246,9 +242,9 @@
       <e><p><l>هن</l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
     
-    <pardef n="כי__rel">
+<!--    <pardef n="כי__rel">
       <e><p><l/><r><s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
-    </pardef>
+    </pardef> -->
 
     <pardef n="כל__prn">
       <e><p><l/><r><s n="prn"/><s n="ind"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -311,139 +307,139 @@
     </pardef>
 
 
-    <pardef n="حد/يقة__n_fnp"> 
-        <e><p><l>يقة</l><r>يقة<s n="n"/><s n="fnp"/><s n="sg"/></r></p></e>
-        <e><p><l>يقة</l><r>يقة<s n="n"/><s n="fnp"/><s n="sg"/><s n="acc"/></r></p></e>
-        <e><p><l>ائق</l><r>يقة<s n="n"/><s n="fnp"/><s n="pl"/></r></p></e>
+    <pardef n="حد/يقة__n_f_nn"> 
+        <e><p><l>يقة</l><r>يقة<s n="n"/><s n="f"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>يقة</l><r>يقة<s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="acc"/></r></p></e>
+        <e><p><l>ائق</l><r>يقة<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/></r></p></e>
     </pardef>
 
-    <pardef n="ولد/__n_mp"> 
-        <e><p><l>ولد</l><r>ولد<s n="n"/><s n="mp"/><s n="sg"/></r></p></e>
-        <e><p><l>طفلان</l><r>ولد<s n="n"/><s n="mp"/><s n="du"/><s n="nom"/></r></p></e>
-        <e><p><l>طفلين</l><r>ولد<s n="n"/><s n="mp"/><s n="du"/><s n="gen"/></r></p></e>
-        <e><p><l>طفلين</l><r>ولد<s n="n"/><s n="mp"/><s n="du"/><s n="acc"/></r></p></e>
-        <e><p><l>أولاد</l><r>أولاد<s n="n"/><s n="mp"/><s n="pl"/></r></p></e>
+    <pardef n="ولد/__n_m_aa"> 
+        <e><p><l>ولد</l><r>ولد<s n="n"/><s n="m"/><s n="aa"/><s n="sg"/></r></p></e>
+        <e><p><l>طفلان</l><r>ولد<s n="n"/><s n="m"/><s n="aa"/><s n="du"/><s n="nom"/></r></p></e>
+        <e><p><l>طفلين</l><r>ولد<s n="n"/><s n="m"/><s n="aa"/><s n="du"/><s n="gen"/></r></p></e>
+        <e><p><l>طفلين</l><r>ولد<s n="n"/><s n="m"/><s n="aa"/><s n="du"/><s n="acc"/></r></p></e>
+        <e><p><l>أولاد</l><r>أولاد<s n="n"/><s n="m"/><s n="aa"/><s n="pl"/></r></p></e>
     </pardef>
 
-    <pardef n="بن/ت__n_fp"> 
-        <e><p><l>ت</l><r>ت<s n="n"/><s n="fp"/><s n="sg"/></r></p></e>
-        <e><p><l>ات</l><r>ات<s n="n"/><s n="fp"/><s n="pl"/></r></p></e>
+    <pardef n="بن/ت__n_f_aa"> 
+        <e><p><l>ت</l><r>ت<s n="n"/><s n="f"/><s n="aa"/><s n="sg"/></r></p></e>
+        <e><p><l>ات</l><r>ات<s n="n"/><s n="f"/><s n="aa"/><s n="pl"/></r></p></e>
     </pardef>
 
-    <pardef n="طقس__n_mnp">  
-        <e><p><l>طقس</l><r>طقس<s n="n"/><s n="mnp"/><s n="sg"/></r></p></e>
+    <pardef n="طقس__n_m_nn">  
+        <e><p><l>طقس</l><r>طقس<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p></e>
     </pardef>
 
-    <pardef n="كل/ب__n_mnp"> 
-        <e><p><l>ب</l><r>ب<s n="n"/><s n="mnp"/><s n="sg"/></r></p></e>
-        <e><p><l>با</l><r>ب<s n="n"/><s n="mnp"/><s n="sg"/><s n="acc"/></r></p></e>
-        <e><p><l>اب</l><r>ب<s n="n"/><s n="mnp"/><s n="pl"/></r></p></e>
-    </pardef>
-
-
-    <pardef n="قط__n_mnp">  
-        <e><p><l></l><r><s n="n"/><s n="mnp"/><s n="sg"/></r></p></e>
-        <e><p><l>ط</l><r><s n="n"/><s n="mnp"/><s n="pl"/></r></p></e>
-    </pardef>
-
-    <pardef n="لعب/ة__n_fnp">
-        <e><p><l>ة</l><r>ة<s n="n"/><s n="fnp"/><s n="sg"/></r></p></e>
-        <e><p><l></l><r>ة<s n="n"/><s n="fnp"/><s n="pl"/></r></p></e>
-    </pardef>
-
-    <pardef n="بي/ت__n_mnp"> 
-        <e><p><l>ت</l><r>ت<s n="n"/><s n="mnp"/><s n="sg"/></r></p></e>
-        <e><p><l>وت</l><r>ت<s n="n"/><s n="mnp"/><s n="pl"/></r></p></e>
-    </pardef>
-
-    <pardef n="شجر/ة__n_fnp">
-        <e><p><l>ة</l><r>ة<s n="n"/><s n="fnp"/><s n="sg"/></r></p></e>
-        <e><p><l>ات</l><r>ة<s n="n"/><s n="fnp"/><s n="pl"/></r></p></e>
-    </pardef>
-
-    <pardef n="حيوان__n_mnp">
-        <e><p><l></l><r><s n="n"/><s n="mnp"/><s n="sg"/></r></p></e>
-        <e><p><l>ا</l><r><s n="n"/><s n="mnp"/><s n="sg"/><s n="acc"/></r></p></e>
-        <e><p><l>ات</l><r><s n="n"/><s n="mnp"/><s n="pl"/></r></p></e>
-    </pardef>
-
-    <pardef n="أم__n_fp">  
-        <e><p><l></l><r><s n="n"/><s n="fp"/><s n="sg"/></r></p></e>
-        <e><p><l></l><r><s n="n"/><s n="fp"/><s n="sg"/></r></p><par n="S__مدرس"/></e>
-        <e><p><l></l><r><s n="n"/><s n="fp"/><s n="sg"/><s n="acc"/></r></p></e>
-        <e><p><l></l><r><s n="n"/><s n="fp"/><s n="sg"/><s n="acc"/></r></p><par n="S__مدرس"/></e>
-        <e><p><l>هات</l><r><s n="n"/><s n="fp"/><s n="pl"/></r></p></e>
-    </pardef>
-
-    <pardef n="أخ/ت__n_fp">  
-        <e><p><l>ت</l><r>ت<s n="n"/><s n="fp"/><s n="sg"/></r></p></e>
-        <e><p><l>ت</l><r>ت<s n="n"/><s n="fp"/><s n="sg"/></r></p><par n="S__مدرس"/></e>
-        <e><p><l>وات</l><r>ت<s n="n"/><s n="fp"/><s n="pl"/></r></p></e>
-    </pardef>
-
-    <pardef n="سن/ة__n_fnp">  
-        <e><p><l>ة</l><r>ة<s n="n"/><s n="fnp"/><s n="sg"/></r></p></e>
-        <e><p><l>وات</l><r>ة<s n="n"/><s n="fnp"/><s n="pl"/></r></p></e>
-    </pardef>
-
-    <pardef n="ن/افذة__n_fnp">  
-        <e><p><l>افذة</l><r>افذة<s n="n"/><s n="fnp"/><s n="sg"/></r></p></e>
-        <e><p><l>وافذ</l><r>افذة<s n="n"/><s n="fnp"/><s n="pl"/></r></p></e>
-    </pardef>
-
-    <pardef n="يد__n_fnp">  
-        <e><p><l></l><r><s n="n"/><s n="fnp"/><s n="sg"/></r></p></e>
-        <e><p><l>ا</l><r><s n="n"/><s n="fnp"/><s n="sg"/><s n="acc"/></r></p></e>
-        <e><p><l></l><r><s n="n"/><s n="fnp"/><s n="sg"/></r></p><par n="S__مدرس"/></e>
-        <e><p><l>ان</l><r><s n="n"/><s n="fnp"/><s n="pl"/></r></p></e>
-        <e><p><l>ين</l><r><s n="n"/><s n="fnp"/><s n="pl"/><s n="gen"/></r></p></e>
-        <e><p><l>ا</l><r><s n="n"/><s n="fnp"/><s n="pl"/></r></p><par n="S__مدرس"/></e>
-        <e><p><l>ي</l><r><s n="n"/><s n="fnp"/><s n="pl"/><s n="gen"/></r></p><par n="S__مدرس"/></e>
+    <pardef n="كل/ب__n_m_nn"> 
+        <e><p><l>ب</l><r>ب<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>با</l><r>ب<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/><s n="acc"/></r></p></e>
+        <e><p><l>اب</l><r>ب<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
     </pardef>
 
 
-    <pardef n="/جواب__n_mnp">  
-        <e><p><l>جواب</l><r>جواب<s n="n"/><s n="mnp"/><s n="sg"/></r></p></e>
-        <e><p><l>أجوبة</l><r>جواب<s n="n"/><s n="mnp"/><s n="pl"/></r></p></e>
+    <pardef n="قط__n_m_nn">  
+        <e><p><l></l><r><s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>ط</l><r><s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
     </pardef>
 
-    <pardef n="/سؤال__n_mnp">  
-        <e><p><l>سؤال</l><r>سؤال<s n="n"/><s n="mnp"/><s n="sg"/></r></p></e>
-        <e><p><l>سؤالها</l><r>سؤال<s n="n"/><s n="mnp"/><s n="sg"/><s n="px3sg_f"/></r></p></e>
-        <e><p><l>أسئلة</l><r>سؤال<s n="n"/><s n="mnp"/><s n="pl"/></r></p></e>
+    <pardef n="لعب/ة__n_f_nn">
+        <e><p><l>ة</l><r>ة<s n="n"/><s n="f"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l></l><r>ة<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/></r></p></e>
     </pardef>
 
-    <pardef n="كر/سي__n_mnp"> 
-        <e><p><l>سي</l><r>سي<s n="n"/><s n="mnp"/><s n="sg"/></r></p></e>
-        <e><p><l>اسي</l><r>سي<s n="n"/><s n="mnp"/><s n="pl"/></r></p></e>
+    <pardef n="بي/ت__n_m_nn"> 
+        <e><p><l>ت</l><r>ت<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>وت</l><r>ت<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
     </pardef>
 
-    <pardef n="عص/فور__n_mnp"> 
-        <e><p><l>فور</l><r>فور<s n="n"/><s n="mnp"/><s n="sg"/></r></p></e>
-        <e><p><l>فورا</l><r>فور<s n="n"/><s n="mnp"/><s n="sg"/><s n="acc"/></r></p></e>
-        <e><p><l>افير</l><r>فور<s n="n"/><s n="mnp"/><s n="pl"/></r></p></e>
+    <pardef n="شجر/ة__n_f_nn">
+        <e><p><l>ة</l><r>ة<s n="n"/><s n="f"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>ات</l><r>ة<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/></r></p></e>
     </pardef>
 
-    <pardef n="ر/أس__n_mnp">  
-        <e><p><l>أس</l><r>أس<s n="n"/><s n="mnp"/><s n="sg"/></r></p></e>
-        <e><p><l>أس</l><r>أس<s n="n"/><s n="mnp"/><s n="sg"/></r></p><par n="S__مدرس"/></e>
-        <e><p><l>ؤوس</l><r>أس<s n="n"/><s n="mnp"/><s n="pl"/></r></p></e>
+    <pardef n="حيوان__n_m_nn">
+        <e><p><l></l><r><s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>ا</l><r><s n="n"/><s n="m"/><s n="nn"/><s n="sg"/><s n="acc"/></r></p></e>
+        <e><p><l>ات</l><r><s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
     </pardef>
 
-    <pardef n="م/اء__n_mnp">  
-        <e><p><l>اء</l><r>اء<s n="n"/><s n="mnp"/><s n="sg"/></r></p></e>
-        <e><p><l>ياه</l><r>اء<s n="n"/><s n="mnp"/><s n="pl"/></r></p></e>
+    <pardef n="أم__n_f_aa">  
+        <e><p><l></l><r><s n="n"/><s n="f"/><s n="aa"/><s n="sg"/></r></p></e>
+        <e><p><l></l><r><s n="n"/><s n="f"/><s n="aa"/><s n="sg"/></r></p><par n="S__مدرس"/></e>
+        <e><p><l></l><r><s n="n"/><s n="f"/><s n="aa"/><s n="sg"/><s n="acc"/></r></p></e>
+        <e><p><l></l><r><s n="n"/><s n="f"/><s n="aa"/><s n="sg"/><s n="acc"/></r></p><par n="S__مدرس"/></e>
+        <e><p><l>هات</l><r><s n="n"/><s n="f"/><s n="aa"/><s n="pl"/></r></p></e>
     </pardef>
 
-    <pardef n="/وقت__n_mnp">  
-        <e><p><l>وقت</l><r>وقت<s n="n"/><s n="mnp"/><s n="sg"/></r></p></e>
-        <e><p><l>أوقات</l><r>أوقات<s n="n"/><s n="mnp"/><s n="pl"/></r></p></e>
+    <pardef n="أخ/ت__n_f_aa">  
+        <e><p><l>ت</l><r>ت<s n="n"/><s n="f"/><s n="aa"/><s n="sg"/></r></p></e>
+        <e><p><l>ت</l><r>ت<s n="n"/><s n="f"/><s n="aa"/><s n="sg"/></r></p><par n="S__مدرس"/></e>
+        <e><p><l>وات</l><r>ت<s n="n"/><s n="f"/><s n="aa"/><s n="pl"/></r></p></e>
     </pardef>
 
-    <pardef n="/صوت__n_mnp">  
-        <e><p><l>صوت</l><r>صوت<s n="n"/><s n="mnp"/><s n="sg"/></r></p></e>
-        <e><p><l>صوتا</l><r>صوت<s n="n"/><s n="mnp"/><s n="sg"/><s n="acc"/></r></p></e>
-        <e><p><l>أصوات</l><r>أصوات<s n="n"/><s n="mnp"/><s n="pl"/></r></p></e>
+    <pardef n="سن/ة__n_f_nn">  
+        <e><p><l>ة</l><r>ة<s n="n"/><s n="f"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>وات</l><r>ة<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="ن/افذة__n_f_nn">  
+        <e><p><l>افذة</l><r>افذة<s n="n"/><s n="f"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>وافذ</l><r>افذة<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="يد__n_f_nn">  
+        <e><p><l></l><r><s n="n"/><s n="f"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>ا</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="sg"/><s n="acc"/></r></p></e>
+        <e><p><l></l><r><s n="n"/><s n="f"/><s n="nn"/><s n="sg"/></r></p><par n="S__مدرس"/></e>
+        <e><p><l>ان</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="pl"/></r></p></e>
+        <e><p><l>ين</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="gen"/></r></p></e>
+        <e><p><l>ا</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="pl"/></r></p><par n="S__مدرس"/></e>
+        <e><p><l>ي</l><r><s n="n"/><s n="f"/><s n="nn"/><s n="pl"/><s n="gen"/></r></p><par n="S__مدرس"/></e>
+    </pardef>
+
+
+    <pardef n="/جواب__n_m_nn">  
+        <e><p><l>جواب</l><r>جواب<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>أجوبة</l><r>جواب<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="/سؤال__n_m_nn">  
+        <e><p><l>سؤال</l><r>سؤال<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>سؤالها</l><r>سؤال<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/><s n="px3sg_f"/></r></p></e>
+        <e><p><l>أسئلة</l><r>سؤال<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="كر/سي__n_m_nn"> 
+        <e><p><l>سي</l><r>سي<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>اسي</l><r>سي<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="عص/فور__n_m_nn"> 
+        <e><p><l>فور</l><r>فور<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>فورا</l><r>فور<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/><s n="acc"/></r></p></e>
+        <e><p><l>افير</l><r>فور<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="ر/أس__n_m_nn">  
+        <e><p><l>أس</l><r>أس<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>أس</l><r>أس<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p><par n="S__مدرس"/></e>
+        <e><p><l>ؤوس</l><r>أس<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="م/اء__n_m_nn">  
+        <e><p><l>اء</l><r>اء<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>ياه</l><r>اء<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="/وقت__n_m_nn">  
+        <e><p><l>وقت</l><r>وقت<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>أوقات</l><r>أوقات<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="/صوت__n_m_nn">  
+        <e><p><l>صوت</l><r>صوت<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p></e>
+        <e><p><l>صوتا</l><r>صوت<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/><s n="acc"/></r></p></e>
+        <e><p><l>أصوات</l><r>أصوات<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
     </pardef>
 
 
@@ -480,13 +476,8 @@
 
     <pardef n="صغ/ير__adj"> 
         <e><p><l>ير</l><r>ير<s n="adj"/><s n="m"/><s n="sg"/></r></p></e>
-        <e><p><l>ير</l><r>ير<s n="adj"/><s n="mp"/><s n="sg"/></r></p></e>
-        <e><p><l>ير</l><r>ير<s n="adj"/><s n="mnp"/><s n="sg"/></r></p></e>
         <e><p><l>يرة</l><r>ير<s n="adj"/><s n="f"/><s n="sg"/></r></p></e>
-        <e><p><l>يرة</l><r>ير<s n="adj"/><s n="fp"/><s n="sg"/></r></p></e>
-        <e><p><l>يرة</l><r>ير<s n="adj"/><s n="fnp"/><s n="sg"/><s n="acc"/></r></p></e>
-        <e><p><l>يرة</l><r>ير<s n="adj"/><s n="fnp"/><s n="sg"/></r></p></e>
-        <e><p><l>يرة</l><r>ير<s n="adj"/><s n="fnp"/><s n="sg"/><s n="acc"/></r></p></e>
+        <e><p><l>يرة</l><r>ير<s n="adj"/><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
         <e><p><l>ار</l><r>ير<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
         <e><p><l>راء</l><r>ير<s n="adj"/><s n="m"/><s n="pl"/></r></p></e>
     </pardef>
@@ -580,31 +571,31 @@
 
     <!-- SECTION: Nouns -->
 
-    <e lm="حديقة" c="garden" ><par n="ה"/><i>حد</i><par n="حد/يقة__n_fnp"/></e>
-    <e lm="ولد" c="boy" ><par n="ה"/><i></i><par n="ولد/__n_mp"/></e>
-    <e lm="بنت" c="girl" ><par n="ה"/><i>بن</i><par n="بن/ت__n_fp"/></e>
-    <e lm="طقس" c="weather" ><par n="ה"/><i></i><par n="طقس__n_mnp"/></e>
-    <e lm="كلب" c="dog" ><par n="ה"/><i>كل</i><par n="كل/ب__n_mnp"/></e>
-    <e lm="قط" c="cat" ><par n="ה"/><i>قط</i><par n="قط__n_mnp"/></e>
-    <e lm="لعبة" c="play" ><par n="ה"/><i>لعب</i><par n="لعب/ة__n_fnp"/></e>
-    <e lm="بيت" c="house" ><par n="ה"/><i>بي</i><par n="بي/ت__n_mnp"/></e>
-    <e lm="شجرة" c="tree" ><par n="ה"/><i>شجر</i><par n="شجر/ة__n_fnp"/></e>
-    <e lm="حيوان" c="animal"><par n="ה"/><i>حيوان</i><par n="حيوان__n_mnp"/></e>
-    <e lm="جواب" c="response"><par n="ה"/><i></i><par n="/جواب__n_mnp"/></e>
-    <e lm="أم" c="mother"><i>أم</i><par n="أم__n_fp"/></e>
-    <e lm="أخت" c="sister"><i>أخ</i><par n="أخ/ت__n_fp"/></e>
-    <e lm="سنة" c="year"><par n="ה"/><i>سن</i><par n="سن/ة__n_fnp"/></e>
-    <e lm="نافذة" c="window"><par n="ה"/><i>ن</i><par n="ن/افذة__n_fnp"/></e>
-    <e lm="يد" c="hand"><i>يد</i><par n="يد__n_fnp"/></e>
-    <e lm="عين" c="eye"><i>عين</i><par n="يد__n_fnp"/></e>
-    <e lm="سؤال" c="question"><par n="ה"/><i></i><par n="/سؤال__n_mnp"/></e>
-    <e lm="طاولة" c="table" ><par n="ה"/><i>طاول</i><par n="شجر/ة__n_fnp"/></e>
-    <e lm="كرسي" c="chair" ><par n="ה"/><i>كر</i><par n="كر/سي__n_mnp"/></e>
-    <e lm="عصفور" c="bird" ><par n="ה"/><i>عص</i><par n="عص/فور__n_mnp"/></e>
-    <e lm="رأس" c="head" ><i>ر</i><par n="ر/أس__n_mnp"/></e>
-    <e lm="ماء" c="water" ><par n="ה"/><i>م</i><par n="م/اء__n_mnp"/></e>
-    <e lm="وقت" c="time" ><par n="ה"/><i></i><par n="/وقت__n_mnp"/></e>
-    <e lm="صوت" c="sound" ><par n="ה"/><i></i><par n="/صوت__n_mnp"/></e>
+    <e lm="حديقة" c="garden" ><par n="ה"/><i>حد</i><par n="حد/يقة__n_f_nn"/></e>
+    <e lm="ولد" c="boy" ><par n="ה"/><i></i><par n="ولد/__n_m_aa"/></e>
+    <e lm="بنت" c="girl" ><par n="ה"/><i>بن</i><par n="بن/ت__n_f_aa"/></e>
+    <e lm="طقس" c="weather" ><par n="ה"/><i></i><par n="طقس__n_m_nn"/></e>
+    <e lm="كلب" c="dog" ><par n="ה"/><i>كل</i><par n="كل/ب__n_m_nn"/></e>
+    <e lm="قط" c="cat" ><par n="ה"/><i>قط</i><par n="قط__n_m_nn"/></e>
+    <e lm="لعبة" c="play" ><par n="ה"/><i>لعب</i><par n="لعب/ة__n_f_nn"/></e>
+    <e lm="بيت" c="house" ><par n="ה"/><i>بي</i><par n="بي/ت__n_m_nn"/></e>
+    <e lm="شجرة" c="tree" ><par n="ה"/><i>شجر</i><par n="شجر/ة__n_f_nn"/></e>
+    <e lm="حيوان" c="animal"><par n="ה"/><i>حيوان</i><par n="حيوان__n_m_nn"/></e>
+    <e lm="جواب" c="response"><par n="ה"/><i></i><par n="/جواب__n_m_nn"/></e>
+    <e lm="أم" c="mother"><i>أم</i><par n="أم__n_f_aa"/></e>
+    <e lm="أخت" c="sister"><i>أخ</i><par n="أخ/ت__n_f_aa"/></e>
+    <e lm="سنة" c="year"><par n="ה"/><i>سن</i><par n="سن/ة__n_f_nn"/></e>
+    <e lm="نافذة" c="window"><par n="ה"/><i>ن</i><par n="ن/افذة__n_f_nn"/></e>
+    <e lm="يد" c="hand"><i>يد</i><par n="يد__n_f_nn"/></e>
+    <e lm="عين" c="eye"><i>عين</i><par n="يد__n_f_nn"/></e>
+    <e lm="سؤال" c="question"><par n="ה"/><i></i><par n="/سؤال__n_m_nn"/></e>
+    <e lm="طاولة" c="table" ><par n="ה"/><i>طاول</i><par n="شجر/ة__n_f_nn"/></e>
+    <e lm="كرسي" c="chair" ><par n="ה"/><i>كر</i><par n="كر/سي__n_m_nn"/></e>
+    <e lm="عصفور" c="bird" ><par n="ה"/><i>عص</i><par n="عص/فور__n_m_nn"/></e>
+    <e lm="رأس" c="head" ><i>ر</i><par n="ر/أس__n_m_nn"/></e>
+    <e lm="ماء" c="water" ><par n="ה"/><i>م</i><par n="م/اء__n_m_nn"/></e>
+    <e lm="وقت" c="time" ><par n="ה"/><i></i><par n="/وقت__n_m_nn"/></e>
+    <e lm="صوت" c="sound" ><par n="ה"/><i></i><par n="/صوت__n_m_nn"/></e>
 
 
     
@@ -687,12 +678,6 @@
 <e lm="نظر"><p><l>تنظر</l><r>نظر<s n="vblex"/><s n="iv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 
 <e lm="ذهب"><p><l>ذهب</l><r>ذهب<s n="vblex"/><s n="iv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-
-<!-- <e lm="استطاع"><p><l>لم<b/>يستطيعوا</l><r>استطاع<s n="vblex"/><s n="tv"/><s n="past"/><s n="p3"/><s n="m"/><s n="pl"/><s n="neg"/></r></p></e>
-<e lm="استطاع"><p><l>لم<b/>يستطيعا</l><r>استطاع<s n="vblex"/><s n="tv"/><s n="past"/><s n="p3"/><s n="m"/><s n="du"/><s n="neg"/></r></p></e>
-<e lm="استطاع"><p><l>لا<b/>أستطيع</l><r>استطاع<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p1"/><s n="sg"/><s n="neg"/></r></p></e>
-<e lm="استطاع"><p><l>لا<b/>تستطيع</l><r>استطاع<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/><s n="neg"/></r></p></e>
-<e lm="استطاع"><p><l>لا<b/>تستطيع</l><r>استطاع<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/><s n="neg"/></r></p></e> -->
 
 <e lm="استطاع"><p><l>يستطيعوا</l><r>استطاع<s n="vblex"/><s n="tv"/><s n="pres"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
 <e lm="استطاع"><p><l>يستطيعا</l><r>استطاع<s n="vblex"/><s n="tv"/><s n="pres"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
@@ -782,7 +767,7 @@
 
 <e lm="شرب"><p><l>يشربون</l><r>شرب<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
 <e lm="شرب"><p><l>يشربان</l><r>شرب<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
-<e lm="شرب"><p><l>يشربان</l><r>شرب<s n="vblex"/><s n="tv"/><s n="pres"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e lm="شرب"><p><l>يشربا</l><r>شرب<s n="vblex"/><s n="tv"/><s n="pres"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
 
 <e lm="أكل"><p><l>يأكلون</l><r>أكل<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
 <e lm="أكل"><p><l>يأكلان</l><r>أكل<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
@@ -800,11 +785,7 @@
 <e lm="استمع"><p><l>تستمع</l><r>استمع<s n="vblex"/><s n="TD"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 
 <e lm="جاء"><p><l>جاء</l><r>جاء<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="m"/><s n="sg"/></r></p></e>
-<e lm="جاء"><p><l>جاء</l><r>جاء<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="mp"/><s n="sg"/></r></p></e>
-<e lm="جاء"><p><l>جاء</l><r>جاء<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="mnp"/><s n="sg"/></r></p></e>
 <e lm="جاء"><p><l>جائيا</l><r>جاء<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="جاء"><p><l>جائيا</l><r>جاء<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="mp"/><s n="sg"/><s n="acc"/></r></p></e>
-<e lm="جاء"><p><l>جائيا</l><r>جاء<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="mnp"/><s n="sg"/><s n="acc"/></r></p></e>
 
 <e lm="رجع"><p><l>رجع</l><r>رجع<s n="vblex"/><s n="tv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
 

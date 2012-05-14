@@ -194,6 +194,10 @@
        <attr-item tags="px3pl_m"/> <!-- arabic only -->
        <attr-item tags="px3pl_f"/> <!-- arabic only -->
     </def-attr>
+    <def-attr n="a_anim">
+       <attr-item tags="aa"/>
+       <attr-item tags="nn"/>
+    </def-attr>
     <def-attr n="pers">
        <attr-item tags="p1"/>
        <attr-item tags="p2"/>
@@ -774,6 +778,7 @@
                <clip pos="2" side="tl" part="lem"/>
                <clip pos="2" side="tl" part="a_nom"/>
                <clip pos="2" side="tl" part="gen"/>
+               <clip pos="2" side="tl" part="a_anim"/>
                <clip pos="2" side="tl" part="nbr"/>
              </lu>
            </mlu>
@@ -805,6 +810,7 @@
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_nom"/>
              <clip pos="1" side="tl" part="gen"/>
+             <clip pos="1" side="tl" part="a_anim"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
@@ -830,6 +836,7 @@
                <clip pos="2" side="tl" part="lemh"/>
                <clip pos="2" side="tl" part="a_nom"/>
                <clip pos="2" side="tl" part="gen"/>
+               <clip pos="2" side="tl" part="a_anim"/>
                <clip pos="2" side="tl" part="nbr"/>
                <clip pos="2" side="tl" part="poss"/>
                <clip pos="2" side="tl" part="lemq"/>
@@ -852,6 +859,7 @@
              <clip pos="2" side="tl" part="lem"/>
              <clip pos="2" side="tl" part="a_nom"/>
              <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="a_anim"/>
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="3" side="tl" part="poss"/>
            </lu>
@@ -1099,8 +1107,6 @@
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
              <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="a_neg"/>
-             <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
          </out>
@@ -1130,8 +1136,6 @@
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
              <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="a_neg"/> 
-             <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
 	   <b/>
@@ -1139,6 +1143,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
              <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="a_anim"/>
              <clip pos="2" side="tl" part="nbr"/>
              <lit-tag v="acc"/>
              <clip pos="2" side="tl" part="lemq"/>
@@ -1179,8 +1184,6 @@
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
              <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="a_neg"/> 
-             <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
 	   <b/>
@@ -1192,6 +1195,7 @@
              <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_nom"/>
              <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="a_anim"/>
              <clip pos="3" side="tl" part="nbr"/>
              <lit-tag v="acc"/>
              <clip pos="3" side="tl" part="lemq"/>
@@ -1227,8 +1231,6 @@
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
              <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="a_neg"/> 
-             <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
 	   <b/>
@@ -1262,6 +1264,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
              <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="a_anim"/>
              <clip pos="2" side="tl" part="nbr"/>
              <lit-tag v="acc"/>
              <clip pos="2" side="tl" part="lemq"/>
@@ -1317,6 +1320,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
              <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="a_anim"/>
              <clip pos="2" side="tl" part="nbr"/>
              <lit-tag v="acc"/>
              <clip pos="2" side="tl" part="lemq"/>
@@ -1330,6 +1334,7 @@
              <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_nom"/>
              <clip pos="4" side="tl" part="gen"/>
+             <clip pos="4" side="tl" part="a_anim"/>
              <clip pos="4" side="tl" part="nbr"/>
              <lit-tag v="acc"/>
              <clip pos="4" side="tl" part="lemq"/>
@@ -1356,8 +1361,6 @@
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
              <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="a_neg"/>
-             <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
 	   </lu>
 	   <b/><lu><lit v="أن"/><lit-tag v="cnjsubj"/></lu><b/>
@@ -1374,8 +1377,6 @@
              <clip pos="2" side="tl" part="pers"/>
              <var n="genero"/>
              <clip pos="2" side="tl" part="nbr"/>
-             <clip pos="2" side="tl" part="a_neg"/> 
-             <clip pos="2" side="tl" part="poss"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
 	   </out>
@@ -1404,8 +1405,6 @@
              <clip pos="2" side="tl" part="pers"/>
              <var n="genero"/>
              <clip pos="2" side="tl" part="nbr"/>
-             <clip pos="2" side="tl" part="a_neg"/> 
-             <clip pos="2" side="tl" part="poss"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
 	   </out>
@@ -1437,8 +1436,6 @@
              <clip pos="2" side="tl" part="pers"/>
              <var n="genero"/>
              <clip pos="2" side="tl" part="nbr"/>
-             <clip pos="2" side="tl" part="a_neg"/> 
-             <clip pos="2" side="tl" part="poss"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
 	   <b/>
@@ -1551,6 +1548,7 @@
              <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_nom"/>
              <clip pos="4" side="tl" part="gen"/>
+             <clip pos="4" side="tl" part="a_anim"/>
              <lit-tag v="du"/>
              <lit-tag v="gen"/>
              <clip pos="4" side="tl" part="lemq"/>
@@ -1575,6 +1573,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
              <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="a_anim"/>
              <clip pos="2" side="tl" part="nbr"/>
              <lit-tag v="gen"/>
              <clip pos="2" side="tl" part="poss"/>
@@ -1611,6 +1610,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
              <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="a_anim"/>
              <clip pos="2" side="tl" part="nbr"/>
              <lit-tag v="acc"/>
              <clip pos="2" side="tl" part="poss"/>
@@ -1691,6 +1691,7 @@
              <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_nom"/>
              <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="a_anim"/>
              <clip pos="3" side="tl" part="nbr"/>
              <lit-tag v="acc"/>
              <clip pos="3" side="tl" part="lemq"/>
@@ -1727,6 +1728,7 @@
              <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_nom"/>
              <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="a_anim"/>
              <clip pos="3" side="tl" part="nbr"/>
              <lit-tag v="acc"/>
              <clip pos="3" side="tl" part="lemq"/>
@@ -1740,6 +1742,7 @@
              <clip pos="5" side="tl" part="lemh"/>
              <clip pos="5" side="tl" part="a_nom"/>
              <clip pos="5" side="tl" part="gen"/>
+             <clip pos="5" side="tl" part="a_anim"/>
              <clip pos="5" side="tl" part="nbr"/>
              <lit-tag v="acc"/>
              <clip pos="5" side="tl" part="lemq"/>
