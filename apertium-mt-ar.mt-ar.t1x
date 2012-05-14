@@ -47,8 +47,32 @@
       <cat-item tags="vblex.*" lemma="ried"/>
       <cat-item tags="vblex.*" lemma="ipprova"/>
     </def-cat>
+    <def-cat n="vrbpast"> 
+      <cat-item tags="vblex.tv.past.*"/>
+      <cat-item tags="vblex.iv.past.*"/>
+      <cat-item tags="vblex.TD.past.*"/>
+      <cat-item tags="vaux.iv.past.*"/>
+    </def-cat>
+    <def-cat n="modalpast">
+      <cat-item tags="vblex.tv.past.*" lemma="ħabb"/>
+      <cat-item tags="vblex.tv.past.*" lemma="seta"/>
+      <cat-item tags="vblex.tv.past.*" lemma="ried"/>
+      <cat-item tags="vblex.tv.past.*" lemma="ipprova"/>
+    </def-cat>
+    <def-cat n="modalpres">
+      <cat-item tags="vblex.tv.pres.*" lemma="ħabb"/>
+      <cat-item tags="vblex.tv.pres.*" lemma="seta"/>
+      <cat-item tags="vblex.tv.pres.*" lemma="ried"/>
+      <cat-item tags="vblex.tv.pres.*" lemma="ipprova"/>
+    </def-cat>
     <def-cat n="vrbpres">
-      <cat-item tags="vblex.pres.*"/>
+      <cat-item tags="vblex.tv.pres.*"/>
+      <cat-item tags="vblex.iv.pres.*"/>
+      <cat-item tags="vblex.TD.pres.*"/>
+<!--      <cat-item tags="vaux.iv.pres.*"/> -->
+    </def-cat>
+    <def-cat n="xneg"> 
+      <cat-item tags="neg"/>
     </def-cat>
     <def-cat n="kien">
       <cat-item tags="vaux.*" lemma="kien"/>
@@ -57,14 +81,20 @@
       <cat-item tags="vaux.*" lemma="kellu"/>
     </def-cat>
     <def-cat n="qagħad">
-      <cat-item tags="vaux.pprs.*" lemma="qagħad"/>
-      <cat-item tags="vaux.pres.*" lemma="qagħad"/>
+      <cat-item tags="vaux.iv.pprs.*" lemma="qagħad"/>
+      <cat-item tags="vaux.iv.pres.*" lemma="qagħad"/>
     </def-cat>
     <def-cat n="neg">
       <cat-item tags="neg"/>
     </def-cat>
     <def-cat n="dualis_num">   
       <cat-item tags="num.mf.sp" lemma="żewġ"/>
+    </def-cat>
+    <def-cat n="u_prn"> 
+      <cat-item tags="prn.*" lemma="u"/>
+    </def-cat>
+    <def-cat n="lu_prn"> 
+      <cat-item tags="prn.*" lemma="lu"/>
     </def-cat>
     <def-cat n="d_obj">
       <cat-item tags="pr" lemma="lil"/>
@@ -91,7 +121,7 @@
     <def-cat n="cnjcoo"> 
       <cat-item tags="cnjcoo"/>
     </def-cat>
-    <def-cat n="adv"> 
+    <def-cat n="adv">
       <cat-item tags="adv"/>
     </def-cat>
   </section-def-cats>
@@ -102,6 +132,11 @@
        <attr-item tags="m"/>
        <attr-item tags="f"/>
        <attr-item tags="mf"/>
+       <attr-item tags="mp"/>
+       <attr-item tags="mnp"/>
+       <attr-item tags="fp"/>
+       <attr-item tags="fnp"/>
+       <attr-item tags="mfp"/>
        <attr-item tags="GD"/>
     </def-attr>
     <def-attr n="nbr">
@@ -123,6 +158,11 @@
        <attr-item tags="np.cog"/>
        <attr-item tags="np.ant"/>
        <attr-item tags="np.org"/>
+     </def-attr>
+    <def-attr n="a_trans">
+       <attr-item tags="tv"/>
+       <attr-item tags="iv"/>
+       <attr-item tags="TD"/>
     </def-attr>
      <def-attr n="temps">
         <attr-item tags="pres"/>
@@ -177,6 +217,9 @@
     <def-attr n="a_pr">
        <attr-item tags="pr"/>
     </def-attr>
+    <def-attr n="a_pron">
+       <attr-item tags="pron"/>
+    </def-attr>
     <def-attr n="a_neg">
        <attr-item tags="neg"/>
     </def-attr>
@@ -184,8 +227,9 @@
        <attr-item tags="nom"/>
        <attr-item tags="gen"/>
        <attr-item tags="acc"/>
+       <attr-item tags="CD"/>
     </def-attr>
-     <def-attr n="mode">   <!-- Arabic only: verb (imperfectum) moods -->
+     <def-attr n="mood">   <!-- Arabic only: verb (imperfectum) moods -->
         <attr-item tags="indic"/>
         <attr-item tags="apocop"/>
         <attr-item tags="subjun"/>
@@ -1045,6 +1089,7 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="a_trans"/>
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1075,6 +1120,7 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="a_trans"/>
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1123,6 +1169,7 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="a_trans"/>
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1169,8 +1216,9 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="a_trans"/>
              <clip pos="1" side="tl" part="temps"/>
-             <clip pos="1" side="tl" part="mode"/>
+             <clip pos="1" side="tl" part="mood"/>
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
              <clip pos="1" side="tl" part="nbr"/>
@@ -1297,7 +1345,9 @@
 	   <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="a_trans"/>
              <clip pos="1" side="tl" part="temps"/>
+             <clip pos="1" side="tl" part="a_mood"/>
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
              <clip pos="1" side="tl" part="nbr"/>
@@ -1313,6 +1363,7 @@
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="a_trans"/>
              <clip pos="2" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="2" side="tl" part="pers"/>
@@ -1342,6 +1393,7 @@
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="a_trans"/>
              <clip pos="2" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="2" side="tl" part="pers"/>
@@ -1374,6 +1426,7 @@
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="a_trans"/>
              <clip pos="2" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="2" side="tl" part="pers"/>
@@ -1395,7 +1448,7 @@
        </action>
     </rule> 
 
-    <rule comment="rule: qagħad ('to stay')">
+    <rule comment="rule: qagħad ('to stay')"> <!-- OK -->
     <!-- but double blank is left :( -->
        <pattern>
          <pattern-item n="qagħad"/>
@@ -1520,6 +1573,336 @@
 	  </out>
        </action>
     </rule>
+
+
+    <!-- add ma + vrb_past + u + neg, + lu + neg, + u + lu + neg -->
+    <rule comment="rule: verb negation: ma + past -> لم + pres.apocop ">
+       <pattern>
+         <pattern-item n="ma_neg"/>
+         <pattern-item n="vrbpast"/>
+         <pattern-item n="xneg"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
+	  <out>
+	   <lu>
+	     <lit v="لم"/><lit-tag v="adv"/>
+	   </lu><b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="a_trans"/>
+             <lit-tag v="pres"/>
+             <lit-tag v="apocop"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	  </out>
+       </action>
+    </rule>
+
+
+    <rule comment="rule: modal verbs ('want', 'like', 'can' etc.): in Arabic followed by أن + so-called subjunctive mood ">
+       <pattern>
+         <pattern-item n="ma_neg"/>
+         <pattern-item n="modalpast"/>
+         <pattern-item n="xneg"/>
+         <pattern-item n="vrbpres"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
+	  <out>
+	   <lu>
+	     <lit v="لم"/><lit-tag v="adv"/>
+	   </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="a_trans"/>
+             <lit-tag v="pres"/>
+             <lit-tag v="apocop"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+	   <lu>
+	     <lit v="أن"/><lit-tag v="cnjsubj"/>
+	   </lu>
+	   <b/>
+	 </out>
+	 <call-macro n="modify_verb_and_genero"><with-param pos="4"/></call-macro>
+	 <out>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_verb"/>
+             <clip pos="4" side="tl" part="a_trans"/>
+             <clip pos="4" side="tl" part="temps"/>
+             <lit-tag v="subjun"/>
+             <clip pos="4" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="4" side="tl" part="nbr"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+	 </out>
+       </action>
+    </rule> 
+
+
+    <rule comment="rule: modal verbs ('want', 'like', 'can' etc.): in Arabic followed by أن + so-called subjunctive mood ">
+       <pattern>
+         <pattern-item n="ma_neg"/>
+         <pattern-item n="modalpres"/>
+         <pattern-item n="xneg"/>
+         <pattern-item n="vrbpres"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
+	  <out>
+	   <lu>
+	     <lit v="لا"/><lit-tag v="adv"/>
+	   </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="a_trans"/>
+             <lit-tag v="pres"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+	   <lu>
+	     <lit v="أن"/><lit-tag v="cnjsubj"/>
+	   </lu>
+	   <b/>
+	 </out>
+	 <call-macro n="modify_verb_and_genero"><with-param pos="4"/></call-macro>
+	 <out>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_verb"/>
+             <clip pos="4" side="tl" part="a_trans"/>
+             <clip pos="4" side="tl" part="temps"/>
+             <lit-tag v="subjun"/>
+             <clip pos="4" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="4" side="tl" part="nbr"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+	 </out>
+       </action>
+    </rule> 
+
+
+
+    <rule comment="rule: modal verbs ('want', 'like', 'can' etc.): in Arabic followed by أن + so-called subjunctive mood ">
+       <pattern>
+         <pattern-item n="ma_neg"/>
+         <pattern-item n="modalpres"/>
+         <pattern-item n="xneg"/>
+         <pattern-item n="vrbpres"/>
+         <pattern-item n="lu_prn"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
+	  <out>
+	   <lu>
+	     <lit v="لا"/><lit-tag v="adv"/>
+	   </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="a_trans"/>
+             <lit-tag v="pres"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+	   <lu>
+	     <lit v="أن"/><lit-tag v="cnjsubj"/>
+	   </lu>
+	   <b/>
+  	 </out>
+	 <call-macro n="modify_verb_and_genero"><with-param pos="4"/></call-macro>
+	 <out>
+	   <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_verb"/>
+             <clip pos="4" side="tl" part="a_trans"/>
+             <clip pos="4" side="tl" part="temps"/>
+             <lit-tag v="subjun"/>
+             <clip pos="4" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="4" side="tl" part="nbr"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+	   <mlu>
+	     <lu>
+               <lit v="ل"/>
+               <lit-tag v="pr"/>
+	     </lu>
+	     <lu>
+               <lit v="ه"/>
+               <clip pos="5" side="tl" part="a_prn"/>
+               <clip pos="5" side="tl" part="pers"/>
+               <clip pos="5" side="tl" part="gen"/>
+               <clip pos="5" side="tl" part="nbr"/>
+             </lu>
+	   </mlu>	
+	 </out>
+       </action>
+    </rule> 
+
+
+
+    <!-- add ma + vrb_pres + u + neg, + lu + neg, + u + lu + neg -->
+    <rule comment="rule: verb negation: ma + pres -> لا + pres ">
+       <pattern>
+         <pattern-item n="ma_neg"/>
+         <pattern-item n="vrbpres"/>
+         <pattern-item n="xneg"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
+	  <out>
+	   <lu>
+	     <lit v="لا"/><lit-tag v="adv"/>
+	   </lu><b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="a_trans"/>
+             <lit-tag v="pres"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	  </out>
+       </action>
+    </rule>
+
+
+
+    <rule comment="rule: ma + pres, dir object in accusative ">
+       <pattern>
+         <pattern-item n="ma_neg"/>
+         <pattern-item n="vrbpres"/>
+         <pattern-item n="xneg"/>
+         <pattern-item n="pron_ind"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
+         <out>
+	   <lu>
+	     <lit v="لا"/><lit-tag v="adv"/>
+	   </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="temps"/>
+             <clip pos="2" side="tl" part="mood"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="4" side="tl" part="lem"/>
+             <clip pos="4" side="tl" part="a_prn_ind"/>
+             <clip pos="4" side="tl" part="gen"/>
+             <clip pos="4" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+           </lu>
+	 </out>
+       </action>
+    </rule> 
+
+
+    <rule comment="rule: direct object suffix ">
+       <pattern>
+         <pattern-item n="vrb"/>
+         <pattern-item n="u_prn"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+         <out>
+	   <mlu>
+             <lu>
+               <clip pos="1" side="tl" part="lemh"/>
+               <clip pos="1" side="tl" part="a_verb"/>
+               <clip pos="1" side="tl" part="a_trans"/>
+               <clip pos="1" side="tl" part="temps"/>
+<!--               <clip pos="1" side="tl" part="mood"/>  -->
+               <clip pos="1" side="tl" part="pers"/>
+               <var n="genero"/>
+               <clip pos="1" side="tl" part="nbr"/>
+               <clip pos="1" side="tl" part="lemq"/>
+             </lu>
+	     <lu>
+               <lit v="ه"/>
+               <clip pos="2" side="tl" part="a_prn"/>
+               <clip pos="2" side="tl" part="pers"/>
+               <clip pos="2" side="tl" part="gen"/>
+               <clip pos="2" side="tl" part="nbr"/>
+             </lu>
+	   </mlu>
+	 </out>
+       </action>
+    </rule> 
+
+
+    <rule comment="rule: indirect object suffix ">
+       <pattern>
+         <pattern-item n="vrb"/>
+         <pattern-item n="lu_prn"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="1" side="tl" part="temps"/>
+<!--             <clip pos="1" side="tl" part="mood"/>  -->
+             <clip pos="1" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+	   <mlu>
+	     <lu>
+               <lit v="ل"/>
+               <lit-tag v="pr"/>
+	     </lu>
+	     <lu>
+               <lit v="ه"/>
+               <clip pos="2" side="tl" part="a_prn"/>
+               <clip pos="2" side="tl" part="pers"/>
+               <clip pos="2" side="tl" part="gen"/>
+               <clip pos="2" side="tl" part="nbr"/>
+             </lu>
+	   </mlu>
+	 </out>
+       </action>
+    </rule> 
+
 
 
   </section-rules>
