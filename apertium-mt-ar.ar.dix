@@ -370,6 +370,8 @@
     <pardef n="أم__n_fp">  
         <e><p><l></l><r><s n="n"/><s n="fp"/><s n="sg"/></r></p></e>
         <e><p><l></l><r><s n="n"/><s n="fp"/><s n="sg"/></r></p><par n="S__مدرس"/></e>
+        <e><p><l></l><r><s n="n"/><s n="fp"/><s n="sg"/><s n="acc"/></r></p></e>
+        <e><p><l></l><r><s n="n"/><s n="fp"/><s n="sg"/><s n="acc"/></r></p><par n="S__مدرس"/></e>
         <e><p><l>هات</l><r><s n="n"/><s n="fp"/><s n="pl"/></r></p></e>
     </pardef>
 
@@ -655,8 +657,8 @@
 
 
 <e lm="كان"><p><l>كان</l><r>كان<s n="vaux"/><s n="iv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-<!-- <e lm="كان"><p><l>ليس</l><r>كان<s n="vaux"/><s n="iv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/><s n="neg"/></r></p></e> -->
-<e lm="كان"><p><l>ليس</l><r>كان<s n="vaux"/><s n="iv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/><j/>x<s n="neg"/></r></p></e>
+<e lm="كان"><p><l>ليس</l><r>كان<s n="vaux"/><s n="iv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/><s n="neg"/></r></p></e>
+<!-- <e lm="كان"><p><l>ليس</l><r>كان<s n="vaux"/><s n="iv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/><j/>x<s n="neg"/></r></p></e> -->
 
 <e lm="حب"><p><l>يحب</l><r>حب<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
 <e lm="حب"><p><l>يحبان</l><r>حب<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
@@ -755,6 +757,7 @@
 <e lm="قال"><p><l>تقول</l><r>قال<s n="vblex"/><s n="tv"/><s n="pres"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>تقول</l><r>قال<s n="vblex"/><s n="tv"/><s n="pres"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>تقول</l><r>قال<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تقول</l><r>قال<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>قول</l><r>قال<s n="vblex"/><s n="tv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>قولي</l><r>قال<s n="vblex"/><s n="tv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>أقول</l><r>قال<s n="vblex"/><s n="tv"/><s n="pres"/><s n="subjun"/><s n="p1"/><s n="sg"/></r></p></e>
@@ -771,13 +774,15 @@
 
 <e lm="وجد"><p><l>تجد</l><r>وجد<s n="vblex"/><s n="tv"/><s n="pres"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e lm="وجد"><p><l>تجد</l><r>وجد<s n="vblex"/><s n="tv"/><s n="pres"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-<e lm="وجد"><p><l>وجدتك</l><r>وجد<s n="vblex"/><s n="tv"/><s n="past"/><s n="p1"/><s n="sg"/><s n="px2sg_m"/></r></p></e>
+<e lm="وجد"><p><l>وجدتك</l><r>وجد<s n="vblex"/><s n="tv"/><s n="past"/><s n="p1"/><s n="sg"/><j/>ه<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+<e lm="وجد"><p><l>وجدتك</l><r>وجد<s n="vblex"/><s n="tv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/><j/>ه<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
 
 <e lm="فرح"><p><l>يفرحون</l><r>فرح<s n="vblex"/><s n="iv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
 <e lm="فرح"><p><l>يفرحان</l><r>فرح<s n="vblex"/><s n="iv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
 
 <e lm="شرب"><p><l>يشربون</l><r>شرب<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
 <e lm="شرب"><p><l>يشربان</l><r>شرب<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e lm="شرب"><p><l>يشربان</l><r>شرب<s n="vblex"/><s n="tv"/><s n="pres"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
 
 <e lm="أكل"><p><l>يأكلون</l><r>أكل<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
 <e lm="أكل"><p><l>يأكلان</l><r>أكل<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
@@ -795,7 +800,11 @@
 <e lm="استمع"><p><l>تستمع</l><r>استمع<s n="vblex"/><s n="TD"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 
 <e lm="جاء"><p><l>جاء</l><r>جاء<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="m"/><s n="sg"/></r></p></e>
+<e lm="جاء"><p><l>جاء</l><r>جاء<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="mp"/><s n="sg"/></r></p></e>
+<e lm="جاء"><p><l>جاء</l><r>جاء<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="mnp"/><s n="sg"/></r></p></e>
 <e lm="جاء"><p><l>جائيا</l><r>جاء<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="جاء"><p><l>جائيا</l><r>جاء<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="mp"/><s n="sg"/><s n="acc"/></r></p></e>
+<e lm="جاء"><p><l>جائيا</l><r>جاء<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="mnp"/><s n="sg"/><s n="acc"/></r></p></e>
 
 <e lm="رجع"><p><l>رجع</l><r>رجع<s n="vblex"/><s n="tv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
 

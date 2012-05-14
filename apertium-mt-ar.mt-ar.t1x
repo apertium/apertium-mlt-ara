@@ -116,7 +116,9 @@
     </def-cat>
     <def-cat n="nom_attr"> 
       <cat-item tags="adj.*"/>
-      <cat-item tags="vblex.pprs.*"/>
+      <cat-item tags="vblex.tv.pprs.*"/>
+      <cat-item tags="vblex.iv.pprs.*"/>
+      <cat-item tags="vblex.TD.pprs.*"/>
     </def-cat>
     <def-cat n="cnjcoo"> 
       <cat-item tags="cnjcoo"/>
@@ -213,6 +215,7 @@
     <def-attr n="a_verb">
        <attr-item tags="vblex"/>
        <attr-item tags="vmod"/>
+       <attr-item tags="vaux"/>
     </def-attr>
     <def-attr n="a_pr">
        <attr-item tags="pr"/>
@@ -239,7 +242,9 @@
     </def-attr>
     <def-attr n="a_nom_attr">
        <attr-item tags="adj"/>
-       <attr-item tags="vblex.pprs"/>
+       <attr-item tags="vblex.tv.pprs"/>
+       <attr-item tags="vblex.iv.pprs"/>
+       <attr-item tags="vblex.TD.pprs"/>
     </def-attr>
   </section-def-attrs>
 
@@ -1393,7 +1398,7 @@
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
-             <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="a_trans"/>
              <clip pos="2" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="2" side="tl" part="pers"/>
@@ -1426,7 +1431,7 @@
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
-             <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="a_trans"/>
              <clip pos="2" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="2" side="tl" part="pers"/>
@@ -1447,6 +1452,66 @@
 	   </out>
        </action>
     </rule> 
+
+
+
+    <rule comment="rule: biex (in order that) in Arabic is followed subjunctive mood; direct object in accusative ">
+       <pattern>
+         <pattern-item n="biex"/>
+         <pattern-item n="vrbpres"/>
+         <pattern-item n="pron_ind"/>
+         <pattern-item n="cnjcoo"/>
+         <pattern-item n="vrbpres"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
+         <out>
+	   <lu>
+             <clip pos="1" side="tl" part="whole"/>   
+	   </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="temps"/>
+             <lit-tag v="subjun"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="3" side="tl" part="lem"/>
+             <clip pos="3" side="tl" part="a_prn_ind"/>
+             <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+           </lu>
+	   <b/>
+	   <lu>
+             <clip pos="4" side="tl" part="whole"/>   
+	   </lu>
+	 </out>
+         <call-macro n="modify_verb_and_genero"><with-param pos="5"/></call-macro>
+         <out>
+           <lu>
+             <clip pos="5" side="tl" part="lemh"/>
+             <clip pos="5" side="tl" part="a_verb"/>
+             <clip pos="5" side="tl" part="a_trans"/>
+             <clip pos="5" side="tl" part="temps"/>
+             <lit-tag v="subjun"/>
+             <clip pos="5" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="5" side="tl" part="nbr"/>
+             <clip pos="5" side="tl" part="lemq"/>
+           </lu>
+	 </out>
+       </action>
+    </rule> 
+
+
 
     <rule comment="rule: qagħad ('to stay')"> <!-- OK -->
     <!-- but double blank is left :( -->
@@ -1573,6 +1638,115 @@
 	  </out>
        </action>
     </rule>
+
+
+    <!-- maybe another rule: drop 'ma'? -->
+    <!-- in fact only pres. of كان is a special case -->
+    <rule comment="rule: kien negation"> <!-- kien 'to be' negation -->
+       <pattern>
+         <pattern-item n="kien"/>
+         <pattern-item n="xneg"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+	 <out>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="1" side="tl" part="temps"/>
+             <clip pos="1" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <lit-tag v="neg"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+	 </out>
+       </action>
+    </rule>
+
+
+    <rule comment="rule: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
+       <pattern>
+         <pattern-item n="kien"/>
+         <pattern-item n="xneg"/>
+         <pattern-item n="nom"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+	 <out>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="1" side="tl" part="temps"/>
+             <clip pos="1" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <lit-tag v="neg"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_nom"/>
+             <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+         </out>
+       </action>
+    </rule> 
+
+
+    <rule comment="rule: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
+       <pattern>
+         <pattern-item n="kien"/>
+         <pattern-item n="xneg"/>
+         <pattern-item n="nom"/>
+         <pattern-item n="cnjcoo"/>
+         <pattern-item n="nom"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+	 <out>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="1" side="tl" part="temps"/>
+             <clip pos="1" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <lit-tag v="neg"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_nom"/>
+             <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+	   <lu>
+             <clip pos="4" side="tl" part="whole"/>
+	   </lu>
+	   <b/>
+           <lu>
+             <clip pos="5" side="tl" part="lemh"/>
+             <clip pos="5" side="tl" part="a_nom"/>
+             <clip pos="5" side="tl" part="gen"/>
+             <clip pos="5" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+             <clip pos="5" side="tl" part="lemq"/>
+           </lu>
+	   </out>
+       </action>
+    </rule> 
 
 
     <!-- add ma + vrb_past + u + neg, + lu + neg, + u + lu + neg -->
