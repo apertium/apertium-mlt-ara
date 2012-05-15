@@ -719,8 +719,8 @@
 <e lm="سأل"><p><l>تسأل</l><r>سأل<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e lm="سأل"><p><l>تسأل</l><r>سأل<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 
-<e lm="تكلم"><p><l>يتكلم</l><r>تكلم<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-<e lm="تكلم"><p><l>لا<b/>يتكلم</l><r>تكلم<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/><s n="neg"/></r></p></e>
+<e lm="تكلم"><p><l>يتكلم</l><r>تكلم<s n="vblex"/><s n="iv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e lm="تكلم"><p><l>لا<b/>يتكلم</l><r>تكلم<s n="vblex"/><s n="iv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/><s n="neg"/></r></p></e>
 
 <e lm="حصل على"><p><l>تحصل<b/>على</l><r>حصل<b/>على<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e lm="حصل على"><p><l>تحصل<b/>على</l><r>حصل<b/>على<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>

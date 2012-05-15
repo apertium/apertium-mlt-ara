@@ -1040,7 +1040,8 @@
      <e c="  0"><p><l>sagrificcju<s n="n"/><s n="m"/></l><r>تضحية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e slr="1"><p><l>sagrificcju<s n="n"/><s n="m"/></l><r>ضحية<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- earlier with ċċ -->
      <e><p><l>riħa<s n="n"/><s n="f"/></l><r>رائحة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-     <e r="LR"><p><l>rappreżentazzjoni<s n="n"/><s n="f"/></l><r>تمثيل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <e c="  0" r="LR"><p><l>rappreżentazzjoni<s n="n"/><s n="f"/></l><r>نيابة<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <e slr="1" r="LR"><p><l>rappreżentazzjoni<s n="n"/><s n="f"/></l><r>تمثيل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>rokna<s n="n"/><s n="f"/></l><r>زاوية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>residenta<s n="n"/><s n="f"/></l><r>مقيمة<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
      <e r="LR"><p><l>regolament<s n="n"/><s n="m"/></l><r>تنظيم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -1456,36 +1457,38 @@
      <e><p><l>għad<s n="vaux"/></l><r>ما<b/>زال<s n="vaux"/></r></p></e> 
 
      <e><p><l>ħabb<s n="vblex"/></l><r>حب<s n="vblex"/></r></p></e>
-     <e><p><l>seta<s n="vblex"/></l><r>استطاع<s n="vblex"/></r></p></e>
+     <e><p><l>seta<s n="vblex"/><s n="tv"/></l><r>استطاع<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>ried<s n="vblex"/><s n="tv"/></l><r>أراد<s n="vblex"/><s n="tv"/></r></p></e>
-     <e><p><l>ipprova<s n="vblex"/><s n="TD"/></l><r>حاول<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ipprova<s n="vblex"/><s n="tv"/></l><r>حاول<s n="vblex"/><s n="tv"/></r></p></e>
 
-     <e><p><l>lagħab<s n="vblex"/></l><r>لعب<s n="vblex"/></r></p></e>
-     <e><p><l>mexa<s n="vblex"/></l><r>مشى<s n="vblex"/></r></p></e>
+     <e><p><l>lagħab<s n="vblex"/><s n="iv"/></l><r>لعب<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>mexa<s n="vblex"/><s n="tv"/></l><r>مشى<s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>spiċċa<s n="vblex"/><s n="TD"/></l><r>أنهى<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>għadd<s n="vblex"/><s n="tv"/></l><r>عد<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>ħares<s n="vblex"/><s n="TD"/></l><r>نظر<s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>mar<s n="vblex"/><s n="tv"/></l><r>ذهب<s n="vblex"/><s n="iv"/></r></p></e>
-     <e><p><l>raqad<s n="vblex"/></l><r>نام<s n="vblex"/></r></p></e>
-     <e c="  0"><p><l>ġara<s n="vblex"/><s n="TD"/></l><r>جرى<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>raqad<s n="vblex"/><s n="iv"/></l><r>نام<s n="vblex"/><s n="iv"/></r></p></e>
+     <e c="  0"><p><l>ġara<s n="vblex"/><s n="iv"/></l><r>جرى<s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>ra<s n="vblex"/><s n="tv"/></l><r>رأى<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>nħeba<s n="vblex"/><s n="iv"/></l><r>اختبأ<s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>poġġa<s n="vblex"/><s n="TD"/></l><r>جلس<s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>jaf<s n="vblex"/><s n="tv"/></l><r>عرف<s n="vblex"/><s n="tv"/></r></p></e>
-     <e><p><l>għamel<s n="vblex"/><s n="TD"/></l><r>فعل<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>għamel<s n="vblex"/><s n="tv"/></l><r>فعل<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>fittex<s n="vblex"/><s n="TD"/></l><r>بحث<b/>عن<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>staqsa<s n="vblex"/><s n="TD"/></l><r>سأل<s n="vblex"/><s n="tv"/></r></p></e>
-     <e><p><l>tkellem<s n="vblex"/><s n="iv"/></l><r>تكلم<s n="vblex"/><s n="tv"/></r></p></e> <!-- iv ? -->
+     <e><p><l>tkellem<s n="vblex"/><s n="iv"/></l><r>تكلم<s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>rċieva<s n="vblex"/><s n="tv"/></l><r>حصل<b/>على<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>daħak<s n="vblex"/><s n="tv"/></l><r>ضحك<s n="vblex"/><s n="iv"/></r></p></e> <!-- tv? -->
-     <e><p><l>ħaseb<s n="vblex"/><s n="TD"/></l><r>فكر<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>ħaseb<s n="vblex"/><s n="iv"/></l><r>فكر<s n="vblex"/><s n="iv"/></r></p></e>
+<!--     <e><p><l>ħaseb<s n="vblex"/><s n="tv"/></l><r>فكر<s n="vblex"/><s n="iv"/></r></p></e>  consider -->
      <e><p><l>qal<b/>lil<s n="vblex"/></l><r>قال<b/>ل<s n="vblex"/></r></p></e>
      <e><p><l>qal<s n="vblex"/><s n="tv"/></l><r>قال<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>wieġeb<s n="vblex"/><s n="tv"/></l><r>أجاب<s n="vblex"/><s n="tv"/></r></p></e>
-     <e><p><l>sab<s n="vblex"/><s n="iv"/></l><r>وجد<s n="vblex"/><s n="tv"/></r></p></e> <!-- iv? -->
-     <e><p><l>feraħ<s n="vblex"/><s n="TD"/></l><r>فرح<s n="vblex"/><s n="iv"/></r></p></e>
-     <e><p><l>xorob<s n="vblex"/><s n="TD"/></l><r>شرب<s n="vblex"/><s n="tv"/></r></p></e>
-     <e><p><l>wasal<s n="vblex"/></l><r>حان<s n="vblex"/></r></p></e>
+     <e><p><l>sab<s n="vblex"/><s n="tv"/></l><r>وجد<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>feraħ<s n="vblex"/><s n="iv"/></l><r>فرح<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>xorob<s n="vblex"/><s n="tv"/></l><r>شرب<s n="vblex"/><s n="tv"/></r></p></e>
+     <e c="  0"><p><l>wasal<s n="vblex"/><s n="iv"/></l><r>حان<s n="vblex"/><s n="iv"/></r></p></e>
+     <e slr="1"><p><l>wasal<s n="vblex"/><s n="iv"/></l><r>وصل<s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>sama'<s n="vblex"/><s n="tv"/></l><r>سمع<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>issemma'<s n="vblex"/><s n="TD"/></l><r>استمع<s n="vblex"/><s n="TD"/></r></p></e>
      <e><p><l>ġie<s n="vblex"/><s n="tv"/></l><r>جاء<s n="vblex"/><s n="iv"/></r></p></e>
@@ -1493,23 +1496,25 @@
      <e><p><l>kiel<s n="vblex"/><s n="tv"/></l><r>أكل<s n="vblex"/><s n="tv"/></r></p></e>
 
 
-
-     <e><p><l>ammira<s n="vblex"/></l><r>عجب<s n="vblex"/></r></p></e> <!-- 1 or 5 من -->
-     <e><p><l>bagħad<s n="vblex"/></l><r>هقد<s n="vblex"/></r></p></e> <!-- nienawidzić i źle życzyć -->
-     <e><p><l>bagħat<s n="vblex"/></l><r>بعث<s n="vblex"/></r></p></e>
-     <e><p><l>bandal<s n="vblex"/></l><r>هز<s n="vblex"/></r></p></e>
-     <e><p><l>baram<s n="vblex"/></l><r>برم<s n="vblex"/></r></p></e>
-     <e><p><l>beda<s n="vblex"/></l><r>بدأ<s n="vblex"/></r></p></e>
-     <e><p><l>bell<s n="vblex"/></l><r>بل<s n="vblex"/></r></p></e>
-     <e><p><l>berbaq<s n="vblex"/></l><r>بدد<s n="vblex"/></r></p></e>
-     <e><p><l>bexx<s n="vblex"/></l><r>رش<s n="vblex"/></r></p></e>
-     <e><p><l>beżaq<s n="vblex"/></l><r>بصق<s n="vblex"/></r></p></e>
-     <e><p><l>biddel<s n="vblex"/></l><r>غير<s n="vblex"/></r></p></e>
-     <e><p><l>bidel<s n="vblex"/></l><r>غير<s n="vblex"/></r></p></e>
-     <e><p><l>biegħ<s n="vblex"/></l><r>باع<s n="vblex"/></r></p></e>
-     <e><p><l>bixkel<s n="vblex"/></l><r>خدع<s n="vblex"/></r></p></e>
-     <e><p><l>ċaflas<s n="vblex"/></l><r>رش<s n="vblex"/></r></p></e>
-     <e><p><l>ċaħad<s n="vblex"/></l><r>رفض<s n="vblex"/></r></p></e>
+     <e><p><l>ammira<s n="vblex"/><s n="tv"/></l><r>عجب<s n="vblex"/><s n="iv"/></r></p></e> <!-- 1 or 5 من -->
+     <e><p><l>bagħad<s n="vblex"/><s n="tv"/></l><r>كره<s n="vblex"/><s n="tv"/></r></p></e> <!-- nienawidzić i źle życzyć -->
+     <e><p><l>bagħat<s n="vblex"/><s n="tv"/></l><r>بعث<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>bandal<s n="vblex"/><s n="tv"/></l><r>هز<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>baqa<s n="vblex"/><s n="iv"/></l><r>بقي<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>baram<s n="vblex"/><s n="tv"/></l><r>برم<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>beda<s n="vblex"/><s n="tv"/></l><r>بدأ<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>beda<s n="vblex"/><s n="iv"/></l><r>ابتدأ<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>bela<s n="vblex"/><s n="tv"/></l><r>بلع<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>bell<s n="vblex"/><s n="tv"/></l><r>بل<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>berbaq<s n="vblex"/><s n="tv"/></l><r>بدد<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>bexx<s n="vblex"/><s n="tv"/></l><r>رش<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>beżaq<s n="vblex"/><s n="tv"/></l><r>بصق<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>biddel<s n="vblex"/><s n="tv"/></l><r>غير<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>bidel<s n="vblex"/><s n="tv"/></l><r>غير<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>biegħ<s n="vblex"/><s n="tv"/></l><r>باع<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>bixkel<s n="vblex"/><s n="tv"/></l><r>خدع<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ċaflas<s n="vblex"/><s n="tv"/></l><r>رش<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ċaħad<s n="vblex"/><s n="tv"/></l><r>رفض<s n="vblex"/><s n="tv"/></r></p></e>
      <e r="LR"><p><l>ċaħħad<s n="vblex"/></l><r>جرد<s n="vblex"/></r></p></e>
      <e><p><l>ċanfar<s n="vblex"/></l><r>وبخ<s n="vblex"/></r></p></e>
      <e><p><l>ċapċap<s n="vblex"/></l><r>صفق<s n="vblex"/></r></p></e>
@@ -1519,112 +1524,241 @@
      <e slr="1" r="LR"><p><l>ċempel<s n="vblex"/></l><r>هتف<s n="vblex"/></r></p></e>
      <e slr="2" r="LR"><p><l>ċempel<s n="vblex"/></l><r>رن<s n="vblex"/></r></p></e>
 <!--     <e><p><l>daħak<s n="vblex"/></l><r>ضحك<s n="vblex"/></r></p></e> -->
-     <e><p><l>daħal<s n="vblex"/></l><r>دخل<s n="vblex"/></r></p></e>
-     <e><p><l>dalam<s n="vblex"/></l><r>أظلم<s n="vblex"/></r></p></e>
-     <e><p><l>damm<s n="vblex"/></l><r>نظم<s n="vblex"/></r></p></e>
-     <e><p><l>dam<s n="vblex"/></l><r>دام<s n="vblex"/></r></p></e>
-     <e><p><l>daq<s n="vblex"/></l><r>ذاق<s n="vblex"/></r></p></e>
-     <e c="  0"><p><l>daqq<s n="vblex"/></l><r>عزف<s n="vblex"/></r></p></e>
-     <e slr="1"><p><l>daqq<s n="vblex"/></l><r>دق<s n="vblex"/></r></p></e>
-     <e><p><l>dar<s n="vblex"/></l><r>دار<s n="vblex"/></r></p></e>
-     <e><p><l>dardar<s n="vblex"/></l><r>كدر<s n="vblex"/></r></p></e> <!-- also: to cause nausea? -->
-     <e c="  0"><p><l>deħer<s n="vblex"/></l><r>بدا<s n="vblex"/></r></p></e>
-     <e slr="1"><p><l>deħer<s n="vblex"/></l><r>ظهر<s n="vblex"/></r></p></e>
-     <e><p><l>dendel<s n="vblex"/></l><r>علق<s n="vblex"/></r></p></e>
-     <e><p><l>dieq<s n="vblex"/></l><r>ذاق<s n="vblex"/></r></p></e> <!-- same as daq -->
-     <e><p><l>difen<s n="vblex"/></l><r>دفن<s n="vblex"/></r></p></e>
-     <e><p><l>dilek<s n="vblex"/></l><r>دهن<s n="vblex"/></r></p></e>
-     <e><p><l>fadal<s n="vblex"/></l><r>بقي<s n="vblex"/></r></p></e>
-     <e><p><l>falla<s n="vblex"/></l><r>فشل<s n="vblex"/></r></p></e> <!-- it's 'to fail' -->
-     <e><p><l>far<s n="vblex"/></l><r>فار<s n="vblex"/></r></p></e>
-     <e><p><l>farfar<s n="vblex"/></l><r>نفض<s n="vblex"/></r></p></e>
-
-     <e><p><l>fasad<s n="vblex"/></l><r>دمي<s n="vblex"/></r></p></e>
-     <e><p><l>fehem<s n="vblex"/></l><r>فهم<s n="vblex"/></r></p></e>
-     <e r="LR"><p><l>felaħ<s n="vblex"/></l><r>استطاع<s n="vblex"/></r></p></e> <!-- here: can -->
+     <e><p><l>daħal<s n="vblex"/><s n="tv"/></l><r>دخل<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>dalam<s n="vblex"/><s n="iv"/></l><r>أظلم<s n="vblex"/><s n="iv"/></r></p></e>
+     <e r="LR"><p><l>damm<s n="vblex"/><s n="tv"/></l><r>نظم<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>dam<s n="vblex"/><s n="iv"/></l><r>دام<s n="vblex"/><s n="tv"/></r></p></e> <!-- tv -->
+     <e><p><l>daq<s n="vblex"/><s n="tv"/></l><r>ذاق<s n="vblex"/><s n="tv"/></r></p></e>
+     <e c="  0"><p><l>daqq<s n="vblex"/><s n="tv"/></l><r>عزف<s n="vblex"/><s n="tv"/></r></p></e>
+     <e slr="1"><p><l>daqq<s n="vblex"/><s n="tv"/></l><r>دق<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>dar<s n="vblex"/><s n="iv"/></l><r>دار<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>dardar<s n="vblex"/><s n="tv"/></l><r>كدر<s n="vblex"/><s n="tv"/></r></p></e> <!-- also: to cause nausea? -->
+     <e c="  0"><p><l>deher<s n="vblex"/><s n="iv"/></l><r>بدا<s n="vblex"/><s n="iv"/></r></p></e>
+     <e slr="1"><p><l>deher<s n="vblex"/><s n="iv"/></l><r>ظهر<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>dendel<s n="vblex"/><s n="tv"/></l><r>علق<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>dieq<s n="vblex"/><s n="tv"/></l><r>ذاق<s n="vblex"/><s n="tv"/></r></p></e> <!-- same as daq -->
+     <e><p><l>difen<s n="vblex"/><s n="tv"/></l><r>دفن<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>dilek<s n="vblex"/><s n="tv"/></l><r>دهن<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>fadal<s n="vblex"/><s n="iv"/></l><r>بقي<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>falla<s n="vblex"/><s n="iv"/></l><r>فشل<s n="vblex"/><s n="iv"/></r></p></e> <!-- it's 'to fail' -->
+     <e><p><l>far<s n="vblex"/><s n="iv"/></l><r>فار<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>farfar<s n="vblex"/><s n="tv"/></l><r>نفض<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>fasad<s n="vblex"/><s n="iv"/></l><r>دمي<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>fehem<s n="vblex"/><s n="tv"/></l><r>فهم<s n="vblex"/><s n="tv"/></r></p></e>
+     <e r="LR"><p><l>felaħ<s n="vblex"/><s n="iv"/></l><r>قوي<s n="vblex"/><s n="iv"/></r></p></e>
+<!-- <e r="LR"><p><l>felaħ<s n="vblex"/><s n="tv"/></l><r>استطاع<s n="vblex"/><s n="tv"/></r></p></e> here: can, قوي too? -->
 <!--     <e><p><l>fesdaq<s n="vblex"/></l><r><s n="vblex"/></r></p></e> ??? -->
-     <e><p><l>fetaħ<s n="vblex"/></l><r>فتح<s n="vblex"/></r></p></e>
-     <e r="LR"><p><l>fetaq<s n="vblex"/></l><r>فكك<s n="vblex"/></r></p></e> <!-- dismantle -->
-     <e><p><l>fieq<s n="vblex"/></l><r>تعافى<s n="vblex"/></r></p></e> <!-- to recover, get better -->
-     <e><p><l>fired<s n="vblex"/></l><r>فصل<s n="vblex"/></r></p></e>
-     <e r="LR"><p><l>firex<s n="vblex"/></l><r>نشر<s n="vblex"/></r></p></e>
+     <e><p><l>fetaħ<s n="vblex"/><s n="tv"/></l><r>فتح<s n="vblex"/><s n="tv"/></r></p></e>
+     <e r="LR"><p><l>fetaq<s n="vblex"/><s n="tv"/></l><r>فكك<s n="vblex"/><s n="tv"/></r></p></e> <!-- dismantle -->
+     <e><p><l>fieq<s n="vblex"/><s n="iv"/></l><r>تعافى<s n="vblex"/><s n="iv"/></r></p></e> <!-- to recover, get better -->
+     <e><p><l>fired<s n="vblex"/><s n="tv"/></l><r>فصل<s n="vblex"/><s n="tv"/></r></p></e>
+     <e r="LR"><p><l>firex<s n="vblex"/><s n="tv"/></l><r>نشر<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>fixkel<s n="vblex"/></l><r>أعاق<s n="vblex"/></r></p></e>
-     <e><p><l>forogħ<s n="vblex"/></l><r>فرغ<s n="vblex"/></r></p></e>
-     <e><p><l>ġab<s n="vblex"/></l><r>أحضر<s n="vblex"/></r></p></e> <!-- also ġieb -->
-     <e><p><l>ġabar<s n="vblex"/></l><r>جمع<s n="vblex"/></r></p></e>
-
-     <e slr="1"><p><l>ġara<s n="vblex"/></l><r>حدث<s n="vblex"/></r></p></e> <!-- also 'run' -->
-     <e c="  0"><p><l>ġarr<s n="vblex"/></l><r>نقل<s n="vblex"/></r></p></e> 
-     <e slr="1"><p><l>ġarr<s n="vblex"/></l><r>حمل<s n="vblex"/></r></p></e>
-     <e><p><l>ġema<s n="vblex"/></l><r>جمع<s n="vblex"/></r></p></e>
-     <e><p><l>gerbeb<s n="vblex"/></l><r>لف<s n="vblex"/></r></p></e>
-     <e c="  0"><p><l>ġeżż<s n="vblex"/></l><r>جز<s n="vblex"/></r></p></e> <!-- shear (sheep) -->
-     <e slr="1" r="LR"><p><l>ġeżż<s n="vblex"/></l><r>قص<s n="vblex"/></r></p></e> <!-- cut (hair) -->
-     <e><p><l>għab<s n="vblex"/></l><r>غاب<s n="vblex"/></r></p></e>
-     <e><p><l>għalaq<s n="vblex"/></l><r>أغلق<s n="vblex"/></r></p></e>
-     <e><p><l>għalef<s n="vblex"/></l><r>علف<s n="vblex"/></r></p></e>
-     <e><p><l>għamel<s n="vblex"/></l><r>فعل<s n="vblex"/></r></p></e>
-     <e c="  0"><p><l>għam<s n="vblex"/></l><r>عام<s n="vblex"/></r></p></e> <!-- everything -->
-     <e slr="1" r="LR"><p><l>għam<s n="vblex"/></l><r>سبح<s n="vblex"/></r></p></e> <!-- people -->
-     <e><p><l>għan<s n="vblex"/></l><r>ساعد<s n="vblex"/></r></p></e>
-     <e><p><l>għar<s n="vblex"/></l><r>غار<s n="vblex"/></r></p></e> <!-- envy?? what type of envy? حسد؟ -->
-     <e><p><l>għasar<s n="vblex"/></l><r>عصر<s n="vblex"/></r></p></e>
-     <e><p><l>għax<s n="vblex"/></l><r>عاش<s n="vblex"/></r></p></e>
-     <e><p><l>għażaq<s n="vblex"/></l><r>حفر<s n="vblex"/></r></p></e>
-     <e><p><l>għażaq<s n="vblex"/></l><r>اختار<s n="vblex"/></r></p></e>
-     <e><p><l>għażż<s n="vblex"/></l><r>ود<s n="vblex"/></r></p></e>
-     <e><p><l>għereq<s n="vblex"/></l><r>عرق<s n="vblex"/></r></p></e> <!-- to perspire -->
-     <e><p><l>għodos<s n="vblex"/></l><r>غاص<s n="vblex"/></r></p></e>
-     <e><p><l>għokos<s n="vblex"/></l><r>ضعف<s n="vblex"/></r></p></e> <!-- or rather għakes -->
-     <e><p><l>għolob<s n="vblex"/></l><r>فقد<g><b/>الوزن</g><s n="vblex"/></r></p></e>
-     <e><p><l>għorok<s n="vblex"/></l><r>فرك<s n="vblex"/></r></p></e>
-     <e><p><l>ġibed<s n="vblex"/></l><r>جذب<s n="vblex"/></r></p></e> <!-- often: ġibed l-attenzjoni -->
-     <e><p><l>gideb<s n="vblex"/></l><r>كذب<s n="vblex"/></r></p></e>
-     <e><p><l>gidem<s n="vblex"/></l><r>عض<s n="vblex"/></r></p></e>
-     <e><p><l>ġieb<s n="vblex"/></l><r>أحضر<s n="vblex"/></r></p></e> <!-- same as ġab -->
+     <e><p><l>forogħ<s n="vblex"/><s n="iv"/></l><r>فرغ<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>ġab<s n="vblex"/><s n="tv"/></l><r>أحضر<s n="vblex"/><s n="tv"/></r></p></e> <!-- also ġieb -->
+     <e><p><l>ġabar<s n="vblex"/><s n="tv"/></l><r>جمع<s n="vblex"/><s n="tv"/></r></p></e>
+     <e slr="1"><p><l>ġara<s n="vblex"/><s n="iv"/></l><r>حدث<s n="vblex"/><s n="iv"/></r></p></e> <!-- also 'run' -->
+     <e c="  0"><p><l>ġarr<s n="vblex"/><s n="tv"/></l><r>نقل<s n="vblex"/><s n="tv"/></r></p></e> 
+     <e slr="1"><p><l>ġarr<s n="vblex"/><s n="tv"/></l><r>حمل<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ġema<s n="vblex"/><s n="tv"/></l><r>جمع<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>gerbeb<s n="vblex"/><s n="tv"/></l><r>لف<s n="vblex"/><s n="tv"/></r></p></e>
+     <e c="  0"><p><l>ġeżż<s n="vblex"/><s n="tv"/></l><r>جز<s n="vblex"/><s n="tv"/></r></p></e> <!-- shear (sheep) -->
+     <e slr="1" r="LR"><p><l>ġeżż<s n="vblex"/><s n="tv"/></l><r>قص<s n="vblex"/><s n="tv"/></r></p></e> <!-- cut (hair) -->
+     <e><p><l>għab<s n="vblex"/><s n="iv"/></l><r>غاب<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>għalaq<s n="vblex"/><s n="tv"/></l><r>أغلق<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>għalef<s n="vblex"/><s n="tv"/></l><r>علف<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>għamel<s n="vblex"/><s n="tv"/></l><r>فعل<s n="vblex"/><s n="tv"/></r></p></e>
+     <e c="  0"><p><l>għam<s n="vblex"/><s n="iv"/></l><r>عام<s n="vblex"/><s n="iv"/></r></p></e> <!-- everything -->
+     <e slr="1" r="LR"><p><l>għam<s n="vblex"/><s n="iv"/></l><r>سبح<s n="vblex"/><s n="iv"/></r></p></e> <!-- people -->
+     <e><p><l>għan<s n="vblex"/><s n="tv"/></l><r>ساعد<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>għar<s n="vblex"/><s n="iv"/></l><r>غار<s n="vblex"/><s n="iv"/></r></p></e> <!-- also għar, envy?? what type of envy? حسد؟ -->
+     <e><p><l>għasar<s n="vblex"/><s n="tv"/></l><r>عصر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>għax<s n="vblex"/><s n="iv"/></l><r>عاش<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>għax<s n="vblex"/><s n="tv"/></l><r>عاش<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>għażaq<s n="vblex"/><s n="tv"/></l><r>حفر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>għażel<s n="vblex"/><s n="tv"/></l><r>اختار<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>għażż<s n="vblex"/><s n="tv"/></l><r>ود<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>għereq<s n="vblex"/><s n="iv"/></l><r>عرق<s n="vblex"/><s n="iv"/></r></p></e> <!-- to perspire -->
+     <e><p><l>għodos<s n="vblex"/><s n="iv"/></l><r>غاص<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>għokos<s n="vblex"/><s n="iv"/></l><r>ضعف<s n="vblex"/><s n="iv"/></r></p></e> <!-- or rather għakes -->
+     <e><p><l>għolob<s n="vblex"/><s n="tv"/></l><r>فقد<g><b/>الوزن</g><s n="vblex"/><s n="iv"/></r></p></e> <!-- tv? -->
+     <e><p><l>għorok<s n="vblex"/><s n="tv"/></l><r>فرك<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ġibed<s n="vblex"/><s n="tv"/></l><r>جذب<s n="vblex"/><s n="tv"/></r></p></e> <!-- often: ġibed l-attenzjoni -->
+     <e><p><l>gideb<s n="vblex"/><s n="tv"/></l><r>كذب<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>gidem<s n="vblex"/><s n="tv"/></l><r>عض<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ġieb<s n="vblex"/><s n="tv"/></l><r>أحضر<s n="vblex"/><s n="tv"/></r></p></e> <!-- same as ġab -->
 <!--     <e><p><l>ġie<s n="vblex"/></l><r>جاء<s n="vblex"/></r></p></e> -->
-     <e><p><l>giref<s n="vblex"/></l><r>خدش<s n="vblex"/></r></p></e>
-     <e c="  0"><p><l>ħabat<s n="vblex"/></l><r>خبط<s n="vblex"/></r></p></e>
-     <e slr="1" r="LR"><p><l>ħabat<s n="vblex"/></l><r>حدث<s n="vblex"/></r></p></e>
-     <e c="  0"><p><l>ħadem<s n="vblex"/></l><r>عمل<s n="vblex"/></r></p></e>
-     <e slr="1"><p><l>ħadem<s n="vblex"/></l><r>اشتغل<s n="vblex"/></r></p></e>
-     <e slr="2"><p><l>ħadem<s n="vblex"/></l><r>خدم<s n="vblex"/></r></p></e>
-     <e><p><l>ħafer<s n="vblex"/></l><r>عذر<s n="vblex"/></r></p></e>
-     <e><p><l>ħakk<s n="vblex"/></l><r>خدش<s n="vblex"/></r></p></e>
-     <e><p><l>ħalaq<s n="vblex"/></l><r>خلق<s n="vblex"/></r></p></e>
-     <e><p><l>ħaleb<s n="vblex"/></l><r>حلب<s n="vblex"/></r></p></e>
-     <e><p><l>ħalef<s n="vblex"/></l><r>أقسم<s n="vblex"/></r></p></e>
-     <e><p><l>ħall<s n="vblex"/></l><r>فك<s n="vblex"/></r></p></e>
+     <e><p><l>giref<s n="vblex"/><s n="tv"/></l><r>خدش<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ħabat<s n="vblex"/><s n="tv"/></l><r>خبط<s n="vblex"/><s n="tv"/></r></p></e>
+     <e r="LR"><p><l>ħabat<s n="vblex"/><s n="iv"/></l><r>حدث<s n="vblex"/><s n="iv"/></r></p></e>
+     <e c="  0"><p><l>ħadem<s n="vblex"/><s n="iv"/></l><r>عمل<s n="vblex"/><s n="iv"/></r></p></e>
+     <e slr="1"><p><l>ħadem<s n="vblex"/><s n="iv"/></l><r>اشتغل<s n="vblex"/><s n="iv"/></r></p></e>
+     <e slr="2"><p><l>ħadem<s n="vblex"/><s n="iv"/></l><r>خدم<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>ħafer<s n="vblex"/><s n="tv"/></l><r>عذر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ħakk<s n="vblex"/><s n="tv"/></l><r>خدش<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ħalaq<s n="vblex"/><s n="tv"/></l><r>خلق<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ħaleb<s n="vblex"/><s n="tv"/></l><r>حلب<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ħalef<s n="vblex"/><s n="iv"/></l><r>أقسم<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>ħall<s n="vblex"/><s n="tv"/></l><r>فك<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>ħanaq<s n="vblex"/></l><r>خنق<s n="vblex"/></r></p></e> <!-- to strangle -->
      <e><p><l>ħa<s n="vblex"/><s n="tv"/></l><r>أخذ<s n="vblex"/><s n="tv"/></r></p></e>
-     <e><p><l>ħaqar<s n="vblex"/></l><r>ظلم<s n="vblex"/></r></p></e>
-     <e><p><l>ħaraq<s n="vblex"/></l><r>حرق<s n="vblex"/></r></p></e>
+     <e><p><l>ħaqar<s n="vblex"/><s n="tv"/></l><r>ظلم<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ħarab<s n="vblex"/><s n="iv"/></l><r>هرب<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>ħaraq<s n="vblex"/><s n="tv"/></l><r>حرق<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>ħarbet<s n="vblex"/></l><r>خرب<s n="vblex"/></r></p></e>
-     <e><p><l>ħareġ<s n="vblex"/></l><r>خرج<s n="vblex"/></r></p></e> <!-- v.i.: to go out -->
-     <e slr="1"><p><l>ħareġ<s n="vblex"/></l><r>أخرج<s n="vblex"/></r></p></e> <!-- v.t.: to take out -->
-     <e><p><l>ħasel<s n="vblex"/></l><r>غسل<s n="vblex"/></r></p></e>
-     <e><p><l>ħass<s n="vblex"/></l><r>أحس<s n="vblex"/></r></p></e>
-     <e><p><l>ħataf<s n="vblex"/></l><r>خطف<s n="vblex"/></r></p></e>
-     <e><p><l>ħatt<s n="vblex"/></l><r>أفرغ<s n="vblex"/></r></p></e>
+     <e><p><l>ħareġ<s n="vblex"/><s n="iv"/></l><r>خرج<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>ħareġ<s n="vblex"/><s n="tv"/></l><r>أخرج<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ħasel<s n="vblex"/><s n="tv"/></l><r>غسل<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ħass<s n="vblex"/><s n="tv"/></l><r>أحس<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ħataf<s n="vblex"/><s n="tv"/></l><r>خطف<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ħatar<s n="vblex"/><s n="tv"/></l><r>عين<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ħatt<s n="vblex"/><s n="tv"/></l><r>أفرغ<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>ħawtel<s n="vblex"/></l><r>جهد<s n="vblex"/></r></p></e>
      <e><p><l>ħeba<s n="vblex"/></l><r>أخفى<s n="vblex"/></r></p></e>
-     <e><p><l>ħebel<s n="vblex"/></l><r>جن<s n="vblex"/></r></p></e>
-     <e><p><l>ħebeż<s n="vblex"/></l><r>تراجع<s n="vblex"/></r></p></e> <!-- it's rather ħebeż than hebeż -->
-     <e><p><l>heġem<s n="vblex"/></l><r>التهم<s n="vblex"/></r></p></e> <!-- & ħeġem? -->
-     <e><p><l>ħela<s n="vblex"/></l><r>بذر<s n="vblex"/></r></p></e>
-     <e c="  0"><p><l>ħeles<s n="vblex"/></l><r>أطلق<s n="vblex"/></r></p></e> <!-- to set free -->
-     <e slr="1"><p><l>ħeles<s n="vblex"/></l><r>انطلق<s n="vblex"/></r></p></e> <!-- to be free -->
-     <e c="  0"><p><l>ħemer<s n="vblex"/></l><r>فسد<s n="vblex"/></r></p></e> <!-- to rot -->
-     <e slr="1"><p><l>ħemer<s n="vblex"/></l><r>تخمر<s n="vblex"/></r></p></e> <!-- to ferment -->
-     <e><p><l>hemeż<s n="vblex"/></l><r>دبس<s n="vblex"/></r></p></e>
-     <e r="LR"><p><l>ħerek<s n="vblex"/></l><r>جهد<s n="vblex"/></r></p></e> <!-- be diligent -->
-     <e><p><l>heres<s n="vblex"/></l><r>هرس<s n="vblex"/></r></p></e> <!-- s/ż -->
-     <e><p><l>ħolom<s n="vblex"/></l><r>حلم<s n="vblex"/></r></p></e>
-     <e><p><l>ħoloq<s n="vblex"/></l><r>خلق<s n="vblex"/></r></p></e> <!-- that's passive voice -->
-     <e><p><l>kanta<s n="vblex"/></l><r>غنى<s n="vblex"/></r></p></e>
-
+     <e><p><l>ħebel<s n="vblex"/><s n="iv"/></l><r>جن<s n="vblex"/><s n="iv"/></r></p></e> <!-- h/ħ -->
+     <e><p><l>ħebeż<s n="vblex"/><s n="iv"/></l><r>تراجع<s n="vblex"/><s n="iv"/></r></p></e> <!-- it's rather ħebeż than hebeż -->
+     <e><p><l>heġem<s n="vblex"/><s n="iv"/></l><r>التهم<s n="vblex"/><s n="tv"/></r></p></e> <!-- & ħeġem? -->
+     <e><p><l>ħela<s n="vblex"/><s n="tv"/></l><r>بذر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ħeles<s n="vblex"/><s n="tv"/></l><r>أطلق<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ħeles<s n="vblex"/><s n="iv"/></l><r>انطلق<s n="vblex"/><s n="iv"/></r></p></e>
+     <e c="  0"><p><l>ħemer<s n="vblex"/><s n="iv"/></l><r>فسد<s n="vblex"/><s n="iv"/></r></p></e> <!-- to rot -->
+     <e slr="1"><p><l>ħemer<s n="vblex"/><s n="iv"/></l><r>تخمر<s n="vblex"/><s n="iv"/></r></p></e> <!-- to ferment -->
+     <e><p><l>hemeż<s n="vblex"/><s n="tv"/></l><r>دبس<s n="vblex"/><s n="tv"/></r></p></e>
+     <e r="LR"><p><l>ħerek<s n="vblex"/><s n="iv"/></l><r>جهد<s n="vblex"/><s n="iv"/></r></p></e> <!-- be diligent -->
+     <e><p><l>heres<s n="vblex"/><s n="tv"/></l><r>هرس<s n="vblex"/><s n="tv"/></r></p></e> <!-- s/ż -->
+     <e><p><l>ħolom<s n="vblex"/><s n="tv"/></l><r>حلم<s n="vblex"/><s n="iv"/></r></p></e> <!-- tv? -->
+     <e><p><l>ħoloq<s n="vblex"/><s n="iv"/></l><r>خلق<s n="vblex"/><s n="iv"/></r></p></e> <!-- that's passive voice -->
+     <e><p><l>kanta<s n="vblex"/><s n="tv"/></l><r>غنى<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>ta<s n="vblex"/><s n="tv"/></l><r>أعطى<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>wera<s n="vblex"/><s n="tv"/></l><r>أرى<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>qasam<s n="vblex"/><s n="tv"/></l><r>كسر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>marad<s n="vblex"/><s n="iv"/></l><r>مرض<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>sahar<s n="vblex"/><s n="tv"/></l><r>سهر<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>saħan<s n="vblex"/><s n="iv"/></l><r>سخن<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>talab<s n="vblex"/><s n="tv"/></l><r>طلب<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>maxat<s n="vblex"/><s n="tv"/></l><r>مشط<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>qagħad<s n="vblex"/><s n="iv"/></l><r>قعد<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>laqat<s n="vblex"/><s n="tv"/></l><r>ضرب<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>rabat<s n="vblex"/><s n="tv"/></l><r>ربط<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>qabad<s n="vblex"/><s n="tv"/></l><r>قبض<s n="vblex"/><s n="tv"/></r></p></e>
+     <e c="  0"><p><l>naqas<s n="vblex"/><s n="iv"/></l><r>انخفض<s n="vblex"/><s n="iv"/></r></p></e>
+     <e slr="1"><p><l>naqas<s n="vblex"/><s n="iv"/></l><r>نقص<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>naqas<s n="vblex"/><s n="tv"/></l><r>نقص<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>laħaq<s n="vblex"/><s n="tv"/></l><r>وصل<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>qala<s n="vblex"/><s n="tv"/></l><r>كسب<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>qata<s n="vblex"/><s n="tv"/></l><r>قطع<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>lagħaq<s n="vblex"/><s n="tv"/></l><r>لعق<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>qabel<s n="vblex"/><s n="iv"/></l><r>اتفق<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>qabeż<s n="vblex"/><s n="tv"/></l><r>قفز<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>qatel<s n="vblex"/><s n="tv"/></l><r>قتل<s n="vblex"/><s n="tv"/></r></p></e>
+     <e r="LR"><p><l>xeher<s n="vblex"/><s n="iv"/></l><r>عول<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>xegħel<s n="vblex"/><s n="tv"/></l><r>شغل<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>resaq<s n="vblex"/><s n="tv"/></l><r>اقترب<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>refa<s n="vblex"/><s n="tv"/></l><r>رفع<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>kesaħ<s n="vblex"/><s n="iv"/></l><r>برد<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>mesaħ<s n="vblex"/><s n="tv"/></l><r>مسح<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>lemaħ<s n="vblex"/><s n="tv"/></l><r>لمح<s n="vblex"/><s n="tv"/></r></p></e>
+     <e c="  0" r="LR"><p><l>rebaħ<s n="vblex"/><s n="tv"/></l><r>كسب<s n="vblex"/><s n="tv"/></r></p></e>
+     <e slr="1"><p><l>rebaħ<s n="vblex"/><s n="tv"/></l><r>فاز<s n="vblex"/><s n="iv"/></r></p></e>
+     <e c="  0"><p><l>reżaħ<s n="vblex"/><s n="iv"/></l><r>ارتعش<s n="vblex"/><s n="iv"/></r></p></e>
+     <e slr="1"><p><l>reżaħ<s n="vblex"/><s n="iv"/></l><r>ارتجف<s n="vblex"/><s n="iv"/></r></p></e>
+     <e r="LR"><p><l>sebaħ<s n="vblex"/><s n="iv"/></l><r>أصبح<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>seraq<s n="vblex"/><s n="tv"/></l><r>سرق<s n="vblex"/><s n="tv"/></r></p></e>
+     <e c="  0"><p><l>telaq<s n="vblex"/><s n="tv"/></l><r>غادر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e slr="1" r="LR"><p><l>telaq<s n="vblex"/><s n="tv"/></l><r>ترك<s n="vblex"/><s n="tv"/></r></p></e> <!-- leave -->
+     <e c="  0"><p><l>żebagħ<s n="vblex"/><s n="tv"/></l><r>صبغ<s n="vblex"/><s n="tv"/></r></p></e>
+     <e slr="1"><p><l>żebagħ<s n="vblex"/><s n="tv"/></l><r>لون<s n="vblex"/><s n="tv"/></r></p></e>
+<!--     <e><p><l>selaħ<s n="vblex"/><s n="tv"/></l><r><s n="vblex"/><s n="tv"/></r></p></e> -->
+     <e><p><l>żelaq<s n="vblex"/><s n="iv"/></l><r>زلق<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>sebaq<s n="vblex"/><s n="tv"/></l><r>سبق<s n="vblex"/><s n="tv"/></r></p></e>
+     <e c="  0"><p><l>nefaħ<s n="vblex"/><s n="tv"/></l><r>نفخ<s n="vblex"/><s n="tv"/></r></p></e>
+     <e slr="1"><p><l>nefaħ<s n="vblex"/><s n="tv"/></l><r>تنفس<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>nefaq<s n="vblex"/><s n="tv"/></l><r>أنفق<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>kiteb<s n="vblex"/><s n="tv"/></l><r>كتب<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>kiser<s n="vblex"/><s n="tv"/></l><r>كسر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>niżel<s n="vblex"/><s n="tv"/></l><r>نزل<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>kiber<s n="vblex"/><s n="iv"/></l><r>كبر<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>kines<s n="vblex"/><s n="tv"/></l><r>كنس<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>nidem<s n="vblex"/><s n="tv"/></l><r>ندم<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>kixef<s n="vblex"/><s n="tv"/></l><r>كشف<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>siker<s n="vblex"/><s n="iv"/></l><r>سكر<s n="vblex"/><s n="iv"/></r></p></e>
+     <e c="  0"><p><l>silef<s n="vblex"/><s n="tv"/></l><r>استأجر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e slr="1"><p><l>silef<s n="vblex"/><s n="tv"/></l><r>أقرض<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>tilef<s n="vblex"/><s n="tv"/></l><r>خسر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>żifen<s n="vblex"/><s n="tv"/></l><r>رقص<s n="vblex"/><s n="iv"/></r></p></e> <!-- tv? -->
+     <e><p><l>wiżen<s n="vblex"/><s n="tv"/></l><r>وزن<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>siket<s n="vblex"/><s n="iv"/></l><r>سكت<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>rikeb<s n="vblex"/><s n="tv"/></l><r>ركب<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>kiseb<s n="vblex"/><s n="tv"/></l><r>كسب<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>sogħol<s n="vblex"/><s n="iv"/></l><r>سعل<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>sogħob<s n="vblex"/><s n="iv"/></l><r>تاب<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>korob<s n="vblex"/><s n="iv"/></l><r>أن<s n="vblex"/><s n="iv"/></r></p></e>
+     <e c="  0"><p><l>kotor<s n="vblex"/><s n="iv"/></l><r>كثر<s n="vblex"/><s n="iv"/></r></p></e>
+     <e slr="1"><p><l>kotor<s n="vblex"/><s n="iv"/></l><r>تزايد<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>kisser<s n="vblex"/><s n="tv"/></l><r>كسر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>fisser<s n="vblex"/><s n="tv"/></l><r>أعنى<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>sar<s n="vblex"/><s n="tv"/></l><r>أصبح<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>miet<s n="vblex"/><s n="iv"/></l><r>مات<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>sam<s n="vblex"/><s n="iv"/></l><r>صام<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>qam<s n="vblex"/><s n="iv"/></l><r>قام<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>żar<s n="vblex"/><s n="tv"/></l><r>زار<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>qies<s n="vblex"/><s n="tv"/></l><r>قاس<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>tar<s n="vblex"/><s n="iv"/></l><r>طار<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>żied<s n="vblex"/><s n="tv"/></l><r>زاد<s n="vblex"/><s n="tv"/></r></p></e>
+     <e c="  0"><p><l>qiem<s n="vblex"/><s n="tv"/></l><r>كرم<s n="vblex"/><s n="tv"/></r></p></e>
+     <e slr="1" r="LR"><p><l>qiem<s n="vblex"/><s n="tv"/></l><r>بجل<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>qara<s n="vblex"/><s n="tv"/></l><r>قرأ<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>mela<s n="vblex"/><s n="tv"/></l><r>ملأ<s n="vblex"/><s n="tv"/></r></p></e>
+     <e r="LR"><p><l>reħa<s n="vblex"/><s n="tv"/></l><r>ترك<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>rema<s n="vblex"/><s n="tv"/></l><r>رمى<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>radd<s n="vblex"/><s n="tv"/></l><r>استعاد<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>mess<s n="vblex"/><s n="tv"/></l><r>لمس<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>qerr<s n="vblex"/><s n="tv"/></l><r>اعترف<s n="vblex"/><s n="iv"/></r></p></e> <!-- tv? -->
+     <e><p><l>raqq<s n="vblex"/><s n="iv"/></l><r>رق<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>saħħ<s n="vblex"/><s n="iv"/></l><r>صح<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>xaħħ<s n="vblex"/><s n="iv"/></l><r>شح<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>rass<s n="vblex"/><s n="tv"/></l><r>ضغط<s n="vblex"/><s n="tv"/></r></p></e>
+     <e r="LR"><p><l>sadd<s n="vblex"/><s n="tv"/></l><r>سد<s n="vblex"/><s n="tv"/></r></p></e>
+     <e r="LR"><p><l>xaqq<s n="vblex"/><s n="tv"/></l><r>صدع<s n="vblex"/><s n="tv"/></r></p></e>
+     <e c="  0" r="LR"><p><l>żamm<s n="vblex"/><s n="tv"/></l><r>أمسك<s n="vblex"/><s n="tv"/></r></p></e>
+     <e slr="1" r="LR"><p><l>żamm<s n="vblex"/><s n="tv"/></l><r>قبض<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>leqq<s n="vblex"/><s n="iv"/></l><r>تألق<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>temm<s n="vblex"/><s n="tv"/></l><r>أنهى<s n="vblex"/><s n="tv"/></r></p></e>
+<!--     <e><p><l>kedd<s n="vblex"/><s n="tv"/></l><r>أزعج<s n="vblex"/><s n="tv"/></r></p></e> -->
+     <e r="LR"><p><l>qaħqaħ<s n="vblex"/><s n="iv"/></l><r>سعل<s n="vblex"/><s n="iv"/></r></p></e>
+     <e c="  0"><p><l>stimula<s n="vblex"/><s n="tv"/></l><r>نشط<s n="vblex"/><s n="tv"/></r></p></e>
+     <e slr="1" r="LR"><p><l>stimula<s n="vblex"/><s n="tv"/></l><r>حفز<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ipparteċipa<s n="vblex"/><s n="iv"/></l><r>شارك<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>irrappreżenta<s n="vblex"/><s n="tv"/></l><r>ناب<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>ippenetra<s n="vblex"/><s n="tv"/></l><r>اختراق<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ivvjola<s n="vblex"/><s n="tv"/></l><r>انتهك<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>indika<s n="vblex"/><s n="tv"/></l><r>أشار<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>eżerċita<s n="vblex"/><s n="tv"/></l><r>مارس<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>esperjenza<s n="vblex"/><s n="tv"/></l><r>خبر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>iddeċida<s n="vblex"/><s n="iv"/></l><r>قرر<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>ordna<s n="vblex"/><s n="tv"/></l><r>أمر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>iddeskriva<s n="vblex"/><s n="tv"/></l><r>وصف<s n="vblex"/><s n="tv"/></r></p></e>
+     <e c="  0"><p><l>aggredixxa<s n="vblex"/><s n="tv"/></l><r>هاجم<s n="vblex"/><s n="tv"/></r></p></e>
+     <e slr="1"><p><l>aggredixxa<s n="vblex"/><s n="tv"/></l><r>اعتدى<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>irrisponda<s n="vblex"/><s n="tv"/></l><r>أجاب<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>ittraduċa<s n="vblex"/><s n="tv"/></l><r>ترجم<s n="vblex"/><s n="tv"/></r></p></e>
+     <e c="  0"><p><l>irreaġixxa<s n="vblex"/><s n="iv"/></l><r>رد<g><b/>فعل</g><s n="vblex"/><s n="iv"/></r></p></e>
+     <e slr="1"><p><l>irreaġixxa<s n="vblex"/><s n="iv"/></l><r>تفاعل<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>ipprojbixxa<s n="vblex"/><s n="tv"/></l><r>حظر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ippromwova<s n="vblex"/><s n="tv"/></l><r>روج<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>inkluda<s n="vblex"/><s n="tv"/></l><r>تضمن<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ikkonsista<s n="vblex"/><s n="tv"/></l><r>اعتمد<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>iżviluppa<s n="vblex"/><s n="iv"/></l><r>تقدم<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>iżviluppa<s n="vblex"/><s n="tv"/></l><r>نمى<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>esprima<s n="vblex"/><s n="tv"/></l><r>عبر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e c="  0" r="LR"><p><l>aġġastja<s n="vblex"/><s n="tv"/></l><r>ضبط<s n="vblex"/><s n="tv"/></r></p></e>
+     <e slr="1"><p><l>aġġastja<s n="vblex"/><s n="tv"/></l><r>عدل<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>iddawnlowdja<s n="vblex"/><s n="tv"/></l><r>حمل<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>infurza<s n="vblex"/><s n="tv"/></l><r>فرض<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ikklassifika<s n="vblex"/><s n="tv"/></l><r>صنف<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ikkonsidra<s n="vblex"/><s n="tv"/></l><r>اعتبر<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>ivvota<s n="vblex"/><s n="tv"/></l><r>صوت<s n="vblex"/><s n="iv"/></r></p></e>  <!-- tv? -->
+
 
 
      <!-- SECTION: Punctuation -->
