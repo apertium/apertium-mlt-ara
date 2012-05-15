@@ -7,25 +7,25 @@
  ! Trans
 
 |-
-| ta || vblex || irregular || give || TD
+| ta || vblex || irregular || give || tv
 |-
-| ħa || vblex || irregular || take || TD
+| ħa || vblex || irregular || take || tv
 |-
-| ra || vblex || irregular || see || TD
+| ra || vblex || irregular || see || tv
 |-
-| qal || vblex || irregular || say || TD
+| qal || vblex || irregular || say || tv
 |-
-| ġie || vblex || irregular || come || TD
+| ġie || vblex || irregular || come || tv
 |-
-| mar || vblex || irregular || go || TD
+| mar || vblex || irregular || go || tv
 |-
-| kiel || vblex || irregular || eat || TD
+| kiel || vblex || irregular || eat || tv
 |-
-| jaf || vblex || irregular || know || TD
+| jaf || vblex || irregular || know || tv
 |-
-| wera || vblex || irregular || show || TD
+| wera || vblex || irregular || show || tv
 |-
-| kien || vaux || irregular || be || TD
+| kien || vaux || irregular || be || iv
 |-
-| kellu || vaux || irregular || have || TD
+| kellu || vaux || irregular || have || iv
 |}

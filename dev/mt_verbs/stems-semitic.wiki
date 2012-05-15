@@ -17,6 +17,8 @@
 |-
 | ħabat || vblex || strong || 1 || strike || ħ-b-t || a-a || a-a || tv ||  || ma
 |-
+| ħabat || vblex || strong || 1 || happen || ħ-b-t || a-a || a-a || iv ||  || ma
+|-
 | ħaqar || vblex || strong || 1 || oppress || ħ-q-r || a-a || a-a || tv ||  || ma
 |-
 | ħalaq || vblex || strong || 1 || create || ħ-l-q || a-a || a-a || tv ||  || ma
@@ -51,283 +53,295 @@
 |-
 | lagħaq || vblex || strong || 1 || lick || l-għ-q || a-a || i-a || tv ||  || mi
 |-
-| marad || vblex || strong || 1 || fall·sick || m-r-d || a-a || i-a || TD ||  || 
+| marad || vblex || strong || 1 || fall·sick || m-r-d || a-a || i-a || iv ||  || 
 |-
-| sahar || vblex || strong || 1 || work·overtime || s-h-r || a-a || i-a || TD ||  || 
+| sahar || vblex || strong || 1 || work·overtime || s-h-r || a-a || i-a || iv ||  || ma
 |-
-| taħan || vblex || strong || 1 || grind || t-ħ-n || a-a || i-a || TD ||  || 
+| taħan || vblex || strong || 1 || grind || t-ħ-n || a-a || i-a || tv ||  || mi
 |-
-| wasal || vblex || strong || 1 || arrive || w-s-l || a-a ||  || iv ||  || 
+| wasal || vblex || strong || 1 || arrive || w-s-l || a-a ||  || iv ||  || ma
 |-
-| daħal || vblex || strong || 1 || enter || d-ħ-l || a-a || i-o || TD ||  || 
+| daħal || vblex || strong || 1 || enter || d-ħ-l || a-a || i-o || tv ||  || mi
 |-
-| ġabar || vblex || strong || 1 || collect || ġ-b-r || a-a || i-o || TD ||  || 
+| ġabar || vblex || strong || 1 || collect || ġ-b-r || a-a || i-o || tv ||  || mi
 |-
-| saħan || vblex || strong || 1 || become·warm || s-ħ-n || a-a || i-o || TD ||  || 
+| saħan || vblex || strong || 1 || become·warm || s-ħ-n || a-a || i-o || iv ||  || ma 
 |-
-| talab || vblex || strong || 1 || pray, ask || t-l-b || a-a || i-o || TD ||  || 
+| talab || vblex || strong || 1 || pray, ask || t-l-b || a-a || i-o || tv ||  || mi
 |-
-| maxat || vblex || strong || 1 || comb || m-x-t || a-a || o-o || TD ||  || 
+| maxat || vblex || strong || 1 || comb || m-x-t || a-a || o-o || tv ||  || mi 
 |-
-| qagħad || vaux || strong || 1 || stand || q-għ-d || a-a || o-o || iv ||  || ma
+| qagħad || vaux || strong || 1 || sit || q-għ-d || a-a || o-o || iv ||  || ma
 |-
-| bagħad || vblex || strong || 1 || hate || b-għ-d || a-a || o-o || TD ||  || 
+| bagħad || vblex || strong || 1 || hate || b-għ-d || a-a || o-o || tv ||  || mi
 |-
-| baram || vblex || strong || 1 || twist || b-r-m || a-a || o-o || TD ||  || 
+| baram || vblex || strong || 1 || twist || b-r-m || a-a || o-o || tv ||  || mi
 |-
-| ħanaq || vblex || strong || 1 || make || ħ-n-q || a-a || o-o || TD ||  || 
+| ħanaq || vblex || strong || 1 || make·hoarse || ħ-n-q || a-a || o-o || tv ||  || ma 
 |-
-| laqat || vblex || strong || 1 || hit || l-q-t || a-a || o-o || TD ||  || 
+| laqat || vblex || strong || 1 || hit || l-q-t || a-a || o-o || tv ||  || mi
 |-
-| qaras || vblex || strong || 1 || pinch || q-r-s || a-a || o-o || TD ||  || 
+| qaras || vblex || strong || 1 || pinch || q-r-s || a-a || o-o || tv ||  || ma
 |-
-| rabat || vblex || strong || 1 || tie, bind || r-b-t || a-a || o-o || TD ||  || ma
+| rabat || vblex || strong || 1 || tie, bind || r-b-t || a-a || o-o || tv ||  || ma
 |-
-| raqad || vblex || strong || 1 || sleep || r-q-d || a-a || o-o || iv ||  || 
+| raqad || vblex || strong || 1 || sleep || r-q-d || a-a || o-o || iv ||  || ma
 |-
 | ħatar || vblex || strong || 1 || elect || ħ-t-r || a-a || a-a || tv ||  || ma
 |-
-| ħarab || vblex || strong || 1 || escape || ħ-r-b || a-a || a-a || TD ||  || ma
+| ħarab || vblex || strong || 1 || escape || ħ-r-b || a-a || a-a || iv ||  || ma
 |-
-| qabad || vblex || strong || 1 || catch || q-b-d || a-a || a-a || TD ||  || ma
+| qabad || vblex || strong || 1 || catch || q-b-d || a-a || a-a || tv ||  || ma
 |-
-| naqas || vblex || strong || 1 || wane || n-q-s || a-a || o-o || TD ||  || mi
+| naqas || vblex || strong || 1 || decrease || n-q-s || a-a || o-o || iv ||  || mi
+|-
+| naqas || vblex || strong || 1 || need || n-q-s || a-a || o-o || tv ||  || mi
 |-
 | laħaq || vblex || strong || 1 || reach || l-ħ-q || a-a || i-a || tv ||  || mi
 |-
 | qala || vblex || strong || 1 || earn || q-l-għ || a-a || a-a || tv ||  || ma
 |-
-| qata || vblex || strong || 1 || cut || q-t-għ || a-a || a-a || tv ||  || 
+| qata || vblex || strong || 1 || cut || q-t-għ || a-a || a-a || tv ||  || ma
 |-
 | seta || vblex || strong || 1 || can || s-t-għ || e-a || i-a || tv ||  || mi
 |-
-| baqa || vblex || strong || 1 || remain || b-q-għ || a-a || i-a || tv ||  || mi
+| baqa || vblex || strong || 1 || remain || b-q-għ || a-a || i-a || iv ||  || mi
 |-
 | bela || vblex || strong || 1 || swallow || b-l-għ || e-a || i-a || tv ||  || mi
 |-
-| ħareġ || vblex || strong || 1 || go·out || ħ-r-ġ || a-e || o-o || TD ||  || 
+| ħareġ || vblex || strong || 1 || go·out || ħ-r-ġ || a-e || o-o || iv ||  || ma
 |-
-| ħadem || vblex || strong || 1 || work || ħ-d-m || a-e || a-e || TD ||  || 
+| ħareġ || vblex || strong || 1 || take·out || ħ-r-ġ || a-e || o-o || tv ||  || ma 
 |-
-| ħafer || vblex || strong || 1 || forgive || ħ-f-r || a-e || a-e || TD ||  || 
+| ħadem || vblex || strong || 1 || work || ħ-d-m || a-e || a-e || iv ||  || ma
 |-
-| ħaleb || vblex || strong || 1 || milk || ħ-l-b || a-e || a-e || TD ||  || 
+| ħafer || vblex || strong || 1 || forgive || ħ-f-r || a-e || a-e || tv ||  || ma 
 |-
-| ħalef || vblex || strong || 1 || swear || ħ-l-f || a-e || a-e || TD ||  || 
+| ħaleb || vblex || strong || 1 || milk || ħ-l-b || a-e || a-e || tv ||  || ma
+|-
+| ħalef || vblex || strong || 1 || swear || ħ-l-f || a-e || a-e || iv ||  || ma
 |-
 | għalef || vblex || strong || 1 || feed·animals || għ-l-f || a-e || a-e || TD ||  || 
 |-
-| ħasel || vblex || strong || 1 || wash || ħ-s-l || a-e || a-e || TD ||  || ma
+| ħasel || vblex || strong || 1 || wash || ħ-s-l || a-e || a-e || tv ||  || ma
 |-
-| għamel || vblex || strong || 1 || make || għ-m-l || a-e || a-e || TD ||  || 
+| għamel || vblex || strong || 1 || make || għ-m-l || a-e || a-e || tv ||  || ma
 |-
-| qabel || vblex || strong || 1 || agree || q-b-l || a-e || a-e || TD ||  || 
+| qabel || vblex || strong || 1 || agree || q-b-l || a-e || a-e || iv ||  || ma
 |-
-| qabeż || vblex || strong || 1 || jump || q-b-ż || a-e || a-e || TD ||  || 
+| qabeż || vblex || strong || 1 || jump || q-b-ż || a-e || a-e || tv ||  || ma
 |-
-| għażel || vblex || strong || 1 || choose || għ-ż-l || a-e || a-e || TD ||  || 
+| għażel || vblex || strong || 1 || choose || għ-ż-l || a-e || a-e || tv ||  || ma
 |-
-| qatel || vblex || strong || 1 || kill || q-t-l || a-e || o-o || TD ||  || ma
+| qatel || vblex || strong || 1 || kill || q-t-l || a-e || o-o || tv ||  || ma
 |-
-| ħaseb || vblex || strong || 1 || think || ħ-s-b || a-e || a-e || TD ||  || ma
+| ħaseb || vblex || strong || 1 || think || ħ-s-b || a-e || a-e || iv ||  || ma
 |-
-| ħeles || vblex || strong || 1 || deliver || ħ-l-s || e-e || e-e || tv ||  || me
+| ħeles || vblex || strong || 1 || set·free || ħ-l-s || e-e || e-e || tv ||  || me
 |-
-| għereq || vblex || strong || 1 || stink || għ-r-q || e-e || e-e || TD ||  || 
+| ħeles || vblex || strong || 1 || be·free || ħ-l-s || e-e || e-e || iv ||  || me
 |-
-| hemeż || vblex || strong || 1 || fasten·with·pin || h-m-ż || e-e || e-e || TD ||  || 
+| għereq || vblex || strong || 1 || stink || għ-r-q || e-e || e-e || iv ||  || me
 |-
-| heġem || vblex || strong || 1 || devour || h-ġ-m || e-e || e-e || TD ||  || 
+| hemeż || vblex || strong || 1 || fasten·with·pin || h-m-ż || e-e || e-e || tv ||  || me
 |-
-| hebeż || vblex || strong || 1 || recede || h-b-ż || e-e || e-e || TD ||  || 
+| heġem || vblex || strong || 1 || devour || h-ġ-m || e-e || e-e || iv ||  || me
 |-
-| heres || vblex || strong || 1 || pestle || h-r-s || e-e || e-e || TD ||  || 
+| hebeż || vblex || strong || 1 || recede || h-b-ż || e-e || e-e || iv ||  || me
 |-
-| ħebel || vblex || strong || 1 || rave || ħ-b-l || e-e || e-e || TD ||  || 
+| heres || vblex || strong || 1 || pestle || h-r-s || e-e || e-e || tv ||  || me
 |-
-| ħemer || vblex || strong || 1 || ferment || ħ-m-r || e-e || e-e || TD ||  || 
+| ħebel || vblex || strong || 1 || rave || ħ-b-l || e-e || e-e || iv ||  || me
 |-
-| ħerek || vblex || strong || 1 || rise·early || ħ-r-k || e-e || e-e || TD ||  || 
+| ħemer || vblex || strong || 1 || ferment || ħ-m-r || e-e || e-e || iv ||  || me
 |-
-| deher || vblex || strong || 1 || appear || d-h-r || e-e || i-e || TD ||  || 
+| ħerek || vblex || strong || 1 || rise·early || ħ-r-k || e-e || e-e || iv ||  || 
 |-
-| fehem || vblex || strong || 1 || understand || f-h-m || e-e || i-e || TD ||  || 
+| deher || vblex || strong || 1 || appear || d-h-r || e-e || i-e || iv ||  || mi
 |-
-| xeher || vblex || strong || 1 || wail || x-h-r || e-e || i-e || TD ||  || 
+| fehem || vblex || strong || 1 || understand || f-h-m || e-e || i-e || tv ||  || mi
 |-
-| xegħel || vblex || strong || 1 || light || x-għ-l || e-e ||  || iv ||  || 
+| xeher || vblex || strong || 1 || wail || x-h-r || e-e || i-e || iv ||  || mi
 |-
-| resaq || vblex || strong || 1 || approach || r-s-q || e-a || e-a || TD ||  || 
+| xegħel || vblex || strong || 1 || switch·on || x-għ-l || e-e ||  || tv ||  || mi
 |-
-| feraħ || vblex || strong || 1 || rejoice || f-r-ħ || e-a || i-a || TD ||  || 
+| resaq || vblex || strong || 1 || approach || r-s-q || e-a || e-a || tv ||  || me
 |-
-| refa || vblex || strong || 1 || raise || r-f-għ || e-a || i-a || TD ||  || me
+| feraħ || vblex || strong || 1 || rejoice || f-r-ħ || e-a || i-a || iv ||  || mi
+|-
+| refa || vblex || strong || 1 || raise || r-f-għ || e-a || i-a || tv ||  || me
 |-
 | fetaħ || vblex || strong || 1 || open || f-t-ħ || e-a || i-a || tv ||  || mi
 |-
-| felaħ || vblex || strong || 1 || be·strong || f-l-ħ || e-a || i-a || TD ||  || 
+| felaħ || vblex || strong || 1 || be·strong || f-l-ħ || e-a || i-a || iv ||  || mi
 |-
-| kesaħ || vblex || strong || 1 || be·cold || k-s-ħ || e-a || i-a || TD ||  || 
+| felaħ || vblex || strong || 1 || endure || f-l-ħ || e-a || i-a || tv ||  || mi
 |-
-| mesaħ || vblex || strong || 1 || wipe || m-s-ħ || e-a || i-a || TD ||  || 
+| kesaħ || vblex || strong || 1 || be·cold || k-s-ħ || e-a || i-a || iv ||  || 
 |-
-| lemaħ || vblex || strong || 1 || perceive || l-m-ħ || e-a || i-a || TD ||  || 
+| mesaħ || vblex || strong || 1 || wipe || m-s-ħ || e-a || i-a || tv ||  || mi
 |-
-| rebaħ || vblex || strong || 1 || win || r-b-ħ || e-a || i-a || TD ||  || 
+| lemaħ || vblex || strong || 1 || perceive || l-m-ħ || e-a || i-a || tv ||  || mi
 |-
-| reżaħ || vblex || strong || 1 || shiver || r-ż-ħ || e-a || i-a || TD ||  || 
+| reżaħ || vblex || strong || 1 || shiver || r-ż-ħ || e-a || i-a || iv ||  || mi 
 |-
-| sebaħ || vblex || strong || 1 || dawn || s-b-ħ || e-a || i-a || TD ||  || 
+| sebaħ || vblex || strong || 1 || dawn || s-b-ħ || e-a || i-a || iv ||  || mi
 |-
-| seraq || vblex || strong || 1 || steal || s-r-q || e-a || i-a || TD ||  || 
+| seraq || vblex || strong || 1 || steal || s-r-q || e-a || i-a || tv ||  || mi
 |-
-| telaq || vblex || strong || 1 || depart || t-l-q || e-a || i-a || TD ||  || 
+| telaq || vblex || strong || 1 || depart || t-l-q || e-a || i-a || tv ||  || mi
 |-
-| selaħ || vblex || strong || 1 || skin || s-l-ħ || e-a || i-o || TD ||  || 
+| selaħ || vblex || strong || 1 || skin || s-l-ħ || e-a || i-o || tv ||  || mi
 |-
-| żebagħ || vblex || strong || 1 || paint || ż-b-għ || e-a || i-o || TD ||  || 
+| żebagħ || vblex || strong || 1 || paint || ż-b-għ || e-a || i-o || tv ||  || mi
 |-
-| żelaq || vblex || strong || 1 || slip || ż-l-q || e-a || i-o || TD ||  || 
+| żelaq || vblex || strong || 1 || slip || ż-l-q || e-a || i-o || iv ||  || mi
 |-
-| sebaq || vblex || strong || 1 || outstrip || s-b-q || e-a || i-o || TD ||  || 
+| sebaq || vblex || strong || 1 || outstrip || s-b-q || e-a || i-o || tv ||  || mi
 |-
-| nefaħ || vblex || strong || 1 || blow || n-f-ħ || e-a || o-o || iv ||  || 
+| nefaħ || vblex || strong || 1 || blow || n-f-ħ || e-a || o-o || tv ||  || mi
 |-
-| nefaq || vblex || strong || 1 || spend || n-f-q || e-a || o-o || TD ||  || 
+| nefaq || vblex || strong || 1 || spend || n-f-q || e-a || o-o || tv ||  || mi
 |-
-| beżaq || vblex || strong || 1 || spit || b-ż-q || e-a || o-o || TD ||  || 
+| beżaq || vblex || strong || 1 || spit || b-ż-q || e-a || o-o || tv ||  || mi
 |-
-| fetaq || vblex || strong || 1 || unstitch || f-t-q || e-a || o-o || TD ||  || 
+| fetaq || vblex || strong || 1 || unstitch || f-t-q || e-a || o-o || tv ||  || mi
 |-
-| ġema || vblex || strong || 1 || gather || ġ-m-għ || e-a ||  || TD ||  || 
+| ġema || vblex || strong || 1 || gather || ġ-m-għ || e-a ||  || tv ||  || mi
 |-
 | rebaħ || vblex || strong || 1 || win || r-b-ħ || e-a || i-a || tv ||  || mi
 |-
 | kiteb || vblex || strong || 1 || write || k-t-b || i-e || i-e || tv ||  || mi
 |-
-| kiser || vblex || strong || 1 || break || k-s-r || i-e || i-e || TD ||  || 
+| kiser || vblex || strong || 1 || break || k-s-r || i-e || i-e || tv ||  || mi
 |-
-| niżel || vblex || strong || 1 || descend || n-ż-l || i-e || i-e || TD ||  || mi
+| niżel || vblex || strong || 1 || descend || n-ż-l || i-e || i-e || tv ||  || mi
 |-
-| bidel || vblex || strong || 1 || change || b-d-l || i-e || i-e || TD ||  || 
+| bidel || vblex || strong || 1 || change || b-d-l || i-e || i-e || tv ||  || mi
 |-
-| difen || vblex || strong || 1 || bury || d-f-n || i-e || i-e || TD ||  || 
+| difen || vblex || strong || 1 || bury || d-f-n || i-e || i-e || tv ||  || mi
 |-
-| dilek || vblex || strong || 1 || smear || d-l-k || i-e || i-e || TD ||  || 
+| dilek || vblex || strong || 1 || smear || d-l-k || i-e || i-e || tv ||  || mi
 |-
-| fired || vblex || strong || 1 || separate || f-r-d || i-e || i-e || TD ||  || 
+| fired || vblex || strong || 1 || separate || f-r-d || i-e || i-e || tv ||  || mi
 |-
-| firex || vblex || strong || 1 || spread || f-r-x || i-e || i-e || TD ||  || 
+| firex || vblex || strong || 1 || spread || f-r-x || i-e || i-e || tv ||  || mi
 |-
-| ġibed || vblex || strong || 1 || pull || ġ-b-d || i-e || i-e || TD ||  || 
+| ġibed || vblex || strong || 1 || pull || ġ-b-d || i-e || i-e || tv ||  || mi
 |-
-| gideb || vblex || strong || 1 || lie || g-d-b || i-e || i-e || TD ||  || 
+| gideb || vblex || strong || 1 || lie || g-d-b || i-e || i-e || tv ||  || mi
 |-
-| gidem || vblex || strong || 1 || bite || g-d-m || i-e || i-e || TD ||  || 
+| gidem || vblex || strong || 1 || bite || g-d-m || i-e || i-e || tv ||  || mi
 |-
-| kiber || vblex || strong || 1 || grow || k-b-r || i-e || i-e || TD ||  || 
+| kiber || vblex || strong || 1 || grow || k-b-r || i-e || i-e || iv ||  || mi
 |-
-| kines || vblex || strong || 1 || sweep || k-n-s || i-e || i-e || TD ||  || 
+| kines || vblex || strong || 1 || sweep || k-n-s || i-e || i-e || tv ||  || mi
 |-
-| giref || vblex || strong || 1 || scratch || g-r-f || i-e || i-e || TD ||  || 
+| giref || vblex || strong || 1 || scratch || g-r-f || i-e || i-e || tv ||  || mi 
 |-
-| nidem || vblex || strong || 1 || repent || n-d-m || i-e || i-e || TD ||  || 
+| nidem || vblex || strong || 1 || repent || n-d-m || i-e || i-e || tv ||  || mi
 |-
-| kixef || vblex || strong || 1 || unveil || k-x-f || i-e || i-e || TD ||  || mi
+| kixef || vblex || strong || 1 || unveil || k-x-f || i-e || i-e || tv ||  || mi
 |-
-| siker || vblex || strong || 1 || get·drunk || s-k-r || i-e || i-e || TD ||  || 
+| siker || vblex || strong || 1 || get·drunk || s-k-r || i-e || i-e || iv ||  || mi
 |-
-| silef || vblex || strong || 1 || lend || s-l-f || i-e || i-e || TD ||  || 
+| silef || vblex || strong || 1 || lend || s-l-f || i-e || i-e || tv ||  || mi
 |-
-| tilef || vblex || strong || 1 || lose || t-l-f || i-e || i-e || TD ||  || 
+| tilef || vblex || strong || 1 || lose || t-l-f || i-e || i-e || tv ||  || mi
 |-
-| żifen || vblex || strong || 1 || dance || ż-f-n || i-e || i-e || TD ||  || 
+| żifen || vblex || strong || 1 || dance || ż-f-n || i-e || i-e || tv ||  || mi
 |-
-| wiżen || vblex || strong || 1 || weigh || w-ż-n || i-e ||  || TD ||  || 
+| wiżen || vblex || strong || 1 || weigh || w-ż-n || i-e ||  || tv ||  || mi
 |-
-| siket || vblex || strong || 1 || be·silent || s-k-t || i-e || i-o || TD ||  || 
+| siket || vblex || strong || 1 || be·silent || s-k-t || i-e || i-o || iv ||  || mi
 |-
 | rikeb || vblex || strong || 1 || ride || r-k-b || i-e || i-e || tv ||  || mi
 |-
-| kiseb || vblex || strong || 1 || obtain || k-s-b || i-e || i-e || TD ||  || mi
+| kiseb || vblex || strong || 1 || obtain || k-s-b || i-e || i-e || tv ||  || mi
 |-
-| sogħol || vblex || strong || 1 || cough || s-għ-l || o-o || i-o || TD ||  || 
+| sogħol || vblex || strong || 1 || cough || s-għ-l || o-o || i-o || iv ||  || mi
 |-
-| sogħob || vblex || strong || 1 || be·sorry || s-għ-b || o-o || i-o || TD ||  || 
+| sogħob || vblex || strong || 1 || be·sorry || s-għ-b || o-o || i-o || iv ||  || mi
 |-
-| xorob || vblex || strong || 1 || drink || x-r-b || o-o || i-o || TD ||  || 
+| xorob || vblex || strong || 1 || drink || x-r-b || o-o || i-o || tv ||  || mi
 |-
-| ħolom || vblex || strong || 1 || dream || ħ-l-m || o-o || o-o || TD ||  || 
+| ħolom || vblex || strong || 1 || dream || ħ-l-m || o-o || o-o || tv ||  || mo
 |-
-| korob || vblex || strong || 1 || groan || k-r-b || o-o || o-o || TD ||  || 
+| korob || vblex || strong || 1 || groan || k-r-b || o-o || o-o || iv ||  || mi
 |-
-| ħoloq || vblex || strong || 1 || be·created || ħ-l-q || o-o || o-o || TD ||  || 
+| ħoloq || vblex || strong || 1 || be·created || ħ-l-q || o-o || o-o || iv ||  || ma
 |-
-| forogħ || vblex || strong || 1 || ebb || f-r-għ || o-o || o-o || TD ||  || 
+| forogħ || vblex || strong || 1 || ebb || f-r-għ || o-o || o-o || iv ||  || mi
 |-
-| kotor || vblex || strong || 1 || abound || k-t-r || o-o || o-o || TD ||  || 
+| kotor || vblex || strong || 1 || abound || k-t-r || o-o || o-o || iv ||  || ma
 |-
-| għodos || vblex || strong || 1 || dive || għ-d-s || o-o || o-o || TD ||  || 
+| għodos || vblex || strong || 1 || dive || għ-d-s || o-o || o-o || iv ||  || ma
 |-
-| għokos || vblex || strong || 1 || decay || għ-k-s || o-o || o-o || TD ||  || 
+| għokos || vblex || strong || 1 || decay || għ-k-s || o-o || o-o || iv ||  || ma
 |-
-| għorok || vblex || strong || 1 || rub || għ-r-k || o-o || o-o || TD ||  || 
+| għorok || vblex || strong || 1 || rub || għ-r-k || o-o || o-o || tv ||  || ma
 |-
-| għolob || vblex || strong || 1 || grow·thin || għ-l-b || o-o || o-o || iv ||  || 
+| għolob || vblex || strong || 1 || grow·thin || għ-l-b || o-o || o-o || tv ||  || ma
 |-
 | qorob || vblex || strong || 1 || get·near || q-r-b || o-o || o-o || iv ||  || 
 |-
-| kisser || vblex || quad || 1 || smash || k-s-s-r || i-e || i-e || tv ||  || 
+| kisser || vblex || quad || 1 || smash || k-s-s-r || i-e || i-e || tv ||  || m
 |-
-| fisser || vblex || quad || 1 || mean || f-s-s-r || i-e || i-e || TD ||  || 
+| fisser || vblex || quad || 1 || mean || f-s-s-r || i-e || i-e || tv ||  || m
+|-
+| biddel || vblex || quad || 1 || alter || b-d-d-l || i-e || i-e || tv ||  || im
+|-
+| ċaħħad || vblex || quad || 1 || deprive || ċ-ħ-ħ-d || a-a || a-a || tv ||  || im
 |-
 | tkellem || vblex || quad || 2 || speak || k-l-l-m || e-e || e-e || iv ||  || mi
 |-
-| dar || vblex || hollow || 1 || turn || d-w-r || a-a ||  || iv ||  || 
+| dar || vblex || hollow || 1 || turn || d-w-r || a-a ||  || iv ||  || mi
 |-
-| sar || vblex || hollow || 1 || become || s-j-r || a-a ||  || iv ||  || mi
+| sar || vblex || hollow || 1 || become || s-j-r || a-a ||  || tv ||  || mi
 |-
 | miet || vblex || hollow || 1 || die || m-w-t || ie-a ||  || iv ||  || 
 |-
-| dieq || vblex || hollow || 1 || taste || d-w-q || ie-a ||  || iv ||  || 
+| dieq || vblex || hollow || 1 || taste || d-w-q || ie-a ||  || tv ||  || mi
 |-
-| daq || vblex || hollow || 1 || taste || d-w-q || a-a ||  || iv ||  || 
+| daq || vblex || hollow || 1 || taste || d-w-q || a-a ||  || tv ||  || mi
 |-
-| dam || vblex || hollow || 1 || take.time || d-w-m || a-a ||  || iv ||  || 
+| dam || vblex || hollow || 1 || take.time || d-w-m || a-a ||  || iv ||  || mi
 |-
-| sam || vblex || hollow || 1 || fast || s-w-m || a-a ||  || iv ||  || 
+| sam || vblex || hollow || 1 || fast || s-w-m || a-a ||  || iv ||  || mi
 |-
-| far || vblex || hollow || 1 || boil || f-w-r || a-a ||  || iv ||  || 
+| far || vblex || hollow || 1 || boil || f-w-r || a-a ||  || iv ||  || mi
 |-
-| sab || vblex || hollow || 1 || find || s-j-b || a-a ||  || iv ||  || mi
+| sab || vblex || hollow || 1 || find || s-j-b || a-a ||  || tv ||  || mi
 |-
-| għam || vblex || hollow || 1 || swim || għ-w-m || a-a ||  || iv ||  || 
+| għam || vblex || hollow || 1 || swim || għ-w-m || a-a ||  || iv ||  || me
 |-
-| qam || vblex || hollow || 1 || rise || q-w-m || a-a ||  || iv ||  || 
+| qam || vblex || hollow || 1 || rise || q-w-m || a-a ||  || iv ||  || ma
 |-
-| żar || vblex || hollow || 1 || visit || ż-w-r || a-a ||  || iv ||  || 
+| żar || vblex || hollow || 1 || visit || ż-w-r || a-a ||  || tv ||  || mi
 |-
-| ġab || vblex || hollow || 1 || bring || ġ-j-b || a-a ||  || iv ||  || me
+| ġab || vblex || hollow || 1 || bring || ġ-j-b || a-a ||  || tv ||  || mi
 |-
-| ġieb || vblex || hollow || 1 || bring || ġ-j-b || ie-a ||  || iv ||  || me
+| ġieb || vblex || hollow || 1 || bring || ġ-j-b || ie-a ||  || tv ||  || mi
 |-
-| biegħ || vblex || hollow || 1 || sell || b-j-għ || ie-a ||  || iv ||  || mi
+| biegħ || vblex || hollow || 1 || sell || b-j-għ || ie-a ||  || tv ||  || mi
 |-
-| fieq || vblex || hollow || 1 || recuperate || f-j-q || ie-a ||  || iv ||  || 
+| fieq || vblex || hollow || 1 || recuperate || f-j-q || ie-a ||  || iv ||  || mi
 |-
-| għab || vblex || hollow || 1 || disappear || għ-j-b || a-a ||  || iv ||  || 
+| għab || vblex || hollow || 1 || disappear || għ-j-b || a-a ||  || iv ||  || ma
 |-
-| għan || vblex || hollow || 1 || help || għ-j-n || a-a ||  || iv ||  || me
+| għan || vblex || hollow || 1 || help || għ-j-n || a-a ||  || tv ||  || me
 |-
-| għar || vblex || hollow || 1 || envy || għ-j-r || a-a ||  || iv ||  || 
+| għar || vblex || hollow || 1 || envy || għ-j-r || a-a ||  || iv ||  || me
 |-
-| għax || vblex || hollow || 1 || live || għ-j-x || a-a ||  || iv ||  || 
+| għax || vblex || hollow || 1 || live || għ-j-x || a-a ||  || iv ||  || me
 |-
-| qies || vblex || hollow || 1 || measure || q-j-s || ie-a ||  || iv ||  || mi
+| għax || vblex || hollow || 1 || live || għ-j-x || a-a ||  || tv ||  || me
 |-
-| ried || vblex || hollow || 1 || want || r-j-d || ie-a ||  || tv ||  || 
+| qies || vblex || hollow || 1 || measure || q-j-s || ie-a ||  || tv ||  || me
 |-
-| tar || vblex || hollow || 1 || fly || t-j-r || a-a ||  || tv ||  || 
+| ried || vblex || hollow || 1 || want || r-j-d || ie-a ||  || tv ||  || mi
+|-
+| tar || vblex || hollow || 1 || fly || t-j-r || a-a ||  || iv ||  || mi
 |-
 | żied || vblex || hollow || 1 || increase || ż-j-d || ie-a ||  || tv ||  || mi
 |-
@@ -335,9 +349,11 @@
 |-
 | qara || vblex || weak || 1 || read || q-r-j || a-a || a-a || tv ||  || mo
 |-
-| mexa || vblex || weak || 1 || walk || m-x-j || e-a || i-i || iv ||  || 
+| mexa || vblex || weak || 1 || walk || m-x-j || e-a || i-i || tv ||  || mi
 |-
 | beda || vblex || weak || 1 || start || b-d-j || e-a || i-a || tv ||  || mi
+|-
+| beda || vblex || weak || 1 || start || b-d-j || e-a || i-a || iv ||  || mi
 |-
 | mela || vblex || weak || 1 || fill || m-l-j || e-a || i-a || tv ||  || mi
 |-
@@ -349,23 +365,23 @@
 |-
 | rema || vblex || weak || 1 || throw·away || r-m-j || e-a || a-i || tv ||  || mo
 |-
-| ġara || vblex || weak || 1 || happen || ġ-r-j || a-a || a-i || TD ||  || 
+| ġara || vblex || weak || 1 || happen || ġ-r-j || a-a || a-i || iv ||  || mi
 |-
 | radd || vblex || doubled || 1 || restore || r-d-d || a-a || a-o || tv ||  || mi
 |-
 | mess || vblex || doubled || 1 || touch || m-s-s || e-e || e-i || tv ||  || mi
 |-
-| qarr || vblex || doubled || 1 || go·to·confession || q-r-r || a-a || i-e || iv ||  || ma
+| qarr || vblex || doubled || 1 || go·to·confession || q-r-r || a-a || i-e || tv ||  || ma
 |-
 | raqq || vblex || doubled || 1 || become·thin || r-q-q || a-a || i-e || iv ||  || ma
 |-
-| saħħ || vblex || doubled || 1 || materialise || s-ħ-ħ || a-a || i-e || iv ||  || ma
+| saħħ || vblex || doubled || 1 || be·sound || s-ħ-ħ || a-a || i-e || iv ||  || ma
 |-
 | xaħħ || vblex || doubled || 1 || be·stingy || x-ħ-ħ || a-a || i-e || iv ||  || ma
 |-
-| damm || vblex || doubled || 1 || string·together || d-m-m || a-a || i-o || iv ||  || mi
+| damm || vblex || doubled || 1 || string·together || d-m-m || a-a || i-o || tv ||  || mi
 |-
-| daqq || vblex || doubled || 1 || play || d-q-q || a-a || i-o || iv ||  || mi
+| daqq || vblex || doubled || 1 || play || d-q-q || a-a || i-o || tv ||  || mi
 |-
 | ġarr || vblex || doubled || 1 || carry || ġ-r-r || a-a || i-o || tv ||  || mi
 |-
@@ -387,7 +403,7 @@
 |-
 | żamm || vblex || doubled || 1 || hold || ż-m-m || a-a || i-o || tv ||  || mi
 |-
-| leqq || vblex || doubled || 1 || glitter || l-q-q || e-e || i-e || iv ||  || 
+| leqq || vblex || doubled || 1 || glitter || l-q-q || e-e || i-e || iv ||  || mi
 |-
 | temm || vblex || doubled || 1 || finish || t-m-m || e-e || i-e || tv ||  || mi
 |-
@@ -399,7 +415,7 @@
 |-
 | kedd || vblex || doubled || 1 || vex || k-d-d || e-e || i-e || tv ||  || mi
 |-
-| qaħqaħ || vblex || quad || 1 || hack || q-ħ-q-ħ || a-a || a-a || tv ||  || im
+| qaħqaħ || vblex || quad || 1 || cough || q-ħ-q-ħ || a-a || a-a || iv ||  || im
 |-
 | dardar || vblex || quad || 1 || make·turbid || d-r-d-r || a-a || a-a || tv ||  || im
 |-
@@ -412,8 +428,6 @@
 | bandal || vblex || quad || 1 || swing || b-n-d-l || a-a || a-a || tv ||  || im
 |-
 | ċaflas || vblex || quad || 1 || splash || ċ-f-l-s || a-a || a-a || tv ||  || im
-|-
-| ċaħħad || vblex || quad || 1 || deprive || ċ-ħ-ħ-d || a-a || a-a || tv ||  || im
 |-
 | ċanfar || vblex || quad || 1 || reproach || ċ-n-f-r || a-a || a-a || tv ||  || im
 |-
@@ -450,8 +464,6 @@
 | fixkel || vblex || quad || 1 || obstruct || f-x-k-l || i-e || i-e || tv ||  || im
 |-
 | bixkel || vblex || quad || 1 || cheat || b-x-k-l || i-e || i-e || iv ||  || im
-|-
-| biddel || vblex || quad || 1 || alter || b-d-d-l || i-e || i-e || tv ||  || im
 |-
 | berbaq || vblex || quad || 1 || squander || b-r-b-q || e-a || e-a || tv ||  || im
 |}

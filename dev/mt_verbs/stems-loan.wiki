@@ -15,39 +15,39 @@
 |-
 | ammira || vblex || loan || first_vowel || admire || ammir ||  || a || tv || ammirat
 |-
-| stimula || vblex || loan || two_cons || stimulate || stimul ||  || a || TD || stimulat
+| stimula || vblex || loan || two_cons || stimulate || stimul ||  || a || tv || stimulat
 |-
-| ipparteċipa || vblex || loan || double_cons || participate || pparteċip ||  || a || TD || parteċipat
+| ipparteċipa || vblex || loan || double_cons || participate || pparteċip ||  || a || iv || parteċipat
 |-
-| irrappreżenta || vblex || loan || double_cons || represent || rrappreżent ||  || a || TD || rappreżentat
+| irrappreżenta || vblex || loan || double_cons || represent || rrappreżent ||  || a || tv || rappreżentat
 |-
 | ippenetra || vblex || loan || double_cons || penetrate || ppenetr ||  || a || tv || penetrat
 |-
 | ivvjola || vblex || loan || double_cons || violate || vvjol ||  || a || tv || vjolat
 |-
-| indika || vblex || loan || first_vowel || indicate || indik ||  || a || TD || indikat
+| indika || vblex || loan || first_vowel || indicate || indik ||  || a || tv || indikat
 |-
 | eżerċita || vblex || loan || first_vowel || exercise || eżerċit ||  || a || tv || eżerċitat
 |-
-| ipprova || vblex || loan || double_cons || try || pprov ||  || a || TD ||
+| ipprova || vblex || loan || double_cons || try || pprov ||  || a || tv ||
 |-
-| esperjenza || vblex || loan || first_vowel || experience || esperjenz ||  || a || TD ||
+| esperjenza || vblex || loan || first_vowel || experience || esperjenz ||  || a || tv ||
 |-
-| iddeċida || vblex || loan || double_cons || decide || ddeċid ||  || i || TD || deċiż
+| iddeċida || vblex || loan || double_cons || decide || ddeċid ||  || i || iv || deċiż
 |-
-| ordna || vblex || loan || first_vowel || order || ordn ||  || a || TD || 
+| ordna || vblex || loan || first_vowel || order || ordn ||  || a || tv || 
 |-
-| falla || vblex || loan || first_cons || be·absent || fall ||  || i || TD || fallut
+| falla || vblex || loan || first_cons || fail || fall ||  || i || iv || fallut
 |-
 | iddeskriva || vblex || loan || double_cons || describe || ddeskriv ||  || i || tv || deskritt
 |-
-| aggredixxa || vblex || loan || first_vowel || agress || aggred || ixx || i || tv || aggredit
+| aggredixxa || vblex || loan || first_vowel || aggress || aggred || ixx || i || tv || aggredit
 |-
 | irrisponda || vblex || loan || double_cons || respond || rrispond ||  || i || tv || rispost
 |-
 | ittraduċa || vblex || loan || double_cons || translate || ttraduċ ||  || i || tv || tradott
 |-
-| irreaġixxa || vblex || loan || double_cons || react || rreaġ || ixx || i || TD || reaġit
+| irreaġixxa || vblex || loan || double_cons || react || rreaġ || ixx || i || iv || reaġit
 |-
 | ipprojbixxa || vblex || loan || double_cons || prohibit || pprojb || ixx || i || tv || projbit
 |-
@@ -57,7 +57,9 @@
 |-
 | ikkonsista || vblex || loan || double_cons || consist || kkonsist ||  || i || tv || konsistit
 |-
-| iżviluppa || vblex || loan || two_cons || develop || żvilupp ||  || i || TD || żviluppat
+| iżviluppa || vblex || loan || two_cons || develop || żvilupp ||  || i || tv || żviluppat
+|-
+| iżviluppa || vblex || loan || two_cons || develop || żvilupp ||  || i || iv || żviluppat
 |-
 | esprima || vblex || loan || first_vowel || express || esprim ||  || i || tv || espress
 |-
@@ -69,7 +71,7 @@
 |-
 | ikklassifika || vblex || loan || double_cons || classify || kklassifik ||  || i || tv || klassifikat
 |-
-| ikkonsidra || vblex || loan || double_cons || consider || kkonsidr ||  || i || TD || konsidrat
+| ikkonsidra || vblex || loan || double_cons || consider || kkonsidr ||  || i || tv || konsidrat
 |-
-| ivvota || vblex || loan || double_cons || vote || vvot ||  || a || TD || vvotat
+| ivvota || vblex || loan || double_cons || vote || vvot ||  || a || tv || vvotat
 |}
