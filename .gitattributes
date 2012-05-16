@@ -43,6 +43,7 @@ dev/story.ar.txt -text svneol=unset#application/octet-stream
 dev/story.mt.txt -text
 dev/testvoc-summary.mt-ar.txt -text
 dev/testvoc.sh -text
+dev/trimmed-coverage.sh -text
 /lexchoicebil.xsl -text
 /modes.xml -text
 /mt-ar.prob -text
