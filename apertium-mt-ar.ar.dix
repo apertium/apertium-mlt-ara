@@ -95,10 +95,14 @@
     <!-- SECTION: Punctuation -->
 
     <pardef n="separa">
-      <e><re>[.\?;:!؟؛]</re><p>          <l></l><r><s n="sent"/></r></p></e>
+      <e><re>[.:!]</re><p><l></l><r><s n="sent"/></r></p></e>
+      <e><p><l>؟</l><r>؟<s n="sent"/></r></p></e>
+      <e r="LR"><p><l>?</l><r>؟<s n="sent"/></r></p></e>
+      <e><p><l>؛</l><r>؛<s n="sent"/></r></p></e>
+      <e r="LR"><p><l>;</l><r>؛<s n="sent"/></r></p></e>
     </pardef>
     <pardef n="coma">
-      <e><p>          <l>,</l><r>,<s n="cm"/></r></p></e>
+      <e><p><l>،</l><r>،<s n="cm"/></r></p></e>
     </pardef>
     
     <pardef n="urls">
@@ -122,7 +126,7 @@
     </pardef>
 
     <!-- SECTION: Interjections -->
-    <pardef n="אמן__ij">
+    <pardef n="نعم__ij">
       <e><p><l/><r><s n="ij"/></r></p></e>
     </pardef>
 
@@ -191,11 +195,20 @@
       <e><p>          <l>ال</l><r>ال<s n="det"/><s n="def"/></r></p></e>
     </pardef>
 
-    <pardef n="/זה__det" c="this/that">
+    <pardef n="/هذا__det" c="this">
       <e>       <p><l>هذا</l> <r>هذا<s n="det"/><s n="dem"/><s n="m"/><s n="sg"/></r></p></e>
       <e>       <p><l>هذه</l> <r>هذا<s n="det"/><s n="dem"/><s n="f"/><s n="sg"/></r></p></e>
+      <e>       <p><l>هذان</l> <r>هذا<s n="det"/><s n="dem"/><s n="m"/><s n="du"/></r></p></e>
+      <e>       <p><l>هتان</l> <r>هذا<s n="det"/><s n="dem"/><s n="f"/><s n="du"/></r></p></e>
       <e>       <p><l>هؤلاء</l><r>هذا<s n="det"/><s n="dem"/><s n="mf"/><s n="pl"/></r></p></e>
       <e r="LR"><p><l>أولائك</l><r>هذا<s n="det"/><s n="dem"/><s n="mf"/><s n="pl"/></r></p></e>
+    </pardef>
+    <pardef n="/ذلك__det" c="that">
+      <e>       <p><l>ذلك</l> <r>ذلك<s n="det"/><s n="dem"/><s n="m"/><s n="sg"/></r></p></e>
+      <e>       <p><l>تلك</l> <r>ذلك<s n="det"/><s n="dem"/><s n="f"/><s n="sg"/></r></p></e>
+      <e>       <p><l>ذانك</l> <r>ذلك<s n="det"/><s n="dem"/><s n="m"/><s n="du"/></r></p></e>
+      <e>       <p><l>تانك</l> <r>ذلك<s n="det"/><s n="dem"/><s n="f"/><s n="du"/></r></p></e>
+      <e><p><l>أولالك</l><r>ذلك<s n="det"/><s n="dem"/><s n="mf"/><s n="pl"/></r></p></e>
     </pardef>
 
     <pardef n="ה" c="appears before nouns">
@@ -266,12 +279,22 @@
     </pardef>
 
 
-    <pardef n="/זה__prn">
+    <pardef n="/هذا__prn">
       <e>       <p><l>هذا</l> <r>هذا<s n="prn"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
       <e>       <p><l>هذه</l> <r>هذا<s n="prn"/><s n="def"/><s n="f"/><s n="sg"/></r></p></e>
+      <e>       <p><l>هذان</l> <r>هذا<s n="prn"/><s n="def"/><s n="m"/><s n="du"/></r></p></e>
+      <e>       <p><l>هتان</l> <r>هذا<s n="prn"/><s n="def"/><s n="f"/><s n="du"/></r></p></e>
       <e>       <p><l>هؤلاء</l><r>هذا<s n="prn"/><s n="def"/><s n="mf"/><s n="pl"/></r></p></e>
       <e r="LR"><p><l>أولائك</l><r>هذا<s n="prn"/><s n="def"/><s n="mf"/><s n="pl"/></r></p></e>
     </pardef>
+    <pardef n="/ذلك__prn">
+      <e>       <p><l>ذلك</l> <r>ذلك<s n="prn"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
+      <e>       <p><l>تلك</l> <r>ذلك<s n="prn"/><s n="def"/><s n="f"/><s n="sg"/></r></p></e>
+      <e>       <p><l>ذانك</l> <r>ذلك<s n="prn"/><s n="def"/><s n="m"/><s n="du"/></r></p></e>
+      <e>       <p><l>تانك</l> <r>ذلك<s n="prn"/><s n="def"/><s n="f"/><s n="du"/></r></p></e>
+      <e><p><l>أولالك</l><r>ذلك<s n="prn"/><s n="def"/><s n="mf"/><s n="pl"/></r></p></e>
+    </pardef>
+
     <pardef n="שלי__prn">
       <e><p><l/><r><s n="prn"/><s n="pos"/><s n="mf"/><s n="sp"/></r></p></e>
     </pardef>
@@ -505,12 +528,15 @@
     <!-- SECTION: Determiners -->
 
 
-    <e lm="هذا"><i></i><par n="/זה__det"/></e>
+    <e lm="هذا"><i></i><par n="/هذا__det"/></e>
+    <e lm="ذلك"><i></i><par n="/ذلك__det"/></e>
     <e lm="جدا"><i>جدا</i><par n="הרבה__det"/></e>
 
 
     <!-- SECTION: Interjections -->
-    <e lm="لا"><i>لا</i><par n="אמן__ij"/></e>
+    <e lm="لا"><i>نعم</i><par n="نعم__ij"/></e>
+    <e lm="لا"><i>لا</i><par n="نعم__ij"/></e>
+    <e lm="لا"><i>آمين</i><par n="نعم__ij"/></e>
 
     <!-- SECTION: Conjunctions -->
 
@@ -531,7 +557,8 @@
     <e lm="شيء" c="something"><p><l>شيء</l><r>شيء<s n="prn"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
     <e lm="شيء" c="something"><p><l>شيئا</l><r>شيء<s n="prn"/><s n="ind"/><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>       
     <e lm="ماذا" c=""><i>ماذا</i><par n="חלק__prn"/></e>
-    <e lm="هذا" c="this"><i></i><par n="/זה__prn"/></e>
+    <e lm="هذا" c="this"><i></i><par n="/هذا__prn"/></e>
+    <e lm="ذلك" c="that"><i></i><par n="/ذلك__prn"/></e>
     <e lm="أحد"><i>أحد</i><par n="אחר__prn"/></e>
     <e lm="أخر" c="another"><i>آخر</i><par n="אחר__prn"/></e>
     <e lm="بعض" c="a little, few"><p><l>بعض</l><r>بعض<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
@@ -693,11 +720,11 @@
 <e lm="رأى"><p><l>ترى</l><r>رأى<s n="vblex"/><s n="tv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 <e lm="رأى"><p><l>رأت</l><r>رأى<s n="vblex"/><s n="tv"/><s n="past"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 <e lm="رأى"><p><l>رأيتم</l><r>رأى<s n="vblex"/><s n="tv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
-<e lm="رأى"><p><l>رأيتواه</l><r>رأى<s n="vblex"/><s n="tv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/><s n="px3sg_m"/></r></p></e>
+<e lm="رأى"><p><l>رأيتموه</l><r>رأى<s n="vblex"/><s n="tv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/><s n="px3sg_m"/></r></p></e>
 <e lm="رأى"><p><l>رأيت</l><r>رأى<s n="vblex"/><s n="tv"/><s n="past"/><s n="p1"/><s n="sg"/></r></p></e>
 <e lm="رأى"><p><l>رأيت</l><r>رأى<s n="vblex"/><s n="tv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 
-<e lm="رأى"><p><l>رأيتواه</l><r>رأى<s n="vblex"/><s n="tv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e lm="رأى"><p><l>رأيتموه</l><r>رأى<s n="vblex"/><s n="tv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
 
 <e lm="اختبأ"><p><l>يختبئ</l><r>اختبأ<s n="vblex"/><s n="iv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
 

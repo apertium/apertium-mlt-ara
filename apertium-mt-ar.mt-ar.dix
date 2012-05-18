@@ -202,10 +202,9 @@
 
      <e><p><l>min<s n="prn"/></l><r>من<s n="prn"/></r></p></e> 
 
-     <!-- There's no dak/dan-distinction in Hebrew: -->
-     <!-- but there is in Arabic - never mind for now -->
-     <e>       <p><l>dak<s n="prn"/></l><r>هذا<s n="prn"/></r></p></e>
-     <e r="LR"><p><l>dan<s n="prn"/></l><r>هذا<s n="prn"/></r></p></e>
+     <e><p><l>dan<s n="prn"/></l><r>هذا<s n="prn"/></r></p></e>
+     <e><p><l>dak<s n="prn"/></l><r>ذلك<s n="prn"/></r></p></e>
+
      <e><p><l>ieħor<s n="prn"/><s n="ind"/></l><r>آخر<s n="prn"/><s n="ind"/></r></p></e>
 
      <e><p><l>i<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
@@ -238,9 +237,9 @@
      <e r="LR"><p><l>l<s n="det"/><s n="def"/><s n="mf"/><s n="sp"/></l><r>ال<s n="det"/><s n="def"/></r></p></e>
      <e><p><l>ħafna<s n="det"/><s n="qnt"/><s n="mf"/></l><r>جدا<s n="det"/><s n="qnt"/><s n="mf"/></r></p></e>
 
-     <!-- There's no dak/dan-distinction in Hebrew: -->
-     <e>       <p><l>dak<s n="det"/><s n="dem"/></l><r>هذا<s n="det"/><s n="dem"/></r></p></e>
-     <e r="LR"><p><l>dan<s n="det"/><s n="dem"/></l><r>هذا<s n="det"/><s n="dem"/></r></p></e>
+     <e><p><l>dan<s n="det"/><s n="dem"/></l><r>هذا<s n="det"/><s n="dem"/></r></p></e>
+     <e><p><l>dak<s n="det"/><s n="dem"/></l><r>ذلك<s n="det"/><s n="dem"/></r></p></e>
+
 
 <!-- SECTION: Numerals -->
 
@@ -1403,6 +1402,8 @@
      <!-- SECTION: Interjections -->
 
      <e><p><l>le<s n="ij"/></l><r>لا<s n="ij"/></r></p></e>
+     <e><p><l>iva<s n="ij"/></l><r>نعم<s n="ij"/></r></p></e>
+     <e><p><l>amen<s n="ij"/></l><r>آمين<s n="ij"/></r></p></e>
 
 
      <!-- SECTION: Adverbs -->
@@ -1762,9 +1763,10 @@
 
 
      <!-- SECTION: Punctuation -->
-     <e><re>[.\?;:!]</re>  <p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
-     <e>                   <p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
-
+     <e><re>[.:!]</re>   <p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
+     <e>                   <p><l>?<s n="sent"/></l><r>؟<s n="sent"/></r></p></e>
+     <e>                   <p><l>;<s n="sent"/></l><r>؛<s n="sent"/></r></p></e>
+     <e>                   <p><l>,<s n="cm"/></l><r>،<s n="cm"/></r></p></e>
 
      <e><re>%?[0-9]+([.,][0-9]+)?[.,]?</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
 
