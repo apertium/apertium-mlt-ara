@@ -63,7 +63,9 @@ def strong_pres_sg_forms (pres_sg, pres_sg_long, pres_sg_short, r, ok, lok, tv):
 
 	if tv == 'iv' : #{
 	 	forms = [(pres_sg, '-', r),
-	 		 (pres_sg, 'S__qtalt/x', r)]; # not pres_sg_long?
+	 		 (pres_sg, 'S__qtalt/x', r), # not pres_sg_long?
+			 (pres_sg_short, 'S__fetħ/ilha', r),
+			 (pres_sg_short, 'S__fetħ/ilhiex', r)];
 		if lok == 'lok' : #{
 			forms += [(pres_sg_long, 'S__xorob/li', r),
 				  (pres_sg_long, 'S__xorob/lix', r)];
@@ -265,7 +267,9 @@ def strong_past_p3_sg_m_forms (past_sg, past_sg_long, past_sg_short, r, ok, lok,
 
 	if tv == 'iv' : #{
 	 	forms = [(past_sg, '-', r),
-	 		 (past_sg_long, 'S__qtalt/x', r)];
+	 		 (past_sg_long, 'S__qtalt/x', r),
+			 (past_sg_short, 'S__fetħ/ilha', r),
+			 (past_sg_short, 'S__fetħ/ilhiex', r)];
 		if lok == 'lok' : #{
 			forms += [(past_sg_long, 'S__xorob/li', r),
 			 	  (past_sg_long, 'S__xorob/lix', r)];

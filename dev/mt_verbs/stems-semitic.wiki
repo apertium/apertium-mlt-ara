@@ -47,7 +47,7 @@
 |-
 | laħaq || vblex || strong || 1 || reach || l-ħ-q || a-a || i-a || tv ||  || mi
 |-
-| lagħab || vblex || strong || 1 || play || l-għ-b || a-a || i-a || iv ||  || mi
+| lagħab || vblex || strong || 1 || play || l-għ-b || a-a || i-a || tv ||  || mi
 |-
 | bagħad || vblex || strong || 1 || hate || b-għ-d || a-a || i-a || tv ||  || mi
 |-
@@ -127,7 +127,7 @@
 |-
 | għamel || vblex || strong || 1 || make || għ-m-l || a-e || a-e || tv ||  || ma
 |-
-| qabel || vblex || strong || 1 || agree || q-b-l || a-e || a-e || iv ||  || ma
+| qabel || vblex || strong || 1 || agree || q-b-l || a-e || a-e || tv ||  || ma
 |-
 | qabeż || vblex || strong || 1 || jump || q-b-ż || a-e || a-e || tv ||  || ma
 |-
@@ -135,7 +135,7 @@
 |-
 | qatel || vblex || strong || 1 || kill || q-t-l || a-e || o-o || tv ||  || ma
 |-
-| ħaseb || vblex || strong || 1 || think || ħ-s-b || a-e || a-e || iv ||  || ma
+| ħaseb || vblex || strong || 1 || think || ħ-s-b || a-e || a-e || tv ||  || ma
 |-
 | ħeles || vblex || strong || 1 || set·free || ħ-l-s || e-e || e-e || tv ||  || me
 |-
@@ -365,7 +365,7 @@
 |-
 | rema || vblex || weak || 1 || throw·away || r-m-j || e-a || a-i || tv ||  || mo
 |-
-| ġara || vblex || weak || 1 || happen || ġ-r-j || a-a || a-i || iv ||  || mi
+| ġara || vblex || weak || 1 || run || ġ-r-j || a-a || a-i || iv ||  || mi
 |-
 | radd || vblex || doubled || 1 || restore || r-d-d || a-a || a-o || tv ||  || mi
 |-

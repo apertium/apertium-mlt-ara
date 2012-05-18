@@ -39,6 +39,8 @@
 |-
 | falla || vblex || loan || first_cons || fail || fall ||  || i || iv || fallut
 |-
+| falla || vblex || loan || first_cons || ruin || fall ||  || i || tv || fallut
+|-
 | iddeskriva || vblex || loan || double_cons || describe || ddeskriv ||  || i || tv || deskritt
 |-
 | aggredixxa || vblex || loan || first_vowel || aggress || aggred || ixx || i || tv || aggredit

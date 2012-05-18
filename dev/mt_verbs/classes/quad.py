@@ -66,7 +66,9 @@ def quad_vowel_forms (form_pl, form_pl_suff, r, tv): #{
 
 	if tv == 'iv' : #{
 	 	forms = [(form_pl, '-', r),
-	 		 (form_pl_suff, 'S__qtalt/x', r)];
+	 		 (form_pl_suff, 'S__qtalt/x', r),
+			 (form_pl_suff, 'S__qtaltu/lha', r),
+			 (form_pl_suff, 'S__qtaltu/lhiex', r)];
 	#}
 	else : #{
 		forms = [(form_pl, '-', r),
