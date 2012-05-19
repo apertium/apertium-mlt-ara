@@ -45,23 +45,25 @@ def sound_past(base, base_t, base_n, tv): #{
 		forms['actv.past.p2.m.pl'] = [(base_t + 'تم', '-', '-'), (base_t + 'تمو', 'S__فتح/ه', '-')];
 		forms['actv.past.p2.f.pl'] = [(base_t + 'تن', '-', '-'), (base_t + 'تن', 'S__فتح/ه', '-')];
 		forms['actv.past.p1.mf.pl'] = [(base_n + 'نا', '-', '-'), (base_n + 'نا', 'S__فتح/ه', '-')];
+
+
+		forms['pasv.past.p3.m.sg'] = [(base, '-', '-')];
+		forms['pasv.past.p3.f.sg'] = [(base + 'ت', '-', '-')];
+		forms['pasv.past.p2.m.sg'] = [(base_t + 'ت', '-', '-')];
+		forms['pasv.past.p2.f.sg'] = [(base_t + 'ت', '-', '-')];
+		forms['pasv.past.p1.mf.sg'] = [(base_t + 'ت', '-', '-')];
+
+		forms['pasv.past.p3.m.du'] = [(base + 'ا', '-', '-')];
+		forms['pasv.past.p3.f.du'] = [(base + 'تا', '-', '-')];
+		forms['pasv.past.p2.mf.du'] = [(base_t + 'تما', '-', '-')];
+
+		forms['pasv.past.p3.m.pl'] = [(base + 'وا', '-', '-')];
+		forms['pasv.past.p3.f.pl'] = [(base_n + 'ن', '-', '-')];
+		forms['pasv.past.p2.m.pl'] = [(base_t + 'تم', '-', '-')];
+		forms['pasv.past.p2.f.pl'] = [(base_t + 'تن', '-', '-')];
+		forms['pasv.past.p1.mf.pl'] = [(base_n + 'نا', '-', '-')];
+
 	#}
-
-	forms['pasv.past.p3.m.sg'] = [(base, '-', '-')];
-	forms['pasv.past.p3.f.sg'] = [(base + 'ت', '-', '-')];
-	forms['pasv.past.p2.m.sg'] = [(base_t + 'ت', '-', '-')];
-	forms['pasv.past.p2.f.sg'] = [(base_t + 'ت', '-', '-')];
-	forms['pasv.past.p1.mf.sg'] = [(base_t + 'ت', '-', '-')];
-
-	forms['pasv.past.p3.m.du'] = [(base + 'ا', '-', '-')];
-	forms['pasv.past.p3.f.du'] = [(base + 'تا', '-', '-')];
-	forms['pasv.past.p2.mf.du'] = [(base_t + 'تما', '-', '-')];
-
-	forms['pasv.past.p3.m.pl'] = [(base + 'وا', '-', '-')];
-	forms['pasv.past.p3.f.pl'] = [(base_n + 'ن', '-', '-')];
-	forms['pasv.past.p2.m.pl'] = [(base_t + 'تم', '-', '-')];
-	forms['pasv.past.p2.f.pl'] = [(base_t + 'تن', '-', '-')];
-	forms['pasv.past.p1.mf.pl'] = [(base_n + 'نا', '-', '-')];
 
 	return forms;
 #}
@@ -104,25 +106,25 @@ def sound_pres(base, base_n, tv): #{
 		forms['actv.pres.p2.m.pl'] = [('ت' + base + 'ون', '-', '-'), ('ت' + base + 'و', 'S__فتح/ه', '-')];
 		forms['actv.pres.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', 'S__فتح/ه', '-')];
 		forms['actv.pres.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, 'S__فتح/ه', '-')];
+
+
+		forms['pasv.pres.p3.m.sg'] = [('ي' + base, '-', '-')];
+		forms['pasv.pres.p3.f.sg'] = [('ت' + base, '-', '-')];
+		forms['pasv.pres.p2.m.sg'] = [('ت' + base, '-', '-')];
+		forms['pasv.pres.p2.f.sg'] = [('ت' + base + 'ين', '-', '-')];
+		forms['pasv.pres.p1.mf.sg'] = [('أ' + base, '-', '-')];
+
+		forms['pasv.pres.p3.m.du'] = [('ي' + base + 'ان', '-', '-')];
+		forms['pasv.pres.p3.f.du'] = [('ت' + base + 'ان', '-', '-')];
+		forms['pasv.pres.p2.mf.du'] = [('ت' + base + 'ان', '-', '-')];
+
+		forms['pasv.pres.p3.m.pl'] = [('ي' + base + 'ون', '-', '-')];
+		forms['pasv.pres.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-')];
+		forms['pasv.pres.p2.m.pl'] = [('ت' + base + 'ون', '-', '-')];
+		forms['pasv.pres.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-')];
+		forms['pasv.pres.p1.mf.pl'] = [('ن' + base, '-', '-')];
+
 	#}
-
-	# passive - all verbs or only transitive verbs?
-
-	forms['pasv.pres.p3.m.sg'] = [('ي' + base, '-', '-')];
-	forms['pasv.pres.p3.f.sg'] = [('ت' + base, '-', '-')];
-	forms['pasv.pres.p2.m.sg'] = [('ت' + base, '-', '-')];
-	forms['pasv.pres.p2.f.sg'] = [('ت' + base + 'ين', '-', '-')];
-	forms['pasv.pres.p1.mf.sg'] = [('أ' + base, '-', '-')];
-
-	forms['pasv.pres.p3.m.du'] = [('ي' + base + 'ان', '-', '-')];
-	forms['pasv.pres.p3.f.du'] = [('ت' + base + 'ان', '-', '-')];
-	forms['pasv.pres.p2.mf.du'] = [('ت' + base + 'ان', '-', '-')];
-
-	forms['pasv.pres.p3.m.pl'] = [('ي' + base + 'ون', '-', '-')];
-	forms['pasv.pres.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-')];
-	forms['pasv.pres.p2.m.pl'] = [('ت' + base + 'ون', '-', '-')];
-	forms['pasv.pres.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-')];
-	forms['pasv.pres.p1.mf.pl'] = [('ن' + base, '-', '-')];
 
 	return forms;
 #}
@@ -165,23 +167,25 @@ def sound_subjun(base, base_n, tv): #{
 		forms['actv.subjun.p2.m.pl'] = [('ت' + base + 'وا', '-', '-'), ('ت' + base + 'و', 'S__فتح/ه', '-')];
 		forms['actv.subjun.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', 'S__فتح/ه', '-')];
 		forms['actv.subjun.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, 'S__فتح/ه', '-')];
+
+
+		forms['pasv.subjun.p3.m.sg'] = [('ي' + base, '-', '-')];
+		forms['pasv.subjun.p3.f.sg'] = [('ت' + base, '-', '-')];
+		forms['pasv.subjun.p2.m.sg'] = [('ت' + base, '-', '-')];
+		forms['pasv.subjun.p2.f.sg'] = [('ت' + base + 'ي', '-', '-')];
+		forms['pasv.subjun.p1.mf.sg'] = [('أ' + base, '-', '-')];
+
+		forms['pasv.subjun.p3.m.du'] = [('ي' + base + 'ا', '-', '-')];
+		forms['pasv.subjun.p3.f.du'] = [('ت' + base + 'ا', '-', '-')];
+		forms['pasv.subjun.p2.mf.du'] = [('ت' + base + 'ا', '-', '-')];
+
+		forms['pasv.subjun.p3.m.pl'] = [('ي' + base + 'وا', '-', '-')];
+		forms['pasv.subjun.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-')];
+		forms['pasv.subjun.p2.m.pl'] = [('ت' + base + 'وا', '-', '-')];
+		forms['pasv.subjun.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-')];
+		forms['pasv.subjun.p1.mf.pl'] = [('ن' + base, '-', '-')];
+
 	#}
-
-	forms['pasv.subjun.p3.m.sg'] = [('ي' + base, '-', '-')];
-	forms['pasv.subjun.p3.f.sg'] = [('ت' + base, '-', '-')];
-	forms['pasv.subjun.p2.m.sg'] = [('ت' + base, '-', '-')];
-	forms['pasv.subjun.p2.f.sg'] = [('ت' + base + 'ي', '-', '-')];
-	forms['pasv.subjun.p1.mf.sg'] = [('أ' + base, '-', '-')];
-
-	forms['pasv.subjun.p3.m.du'] = [('ي' + base + 'ا', '-', '-')];
-	forms['pasv.subjun.p3.f.du'] = [('ت' + base + 'ا', '-', '-')];
-	forms['pasv.subjun.p2.mf.du'] = [('ت' + base + 'ا', '-', '-')];
-
-	forms['pasv.subjun.p3.m.pl'] = [('ي' + base + 'وا', '-', '-')];
-	forms['pasv.subjun.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-')];
-	forms['pasv.subjun.p2.m.pl'] = [('ت' + base + 'وا', '-', '-')];
-	forms['pasv.subjun.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-')];
-	forms['pasv.subjun.p1.mf.pl'] = [('ن' + base, '-', '-')];
 
 	return forms;
 #}
@@ -224,23 +228,25 @@ def sound_apocop(base, base_n, tv): #{
 		forms['actv.apocop.p2.m.pl'] = [('ت' + base + 'وا', '-', '-'), ('ت' + base + 'و', 'S__فتح/ه', '-')];
 		forms['actv.apocop.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', 'S__فتح/ه', '-')];
 		forms['actv.apocop.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, 'S__فتح/ه', '-')];
+
+
+		forms['pasv.apocop.p3.m.sg'] = [('ي' + base, '-', '-')];
+		forms['pasv.apocop.p3.f.sg'] = [('ت' + base, '-', '-')];
+		forms['pasv.apocop.p2.m.sg'] = [('ت' + base, '-', '-')];
+		forms['pasv.apocop.p2.f.sg'] = [('ت' + base + 'ي', '-', '-')];
+		forms['pasv.apocop.p1.mf.sg'] = [('أ' + base, '-', '-')];
+
+		forms['pasv.apocop.p3.m.du'] = [('ي' + base + 'ا', '-', '-')];
+		forms['pasv.apocop.p3.f.du'] = [('ت' + base + 'ا', '-', '-')];
+		forms['pasv.apocop.p2.mf.du'] = [('ت' + base + 'ا', '-', '-')];
+
+		forms['pasv.apocop.p3.m.pl'] = [('ي' + base + 'وا', '-', '-')];
+		forms['pasv.apocop.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-')];
+		forms['pasv.apocop.p2.m.pl'] = [('ت' + base + 'وا', '-', '-')];
+		forms['pasv.apocop.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-')];
+		forms['pasv.apocop.p1.mf.pl'] = [('ن' + base, '-', '-')];
+
 	#}
-
-	forms['pasv.apocop.p3.m.sg'] = [('ي' + base, '-', '-')];
-	forms['pasv.apocop.p3.f.sg'] = [('ت' + base, '-', '-')];
-	forms['pasv.apocop.p2.m.sg'] = [('ت' + base, '-', '-')];
-	forms['pasv.apocop.p2.f.sg'] = [('ت' + base + 'ي', '-', '-')];
-	forms['pasv.apocop.p1.mf.sg'] = [('أ' + base, '-', '-')];
-
-	forms['pasv.apocop.p3.m.du'] = [('ي' + base + 'ا', '-', '-')];
-	forms['pasv.apocop.p3.f.du'] = [('ت' + base + 'ا', '-', '-')];
-	forms['pasv.apocop.p2.mf.du'] = [('ت' + base + 'ا', '-', '-')];
-
-	forms['pasv.apocop.p3.m.pl'] = [('ي' + base + 'وا', '-', '-')];
-	forms['pasv.apocop.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-')];
-	forms['pasv.apocop.p2.m.pl'] = [('ت' + base + 'وا', '-', '-')];
-	forms['pasv.apocop.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-')];
-	forms['pasv.apocop.p1.mf.pl'] = [('ن' + base, '-', '-')];
 
 	return forms;
 #}
@@ -935,6 +941,427 @@ def sound_patt6_pprs(root): #{
 
 
 ## ----------------------------------------------------------------------------##
+## pattern 7
+## ----------------------------------------------------------------------------##
+
+
+def sound_patt7_past(root, tv): #{
+	r = root.split('-'); # radicals
+
+	base = 'ان' + r[0] + r[1] + r[2];
+
+	if r[2] == 'ت' :
+		base_t = 'ان' + r[0] + r[1];
+	else :
+		base_t = 'ان' + r[0] + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = 'ان' + r[0] + r[1];
+	else :
+		base_n = 'ان' + r[0] + r[1] + r[2];
+
+	return sound_past(base, base_t, base_n, tv);
+#}
+
+
+def sound_patt7_pres(root, tv): #{
+	r = root.split('-'); # radicals
+
+	base = 'ن' + r[0] + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = 'ن' + r[0] + r[1];
+	else :
+		base_n = 'ن' + r[0] + r[1] + r[2];
+
+	return sound_pres(base, base_n, tv);
+#}
+
+
+def sound_patt7_subjun(root, tv): #{
+	r = root.split('-'); # radicals
+
+	base = 'ن' + r[0] + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = 'ن' + r[0] + r[1];
+	else :
+		base_n = 'ن' + r[0] + r[1] + r[2];
+
+	return sound_subjun(base, base_n, tv);
+#}
+
+
+def sound_patt7_apocop(root, tv): #{
+	r = root.split('-'); # radicals
+
+	base = 'ن' + r[0] + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = 'ن' + r[0] + r[1];
+	else :
+		base_n = 'ن' + r[0] + r[1] + r[2];
+
+	return sound_apocop(base, base_n, tv);
+#}
+
+
+def sound_patt7_imp(root, tv): #{
+	r = root.split('-'); # radicals
+
+	base = 'ان' + r[0] + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = 'ان' + r[0] + r[1];
+	else :
+		base_n = 'ان' + r[0] + r[1] + r[2];
+
+	return sound_imp(base, base_n, tv); 
+#}
+
+
+def sound_patt7_pp(root): #{
+	r = root.split('-'); # radicals
+
+	forms = {};
+
+	forms['pp.m.sg'] = [('من' + r[0] + r[1] + r[2], '-', '-')] ;
+	forms['pp.f.sg'] = [('من' + r[0] + r[1] + r[2] + 'ة', '-', '-')] ;
+	forms['pp.m.pl'] = [('من' + r[0] + r[1] + r[2] + 'ون', '-', '-')] ;
+	forms['pp.f.pl'] = [('من' + r[0] + r[1] + r[2] + 'ات', '-', '-')] ;
+
+	return forms;
+#}
+
+
+# very rare?
+def sound_patt7_pprs(root): #{
+	r = root.split('-'); # radicals
+
+	forms = {};
+
+	forms['pp.m.sg'] = [('من' + r[0] + r[1] + r[2], '-', '-')] ;
+	forms['pp.f.sg'] = [('من' + r[0] + r[1] + r[2] + 'ة', '-', '-')] ;
+	forms['pp.m.pl'] = [('من' + r[0] + r[1] + r[2] + 'ون', '-', '-')] ;
+	forms['pp.f.pl'] = [('من' + r[0] + r[1] + r[2] + 'ات', '-', '-')] ;
+
+	return forms;
+
+#}
+
+
+
+## ----------------------------------------------------------------------------##
+## pattern 8
+## ----------------------------------------------------------------------------##
+
+
+def sound_patt8_past(root, tv): #{
+	r = root.split('-'); # radicals
+
+	base_start = 'ا' + r[0] + 'ت';
+	# with ذ assimilation may be partial (د)
+	if (r[0] == 'ط') or (r[0] == 'د') or (r[0] == 'ذ') or (r[0] == 'ظ') :
+		base_start = 'ا' + r[0];
+	elif (r[0] == 'ص') or (r[0] == 'ض') :
+		base_start = 'ا' + r[0] + 'ط';
+	elif (r[0] == 'ز') :
+		base_start = 'ا' + r[0] + 'د';
+	
+	base = base_start + r[1] + r[2];
+
+	if r[2] == 'ت' :
+		base_t = base_start + r[1];
+	else :
+		base_t = base_start + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = base_start + r[1];
+	else :
+		base_n = base_start + r[1] + r[2];
+
+
+	return sound_past(base, base_t, base_n, tv);
+#}
+
+
+def sound_patt8_pres(root, tv): #{
+	r = root.split('-'); # radicals
+
+	base_start = r[0] + 'ت';
+	# with ذ assimilation may be partial (د)
+	if (r[0] == 'ط') or (r[0] == 'د') or (r[0] == 'ذ') or (r[0] == 'ظ') :
+		base_start = r[0];
+	elif (r[0] == 'ص') or (r[0] == 'ض') :
+		base_start = r[0] + 'ط';
+	elif (r[0] == 'ز') :
+		base_start = r[0] + 'د';
+	
+	base = base_start + r[1] + r[2];
+
+	if r[2] == 'ت' :
+		base_t = base_start + r[1];
+	else :
+		base_t = base_start + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = base_start + r[1];
+	else :
+		base_n = base_start + r[1] + r[2];
+
+
+	return sound_pres(base, base_n, tv);
+#}
+
+
+def sound_patt8_subjun(root, tv): #{
+	r = root.split('-'); # radicals
+
+	base_start = r[0] + 'ت';
+	# with ذ assimilation may be partial (د)
+	if (r[0] == 'ط') or (r[0] == 'د') or (r[0] == 'ذ') or (r[0] == 'ظ') :
+		base_start = r[0];
+	elif (r[0] == 'ص') or (r[0] == 'ض') :
+		base_start = r[0] + 'ط';
+	elif (r[0] == 'ز') :
+		base_start = r[0] + 'د';
+	
+	base = base_start + r[1] + r[2];
+
+	if r[2] == 'ت' :
+		base_t = base_start + r[1];
+	else :
+		base_t = base_start + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = base_start + r[1];
+	else :
+		base_n = base_start + r[1] + r[2];
+
+
+	return sound_subjun(base, base_n, tv);
+#}
+
+
+def sound_patt8_apocop(root, tv): #{
+	r = root.split('-'); # radicals
+
+	base_start = r[0] + 'ت';
+	# with ذ assimilation may be partial (د)
+	if (r[0] == 'ط') or (r[0] == 'د') or (r[0] == 'ذ') or (r[0] == 'ظ') :
+		base_start = r[0];
+	elif (r[0] == 'ص') or (r[0] == 'ض') :
+		base_start = r[0] + 'ط';
+	elif (r[0] == 'ز') :
+		base_start = r[0] + 'د';
+	
+	base = base_start + r[1] + r[2];
+
+	if r[2] == 'ت' :
+		base_t = base_start + r[1];
+	else :
+		base_t = base_start + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = base_start + r[1];
+	else :
+		base_n = base_start + r[1] + r[2];
+
+
+	return sound_apocop(base, base_n, tv);
+#}
+
+
+def sound_patt8_imp(root, tv): #{
+	r = root.split('-'); # radicals
+
+
+	base_start = 'ا' + r[0] + 'ت';
+	# with ذ assimilation may be partial (د)
+	if (r[0] == 'ط') or (r[0] == 'د') or (r[0] == 'ذ') or (r[0] == 'ظ') :
+		base_start = 'ا' + r[0];
+	elif (r[0] == 'ص') or (r[0] == 'ض') :
+		base_start = 'ا' + r[0] + 'ط';
+	elif (r[0] == 'ز') :
+		base_start = 'ا' + r[0] + 'د';
+	
+	base = base_start + r[1] + r[2];
+
+	if r[2] == 'ت' :
+		base_t = base_start + r[1];
+	else :
+		base_t = base_start + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = base_start + r[1];
+	else :
+		base_n = base_start + r[1] + r[2];
+
+
+	return sound_imp(base, base_n, tv); 
+#}
+
+
+def sound_patt8_pp(root): #{
+	r = root.split('-'); # radicals
+
+	base = r[0] + 'ت' + r[1] + r[2];
+	# with ذ assimilation may be partial (د)
+	if (r[0] == 'ط') or (r[0] == 'د') or (r[0] == 'ذ') or (r[0] == 'ظ') :
+		base = r[0] + r[1] + r[2];
+	elif (r[0] == 'ص') or (r[0] == 'ض') :
+		base = r[0] + 'ط' + r[1] + r[2];
+	elif (r[0] == 'ز') :
+		base = r[0] + 'د' + r[1] + r[2];
+
+	forms = {};
+
+	forms['pp.m.sg'] = [('م' + base, '-', '-')] ;
+	forms['pp.f.sg'] = [('م' + base + 'ة', '-', '-')] ;
+	forms['pp.m.pl'] = [('م' + base + 'ون', '-', '-')] ;
+	forms['pp.f.pl'] = [('م' + base + 'ات', '-', '-')] ;
+
+	return forms;
+#}
+
+
+# very rare?
+def sound_patt8_pprs(root): #{
+	r = root.split('-'); # radicals
+
+	base = r[0] + 'ت' + r[1] + r[2];
+	# with ذ assimilation may be partial (د)
+	if (r[0] == 'ط') or (r[0] == 'د') or (r[0] == 'ذ') or (r[0] == 'ظ') :
+		base = r[0] + r[1] + r[2];
+	elif (r[0] == 'ص') or (r[0] == 'ض') :
+		base = r[0] + 'ط' + r[1] + r[2];
+	elif (r[0] == 'ز') :
+		base = r[0] + 'د' + r[1] + r[2];
+
+	forms = {};
+
+	forms['pp.m.sg'] = [('م' + base, '-', '-')] ;
+	forms['pp.f.sg'] = [('م' + base + 'ة', '-', '-')] ;
+	forms['pp.m.pl'] = [('م' + base + 'ون', '-', '-')] ;
+	forms['pp.f.pl'] = [('م' + base + 'ات', '-', '-')] ;
+
+	return forms;
+
+#}
+
+
+
+## ----------------------------------------------------------------------------##
+## pattern 10
+## ----------------------------------------------------------------------------##
+
+
+def sound_patt10_past(root, tv): #{
+	r = root.split('-'); # radicals
+
+	base = 'است' + r[0] + r[1] + r[2];
+
+	if r[2] == 'ت' :
+		base_t = 'است' + r[0] + r[1];
+	else :
+		base_t = 'است' + r[0] + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = 'است' + r[0] + r[1];
+	else :
+		base_n = 'است' + r[0] + r[1] + r[2];
+
+	return sound_past(base, base_t, base_n, tv);
+#}
+
+
+def sound_patt10_pres(root, tv): #{
+	r = root.split('-'); # radicals
+
+	base = 'ست' + r[0] + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = 'ست' + r[0] + r[1];
+	else :
+		base_n = 'ست' + r[0] + r[1] + r[2];
+
+	return sound_pres(base, base_n, tv);
+#}
+
+
+def sound_patt10_subjun(root, tv): #{
+	r = root.split('-'); # radicals
+
+	base = 'ست' + r[0] + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = 'ست' + r[0] + r[1];
+	else :
+		base_n = 'ست' + r[0] + r[1] + r[2];
+
+	return sound_subjun(base, base_n, tv);
+#}
+
+
+def sound_patt10_apocop(root, tv): #{
+	r = root.split('-'); # radicals
+
+	base = 'ست' + r[0] + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = 'ست' + r[0] + r[1];
+	else :
+		base_n = 'ست' + r[0] + r[1] + r[2];
+
+	return sound_apocop(base, base_n, tv);
+#}
+
+
+def sound_patt10_imp(root, tv): #{
+	r = root.split('-'); # radicals
+
+	base = 'است' + r[0] + r[1] + r[2];
+
+	if r[2] == 'ن' :
+		base_n = 'است' + r[0] + r[1];
+	else :
+		base_n = 'است' + r[0] + r[1] + r[2];
+
+	return sound_imp(base, base_n, tv); 
+#}
+
+
+def sound_patt10_pp(root): #{
+	r = root.split('-'); # radicals
+
+	forms = {};
+
+	forms['pp.m.sg'] = [('مست' + r[0] + r[1] + r[2], '-', '-')] ;
+	forms['pp.f.sg'] = [('مست' + r[0] + r[1] + r[2] + 'ة', '-', '-')] ;
+	forms['pp.m.pl'] = [('مست' + r[0] + r[1] + r[2] + 'ون', '-', '-')] ;
+	forms['pp.f.pl'] = [('مست' + r[0] + r[1] + r[2] + 'ات', '-', '-')] ;
+
+	return forms;
+#}
+
+
+def sound_patt10_pprs(root): #{
+	r = root.split('-'); # radicals
+
+	forms = {};
+
+	forms['pp.m.sg'] = [('مست' + r[0] + r[1] + r[2], '-', '-')] ;
+	forms['pp.f.sg'] = [('مست' + r[0] + r[1] + r[2] + 'ة', '-', '-')] ;
+	forms['pp.m.pl'] = [('مست' + r[0] + r[1] + r[2] + 'ون', '-', '-')] ;
+	forms['pp.f.pl'] = [('مست' + r[0] + r[1] + r[2] + 'ات', '-', '-')] ;
+
+	return forms;
+
+#}
+
+
+
+## ----------------------------------------------------------------------------##
 ## main
 ## ----------------------------------------------------------------------------##
 
@@ -996,6 +1423,24 @@ def main(stem): #{
 		forms.update(sound_patt6_imp(stem['root'], stem['trans']));
 		forms.update(sound_patt6_pp(stem['root']));
 		forms.update(sound_patt6_pprs(stem['root']));
+	#}
+	elif stem['theme'] == '7' : #{
+		forms.update(sound_patt7_past(stem['root'], stem['trans']));
+		forms.update(sound_patt7_pres(stem['root'], stem['trans']));
+		forms.update(sound_patt7_subjun(stem['root'], stem['trans']));
+		forms.update(sound_patt7_apocop(stem['root'], stem['trans']));
+		forms.update(sound_patt7_imp(stem['root'], stem['trans']));
+		forms.update(sound_patt7_pp(stem['root']));
+		forms.update(sound_patt7_pprs(stem['root']));
+	#}
+	elif stem['theme'] == '10' : #{
+		forms.update(sound_patt10_past(stem['root'], stem['trans']));
+		forms.update(sound_patt10_pres(stem['root'], stem['trans']));
+		forms.update(sound_patt10_subjun(stem['root'], stem['trans']));
+		forms.update(sound_patt10_apocop(stem['root'], stem['trans']));
+		forms.update(sound_patt10_imp(stem['root'], stem['trans']));
+		forms.update(sound_patt10_pp(stem['root']));
+		forms.update(sound_patt10_pprs(stem['root']));
 	#}
 
 	return forms;
