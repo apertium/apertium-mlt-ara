@@ -76,4 +76,10 @@
 | ikkonsidra || vblex || loan || double_cons || consider || kkonsidr ||  || i || tv || konsidrat
 |-
 | ivvota || vblex || loan || double_cons || vote || vvot ||  || a || tv || vvotat
+|-
+| spiċċa || vblex || loan || two_cons || finish || spiċċ ||  || a || tv || spiċċat
+|-
+| rċieva || vblex || loan || two_cons || receive || rċiev ||  || a || tv || rċievut
+|-
+| poġġa || vblex || loan || first_cons || sit || poġġ ||  || i || iv || poġġut
 |}

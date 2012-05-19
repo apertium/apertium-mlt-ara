@@ -1457,14 +1457,14 @@
      <e><p><l>kien<s n="vaux"/><s n="iv"/></l><r>كان<s n="vaux"/><s n="iv"/></r></p></e>
      <e><p><l>għad<s n="vaux"/></l><r>ما<b/>زال<s n="vaux"/></r></p></e> 
 
-     <e><p><l>ħabb<s n="vblex"/></l><r>حب<s n="vblex"/></r></p></e>
+     <e><p><l>ħabb<s n="vblex"/><s n="tv"/></l><r>أحب<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>seta<s n="vblex"/><s n="tv"/></l><r>استطاع<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>ried<s n="vblex"/><s n="tv"/></l><r>أراد<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>ipprova<s n="vblex"/><s n="tv"/></l><r>حاول<s n="vblex"/><s n="tv"/></r></p></e>
 
-     <e><p><l>lagħab<s n="vblex"/><s n="iv"/></l><r>لعب<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>lagħab<s n="vblex"/><s n="tv"/></l><r>لعب<s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>mexa<s n="vblex"/><s n="tv"/></l><r>مشى<s n="vblex"/><s n="iv"/></r></p></e>
-     <e><p><l>spiċċa<s n="vblex"/><s n="TD"/></l><r>أنهى<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>spiċċa<s n="vblex"/><s n="tv"/></l><r>أنهى<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>għadd<s n="vblex"/><s n="tv"/></l><r>عد<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>ħares<s n="vblex"/><s n="TD"/></l><r>نظر<s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>mar<s n="vblex"/><s n="tv"/></l><r>ذهب<s n="vblex"/><s n="iv"/></r></p></e>
@@ -1472,15 +1472,15 @@
      <e c="  0"><p><l>ġara<s n="vblex"/><s n="iv"/></l><r>جرى<s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>ra<s n="vblex"/><s n="tv"/></l><r>رأى<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>nħeba<s n="vblex"/><s n="iv"/></l><r>اختبأ<s n="vblex"/><s n="iv"/></r></p></e>
-     <e><p><l>poġġa<s n="vblex"/><s n="TD"/></l><r>جلس<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>poġġa<s n="vblex"/><s n="iv"/></l><r>جلس<s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>jaf<s n="vblex"/><s n="tv"/></l><r>عرف<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>għamel<s n="vblex"/><s n="tv"/></l><r>فعل<s n="vblex"/><s n="tv"/></r></p></e>
-     <e><p><l>fittex<s n="vblex"/><s n="TD"/></l><r>بحث<b/>عن<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>fittex<s n="vblex"/><s n="tv"/></l><r>بحث<b/>عن<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>staqsa<s n="vblex"/><s n="TD"/></l><r>سأل<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>tkellem<s n="vblex"/><s n="iv"/></l><r>تكلم<s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>rċieva<s n="vblex"/><s n="tv"/></l><r>حصل<b/>على<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>daħak<s n="vblex"/><s n="tv"/></l><r>ضحك<s n="vblex"/><s n="iv"/></r></p></e> <!-- tv? -->
-     <e><p><l>ħaseb<s n="vblex"/><s n="iv"/></l><r>فكر<s n="vblex"/><s n="iv"/></r></p></e>
+     <e><p><l>ħaseb<s n="vblex"/><s n="tv"/></l><r>فكر<s n="vblex"/><s n="iv"/></r></p></e>
 <!--     <e><p><l>ħaseb<s n="vblex"/><s n="tv"/></l><r>فكر<s n="vblex"/><s n="iv"/></r></p></e>  consider -->
      <e><p><l>qal<b/>lil<s n="vblex"/></l><r>قال<b/>ل<s n="vblex"/></r></p></e>
      <e><p><l>qal<s n="vblex"/><s n="tv"/></l><r>قال<s n="vblex"/><s n="tv"/></r></p></e>
@@ -1490,10 +1490,10 @@
      <e><p><l>xorob<s n="vblex"/><s n="tv"/></l><r>شرب<s n="vblex"/><s n="tv"/></r></p></e>
      <e c="  0"><p><l>wasal<s n="vblex"/><s n="iv"/></l><r>حان<s n="vblex"/><s n="iv"/></r></p></e>
      <e slr="1"><p><l>wasal<s n="vblex"/><s n="iv"/></l><r>وصل<s n="vblex"/><s n="iv"/></r></p></e>
-     <e><p><l>sama'<s n="vblex"/><s n="tv"/></l><r>سمع<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>sama<s n="vblex"/><s n="tv"/></l><r>سمع<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>issemma'<s n="vblex"/><s n="TD"/></l><r>استمع<s n="vblex"/><s n="TD"/></r></p></e>
      <e><p><l>ġie<s n="vblex"/><s n="tv"/></l><r>جاء<s n="vblex"/><s n="iv"/></r></p></e>
-     <e><p><l>reġa'<s n="vblex"/><s n="TD"/></l><r>رجع<s n="vblex"/><s n="tv"/></r></p></e>
+     <e><p><l>reġa<s n="vblex"/><s n="tv"/></l><r>رجع<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>kiel<s n="vblex"/><s n="tv"/></l><r>أكل<s n="vblex"/><s n="tv"/></r></p></e>
 
 

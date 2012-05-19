@@ -109,6 +109,10 @@
 |-
 | bela || vblex || strong || 1 || swallow || b-l-għ || e-a || i-a || tv ||  || mi
 |-
+| reġa || vblex || strong || 1 || repeat || r-ġ-għ || e-a || e-a || tv ||  || me
+|-
+| sama || vblex || strong || 1 || hear || s-m-għ || a-a || i-a || tv ||  || mi
+|-
 | ħareġ || vblex || strong || 1 || go·out || ħ-r-ġ || a-e || o-o || iv ||  || ma
 |-
 | ħareġ || vblex || strong || 1 || take·out || ħ-r-ġ || a-e || o-o || tv ||  || ma 
@@ -293,6 +297,8 @@
 |-
 | ċaħħad || vblex || quad || 1 || deprive || ċ-ħ-ħ-d || a-a || a-a || tv ||  || im
 |-
+| fittex || vblex || quad || 1 || seek || f-t-t-x || i-e || i-e || tv ||  || m
+|-
 | tkellem || vblex || quad || 2 || speak || k-l-l-m || e-e || e-e || iv ||  || mi
 |-
 | dar || vblex || hollow || 1 || turn || d-w-r || a-a ||  || iv ||  || mi
@@ -365,7 +371,7 @@
 |-
 | rema || vblex || weak || 1 || throw·away || r-m-j || e-a || a-i || tv ||  || mo
 |-
-| ġara || vblex || weak || 1 || run || ġ-r-j || a-a || a-i || iv ||  || mi
+| ġara || vblex || weak || 1 || run || ġ-r-j || a-a || i-i || iv ||  || mi
 |-
 | radd || vblex || doubled || 1 || restore || r-d-d || a-a || a-o || tv ||  || mi
 |-
@@ -414,6 +420,10 @@
 | ġeżż || vblex || doubled || 1 || shear || ġ-ż-ż || e-e || i-e || tv ||  || mi
 |-
 | kedd || vblex || doubled || 1 || vex || k-d-d || e-e || i-e || tv ||  || mi
+|-
+| ħabb || vblex || doubled || 1 || love || ħ-b-b || a-a || i-o || tv ||  || ma
+|-
+| għadd || vblex || doubled || 1 || count || għ-d-d || a-a || i-o || tv ||  || ma
 |-
 | qaħqaħ || vblex || quad || 1 || cough || q-ħ-q-ħ || a-a || a-a || iv ||  || im
 |-
