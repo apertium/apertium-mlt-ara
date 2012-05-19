@@ -16,6 +16,7 @@
 /autogen.sh -text
 /configure.ac -text
 dev/ar_verbs/classes/__init__.py -text
+dev/ar_verbs/classes/doubled.py -text
 dev/ar_verbs/classes/sound.py -text
 dev/ar_verbs/stems.wiki -text
 dev/ar_verbs/verb.py -text

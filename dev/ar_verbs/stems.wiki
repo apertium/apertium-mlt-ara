@@ -9,22 +9,32 @@
  ! Category 
 
 |-
-| لعب || sound || 1 || play || ل-ع-ب || iv || vblex
+| لعب || vblex || sound || 1 || play || ل-ع-ب || iv 
 |-
-| نظر || sound || 1 || look || ن-ظ-ر || iv || vblex
+| نظر || vblex || sound || 1 || look || ن-ظ-ر || iv 
 |-
-| ذهب || sound || 1 || go || ذ-ه-ب || iv || vblex
+| ذهب || vblex || sound || 1 || go || ذ-ه-ب || iv 
 |-
-| جلس || sound || 1 || sit || ج-ل-س || iv || vblex
+| جلس || vblex || sound || 1 || sit || ج-ل-س || iv
 |-
-| عرف || sound || 1 || know || ع-ر-ف || tv || vblex
+| عرف || vblex || sound || 1 || know || ع-ر-ف || tv 
 |-
-| فعل || sound || 1 || do || ف-ع-ل || tv || vblex
+| فعل || vblex || sound || 1 || do || ف-ع-ل || tv
 |-
-| ضحك || sound || 1 || laugh || ض-ح-ك || iv || vblex
+| ضحك || vblex || sound || 1 || laugh || ض-ح-ك || iv 
 |-
-| شرب || sound || 1 || drink || ش-ر-ب || tv || vblex
+| شرب || vblex || sound || 1 || drink || ش-ر-ب || tv 
 |-
-| سمع || sound || 1 || hear || س-م-ع || iv || vblex
+| سمع || vblex || sound || 1 || hear || س-م-ع || iv 
+|-
+| كتب || vblex || sound || 1 || write || ك-ت-ب || tv 
+|-
+| فكر || vblex || sound || 2 || think || ف-ك-ر || tv 
+|-
+| تكلم || vblex || sound || 5 || speak || ك-ل-م || tv 
+|-
+| عد || vblex || doubled || 1 || count || ع-د-د || tv 
+|-
+| أحب || vblex || doubled || 4 || love || ح-ب-ب || tv 
 |}
 

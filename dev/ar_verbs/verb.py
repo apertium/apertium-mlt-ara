@@ -20,12 +20,19 @@ def header(): #{
 	header = header + '  <sdefs>\n';
 	header = header + '    <sdef n="vblex"/>\n';
 	header = header + '    <sdef n="prn"/>\n';
-	header = header + '    <sdef n="past"/>\n';
 	header = header + '    <sdef n="neg"/>\n';
+	header = header + '    <sdef n="tv"/>\n';
+	header = header + '    <sdef n="iv"/>\n';
+	header = header + '    <sdef n="TD"/>\n';
+	header = header + '    <sdef n="past"/>\n';
 	header = header + '    <sdef n="pres"/>\n';
+	header = header + '    <sdef n="subjun"/>\n';
+	header = header + '    <sdef n="apocop"/>\n';
 	header = header + '    <sdef n="imp"/>\n';
 	header = header + '    <sdef n="pprs"/>\n';
 	header = header + '    <sdef n="pp"/>\n';
+	header = header + '    <sdef n="actv"/>\n';
+	header = header + '    <sdef n="pasv"/>\n';
 	header = header + '    <sdef n="p1"/>\n';
 	header = header + '    <sdef n="p2"/>\n';
 	header = header + '    <sdef n="p3"/>\n';
@@ -76,8 +83,6 @@ def footer(): #{
 
 ##-----------------------------------------------------------------------------##
 
-#tv_with_pprs = [];
-
 if len(sys.argv)>1:
     if '--help' in sys.argv:
         print "Usage: verbs.py stems_file";
@@ -111,10 +116,10 @@ for line in lines: #{
 	row = line.split('||'); 
 
 
-	stem = {'stem': row[0].strip(), 'type': row[1].strip(), 'theme': row[2].strip(), 'gloss': row[3].strip(), 'root': row[4].strip(), 'trans': row[5].strip(), 'cat': row[6].strip()};
+	stem = {'stem': row[0].strip(), 'cat': row[1].strip(), 'type': row[2].strip(), 'theme': row[3].strip(), 'gloss': row[4].strip(), 'root': row[5].strip(), 'trans': row[6].strip()};
 	stems = stems + [stem];
-        if stem['cat'] == 'vaux' :
-                aux_verbs = aux_verbs + [stem['stem']];
+#        if stem['cat'] == 'vaux' :
+#                aux_verbs = aux_verbs + [stem['stem']];
 
 
 #}
@@ -124,6 +129,7 @@ for line in lines: #{
 ##-----------------------------------------------------------------------------##
 
 infl = {};
+verb_cat = {};
 
 for stem in stems: #{
 
@@ -133,13 +139,20 @@ for stem in stems: #{
     	    sys.stderr.write("Error: Missing class '{0}'\n".format(stem['type']));
     	    sys.exit(1);
 
-    	infl[stem['stem']] = stem_class.main(stem);
+    	infl[stem['stem'] + '.' + stem['trans']] = stem_class.main(stem);
+	verb_cat[stem['stem'] + '.' + stem['trans']] = stem['cat'];
+
+#    	infl[stem['stem']] = stem_class.main(stem);
 #}
 
 
 print header().decode('utf-8');
 
 for stem in infl: #{
+
+	s = stem.split('.');
+	stem_stem = s[0];
+	stem_trans = s[1];
 
 	for flex in infl[stem]: #{
 		for subflex in infl[stem][flex]: #{
@@ -155,10 +168,11 @@ for stem in infl: #{
 				a = '<a/>'
 
 			left = subflex[0];
-			if stem in aux_verbs :
-				right = stem + '<s n="vaux"/>' + sym(flex);
-			else :
-				right = stem + '<s n="vblex"/>' + sym(flex);
+			right = '%s<s n="%s"/><s n="%s"/>%s' % (stem_stem, verb_cat[stem], stem_trans, sym(flex));
+#			if stem in aux_verbs :
+#				right = stem + '<s n="vaux"/>' + sym(flex);
+#			else :
+#				right = stem + '<s n="vblex"/>' + sym(flex);
 			paradigm = subflex[1];
 
 			if paradigm == "-": # no suffix
