@@ -31,7 +31,27 @@
 |-
 | فكر || vblex || sound || 2 || think || ف-ك-ر || tv 
 |-
+| غادر || vblex || sound || 3 || leave || غ-د-ر || tv 
+|-
+| ساعد || vblex || sound || 3 || help || س-ع-د || tv 
+|-
+| شارك || vblex || sound || 3 || participate || ش-ر-ك || tv 
+|-
+| أحضر || vblex || sound || 4 || bring || ح-ض-ر || tv 
+|-
+| أخرج || vblex || sound || 4 || take·out || خ-ر-ج || tv 
+|-
+| أغلق || vblex || sound || 4 || close || غ-ل-ق || tv 
+|-
 | تكلم || vblex || sound || 5 || speak || ك-ل-م || tv 
+|-
+| تراجع || vblex || sound || 6 || recede || ر-ج-ع || iv
+|-
+| تفاعل || vblex || sound || 6 || interact || ف-ع-ل || iv 
+|-
+| انخفض || vblex || sound || 7 || decrease || خ-ف-ض || iv 
+|-
+| اقترب || vblex || sound || 8 || approach || ق-ر-ب || iv 
 |-
 | عد || vblex || doubled || 1 || count || ع-د-د || tv 
 |-
