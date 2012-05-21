@@ -53,6 +53,8 @@
 |-
 | اقترب || vblex || sound || 8 || approach || ق-ر-ب || iv 
 |-
+| اكتشف || vblex || sound || 8 || discover || ك-ش-ف || tv 
+|-
 | عد || vblex || doubled || 1 || count || ع-د-د || tv 
 |-
 | أحب || vblex || doubled || 4 || love || ح-ب-ب || tv 

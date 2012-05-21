@@ -1124,6 +1124,8 @@ def sound_patt7_past(root, tv): #{
 		base_n = 'ان' + r[0] + r[1] + r[2];
 
 	return sound_past_actv(base, base_t, base_n, tv);
+
+	return forms;
 #}
 
 
@@ -1136,6 +1138,7 @@ def sound_patt7_pres(root, tv): #{
 		base_n = 'ن' + r[0] + r[1];
 	else :
 		base_n = 'ن' + r[0] + r[1] + r[2];
+
 
 	return sound_pres_actv(base, base_n, tv);
 #}
@@ -1244,7 +1247,12 @@ def sound_patt8_past(root, tv): #{
 		base_n = base_start + r[1] + r[2];
 
 
-	return sound_past_actv(base, base_t, base_n, tv);
+	forms = sound_past_actv(base, base_t, base_n, tv);
+	if (tv == 'tv') : #{
+		forms.update(sound_past_pasv(base, base_t, base_n));
+	#}
+
+	return forms;
 #}
 
 
@@ -1272,8 +1280,12 @@ def sound_patt8_pres(root, tv): #{
 	else :
 		base_n = base_start + r[1] + r[2];
 
+	forms = sound_pres_actv(base, base_n, tv);
+	if (tv == 'tv') : #{
+		forms.update(sound_pres_pasv(base, base_n));
+	#}
 
-	return sound_pres_actv(base, base_n, tv);
+	return forms;
 #}
 
 
@@ -1302,7 +1314,12 @@ def sound_patt8_subjun(root, tv): #{
 		base_n = base_start + r[1] + r[2];
 
 
-	return sound_subjun_actv(base, base_n, tv);
+	forms = sound_subjun_actv(base, base_n, tv);
+	if (tv == 'tv') : #{
+		forms.update(sound_subjun_pasv(base, base_n));
+	#}
+
+	return forms;
 #}
 
 
@@ -1331,7 +1348,12 @@ def sound_patt8_apocop(root, tv): #{
 		base_n = base_start + r[1] + r[2];
 
 
-	return sound_apocop_actv(base, base_n, tv);
+	forms = sound_apocop_actv(base, base_n, tv);
+	if (tv == 'tv') : #{
+		forms.update(sound_apocop_pasv(base, base_n));
+	#}
+
+	return forms;
 #}
 
 
