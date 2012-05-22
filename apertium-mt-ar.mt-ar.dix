@@ -173,21 +173,28 @@
      <e r="RL"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
 
 
-<!--     <e><p><l>lu<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/></r></p></e>
-     <e><p><l>lu<s n="prn"/><s n="p2"/></l><r>prpers<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f"/></e> 
-     <e><p><l>lu<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-     <e><p><l>lu<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-     <e r="LR"><p><l>lu<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
-     <e r="RL"><p><l>lu<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
-     <e r="RL"><p><l>lu<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+     <!-- no indirect object suffixes in Arabic, translate as
+	  preposition ل 'for' + pronominal suffix -->
+     <e><p><l>lu<s n="prn"/><s n="p1"/><s n="mf"/></l><r>ل<s n="pr"/><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/></r></p></e>
+     <e><p><l>lu<s n="prn"/><s n="p2"/></l><r>ل<s n="pr"/><j/>ه<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f"/></e> 
+     <e><p><l>lu<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>ل<s n="pr"/><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+     <e><p><l>lu<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>ل<s n="pr"/><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+     <e r="LR"><p><l>lu<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>ل<s n="pr"/><j/>ه<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
+     <!-- no RL rules needed? will be translated simply as prep + prn --> 
+<!--     <e r="RL"><p><l>lu<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+     <e r="RL"><p><l>lu<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e> --> 
 
-     <e><p><l>u<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/></r></p></e>
-     <e><p><l>u<s n="prn"/><s n="p2"/></l><r>prpers<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f"/></e> 
-     <e><p><l>u<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-     <e><p><l>u<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-     <e r="LR"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
-     <e r="RL"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
-     <e r="RL"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e> -->
+     <!-- if no other rule applies, use free-standing direct object Arabic prn -->
+     <!-- TODO add Arabic dual -->
+     <e><p><l>u<s n="prn"/><s n="p1"/><s n="mf"/></l><r>إيا<s n="prn"/><s n="p1"/><s n="mf"/></r></p></e>
+     <e><p><l>u<s n="prn"/><s n="p2"/></l><r>إيا<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f"/></e> 
+     <e><p><l>u<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+     <e><p><l>u<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+
+     <e r="LR"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
+     <!-- hm, what should be done with RL?? -->
+<!--     <e r="RL"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+     <e r="RL"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e> -->
 
 
      <e><p><l>li<s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></l><r>أن<s n="cnjsub"/></r></p></e>

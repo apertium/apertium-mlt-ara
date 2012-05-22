@@ -20,11 +20,13 @@
     <sdef n="m"           c="Masculine"/>
     <sdef n="f"           c="Feminine"/>
     <sdef n="mf"          c="Masculine / feminine"/>
+    <sdef n="genacc"      c="Genitive / Accusative"/>
+
 
     <sdef n="nom"         c="Nominative"/>
     <sdef n="gen"         c="Genitive"/>
     <sdef n="acc"         c="Accusative"/>
-    <sdef n="genacc"      c="Genitive / Accusative"/>
+    <sdef n="GD"      c="Gender to be determined"/>
 
     <sdef n="top"         c="Toponym"/>
     <sdef n="ant"         c="Anthroponym"/>
@@ -149,10 +151,131 @@
     </pardef>
 
 
+
+    <!-- SECTION: Pronouns -->
+
+    <pardef n="prsubj__prn">
+      <e><p><l>أنا</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e><p><l>نحن</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e><p><l>أنت</l><r>prpers<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l>أنت</l><r>prpers<s n="prn"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>أنتم</l><r>prpers<s n="prn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>أنتن</l><r>prpers<s n="prn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>هو</l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l>هي</l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>هم</l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>هن</l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
+
+
+    <pardef n="ه__prn">
+      <e><p><l>ي</l><r><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e><p><l>ك</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l>ك</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>ك</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="GD"/><s n="sg"/></r></p></e>
+      <e><p><l>ه</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l>ها</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>كما</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+      <e><p><l>هما</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="mf"/><s n="du"/></r></p></e>
+      <e><p><l>نا</l><r><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e><p><l>كم</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>كن</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>هم</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>هن</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
+
+
+    <pardef n="ي/ه__prn">
+      <e><p><l></l><r><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e><p><l>ك</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l>ك</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>ك</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="GD"/><s n="sg"/></r></p></e>
+      <e><p><l>ه</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l>ها</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>كما</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+      <e><p><l>هما</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="mf"/><s n="du"/></r></p></e>
+      <e><p><l>نا</l><r><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e><p><l>كم</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>كن</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>هم</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+      <e><p><l>هن</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+    </pardef>
+    
+
+<!--    <pardef n="כי__rel">
+      <e><p><l/><r><s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
+    </pardef> -->
+
+    <pardef n="כל__prn">
+      <e><p><l/><r><s n="prn"/><s n="ind"/><s n="mf"/><s n="sp"/></r></p></e>
+    </pardef>
+    <pardef n="אחר__prn">
+      <e><p><l/><r><s n="prn"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
+    </pardef>
+    <pardef n="משהו__prn">
+      <e><p><l/><r><s n="prn"/><s n="ind"/><s n="mf"/><s n="sg"/></r></p></e>
+    </pardef>
+    <pardef n="חלק__prn">
+      <e><p><l/><r><s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
+    </pardef>
+    <pardef n="מי__prn">
+      <e><p><l/><r><s n="prn"/><s n="def"/><s n="m"/><s n="sp"/></r></p></e>
+    </pardef>
+    <pardef n="כמה__prn">
+      <e><p><l/><r><s n="prn"/><s n="def"/><s n="mf"/><s n="pl"/></r></p></e>
+    </pardef>
+
+
+    <pardef n="/هذا__prn">
+      <e>       <p><l>هذا</l> <r>هذا<s n="prn"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
+      <e>       <p><l>هذه</l> <r>هذا<s n="prn"/><s n="def"/><s n="f"/><s n="sg"/></r></p></e>
+      <e>       <p><l>هذان</l> <r>هذا<s n="prn"/><s n="def"/><s n="m"/><s n="du"/></r></p></e>
+      <e>       <p><l>هتان</l> <r>هذا<s n="prn"/><s n="def"/><s n="f"/><s n="du"/></r></p></e>
+      <e>       <p><l>هؤلاء</l><r>هذا<s n="prn"/><s n="def"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e r="LR"><p><l>أولائك</l><r>هذا<s n="prn"/><s n="def"/><s n="mf"/><s n="pl"/></r></p></e>
+    </pardef>
+    <pardef n="/ذلك__prn">
+      <e>       <p><l>ذلك</l> <r>ذلك<s n="prn"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
+      <e>       <p><l>تلك</l> <r>ذلك<s n="prn"/><s n="def"/><s n="f"/><s n="sg"/></r></p></e>
+      <e>       <p><l>ذانك</l> <r>ذلك<s n="prn"/><s n="def"/><s n="m"/><s n="du"/></r></p></e>
+      <e>       <p><l>تانك</l> <r>ذلك<s n="prn"/><s n="def"/><s n="f"/><s n="du"/></r></p></e>
+      <e><p><l>أولالك</l><r>ذلك<s n="prn"/><s n="def"/><s n="mf"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="שלי__prn">
+      <e><p><l/><r><s n="prn"/><s n="pos"/><s n="mf"/><s n="sp"/></r></p></e>
+    </pardef>
+
+    <pardef n="חלק__prn">
+      <e><p><l/><r><s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
+    </pardef>
+
+
+
     <!-- SECTION: Prepositions -->
 
-    <pardef n="ללא__pr">
+
+    <pardef n="من__pr">
       <e><p>          <l></l><r><s n="pr"/></r></p></e>
+    </pardef>
+
+
+    <!-- different forms with and without suffixes -->
+    <pardef n="ل__pr">
+      <e><p><l/><r><s n="pr"/></r></p><par n="ه__prn"/></e>
+    </pardef>
+
+
+    <!-- different forms with and without suffixes, ي ending: special p1 sg form -->
+    <pardef n="في__pr"> 
+      <e><p><l/><r><s n="pr"/></r></p><par n="ي/ه__prn"/></e>
+    </pardef>
+
+
+    <!-- one form with and without suffixes -->
+    <pardef n="مع__pr">
+      <e><p><l></l><r><s n="pr"/></r></p></e>
+      <e><par n="ل__pr"/></e>
     </pardef>
 
 
@@ -172,21 +295,6 @@
       <e><p><l>هن</l><r><s n="pr"/><s n="px3pl_f"/></r></p></e>
     </pardef>
 
-    <pardef n="ل__pr">
-<!--      <e><p><l></l><r><s n="pr"/></r></p></e> -->
-      <e><p><l>ي</l><r><s n="pr"/><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-      <e><p><l>ك</l><r><s n="pr"/><j/>ه<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
-<!--      <e><p><l>ك</l><r><s n="pr"/><j/>ه<s n="prn"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e> -->
-      <e><p><l>ه</l><r><s n="pr"/><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-      <e><p><l>ها</l><r><s n="pr"/><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p><l>كما</l><r><s n="pr"/><j/>ه<s n="prn"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
-      <e><p><l>هما</l><r><s n="pr"/><j/>ه<s n="prn"/><s n="p3"/><s n="mf"/><s n="du"/></r></p></e>
-      <e><p><l>نا</l><r><s n="pr"/><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-      <e><p><l>كم</l><r><s n="pr"/><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p><l>كن</l><r><s n="pr"/><j/>ه<s n="prn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
-      <e><p><l>هم</l><r><s n="pr"/><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p><l>هن</l><r><s n="pr"/><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
-    </pardef>
 
 
     <!-- SECTION: Determiners -->
@@ -240,68 +348,6 @@
     </pardef>
 
 
-    <!-- SECTION: Pronouns -->
-
-    <pardef n="prsubj__prn">
-      <e><p><l>أنا</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-      <e><p><l>نحن</l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-      <e><p><l>أنت</l><r>prpers<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
-      <e><p><l>أنت</l><r>prpers<s n="prn"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p><l>أنتم</l><r>prpers<s n="prn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p><l>أنتن</l><r>prpers<s n="prn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
-      <e><p><l>هو</l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-      <e><p><l>هي</l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p><l>هم</l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p><l>هن</l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
-    </pardef>
-    
-<!--    <pardef n="כי__rel">
-      <e><p><l/><r><s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></r></p></e>
-    </pardef> -->
-
-    <pardef n="כל__prn">
-      <e><p><l/><r><s n="prn"/><s n="ind"/><s n="mf"/><s n="sp"/></r></p></e>
-    </pardef>
-    <pardef n="אחר__prn">
-      <e><p><l/><r><s n="prn"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
-    </pardef>
-    <pardef n="משהו__prn">
-      <e><p><l/><r><s n="prn"/><s n="ind"/><s n="mf"/><s n="sg"/></r></p></e>
-    </pardef>
-    <pardef n="חלק__prn">
-      <e><p><l/><r><s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
-    </pardef>
-    <pardef n="מי__prn">
-      <e><p><l/><r><s n="prn"/><s n="def"/><s n="m"/><s n="sp"/></r></p></e>
-    </pardef>
-    <pardef n="כמה__prn">
-      <e><p><l/><r><s n="prn"/><s n="def"/><s n="mf"/><s n="pl"/></r></p></e>
-    </pardef>
-
-
-    <pardef n="/هذا__prn">
-      <e>       <p><l>هذا</l> <r>هذا<s n="prn"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
-      <e>       <p><l>هذه</l> <r>هذا<s n="prn"/><s n="def"/><s n="f"/><s n="sg"/></r></p></e>
-      <e>       <p><l>هذان</l> <r>هذا<s n="prn"/><s n="def"/><s n="m"/><s n="du"/></r></p></e>
-      <e>       <p><l>هتان</l> <r>هذا<s n="prn"/><s n="def"/><s n="f"/><s n="du"/></r></p></e>
-      <e>       <p><l>هؤلاء</l><r>هذا<s n="prn"/><s n="def"/><s n="mf"/><s n="pl"/></r></p></e>
-      <e r="LR"><p><l>أولائك</l><r>هذا<s n="prn"/><s n="def"/><s n="mf"/><s n="pl"/></r></p></e>
-    </pardef>
-    <pardef n="/ذلك__prn">
-      <e>       <p><l>ذلك</l> <r>ذلك<s n="prn"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
-      <e>       <p><l>تلك</l> <r>ذلك<s n="prn"/><s n="def"/><s n="f"/><s n="sg"/></r></p></e>
-      <e>       <p><l>ذانك</l> <r>ذلك<s n="prn"/><s n="def"/><s n="m"/><s n="du"/></r></p></e>
-      <e>       <p><l>تانك</l> <r>ذلك<s n="prn"/><s n="def"/><s n="f"/><s n="du"/></r></p></e>
-      <e><p><l>أولالك</l><r>ذلك<s n="prn"/><s n="def"/><s n="mf"/><s n="pl"/></r></p></e>
-    </pardef>
-
-    <pardef n="שלי__prn">
-      <e><p><l/><r><s n="prn"/><s n="pos"/><s n="mf"/><s n="sp"/></r></p></e>
-    </pardef>
-
-    <pardef n="חלק__prn">
-      <e><p><l/><r><s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
-    </pardef>
     
 <!-- SECTION: Numerals -->
 <pardef n="ثلاث__num">
@@ -567,25 +613,27 @@
     
     <!-- SECTION: Prepositions -->
 
-    <e lm="في"><i>في</i><par n="ללא__pr"/></e>
-    <e lm="مع"><i>مع</i><par n="ללא__pr"/></e>
+    <e lm="في"><i>في</i><par n="من__pr"/></e>  <!-- without suffix -->
+    <e lm="في"><i>في</i><par n="في__pr"/></e>  <!-- with suffixes -->
+    <e lm="مع"><i>مع</i><par n="مع__pr"/></e>  <!-- without & with suffixes -->
     <e lm="عند"><i>عند</i><par n="عند__pr"/></e>
-    <e lm="لدى"><p><l>لديها</l><r>لدى<s n="pr"/><s n="px3sg_f"/></r></p></e>
     <e lm="ليس عند"><p><l>ليس<b/>عندها</l><r>عند<s n="pr"/><s n="px3sg_f"/><s n="neg"/></r></p></e>
-    <e lm="من"><i>من</i><par n="ללא__pr"/></e>
-    <e lm="خلال"><i>خلال</i><par n="ללא__pr"/></e>
-    <e lm="إلى"><i>إلى</i><par n="ללא__pr"/></e>
-    <e lm="قرب"><i>قرب</i><par n="ללא__pr"/></e>
-    <e lm="ل" r="RL"><p><l><a/>ل</l><r>ل<s n="pr"/></r></p></e>
+    <e lm="لدى"><i>لدى</i><s n="من__pr"/></e>
+    <e lm="لدى"><p><l>لدي</l><r>لدى</r><par n="في__pr"/></p></e>
+    <e lm="من"><i>من</i><par n="مع__pr"/></e>
+    <e lm="خلال"><i>خلال</i><par n="مع__pr"/></e>
+    <e lm="إلى"><i>إلى</i><par n="من__pr"/></e>
+    <e lm="إلى"><p><l>إلي</l><r>إلى</r></p><par n="في__pr"/></e>
+    <e lm="قرب"><i>قرب</i><par n="مع__pr"/></e>
+    <e lm="ل" r="RL"><p><l><a/>ل</l><r>ل</r></p><par n="من__pr"/></e>
     <e><i>ل</i><par n="ل__pr"/></e>
-    <e lm="تحت"><i>تحت</i><par n="ללא__pr"/></e>
-    <e lm="أقرب"><i>أقرب</i><par n="ללא__pr"/></e>
-    <e lm="وراء"><i>وراء</i><par n="ללא__pr"/></e>
-    <e lm="أمام"><i>أمام</i><par n="ללא__pr"/></e>
+    <e lm="تحت"><i>تحت</i><par n="مع__pr"/></e>
+    <e lm="أقرب"><i>أقرب</i><par n="مع__pr"/></e>
+    <e lm="وراء"><i>وراء</i><par n="من__pr"/></e>
+    <e lm="وراء"><p><l>ورائ</l><r>وراء</r></p><par n="ل__pr"/></e>
+    <e lm="أمام"><i>أمام</i><par n="مع__pr"/></e>
+    <e lm="حول"><i>حول</i><par n="مع__pr"/></e>
 
-    <e lm="حول"><p><l>حول</l><r>حول<s n="pr"/></r></p></e>
-    <!-- there should be paradigms for prep + suffixes, both in Ar. and in Malt. -->
-    <e lm="حول"><p><l>حولها</l><r>حول<s n="pr"/><s n="px3sg_f"/></r></p></e>
     
     <!-- SECTION: Numerals -->
     
@@ -668,6 +716,7 @@
     <e lm="هناك"><i>هناك</i><par n="עכשיו__adv"/></e>
     <e lm="جيدا"><i>جيدا</i><par n="עכשיו__adv"/></e>
     <e lm="بالتأكيد"><i>بالتأكيد</i><par n="עכשיו__adv"/></e>
+    <e lm="حول"><i>حول</i><par n="עכשיו__adv"/></e>
 
     <e lm="لم"><i>لم</i><par n="לא__adv"/></e>
 
@@ -786,8 +835,8 @@
 
 <e lm="وجد"><p><l>تجد</l><r>وجد<s n="vblex"/><s n="tv"/><s n="pres"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e lm="وجد"><p><l>تجد</l><r>وجد<s n="vblex"/><s n="tv"/><s n="pres"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-<e lm="وجد"><p><l>وجدتك</l><r>وجد<s n="vblex"/><s n="tv"/><s n="past"/><s n="p1"/><s n="sg"/><j/>ه<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
-<e lm="وجد"><p><l>وجدتك</l><r>وجد<s n="vblex"/><s n="tv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/><j/>ه<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+<e lm="وجد"><p><l>وجدتك</l><r>وجد<s n="vblex"/><s n="tv"/><s n="past"/><s n="p1"/><s n="sg"/><j/>ه<s n="prn"/><s n="p2"/><s n="GD"/><s n="sg"/></r></p></e>
+<e lm="وجد"><p><l>وجدتك</l><r>وجد<s n="vblex"/><s n="tv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/><j/>ه<s n="prn"/><s n="p2"/><s n="GD"/><s n="sg"/></r></p></e>
 
 <e lm="فرح"><p><l>يفرحون</l><r>فرح<s n="vblex"/><s n="iv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
 <e lm="فرح"><p><l>يفرحان</l><r>فرح<s n="vblex"/><s n="iv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>

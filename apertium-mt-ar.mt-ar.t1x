@@ -362,6 +362,7 @@
       </choose>    
     </def-macro>
 
+
     <def-macro n="set_px_gen" npar="1" c="Hebrew has px2sg_m or px2sg_f, whereas Maltese has just px2sg;
                                           similarly for px2pl, px3pl.
                                           Default to _m, but if 'genero' is f, use _f.
@@ -394,6 +395,16 @@
       </choose>
     </def-macro>
 
+
+
+    <def-macro n="set_suff_prn_gen" npar="1" c="Arabic has m/f in p2 sg, pl and p3 pl. For now set gender to m">      
+      <choose>
+        <when>
+          <test><equal><clip pos="1" side="tl" part="gen"/><lit-tag v="GD"/></equal></test>
+          <let><clip pos="1" side="tl" part="gen"/><lit-tag v="m"/></let>
+        </when>
+      </choose>
+    </def-macro>
 
 
     <def-macro n="modify_verb_and_genero" npar="1" c="Guess verb gender, no gender for p1">
@@ -2080,6 +2091,31 @@
        </action>
     </rule> 
 
+
+
+    <rule comment="rule: preposition + pronominal suffix">
+       <pattern>
+         <pattern-item n="prep"/>
+         <pattern-item n="u_prn"/>
+       </pattern>
+       <action> 
+	 <!-- suffix gender & number should be modified! -->
+         <out>
+	   <mlu>
+             <lu>
+               <clip pos="1" side="tl" part="whole"/>
+             </lu>
+	     <lu>
+               <lit v="ه"/>
+               <clip pos="2" side="tl" part="a_prn"/>
+               <clip pos="2" side="tl" part="pers"/>
+               <clip pos="2" side="tl" part="gen"/>
+               <clip pos="2" side="tl" part="nbr"/>
+             </lu>
+	   </mlu>
+	 </out>
+       </action>
+    </rule> 
 
 
   </section-rules>
