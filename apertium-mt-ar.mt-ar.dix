@@ -162,6 +162,23 @@
      <e><p><l>ta'<s n="pr"/></l><r>لدى<s n="pr"/></r></p></e>
      <e><p><l>quddiem<s n="pr"/></l><r>أمام<s n="pr"/></r></p></e>
 
+
+     <e c="  0"><p><l>mingħajr<s n="pr"/></l><r>بدون<s n="pr"/></r></p></e>
+     <e slr="1"><p><l>mingħajr<s n="pr"/></l><r>دون<s n="pr"/></r></p></e>
+     <e><p><l>bħal<s n="pr"/></l><r>ك<s n="pr"/></r></p></e>
+     <e><p><l>kontra<s n="pr"/></l><r>ضد<s n="pr"/></r></p></e>
+     <e r="LR"><p><l>ħada<s n="pr"/></l><r>قرب<s n="pr"/></r></p></e>
+     <e><p><l>bla<s n="pr"/></l><r>بلا<s n="pr"/></r></p></e>
+     <e><p><l>minkejja<s n="pr"/></l><r>رغم<s n="pr"/></r></p></e>
+     <e><p><l>fost<s n="pr"/></l><r>بين<s n="pr"/></r></p></e>
+     <e><p><l>dwar<s n="pr"/></l><r>حول<s n="pr"/></r></p></e>
+     <e><p><l>bejn<s n="pr"/></l><r>بين<s n="pr"/></r></p></e>
+     <e><p><l>fuq<s n="pr"/></l><r>فوق<s n="pr"/></r></p></e>
+     <e><p><l>qabel<s n="pr"/></l><r>قبل<s n="pr"/></r></p></e>
+     <e><p><l>lil<s n="pr"/></l><r>ل<s n="pr"/></r></p></e>
+     <e><p><l>bi<s n="pr"/></l><r>ب<s n="pr"/></r></p></e>
+
+
      <!-- SECTION: Pronouns -->
 
      <e><p><l>free<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/></r></p></e>

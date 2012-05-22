@@ -2117,6 +2117,34 @@
        </action>
     </rule> 
 
+    <!-- temporal solution: should be ليس (verb) + prep + suff -->
+    <rule comment="rule: neg + preposition + pronominal suffix">
+       <pattern>
+         <!-- <pattern-item n="ma_neg"/> -->
+         <pattern-item n="prep"/>
+         <pattern-item n="u_prn"/>
+         <pattern-item n="xneg"/>
+       </pattern>
+       <action> 
+	 <!-- suffix gender & number should be modified! -->
+         <out>
+	   <mlu>
+             <lu>
+               <clip pos="1" side="tl" part="whole"/>
+             </lu>
+	     <lu>
+               <lit v="ه"/>
+               <clip pos="2" side="tl" part="a_prn"/>
+               <clip pos="2" side="tl" part="pers"/>
+               <clip pos="2" side="tl" part="gen"/>
+               <clip pos="2" side="tl" part="nbr"/>
+               <lit-tag v="neg"/>
+             </lu>
+	   </mlu>
+	 </out>
+       </action>
+    </rule> 
+
 
   </section-rules>
 </transfer>

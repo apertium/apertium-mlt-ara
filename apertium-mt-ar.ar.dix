@@ -616,10 +616,10 @@
     <e lm="في"><i>في</i><par n="من__pr"/></e>  <!-- without suffix -->
     <e lm="في"><i>في</i><par n="في__pr"/></e>  <!-- with suffixes -->
     <e lm="مع"><i>مع</i><par n="مع__pr"/></e>  <!-- without & with suffixes -->
-    <e lm="عند"><i>عند</i><par n="عند__pr"/></e>
-    <e lm="ليس عند"><p><l>ليس<b/>عندها</l><r>عند<s n="pr"/><s n="px3sg_f"/><s n="neg"/></r></p></e>
-    <e lm="لدى"><i>لدى</i><s n="من__pr"/></e>
-    <e lm="لدى"><p><l>لدي</l><r>لدى</r><par n="في__pr"/></p></e>
+    <e lm="عند"><i>عند</i><par n="مع__pr"/></e>
+    <e lm="عند"><p><l>ليس<b/>عندها</l><r>عند<s n="pr"/><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/><s n="neg"/></r></p></e>
+    <e lm="لدى"><i>لدى</i><par n="من__pr"/></e>
+    <e lm="لدى"><p><l>لدي</l><r>لدى</r></p><par n="في__pr"/></e>
     <e lm="من"><i>من</i><par n="مع__pr"/></e>
     <e lm="خلال"><i>خلال</i><par n="مع__pr"/></e>
     <e lm="إلى"><i>إلى</i><par n="من__pr"/></e>
@@ -633,6 +633,22 @@
     <e lm="وراء"><p><l>ورائ</l><r>وراء</r></p><par n="ل__pr"/></e>
     <e lm="أمام"><i>أمام</i><par n="مع__pr"/></e>
     <e lm="حول"><i>حول</i><par n="مع__pr"/></e>
+
+
+    <!-- add paradigm: should be بينا، not بيننا -->
+    <e lm="بدون"><i>بدون</i><par n="مع__pr"/></e>
+    <e lm="دون"><i>دون</i><par n="مع__pr"/></e>
+    <e lm="ك" r="RL"><p><l><a/>ك</l><r>ك</r></p><par n="من__pr"/></e>
+    <e><i>ك</i><par n="ل__pr"/></e>
+    <e lm="ضد"><i>ضد</i><par n="مع__pr"/></e>
+    <e lm="بلا"><i>بلا</i><par n="من__pr"/></e>
+    <e lm="رغم"><i>رغم</i><par n="مع__pr"/></e>
+    <e lm="بين"><i>بين</i><par n="مع__pr"/></e>
+    <e lm="فوق"><i>فوق</i><par n="مع__pr"/></e>
+    <e lm="قبل"><i>قبل</i><par n="مع__pr"/></e>
+    <e lm="ب" r="RL"><p><l><a/>ب</l><r>ب</r></p><par n="من__pr"/></e>
+    <e><i>ب</i><par n="ل__pr"/></e>
+
 
     
     <!-- SECTION: Numerals -->
