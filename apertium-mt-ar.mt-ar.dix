@@ -1746,7 +1746,7 @@
      <e slr="1"><p><l>baħnan<s n="adj"/></l><r>ساذج<s n="adj"/></r></p></e>
      <e><p><l>permanent<s n="adj"/></l><r>دائم<s n="adj"/></r></p></e>
      <e><p><l>professjonista<s n="adj"/></l><r>محترف<s n="adj"/></r></p></e>
-<!-- <e><p><l>stalla<s n="adj"/></l><r><s n="adj"/></r></p></e> stable noun :) -->
+<!-- <e><p><l>stalla<s n="adj"/></l><r><s n="adj"/></r></p></e> stable - noun :) -->
      <e><p><l>dejjaq<s n="adj"/></l><r>ضيق<s n="adj"/></r></p></e>
      <e><p><l>morali<s n="adj"/></l><r>أخلاقي<s n="adj"/></r></p></e><!-- TODO -->
 
@@ -1791,7 +1791,7 @@
      <e><p><l>religjuz<s n="adj"/></l><r>ديني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>assolut<s n="adj"/></l><r>مطلق<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>aħdar<s n="adj"/></l><r>أخضر<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
-     <e><p><l>ppubblikat<s n="adj"/></l><r>موشور<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ppubblikat<s n="adj"/></l><r>منشور<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>limitat<s n="adj"/></l><r>محدود<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>elettriku<s n="adj"/></l><r>كهربائي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>separat<s n="adj"/></l><r>منفصل<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
@@ -1899,6 +1899,150 @@
      <e><p><l>xott<s n="adj"/></l><r>جف<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>affettwat<s n="adj"/></l><r>شعوري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>simboliku<s n="adj"/></l><r>رمزي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>offensiv<s n="adj"/></l><r>مهين<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>komplut<s n="adj"/></l><r>كامل<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>influwenzat<s n="adj"/></l><r>متأثر<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>eżaminat<s n="adj"/></l><r>ممتحن<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+<!--     <e><p><l>ffirmat<s n="adj"/></l><r><s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> -->
+     <e><p><l>delikat<s n="adj"/></l><r>دقيق<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>distint<s n="adj"/></l><r>متميز<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>kroat<s n="adj"/></l><r>كرواتي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>bibliku<s n="adj"/></l><r>توراتي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>  <!-- Torah only -->
+     <e><p><l>brażiljan<s n="adj"/></l><r>برازيلي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>intiż<s n="adj"/></l><r>مقصود<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>sovran<s n="adj"/></l><r>سيادي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>fdat<s n="adj"/></l><r>موثوق<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>allokat<s n="adj"/></l><r>מוקצה<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>  <!-- TODO -->
+     <e r="LR"><p><l>nattiv<s n="adj"/></l><r>أصلي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>maħmuġ<s n="adj"/></l><r>قذر<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>estiż<s n="adj"/></l><r>متسع<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>xettiku<s n="adj"/></l><r>مشكك<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>griż<s n="adj"/></l><r>رمادي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>qares<s n="adj"/></l><r>حامض<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>kkontrollat<s n="adj"/></l><r>مفحوص<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>morr<s n="adj"/></l><r>مر<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>konsekuttiv<s n="adj"/></l><r>متتابع<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>nominat<s n="adj"/></l><r>معين<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>intenzjonat<s n="adj"/></l><r>مقصود<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>kkonsagrat<s n="adj"/></l><r>مكرس<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>dumnikan<s n="adj"/></l><r>دومينيكي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>ttrattat<s n="adj"/></l><r>معالج<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>paċifiku<s n="adj"/></l><r>سلمي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ikkunsidrat<s n="adj"/></l><r>معترف<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ppublikat<s n="adj"/></l><r>منشور<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ideoloġiku<s n="adj"/></l><r>أيديولوجي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>rivedut<s n="adj"/></l><r>منقح<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>interpretat<s n="adj"/></l><r>مترجم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>indirett<s n="adj"/></l><r>غير<b/>مباشر<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>preparat<s n="adj"/></l><r>مستعد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>riprodott<s n="adj"/></l><r>مستنسخ<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>onorat<s n="adj"/></l><r>كريم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e c="  0"><p><l>mistiku<s n="adj"/></l><r>باطني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e slr="1" r="LR"><p><l>mistiku<s n="adj"/></l><r>صوفي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>ikkawżat<s n="adj"/></l><r>ممسبب<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>iffurmat<s n="adj"/></l><r>مكون<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>atletiku<s n="adj"/></l><r>رياضي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>kliniku<s n="adj"/></l><r>إكلينيكي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>suspettat<s n="adj"/></l><r>مشبوه<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- به --> 
+     <e c="  0"><p><l>rqiq<s n="adj"/></l><r>رقيق<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e slr="1"><p><l>rqiq<s n="adj"/></l><r>نحيل<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>novizz<s n="adj"/></l><r>مبتدئ<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- noun -->
+     <e><p><l>komiku<s n="adj"/></l><r>هزلي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>grafiku<s n="adj"/></l><r>مرسوم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>passiv<s n="adj"/></l><r>سلبي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>awtorizzat<s n="adj"/></l><r>مخول<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>provdut<s n="adj"/></l><r>مقدم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ungeriż<s n="adj"/></l><r>مجري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>garantit<s n="adj"/></l><r>مضمون<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>elevat<s n="adj"/></l><r>مرتفع<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ażjatiku<s n="adj"/></l><r>آسيوي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>ddikjarat<s n="adj"/></l><r>معلن<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>rranġat<s n="adj"/></l><r>مرتب<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>kklassifikat<s n="adj"/></l><r>مصنف<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e c="  0" r="LR"><p><l>adegwat<s n="adj"/></l><r>كاف<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e slr="1" r="LR"><p><l>adegwat<s n="adj"/></l><r>مناسب<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ppruvat<s n="adj"/></l><r>مبين<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>korean<s n="adj"/></l><r>كوري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>assigurat<s n="adj"/></l><r>مضمون<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>kwalifikat<s n="adj"/></l><r>مؤهل<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>innovattiv<s n="adj"/></l><r>مبتكر<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ortodoss<s n="adj"/></l><r>أرثوذكسي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>iżolat<s n="adj"/></l><r>معزول<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>numeruż<s n="adj"/></l><r>عديد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>simpatiku<s n="adj"/></l><r>لطيف<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>arkitettoniku<s n="adj"/></l><r>معماري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>organiku<s n="adj"/></l><r>عضوي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>produttiv<s n="adj"/></l><r>منتج<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>primittiv<s n="adj"/></l><r>بدائي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ippjanat<s n="adj"/></l><r>مخطط<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>difensiv<s n="adj"/></l><r>دفاعي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>teoloġiku<s n="adj"/></l><r>لاهوتي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e c="  0"><p><l>suċċessiv<s n="adj"/></l><r>متتابع<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e slr="1"><p><l>suċċessiv<s n="adj"/></l><r>متتالية<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>tossiku<s n="adj"/></l><r>سام<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>stipulat<s n="adj"/></l><r>منصوص<b/>عليه<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- ouch -->
+     <e><p><l>sfurzat<s n="adj"/></l><r>قسري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e c="  0"><p><l>restawrat<s n="adj"/></l><r>مرمم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e slr="1"><p><l>restawrat<s n="adj"/></l><r>مجدد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>nativ<s n="adj"/></l><r>أصلي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- isn't it nattiv, as above? -->
+     <e><p><l>ironiku<s n="adj"/></l><r>تهكمي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ekoloġiku<s n="adj"/></l><r>إيكولوجي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>suprem<s n="adj"/></l><r>عال<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>statiku<s n="adj"/></l><r>ثابت<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>puniku<s n="adj"/></l><r>بونيقي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>alkoħoliku<s n="adj"/></l><r>كحولي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>filarmoniku<s n="adj"/></l><r>فيلهارموني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>derivat<s n="adj"/></l><r>مستمد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>attribwit<s n="adj"/></l><r>راجع<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>arkeoloġiku<s n="adj"/></l><r>أثري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>repubblikan<s n="adj"/></l><r>جمهوري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>preżentat<s n="adj"/></l><r>مقدم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e c="  0"><p><l>bijoloġiku<s n="adj"/></l><r>أحيائي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e slr="1"><p><l>bijoloġiku<s n="adj"/></l><r>بيولوجي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>teknoloġiku<s n="adj"/></l><r>تكنولوجي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>irrekordjat<s n="adj"/></l><r>مسجل<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>edukat<s n="adj"/></l><r>مؤدب<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>franċiż<s n="adj"/></l><r>فرنسي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>bilanċjat<s n="adj"/></l><r>متوازن<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>pubblikat<s n="adj"/></l><r>منشور<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>pprovdut<s n="adj"/></l><r>مقدم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>fantastiku<s n="adj"/></l><r>خيالي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>sloven<s n="adj"/></l><r>سلوفيني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>iżraeljan<s n="adj"/></l><r>إسرائيلي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>metriku<s n="adj"/></l><r>متري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>sirjan<s n="adj"/></l><r>سوري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>kkalkulat<s n="adj"/></l><r>محسوب<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>modest<s n="adj"/></l><r>متواضع<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>akkwistat<s n="adj"/></l><r>مكتسب<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>umoristiku<s n="adj"/></l><r>مضحك<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>persjan<s n="adj"/></l><r>فارسي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>atlantiku<s n="adj"/></l><r>أطلسي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>viżiv<s n="adj"/></l><r>بصري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>rikk<s n="adj"/></l><r>غني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>pariġin<s n="adj"/></l><r>باريسي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>sostitwit<s n="adj"/></l><r>مستبدل<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>rtirat<s n="adj"/></l><r>متقاعد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>emendat<s n="adj"/></l><r>مرمم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>prussjan<s n="adj"/></l><r>بروسي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>jugoslav<s n="adj"/></l><r>يوغوسلافي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>immarkat<s n="adj"/></l><r>ملحوظ<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ċiprijott<s n="adj"/></l><r>قبرصي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>massiv<s n="adj"/></l><r>ضخم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>kulurit<s n="adj"/></l><r>ملون<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>islamiku<s n="adj"/></l><r>إسلامي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ekklesjastiku<s n="adj"/></l><r>كنسي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>benedittin<s n="adj"/></l><r>بندكتيني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e c="  0"><p><l>soċjoloġiku<s n="adj"/></l><r>اجتماعي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e slr="1"><p><l>soċjoloġiku<s n="adj"/></l><r>سوسيولوجي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>parallel<s n="adj"/></l><r>متواز<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>kwadrat<s n="adj"/></l><r>مربع<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>awstrijaku<s n="adj"/></l><r>نمساوي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>rinomat<s n="adj"/></l><r>مشهور<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>mielaħ<s n="adj"/></l><r>مليح<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>manjetiku<s n="adj"/></l><r>مغناطيسي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>entużjast<s n="adj"/></l><r>متحمس<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>biżantin<s n="adj"/></l><r>بيزنطي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+
 
 
      <!-- SECTION: Interjections -->
