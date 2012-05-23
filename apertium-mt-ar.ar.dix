@@ -26,7 +26,7 @@
     <sdef n="nom"         c="Nominative"/>
     <sdef n="gen"         c="Genitive"/>
     <sdef n="acc"         c="Accusative"/>
-    <sdef n="GD"      c="Gender to be determined"/>
+    <sdef n="GD"          c="Gender to be determined"/>
 
     <sdef n="top"         c="Toponym"/>
     <sdef n="ant"         c="Anthroponym"/>
@@ -180,8 +180,10 @@
       <e><p><l>نا</l><r><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
       <e><p><l>كم</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>كن</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>كم</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="GD"/><s n="pl"/></r></p></e>
       <e><p><l>هم</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>هن</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>هم</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
     </pardef>
 
 
@@ -197,8 +199,10 @@
       <e><p><l>نا</l><r><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
       <e><p><l>كم</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>كن</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>كم</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="GD"/><s n="pl"/></r></p></e>
       <e><p><l>هم</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>هن</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+      <e><p><l>هم</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
     </pardef>
     
 
@@ -279,7 +283,7 @@
     </pardef>
 
 
-    <pardef n="عند__pr">
+<!--    <pardef n="عند__pr">
       <e><p><l></l><r><s n="pr"/></r></p></e>
       <e><p><l>ي</l><r><s n="pr"/><s n="px1sg"/></r></p></e>
       <e><p><l>ك</l><r><s n="pr"/><s n="px2sg_m"/></r></p></e>
@@ -293,7 +297,7 @@
       <e><p><l>كن</l><r><s n="pr"/><s n="px2pl_f"/></r></p></e>
       <e><p><l>هم</l><r><s n="pr"/><s n="px3pl_m"/></r></p></e>
       <e><p><l>هن</l><r><s n="pr"/><s n="px3pl_f"/></r></p></e>
-    </pardef>
+    </pardef>  -->
 
 
 
@@ -573,7 +577,7 @@
 
     <!-- SECTION: Determiners -->
 
-
+    <e lm="ال"><i></i><par n="ה__det"/></e>
     <e lm="هذا"><i></i><par n="/هذا__det"/></e>
     <e lm="ذلك"><i></i><par n="/ذلك__det"/></e>
     <e lm="جدا"><i>جدا</i><par n="הרבה__det"/></e>
@@ -648,6 +652,14 @@
     <e lm="قبل"><i>قبل</i><par n="مع__pr"/></e>
     <e lm="ب" r="RL"><p><l><a/>ب</l><r>ب</r></p><par n="من__pr"/></e>
     <e><i>ب</i><par n="ل__pr"/></e>
+    <e lm="حول"><i>حسب</i><par n="مع__pr"/></e>
+    <!-- time & day - without suffixes here -->
+    <e lm="وقت"><i>وقت</i><par n="من__pr"/></e>
+    <e lm="يوم"><i>يوم</i><par n="من__pr"/></e>
+    <e lm="من قبل"><i>من<b/>قبل</i><par n="مع__pr"/></e>
+    <e lm="بسبب"><i>بسبب</i><par n="مع__pr"/></e>
+    <e lm="غير"><i>غير</i><par n="مع__pr"/></e>
+    <e lm="إلا"><i>إلا</i><par n="من__pr"/></e>
 
 
     
@@ -851,8 +863,8 @@
 
 <e lm="وجد"><p><l>تجد</l><r>وجد<s n="vblex"/><s n="tv"/><s n="pres"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e lm="وجد"><p><l>تجد</l><r>وجد<s n="vblex"/><s n="tv"/><s n="pres"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-<e lm="وجد"><p><l>وجدتك</l><r>وجد<s n="vblex"/><s n="tv"/><s n="past"/><s n="p1"/><s n="sg"/><j/>ه<s n="prn"/><s n="p2"/><s n="GD"/><s n="sg"/></r></p></e>
-<e lm="وجد"><p><l>وجدتك</l><r>وجد<s n="vblex"/><s n="tv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/><j/>ه<s n="prn"/><s n="p2"/><s n="GD"/><s n="sg"/></r></p></e>
+<e lm="وجد"><p><l>وجدتك</l><r>وجد<s n="vblex"/><s n="tv"/><s n="past"/><s n="p1"/><s n="sg"/><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e lm="وجد"><p><l>وجدتك</l><r>وجد<s n="vblex"/><s n="tv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 
 <e lm="فرح"><p><l>يفرحون</l><r>فرح<s n="vblex"/><s n="iv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
 <e lm="فرح"><p><l>يفرحان</l><r>فرح<s n="vblex"/><s n="iv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>

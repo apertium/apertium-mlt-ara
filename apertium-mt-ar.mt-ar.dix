@@ -177,6 +177,18 @@
      <e><p><l>qabel<s n="pr"/></l><r>قبل<s n="pr"/></r></p></e>
      <e><p><l>lil<s n="pr"/></l><r>ل<s n="pr"/></r></p></e>
      <e><p><l>bi<s n="pr"/></l><r>ب<s n="pr"/></r></p></e>
+     <e r="LR"><p><l>favur<s n="pr"/></l><r>مع<s n="pr"/></r></p></e>
+     <e><p><l>matul<s n="pr"/></l><r>خلال<s n="pr"/></r></p></e>
+     <e c="  0"><p><l>skont<s n="pr"/></l><r>حسب<s n="pr"/></r></p></e>
+     <e slr="1"><p><l>skont<s n="pr"/></l><r>من<b/>قبل<s n="pr"/></r></p></e>
+     <e><p><l>waqt<s n="pr"/></l><r>وقت<s n="pr"/></r></p></e>
+     <e><p><l>nhar<s n="pr"/></l><r>يوم<s n="pr"/></r></p></e>
+     <e r="LR"><p><l>milli<s n="pr"/></l><r>من<s n="pr"/></r></p></e>
+     <e c="  0" r="LR"><p><l>permezz<s n="pr"/></l><r>ب<s n="pr"/></r></p></e>
+     <e slr="1"><p><l>permezz<s n="pr"/></l><r>من<b/>قبل<s n="pr"/></r></p></e>
+     <e><p><l>minħabba<s n="pr"/></l><r>بسبب<s n="pr"/></r></p></e>
+     <e c="  0"><p><l>ħlief<s n="pr"/></l><r>غير<s n="pr"/></r></p></e>
+     <e slr="1"><p><l>ħlief<s n="pr"/></l><r>إلا<s n="pr"/></r></p></e>
 
 
      <!-- SECTION: Pronouns -->
@@ -185,8 +197,7 @@
      <e><p><l>free<s n="prn"/><s n="p2"/></l><r>prpers<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f"/></e> 
      <e><p><l>free<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
      <e><p><l>free<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-     <e r="LR"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
-     <e r="RL"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+     <e r="LR"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>     <e r="RL"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
      <e r="RL"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
 
 

@@ -43,6 +43,8 @@ for i in $POS; do
 		remove-other-pos () { grep -v -e '<part>' -e '<qst>' -e '<cnj'; }
 	elif [ "$i" = "v" ]; then
 		remove-other-pos () { grep -v -e '<part>' -e '<qst>' -e '<cnj'; }
+	elif [ "$i" = "pr" ]; then
+		remove-other-pos () { grep -v -e '<vblex>' -e '<vaux>' -e 'n' -e 'adv'; }
 	else
 		remove-other-pos () { cat; }
 	fi
@@ -63,7 +65,7 @@ for i in $POS; do
 	$ECHOE "$TOTAL;$i;$CLEAN;$AT;$HASH;$TOTPERCLEAN"
 done | sort -gr | awk -F';' '{print $2"\t"$1"\t"$3"\t"$4"\t"$5"\t"$6}' >> "$OUT"
 
-rm -f "$aterrors" "$hasherrors"
+#rm -f "$aterrors" "$hasherrors"
 
 $ECHOE "===============================================" >> "$OUT"
 cat "$OUT"
