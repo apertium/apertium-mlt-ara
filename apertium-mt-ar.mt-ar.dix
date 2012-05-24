@@ -286,6 +286,57 @@
 <e>       <p><l>żewġ<s n="num"/></l>        <r>زوج<s n="num"/></r></p></e><!-- TODO -->
 
 
+
+<!-- 1..10 -->
+<e>       <p><l>wieħed<s n="num"/></l>      <r>واحد<s n="num"/></r></p></e>
+<e r="LR"><p><l>waħda<s n="num"/></l>       <r>واحدة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<!--<e>       <p><l>tnejn<s n="num"/></l>       <r>اثنان<s n="num"/></r></p><par n="mf_m_f"/></e> -->
+<e>       <p><l>tli<s n="num"/></l>         <r>ثلاثة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>erb<s n="num"/></l>      <r>أربعة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<!--<e>       <p><l>ħam<s n="num"/></l>         <r>خمسة<s n="num"/></r></p><par n="mf_m_f"/></e>-->
+<e>       <p><l>sit<s n="num"/></l>         <r>ستة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<!--<e r="LR"><p><l>sitt<s n="num"/></l>        <r>ستة<s n="num"/></r></p><par n="mf_m_f"/></e>--> <!-- ??? -->
+<e>       <p><l>seb<s n="num"/></l>         <r>سبعة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>tmi<s n="num"/></l>         <r>ثمانية<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>dis<s n="num"/></l>         <r>تسعة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>għax<s n="num"/></l>        <r>عشرة<s n="num"/></r></p><par n="mf_m_f"/></e>
+
+<!-- 11..19 -->
+<e>       <p><l>ħdax<s n="num"/></l>        <r>أحد<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>tnax<s n="num"/></l>        <r>اثنا<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>tlettax<s n="num"/></l>     <r>ثلاثة<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>erbatax<s n="num"/></l>     <r>أربعة<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>ħmistax<s n="num"/></l>     <r>خمسة<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>sittax<s n="num"/></l>      <r>ستة<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>sbatax<s n="num"/></l>      <r>سبعة<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>tmintax<s n="num"/></l>     <r>ثمانية<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>dsatax<s n="num"/></l>      <r>تسعة<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+
+<!-- 20..90 -->
+<e>       <p><l>għoxrin<s n="num"/></l>     <r>عشرون<s n="num"/></r></p></e>
+<e>       <p><l>tletin<s n="num"/></l>      <r>ثلاثون<s n="num"/></r></p></e>
+<e>       <p><l>erbgħin<s n="num"/></l>     <r>أربعون<s n="num"/></r></p></e>
+<e>       <p><l>ħamsin<s n="num"/></l>      <r>خمسون<s n="num"/></r></p></e>
+<e>       <p><l>sittin<s n="num"/></l>      <r>ستون<s n="num"/></r></p></e>
+<e>       <p><l>sebgħin<s n="num"/></l>     <r>سبعون<s n="num"/></r></p></e>
+<e>       <p><l>tmenin<s n="num"/></l>      <r>ثمانون<s n="num"/></r></p></e>
+<e>       <p><l>disgħin<s n="num"/></l>     <r>تسعون<s n="num"/></r></p></e>
+
+<!-- 100, 200, 1000, 2000 -->
+<e>       <p><l>mija<s n="num"/></l>        <r>مئة<s n="num"/></r></p></e>
+<e>       <p><l>mitejn<s n="num"/></l>      <r>مئتان<s n="num"/></r></p></e>
+<e>       <p><l>elf<s n="num"/></l>         <r>ألف<s n="num"/></r></p></e>
+<e>       <p><l>elfejn<s n="num"/></l>      <r>ألفان<s n="num"/></r></p></e>
+
+<e>       <p><l>miljun<s n="num"/></l><r>مليون<s n="num"/></r></p></e>
+<e>       <p><l>biljun<s n="num"/></l><r>بليون<s n="num"/></r></p></e>
+<!-- <e>       <p><l>triljun<s n="num"/></l><r>טריליון<s n="num"/></r></p></e> -->
+
+<!-- one pair, two pairs? -->
+<!--<e>       <p><l>żewġ<s n="num"/></l>        <r>זוג<s n="num"/></r></p></e>--><!-- TODO -->
+<!--<e>       <p><l>erba<s n="num"/></l>        <r>ארבעה<s n="num"/></r></p><par n="mf_m_f"/></e>  -->
+
+
 <e>       <p><l>XVI<s n="num"/></l>         <r>XVI<s n="num"/></r></p></e>
 <e>       <p><l>II<s n="num"/></l>          <r>II<s n="num"/></r></p></e>
 <e>       <p><l>III<s n="num"/></l>         <r>III<s n="num"/></r></p></e>
