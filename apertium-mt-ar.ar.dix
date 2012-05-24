@@ -354,13 +354,104 @@
 
     
 <!-- SECTION: Numerals -->
-<pardef n="ثلاث__num">
-  <e>       <p><l></l>     <r><s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
-</pardef>
 
-<pardef n="זוג__num" c="couple/pair">
-  <e>       <p><l/>         <r><s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
-</pardef>
+    <pardef n="/واحد__num" c="1">
+      <e><p><l>واحد</l><r>واحد<s n="num"/><s n="m"/><s n="sg"/></r></p></e>
+      <e r="LR"><p><l>أحد</l><r>واحد<s n="num"/><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l>واحدة</l><r>واحد<s n="num"/><s n="f"/><s n="sg"/></r></p></e>
+      <e r="LR"><p><l>إحدى</l><r>واحد<s n="num"/><s n="f"/><s n="sg"/></r></p></e>
+    </pardef>
+
+    <pardef n="اثن/ان__num" c="2">
+      <e><p><l>ان</l><r>ان<s n="num"/><s n="m"/><s n="sp"/></r></p></e>
+      <e><p><l>تان</l><r>ان<s n="num"/><s n="f"/><s n="sp"/></r></p></e>
+    </pardef>
+
+    <pardef n="ثلاث__num">   <!--old -->
+      <e><p><l></l><r><s n="num"/><s n="mf"/><s n="sp"/></r></p></e> 
+    </pardef>
+
+    <pardef n="ثلاث/ة__num" c="3-7,9">
+      <e><p><l></l><r>ة<s n="num"/><s n="f"/><s n="sp"/></r></p></e>
+      <e><p><l>ة</l><r>ة<s n="num"/><s n="m"/><s n="sp"/></r></p></e>
+    </pardef>
+
+    <pardef n="ثمان/ية__num" c="8">
+      <e><p><l></l><r>ية<s n="num"/><s n="m"/><s n="sp"/></r></p></e>
+      <e><p><l>ي</l><r>ية<s n="num"/><s n="m"/><s n="sp"/><s n="cons"/></r></p></e>
+      <e><p><l>ية</l><r>ية<s n="num"/><s n="f"/><s n="sp"/></r></p></e>
+    </pardef>
+
+    <pardef n="عشر/ة__num" c="10">
+      <e><p><l></l><r>ة<s n="num"/><s n="f"/><s n="sp"/></r></p></e>
+      <e><p><l>ة</l><r>ة<s n="num"/><s n="m"/><s n="sp"/></r></p></e>
+    </pardef>
+
+
+    <pardef n="/أحد_عشر__num" c="11">
+      <e><p><l>أحد<b/>عشر</l><r>أحد<b/>عشر<s n="num"/><s n="m"/><s n="sp"/></r></p></e>
+      <e><p><l>إحدى<b/>عشرة</l><r>أحد<b/>عشر<s n="num"/><s n="f"/><s n="sp"/></r></p></e>
+    </pardef>
+
+    <pardef n="اثن/ا_عشر__num" c="12">
+      <e><p><l>اثنا<b/>عشر</l><r>اثنا<b/>عشر<s n="num"/><s n="m"/><s n="sp"/></r></p></e>
+      <e><p><l>اثنتا<b/>عشرة</l><r>اثنا<b/>عشر<s n="num"/><s n="f"/><s n="sp"/></r></p></e>
+    </pardef>
+
+    <pardef n="ثلاث/ة_عشر__num" c="13-19">
+      <e><p><l><b/>عشرة</l><r>ة<b/>عشر<s n="num"/><s n="f"/><s n="sp"/></r></p></e>
+      <e><p><l>ة<b/>عشر</l><r>ة<b/>عشر<s n="num"/><s n="m"/><s n="sp"/></r></p></e>
+    </pardef>
+
+    <pardef n="عشر/ون__num" c="20,...,90">
+      <e><p><l>ون</l><r>ون<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+    </pardef>  
+
+  <!-- 21..29, .., 91..99 TODO: not in mt/bidix (also TODO, this will allow 'twentyeleven', etc.) -->
+<!--  <e><p><l>ואח</l><r>ואח</r></p><par n="אחד_/עשר__num"/></e>
+  <e><p><l>וש</l><r>וש</r></p><par n="ש/ניים_/עשר__num"/></e>
+  <e><p><l>ושלוש</l><r>ושלוש</r></p><par n="שלוש/ה_/עשר__num"/></e>
+  <e><p><l>וארבע</l><r>וארבע</r></p><par n="שלוש/ה_/עשר__num"/></e>
+  <e><p><l>וחמ</l><r>וחמ</r></p><par n="חמ/ישה_/עשר__num"/></e>
+  <e><p><l>וש</l><r>ושש</r></p><par n="חמ/ישה_/עשר__num"/></e>
+  <e><p><l>ושבע</l><r>ושבע</r></p><par n="שלוש/ה_/עשר__num"/></e>
+  <e><p><l>ושמונ</l><r>ושמונ</r></p><par n="שמונ/ה__num"/></e>
+  <e><p><l>ותשע</l><r>ותשע</r></p><par n="שלוש/ה_/עשר__num"/></e>
+</pardef> -->
+
+    <pardef n="م/ئة__num" c="100">
+      <e><p><l>ئة</l><r>ئة<s n="num"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e r="LR"><p><l>ائة</l><r>ئة<s n="num"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e><p><l>ئتان</l><r>ئة<s n="num"/><s n="mf"/><s n="du"/></r></p></e>
+      <e><p><l></l><r>ئة<s n="num"/><s n="mf"/><s n="pl"/></r></p></e> <!-- TODO -->
+    </pardef>
+
+    <pardef n="/ألف__num" c="1000">
+      <e><p><l>ألف</l><r>ألف<s n="num"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e><p><l>ألفان</l><r>ألف<s n="num"/><s n="mf"/><s n="du"/></r></p></e>
+      <e><p><l>آلاف</l><r>ألف<s n="num"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e r="LR"><p><l>ألوف</l><r>ألف<s n="num"/><s n="mf"/><s n="pl"/></r></p></e>
+    </pardef>
+
+    <pardef n="مل/يون__num" c="million, billion">
+      <e><p><l>يون</l><r>يون<s n="num"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e><p><l>ايين</l><r>يون<s n="num"/><s n="mf"/><s n="pl"/></r></p></e>
+    </pardef>
+
+<!--    <pardef n="بل/يون__num" c="billion">
+      <e><p><l>يون</l><r>يون<s n="num"/><s n="mf"/><s n="sg"/></r></p></e>
+      <e><p><l>ايين</l><r>يون<s n="num"/><s n="mf"/><s n="pl"/></r></p></e>
+    </pardef> -->
+
+    <pardef n="ثلاث/مئة__num" c="300,...,900">
+      <e><p><l>مئة</l><r>مئة<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+      <e r="LR"><p><l><b/>مئة</l><r>مئة<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+    </pardef>
+
+
+    <pardef n="זוג__num" c="couple/pair">
+      <e><p><l/>         <r><s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+    </pardef>
 
 
     <!-- SECTION: Nouns -->  
@@ -672,6 +763,48 @@
     <e lm="زوج" c="couple"><i>زوج</i><par n="זוג__num"/></e>
 
 
+    <!-- 1..9 -->
+    <e lm="واحد" c="one"><par n="/واحد__num"/></e>
+    <e lm="اثنان" c="two"><i>اثن</i><par n="اثن/ان__num"/></e>
+    <e lm="ثلاثة" c="three"><i>ثلاث</i><par n="ثلاث/ة__num"/></e>
+    <e lm="أربعة" c="four"><i>أربع</i><par n="ثلاث/ة__num"/></e>
+    <e lm="خمسة" c="five"><i>خمس</i><par n="ثلاث/ة__num"/></e>
+    <e lm="ستة" c="six"><i>ست</i><par n="ثلاث/ة__num"/></e>
+    <e lm="سبعة" c="seven"><i>سبع</i><par n="ثلاث/ة__num"/></e>
+    <e lm="ثمانية" c="eight"><i>ثمان</i><par n="ثمان/ية__num"/></e>
+    <e lm="تسعة" c="nine"><i>تسع</i><par n="ثلاث/ة__num"/></e>
+    
+    <e lm="عشرة" c="ten"><i>عشر</i><par n="عشر/ة__num"/></e>
+
+    <!-- 11..19 -->
+    <e lm="أحد عشر" c="one"><par n="/أحد_عشر__num"/></e>
+    <e lm="اثنا عشر" c="two"><i>اثن</i><par n="اثن/ا_عشر__num"/></e>
+    <e lm="ثلاثة عشر" c="three"><i>ثلاث</i><par n="ثلاث/ة_عشر__num"/></e>
+    <e lm="أربعة عشر" c="four"><i>أربع</i><par n="ثلاث/ة_عشر__num"/></e>
+    <e lm="خمسة عشر" c="five"><i>خمس</i><par n="ثلاث/ة_عشر__num"/></e>
+    <e lm="ستة عشر" c="six"><i>ست</i><par n="ثلاث/ة_عشر__num"/></e>
+    <e lm="سبعة عشر" c="seven"><i>سبع</i><par n="ثلاث/ة_عشر__num"/></e>
+    <e lm="ثمانية عشر" c="eight"><i>ثمان</i><par n="ثلاث/ة_عشر__num"/></e>
+    <e lm="تسعة عشر" c="nine"><i>تسع</i><par n="ثلاث/ة_عشر__num"/></e>
+
+    <e lm="عشرون" c="twenty"><i>عشر</i><par n="عشر/ون__num"/></e>
+    <e lm="ثلاثون" c="thirty"><i>ثلاث</i><par n="عشر/ون__num"/></e>
+    <e lm="أربعون" c="forty"><i>أربع</i><par n="عشر/ون__num"/></e>
+    <e lm="خمسون" c="fifty"><i>خنس</i><par n="عشر/ون__num"/></e>
+    <e lm="ستون" c="sixty"><i>ست</i><par n="عشر/ون__num"/></e>
+    <e lm="سبعون" c="seventy"><i>سبع</i><par n="عشر/ون__num"/></e>
+    <e lm="ثمانون" c="eighty"><i>ثمان</i><par n="عشر/ون__num"/></e>
+    <e lm="تسعون" c="ninety"><i>تسع</i><par n="عشر/ون__num"/></e> 
+
+    <e lm="مئة" c="hundred"><i>م</i><par n="م/ئة__num"/></e>
+    <e lm="ألف" c="thousand"><i/><par n="/ألف__num"/></e>
+    
+    <e lm="مليون" c="million"><i>مل</i><par n="مل/يون__num"/></e>
+    <e lm="بليون" c="billion"><i>بل</i><par n="مل/يون__num"/></e>
+
+<!--    <e lm="זוג" c="couple"><i>זוג</i><par n="זוג__num"/></e> -->
+
+    
     <!-- SECTION: Nouns -->
 
     <e lm="حديقة" c="garden" ><par n="ה"/><i>حد</i><par n="حد/يقة__n_f_nn"/></e>
