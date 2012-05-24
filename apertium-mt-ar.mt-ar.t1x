@@ -909,6 +909,7 @@
          <pattern-item n="numeral"/>
        </pattern>
        <action>
+         <call-macro n="f_concord1"><with-param pos="2"/></call-macro>
          <out>
             <mlu> 
              <lu>

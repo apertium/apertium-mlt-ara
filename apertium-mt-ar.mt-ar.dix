@@ -278,23 +278,22 @@
 
 <!-- SECTION: Numerals -->
 
-<e>       <p><l>tnejn<s n="num"/></l>       <r>اثنان<s n="num"/></r></p></e>
+<!-- <e>       <p><l>tnejn<s n="num"/></l>       <r>اثنان<s n="num"/></r></p></e>
 <e>       <p><l>ħam<s n="num"/></l>         <r>خمس<s n="num"/></r></p></e>
-<e r="LR"><p><l>sitt<s n="num"/></l>         <r>ست<s n="num"/></r></p></e>
+<e r="LR"><p><l>sitt<s n="num"/></l>         <r>ست<s n="num"/></r></p></e> -->
 
 <!-- one pair, two pairs? -->
 <e>       <p><l>żewġ<s n="num"/></l>        <r>زوج<s n="num"/></r></p></e><!-- TODO -->
 
 
-
 <!-- 1..10 -->
 <e>       <p><l>wieħed<s n="num"/></l>      <r>واحد<s n="num"/></r></p></e>
 <e r="LR"><p><l>waħda<s n="num"/></l>       <r>واحدة<s n="num"/></r></p><par n="mf_m_f"/></e>
-<!--<e>       <p><l>tnejn<s n="num"/></l>       <r>اثنان<s n="num"/></r></p><par n="mf_m_f"/></e> -->
+<e>       <p><l>tnejn<s n="num"/></l>       <r>اثنان<s n="num"/></r></p><par n="mf_m_f"/></e>
 <e>       <p><l>tli<s n="num"/></l>         <r>ثلاثة<s n="num"/></r></p><par n="mf_m_f"/></e>
 <e>       <p><l>erb<s n="num"/></l>      <r>أربعة<s n="num"/></r></p><par n="mf_m_f"/></e>
-<!--<e>       <p><l>ħam<s n="num"/></l>         <r>خمسة<s n="num"/></r></p><par n="mf_m_f"/></e>-->
-<e>       <p><l>sit<s n="num"/></l>         <r>ستة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>ħam<s n="num"/></l>         <r>خمسة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>sitt<s n="num"/></l>         <r>ستة<s n="num"/></r></p><par n="mf_m_f"/></e>
 <!--<e r="LR"><p><l>sitt<s n="num"/></l>        <r>ستة<s n="num"/></r></p><par n="mf_m_f"/></e>--> <!-- ??? -->
 <e>       <p><l>seb<s n="num"/></l>         <r>سبعة<s n="num"/></r></p><par n="mf_m_f"/></e>
 <e>       <p><l>tmi<s n="num"/></l>         <r>ثمانية<s n="num"/></r></p><par n="mf_m_f"/></e>
@@ -335,6 +334,20 @@
 <!-- one pair, two pairs? -->
 <!--<e>       <p><l>żewġ<s n="num"/></l>        <r>זוג<s n="num"/></r></p></e>--><!-- TODO -->
 <!--<e>       <p><l>erba<s n="num"/></l>        <r>ארבעה<s n="num"/></r></p><par n="mf_m_f"/></e>  -->
+
+
+<!-- 1st .. 10th, 100th -->
+<e>       <p><l>ewwel<s n="num"/><s n="ord"/></l><r>أول<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>tieni<s n="num"/><s n="ord"/></l><r>ثان<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>tielet<s n="num"/><s n="ord"/></l><r>ثالث<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>raba<s n="num"/><s n="ord"/></l><r>رابع<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>hames<s n="num"/><s n="ord"/></l><r>خامس<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>sitt<s n="num"/><s n="ord"/></l><r>سادس<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>seba<s n="num"/><s n="ord"/></l><r>سابع<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>tmien<s n="num"/><s n="ord"/></l><r>ثامن<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>disa<s n="num"/><s n="ord"/></l><r>تاسع<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>għaxar<s n="num"/><s n="ord"/></l><r>عاشر<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<!-- <e>       <p><l>mitt<s n="num"/><s n="ord"/></l><r>מאה<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>  --> <!-- TODO -->
 
 
 <e>       <p><l>XVI<s n="num"/></l>         <r>XVI<s n="num"/></r></p></e>
