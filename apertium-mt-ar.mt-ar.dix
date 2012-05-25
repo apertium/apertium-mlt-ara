@@ -242,7 +242,8 @@
 
      <e><p><l>ieħor<s n="prn"/><s n="ind"/></l><r>آخر<s n="prn"/><s n="ind"/></r></p></e>
 
-     <e><p><l>i<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+
+<!--     <e><p><l>i<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
      <e><p><l>na<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
      <e r="LR"><p><l>ek<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="GD"/><s n="sg"/></r></p></e>
      <e r="RL"><p><l>ek<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
@@ -254,17 +255,18 @@
      <e><p><l>ha<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
      <e r="LR"><p><l>hom<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
      <e r="RL"><p><l>hom<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
-     <e r="RL"><p><l>hom<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+     <e r="RL"><p><l>hom<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>  -->
 
 
      <!-- SECTION: Possessive pronouns -->
-     <e><p><l>tiegħi<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px1sg"/><s n="pos"/></r></p></e>
+
+<!--     <e><p><l>tiegħi<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px1sg"/><s n="pos"/></r></p></e>
      <e><p><l>tagħna<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px1pl"/><s n="pos"/></r></p></e>
      <e><p><l>tiegħek<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px2sg"/><s n="pos"/></r></p></e>
      <e><p><l>tagħkom<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px2pl"/><s n="pos"/></r></p></e>
      <e><p><l>tiegħu<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px3sg_m"/><s n="pos"/></r></p></e>
      <e><p><l>tagħha<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px3sg_f"/><s n="pos"/></r></p></e>
-     <e><p><l>tagħhom<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px3pl"/><s n="pos"/></r></p></e>
+     <e><p><l>tagħhom<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px3pl"/><s n="pos"/></r></p></e> -->
 
      <!-- SECTION: Determiners -->
 
@@ -294,7 +296,6 @@
 <e>       <p><l>erb<s n="num"/></l>      <r>أربعة<s n="num"/></r></p><par n="mf_m_f"/></e>
 <e>       <p><l>ħam<s n="num"/></l>         <r>خمسة<s n="num"/></r></p><par n="mf_m_f"/></e>
 <e>       <p><l>sitt<s n="num"/></l>         <r>ستة<s n="num"/></r></p><par n="mf_m_f"/></e>
-<!--<e r="LR"><p><l>sitt<s n="num"/></l>        <r>ستة<s n="num"/></r></p><par n="mf_m_f"/></e>--> <!-- ??? -->
 <e>       <p><l>seb<s n="num"/></l>         <r>سبعة<s n="num"/></r></p><par n="mf_m_f"/></e>
 <e>       <p><l>tmi<s n="num"/></l>         <r>ثمانية<s n="num"/></r></p><par n="mf_m_f"/></e>
 <e>       <p><l>dis<s n="num"/></l>         <r>تسعة<s n="num"/></r></p><par n="mf_m_f"/></e>
@@ -329,11 +330,10 @@
 
 <e>       <p><l>miljun<s n="num"/></l><r>مليون<s n="num"/></r></p></e>
 <e>       <p><l>biljun<s n="num"/></l><r>بليون<s n="num"/></r></p></e>
-<!-- <e>       <p><l>triljun<s n="num"/></l><r>טריליון<s n="num"/></r></p></e> -->
+ <e>       <p><l>triljun<s n="num"/></l><r>تريليون<s n="num"/></r></p></e>
 
 <!-- one pair, two pairs? -->
 <!--<e>       <p><l>żewġ<s n="num"/></l>        <r>זוג<s n="num"/></r></p></e>--><!-- TODO -->
-<!--<e>       <p><l>erba<s n="num"/></l>        <r>ארבעה<s n="num"/></r></p><par n="mf_m_f"/></e>  -->
 
 
 <!-- 1st .. 10th, 100th -->
@@ -347,7 +347,7 @@
 <e>       <p><l>tmien<s n="num"/><s n="ord"/></l><r>ثامن<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
 <e>       <p><l>disa<s n="num"/><s n="ord"/></l><r>تاسع<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
 <e>       <p><l>għaxar<s n="num"/><s n="ord"/></l><r>عاشر<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
-<!-- <e>       <p><l>mitt<s n="num"/><s n="ord"/></l><r>מאה<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>  --> <!-- TODO -->
+ <e>       <p><l>mitt<s n="num"/><s n="ord"/></l><r>مئة<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>  <!-- TODO -->
 
 
 <e>       <p><l>XVI<s n="num"/></l>         <r>XVI<s n="num"/></r></p></e>
@@ -1503,7 +1503,7 @@
      <e><p><l>uniku<s n="adj"/></l><r>فريد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>semitiku<s n="adj"/></l><r>سامي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>terroristiku<s n="adj"/></l><r>إرهابي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
-     <e c="  0"><p><l>kritiku<s n="adj"/></l><r>انتقادي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e c="  0"><p><l>kritiku<s n="adj"/></l><r>انتقاد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e slr="1" r="LR"><p><l>kritiku<s n="adj"/></l><r>حرج<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>sovjetiku<s n="adj"/></l><r>سوفيتي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>olimpiku<s n="adj"/></l><r>أولمبي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
@@ -2106,6 +2106,44 @@
      <e><p><l>manjetiku<s n="adj"/></l><r>مغناطيسي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>entużjast<s n="adj"/></l><r>متحمس<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>biżantin<s n="adj"/></l><r>بيزنطي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>skedat<s n="adj"/></l><r>مقرر<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>objettiv<s n="adj"/></l><r>موضوعي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>kompatt<s n="adj"/></l><r>مدمج<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>analizzat<s n="adj"/></l><r>مبحوث<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>iranjan<s n="adj"/></l><r>إيراني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>erotiku<s n="adj"/></l><r>جنسي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>unifikat<s n="adj"/></l><r>موحد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>slovakk<s n="adj"/></l><r>سلوفاكي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>toskan<s n="adj"/></l><r>توسكاني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>imxarrab<s n="adj"/></l><r>رطب<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>riferut<s n="adj"/></l><r>مشار<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>storbjuż<s n="adj"/></l><r>صاخب<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>poġġut<s n="adj"/></l><r>موجود<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>metaforiku<s n="adj"/></l><r>مجازي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+<!--     <e><p><l>implikat<s n="adj"/></l><r><s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> -->
+     <e><p><l>grat<s n="adj"/></l><r>ممتن<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>awtobijografiku<s n="adj"/></l><r>متعلق<g>بسيرة<b/>ذاتية</g><s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>perjodiku<s n="adj"/></l><r>دوري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>loġistiku<s n="adj"/></l><r>لوجستي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ikkritikat<s n="adj"/></l><r>انتقادي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ġermaniż<s n="adj"/></l><r>ألماني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>rrekordjat<s n="adj"/></l><r>مسجل<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>gotiku<s n="adj"/></l><r>قوطي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- غ -->
+     <e><p><l>anglikan<s n="adj"/></l><r>أنجليكاني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>suġġettiv<s n="adj"/></l><r>ذاتي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>sinottiku<s n="adj"/></l><r>إجمالي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- ? -->
+     <e r="LR"><p><l>previst<s n="adj"/></l><r>منتظر<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>burokratiku<s n="adj"/></l><r>ביורוקרטי<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>katalan<s n="adj"/></l><r>كاتالوني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ġgantesk<s n="adj"/></l><r>عملاق<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>folt<s n="adj"/></l><r>كثيف<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>mitiku<s n="adj"/></l><r>أسطوري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>finit<s n="adj"/></l><r>محدود<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- koncowy? -->
+     <e><p><l>epiku<s n="adj"/></l><r>ملحمي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>aritmetiku<s n="adj"/></l><r>حسابي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>norveġiż<s n="adj"/></l><r>نرويجي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ħolistiku<s n="adj"/></l><r>كلي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ċilen<s n="adj"/></l><r>شيلي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
 
 
 

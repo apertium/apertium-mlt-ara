@@ -102,9 +102,9 @@
     <def-cat n="ma_neg"> 
       <cat-item tags="adv" lemma="ma"/>
     </def-cat>
-    <def-cat n="ta_poss"> 
+<!--    <def-cat n="ta_poss"> 
       <cat-item tags="pr.px3sg_f" lemma="ta'"/>
-    </def-cat>
+    </def-cat> -->
     <def-cat n="biex"> 
       <cat-item tags="cnjsub" lemma="biex"/>
     </def-cat>
@@ -858,6 +858,7 @@
     </rule>
 
 
+<!--
     <rule comment="rule: no analytic genitive construction in Arabic, possessive pronouns used instead: ta' possessive forms -> possessive suffixes">
        <pattern>
          <pattern-item n="artic"/>
@@ -876,7 +877,7 @@
            </lu>
          </out>
        </action>
-    </rule>
+    </rule> -->
 
 
     <rule comment="rule: artic adj">
