@@ -2306,6 +2306,54 @@
      <e><p><l>aggressiv<s n="adj"/></l><r>عدواني<s n="adj"/></r></p></e>
      <e><p><l>apostoliku<s n="adj"/></l><r>رسولي<s n="adj"/></r></p></e>
      <!-- & appostoliku -->
+     <e><p><l>appassjonat<s n="adj"/></l><r>متحمس<s n="adj"/></r></p></e>
+<!--     <e><p><l>assistit<s n="adj"/></l><r><s n="adj"/></r></p></e> -->
+     <e><p><l>bask<s n="adj"/></l><r>باسكي<s n="adj"/></r></p></e>
+     <e><p><l>ċibernetiku<s n="adj"/></l><r>سيبراني<s n="adj"/></r></p></e>
+     <e c="  0"><p><l>enerġetiku<s n="adj"/></l><r>نشيط<s n="adj"/></r></p></e>
+     <e slr="1" r="LR"><p><l>enerġetiku<s n="adj"/></l><r>كهربائي<s n="adj"/></r></p></e> <!-- electric -->
+     <e><p><l>galilejan<s n="adj"/></l><r>جليلي<s n="adj"/></r></p></e>
+     <e><p><l>invitat<s n="adj"/></l><r>مدعو<s n="adj"/></r></p></e>
+     <e><p><l>kapitalizzat<s n="adj"/></l><r>مرسمل<s n="adj"/></r></p></e> <!-- ? -->
+     <e><p><l>kollaborattiv<s n="adj"/></l><r>تعاوني<s n="adj"/></r></p></e>
+     <e><p><l>kontemporanju<s n="adj"/></l><r>معاصر<s n="adj"/></r></p></e>
+     <e><p><l>naplitan<s n="adj"/></l><r>نابولي<s n="adj"/></r></p></e>
+     <e><p><l>oċeaniku<s n="adj"/></l><r>محيطي<s n="adj"/></r></p></e>
+     <e><p><l>ottoman<s n="adj"/></l><r>عثماني<s n="adj"/></r></p></e>
+     <e><p><l>protettiv<s n="adj"/></l><r>حام<s n="adj"/></r></p></e>
+     <e><p><l>rispettiv<s n="adj"/></l><r>حري<s n="adj"/></r></p></e>
+     <e><p><l>salvat<s n="adj"/></l><r>ناج<s n="adj"/></r></p></e>
+     <e><p><l>speċjalizzat<s n="adj"/></l><r>متخصص<s n="adj"/></r></p></e>
+     <e><p><l>taljan<s n="adj"/></l><r>إيطالي<s n="adj"/></r></p></e>
+     <e><p><l>televiżiv<s n="adj"/></l><r>تلفزيوني<s n="adj"/></r></p></e>
+     <e><p><l>ohxon<s n="adj"/></l><r>سميك<s n="adj"/></r></p></e>
+     <e><p><l>osservat<s n="adj"/></l><r>ملاحظ<s n="adj"/></r></p></e>
+     <e><p><l>akkanit<s n="adj"/></l><r>عنيد<s n="adj"/></r></p></e>
+     <e><p><l>Arjan<s n="adj"/></l><r>آري<s n="adj"/></r></p></e>
+     <e><p><l>erojku<s n="adj"/></l><r>بطولي<s n="adj"/></r></p></e>
+     <e><p><l>aċċessat<s n="adj"/></l><r>متناول<s n="adj"/></r></p></e>
+<!--     <e><p><l>bhal<s n="adj"/></l><r>כזה<s n="adj"/></r></p></e> prep 'as'! -->
+     <e c="  0"><p><l>diffuż<s n="adj"/></l><r>مشاع<s n="adj"/></r></p></e>
+     <e slr="1"><p><l>diffuż<s n="adj"/></l><r>منشور<s n="adj"/></r></p></e>
+     <e><p><l>ħafif<s n="adj"/></l><r>خفيف<s n="adj"/></r></p></e>
+     <e><p><l>immirat<s n="adj"/></l><r>مستهدف<s n="adj"/></r></p></e>
+     <e><p><l>introdott<s n="adj"/></l><r>مدرج<s n="adj"/></r></p></e>
+     <e><p><l>joniku<s n="adj"/></l><r>أيوني<s n="adj"/></r></p></e>
+     <e><p><l>kantant<s n="adj"/></l><r>مغن<s n="adj"/></r></p></e>
+     <e><p><l>dijalettiku<s n="adj"/></l><r>جدلي<s n="adj"/></r></p></e>
+     <e><p><l>kardijaku<s n="adj"/></l><r>قلبي<s n="adj"/></r></p></e>
+     <e><p><l>ispirat<s n="adj"/></l><r>متأثر<s n="adj"/></r></p></e>
+     <e c="  0"><p><l>sanzjonat<s n="adj"/></l><r>معاقب<s n="adj"/></r></p></e>
+     <e slr="1"><p><l>sanzjonat<s n="adj"/></l><r>معتمد<s n="adj"/></r></p></e>
+     <e><p><l>ammess<s n="adj"/></l><r>مقبول<s n="adj"/></r></p></e>
+     <e><p><l>segwit<s n="adj"/></l><r>متبوع<s n="adj"/></r></p></e>
+     <e><p><l>presedut<s n="adj"/></l><r>محكوم<s n="adj"/></r></p></e>
+     <e><p><l>trasformat<s n="adj"/></l><r>مغير<s n="adj"/></r></p></e>
+     <e><p><l>modifikat<s n="adj"/></l><r>مغير<s n="adj"/></r></p></e>
+     <e><p><l>imbuttat<s n="adj"/></l><r>مدفوع<s n="adj"/></r></p></e>
+     <e><p><l>rifjutat<s n="adj"/></l><r>مرفوض<s n="adj"/></r></p></e>
+     <e><p><l>skopert<s n="adj"/></l><r>مكتشف<s n="adj"/></r></p></e>
+     <e r="LR"><p><l>skurjat<s n="adj"/></l><r>مسجل<s n="adj"/></r></p></e> <!--goal-->
 
 
      <!-- SECTION: Interjections -->
@@ -2320,6 +2368,7 @@
      <e><p><l>illum<s n="adv"/></l><r>اليوم<s n="adv"/></r></p></e>
      <e><p><l>llum<s n="adv"/></l><r>اليوم<s n="adv"/></r></p></e>
      <e><p><l>ilbieraħ<s n="adv"/></l><r>امس<s n="adv"/></r></p></e>
+     <e><p><l>il-bieraħ<s n="adv"/></l><r>امس<s n="adv"/></r></p></e>
      <e><p><l>barra<s n="adv"/></l><r>خارجا<s n="adv"/></r></p></e> <!-- החוצה -->
      <e><p><l>il<b/>barra<s n="adv"/></l><r>الخارج<s n="adv"/></r></p></e>
      <e><p><l>flimkien<s n="adv"/></l><r>معا<s n="adv"/></r></p></e>
@@ -2331,7 +2380,8 @@
      <e><p><l>bħalissa<s n="adv"/></l><r>الآن<s n="adv"/></r></p></e>
      <e><p><l>imbagħad<s n="adv"/></l><r>حينئذ<s n="adv"/></r></p></e> 
      <e><p><l>anke<s n="adv"/></l><r>أيضا<s n="adv"/></r></p></e>
-     <e><p><l>allura<s n="adv"/></l><r>لذلك<s n="adv"/></r></p></e>
+     <e c="  0"><p><l>allura<s n="adv"/></l><r>لذلك<s n="adv"/></r></p></e>
+     <e slr="1"><p><l>allura<s n="adv"/></l><r>حينئذ<s n="adv"/></r></p></e>
      <e><p><l>issa<s n="adv"/></l><r>الآن<s n="adv"/></r></p></e>
      <e><p><l>hekk<s n="adv"/></l><r>هكذا<s n="adv"/></r></p></e>
      <e><p><l>ma<s n="adv"/></l><r>لا<s n="adv"/></r></p></e>
@@ -2346,14 +2396,16 @@
      <e><p><l>qed<s n="adv"/></l><r></r></p></e> <!-- Progressive particle -->
      <e><p><l>ħa<s n="adv"/></l><r></r></p></e> <!-- Hortative(?) particle -->
 
+     <!-- negation -->
+     <e c="  0"><p><l>ma<s n="adv"/></l><r>لا<s n="adv"/></r></p></e>
+     <e slr="1"><p><l>ma<s n="adv"/></l><r>لم<s n="adv"/></r></p></e>
+     <e slr="2"><p><l>ma<s n="adv"/></l><r>لن<s n="adv"/></r></p></e>
 
      <!-- miri (פנימה, בתוך, בפנים) -->
-     <e c="  0"><p><l>ġewwa<s n="adv"/></l><r>داخلا<s n="adv"/></r></p></e>
-     <e slr="1"><p><l>ġewwa<s n="adv"/></l><r>داخلا<s n="adv"/></r></p></e>
-     <e slr="2"><p><l>ġewwa<s n="adv"/></l><r>داخلا<s n="adv"/></r></p></e>
+     <e><p><l>ġewwa<s n="adv"/></l><r>داخلا<s n="adv"/></r></p></e>
+     <e><p><l>'l<b/>ġewwa<s n="adv"/></l><r>داخلا<s n="adv"/></r></p></e>
 
-     <e c="  0"><p><l>malajr<s n="adv"/></l><r>بسرعة<s n="adv"/></r></p></e>
-     <e slr="1"><p><l>malajr<s n="adv"/></l><r>بسرعة<s n="adv"/></r></p></e>
+     <e><p><l>malajr<s n="adv"/></l><r>بسرعة<s n="adv"/></r></p></e>
 
      <e><p><l>probabbilment<s n="adv"/></l><r>من<b/>المحتمل<s n="adv"/></r></p></e>
 
@@ -2363,15 +2415,114 @@
      <e><p><l>kif<s n="adv"/><s n="itg"/></l><r>كيف<s n="adv"/><s n="itg"/></r></p></e>
 
      <e><p><l>biss<s n="adv"/></l><r>فقط<s n="adv"/></r></p></e>
-     <e><p><l>qabel<s n="adv"/></l><r>قبل<s n="adv"/></r></p></e>
      <e><p><l>darba<s n="adv"/></l><r>مرة<s n="adv"/></r></p></e>
      <e><p><l>madwar<s n="adv"/></l><r>حول<s n="adv"/></r></p></e>
-     <e><p><l>bilfors<s n="adv"/></l><r>بالتأكيد<s n="adv"/></r></p></e>
-     <e><p><l>bilfors<s n="adv"/></l><r>بالتأكيد<s n="adv"/></r></p></e>
-     <e><p><l>bilfors<s n="adv"/></l><r>بالتأكيد<s n="adv"/></r></p></e>
-     <e><p><l>bilfors<s n="adv"/></l><r>بالتأكيد<s n="adv"/></r></p></e>
-     <e><p><l>bilfors<s n="adv"/></l><r>بالتأكيد<s n="adv"/></r></p></e>
-     <e><p><l>bilfors<s n="adv"/></l><r>بالتأكيد<s n="adv"/></r></p></e>
+     <e><p><l>dalwaqt<s n="adv"/></l><r>قريبا<s n="adv"/></r></p></e>
+     <e><p><l>internazzjonalment<s n="adv"/></l><r>دوليا<s n="adv"/></r></p></e>
+     <e><p><l>anki<s n="adv"/></l><r>حتى<s n="adv"/></r></p></e>
+     <e><p><l>hawn<s n="adv"/></l><r>هنا<s n="adv"/></r></p></e>
+     <e><p><l>qatt<s n="adv"/></l><r>أبدا<s n="adv"/></r></p></e>
+     <e><p><l>lura<s n="adv"/></l><r>الى<b/>الوراء<s n="adv"/></r></p></e>
+     <e><p><l>tajjeb<s n="adv"/></l><r>جيدا<s n="adv"/></r></p></e>
+     <e><p><l>forsi<s n="adv"/></l><r>ربما<s n="adv"/></r></p></e>
+     <e><p><l>wisq<s n="adv"/></l><r>أكثر<b/>من<b/>اللازم<s n="adv"/></r></p></e>
+     <e><p><l>diġà<s n="adv"/></l><r>قد<s n="adv"/></r></p></e>
+     <e><p><l>sew<s n="adv"/></l><r>تماما<s n="adv"/></r></p></e> <!-- pleonastic -->
+     <e><p><l>qabel<s n="adv"/></l><r>قبل<s n="adv"/></r></p></e>
+     <e><p><l>iżjed<s n="adv"/></l><r>أكثر<s n="adv"/></r></p></e>
+     <e><p><l>aktarx<s n="adv"/></l><r>على<b/>الأرجح<s n="adv"/></r></p></e>
+     <e><p><l>inqas<s n="adv"/></l><r>أقل<s n="adv"/></r></p></e>
+     <e><p><l>kważi<s n="adv"/></l><r>تقريبا<s n="adv"/></r></p></e>
+     <e><p><l>tassew<s n="adv"/></l><r>حقا<s n="adv"/></r></p></e>
+     <e><p><l>għada<s n="adv"/></l><r>غدا<s n="adv"/></r></p></e>
+     <e><p><l>minflok<s n="adv"/></l><r>بدلا<b/>من<b/>ذلك<s n="adv"/></r></p></e>
+     <e><p><l>tard<s n="adv"/></l><r>متأخرا<s n="adv"/></r></p></e>
+     <e><p><l>iva<s n="adv"/></l><r>نعم<s n="adv"/></r></p></e> <!-- only ij? -->
+     <e><p><l>il-bogħod<s n="adv"/></l><r>بعيدا<s n="adv"/></r></p></e>
+     <e><p><l>speċjalment<s n="adv"/></l><r>خاصة<s n="adv"/></r></p></e>
+     <e><p><l>anzi<s n="adv"/></l><r>بالأحرى<s n="adv"/></r></p></e>
+     <e><p><l>isfel<s n="adv"/></l><r>أسفل<s n="adv"/></r></p></e>
+     <e><p><l>'l<b/>isfel<s n="adv"/></l><r>أسفل<s n="adv"/></r></p></e>
+     <e><p><l>kultant<s n="adv"/></l><r>أحيانا<s n="adv"/></r></p></e>
+     <e><p><l>soltu<s n="adv"/></l><r>عادة<s n="adv"/></r></p></e>
+     <e><p><l>madankollu<s n="adv"/></l><r>مع<b/>ذلك<s n="adv"/></r></p></e>
+     <e><p><l>sfortunatament<s n="adv"/></l><r>لسوء<b/>الحظ<s n="adv"/></r></p></e>
+     <e><p><l>'l<b/>hawn<s n="adv"/></l><r>هنا<s n="adv"/></r></p></e> <!-- not קדימה -->
+     <e><p><l>sempliċiment<s n="adv"/></l><r>ببساطة<s n="adv"/></r></p></e>
+     <e><p><l>ilu<s n="adv"/></l><r>منذ<s n="adv"/></r></p></e> <!--  ? -->
+     <e><p><l>ġeneralment<s n="adv"/></l><r>بشكل<b/>عام<s n="adv"/></r></p></e>
+     <e><p><l>naturalment<s n="adv"/></l><r>طبعا<s n="adv"/></r></p></e>
+     <e><p><l>eżattament<s n="adv"/></l><r>بالضبط<s n="adv"/></r></p></e>
+     <e><p><l>normalment<s n="adv"/></l><r>عادة<s n="adv"/></r></p></e>
+     <e><p><l>direttament<s n="adv"/></l><r>مباشرة<s n="adv"/></r></p></e>
+     <e><p><l>fuq<s n="adv"/></l><r>فوق<s n="adv"/></r></p></e>
+     <e><p><l>il<b/>fuq<s n="adv"/></l><r>فوق<s n="adv"/></r></p></e>
+     <e><p><l>personalment<s n="adv"/></l><r>شخصيا<s n="adv"/></r></p></e>
+     <e><p><l>kompletament<s n="adv"/></l><r>تماما<s n="adv"/></r></p></e>
+     <e><p><l>allegatament<s n="adv"/></l><r>زعما<s n="adv"/></r></p></e>
+     <e><p><l>eventwalment<s n="adv"/></l><r>ربما<s n="adv"/></r></p></e> <!-- possibly, not eventually -->
+     <e><p><l>partikolarment<s n="adv"/></l><r>خاصة<s n="adv"/></r></p></e>
+     <e><p><l>kontinwament<s n="adv"/></l><r>بشكل<b/>مستمر<s n="adv"/></r></p></e>
+     <e><p><l>uffiċjalment<s n="adv"/></l><r>رسميا<s n="adv"/></r></p></e>
+     <e><p><l>faċilment<s n="adv"/></l><r>بسهولة<s n="adv"/></r></p></e>
+     <e><p><l>totalment<s n="adv"/></l><r>تماما<s n="adv"/></r></p></e>
+     <e><p><l>assolutament<s n="adv"/></l><r>على<b/>الاطلاق<s n="adv"/></r></p></e>
+     <e><p><l>litteralment<s n="adv"/></l><r>حرفيا<s n="adv"/></r></p></e>
+     <e><p><l>prattikament<s n="adv"/></l><r>عمليا<s n="adv"/></r></p></e>
+     <e><p><l>regolarment<s n="adv"/></l><r>بانتظام<s n="adv"/></r></p></e>
+     <e><p><l>oriġinarjament<s n="adv"/></l><r>أصلا<s n="adv"/></r></p></e>
+     <e><p><l>immedjatament<s n="adv"/></l><r>فورا<s n="adv"/></r></p></e>
+     <e><p><l>politikament<s n="adv"/></l><r>سياسيا<s n="adv"/></r></p></e>
+     <e><p><l>xjentifikament<s n="adv"/></l><r>علميا<s n="adv"/></r></p></e>
+     <e><p><l>attwalment<s n="adv"/></l><r>حاليا<s n="adv"/></r></p></e>
+     <e><p><l>pubblikament<s n="adv"/></l><r>علانية<s n="adv"/></r></p></e>
+     <e><p><l>primarjament<s n="adv"/></l><r>أولا<s n="adv"/></r></p></e>
+     <e><p><l>bażikament<s n="adv"/></l><r>في<b/>الأساس<s n="adv"/></r></p></e>
+     <e><p><l>rispettivament<s n="adv"/></l><r>على<b/>التوالي<s n="adv"/></r></p></e>
+     <e><p><l>prinċipalment<s n="adv"/></l><r>أساسا<s n="adv"/></r></p></e>
+     <e><p><l>speċifikament<s n="adv"/></l><r>خاصة<s n="adv"/></r></p></e>
+     <e><p><l>tradizzjonalment<s n="adv"/></l><r>تقليديا<s n="adv"/></r></p></e>
+     <e><p><l>lokalment<s n="adv"/></l><r>محليا<s n="adv"/></r></p></e>
+     <e><p><l>possibilment<s n="adv"/></l><r>ربما<s n="adv"/></r></p></e>
+     <e><p><l>strettament<s n="adv"/></l><r>بالتتحديد<s n="adv"/></r></p></e>
+     <e><p><l>essenzjalment<s n="adv"/></l><r>في<b/>الأساس<s n="adv"/></r></p></e>
+     <e><p><l>storikament<s n="adv"/></l><r>تاريخيا<s n="adv"/></r></p></e>
+     <e><p><l>sesswalment<s n="adv"/></l><r>جنسيا<s n="adv"/></r></p></e>
+     <e><p><l>tipikament<s n="adv"/></l><r>عادة<s n="adv"/></r></p></e>
+     <e><p><l>parzjalment<s n="adv"/></l><r>جزئيا<s n="adv"/></r></p></e>
+     <e><p><l>hekk<b/>u<b/>hekk<s n="adv"/></l><r>هكذا<b/>وهكذا<s n="adv"/></r></p></e>
+     <e><p><l>indipendentement<s n="adv"/></l><r>بشكل<b/>مستقل<s n="adv"/></r></p></e>
+     <e c="  0"><p><l>suċċessivament<s n="adv"/></l><r>بالتتابع<s n="adv"/></r></p></e>
+     <e slr="1"><p><l>suċċessivament<s n="adv"/></l><r>على<b/>التوالي<s n="adv"/></r></p></e>
+     <e><p><l>esklużivament<s n="adv"/></l><r>حصرا<s n="adv"/></r></p></e>
+
+     <e><p><l>biex<s n="adv"/><s n="itg"/></l><r>مع<b/>ما<s n="adv"/><s n="itg"/></r></p></e>
+    <e><p><l>għala<s n="adv"/><s n="itg"/></l><r>لماذا<s n="adv"/><s n="itg"/></r></p></e>
+     <e><p><l>jaqaw<s n="adv"/><s n="itg"/></l><r>ممكن<s n="adv"/><s n="itg"/></r></p></e>
+     <e><p><l>jewilla<s n="adv"/><s n="itg"/></l><r>أو<b/>لا<s n="adv"/><s n="itg"/></r></p></e>
+     <e><p><l>mnejn<s n="adv"/><s n="itg"/></l><r>من<b/>أين<s n="adv"/><s n="itg"/></r></p></e>
+     <e><p><l>safejn<s n="adv"/><s n="itg"/></l><r>إلى<b/>أين<s n="adv"/><s n="itg"/></r></p></e>
+<!--     <e><p><l>minn<b/>sa<b/>fejn<s n="adv"/><s n="itg"/></l><r><s n="adv"/><s n="itg"/></r></p></e> -->
+     <e><p><l>għaliex<s n="adv"/><s n="itg"/></l><r>لماذا<s n="adv"/><s n="itg"/></r></p></e>
+     <e><p><l>xiex<s n="adv"/><s n="itg"/></l><r>ما<s n="adv"/><s n="itg"/></r></p></e> <!-- and ماذا ? -->
+
+     <e><p><l>mhux<s n="adv"/></l><r>لا<s n="adv"/></r></p></e><!-- TODO -->
+     <e><p><l>mħumiex<s n="adv"/></l><r>لا<s n="adv"/></r></p></e><!-- TODO -->
+     <e><p><l>mħix<s n="adv"/></l><r>لا<s n="adv"/></r></p></e><!-- TODO -->
+
+     <e><p><l>hemm<s n="adv"/></l><r>هناك<s n="adv"/></r></p></e>
+     <e><p><l>hemmhekk<s n="adv"/></l><r>هناك<s n="adv"/></r></p></e>
+     <e><p><l>'l<b/>hemm<s n="adv"/></l><r>هناك<s n="adv"/></r></p></e>
+     <e><p><l>għad<s n="adv"/></l><r>باستمرار<s n="adv"/></r></p></e> <!-- still -->
+     <e><p><l>xorta<s n="adv"/></l><r>بهذا<b/>الشكل<s n="adv"/></r></p></e>
+     <e><p><l>verament<s n="adv"/></l><r>حقا<s n="adv"/></r></p></e>
+     <e><p><l>tant<b/>kemm<s n="adv"/></l><r>كثيرا<b/>كذلك<s n="adv"/></r></p></e>
+     <e><p><l>astronomikament<s n="adv"/></l><r>فلكيا<s n="adv"/></r></p></e>
+     <e><p><l>hawnhekk<s n="adv"/></l><r>هنا<s n="adv"/></r></p></e>
+<!--     <e><p><l>lanqas<s n="adv"/></l><r>אפילו<s n="adv"/></r></p></e>
+     <e><p><l>lanqas<b/>biss<s n="adv"/></l><r>אפילו<b/>לא<s n="adv"/></r></p></e> 
+-->
+     <e><p><l>pulit<s n="adv"/></l><r>بشكل<b/>نظيف<s n="adv"/></r></p></e>
 
 
      <!-- SECTION: Verbs -->
