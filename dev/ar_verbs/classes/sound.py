@@ -11,6 +11,7 @@
 def sound_past_actv(base, base_t, base_n, tv): #{
 
 	forms = {};
+	paradigm = 'S__فتح/ه';
 
 	if tv == 'iv' : #{
 		forms['actv.past.p3.m.sg'] = [(base, '-', '-')];
@@ -30,21 +31,21 @@ def sound_past_actv(base, base_t, base_n, tv): #{
 		forms['actv.past.p1.mf.pl'] = [(base_n + 'نا', '-', '-')];
 	#}
 	else : #{
-		forms['actv.past.p3.m.sg'] = [(base, '-', '-'), (base, 'S__فتح/ه', '-')];
-		forms['actv.past.p3.f.sg'] = [(base + 'ت', '-', '-'), (base + 'ت', 'S__فتح/ه', '-')];
-		forms['actv.past.p2.m.sg'] = [(base_t + 'ت', '-', '-'), (base_t + 'ت', 'S__فتح/ه', '-')];
-		forms['actv.past.p2.f.sg'] = [(base_t + 'ت', '-', '-'), (base_t + 'ت', 'S__فتح/ه', '-')];
-		forms['actv.past.p1.mf.sg'] = [(base_t + 'ت', '-', '-'), (base_t + 'ت', 'S__فتح/ه', '-')];
+		forms['actv.past.p3.m.sg'] = [(base, '-', '-'), (base, paradigm, '-')];
+		forms['actv.past.p3.f.sg'] = [(base + 'ت', '-', '-'), (base + 'ت', paradigm, '-')];
+		forms['actv.past.p2.m.sg'] = [(base_t + 'ت', '-', '-'), (base_t + 'ت', paradigm, '-')];
+		forms['actv.past.p2.f.sg'] = [(base_t + 'ت', '-', '-'), (base_t + 'ت', paradigm, '-')];
+		forms['actv.past.p1.mf.sg'] = [(base_t + 'ت', '-', '-'), (base_t + 'ت', paradigm, '-')];
 
-		forms['actv.past.p3.m.du'] = [(base + 'ا', '-', '-'), (base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.past.p3.f.du'] = [(base + 'تا', '-', '-'), (base + 'تا', 'S__فتح/ه', '-')];
-		forms['actv.past.p2.mf.du'] = [(base_t + 'تما', '-', '-'), (base_t + 'تما', 'S__فتح/ه', '-')];
+		forms['actv.past.p3.m.du'] = [(base + 'ا', '-', '-'), (base + 'ا', paradigm, '-')];
+		forms['actv.past.p3.f.du'] = [(base + 'تا', '-', '-'), (base + 'تا', paradigm, '-')];
+		forms['actv.past.p2.mf.du'] = [(base_t + 'تما', '-', '-'), (base_t + 'تما', paradigm, '-')];
 
-		forms['actv.past.p3.m.pl'] = [(base + 'وا', '-', '-'), (base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.past.p3.f.pl'] = [(base_n + 'ن', '-', '-'), (base_n + 'ن', 'S__فتح/ه', '-')];
-		forms['actv.past.p2.m.pl'] = [(base_t + 'تم', '-', '-'), (base_t + 'تمو', 'S__فتح/ه', '-')];
-		forms['actv.past.p2.f.pl'] = [(base_t + 'تن', '-', '-'), (base_t + 'تن', 'S__فتح/ه', '-')];
-		forms['actv.past.p1.mf.pl'] = [(base_n + 'نا', '-', '-'), (base_n + 'نا', 'S__فتح/ه', '-')];
+		forms['actv.past.p3.m.pl'] = [(base + 'وا', '-', '-'), (base + 'و', paradigm, '-')];
+		forms['actv.past.p3.f.pl'] = [(base_n + 'ن', '-', '-'), (base_n + 'ن', paradigm, '-')];
+		forms['actv.past.p2.m.pl'] = [(base_t + 'تم', '-', '-'), (base_t + 'تمو', paradigm, '-')];
+		forms['actv.past.p2.f.pl'] = [(base_t + 'تن', '-', '-'), (base_t + 'تن', paradigm, '-')];
+		forms['actv.past.p1.mf.pl'] = [(base_n + 'نا', '-', '-'), (base_n + 'نا', paradigm, '-')];
 	#}
 
 	return forms;
@@ -77,6 +78,7 @@ def sound_past_pasv(base, base_t, base_n): #{
 def sound_pres_actv(base, base_n, tv): #{
 
 	forms = {};
+	paradigm = 'S__فتح/ه';
 
 	if tv == 'iv' : #{
 		forms['actv.pres.p3.m.sg'] = [('ي' + base, '-', '-')];
@@ -96,21 +98,21 @@ def sound_pres_actv(base, base_n, tv): #{
 		forms['actv.pres.p1.mf.pl'] = [('ن' + base, '-', '-')];
 	#}
 	else : #{
-		forms['actv.pres.p3.m.sg'] = [('ي' + base, '-', '-'), ('ي' + base, 'S__فتح/ه', '-')];
-		forms['actv.pres.p3.f.sg'] = [('ت' + base, '-', '-'), ('ت' + base, 'S__فتح/ه', '-')];
-		forms['actv.pres.p2.m.sg'] = [('ت' + base, '-', '-'), ('ت' + base, 'S__فتح/ه', '-')];
-		forms['actv.pres.p2.f.sg'] = [('ت' + base + 'ين', '-', '-'), ('ت' + base + 'ي', 'S__فتح/ه', '-')];
-		forms['actv.pres.p1.mf.sg'] = [('أ' + base, '-', '-'), ('أ' + base, 'S__فتح/ه', '-')];
+		forms['actv.pres.p3.m.sg'] = [('ي' + base, '-', '-'), ('ي' + base, paradigm, '-')];
+		forms['actv.pres.p3.f.sg'] = [('ت' + base, '-', '-'), ('ت' + base, paradigm, '-')];
+		forms['actv.pres.p2.m.sg'] = [('ت' + base, '-', '-'), ('ت' + base, paradigm, '-')];
+		forms['actv.pres.p2.f.sg'] = [('ت' + base + 'ين', '-', '-'), ('ت' + base + 'ي', paradigm, '-')];
+		forms['actv.pres.p1.mf.sg'] = [('أ' + base, '-', '-'), ('أ' + base, paradigm, '-')];
 	
-		forms['actv.pres.p3.m.du'] = [('ي' + base + 'ان', '-', '-'), ('ي' + base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.pres.p3.f.du'] = [('ت' + base + 'ان', '-', '-'), ('ت' + base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.pres.p2.mf.du'] = [('ت' + base + 'ان', '-', '-'), ('ت' + base + 'ا', 'S__فتح/ه', '-')];
+		forms['actv.pres.p3.m.du'] = [('ي' + base + 'ان', '-', '-'), ('ي' + base + 'ا', paradigm, '-')];
+		forms['actv.pres.p3.f.du'] = [('ت' + base + 'ان', '-', '-'), ('ت' + base + 'ا', paradigm, '-')];
+		forms['actv.pres.p2.mf.du'] = [('ت' + base + 'ان', '-', '-'), ('ت' + base + 'ا', paradigm, '-')];
 
-		forms['actv.pres.p3.m.pl'] = [('ي' + base + 'ون', '-', '-'), ('ي' + base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.pres.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-'), ('ي' + base_n + 'ن', 'S__فتح/ه', '-')];
-		forms['actv.pres.p2.m.pl'] = [('ت' + base + 'ون', '-', '-'), ('ت' + base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.pres.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', 'S__فتح/ه', '-')];
-		forms['actv.pres.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, 'S__فتح/ه', '-')];
+		forms['actv.pres.p3.m.pl'] = [('ي' + base + 'ون', '-', '-'), ('ي' + base + 'و', paradigm, '-')];
+		forms['actv.pres.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-'), ('ي' + base_n + 'ن', paradigm, '-')];
+		forms['actv.pres.p2.m.pl'] = [('ت' + base + 'ون', '-', '-'), ('ت' + base + 'و', paradigm, '-')];
+		forms['actv.pres.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', paradigm, '-')];
+		forms['actv.pres.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, paradigm, '-')];
 
 	#}
 
@@ -144,9 +146,19 @@ def sound_pres_pasv(base, base_n): #{
 
 
 
-def sound_subjun_actv(base, base_n, tv): #{
+def sound_subjun_actv(base, base_n, subtype, tv): #{
 
 	forms = {};
+
+	paradigm = 'S__فتح/ه';
+	paradigm_cons = 'S__فتح/ه';
+
+	if subtype == 'n' :
+		paradigm_cons = 'S__يلون/ه';
+	elif subtype == 'k' :
+		paradigm_cons = 'S__يترك/ه';
+	elif subtype == 'h' :
+		paradigm_cons = 'S__يشبه/ه';
 
 	if tv == 'iv' : #{
 		forms['actv.subjun.p3.m.sg'] = [('ي' + base, '-', '-')];
@@ -166,21 +178,21 @@ def sound_subjun_actv(base, base_n, tv): #{
 		forms['actv.subjun.p1.mf.pl'] = [('ن' + base, '-', '-')];
 	#}
 	else : #{
-		forms['actv.subjun.p3.m.sg'] = [('ي' + base, '-', '-'), ('ي' + base, 'S__فتح/ه', '-')];
-		forms['actv.subjun.p3.f.sg'] = [('ت' + base, '-', '-'), ('ت' + base, 'S__فتح/ه', '-')];
-		forms['actv.subjun.p2.m.sg'] = [('ت' + base, '-', '-'), ('ت' + base, 'S__فتح/ه', '-')];
-		forms['actv.subjun.p2.f.sg'] = [('ت' + base + 'ي', '-', '-'), ('ت' + base + 'ي', 'S__فتح/ه', '-')];
-		forms['actv.subjun.p1.mf.sg'] = [('أ' + base, '-', '-'), ('أ' + base, 'S__فتح/ه', '-')];
+		forms['actv.subjun.p3.m.sg'] = [('ي' + base, '-', '-'), ('ي' + base, paradigm_cons, '-')];
+		forms['actv.subjun.p3.f.sg'] = [('ت' + base, '-', '-'), ('ت' + base, paradigm_cons, '-')];
+		forms['actv.subjun.p2.m.sg'] = [('ت' + base, '-', '-'), ('ت' + base, paradigm_cons, '-')];
+		forms['actv.subjun.p2.f.sg'] = [('ت' + base + 'ي', '-', '-'), ('ت' + base + 'ي', paradigm, '-')];
+		forms['actv.subjun.p1.mf.sg'] = [('أ' + base, '-', '-'), ('أ' + base, paradigm_cons, '-')];
 	
-		forms['actv.subjun.p3.m.du'] = [('ي' + base + 'ا', '-', '-'), ('ي' + base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.subjun.p3.f.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.subjun.p2.mf.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', 'S__فتح/ه', '-')];
+		forms['actv.subjun.p3.m.du'] = [('ي' + base + 'ا', '-', '-'), ('ي' + base + 'ا', paradigm, '-')];
+		forms['actv.subjun.p3.f.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', paradigm, '-')];
+		forms['actv.subjun.p2.mf.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', paradigm, '-')];
 
-		forms['actv.subjun.p3.m.pl'] = [('ي' + base + 'وا', '-', '-'), ('ي' + base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.subjun.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-'), ('ي' + base_n + 'ن', 'S__فتح/ه', '-')];
-		forms['actv.subjun.p2.m.pl'] = [('ت' + base + 'وا', '-', '-'), ('ت' + base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.subjun.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', 'S__فتح/ه', '-')];
-		forms['actv.subjun.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, 'S__فتح/ه', '-')];
+		forms['actv.subjun.p3.m.pl'] = [('ي' + base + 'وا', '-', '-'), ('ي' + base + 'و', paradigm, '-')];
+		forms['actv.subjun.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-'), ('ي' + base_n + 'ن', paradigm, '-')];
+		forms['actv.subjun.p2.m.pl'] = [('ت' + base + 'وا', '-', '-'), ('ت' + base + 'و', paradigm, '-')];
+		forms['actv.subjun.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', paradigm, '-')];
+		forms['actv.subjun.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, paradigm_cons, '-')];
 	#}
 
 	return forms;
@@ -214,6 +226,7 @@ def sound_subjun_pasv(base, base_n): #{
 def sound_apocop_actv(base, base_n, tv): #{
 
 	forms = {};
+	paradigm = 'S__فتح/ه';
 
 	if tv == 'iv' : #{
 		forms['actv.apocop.p3.m.sg'] = [('ي' + base, '-', '-')];
@@ -233,21 +246,21 @@ def sound_apocop_actv(base, base_n, tv): #{
 		forms['actv.apocop.p1.mf.pl'] = [('ن' + base, '-', '-')];
 	#}
 	else : #{
-		forms['actv.apocop.p3.m.sg'] = [('ي' + base, '-', '-'), ('ي' + base, 'S__فتح/ه', '-')];
-		forms['actv.apocop.p3.f.sg'] = [('ت' + base, '-', '-'), ('ت' + base, 'S__فتح/ه', '-')];
-		forms['actv.apocop.p2.m.sg'] = [('ت' + base, '-', '-'), ('ت' + base, 'S__فتح/ه', '-')];
-		forms['actv.apocop.p2.f.sg'] = [('ت' + base + 'ي', '-', '-'), ('ت' + base + 'ي', 'S__فتح/ه', '-')];
-		forms['actv.apocop.p1.mf.sg'] = [('أ' + base, '-', '-'), ('أ' + base, 'S__فتح/ه', '-')];
+		forms['actv.apocop.p3.m.sg'] = [('ي' + base, '-', '-'), ('ي' + base, paradigm, '-')];
+		forms['actv.apocop.p3.f.sg'] = [('ت' + base, '-', '-'), ('ت' + base, paradigm, '-')];
+		forms['actv.apocop.p2.m.sg'] = [('ت' + base, '-', '-'), ('ت' + base, paradigm, '-')];
+		forms['actv.apocop.p2.f.sg'] = [('ت' + base + 'ي', '-', '-'), ('ت' + base + 'ي', paradigm, '-')];
+		forms['actv.apocop.p1.mf.sg'] = [('أ' + base, '-', '-'), ('أ' + base, paradigm, '-')];
 	
-		forms['actv.apocop.p3.m.du'] = [('ي' + base + 'ا', '-', '-'), ('ي' + base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.apocop.p3.f.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.apocop.p2.mf.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', 'S__فتح/ه', '-')];
+		forms['actv.apocop.p3.m.du'] = [('ي' + base + 'ا', '-', '-'), ('ي' + base + 'ا', paradigm, '-')];
+		forms['actv.apocop.p3.f.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', paradigm, '-')];
+		forms['actv.apocop.p2.mf.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', paradigm, '-')];
 
-		forms['actv.apocop.p3.m.pl'] = [('ي' + base + 'وا', '-', '-'), ('ي' + base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.apocop.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-'), ('ي' + base_n + 'ن', 'S__فتح/ه', '-')];
-		forms['actv.apocop.p2.m.pl'] = [('ت' + base + 'وا', '-', '-'), ('ت' + base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.apocop.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', 'S__فتح/ه', '-')];
-		forms['actv.apocop.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, 'S__فتح/ه', '-')];
+		forms['actv.apocop.p3.m.pl'] = [('ي' + base + 'وا', '-', '-'), ('ي' + base + 'و', paradigm, '-')];
+		forms['actv.apocop.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-'), ('ي' + base_n + 'ن', paradigm, '-')];
+		forms['actv.apocop.p2.m.pl'] = [('ت' + base + 'وا', '-', '-'), ('ت' + base + 'و', paradigm, '-')];
+		forms['actv.apocop.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', paradigm, '-')];
+		forms['actv.apocop.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, paradigm, '-')];
 	#}
 
 	return forms;
@@ -278,11 +291,22 @@ def sound_apocop_pasv(base, base_n): #{
 #}
 
 
-def sound_imp(base, base_n, tv): #{
+def sound_imp(base, base_n, subtype, tv): #{
 
 	# passive voice?
 
 	forms = {};
+
+	paradigm = 'S__فتح/ه';
+	paradigm_cons = 'S__فتح/ه';
+
+	if subtype == 'n' :
+		paradigm_cons = 'S__يلون/ه';
+	elif subtype == 'k' :
+		paradigm_cons = 'S__يترك/ه';
+	elif subtype == 'h' :
+		paradigm_cons = 'S__يشبه/ه';
+
 
 	if tv == 'iv' : #{
 		forms['actv.imp.p2.m.sg'] = [(base, '-', '-')];
@@ -292,11 +316,11 @@ def sound_imp(base, base_n, tv): #{
 		forms['actv.imp.p2.f.pl'] = [(base_n + 'ن', '-', '-')];
 	#}
 	else : #{
-		forms['actv.imp.p2.m.sg'] = [(base, '-', '-'), (base, 'S__فتح/ه', '-')];
-		forms['actv.imp.p2.f.sg'] = [(base + 'ي', '-', '-'), (base + 'ي', 'S__فتح/ه', '-')];
-		forms['actv.imp.p2.mf.du'] = [(base + 'ا', '-', '-'), (base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.imp.p2.m.pl'] = [(base + 'وا', '-', '-'), (base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.imp.p2.f.pl'] = [(base_n + 'ن', '-', '-'), (base_n + 'ن', 'S__فتح/ه', '-')];
+		forms['actv.imp.p2.m.sg'] = [(base, '-', '-'), (base, paradigm_cons, '-')];
+		forms['actv.imp.p2.f.sg'] = [(base + 'ي', '-', '-'), (base + 'ي', paradigm, '-')];
+		forms['actv.imp.p2.mf.du'] = [(base + 'ا', '-', '-'), (base + 'ا', paradigm, '-')];
+		forms['actv.imp.p2.m.pl'] = [(base + 'وا', '-', '-'), (base + 'و', paradigm, '-')];
+		forms['actv.imp.p2.f.pl'] = [(base_n + 'ن', '-', '-'), (base_n + 'ن', paradigm, '-')];
 	#}
 
 	return forms ; 
@@ -360,7 +384,15 @@ def sound_patt1_subjun(root, tv): #{
 	else :
 		base_n = r[0] + r[1] + r[2];
 
-	forms = sound_subjun_actv(base, base_n, tv);
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	forms = sound_subjun_actv(base, base_n, subtype, tv);
 	if (tv == 'tv') :
 		forms.update(sound_subjun_pasv(base, base_n));
 
@@ -398,7 +430,15 @@ def sound_patt1_imp(root, tv): #{
 	else :
 		base_n = 'ا' + r[0] + r[1] + r[2];
 
-	return sound_imp(base, base_n, tv); 
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	return sound_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -487,7 +527,15 @@ def sound_patt2_subjun(root, tv): #{
 	else :
 		base_n = r[0] + r[1] + r[2];
 
-	forms = sound_subjun_actv(base, base_n, tv);
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	forms = sound_subjun_actv(base, base_n, subtype, tv);
 	if (tv == 'tv') :
 		forms.update(sound_subjun_pasv(base, base_n));
 
@@ -523,7 +571,15 @@ def sound_patt2_imp(root, tv): #{
 	else :
 		base_n = r[0] + r[1] + r[2];
 
-	return sound_imp(base, base_n, tv); 
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	return sound_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -626,7 +682,15 @@ def sound_patt3_subjun(root, tv): #{
 	else :
 		base_n = r[0] + 'ا' + r[1] + r[2];
 
-	forms = sound_subjun_actv(base, base_n, tv);
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	forms = sound_subjun_actv(base, base_n, subtype, tv);
 	if (tv == 'tv') : #{
 		forms.update(sound_subjun_pasv(base, base_n));
 	#}
@@ -666,7 +730,15 @@ def sound_patt3_imp(root, tv): #{
 	else :
 		base_n = r[0] + 'ا' + r[1] + r[2];
 
-	return sound_imp(base, base_n, tv); 
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	return sound_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -757,7 +829,15 @@ def sound_patt4_subjun(root, tv): #{
 	else :
 		base_n = r[0] + r[1] + r[2];
 
-	forms = sound_subjun_actv(base, base_n, tv);
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	forms = sound_subjun_actv(base, base_n, subtype, tv);
 	if (tv == 'tv') : #{
 		forms.update(sound_subjun_pasv(base, base_n));
 	#}
@@ -797,7 +877,15 @@ def sound_patt4_imp(root, tv): #{
 	else :
 		base_n = 'أ' + r[0] + r[1] + r[2];
 
-	return sound_imp(base, base_n, tv); 
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	return sound_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -888,7 +976,15 @@ def sound_patt5_subjun(root, tv): #{
 	else :
 		base_n = 'ت' + r[0] + r[1] + r[2];
 
-	forms = sound_subjun_actv(base, base_n, tv);
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	forms = sound_subjun_actv(base, base_n, subtype, tv);
 	if (tv == 'tv') : #{
 		forms.update(sound_subjun_pasv(base, base_n));
 	#}
@@ -907,9 +1003,9 @@ def sound_patt5_apocop(root, tv): #{
 	else :
 		base_n = 'ت' + r[0] + r[1] + r[2];
 
-	forms = sound_subjun_actv(base, base_n, tv);
+	forms = sound_apocop_actv(base, base_n, tv);
 	if (tv == 'tv') : #{
-		forms.update(sound_subjun_pasv(base, base_n));
+		forms.update(sound_apocop_pasv(base, base_n));
 	#}
 
 	return forms;
@@ -926,7 +1022,15 @@ def sound_patt5_imp(root, tv): #{
 	else :
 		base_n = 'ت' + r[0] + r[1] + r[2];
 
-	return sound_imp(base, base_n, tv); 
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	return sound_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -1030,7 +1134,15 @@ def sound_patt6_subjun(root, tv): #{
 	else :
 		base_n = 'ت' + r[0] + 'ا' + r[1] + r[2];
 
-	forms = sound_subjun_actv(base, base_n, tv);
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	forms = sound_subjun_actv(base, base_n, subtype, tv);
 	if (tv == 'tv') : #{
 		forms.update(sound_subjun_pasv(base, base_n));
 	#}
@@ -1070,7 +1182,15 @@ def sound_patt6_imp(root, tv): #{
 	else :
 		base_n = 'ت' + r[0] + 'ا' + r[1] + r[2];
 
-	return sound_imp(base, base_n, tv); 
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	return sound_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -1154,7 +1274,15 @@ def sound_patt7_subjun(root, tv): #{
 	else :
 		base_n = 'ن' + r[0] + r[1] + r[2];
 
-	return sound_subjun_actv(base, base_n, tv);
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	return sound_subjun_actv(base, base_n, subtype, tv);
 #}
 
 
@@ -1182,7 +1310,15 @@ def sound_patt7_imp(root, tv): #{
 	else :
 		base_n = 'ان' + r[0] + r[1] + r[2];
 
-	return sound_imp(base, base_n, tv); 
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	return sound_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -1296,8 +1432,15 @@ def sound_patt8_subjun(root, tv): #{
 	else :
 		base_n = base_start + r[1] + r[2];
 
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
 
-	forms = sound_subjun_actv(base, base_n, tv);
+	forms = sound_subjun_actv(base, base_n, subtype, tv);
 	if (tv == 'tv') : #{
 		forms.update(sound_subjun_pasv(base, base_n));
 	#}
@@ -1365,8 +1508,15 @@ def sound_patt8_imp(root, tv): #{
 	else :
 		base_n = base_start + r[1] + r[2];
 
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
 
-	return sound_imp(base, base_n, tv); 
+	return sound_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -1476,7 +1626,15 @@ def sound_patt10_subjun(root, tv): #{
 	else :
 		base_n = 'ست' + r[0] + r[1] + r[2];
 
-	forms = sound_subjun_actv(base, base_n, tv);
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	forms = sound_subjun_actv(base, base_n, subtype, tv);
 	if (tv == 'tv') : #{
 		forms.update(sound_subjun_pasv(base, base_n));
 	#}
@@ -1514,7 +1672,15 @@ def sound_patt10_imp(root, tv): #{
 	else :
 		base_n = 'است' + r[0] + r[1] + r[2];
 
-	return sound_imp(base, base_n, tv); 
+	subtype = '-';
+	if r[2] == 'ن' :
+		subtype = 'n';
+	elif r[2] == 'ك' :
+		subtype = 'k';
+	if r[2] == 'ه' : 
+		subtype = 'h';
+
+	return sound_imp(base, base_n, subtype, tv); 
 #}
 
 

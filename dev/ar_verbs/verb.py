@@ -62,6 +62,55 @@ def header(): #{
         header = header + '      <e><p><l>نا</l><r><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>\n';
 	header = header + '    </pardef>\n';
 
+# final n verbs, subjunctive suffixes
+	header = header + '    <pardef n="S__يلون/ه">\n';
+        header = header + '      <e><p><l>ه</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l>ها</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l>ك</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l>ك</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l>ي</l><r><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l>هما</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="mf"/><s n="du"/></r></p></e>\n';
+        header = header + '      <e><p><l>كما</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>\n';
+        header = header + '      <e><p><l>هم</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>\n';
+        header = header + '      <e><p><l>هن</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>\n';
+        header = header + '      <e><p><l>كم</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>\n';
+        header = header + '      <e><p><l>كن</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>\n';
+        header = header + '      <e><p><l>ا</l><r><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>\n';
+	header = header + '    </pardef>\n';
+
+# final k verbs, subjunctive suffixes
+	header = header + '    <pardef n="S__يترك/ه">\n';
+        header = header + '      <e><p><l>ه</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l>ها</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l></l><r><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l></l><r><j/>ه<s n="prn"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l>ني</l><r><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l>هما</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="mf"/><s n="du"/></r></p></e>\n';
+        header = header + '      <e><p><l>ما</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>\n';
+        header = header + '      <e><p><l>هم</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>\n';
+        header = header + '      <e><p><l>هن</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>\n';
+        header = header + '      <e><p><l>م</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>\n';
+        header = header + '      <e><p><l>ن</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>\n';
+        header = header + '      <e><p><l>نا</l><r><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>\n';
+	header = header + '    </pardef>\n';
+
+
+# final h verbs, subjunctive suffixes
+	header = header + '    <pardef n="S__يشبه/ه">\n';
+        header = header + '      <e><p><l></l><r><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l>ا</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l>ك</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l>ك</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l>ني</l><r><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>\n';
+        header = header + '      <e><p><l>ما</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="mf"/><s n="du"/></r></p></e>\n';
+        header = header + '      <e><p><l>كما</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>\n';
+        header = header + '      <e><p><l>م</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>\n';
+        header = header + '      <e><p><l>ن</l><r><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>\n';
+        header = header + '      <e><p><l>كم</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>\n';
+        header = header + '      <e><p><l>كن</l><r><j/>ه<s n="prn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>\n';
+        header = header + '      <e><p><l>نا</l><r><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>\n';
+	header = header + '    </pardef>\n';
+
 
 	header = header + '  </pardefs>\n\n';
 	header = header + '  <section id="main" type="standard">\n';
@@ -116,7 +165,7 @@ for line in lines: #{
 	row = line.split('||'); 
 
 
-	stem = {'stem': row[0].strip(), 'cat': row[1].strip(), 'type': row[2].strip(), 'theme': row[3].strip(), 'gloss': row[4].strip(), 'root': row[5].strip(), 'vowels_perf': row[6].strip(), 'vowels_impf': row[7].strip(), 'trans': row[8].strip()};
+	stem = {'stem': row[0].strip(), 'cat': row[1].strip(), 'type': row[2].strip(), 'theme': row[3].strip(), 'subtype': row[4].strip(), 'gloss': row[5].strip(), 'root': row[6].strip(), 'vowels_perf': row[7].strip(), 'vowels_impf': row[8].strip(), 'trans': row[9].strip()};
 	stems = stems + [stem];
 #        if stem['cat'] == 'vaux' :
 #                aux_verbs = aux_verbs + [stem['stem']];

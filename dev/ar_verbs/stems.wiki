@@ -4,6 +4,7 @@
  ! Category 
  ! Type 
  ! Theme 
+ ! Subtype 
  ! Gloss 
  ! Root
  ! Vowels_perf
@@ -11,56 +12,56 @@
  ! Trans
 
 |-
-| لعب || vblex || sound || 1 || play || ل-ع-ب || a-i || a-a || iv 
+| لعب || vblex || sound || 1 || || play || ل-ع-ب || a-i || a-a || iv 
 |-
-| نظر || vblex || sound || 1 || look || ن-ظ-ر || a-a || a-u || iv 
+| نظر || vblex || sound || 1 || || look || ن-ظ-ر || a-a || a-u || iv 
 |-
-| ذهب || vblex || sound || 1 || go || ذ-ه-ب || a-a || a-a || iv 
+| ذهب || vblex || sound || 1 || || go || ذ-ه-ب || a-a || a-a || iv 
 |-
-| جلس || vblex || sound || 1 || sit || ج-ل-س || a-a || a-i || iv
+| جلس || vblex || sound || 1 || || sit || ج-ل-س || a-a || a-i || iv
 |-
-| عرف || vblex || sound || 1 || know || ع-ر-ف || a-a || a-i || tv 
+| عرف || vblex || sound || 1 || || know || ع-ر-ف || a-a || a-i || tv 
 |-
-| فعل || vblex || sound || 1 || do || ف-ع-ل || a-a || a-a || tv
+| فعل || vblex || sound || 1 || || do || ف-ع-ل || a-a || a-a || tv
 |-
-| ضحك || vblex || sound || 1 || laugh || ض-ح-ك || a-i || a-a || iv 
+| ضحك || vblex || sound || 1 || || laugh || ض-ح-ك || a-i || a-a || iv 
 |-
-| شرب || vblex || sound || 1 || drink || ش-ر-ب || a-i || a-a || tv 
+| شرب || vblex || sound || 1 || || drink || ش-ر-ب || a-i || a-a || tv 
 |-
-| سمع || vblex || sound || 1 || hear || س-م-ع || a-i || a-a || iv 
+| سمع || vblex || sound || 1 || || hear || س-م-ع || a-i || a-a || iv 
 |-
-| كتب || vblex || sound || 1 || write || ك-ت-ب || a-a || a-u || tv 
+| كتب || vblex || sound || 1 || || write || ك-ت-ب || a-a || a-u || tv 
 |-
-| فكر || vblex || sound || 2 || think || ف-ك-ر || a-a || u-a-i || tv 
+| فكر || vblex || sound || 2 || || think || ف-ك-ر || a-a || u-a-i || tv 
 |-
-| غادر || vblex || sound || 3 || leave || غ-د-ر || a-a || u-a-i || tv 
+| غادر || vblex || sound || 3 || || leave || غ-د-ر || a-a || u-a-i || tv 
 |-
-| ساعد || vblex || sound || 3 || help || س-ع-د || a-a || u-a-i || tv 
+| ساعد || vblex || sound || 3 || || help || س-ع-د || a-a || u-a-i || tv 
 |-
-| شارك || vblex || sound || 3 || participate || ش-ر-ك || a-a || u-a-i || tv 
+| شارك || vblex || sound || 3 || || participate || ش-ر-ك || a-a || u-a-i || tv 
 |-
-| أحضر || vblex || sound || 4 || bring || ح-ض-ر || a-a || u-i || tv 
+| أحضر || vblex || sound || 4 || || bring || ح-ض-ر || a-a || u-i || tv 
 |-
-| أخرج || vblex || sound || 4 || take·out || خ-ر-ج || a-a || u-i || tv 
+| أخرج || vblex || sound || 4 || || take·out || خ-ر-ج || a-a || u-i || tv 
 |-
-| أغلق || vblex || sound || 4 || close || غ-ل-ق || a-a || u-i || tv 
+| أغلق || vblex || sound || 4 || || close || غ-ل-ق || a-a || u-i || tv 
 |-
-| تكلم || vblex || sound || 5 || speak || ك-ل-م || a-a-a || a-a-a-a || tv 
+| تكلم || vblex || sound || 5 || || speak || ك-ل-م || a-a-a || a-a-a-a || tv 
 |-
-| تراجع || vblex || sound || 6 || recede || ر-ج-ع || a-a-a || a-a-a-a || iv
+| تراجع || vblex || sound || 6 || || recede || ر-ج-ع || a-a-a || a-a-a-a || iv
 |-
-| تفاعل || vblex || sound || 6 || interact || ف-ع-ل || a-a-a || a-a-a-a || iv 
+| تفاعل || vblex || sound || 6 || || interact || ف-ع-ل || a-a-a || a-a-a-a || iv 
 |-
-| انخفض || vblex || sound || 7 || decrease || خ-ف-ض || i-a-a || a-a-i || iv 
+| انخفض || vblex || sound || 7 || || decrease || خ-ف-ض || i-a-a || a-a-i || iv 
 |-
-| اقترب || vblex || sound || 8 || approach || ق-ر-ب || i-a-a || a-a-i || iv 
+| اقترب || vblex || sound || 8 || || approach || ق-ر-ب || i-a-a || a-a-i || iv 
 |-
-| اكتشف || vblex || sound || 8 || discover || ك-ش-ف || i-a-a || a-a-i || tv 
+| اكتشف || vblex || sound || 8 || || discover || ك-ش-ف || i-a-a || a-a-i || tv 
 |-
-| عد || vblex || doubled || 1 || count || ع-د-د || a-a || a-u || tv 
+| عد || vblex || doubled || 1 || || count || ع-د-د || a-a || a-u || tv 
 |-
-| أحب || vblex || doubled || 4 || love || ح-ب-ب || a-a || u-i || tv 
+| أحب || vblex || doubled || 4 || || love || ح-ب-ب || a-a || u-i || tv 
 |-
-| أكل || vblex || firsthamza || 1 || eat || ء-ك-ل || a-a || a-u || tv 
+| أكل || vblex || firsthamza || 1 || || eat || ء-ك-ل || a-a || a-u || tv 
 |}
 

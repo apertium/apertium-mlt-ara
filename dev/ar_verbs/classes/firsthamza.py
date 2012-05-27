@@ -11,6 +11,7 @@
 def firsthamza_past_actv(base, base_t, base_n, tv): #{
 
 	forms = {};
+        paradigm = 'S__فتح/ه';
 
 	if tv == 'iv' : #{
 		forms['actv.past.p3.m.sg'] = [(base, '-', '-')];
@@ -30,21 +31,21 @@ def firsthamza_past_actv(base, base_t, base_n, tv): #{
 		forms['actv.past.p1.mf.pl'] = [(base_n + 'نا', '-', '-')];
 	#}
 	else : #{
-		forms['actv.past.p3.m.sg'] = [(base, '-', '-'), (base, 'S__فتح/ه', '-')];
-		forms['actv.past.p3.f.sg'] = [(base + 'ت', '-', '-'), (base + 'ت', 'S__فتح/ه', '-')];
-		forms['actv.past.p2.m.sg'] = [(base_t + 'ت', '-', '-'), (base_t + 'ت', 'S__فتح/ه', '-')];
-		forms['actv.past.p2.f.sg'] = [(base_t + 'ت', '-', '-'), (base_t + 'ت', 'S__فتح/ه', '-')];
-		forms['actv.past.p1.mf.sg'] = [(base_t + 'ت', '-', '-'), (base_t + 'ت', 'S__فتح/ه', '-')];
+		forms['actv.past.p3.m.sg'] = [(base, '-', '-'), (base, paradigm, '-')];
+		forms['actv.past.p3.f.sg'] = [(base + 'ت', '-', '-'), (base + 'ت', paradigm, '-')];
+		forms['actv.past.p2.m.sg'] = [(base_t + 'ت', '-', '-'), (base_t + 'ت', paradigm, '-')];
+		forms['actv.past.p2.f.sg'] = [(base_t + 'ت', '-', '-'), (base_t + 'ت', paradigm, '-')];
+		forms['actv.past.p1.mf.sg'] = [(base_t + 'ت', '-', '-'), (base_t + 'ت', paradigm, '-')];
 
-		forms['actv.past.p3.m.du'] = [(base + 'ا', '-', '-'), (base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.past.p3.f.du'] = [(base + 'تا', '-', '-'), (base + 'تا', 'S__فتح/ه', '-')];
-		forms['actv.past.p2.mf.du'] = [(base_t + 'تما', '-', '-'), (base_t + 'تما', 'S__فتح/ه', '-')];
+		forms['actv.past.p3.m.du'] = [(base + 'ا', '-', '-'), (base + 'ا', paradigm, '-')];
+		forms['actv.past.p3.f.du'] = [(base + 'تا', '-', '-'), (base + 'تا', paradigm, '-')];
+		forms['actv.past.p2.mf.du'] = [(base_t + 'تما', '-', '-'), (base_t + 'تما', paradigm, '-')];
 
-		forms['actv.past.p3.m.pl'] = [(base + 'وا', '-', '-'), (base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.past.p3.f.pl'] = [(base_n + 'ن', '-', '-'), (base_n + 'ن', 'S__فتح/ه', '-')];
-		forms['actv.past.p2.m.pl'] = [(base_t + 'تم', '-', '-'), (base_t + 'تمو', 'S__فتح/ه', '-')];
-		forms['actv.past.p2.f.pl'] = [(base_t + 'تن', '-', '-'), (base_t + 'تن', 'S__فتح/ه', '-')];
-		forms['actv.past.p1.mf.pl'] = [(base_n + 'نا', '-', '-'), (base_n + 'نا', 'S__فتح/ه', '-')];
+		forms['actv.past.p3.m.pl'] = [(base + 'وا', '-', '-'), (base + 'و', paradigm, '-')];
+		forms['actv.past.p3.f.pl'] = [(base_n + 'ن', '-', '-'), (base_n + 'ن', paradigm, '-')];
+		forms['actv.past.p2.m.pl'] = [(base_t + 'تم', '-', '-'), (base_t + 'تمو', paradigm, '-')];
+		forms['actv.past.p2.f.pl'] = [(base_t + 'تن', '-', '-'), (base_t + 'تن', paradigm, '-')];
+		forms['actv.past.p1.mf.pl'] = [(base_n + 'نا', '-', '-'), (base_n + 'نا', paradigm, '-')];
 	#}
 
 	return forms;
@@ -77,6 +78,7 @@ def firsthamza_past_pasv(base, base_t, base_n): #{
 def firsthamza_pres_actv(base, base_n, base_p1_sg, tv): #{
 
 	forms = {};
+        paradigm = 'S__فتح/ه';
 
 	if tv == 'iv' : #{
 		forms['actv.pres.p3.m.sg'] = [('ي' + base, '-', '-')];
@@ -100,24 +102,24 @@ def firsthamza_pres_actv(base, base_n, base_p1_sg, tv): #{
 		forms['actv.pres.p1.mf.pl'] = [('ن' + base, '-', '-')];
 	#}
 	else : #{
-		forms['actv.pres.p3.m.sg'] = [('ي' + base, '-', '-'), ('ي' + base, 'S__فتح/ه', '-')];
-		forms['actv.pres.p3.f.sg'] = [('ت' + base, '-', '-'), ('ت' + base, 'S__فتح/ه', '-')];
-		forms['actv.pres.p2.m.sg'] = [('ت' + base, '-', '-'), ('ت' + base, 'S__فتح/ه', '-')];
-		forms['actv.pres.p2.f.sg'] = [('ت' + base + 'ين', '-', '-'), ('ت' + base + 'ي', 'S__فتح/ه', '-')];
+		forms['actv.pres.p3.m.sg'] = [('ي' + base, '-', '-'), ('ي' + base, paradigm, '-')];
+		forms['actv.pres.p3.f.sg'] = [('ت' + base, '-', '-'), ('ت' + base, paradigm, '-')];
+		forms['actv.pres.p2.m.sg'] = [('ت' + base, '-', '-'), ('ت' + base, paradigm, '-')];
+		forms['actv.pres.p2.f.sg'] = [('ت' + base + 'ين', '-', '-'), ('ت' + base + 'ي', paradigm, '-')];
 		if base_p1_sg == '' :
-			forms['actv.pres.p1.mf.sg'] = [('أ' + base, '-', '-'), ('أ' + base, 'S__فتح/ه', '-')];
+			forms['actv.pres.p1.mf.sg'] = [('أ' + base, '-', '-'), ('أ' + base, paradigm, '-')];
 		else :	
-			forms['actv.pres.p1.mf.sg'] = [('آ' + base_p1_sg, '-', '-'), ('آ' + base_p1_sg, 'S__فتح/ه', '-')];
+			forms['actv.pres.p1.mf.sg'] = [('آ' + base_p1_sg, '-', '-'), ('آ' + base_p1_sg, paradigm, '-')];
 
-		forms['actv.pres.p3.m.du'] = [('ي' + base + 'ان', '-', '-'), ('ي' + base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.pres.p3.f.du'] = [('ت' + base + 'ان', '-', '-'), ('ت' + base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.pres.p2.mf.du'] = [('ت' + base + 'ان', '-', '-'), ('ت' + base + 'ا', 'S__فتح/ه', '-')];
+		forms['actv.pres.p3.m.du'] = [('ي' + base + 'ان', '-', '-'), ('ي' + base + 'ا', paradigm, '-')];
+		forms['actv.pres.p3.f.du'] = [('ت' + base + 'ان', '-', '-'), ('ت' + base + 'ا', paradigm, '-')];
+		forms['actv.pres.p2.mf.du'] = [('ت' + base + 'ان', '-', '-'), ('ت' + base + 'ا', paradigm, '-')];
 
-		forms['actv.pres.p3.m.pl'] = [('ي' + base + 'ون', '-', '-'), ('ي' + base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.pres.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-'), ('ي' + base_n + 'ن', 'S__فتح/ه', '-')];
-		forms['actv.pres.p2.m.pl'] = [('ت' + base + 'ون', '-', '-'), ('ت' + base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.pres.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', 'S__فتح/ه', '-')];
-		forms['actv.pres.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, 'S__فتح/ه', '-')];
+		forms['actv.pres.p3.m.pl'] = [('ي' + base + 'ون', '-', '-'), ('ي' + base + 'و', paradigm, '-')];
+		forms['actv.pres.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-'), ('ي' + base_n + 'ن', paradigm, '-')];
+		forms['actv.pres.p2.m.pl'] = [('ت' + base + 'ون', '-', '-'), ('ت' + base + 'و', paradigm, '-')];
+		forms['actv.pres.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', paradigm, '-')];
+		forms['actv.pres.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, paradigm, '-')];
 
 	#}
 
@@ -151,9 +153,19 @@ def firsthamza_pres_pasv(base, base_n): #{
 
 
 
-def firsthamza_subjun_actv(base, base_n, base_p1_sg, tv): #{
+def firsthamza_subjun_actv(base, base_n, base_p1_sg, subtype, tv): #{
 
 	forms = {};
+
+        paradigm = 'S__فتح/ه';
+        paradigm_cons = 'S__فتح/ه';
+
+        if subtype == 'n' :
+                paradigm_cons = 'S__يلون/ه';
+        elif subtype == 'k' :
+                paradigm_cons = 'S__يترك/ه';
+        elif subtype == 'h' :
+                paradigm_cons = 'S__يشبه/ه';
 
 	if tv == 'iv' : #{
 		forms['actv.subjun.p3.m.sg'] = [('ي' + base, '-', '-')];
@@ -176,24 +188,24 @@ def firsthamza_subjun_actv(base, base_n, base_p1_sg, tv): #{
 		forms['actv.subjun.p1.mf.pl'] = [('ن' + base, '-', '-')];
 	#}
 	else : #{
-		forms['actv.subjun.p3.m.sg'] = [('ي' + base, '-', '-'), ('ي' + base, 'S__فتح/ه', '-')];
-		forms['actv.subjun.p3.f.sg'] = [('ت' + base, '-', '-'), ('ت' + base, 'S__فتح/ه', '-')];
-		forms['actv.subjun.p2.m.sg'] = [('ت' + base, '-', '-'), ('ت' + base, 'S__فتح/ه', '-')];
-		forms['actv.subjun.p2.f.sg'] = [('ت' + base + 'ي', '-', '-'), ('ت' + base + 'ي', 'S__فتح/ه', '-')];
+		forms['actv.subjun.p3.m.sg'] = [('ي' + base, '-', '-'), ('ي' + base, paradigm_cons, '-')];
+		forms['actv.subjun.p3.f.sg'] = [('ت' + base, '-', '-'), ('ت' + base, paradigm_cons, '-')];
+		forms['actv.subjun.p2.m.sg'] = [('ت' + base, '-', '-'), ('ت' + base, paradigm_cons, '-')];
+		forms['actv.subjun.p2.f.sg'] = [('ت' + base + 'ي', '-', '-'), ('ت' + base + 'ي', paradigm, '-')];
 		if base_p1_sg == '' :
-			forms['actv.subjun.p1.mf.sg'] = [('أ' + base, '-', '-'), ('أ' + base, 'S__فتح/ه', '-')];
+			forms['actv.subjun.p1.mf.sg'] = [('أ' + base, '-', '-'), ('أ' + base, paradigm_cons, '-')];
 		else :	
-			forms['actv.subjun.p1.mf.sg'] = [('آ' + base_p1_sg, '-', '-'), ('آ' + base_p1_sg, 'S__فتح/ه', '-')];
+			forms['actv.subjun.p1.mf.sg'] = [('آ' + base_p1_sg, '-', '-'), ('آ' + base_p1_sg, paradigm_cons, '-')];
 	
-		forms['actv.subjun.p3.m.du'] = [('ي' + base + 'ا', '-', '-'), ('ي' + base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.subjun.p3.f.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.subjun.p2.mf.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', 'S__فتح/ه', '-')];
+		forms['actv.subjun.p3.m.du'] = [('ي' + base + 'ا', '-', '-'), ('ي' + base + 'ا', paradigm, '-')];
+		forms['actv.subjun.p3.f.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', paradigm, '-')];
+		forms['actv.subjun.p2.mf.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', paradigm, '-')];
 
-		forms['actv.subjun.p3.m.pl'] = [('ي' + base + 'وا', '-', '-'), ('ي' + base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.subjun.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-'), ('ي' + base_n + 'ن', 'S__فتح/ه', '-')];
-		forms['actv.subjun.p2.m.pl'] = [('ت' + base + 'وا', '-', '-'), ('ت' + base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.subjun.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', 'S__فتح/ه', '-')];
-		forms['actv.subjun.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, 'S__فتح/ه', '-')];
+		forms['actv.subjun.p3.m.pl'] = [('ي' + base + 'وا', '-', '-'), ('ي' + base + 'و', paradigm, '-')];
+		forms['actv.subjun.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-'), ('ي' + base_n + 'ن', paradigm, '-')];
+		forms['actv.subjun.p2.m.pl'] = [('ت' + base + 'وا', '-', '-'), ('ت' + base + 'و', paradigm, '-')];
+		forms['actv.subjun.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', paradigm, '-')];
+		forms['actv.subjun.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, paradigm_cons, '-')];
 	#}
 
 	return forms;
@@ -227,6 +239,7 @@ def firsthamza_subjun_pasv(base, base_n): #{
 def firsthamza_apocop_actv(base, base_n, base_p1_sg, tv): #{
 
 	forms = {};
+        paradigm = 'S__فتح/ه';
 
 	if tv == 'iv' : #{
 		forms['actv.apocop.p3.m.sg'] = [('ي' + base, '-', '-')];
@@ -249,24 +262,24 @@ def firsthamza_apocop_actv(base, base_n, base_p1_sg, tv): #{
 		forms['actv.apocop.p1.mf.pl'] = [('ن' + base, '-', '-')];
 	#}
 	else : #{
-		forms['actv.apocop.p3.m.sg'] = [('ي' + base, '-', '-'), ('ي' + base, 'S__فتح/ه', '-')];
-		forms['actv.apocop.p3.f.sg'] = [('ت' + base, '-', '-'), ('ت' + base, 'S__فتح/ه', '-')];
-		forms['actv.apocop.p2.m.sg'] = [('ت' + base, '-', '-'), ('ت' + base, 'S__فتح/ه', '-')];
-		forms['actv.apocop.p2.f.sg'] = [('ت' + base + 'ي', '-', '-'), ('ت' + base + 'ي', 'S__فتح/ه', '-')];
+		forms['actv.apocop.p3.m.sg'] = [('ي' + base, '-', '-'), ('ي' + base, paradigm, '-')];
+		forms['actv.apocop.p3.f.sg'] = [('ت' + base, '-', '-'), ('ت' + base, paradigm, '-')];
+		forms['actv.apocop.p2.m.sg'] = [('ت' + base, '-', '-'), ('ت' + base, paradigm, '-')];
+		forms['actv.apocop.p2.f.sg'] = [('ت' + base + 'ي', '-', '-'), ('ت' + base + 'ي', paradigm, '-')];
 		if base_p1_sg == '1' :
-			forms['actv.apocop.p1.mf.sg'] = [('أ' + base, '-', '-'), ('أ' + base, 'S__فتح/ه', '-')];
+			forms['actv.apocop.p1.mf.sg'] = [('أ' + base, '-', '-'), ('أ' + base, paradigm, '-')];
 		else :	
-			forms['actv.apocop.p1.mf.sg'] = [('آ' + base_p1_sg, '-', '-'), ('آ' + base_p1_sg, 'S__فتح/ه', '-')];
+			forms['actv.apocop.p1.mf.sg'] = [('آ' + base_p1_sg, '-', '-'), ('آ' + base_p1_sg, paradigm, '-')];
 	
-		forms['actv.apocop.p3.m.du'] = [('ي' + base + 'ا', '-', '-'), ('ي' + base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.apocop.p3.f.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.apocop.p2.mf.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', 'S__فتح/ه', '-')];
+		forms['actv.apocop.p3.m.du'] = [('ي' + base + 'ا', '-', '-'), ('ي' + base + 'ا', paradigm, '-')];
+		forms['actv.apocop.p3.f.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', paradigm, '-')];
+		forms['actv.apocop.p2.mf.du'] = [('ت' + base + 'ا', '-', '-'), ('ت' + base + 'ا', paradigm, '-')];
 
-		forms['actv.apocop.p3.m.pl'] = [('ي' + base + 'وا', '-', '-'), ('ي' + base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.apocop.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-'), ('ي' + base_n + 'ن', 'S__فتح/ه', '-')];
-		forms['actv.apocop.p2.m.pl'] = [('ت' + base + 'وا', '-', '-'), ('ت' + base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.apocop.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', 'S__فتح/ه', '-')];
-		forms['actv.apocop.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, 'S__فتح/ه', '-')];
+		forms['actv.apocop.p3.m.pl'] = [('ي' + base + 'وا', '-', '-'), ('ي' + base + 'و', paradigm, '-')];
+		forms['actv.apocop.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-'), ('ي' + base_n + 'ن', paradigm, '-')];
+		forms['actv.apocop.p2.m.pl'] = [('ت' + base + 'وا', '-', '-'), ('ت' + base + 'و', paradigm, '-')];
+		forms['actv.apocop.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-'), ('ت' + base_n + 'ن', paradigm, '-')];
+		forms['actv.apocop.p1.mf.pl'] = [('ن' + base, '-', '-'), ('ن' + base, paradigm, '-')];
 	#}
 
 	return forms;
@@ -297,11 +310,21 @@ def firsthamza_apocop_pasv(base, base_n): #{
 #}
 
 
-def firsthamza_imp(base, base_n, tv): #{
+def firsthamza_imp(base, base_n, subtype, tv): #{
 
 	# passive voice?
 
 	forms = {};
+
+        paradigm = 'S__فتح/ه';
+        paradigm_cons = 'S__فتح/ه';
+
+        if subtype == 'n' :
+                paradigm_cons = 'S__يلون/ه';
+        elif subtype == 'k' :
+                paradigm_cons = 'S__يترك/ه';
+        elif subtype == 'h' :
+                paradigm_cons = 'S__يشبه/ه';
 
 	if tv == 'iv' : #{
 		forms['actv.imp.p2.m.sg'] = [(base, '-', '-')];
@@ -311,11 +334,11 @@ def firsthamza_imp(base, base_n, tv): #{
 		forms['actv.imp.p2.f.pl'] = [(base_n + 'ن', '-', '-')];
 	#}
 	else : #{
-		forms['actv.imp.p2.m.sg'] = [(base, '-', '-'), (base, 'S__فتح/ه', '-')];
-		forms['actv.imp.p2.f.sg'] = [(base + 'ي', '-', '-'), (base + 'ي', 'S__فتح/ه', '-')];
-		forms['actv.imp.p2.mf.du'] = [(base + 'ا', '-', '-'), (base + 'ا', 'S__فتح/ه', '-')];
-		forms['actv.imp.p2.m.pl'] = [(base + 'وا', '-', '-'), (base + 'و', 'S__فتح/ه', '-')];
-		forms['actv.imp.p2.f.pl'] = [(base_n + 'ن', '-', '-'), (base_n + 'ن', 'S__فتح/ه', '-')];
+		forms['actv.imp.p2.m.sg'] = [(base, '-', '-'), (base, paradigm_cons, '-')];
+		forms['actv.imp.p2.f.sg'] = [(base + 'ي', '-', '-'), (base + 'ي', paradigm, '-')];
+		forms['actv.imp.p2.mf.du'] = [(base + 'ا', '-', '-'), (base + 'ا', paradigm, '-')];
+		forms['actv.imp.p2.m.pl'] = [(base + 'وا', '-', '-'), (base + 'و', paradigm, '-')];
+		forms['actv.imp.p2.f.pl'] = [(base_n + 'ن', '-', '-'), (base_n + 'ن', paradigm, '-')];
 	#}
 
 	return forms ; 
@@ -387,7 +410,15 @@ def firsthamza_patt1_subjun(root, tv): #{
 	else :
 		base_n = 'أ' + r[1] + r[2];
 
-	forms = firsthamza_subjun_actv(base, base_n, base_p1_sg, tv);
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
+
+	forms = firsthamza_subjun_actv(base, base_n, base_p1_sg, subtype, tv);
 	if (tv == 'tv') : #{
 		base = 'ؤ' + r[1] + r[2];
 		if r[2] == 'ن' :
@@ -451,7 +482,15 @@ def firsthamza_patt1_imp(root, vowels, tv): #{
 			base_n = 'ا' + vowel + r[1] + r[2];
 	#}
 
-	return firsthamza_imp(base, base_n, tv); 
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
+
+	return firsthamza_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -541,7 +580,15 @@ def firsthamza_patt2_subjun(root, tv): #{
 	else :
 		base_n = 'ؤ' + r[1] + r[2];
 
-	forms = firsthamza_subjun_actv(base, base_n, '', tv);
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
+
+	forms = firsthamza_subjun_actv(base, base_n, '', subtype, tv);
 	if (tv == 'tv') :
 		forms.update(firsthamza_subjun_pasv(base, base_n));
 
@@ -577,7 +624,15 @@ def firsthamza_patt2_imp(root, tv): #{
 	else :
 		base_n = 'أ' + r[1] + r[2];
 
-	return firsthamza_imp(base, base_n, tv); 
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
+
+	return firsthamza_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -680,7 +735,15 @@ def firsthamza_patt3_subjun(root, tv): #{
 	else :
 		base_n = 'ؤا' + r[1] + r[2];
 
-	forms = firsthamza_subjun_actv(base, base_n, '', tv);
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
+
+	forms = firsthamza_subjun_actv(base, base_n, '', subtype, tv);
 	if (tv == 'tv') : #{
 		forms.update(firsthamza_subjun_pasv(base, base_n));
 	#}
@@ -718,7 +781,15 @@ def firsthamza_patt3_imp(root, tv): #{
 	else :
 		base_n = 'آ' + r[1] + r[2];
 
-	return firsthamza_imp(base, base_n, tv); 
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
+
+	return firsthamza_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -822,7 +893,15 @@ def firsthamza_patt4_subjun(root, tv): #{
 	else :
 		base_n = 'ؤ' + r[1] + r[2];
 
-	forms = firsthamza_subjun_actv(base, base_n, '', tv);
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
+
+	forms = firsthamza_subjun_actv(base, base_n, '', subtype, tv);
 	if (tv == 'tv') : #{
 		forms.update(firsthamza_subjun_pasv(base, base_n));
 	#}
@@ -860,7 +939,15 @@ def firsthamza_patt4_imp(root, tv): #{
 	else :
 		base_n = 'آ'  + r[1] + r[2];
 
-	return firsthamza_imp(base, base_n, tv); 
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
+
+	return firsthamza_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -963,7 +1050,15 @@ def firsthamza_patt5_subjun(root, tv): #{
 	else :
 		base_n = 'تأ' + r[1] + r[2];
 
-	forms = firsthamza_subjun_actv(base, base_n, '', tv);
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
+
+	forms = firsthamza_subjun_actv(base, base_n, '', subtype, tv);
 	if (tv == 'tv') : #{
 		forms.update(firsthamza_subjun_pasv(base, base_n));
 	#}
@@ -1001,7 +1096,15 @@ def firsthamza_patt5_imp(root, tv): #{
 	else :
 		base_n = 'تأ' + r[1] + r[2];
 
-	return firsthamza_imp(base, base_n, tv); 
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
+
+	return firsthamza_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -1105,7 +1208,15 @@ def firsthamza_patt6_subjun(root, tv): #{
 	else :
 		base_n = 'تآ' + r[1] + r[2];
 
-	forms = firsthamza_subjun_actv(base, base_n, '', tv);
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
+
+	forms = firsthamza_subjun_actv(base, base_n, '', subtype, tv);
 	if (tv == 'tv') : #{
 		forms.update(firsthamza_subjun_pasv(base, base_n));
 	#}
@@ -1143,7 +1254,15 @@ def firsthamza_patt6_imp(root, tv): #{
 	else :
 		base_n = 'تآ' + r[1] + r[2];
 
-	return firsthamza_imp(base, base_n, tv); 
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
+
+	return firsthamza_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -1260,8 +1379,16 @@ def firsthamza_patt8_subjun(root, tv): #{
 	else :
 		base_n = base_start + r[1] + r[2];
 
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
 
-	forms = firsthamza_subjun_actv(base, base_n, '', tv);
+
+	forms = firsthamza_subjun_actv(base, base_n, '', subtype, tv);
 	if (tv == 'tv') : #{
 		forms.update(firsthamza_subjun_pasv(base, base_n));
 	#}
@@ -1309,8 +1436,15 @@ def firsthamza_patt8_imp(root, tv): #{
 	else :
 		base_n = base_start + r[1] + r[2];
 
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
 
-	return firsthamza_imp(base, base_n, tv); 
+	return firsthamza_imp(base, base_n, subtype, tv); 
 #}
 
 
@@ -1419,7 +1553,15 @@ def firsthamza_patt10_subjun(root, tv): #{
 	else :
 		base_n = 'ستأ' + r[1] + r[2];
 
-	forms = firsthamza_subjun_actv(base, base_n, '', tv);
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
+
+	forms = firsthamza_subjun_actv(base, base_n, '', subtype, tv);
 	if (tv == 'tv') : #{
 		forms.update(firsthamza_subjun_pasv(base, base_n));
 	#}
@@ -1457,7 +1599,15 @@ def firsthamza_patt10_imp(root, tv): #{
 	else :
 		base_n = 'استأ' + r[1] + r[2];
 
-	return firsthamza_imp(base, base_n, tv); 
+        subtype = '-';
+        if r[2] == 'ن' :
+                subtype = 'n';
+        elif r[2] == 'ك' :
+                subtype = 'k';
+        if r[2] == 'ه' : 
+                subtype = 'h';
+
+	return firsthamza_imp(base, base_n, subtype, tv); 
 #}
 
 
