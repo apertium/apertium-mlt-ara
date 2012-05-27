@@ -405,19 +405,8 @@
 
     <pardef n="عشر/ون__num" c="20,...,90">
       <e><p><l>ون</l><r>ون<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+<!--  <e><p><l>ونات</l><r>ون<s n="num"/><s n="mf"/><s n="pl"/></r></p></e> -->
     </pardef>  
-
-  <!-- 21..29, .., 91..99 TODO: not in mt/bidix (also TODO, this will allow 'twentyeleven', etc.) -->
-<!--  <e><p><l>ואח</l><r>ואח</r></p><par n="אחד_/עשר__num"/></e>
-  <e><p><l>וש</l><r>וש</r></p><par n="ש/ניים_/עשר__num"/></e>
-  <e><p><l>ושלוש</l><r>ושלוש</r></p><par n="שלוש/ה_/עשר__num"/></e>
-  <e><p><l>וארבע</l><r>וארבע</r></p><par n="שלוש/ה_/עשר__num"/></e>
-  <e><p><l>וחמ</l><r>וחמ</r></p><par n="חמ/ישה_/עשר__num"/></e>
-  <e><p><l>וש</l><r>ושש</r></p><par n="חמ/ישה_/עשר__num"/></e>
-  <e><p><l>ושבע</l><r>ושבע</r></p><par n="שלוש/ה_/עשר__num"/></e>
-  <e><p><l>ושמונ</l><r>ושמונ</r></p><par n="שמונ/ה__num"/></e>
-  <e><p><l>ותשע</l><r>ותשע</r></p><par n="שלוש/ה_/עשר__num"/></e>
-</pardef> -->
 
     <pardef n="م/ئة__num" c="100">
       <e><p><l>ئة</l><r>ئة<s n="num"/><s n="mf"/><s n="sg"/></r></p></e>
@@ -443,10 +432,6 @@
       <e><p><l>ايين</l><r>يون<s n="num"/><s n="mf"/><s n="pl"/></r></p></e>
     </pardef>
 
-<!--    <pardef n="بل/يون__num" c="billion">
-      <e><p><l>يون</l><r>يون<s n="num"/><s n="mf"/><s n="sg"/></r></p></e>
-      <e><p><l>ايين</l><r>يون<s n="num"/><s n="mf"/><s n="pl"/></r></p></e>
-    </pardef> -->
 
     <pardef n="זוג__num" c="couple/pair">
       <e><p><l/>         <r><s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -459,7 +444,7 @@
     <pardef n="أو/ل__num"> <!-- 1st -->
       <e><p><l>ل</l><r>ل<s n="num"/><s n="ord"/><s n="m"/><s n="sg"/></r></p></e>
       <e><p><l>ائل</l><r>ل<s n="num"/><s n="ord"/><s n="m"/><s n="pl"/></r></p></e>
-      <e><p><l>لون</l><r>ل<s n="num"/><s n="ord"/><s n="m"/><s n="pl"/></r></p></e>
+      <e r="LR"><p><l>لون</l><r>ل<s n="num"/><s n="ord"/><s n="m"/><s n="pl"/></r></p></e>
       <e><p><l>لى</l><r>ل<s n="num"/><s n="ord"/><s n="f"/><s n="sg"/></r></p></e>
       <e><p><l>ليات</l><r>ل<s n="num"/><s n="ord"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
@@ -847,7 +832,7 @@
     
     <e lm="مليون" c="million"><i>مل</i><par n="مل/يون__num"/></e>
     <e lm="بليون" c="billion"><i>بل</i><par n="مل/يون__num"/></e>
-    <e lm="تريليون" c="trillion"><i>تري</i><par n="مل/يون__num"/></e>
+    <e lm="تريليون" c="trillion"><i>تريل</i><par n="مل/يون__num"/></e>
 
 
 <!--    <e lm="זוג" c="couple"><i>זוג</i><par n="זוג__num"/></e> -->

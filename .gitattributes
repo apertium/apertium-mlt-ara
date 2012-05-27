@@ -17,6 +17,7 @@
 /configure.ac -text
 dev/ar_verbs/classes/__init__.py -text
 dev/ar_verbs/classes/doubled.py -text
+dev/ar_verbs/classes/firsthamza.py -text
 dev/ar_verbs/classes/hollow.py -text
 dev/ar_verbs/classes/sound.py -text
 dev/ar_verbs/stems.wiki -text

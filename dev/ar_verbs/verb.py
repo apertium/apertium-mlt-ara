@@ -116,7 +116,7 @@ for line in lines: #{
 	row = line.split('||'); 
 
 
-	stem = {'stem': row[0].strip(), 'cat': row[1].strip(), 'type': row[2].strip(), 'theme': row[3].strip(), 'gloss': row[4].strip(), 'root': row[5].strip(), 'trans': row[6].strip()};
+	stem = {'stem': row[0].strip(), 'cat': row[1].strip(), 'type': row[2].strip(), 'theme': row[3].strip(), 'gloss': row[4].strip(), 'root': row[5].strip(), 'vowels_perf': row[6].strip(), 'vowels_impf': row[7].strip(), 'trans': row[8].strip()};
 	stems = stems + [stem];
 #        if stem['cat'] == 'vaux' :
 #                aux_verbs = aux_verbs + [stem['stem']];
@@ -169,10 +169,6 @@ for stem in infl: #{
 
 			left = subflex[0];
 			right = '%s<s n="%s"/><s n="%s"/>%s' % (stem_stem, verb_cat[stem], stem_trans, sym(flex));
-#			if stem in aux_verbs :
-#				right = stem + '<s n="vaux"/>' + sym(flex);
-#			else :
-#				right = stem + '<s n="vblex"/>' + sym(flex);
 			paradigm = subflex[1];
 
 			if paradigm == "-": # no suffix
