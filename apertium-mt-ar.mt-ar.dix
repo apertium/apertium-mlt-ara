@@ -132,16 +132,41 @@
      <!-- SECTION: Conjunctions -->
 
      <e><p><l>u<s n="cnjcoo"/></l><r>و<s n="cnjcoo"/></r></p></e>
+     <e><p><l>jew<s n="cnjcoo"/></l><r>أو<s n="cnjcoo"/></r></p></e>
      <e><p><l>imma<s n="cnjcoo"/></l><r>لكن<s n="cnjcoo"/></r></p></e>
      <e><p><l>meta<s n="cnjcoo"/></l><r>عندما<s n="cnjcoo"/></r></p></e>
-     <e><p><l>li<s n="cnjsub"/></l><r>ل<s n="cnjsub"/></r></p></e>
+     <e><p><l>mela<s n="cnjcoo"/></l><r>لذلك<s n="cnjcoo"/></r></p></e>
+     <e><p><l>jekk<s n="cnjcoo"/></l><r>إذا<s n="cnjsub"/></r></p></e>
+     <e><p><l>mentri<s n="cnjcoo"/></l><r>بينما<s n="cnjcoo"/></r></p></e>
+     <e c="  0"><p><l>ġaladarba<s n="cnjcoo"/></l><r>منذ<s n="cnjcoo"/></r></p></e>
+     <e slr="1"><p><l>ġaladarba<s n="cnjcoo"/></l><r>منذئذ<s n="cnjcoo"/></r></p></e>
+     <!-- whether .. or (sija jekk?) & both .. and - hey, it's Italian 'sia' -->
+     <e><p><l>sija<s n="cnjcoo"/></l><r>على<b/>السواء<s n="cnjcoo"/></r></p></e>
+     <e><p><l>kif<b/>ukoll<s n="cnjcoo"/></l><r>وكذلك<s n="cnjcoo"/></r></p></e>
+     <e><p><l>bhalli<b/>kieku<s n="cnjcoo"/></l><r>كأنما<s n="cnjcoo"/></r></p></e>
+     <e><p><l>kieku<s n="cnjcoo"/></l><r>إذا<s n="cnjsub"/></r></p></e>
+     <e><p><l>iżda<s n="cnjcoo"/></l><r>لكن<s n="cnjcoo"/></r></p></e> <!-- بل ? -->
 
-     <e><p><l>jew<s n="cnjcoo"/></l><r>أو<s n="cnjcoo"/></r></p></e>
-
-     <!-- miri -->
-     <!-- this requires subjunctive in Arabic -->
      <e><p><l>għalkemm<s n="cnjcoo"/></l><r>رغم<b/>أن<s n="cnjsub"/></r></p></e>
-     <e><p><l>li<s n="cnjsub"/></l><r>أن<s n="cnjsub"/></r></p></e>
+
+
+     <e c="  0"><p><l>li<s n="cnjsub"/></l><r>أن<s n="cnjsub"/></r></p></e>
+     <e slr="1"><p><l>li<s n="cnjsub"/></l><r>ل<s n="cnjsub"/></r></p></e>
+     <e><p><l>għax<s n="cnjsub"/></l><r>لأن<s n="cnjsub"/></r></p></e>
+     <e><p><l>bħalma<s n="cnjsub"/></l><r>كما<s n="cnjsub"/></r></p></e>
+     <e><p><l>sabiex<s n="cnjsub"/></l><r>لكي<s n="cnjsub"/></r></p></e>
+     <e><p><l>illi<s n="cnjsub"/></l><r>الذي<s n="cnjsub"/></r></p></e> <!-- in Arabic: gender & number; prn? -->
+     <e><p><l>però<s n="cnjsub"/></l><r>لكن<s n="cnjcoo"/></r></p></e>
+     <e><p><l>minkejja<b/>li<s n="cnjsub"/></l><r>رغم<b/>أن<s n="cnjsub"/></r></p></e>
+     <e><p><l>minkejja<s n="cnjsub"/></l><r>رغم<b/>أن<s n="cnjsub"/></r></p></e>
+     <e c="  0"><p><l>biex<s n="cnjsub"/></l><r>كي<s n="cnjsub"/></r></p></e>
+     <e slr="1"><p><l>biex<s n="cnjsub"/></l><r>لكي<s n="cnjsub"/></r></p></e>
+     <e><p><l>kieku<s n="cnjsub"/></l><r>إذا<s n="cnjsub"/></r></p></e>
+
+     <e><p><l>għalhekk<s n="cnjadv"/></l><r>لذلك<s n="cnjadv"/></r></p></e>
+     <e><p><l>billi<s n="cnjadv"/></l><r>إذ<s n="cnjadv"/></r></p></e> <!-- since = because? not בעוד ש-->
+     <e><p><l>filwaqt<s n="cnjadv"/></l><r>بينما<s n="cnjadv"/></r></p></e>
+     <e><p><l>daqshekk<s n="cnjadv"/></l><r>هكذا<s n="cnjadv"/></r></p></e>
 
 
      <!-- SECTION: Prepositions -->
@@ -2390,7 +2415,6 @@
      <e><p><l>hemm<s n="adv"/></l><r>هناك<s n="adv"/></r></p></e>
      <e><p><l>sew<s n="adv"/></l><r>جيدا<s n="adv"/></r></p></e>
      <e><p><l>bilfors<s n="adv"/></l><r>بالتأكيد<s n="adv"/></r></p></e>
-     <e><p><l>biex<s n="cnjsub"/></l><r>كي<s n="cnjsubj"/></r></p></e>
 
      <e><p><l>se<s n="adv"/></l><r>سوف<s n="adv"/></r></p></e> <!-- Future particle -->
      <e><p><l>qed<s n="adv"/></l><r></r></p></e> <!-- Progressive particle -->
@@ -2427,7 +2451,6 @@
      <e><p><l>forsi<s n="adv"/></l><r>ربما<s n="adv"/></r></p></e>
      <e><p><l>wisq<s n="adv"/></l><r>أكثر<b/>من<b/>اللازم<s n="adv"/></r></p></e>
      <e><p><l>diġà<s n="adv"/></l><r>قد<s n="adv"/></r></p></e>
-     <e><p><l>sew<s n="adv"/></l><r>تماما<s n="adv"/></r></p></e> <!-- pleonastic -->
      <e><p><l>qabel<s n="adv"/></l><r>قبل<s n="adv"/></r></p></e>
      <e><p><l>iżjed<s n="adv"/></l><r>أكثر<s n="adv"/></r></p></e>
      <e><p><l>aktarx<s n="adv"/></l><r>على<b/>الأرجح<s n="adv"/></r></p></e>

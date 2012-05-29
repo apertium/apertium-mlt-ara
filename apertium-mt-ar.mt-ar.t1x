@@ -1376,7 +1376,7 @@
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="lemq"/>
 	   </lu>
-	   <b/><lu><lit v="أن"/><lit-tag v="cnjsubj"/></lu><b/>
+	   <b/><lu><lit v="أن"/><lit-tag v="cnjsub"/></lu><b/>
 	 </out>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="2"/></call-macro> 
@@ -1821,7 +1821,7 @@
            </lu>
 	   <b/>
 	   <lu>
-	     <lit v="أن"/><lit-tag v="cnjsubj"/>
+	     <lit v="أن"/><lit-tag v="cnjsub"/>
 	   </lu>
 	   <b/>
 	 </out>
@@ -1869,7 +1869,7 @@
            </lu>
 	   <b/>
 	   <lu>
-	     <lit v="أن"/><lit-tag v="cnjsubj"/>
+	     <lit v="أن"/><lit-tag v="cnjsub"/>
 	   </lu>
 	   <b/>
 	 </out>
@@ -1920,7 +1920,7 @@
            </lu>
 	   <b/>
 	   <lu>
-	     <lit v="أن"/><lit-tag v="cnjsubj"/>
+	     <lit v="أن"/><lit-tag v="cnjsub"/>
 	   </lu>
 	   <b/>
   	 </out>

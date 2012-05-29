@@ -87,7 +87,6 @@
     <sdef n="cnjcoo"      c="Co-ordinating conjunction"/>
     <sdef n="cnjsub"      c="Sub-ordinating conjunction"/>
     <sdef n="cnjadv"      c="Adverbial conjunction"/>
-    <sdef n="cnjsubj"     c="Conjunction followed by subjunctive verb mode"/>
 
     <sdef n="cm"          c="Comma"/>
     <sdef n="sent"        c="Sentence marker"/>
@@ -134,21 +133,23 @@
 
     <!-- SECTION: Conjunctions -->
 
-    <pardef n="ו__cnjcoo">
+    <pardef n="و__cnjcoo">
       <e><p><l/><r><s n="cnjcoo"/></r></p></e>
     </pardef>
 
-    <pardef n="כאשר__cnjsub">
+    <pardef n="لأن__cnjsub">
       <e><p><l/><r><s n="cnjsub"/></r></p></e>
     </pardef>
 
-    <pardef n="לכן__cnjadv">
+    <pardef n="أن__cnjsub">
+      <e><p><l/><r><s n="cnjsub"/></r></p></e>
+    </pardef>
+
+    <pardef n="هكذا__cnjadv">
       <e><p><l/><r><s n="cnjadv"/></r></p></e>
     </pardef>
 
-    <pardef n="أن__cnjsubj">
-      <e><p><l/><r><s n="cnjsubj"/></r></p></e>
-    </pardef>
+
 
 
 
@@ -712,16 +713,38 @@
 
     <!-- SECTION: Conjunctions -->
 
-    <e lm="لكن"><i>لكن</i><par n="ו__cnjcoo"/></e>
-    <e lm="أن"><i>أن</i><par n="أن__cnjsubj"/></e>
-    <e lm="كي"><i>كي</i><par n="أن__cnjsubj"/></e>
+    <e lm="و" r="RL"><p><l><a/>و</l><r>و</r></p><par n="و__cnjcoo"/></e>
+    <e lm="أو"><i>أو</i><par n="و__cnjcoo"/></e>
+    <e lm="عندما"><i>عندما</i><par n="و__cnjcoo"/></e>
+    <e lm="لكن"><i>لكن</i><par n="و__cnjcoo"/></e>
+    <e lm="لذلك"><i>لذلك</i><par n="و__cnjcoo"/></e>
+    <e lm="إذا"><i>إذا</i><par n="و__cnjcoo"/></e>
+    <e lm="بينما"><i>بينما</i><par n="و__cnjcoo"/></e>
+    <e lm="منذ"><i>منذ</i><par n="و__cnjcoo"/></e>
+    <e lm="منذئذ"><i>منذئذ</i><par n="و__cnjcoo"/></e>
+    <e lm="على السواء"><i>على<b/>السواء</i><par n="و__cnjcoo"/></e>
+    <e lm="وكذلك"><i>وكذلك</i><par n="و__cnjcoo"/></e>
+    <e lm="كأنما"><i>كأنما</i><par n="و__cnjcoo"/></e>
+    <e lm="بل"><i>بل</i><par n="و__cnjcoo"/></e>
 
-    <e lm="و" r="RL"><p><l><a/>و</l><r>و<s n="cnjcoo"/></r></p></e>
-    <e lm="أو"><i>أو</i><par n="ו__cnjcoo"/></e>
-    <e lm="عندما"><i>عندما</i><par n="ו__cnjcoo"/></e>
-    <e lm="أن" r="RL">  <p><l><a/>أن</l><r>أن<s n="cnjsub"/></r></p></e>
-<!--     <e lm="أن"><i>أن</i><par n="כאשר__cnjsub"/></e> -->
-    <e lm="رغم أن"><i>رغم<b/>أن</i><par n="כאשר__cnjsub"/></e>
+
+    <e lm="أن" r="RL"><p><l><a/>أن</l><r>أن</r></p><par n="أن__cnjsub"/></e>
+    <e lm="أن" r="LR"><i>أن</i><par n="أن__cnjsub"/></e>
+    <e lm="كي"><i>كي</i><par n="أن__cnjsub"/></e>
+    <e lm="رغم أن"><i>رغم<b/>أن</i><par n="أن__cnjsub"/></e>
+    <e lm="ل" r="RL"><p><l><a/>ل</l><r>ل</r></p><par n="أن__cnjsub"/></e>
+    <e lm="ل" r="LR"><i>ل</i><par n="أن__cnjsub"/></e>
+    <e lm="لأن"><i>لأن</i><par n="لأن__cnjsub"/></e>
+    <e lm="كما"><i>كما</i><par n="لأن__cnjsub"/></e>
+    <e lm="لكي"><i>لكي</i><par n="أن__cnjsub"/></e>
+    <e lm="الذي"><i>الذي</i><par n="لأن__cnjsub"/></e> <!-- ? -->
+    <e lm="إذا"><i>إذا</i><par n="لأن__cnjsub"/></e>
+
+
+    <e lm="هكذا"><i>هكذا</i><par n="هكذا__cnjadv"/></e>
+    <e lm="بينما"><i>بينما</i><par n="هكذا__cnjadv"/></e>
+    <e lm="لذلك"><i>لذلك</i><par n="هكذا__cnjadv"/></e>
+    <e lm="إذ"><i>إذ</i><par n="هكذا__cnjadv"/></e>
 
 
     <!-- SECTION: Pronouns -->
