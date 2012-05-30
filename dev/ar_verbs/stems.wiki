@@ -12,6 +12,8 @@
  ! Trans
 
 |-
+| كان || vaux || hollow || 1 || و || be || ك-و-ن || || || iv 
+|-
 | لعب || vblex || sound || 1 || || play || ل-ع-ب || a-i || a-a || iv 
 |-
 | نظر || vblex || sound || 1 || || look || ن-ظ-ر || a-a || a-u || iv 
@@ -24,6 +26,8 @@
 |-
 | فعل || vblex || sound || 1 || || do || ف-ع-ل || a-a || a-a || tv
 |-
+| بحث || vblex || sound || 1 || || search || ب-ح-ث || a-a || a-a || tv
+|-
 | ضحك || vblex || sound || 1 || || laugh || ض-ح-ك || a-i || a-a || iv 
 |-
 | شرب || vblex || sound || 1 || || drink || ش-ر-ب || a-i || a-a || tv 
@@ -32,36 +36,108 @@
 |-
 | كتب || vblex || sound || 1 || || write || ك-ت-ب || a-a || a-u || tv 
 |-
-| فكر || vblex || sound || 2 || || think || ف-ك-ر || a-a || u-a-i || tv 
+| حصل || vblex || sound || 1 || || obtain || ح-ص-ل || a-a || a-u || tv 
 |-
-| غادر || vblex || sound || 3 || || leave || غ-د-ر || a-a || u-a-i || tv 
+| فرح || vblex || sound || 1 || || be·glad || ف-ر-ح || a-i || a-a || tv 
 |-
-| ساعد || vblex || sound || 3 || || help || س-ع-د || a-a || u-a-i || tv 
+| رجع || vblex || sound || 1 || || return || ر-ج-ع || a-a || a-i || tv 
 |-
-| شارك || vblex || sound || 3 || || participate || ش-ر-ك || a-a || u-a-i || tv 
+| كره || vblex || sound || 1 || || detest || ك-ر-ه || a-i || a-a || tv 
 |-
-| أحضر || vblex || sound || 4 || || bring || ح-ض-ر || a-a || u-i || tv 
+| بعث || vblex || sound || 1 || || send || ب-ع-ث || a-a || a-a || tv 
 |-
-| أخرج || vblex || sound || 4 || || take·out || خ-ر-ج || a-a || u-i || tv 
+| عجب || vblex || sound || 1 || || be·amazed || ع-ج-ب || a-i || a-a || tv 
 |-
-| أغلق || vblex || sound || 4 || || close || غ-ل-ق || a-a || u-i || tv 
+| برم || vblex || sound || 1 || || twist || ب-ر-م || a-a || a-u || tv 
 |-
-| تكلم || vblex || sound || 5 || || speak || ك-ل-م || a-a-a || a-a-a-a || tv 
+| بلع || vblex || sound || 1 || || swallow || ب-ل-ع || a-a || a-u || tv 
 |-
-| تراجع || vblex || sound || 6 || || recede || ر-ج-ع || a-a-a || a-a-a-a || iv
+| بصق || vblex || sound || 1 || || spit || ب-ص-ق || a-a || a-u || tv 
 |-
-| تفاعل || vblex || sound || 6 || || interact || ف-ع-ل || a-a-a || a-a-a-a || iv 
+| خدع || vblex || sound || 1 || || cheat || خ-د-ع || a-a || a-a || tv 
 |-
-| انخفض || vblex || sound || 7 || || decrease || خ-ف-ض || i-a-a || a-a-i || iv 
+| رفض || vblex || sound || 1 || || reject || ر-ف-ض || a-a || a-u || tv 
 |-
-| اقترب || vblex || sound || 8 || || approach || ق-ر-ب || i-a-a || a-a-i || iv 
+| فكر || vblex || sound || 2 || || think || ف-ك-ر || || || tv 
 |-
-| اكتشف || vblex || sound || 8 || || discover || ك-ش-ف || i-a-a || a-a-i || tv 
+| غادر || vblex || sound || 3 || || leave || غ-د-ر || || || tv 
+|-
+| ساعد || vblex || sound || 3 || || help || س-ع-د || || || tv 
+|-
+| شارك || vblex || sound || 3 || || participate || ش-ر-ك || || || tv 
+|-
+| أحضر || vblex || sound || 4 || || bring || ح-ض-ر || || || tv 
+|-
+| أخرج || vblex || sound || 4 || || take·out || خ-ر-ج || || || tv 
+|-
+| أغلق || vblex || sound || 4 || || close || غ-ل-ق || || || tv 
+|-
+| تكلم || vblex || sound || 5 || || speak || ك-ل-م || || || tv 
+|-
+| تراجع || vblex || sound || 6 || || recede || ر-ج-ع || || || iv
+|-
+| تفاعل || vblex || sound || 6 || || interact || ف-ع-ل || || || iv 
+|-
+| انخفض || vblex || sound || 7 || || decrease || خ-ف-ض || || || iv 
+|-
+| اقترب || vblex || sound || 8 || || approach || ق-ر-ب || || || iv 
+|-
+| اكتشف || vblex || sound || 8 || || discover || ك-ش-ف || || || tv 
+|-
+| استمع || vblex || sound || 8 || || listen || س-م-ع || || || tv 
 |-
 | عد || vblex || doubled || 1 || || count || ع-د-د || a-a || a-u || tv 
 |-
-| أحب || vblex || doubled || 4 || || love || ح-ب-ب || a-a || u-i || tv 
+| هز || vblex || doubled || 1 || || shake || ه-ز-ز || a-a || a-u || tv 
+|-
+| بل || vblex || doubled || 1 || || wet || ب-ل-ل || a-a || a-u || tv 
+|-
+| رش || vblex || doubled || 1 || || sprinkle || ر-ش-ش || a-a || a-u || tv 
+|-
+| بدد || vblex || doubled || 2 || || scatter || ب-د-د || || || tv 
+|-
+| أحب || vblex || doubled || 4 || || love || ح-ب-ب || || || tv 
+|-
+| نام || vblex || hollow || 1 || ا || sleep || ن-و-م || || || iv 
+|-
+| قال || vblex || hollow || 1 || و || say || ق-و-ل || || || tv 
+|-
+| باع || vblex || hollow || 1 || ي || sell || ب-ي-ع || || || tv 
+|-
+| حان || vblex || hollow || 1 || ي || arrive·time || ح-ي-ن || || || iv 
+|-
+| غير || vblex || hollow || 2 || || change || غ-ي-ر || || || tv 
+|-
+| حاول || vblex || hollow || 3 || || try || ح-و-ل || || || tv 
+|-
+| أراد || vblex || hollow || 4 || || want || ر-و-د || || || tv 
+|-
+| أجاب || vblex || hollow || 4 || || answer || ج-و-ب || || || tv 
+|-
+| استطاع || vblex || hollow || 10 || || be·able || ط-و-ع || || || tv 
+|-
+| وجد || vblex || firstw || 1 || || take || و-خ-د || a-a || a-i || tv 
+|-
+| أخذ || vblex || firsthamza || 1 || || take || ء-خ-ذ || a-a || a-u || tv 
 |-
 | أكل || vblex || firsthamza || 1 || || eat || ء-ك-ل || a-a || a-u || tv 
+|-
+| أمر || vblex || firsthamza || 1 || || order || ء-م-ر || a-a || a-u || tv 
+|-
+| تألق || vblex || firsthamza || 5 || || shine || ء-ل-ق || || || iv 
+|-
+| استأجر || vblex || firsthamza || 10 || || rent || ء-ج-ر || || || tv 
+|-
+| سأل || vblex || secondhamza || 1 || || ask || س-ء-ل || a-a || a-a || tv 
+|-
+| بدأ || vblex || thirdhamza || 1 || || begin || ب-د-ء || a-a || a-a || tv 
+|-
+| ابتدأ || vblex || thirdhamza || 8 || || begin || ب-د-ء || || || iv 
+|-
+| قرأ || vblex || thirdhamza || 1 || || read || ق-ر-ء || a-a || a-a || tv 
+|-
+| ملأ || vblex || thirdhamza || 1 || || fill || م-ل-ء || a-a || a-a || tv 
+|-
+| اختبأ || vblex || thirdhamza || 8 || || be·hidden || خ-ب-ء || || || iv 
 |}
 

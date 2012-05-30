@@ -18,9 +18,11 @@
 dev/ar_verbs/classes/__init__.py -text
 dev/ar_verbs/classes/doubled.py -text
 dev/ar_verbs/classes/firsthamza.py -text
+dev/ar_verbs/classes/firstw.py -text
 dev/ar_verbs/classes/hollow.py -text
 dev/ar_verbs/classes/secondhamza.py -text
 dev/ar_verbs/classes/sound.py -text
+dev/ar_verbs/classes/thirdhamza.py -text
 dev/ar_verbs/stems.wiki -text
 dev/ar_verbs/verb.py -text
 dev/inconsistency-summary.sh -text

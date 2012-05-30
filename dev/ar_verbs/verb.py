@@ -19,6 +19,7 @@ def header(): #{
 	header = header + '  <alphabet>ABĊDEFĠGGHĦIIJKLMNOPQRSTUVWXZŻabċdefġgħghieiejklmnopqrstuvwxzżycYCáéíóúàèìòùñöëäïüçÿāēīōūăĕĭŏŭãẽĩõũ</alphabet>\n';
 	header = header + '  <sdefs>\n';
 	header = header + '    <sdef n="vblex"/>\n';
+	header = header + '    <sdef n="vaux"/>\n';
 	header = header + '    <sdef n="prn"/>\n';
 	header = header + '    <sdef n="neg"/>\n';
 	header = header + '    <sdef n="tv"/>\n';

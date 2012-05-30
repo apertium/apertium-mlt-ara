@@ -597,7 +597,7 @@ def secondhamza_patt3_past(root, tv): #{
 
 	forms = secondhamza_past_actv(base, base_t, base_n, tv);
 	if (tv == 'tv') : #{
-		base = r[0] + 'وئ' + r[1] + r[2];
+		base = r[0] + 'وئ' + r[2];
 
 		if r[2] == 'ت' :
 			base_t = r[0] + 'وئ';
@@ -938,7 +938,7 @@ def secondhamza_patt6_past(root, tv): #{
 
 	forms = secondhamza_past_actv(base, base_t, base_n, tv);
 	if (tv == 'tv') : #{
-		base = 'ت' + r[0] + 'وئ' + r[1] + r[2];
+		base = 'ت' + r[0] + 'وئ' + r[2];
 
 		if r[2] == 'ت' :
 			base_t = 'ت' + r[0] + 'وئ';
@@ -1390,7 +1390,7 @@ def main(stem): #{
 	forms = {};
 
 	if stem['theme'] == '1' : #{
-		forms.update(secondhamza_patt1_past(stem['root'], stem['vowels_perf']، stem['trans']));
+		forms.update(secondhamza_patt1_past(stem['root'], stem['vowels_perf'], stem['trans']));
 		forms.update(secondhamza_patt1_pres(stem['root'], stem['vowels_impf'], stem['trans']));
 		forms.update(secondhamza_patt1_pp(stem['root']));
 		forms.update(secondhamza_patt1_pprs(stem['root']));
@@ -1404,7 +1404,7 @@ def main(stem): #{
 	elif stem['theme'] == '3' : #{
 		forms.update(secondhamza_patt3_past(stem['root'], stem['trans']));
 		forms.update(secondhamza_patt3_pres(stem['root'], stem['trans']));
-ż		forms.update(secondhamza_patt3_pp(stem['root']));
+		forms.update(secondhamza_patt3_pp(stem['root']));
 		forms.update(secondhamza_patt3_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '4' : #{

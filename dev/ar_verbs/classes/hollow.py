@@ -4,7 +4,8 @@
 
 
 ## ----------------------------------------------------------------------------##
-## hollow verbs
+## hollow verbs:
+## weak second root consontant: و (w) or ي (y)
 ## ----------------------------------------------------------------------------##
 
 
@@ -51,7 +52,7 @@ def hollow_past_actv(base, base_t, base_n, tv): #{
 #}
 
 
-def sound_past_pasv(base, base_t, base_n): #{
+def hollow_past_pasv(base, base_t, base_n): #{
 
 	forms = {};
 
@@ -74,7 +75,7 @@ def sound_past_pasv(base, base_t, base_n): #{
 #}
 
 
-def sound_pres_actv(base, base_n, tv): #{
+def hollow_pres_actv(base, base_n, tv): #{
 
 	forms = {};
 
@@ -119,7 +120,7 @@ def sound_pres_actv(base, base_n, tv): #{
 
 
 
-def sound_pres_pasv(base, base_n): #{
+def hollow_pres_pasv(base, base_n): #{
 
 	forms = {};
 
@@ -144,7 +145,7 @@ def sound_pres_pasv(base, base_n): #{
 
 
 
-def sound_subjun_actv(base, base_n, tv): #{
+def hollow_subjun_actv(base, base_n, tv): #{
 
 	forms = {};
 
@@ -187,7 +188,7 @@ def sound_subjun_actv(base, base_n, tv): #{
 #}
 
 
-def sound_subjun_pasv(base, base_n): #{
+def hollow_subjun_pasv(base, base_n): #{
 
 	forms = {};
 
@@ -211,7 +212,7 @@ def sound_subjun_pasv(base, base_n): #{
 #}
 
 
-def sound_apocop_actv(base_short, base_long, base_n, tv): #{
+def hollow_apocop_actv(base_short, base_long, base_n, tv): #{
 
 	forms = {};
 
@@ -254,7 +255,7 @@ def sound_apocop_actv(base_short, base_long, base_n, tv): #{
 #}
 
 
-def sound_apocop_pasv(base_short, base_long, base_n): #{
+def hollow_apocop_pasv(base_short, base_long, base_n): #{
 
 	forms = {};
 
@@ -278,7 +279,7 @@ def sound_apocop_pasv(base_short, base_long, base_n): #{
 #}
 
 
-def sound_imp(base_short, base_long, base_n, tv): #{
+def hollow_imp(base_short, base_long, base_n, tv): #{
 
 	# passive voice?
 
@@ -333,10 +334,13 @@ def hollow_patt1_past(root, tv): #{
 #}
 
 
-def hollow_patt1_pres(root, pres_vowel, tv): #{
+def hollow_patt1_pres(root, subtype, tv): #{
 	r = root.split('-'); # radicals
 
+	pres_vowel = subtype;
+ 
 	base = r[0] + pres_vowel + r[2];
+	base_short = r[0] + r[2];
 
 	if r[2] == 'ن' :
 		base_n = r[0];
@@ -345,71 +349,18 @@ def hollow_patt1_pres(root, pres_vowel, tv): #{
 
 
 	forms = hollow_pres_actv(base, base_n, tv);
+	forms.update(hollow_subjun_actv(base, base_n, tv));
+	forms.update(hollow_apocop_actv(base_short, base, base_n, tv));
+	forms.update(hollow_imp(base_short, base, base_n, tv)); 
+
 	if (tv == 'tv') : #{
 		base = r[0] + 'ا' + r[2];
 		forms.update(hollow_pres_pasv(base, base_n));
-	#}
-
-	return forms;
-#}
-
-
-def hollow_patt1_subjun(root, pres_vowel, tv): #{
-	r = root.split('-'); # radicals
-
-	base = r[0] + pres_vowel + r[2];
-
-	if r[2] == 'ن' :
-		base_n = r[0];
-	else :
-		base_n = r[0] + r[2];
-
-	forms = hollow_subjun_actv(base, base_n, tv);
-	if (tv == 'tv') : #{
-		base = r[0] + 'ا' + r[2];
 		forms.update(hollow_subjun_pasv(base, base_n));
+		forms.update(hollow_apocop_pasv(base_short, base, base_n));
 	#}
 
 	return forms;
-
-#}
-
-
-def hollow_patt1_apocop(root, pres_vowel, tv): #{
-	r = root.split('-'); # radicals
-
-	base_short = r[0] + r[2];
-	base_long = r[0] + pres_vowel + r[2];
-
-	if r[2] == 'ن' :
-		base_n = r[0];
-	else :
-		base_n = r[0] + r[2];
-
-	forms = hollow_apocop_actv(base_short, base_long, base_n, tv);
-	if (tv == 'tv') : #{
-		base_long = r[0] + 'ا' + r[2];
-		forms.update(hollow_apocop_pasv(base_short, base_long, base_n));
-	#}
-
-	return forms;
-
-
-#}
-
-
-def hollow_patt1_imp(root, pres_vowel, tv): #{
-	r = root.split('-'); # radicals
-
-	base_short = r[0] + r[2];
-	base_long = r[0] + pres_vowel + r[2];
-
-	if r[2] == 'ن' :
-		base_n = r[0];
-	else :
-		base_n = r[0] + r[2];
-
-	return hollow_imp(base_short, base_long, base_n, tv); 
 #}
 
 
@@ -485,60 +436,15 @@ def hollow_patt2_pres(root, tv): #{
 		base_n = r[0] + r[1] + r[2];
 
 	forms = hollow_pres_actv(base, base_n, tv);
+	forms.update(hollow_subjun_actv(base, base_n, tv));
+	forms.update(hollow_apocop_actv(base, base, base_n, tv));
+	forms.update(hollow_imp(base, base, base_n, tv)); 
 	if (tv == 'tv') :
 		forms.update(hollow_pres_pasv(base, base_n));
-
-	return forms;
-#}
-
-
-def hollow_patt2_subjun(root, tv): #{
-	r = root.split('-'); # radicals
-
-	base = r[0] + r[1] + r[2];
-
-	if r[2] == 'ن' :
-		base_n = r[0] + r[1];
-	else :
-		base_n = r[0] + r[1] + r[2];
-
-	forms = hollow_subjun_actv(base, base_n, tv);
-	if (tv == 'tv') :
 		forms.update(hollow_subjun_pasv(base, base_n));
-
-	return forms;
-#}
-
-
-def hollow_patt2_apocop(root, tv): #{
-	r = root.split('-'); # radicals
-
-	base = r[0] + r[1] + r[2];
-
-	if r[2] == 'ن' :
-		base_n = r[0] + r[1];
-	else :
-		base_n = r[0] + r[1] + r[2];
-
-	forms = hollow_apocop_actv(base, base, base_n, tv);
-	if (tv == 'tv') :
 		forms.update(hollow_apocop_pasv(base, base, base_n));
 
 	return forms;
-#}
-
-
-def hollow_patt2_imp(root, tv): #{
-	r = root.split('-'); # radicals
-
-	base = r[0] + r[1] + r[2];
-
-	if r[2] == 'ن' :
-		base_n = r[0] + r[1];
-	else :
-		base_n = r[0] + r[1] + r[2];
-
-	return hollow_imp(base, base, base_n, tv); 
 #}
 
 
@@ -627,63 +533,16 @@ def hollow_patt3_pres(root, tv): #{
 		base_n = r[0] + 'ا' + r[1] + r[2];
 
 	forms = hollow_pres_actv(base, base_n, tv);
+	forms.update(hollow_subjun_actv(base, base_n, tv));
+	forms.update(hollow_apocop_actv(base, base, base_n, tv));
+	forms.update(hollow_imp(base, base, base_n, tv)); 
 	if (tv == 'tv') : #{
 		forms.update(hollow_pres_pasv(base, base_n));
-	#}
-
-	return forms;
-#}
-
-
-def hollow_patt3_subjun(root, tv): #{
-	r = root.split('-'); # radicals
-
-	base = r[0] + 'ا' + r[1] + r[2];
-
-	if r[2] == 'ن' :
-		base_n = r[0] + 'ا' + r[1];
-	else :
-		base_n = r[0] + 'ا' + r[1] + r[2];
-
-	forms = hollow_subjun_actv(base, base_n, tv);
-	if (tv == 'tv') : #{
 		forms.update(hollow_subjun_pasv(base, base_n));
-	#}
-
-	return forms;
-#}
-
-
-def hollow_patt3_apocop(root, tv): #{
-	r = root.split('-'); # radicals
-
-	base = r[0] + 'ا' + r[1] + r[2];
-
-	if r[2] == 'ن' :
-		base_n = r[0] + 'ا' + r[1];
-	else :
-		base_n = r[0] + 'ا' + r[1] + r[2];
-
-	forms = hollow_apocop_actv(base, base, base_n, tv);
-	if (tv == 'tv') : #{
 		forms.update(hollow_apocop_pasv(base, base, base_n));
 	#}
 
 	return forms;
-#}
-
-
-def hollow_patt3_imp(root, tv): #{
-	r = root.split('-'); # radicals
-
-	base = r[0] + 'ا' + r[1] + r[2];
-
-	if r[2] == 'ن' :
-		base_n = r[0] + 'ا' + r[1];
-	else :
-		base_n = r[0] + 'ا' + r[1] + r[2];
-
-	return hollow_imp(base, base, base_n, tv); 
 #}
 
 
@@ -822,7 +681,7 @@ def hollow_patt4_imp(root, tv): #{
 	else :
 		base_n = 'أ' + r[0] + r[2];
 
-	return sound_imp(base_short, base_long, base_n, tv); 
+	return hollow_imp(base_short, base_long, base_n, tv); 
 #}
 
 
@@ -842,7 +701,7 @@ def hollow_patt4_pp(root): #{
 #}
 
 
-def sound_patt4_pprs(root): #{
+def hollow_patt4_pprs(root): #{
 	r = root.split('-'); # radicals
 
 	base = 'م' + r[0] + 'ا' + r[2];
@@ -976,7 +835,7 @@ def hollow_patt5_pp(root): #{
 
 
 # rare
-def sound_patt5_pprs(root): #{
+def hollow_patt5_pprs(root): #{
 	r = root.split('-'); # radicals
 
 	base = 'مت' + r[0] + r[1] + r[2];
@@ -1225,7 +1084,7 @@ def hollow_patt7_imp(root, tv): #{
 #}
 
 
-def sound_patt7_pprs(root): #{
+def hollow_patt7_pprs(root): #{
 	r = root.split('-'); # radicals
 
 	base = 'من' + r[0] + 'ا' + r[2]; 
@@ -1559,7 +1418,7 @@ def hollow_patt10_pp(root): #{
 #}
 
 
-def sound_patt10_pprs(root): #{
+def hollow_patt10_pprs(root): #{
 	r = root.split('-'); # radicals
 
 	base = 'مست' + r[0] + 'ا' + r[2];
@@ -1589,28 +1448,19 @@ def main(stem): #{
 	# present vowel!
 	if stem['theme'] == '1' : #{
 		forms.update(hollow_patt1_past(stem['root'], stem['trans']));
-		forms.update(hollow_patt1_pres(stem['root'], stem['vowel'], stem['trans']));
-		forms.update(hollow_patt1_subjun(stem['root'], stem['vowel'], stem['trans']));
-		forms.update(hollow_patt1_apocop(stem['root'], stem['vowel'], stem['trans']));
-		forms.update(hollow_patt1_imp(stem['root'], stem['vowel'], stem['trans']));
+		forms.update(hollow_patt1_pres(stem['root'], stem['subtype'], stem['trans']));
 		forms.update(hollow_patt1_pp(stem['root']));
 		forms.update(hollow_patt1_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '2' : #{
 		forms.update(hollow_patt2_past(stem['root'], stem['trans']));
 		forms.update(hollow_patt2_pres(stem['root'], stem['trans']));
-		forms.update(hollow_patt2_subjun(stem['root'], stem['trans']));
-		forms.update(hollow_patt2_apocop(stem['root'], stem['trans']));
-		forms.update(hollow_patt2_imp(stem['root'], stem['trans']));
 		forms.update(hollow_patt2_pp(stem['root']));
 		forms.update(hollow_patt2_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '3' : #{
 		forms.update(hollow_patt3_past(stem['root'], stem['trans']));
 		forms.update(hollow_patt3_pres(stem['root'], stem['trans']));
-		forms.update(hollow_patt3_subjun(stem['root'], stem['trans']));
-		forms.update(hollow_patt3_apocop(stem['root'], stem['trans']));
-		forms.update(hollow_patt3_imp(stem['root'], stem['trans']));
 		forms.update(hollow_patt3_pp(stem['root']));
 		forms.update(hollow_patt3_pprs(stem['root']));
 	#}

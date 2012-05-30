@@ -19,7 +19,6 @@
      <sdef n="abbr"/>
      <sdef n="adv"/>
      <sdef n="adj"/>
-     <sdef n="cnjsubj"/>
      <sdef n="acr"/>
 
      <sdef n="sg"/>
@@ -2587,14 +2586,14 @@
      <e c="  0"><p><l>wasal<s n="vblex"/><s n="iv"/></l><r>حان<s n="vblex"/><s n="iv"/></r></p></e>
      <e slr="1"><p><l>wasal<s n="vblex"/><s n="iv"/></l><r>وصل<s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>sama<s n="vblex"/><s n="tv"/></l><r>سمع<s n="vblex"/><s n="tv"/></r></p></e>
-     <e><p><l>issemma'<s n="vblex"/><s n="TD"/></l><r>استمع<s n="vblex"/><s n="TD"/></r></p></e>
+     <e><p><l>issemma'<s n="vblex"/><s n="TD"/></l><r>استمع<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>ġie<s n="vblex"/><s n="tv"/></l><r>جاء<s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>reġa<s n="vblex"/><s n="tv"/></l><r>رجع<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>kiel<s n="vblex"/><s n="tv"/></l><r>أكل<s n="vblex"/><s n="tv"/></r></p></e>
 
 
      <e><p><l>ammira<s n="vblex"/><s n="tv"/></l><r>عجب<s n="vblex"/><s n="iv"/></r></p></e> <!-- 1 or 5 من -->
-     <e><p><l>bagħad<s n="vblex"/><s n="tv"/></l><r>كره<s n="vblex"/><s n="tv"/></r></p></e> <!-- nienawidzić i źle życzyć -->
+     <e><p><l>bagħad<s n="vblex"/><s n="tv"/></l><r>كره<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>bagħat<s n="vblex"/><s n="tv"/></l><r>بعث<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>bandal<s n="vblex"/><s n="tv"/></l><r>هز<s n="vblex"/><s n="tv"/></r></p></e>
      <e><p><l>baqa<s n="vblex"/><s n="iv"/></l><r>بقي<s n="vblex"/><s n="iv"/></r></p></e>

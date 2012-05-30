@@ -1077,9 +1077,9 @@ def firsthamza_patt5_apocop(root, tv): #{
 	else :
 		base_n = 'تأ' + r[1] + r[2];
 
-	forms = firsthamza_subjun_actv(base, base_n, '', tv);
+	forms = firsthamza_apocop_actv(base, base_n, '', tv);
 	if (tv == 'tv') : #{
-		forms.update(firsthamza_subjun_pasv(base, base_n));
+		forms.update(firsthamza_apocop_pasv(base, base_n));
 	#}
 
 	return forms;
