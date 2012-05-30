@@ -116,9 +116,12 @@
     </def-cat>
     <def-cat n="nom_attr"> 
       <cat-item tags="adj.*"/>
-      <cat-item tags="vblex.tv.pprs.*"/>
-      <cat-item tags="vblex.iv.pprs.*"/>
-      <cat-item tags="vblex.TD.pprs.*"/>
+      <cat-item tags="vblex.tv.actv.pprs.*"/>
+      <cat-item tags="vblex.iv.actv.pprs.*"/>
+      <cat-item tags="vblex.TD.actv.pprs.*"/>
+      <cat-item tags="vblex.tv.pasv.pprs.*"/>
+      <cat-item tags="vblex.iv.pasv.pprs.*"/>
+      <cat-item tags="vblex.TD.pasv.pprs.*"/>
     </def-cat>
     <def-cat n="cnjcoo"> 
       <cat-item tags="cnjcoo"/>
@@ -165,6 +168,10 @@
        <attr-item tags="tv"/>
        <attr-item tags="iv"/>
        <attr-item tags="TD"/>
+    </def-attr>
+    <def-attr n="a_voice">
+       <attr-item tags="actv"/>
+       <attr-item tags="pasv"/>
     </def-attr>
      <def-attr n="temps">
         <attr-item tags="pres"/>
@@ -246,9 +253,12 @@
     </def-attr>
     <def-attr n="a_nom_attr">
        <attr-item tags="adj"/>
-       <attr-item tags="vblex.tv.pprs"/>
-       <attr-item tags="vblex.iv.pprs"/>
-       <attr-item tags="vblex.TD.pprs"/>
+       <attr-item tags="vblex.tv.actv.pprs"/>
+       <attr-item tags="vblex.iv.actv.pprs"/>
+       <attr-item tags="vblex.TD.actv.pprs"/>
+       <attr-item tags="vblex.tv.pasv.pprs"/>
+       <attr-item tags="vblex.iv.pasv.pprs"/>
+       <attr-item tags="vblex.TD.pasv.pprs"/>
     </def-attr>
   </section-def-attrs>
 
@@ -858,27 +868,6 @@
     </rule>
 
 
-<!--
-    <rule comment="rule: no analytic genitive construction in Arabic, possessive pronouns used instead: ta' possessive forms -> possessive suffixes">
-       <pattern>
-         <pattern-item n="artic"/>
-         <pattern-item n="nom"/>
-         <pattern-item n="ta_poss"/>
-       </pattern>
-       <action>
-         <out>
-           <lu>
-             <clip pos="2" side="tl" part="lem"/>
-             <clip pos="2" side="tl" part="a_nom"/>
-             <clip pos="2" side="tl" part="gen"/>
-             <clip pos="2" side="tl" part="a_anim"/>
-             <clip pos="2" side="tl" part="nbr"/>
-             <clip pos="3" side="tl" part="poss"/>
-           </lu>
-         </out>
-       </action>
-    </rule> -->
-
 
     <rule comment="rule: artic adj">
        <pattern>
@@ -1092,6 +1081,8 @@
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="a_voice"/>
              <clip pos="2" side="tl" part="temps"/>
              <clip pos="2" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1116,6 +1107,7 @@
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
              <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="1" side="tl" part="a_voice"/>
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1145,6 +1137,7 @@
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
              <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="1" side="tl" part="a_voice"/>
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1193,6 +1186,7 @@
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
              <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="1" side="tl" part="a_voice"/>
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1239,6 +1233,7 @@
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
              <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="1" side="tl" part="a_voice"/>
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="mood"/>
              <clip pos="1" side="tl" part="pers"/>
@@ -1369,6 +1364,7 @@
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
              <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="1" side="tl" part="a_voice"/>
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="a_mood"/>
              <clip pos="1" side="tl" part="pers"/>
@@ -1385,6 +1381,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="a_voice"/>
              <clip pos="2" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="2" side="tl" part="pers"/>
@@ -1413,6 +1410,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="a_voice"/>
              <clip pos="2" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="2" side="tl" part="pers"/>
@@ -1444,6 +1442,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="a_voice"/>
              <clip pos="2" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="2" side="tl" part="pers"/>
@@ -1484,6 +1483,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="a_voice"/>
              <clip pos="2" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="2" side="tl" part="pers"/>
@@ -1510,6 +1510,7 @@
              <clip pos="5" side="tl" part="lemh"/>
              <clip pos="5" side="tl" part="a_verb"/>
              <clip pos="5" side="tl" part="a_trans"/>
+             <clip pos="5" side="tl" part="a_voice"/>
              <clip pos="5" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="5" side="tl" part="pers"/>
@@ -1667,6 +1668,7 @@
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
              <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="1" side="tl" part="a_voice"/>
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1729,6 +1731,7 @@
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
              <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="1" side="tl" part="a_voice"/>
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1782,6 +1785,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="a_voice"/>
              <lit-tag v="pres"/>
              <lit-tag v="apocop"/>
              <clip pos="2" side="tl" part="pers"/>
@@ -1812,6 +1816,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="a_voice"/>
              <lit-tag v="pres"/>
              <lit-tag v="apocop"/>
              <clip pos="2" side="tl" part="pers"/>
@@ -1831,6 +1836,7 @@
              <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_verb"/>
              <clip pos="4" side="tl" part="a_trans"/>
+             <clip pos="4" side="tl" part="a_voice"/>
              <clip pos="4" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="4" side="tl" part="pers"/>
@@ -1861,6 +1867,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="a_voice"/>
              <lit-tag v="pres"/>
              <clip pos="2" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1879,6 +1886,7 @@
              <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_verb"/>
              <clip pos="4" side="tl" part="a_trans"/>
+             <clip pos="4" side="tl" part="a_voice"/>
              <clip pos="4" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="4" side="tl" part="pers"/>
@@ -1912,6 +1920,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="a_voice"/>
              <lit-tag v="pres"/>
              <clip pos="2" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1930,6 +1939,7 @@
              <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_verb"/>
              <clip pos="4" side="tl" part="a_trans"/>
+             <clip pos="4" side="tl" part="a_voice"/>
              <clip pos="4" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="4" side="tl" part="pers"/>
@@ -1974,6 +1984,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="a_voice"/>
              <lit-tag v="pres"/>
              <clip pos="2" side="tl" part="pers"/>
              <var n="genero"/>
@@ -2004,6 +2015,7 @@
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="a_voice"/>
              <clip pos="2" side="tl" part="temps"/>
              <clip pos="2" side="tl" part="mood"/>
              <clip pos="2" side="tl" part="pers"/>
@@ -2038,6 +2050,7 @@
                <clip pos="1" side="tl" part="lemh"/>
                <clip pos="1" side="tl" part="a_verb"/>
                <clip pos="1" side="tl" part="a_trans"/>
+               <clip pos="1" side="tl" part="a_voice"/>
                <clip pos="1" side="tl" part="temps"/>
 <!--               <clip pos="1" side="tl" part="mood"/>  -->
                <clip pos="1" side="tl" part="pers"/>
@@ -2071,6 +2084,7 @@
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
              <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="1" side="tl" part="a_voice"/>
              <clip pos="1" side="tl" part="temps"/>
 <!--             <clip pos="1" side="tl" part="mood"/>  -->
              <clip pos="1" side="tl" part="pers"/>
@@ -2112,7 +2126,8 @@
              <lu>
                <clip pos="1" side="tl" part="lemh"/>
                <clip pos="1" side="tl" part="a_verb"/>
-               <clip pos="1" side="tl" part="a_trans"/>
+               <clip pos="1" side="tl" part="a_trans"/> 
+               <clip pos="1" side="tl" part="a_voice"/>
                <clip pos="1" side="tl" part="temps"/>
 <!--               <clip pos="1" side="tl" part="mood"/>  -->
                <clip pos="1" side="tl" part="pers"/>

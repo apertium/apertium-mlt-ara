@@ -58,7 +58,31 @@
 |-
 | رفض || vblex || sound || 1 || || reject || ر-ف-ض || a-a || a-u || tv 
 |-
+| دخل || vblex || sound || 1 || || enter || د-خ-ل || a-a || a-u || tv 
+|-
+| نظم || vblex || sound || 1 || || string·pearls || ن-ظ-م || a-a || a-i || tv 
+|-
+| عزف || vblex || sound || 1 || || play || ع-ز-ف || a-a || a-i || tv 
+|-
+| ظهر || vblex || sound || 1 || || appear || ظ-ه-ر || a-a || a-a || iv 
+|-
+| دفن || vblex || sound || 1 || || bury || د-ف-ن || a-a || a-i || tv 
+|-
+| دهن || vblex || sound || 1 || || smear || د-ه-ن || a-a || a-u || tv 
+|-
+| فشل || vblex || sound || 1 || || fail || ف-ش-ل || a-i || a-a || iv 
+|-
+| نفض || vblex || sound || 1 || || shake·off || ن-ف-ض || a-a || a-u || tv 
+|-
+| فهم || vblex || sound || 1 || || understand || ف-ه-م || a-i || a-a || tv 
+|-
+| فتح || vblex || sound || 1 || || open || ف-ت-ح || a-a || a-a || tv 
+|-
+| فصل || vblex || sound || 1 || || separate || ف-ص-ل || a-a || a-i || tv 
+|-
 | فكر || vblex || sound || 2 || || think || ف-ك-ر || || || tv 
+|-
+| علق || vblex || sound || 2 || || hang || ع-ل-ق || || || tv 
 |-
 | غادر || vblex || sound || 3 || || leave || غ-د-ر || || || tv 
 |-
@@ -71,6 +95,8 @@
 | أخرج || vblex || sound || 4 || || take·out || خ-ر-ج || || || tv 
 |-
 | أغلق || vblex || sound || 4 || || close || غ-ل-ق || || || tv 
+|-
+| أظلم || vblex || sound || 4 || || grow·dark || ظ-ل-م || || || iv 
 |-
 | تكلم || vblex || sound || 5 || || speak || ك-ل-م || || || tv 
 |-
@@ -94,7 +120,11 @@
 |-
 | رش || vblex || doubled || 1 || || sprinkle || ر-ش-ش || a-a || a-u || tv 
 |-
+| دق || vblex || doubled || 1 || || beat || د-ق-ق || a-a || a-u || tv 
+|-
 | بدد || vblex || doubled || 2 || || scatter || ب-د-د || || || tv 
+|-
+| فكك || vblex || doubled || 2 || || unfasten || ف-ك-ك || || || tv 
 |-
 | أحب || vblex || doubled || 4 || || love || ح-ب-ب || || || tv 
 |-
@@ -105,6 +135,14 @@
 | باع || vblex || hollow || 1 || ي || sell || ب-ي-ع || || || tv 
 |-
 | حان || vblex || hollow || 1 || ي || arrive·time || ح-ي-ن || || || iv 
+|-
+| دام || vblex || hollow || 1 || و || last || د-و-م || || || iv 
+|-
+| ذاق || vblex || hollow || 1 || و || taste || ذ-و-ق || || || tv 
+|-
+| دار || vblex || hollow || 1 || و || turn || د-و-ر || || || iv 
+|-
+| فار || vblex || hollow || 1 || و || boil || ف-و-ر || || || iv 
 |-
 | غير || vblex || hollow || 2 || || change || غ-ي-ر || || || tv 
 |-
