@@ -80,6 +80,56 @@
 |-
 | فصل || vblex || sound || 1 || || separate || ف-ص-ل || a-a || a-i || tv 
 |-
+| نشر || vblex || sound || 1 || || spread || ن-ش-ر || a-a || a-u || tv 
+|-
+| فرغ || vblex || sound || 1 || || be·empty || ف-ر-غ || a-a || a-u || iv 
+|-
+| جمع || vblex || sound || 1 || || collect || ج-م-ع || a-a || a-a || tv 
+|-
+| حدث || vblex || sound || 1 || || happen || ح-د-ث || a-a || a-u || iv 
+|-
+| نقل || vblex || sound || 1 || || carry || ن-ق-ل || a-a || a-u || tv 
+|-
+| حمل || vblex || sound || 1 || || bear || ح-م-ل || a-a || a-i || tv 
+|-
+| سبح || vblex || sound || 1 || || swim || س-ب-ح || a-a || a-a || iv 
+|-
+| عصر || vblex || sound || 1 || || squeeze || ع-ص-ر || a-a || a-i || tv 
+|-
+| حفر || vblex || sound || 1 || || dig || ح-ف-ر || a-a || a-i || tv 
+|-
+| عرق || vblex || sound || 1 || || sweat || ع-ر-ق || a-i || a-a || iv 
+|-
+| ضعف || vblex || sound || 1 || || be·weak || ض-ع-ف || a-u || a-u || iv
+|-
+| فرك || vblex || sound || 1 || || rub || ف-ر-ك || a-a || a-u || tv
+|-
+| جذب || vblex || sound || 1 || || pull || ج-ذ-ب || a-a || a-i || tv
+|-
+| كذب || vblex || sound || 1 || || lie || ك-ذ-ب || a-a || a-u || tv
+|-
+| خدش || vblex || sound || 1 || || scratch || خ-د-ش || a-a || a-i || tv
+|-
+| خبط || vblex || sound || 1 || || strike || خ-ب-ط || a-a || a-i || tv
+|-
+| خدم || vblex || sound || 1 || || serve || خ-د-م || a-a || a-u || iv
+|-
+| عمل || vblex || sound || 1 || || work || ع-م-ل || a-i || a-a || iv
+|-
+| عذر || vblex || sound || 1 || || forgive || ع-ذ-ر || a-a || a-i || tv
+|-
+| خلق || vblex || sound || 1 || || create || خ-ل-ق || a-a || a-u || tv
+|-
+| مرض || vblex || sound || 1 || || fall·sick || م-ر-ض || a-i || a-a || iv
+|-
+| كسر || vblex || sound || 1 || || break || ك-س-ر || a-a || a-i || tv
+|-
+| حلم || vblex || sound || 1 || || dream || ح-ل-م || a-a || a-u || iv
+|-
+| طلب || vblex || sound || 1 || || request || ط-ل-ب || a-a || a-u || tv
+|-
+| ترك || vblex || sound || 1 || || leave || ت-ر-ك || a-a || a-u || tv
+|-
 | فكر || vblex || sound || 2 || || think || ف-ك-ر || || || tv 
 |-
 | علق || vblex || sound || 2 || || hang || ع-ل-ق || || || tv 
@@ -98,6 +148,12 @@
 |-
 | أظلم || vblex || sound || 4 || || grow·dark || ظ-ل-م || || || iv 
 |-
+| أحضر || vblex || sound || 4 || || bring || ح-ض-ر || || || tv 
+|-
+| أغلق || vblex || sound || 4 || || shut || غ-ل-ق || || || tv 
+|-
+| أقسم || vblex || sound || 4 || || swear || ق-س-م || || || iv 
+|-
 | تكلم || vblex || sound || 5 || || speak || ك-ل-م || || || tv 
 |-
 | تراجع || vblex || sound || 6 || || recede || ر-ج-ع || || || iv
@@ -112,6 +168,10 @@
 |-
 | استمع || vblex || sound || 8 || || listen || س-م-ع || || || tv 
 |-
+| اشتغل || vblex || sound || 8 || || be·occupied || ش-غ-ل || || || iv 
+|-
+| التهم || vblex || sound || 8 || || devour || ل-ه-م || || || tv 
+|-
 | عد || vblex || doubled || 1 || || count || ع-د-د || a-a || a-u || tv 
 |-
 | هز || vblex || doubled || 1 || || shake || ه-ز-ز || a-a || a-u || tv 
@@ -122,9 +182,17 @@
 |-
 | دق || vblex || doubled || 1 || || beat || د-ق-ق || a-a || a-u || tv 
 |-
+| لف || vblex || doubled || 1 || || roll·up || ل-ف-ف || a-a || a-u || tv 
+|-
+| عض || vblex || doubled || 1 || || bite || ع-ض-ض || a-i || a-a || tv 
+|-
+| فك || vblex || doubled || 1 || || disassemble || ف-ك-ك || a-a || a-u || tv 
+|-
 | بدد || vblex || doubled || 2 || || scatter || ب-د-د || || || tv 
 |-
 | فكك || vblex || doubled || 2 || || unfasten || ف-ك-ك || || || tv 
+|-
+| قرر || vblex || doubled || 2 || || decide || ق-ر-ر || || || iv 
 |-
 | أحب || vblex || doubled || 4 || || love || ح-ب-ب || || || tv 
 |-
@@ -144,13 +212,37 @@
 |-
 | فار || vblex || hollow || 1 || و || boil || ف-و-ر || || || iv 
 |-
+| غاب || vblex || hollow || 1 || ي || disappear || غ-ي-ب || || || iv 
+|-
+| عام || vblex || hollow || 1 || و || swim || ع-و-م || || || iv 
+|-
+| غار || vblex || hollow || 1 || ا || be·jealous || غ-ي-ر || || || iv 
+|-
+| عاش || vblex || hollow || 1 || ي || live || ع-ي-ش || || || iv
+|-
+| غاص || vblex || hollow || 1 || و || dive || غ-و-ص || || || iv
+|-
+| مات || vblex || hollow || 1 || و || die || م-و-ت || || || iv
+|-
+| صام || vblex || hollow || 1 || و || fast || ص-و-م || || || iv
+|-
+| زار || vblex || hollow || 1 || و || visit || ز-و-ر || || || tv
+|-
+| قام || vblex || hollow || 1 || و || rise || ق-و-م || || || iv
+|-
+| طار || vblex || hollow || 1 || ي || fly || ط-ي-ر || || || iv
+|-
 | غير || vblex || hollow || 2 || || change || غ-ي-ر || || || tv 
+|-
+| صوت || vblex || hollow || 2 || || vote || ص-و-ت || || || iv 
 |-
 | حاول || vblex || hollow || 3 || || try || ح-و-ل || || || tv 
 |-
 | أراد || vblex || hollow || 4 || || want || ر-و-د || || || tv 
 |-
 | أجاب || vblex || hollow || 4 || || answer || ج-و-ب || || || tv 
+|-
+| اختار || vblex || hollow || 8 || || choose || خ-ي-ر || || || tv 
 |-
 | استطاع || vblex || hollow || 10 || || be·able || ط-و-ع || || || tv 
 |-
