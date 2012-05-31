@@ -2714,7 +2714,7 @@
      <e><p><l>ħatt<s n="vblex"/><s n="tv"/></l><r>أفرغ<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ħawtel<s n="vblex"/></l><r>جهد<s n="vblex"/></r></p></e>
      <e><p><l>ħeba<s n="vblex"/></l><r>أخفى<s n="vblex"/></r></p></e>
-     <e><p><l>ħebel<s n="vblex"/><s n="iv"/></l><r>جن<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e> <!-- h/ħ -->
+     <e><p><l>ħebel<s n="vblex"/><s n="iv"/></l><r>جن<s n="vblex"/><s n="iv"/><s n="pasv"/></r></p></e> <!-- h/ħ -->
      <e><p><l>hebeż<s n="vblex"/><s n="iv"/></l><r>تراجع<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e> <!-- it's rather ħebeż than hebeż -->
      <e><p><l>heġem<s n="vblex"/><s n="iv"/></l><r>التهم<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> <!-- & ħeġem? -->
      <e><p><l>ħela<s n="vblex"/><s n="tv"/></l><r>بذر<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
@@ -2747,7 +2747,7 @@
      <e><p><l>qala<s n="vblex"/><s n="tv"/></l><r>كسب<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>qata<s n="vblex"/><s n="tv"/></l><r>قطع<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>lagħaq<s n="vblex"/><s n="tv"/></l><r>لعق<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
-     <e><p><l>qabel<s n="vblex"/><s n="iv"/></l><r>اتفق<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
+     <e><p><l>qabel<s n="vblex"/><s n="iv"/></l><r>اتفق<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e> <!-- it's tv in stems -->
      <e><p><l>qabeż<s n="vblex"/><s n="tv"/></l><r>قفز<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>qatel<s n="vblex"/><s n="tv"/></l><r>قتل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e r="LR"><p><l>xeher<s n="vblex"/><s n="iv"/></l><r>عول<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>

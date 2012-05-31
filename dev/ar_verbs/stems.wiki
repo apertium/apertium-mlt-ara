@@ -130,9 +130,59 @@
 |-
 | ترك || vblex || sound || 1 || || leave || ت-ر-ك || a-a || a-u || tv
 |-
+| ظلم || vblex || sound || 1 || || oppress || ظ-ل-م || a-a || a-i || tv
+|-
+| خنق || vblex || sound || 1 || || strangle || خ-ن-ق || a-a || a-u || tv
+|-
+| هرب || vblex || sound || 1 || || escape || ه-ر-ب || a-a || a-u || iv
+|-
+| حرق || vblex || sound || 1 || || burn || ح-ر-ق || a-a || a-i || tv
+|-
+| خرج || vblex || sound || 1 || || go·out || خ-ر-ج || a-a || a-u || iv
+|-
+| غسل || vblex || sound || 1 || || wash || غ-س-ل || a-a || a-i || tv
+|-
+| خطف || vblex || sound || 1 || || snatch || خ-ط-ف || a-a || a-i || tv
+|-
+| فسد || vblex || sound || 1 || || be·rotten || ف-س-د || a-a || a-u || iv
+|-
+| جهد || vblex || sound || 1 || || be·diligent || ج-ه-د || a-a || a-a || iv
+|-
+| هرس || vblex || sound || 1 || || crush || ه-ر-س || a-a || a-u || tv
+|-
+| سهر || vblex || sound || 1 || || work·overtime || س-ه-ر || a-i || a-a || iv
+|-
+| سخن || vblex || sound || 1 || || become·warm || س-خ-ن || a-u || a-u || iv
+|-
+| قعد || vblex || sound || 1 || || sit || ق-ع-د || a-a || a-u || iv
+|-
+| ضرب || vblex || sound || 1 || || hit || ض-ر-ب || a-a || a-i || tv
+|-
+| ربط || vblex || sound || 1 || || bind || ر-ب-ط || a-a || a-u || tv
+|-
+| قبض || vblex || sound || 1 || || grab || ق-ب-ض || a-a || a-i || tv
+|-
+| نقص || vblex || sound || 1 || || decrease || ن-ق-ص || a-a || a-u || tv
+|-
+| كسب || vblex || sound || 1 || || acquire, earn || ك-س-ب || a-a || a-i || tv
+|-
+| قطع || vblex || sound || 1 || || cut || ق-ط-ع || a-a || a-a || tv
+|-
+| لعق || vblex || sound || 1 || || lick || ل-ع-ق || a-a || a-a || tv
+|-
+| قفز || vblex || sound || 1 || || jump || ق-ف-ز || a-a || a-i || iv
+|-
+| قتل || vblex || sound || 1 || || kill || ق-ت-ل || a-a || a-u || tv
+|-
 | فكر || vblex || sound || 2 || || think || ف-ك-ر || || || tv 
 |-
 | علق || vblex || sound || 2 || || hang || ع-ل-ق || || || tv 
+|-
+| بذر || vblex || sound || 2 || || waste || ب-ذ-ر || || || tv 
+|-
+| دبس || vblex || sound || 2 || || fasten·with·pin || د-ب-س || || || tv 
+|-
+| مشط || vblex || sound || 2 || || comb || م-ش-ط || || || tv 
 |-
 | غادر || vblex || sound || 3 || || leave || غ-د-ر || || || tv 
 |-
@@ -154,13 +204,21 @@
 |-
 | أقسم || vblex || sound || 4 || || swear || ق-س-م || || || iv 
 |-
+| أفرغ || vblex || sound || 4 || || unload || ف-ر-غ || || || tv 
+|-
+| أطلق || vblex || sound || 4 || || set·free || ط-ل-ق || || || tv 
+|-
 | تكلم || vblex || sound || 5 || || speak || ك-ل-م || || || tv 
+|-
+| تخمر || vblex || sound || 5 || || ferment || خ-م-ر || || || iv 
 |-
 | تراجع || vblex || sound || 6 || || recede || ر-ج-ع || || || iv
 |-
 | تفاعل || vblex || sound || 6 || || interact || ف-ع-ل || || || iv 
 |-
 | انخفض || vblex || sound || 7 || || decrease || خ-ف-ض || || || iv 
+|-
+| انطلق || vblex || sound || 7 || || be·free || ط-ل-ق || || || iv 
 |-
 | اقترب || vblex || sound || 8 || || approach || ق-ر-ب || || || iv 
 |-
@@ -188,6 +246,8 @@
 |-
 | فك || vblex || doubled || 1 || || disassemble || ف-ك-ك || a-a || a-u || tv 
 |-
+| جن || vblex || doubled || 1 || || cover, pass. be·insane || ج-ن-ن || a-a || a-u || tv 
+|-
 | بدد || vblex || doubled || 2 || || scatter || ب-د-د || || || tv 
 |-
 | فكك || vblex || doubled || 2 || || unfasten || ف-ك-ك || || || tv 
@@ -195,6 +255,8 @@
 | قرر || vblex || doubled || 2 || || decide || ق-ر-ر || || || iv 
 |-
 | أحب || vblex || doubled || 4 || || love || ح-ب-ب || || || tv 
+|-
+| أحس || vblex || doubled || 4 || || feel || ح-س-س || || || tv 
 |-
 | نام || vblex || hollow || 1 || ا || sleep || ن-و-م || || || iv 
 |-
@@ -236,6 +298,8 @@
 |-
 | صوت || vblex || hollow || 2 || || vote || ص-و-ت || || || iv 
 |-
+| عين || vblex || hollow || 2 || || designate || ع-ي-ن || || || tv 
+|-
 | حاول || vblex || hollow || 3 || || try || ح-و-ل || || || tv 
 |-
 | أراد || vblex || hollow || 4 || || want || ر-و-د || || || tv 
@@ -247,6 +311,10 @@
 | استطاع || vblex || hollow || 10 || || be·able || ط-و-ع || || || tv 
 |-
 | وجد || vblex || firstw || 1 || || take || و-خ-د || a-a || a-i || tv 
+|-
+| وصل || vblex || firstw || 1 || || reach || و-ص-ل || || || tv 
+|-
+| اتفق || vblex || firstw || 1 || || agree || و-ف-ق || || || iv 
 |-
 | أخذ || vblex || firsthamza || 1 || || take || ء-خ-ذ || a-a || a-u || tv 
 |-
