@@ -430,6 +430,16 @@
 |-
 | استعاد || vblex || hollow || 10 || || recuperate || ع-و-د || || || tv 
 |-
+| مشى || vblex || defective || 1 || ى || walk || م-ش-ي || || || iv 
+|-
+| رمى || vblex || defective || 1 || ى || throw || ر-م-ي || || || tv 
+|-
+| أعطى || vblex || defective || 4 || || give || ع-ط-و || || || tv 
+|-
+| أنهى || vblex || defective || 4 || || finish || ن-ه-ي || || || tv 
+|-
+| أعنى || vblex || defective || 4 || || mean || ع-ن-ي || || || tv 
+|-
 | وجد || vblex || firstw || 1 || || take || و-خ-د || a-a || a-i || tv 
 |-
 | وصل || vblex || firstw || 1 || || reach || و-ص-ل || || || tv 

@@ -16,6 +16,7 @@
 /autogen.sh -text
 /configure.ac -text
 dev/ar_verbs/classes/__init__.py -text
+dev/ar_verbs/classes/defective.py -text
 dev/ar_verbs/classes/doubled.py -text
 dev/ar_verbs/classes/firsthamza.py -text
 dev/ar_verbs/classes/firstw.py -text

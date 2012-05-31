@@ -1195,7 +1195,7 @@
 <e lm="ما زال"><p><l>لا<b/>تزال</l><r>ما<b/>زال<s n="vaux"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e lm="ما زال"><p><l>لا<b/>تزال</l><r>ما<b/>زال<s n="vaux"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 
-  <!-- Generated on: 2012-05-31 12:32 CEST -->
+  <!-- Generated on: 2012-05-31 15:43 CEST -->
 
 
 <e><p><l>يفعل</l><r>فعل<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
@@ -14899,6 +14899,154 @@
 <e><p><l>نربط</l><r>ربط<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
 <e><p><l>ربطتا</l><r>ربط<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
 <e><p><l>ربطتا</l><r>ربط<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يرمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يرمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>رمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترميان</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>ترمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>ترمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>أرمى</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>رمى</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>رمى</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترمى</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>رمينا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>رمينا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رميت</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أرمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أرمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رامية</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>مرميات</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>رميتما</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>رميتما</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترميان</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>ترميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترم</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>ترم</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رموا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>أرم</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أرم</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رميتن</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>نرمى</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>ترمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>رمينا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>ترمون</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>رامون</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>نرمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>نرمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رميت</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>رميت</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رميتم</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>راميات</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>ارميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>ارميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>ترميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رميتا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>رميتن</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>رميتن</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>نرمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>نرمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يرمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>يرمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>مرمية</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>ترميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>ترميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رميتما</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>رميت</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>مرميون</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>رميت</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>ترمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>رمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يرميان</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>ارم</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>ارم</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترموا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>ترمو</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترم</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>ترم</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>ترمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>ترمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>ترمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رميت</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>يرمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>يرمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترمى</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>رام</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يرمون</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يرمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يرمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترمون</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>ترمو</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>ترمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رميت</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>رميت</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رميت</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>رميت</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>ترمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>ترميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أرمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أرمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>ترميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ارموا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>ارمو</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يرموا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يرمو</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>ترميان</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>يرميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>يرميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يرميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>يرميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ارمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>ارمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>ترمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>ترمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يرموا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يرمو</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يرمون</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يرمو</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترموا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>ترمو</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رموا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>رمو</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>ترمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يرمى</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>ارمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>ارمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترميان</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>ترميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رمت</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>رمت</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يرمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>مرمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>رميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>رميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يرم</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يرم</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رميتم</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>رميتمو</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يرمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>يرمين</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يرميان</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>يرميا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ترمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>ترمي</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>نرم</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>نرم</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>رمتا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>رمتا</l><r>رمى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
 <e><p><l>تموتوا</l><r>مات<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
 <e><p><l>تمت</l><r>مات<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>تموتي</l><r>مات<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
@@ -21842,6 +21990,154 @@
 <e><p><l>نصبح</l><r>أصبح<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 <e><p><l>أصبحتا</l><r>أصبح<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
 <e><p><l>أصبح</l><r>أصبح<s n="vblex"/><s n="iv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>أعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطيان</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>أعطى</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أعطى</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أعطى</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطى</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أعطينا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>أعطينا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطيت</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>معطية</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>معطات</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>أعطيتما</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>أعطيتما</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطيان</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعط</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعط</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطوا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>أعط</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أعط</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطيتن</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>نعطى</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>تعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>أعطينا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>تعطون</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>معطون</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>نعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>نعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطيت</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أعطيت</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطيتم</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>معطيات</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>عطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>عطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>تعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطيتا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>أعطيتن</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>أعطيتن</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>نعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>نعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>يعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>معطاة</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطيتما</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>أعطيت</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>معطون</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>أعطيت</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>أعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يعطيان</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>عط</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>عط</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطوا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>تعطو</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعط</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>تعط</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>تعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطيت</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>يعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>يعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطى</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>معط</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يعطون</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطون</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>تعطو</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطيت</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أعطيت</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطيت</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>أعطيت</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>تعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>عطوا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>عطو</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعطوا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يعطو</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تعطيان</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>يعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>يعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>يعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>عطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>عطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعطوا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يعطو</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعطون</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يعطو</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطوا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>تعطو</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطوا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>أعطو</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعطى</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>عطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>عطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطيان</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>تعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطت</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>أعطت</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>معطى</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>أعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعط</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يعط</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطيتم</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>أعطيتمو</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>يعطين</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعطيان</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>يعطيا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>تعطي</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>نعط</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>نعط</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعطتا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>أعطتا</l><r>أعطى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
 <e><p><l>تتوبوا</l><r>تاب<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
 <e><p><l>تتب</l><r>تاب<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>تتوبي</l><r>تاب<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
@@ -23855,6 +24151,71 @@
 <e><p><l>نمسك</l><r>أمسك<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
 <e><p><l>أمسكتا</l><r>أمسك<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
 <e><p><l>أمسكتا</l><r>أمسك<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تمشوا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>تمش</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>تمشي</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>يمشي</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>تمشي</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>مشين</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تمشي</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تمشين</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>مشى</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>تمشيا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>ماش</l><r>مشى<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يمشي</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>تمشون</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>مشينا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>أمشي</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>ماشية</l><r>مشى<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>مشيت</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>مشيت</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تمشي</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>أمشي</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>تمشيا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>امشوا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يمشوا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>مشيتما</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تمشيان</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تمش</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>يمشيا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>أمش</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>يمشيا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>امشين</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تمشين</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تمشين</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>ممشيات</l><r>مشى<s n="vblex"/><s n="iv"/><s n="pp"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تمشين</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>يمشوا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يمشون</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>تمشوا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>مشوا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>تمشي</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>ماشون</l><r>مشى<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>امشي</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>نمشي</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>تمشيان</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>مشيت</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>مشت</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>يمشين</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>ماشيات</l><r>مشى<s n="vblex"/><s n="iv"/><s n="pprs"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>امشيا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تمشيا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>تمشي</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>ممشي</l><r>مشى<s n="vblex"/><s n="iv"/><s n="pp"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>مشيتن</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>مشيا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>يمشين</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>ممشية</l><r>مشى<s n="vblex"/><s n="iv"/><s n="pp"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>يمش</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>مشيتم</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>نمشي</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>يمشين</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>ممشيون</l><r>مشى<s n="vblex"/><s n="iv"/><s n="pp"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يمشيان</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>تمشيا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>نمش</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>مشتا</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>امش</l><r>مشى<s n="vblex"/><s n="iv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>تحينوا</l><r>حان<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
 <e><p><l>تحن</l><r>حان<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>تحيني</l><r>حان<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
@@ -24333,6 +24694,154 @@
 <e><p><l>نعزف</l><r>عزف<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
 <e><p><l>عزفتا</l><r>عزف<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
 <e><p><l>عزفتا</l><r>عزف<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ينهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>ينهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>أنهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهيان</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تنهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>أنهى</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أنهى</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أنهى</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهى</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أنهينا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>أنهينا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهيت</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>منهية</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>منهات</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>أنهيتما</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>أنهيتما</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهيان</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تنهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنه</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تنه</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهوا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>أنه</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أنه</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهيتن</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>ننهى</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>تنهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>أنهينا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>تنهون</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>منهون</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>ننهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>ننهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهيت</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أنهيت</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهيتم</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>منهيات</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>نهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>نهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>تنهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهيتا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>أنهيتن</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>أنهيتن</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ننهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>ننهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ينهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>ينهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>منهاة</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تنهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تنهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهيتما</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>أنهيت</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>منهون</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>أنهيت</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تنهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>أنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>ينهيان</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>نه</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>نه</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهوا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>تنهو</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنه</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>تنه</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>تنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهيت</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>ينهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>ينهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهى</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>منه</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>ينهون</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>ينهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>ينهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهون</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>تنهو</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تنهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهيت</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أنهيت</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهيت</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>أنهيت</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تنهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>تنهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>نهوا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>نهو</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ينهوا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>ينهو</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تنهيان</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>ينهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>ينهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ينهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>ينهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>نهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>نهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تنهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تنهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ينهوا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>ينهو</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ينهون</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>ينهو</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهوا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>تنهو</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهوا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>أنهو</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ينهى</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>نهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>نهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهيان</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>تنهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهت</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>أنهت</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ينهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>منهى</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أنهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>أنهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ينه</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>ينه</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهيتم</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>أنهيتمو</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ينهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>ينهين</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ينهيان</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>ينهيا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>تنهي</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>ننه</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>ننه</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أنهتا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>أنهتا</l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
 <e><p><l>يخدش</l><r>خدش<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>يخدش</l><r>خدش<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
 <e><p><l>خدشن</l><r>خدش<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
@@ -25855,6 +26364,154 @@
 <e><p><l>نفسد</l><r>فسد<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 <e><p><l>فسدتا</l><r>فسد<s n="vblex"/><s n="iv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
 <e><p><l>افسد</l><r>فسد<s n="vblex"/><s n="iv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>أعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعنيان</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>أعنى</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أعنى</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أعنى</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعنى</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أعنينا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>أعنينا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنيت</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>معنية</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>معنات</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>أعنيتما</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>أعنيتما</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعنيان</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنوا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>أعن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أعن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنيتن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>نعنى</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>تعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>أعنينا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>تعنون</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>معنون</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>نعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>نعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنيت</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أعنيت</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنيتم</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>معنيات</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>عنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>عنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>تعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنيتا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>أعنيتن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>أعنيتن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>نعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>نعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>يعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>معناة</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنيتما</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>أعنيت</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>معنون</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>أعنيت</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>أعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يعنيان</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>عن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>عن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعنوا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>تعنو</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>تعن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>تعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنيت</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>يعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>يعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعنى</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>معن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pprs"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يعنون</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعنون</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>تعنو</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنيت</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أعنيت</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنيت</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>أعنيت</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+<e><p><l>تعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="mf"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e><p><l>أعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>تعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>عنوا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>عنو</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعنوا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يعنو</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="past"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تعنيان</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>يعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>يعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>يعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>عنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>عنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>تعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p2"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعنوا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يعنو</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعنون</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>يعنو</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعنوا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>تعنو</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنوا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>أعنو</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>تعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعنى</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>عني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>عني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="imp"/><s n="p2"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعنيان</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>تعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنت</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>أعنت</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>معنى</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="pp"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>أعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>أعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>يعن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p3"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنيتم</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+<e><p><l>أعنيتمو</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p2"/><s n="m"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>يعنين</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>يعنيان</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p></e>
+<e><p><l>يعنيا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>تعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>تعني</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="sg"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>نعن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+<e><p><l>نعن</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="apocop"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p><par n="S__فتح/ه"/></e>
+<e><p><l>أعنتا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p></e>
+<e><p><l>أعنتا</l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/><s n="past"/><s n="p3"/><s n="f"/><s n="du"/></r></p><par n="S__فتح/ه"/></e>
 <e><p><l>تطيروا</l><r>طار<s n="vblex"/><s n="iv"/><s n="actv"/><s n="subjun"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
 <e><p><l>تطر</l><r>طار<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>تطيري</l><r>طار<s n="vblex"/><s n="iv"/><s n="actv"/><s n="apocop"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
