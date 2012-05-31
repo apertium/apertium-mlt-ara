@@ -2775,7 +2775,7 @@
      <e><p><l>nefaq<s n="vblex"/><s n="tv"/></l><r>أنفق<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>kiteb<s n="vblex"/><s n="tv"/></l><r>كتب<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>kiser<s n="vblex"/><s n="tv"/></l><r>كسر<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
-     <e><p><l>niżel<s n="vblex"/><s n="tv"/></l><r>نزل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e><p><l>niżel<s n="vblex"/><s n="tv"/></l><r>نزل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> <!-- really tv in ar? -->
      <e><p><l>kiber<s n="vblex"/><s n="iv"/></l><r>كبر<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>kines<s n="vblex"/><s n="tv"/></l><r>كنس<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>nidem<s n="vblex"/><s n="tv"/></l><r>ندم<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
@@ -2790,7 +2790,7 @@
      <e><p><l>rikeb<s n="vblex"/><s n="tv"/></l><r>ركب<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>kiseb<s n="vblex"/><s n="tv"/></l><r>كسب<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>sogħol<s n="vblex"/><s n="iv"/></l><r>سعل<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
-     <e><p><l>sogħob<s n="vblex"/><s n="iv"/></l><r>تاب<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e><p><l>sogħob<s n="vblex"/><s n="iv"/></l><r>تاب<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>korob<s n="vblex"/><s n="iv"/></l><r>أن<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e c="  0"><p><l>kotor<s n="vblex"/><s n="iv"/></l><r>كثر<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e slr="1"><p><l>kotor<s n="vblex"/><s n="iv"/></l><r>تزايد<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
@@ -2829,7 +2829,7 @@
      <e slr="1" r="LR"><p><l>stimula<s n="vblex"/><s n="tv"/></l><r>حفز<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ipparteċipa<s n="vblex"/><s n="iv"/></l><r>شارك<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>irrappreżenta<s n="vblex"/><s n="tv"/></l><r>ناب<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
-     <e><p><l>ippenetra<s n="vblex"/><s n="tv"/></l><r>اختراق<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e><p><l>ippenetra<s n="vblex"/><s n="tv"/></l><r>خرق<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ivvjola<s n="vblex"/><s n="tv"/></l><r>انتهك<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>indika<s n="vblex"/><s n="tv"/></l><r>أشار<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>eżerċita<s n="vblex"/><s n="tv"/></l><r>مارس<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>

@@ -174,7 +174,65 @@
 |-
 | قتل || vblex || sound || 1 || || kill || ق-ت-ل || a-a || a-u || tv
 |-
+| رفع || vblex || sound || 1 || || raise || ر-ف-ع || a-a || a-a || tv
+|-
+| برد || vblex || sound || 1 || || be·cold || ب-ر-د || a-a || a-u || iv
+|-
+| مسح || vblex || sound || 1 || || wipe || م-س-ح || a-a || a-a || tv
+|-
+| لمح || vblex || sound || 1 || || notice || ل-م-ح || a-a || a-a || tv
+|-
+| سرق || vblex || sound || 1 || || steal || س-ر-ق || a-a || a-i || tv
+|-
+| صبغ || vblex || sound || 1 || || paint || ص-ب-غ || a-a || a-u || tv
+|-
+| زلق || vblex || sound || 1 || || slip || ز-ل-ق || a-a || a-u || iv
+|-
+| سبق || vblex || sound || 1 || || outstrip || س-ب-ق || a-a || a-i || tv
+|-
+| نفخ || vblex || sound || 1 || || blow || ن-ف-خ || a-a || a-u || tv
+|-
+| نزل || vblex || sound || 1 || || descent || ن-ز-ل || a-a || a-i || tv
+|-
+| كبر || vblex || sound || 1 || || grow || ك-ب-ر || a-u || a-u || iv
+|-
+| كنس || vblex || sound || 1 || || sweep || ك-ن-س || a-a || a-u || tv
+|-
+| كشف || vblex || sound || 1 || || uncover || ك-ش-ف || a-a || a-i || tv
+|-
+| ندم || vblex || sound || 1 || || repent || ن-د-م || a-i || a-a || iv
+|-
+| سكر || vblex || sound || 1 || || get·drunk || س-ك-ر || a-i || a-a || iv
+|-
+| خسر || vblex || sound || 1 || || lose || خ-س-ر || a-i || a-a || tv 
+|-
+| رقص || vblex || sound || 1 || || dance || ر-ق-ص || a-a || a-u || iv 
+|-
+| ركب || vblex || sound || 1 || || ride || ر-ك-ب || a-i || a-a || tv 
+|-
+| سكت || vblex || sound || 1 || || be·silent || س-ك-ت || a-a || a-u || iv 
+|-
+| سعل || vblex || sound || 1 || || cough || س-ع-ل || a-a || a-u || iv 
+|-
+| كثر || vblex || sound || 1 || || abound || ك-ث-ر || a-u || a-u || iv
+|-
+| لمس || vblex || sound || 1 || || touch || ل-م-س || a-a || a-i || tv
+|-
+| ضغط || vblex || sound || 1 || || press || ض-غ-ط || a-a || a-a || tv
+|-
+| صدع || vblex || sound || 1 || || crack || ص-د-ع || a-a || a-a || tv
+|-
+| حفز || vblex || sound || 1 || || incite || ح-ف-ز || a-a || a-i || tv
+|-
+| خرق || vblex || sound || 1 || || penetrate || خ-ر-ق || a-a || a-i || tv 
+|-
+| خبر || vblex || sound || 1 || || experience || خ-ب-ر || a-a || a-u || tv 
+|-
+| فرض || vblex || sound || 1 || || impose || ف-ر-ض || a-a || a-i || tv 
+|-
 | فكر || vblex || sound || 2 || || think || ف-ك-ر || || || tv 
+|-
+| عبر || vblex || sound || 2 || || express || ع-ب-ر || || || tv 
 |-
 | علق || vblex || sound || 2 || || hang || ع-ل-ق || || || tv 
 |-
@@ -184,9 +242,21 @@
 |-
 | مشط || vblex || sound || 2 || || comb || م-ش-ط || || || tv 
 |-
+| شغل || vblex || sound || 2 || || switch·on || ش-غ-ل || || || tv 
+|-
+| كرم || vblex || sound || 2 || || venerate || ك-ر-م || || || tv 
+|-
+| بجل || vblex || sound || 2 || || revere || ب-ج-ل || || || tv 
+|-
+| نشط || vblex || sound || 2 || || stimulate || ن-ش-ط || || || tv 
+|-
+| صنف || vblex || sound || 2 || || classify || ص-ن-ف || || || tv 
+|-
 | غادر || vblex || sound || 3 || || leave || غ-د-ر || || || tv 
 |-
 | ساعد || vblex || sound || 3 || || help || س-ع-د || || || tv 
+|-
+| مارس || vblex || sound || 3 || || exercise || م-ر-س || || || tv 
 |-
 | شارك || vblex || sound || 3 || || participate || ش-ر-ك || || || tv 
 |-
@@ -208,9 +278,23 @@
 |-
 | أطلق || vblex || sound || 4 || || set·free || ط-ل-ق || || || tv 
 |-
+| أصبح || vblex || sound || 4 || || dawn || ص-ب-ح || || || iv 
+|-
+| أصبح || vblex || sound || 4 || || become || ص-ب-ح || || || tv 
+|-
+| أنفق || vblex || sound || 4 || || spend || ن-ف-ق || || || tv 
+|-
+| أقرض || vblex || sound || 4 || || lend || ق-ر-ض || || || tv 
+|-
+| أمسك || vblex || sound || 4 || || hold || م-س-ك || || || tv 
+|-
 | تكلم || vblex || sound || 5 || || speak || ك-ل-م || || || tv 
 |-
 | تخمر || vblex || sound || 5 || || ferment || خ-م-ر || || || iv 
+|-
+| تنفس || vblex || sound || 5 || || breathe || ن-ف-س || || || iv 
+|-
+| تقدم || vblex || sound || 5 || || develop || ق-د-م || || || iv 
 |-
 | تراجع || vblex || sound || 6 || || recede || ر-ج-ع || || || iv
 |-
@@ -230,6 +314,14 @@
 |-
 | التهم || vblex || sound || 8 || || devour || ل-ه-م || || || tv 
 |-
+| ارتعش || vblex || sound || 8 || || shiver || ر-ع-ش || || || iv 
+|-
+| ارتجف || vblex || sound || 8 || || shiver || ر-ج-ف || || || iv 
+|-
+| انتهك || vblex || sound || 8 || || violate || ن-ه-ك || || || tv 
+|-
+| اعتبر || vblex || sound || 8 || || consider || ع-ب-ر || || || tv 
+|-
 | عد || vblex || doubled || 1 || || count || ع-د-د || a-a || a-u || tv 
 |-
 | هز || vblex || doubled || 1 || || shake || ه-ز-ز || a-a || a-u || tv 
@@ -247,6 +339,14 @@
 | فك || vblex || doubled || 1 || || disassemble || ف-ك-ك || a-a || a-u || tv 
 |-
 | جن || vblex || doubled || 1 || || cover, pass. be·insane || ج-ن-ن || a-a || a-u || tv 
+|-
+| رق || vblex || doubled || 1 || || be·thin || ر-ق-ق || a-a || a-i || iv 
+|-
+| صح || vblex || doubled || 1 || || be·sound || ص-ح-ح || a-a || a-i || iv 
+|-
+| شح || vblex || doubled || 1 || || be·stingy || ش-ح-ح || a-a || a-u || iv 
+|-
+| سد || vblex || doubled || 1 || || plug || س-د-د || a-a || a-u || tv 
 |-
 | بدد || vblex || doubled || 2 || || scatter || ب-د-د || || || tv 
 |-
@@ -294,11 +394,25 @@
 |-
 | طار || vblex || hollow || 1 || ي || fly || ط-ي-ر || || || iv
 |-
+| فاز || vblex || hollow || 1 || و || win || ف-و-ز || || || iv
+|-
+| تاب || vblex || hollow || 1 || و || repent || ت-و-ب || || || iv
+|-
+| زاد || vblex || hollow || 1 || ي || increase || ز-ي-د || || || tv
+|-
+| قاس || vblex || hollow || 1 || ي || measure || ق-ي-س || || || tv
+|-
+| ناب || vblex || hollow || 1 || و || represent || ن-و-ب || || || iv
+|-
 | غير || vblex || hollow || 2 || || change || غ-ي-ر || || || tv 
 |-
 | صوت || vblex || hollow || 2 || || vote || ص-و-ت || || || iv 
 |-
 | عين || vblex || hollow || 2 || || designate || ع-ي-ن || || || tv 
+|-
+| عول || vblex || hollow || 2 || || wail || ع-و-ل || || || iv 
+|-
+| لون || vblex || hollow || 2 || || tint || ل-و-ن || || || tv 
 |-
 | حاول || vblex || hollow || 3 || || try || ح-و-ل || || || tv 
 |-
@@ -306,15 +420,23 @@
 |-
 | أجاب || vblex || hollow || 4 || || answer || ج-و-ب || || || tv 
 |-
+| أشار || vblex || hollow || 4 || || indicate || ش-و-ر || || || iv 
+|-
+| تزايد || vblex || hollow || 6 || || increase || ز-ي-د || || || iv 
+|-
 | اختار || vblex || hollow || 8 || || choose || خ-ي-ر || || || tv 
 |-
 | استطاع || vblex || hollow || 10 || || be·able || ط-و-ع || || || tv 
+|-
+| استعاد || vblex || hollow || 10 || || recuperate || ع-و-د || || || tv 
 |-
 | وجد || vblex || firstw || 1 || || take || و-خ-د || a-a || a-i || tv 
 |-
 | وصل || vblex || firstw || 1 || || reach || و-ص-ل || || || tv 
 |-
-| اتفق || vblex || firstw || 1 || || agree || و-ف-ق || || || iv 
+| وصف || vblex || firstw || 1 || || describe || و-ص-ف || || || tv 
+|-
+| اتفق || vblex || firstw || 8 || || agree || و-ف-ق || || || iv 
 |-
 | أخذ || vblex || firsthamza || 1 || || take || ء-خ-ذ || a-a || a-u || tv 
 |-
