@@ -128,7 +128,8 @@
 
    <section id="main" type="standard">
 
-     <!-- <e><p><l>x<s n="neg"/></l><r>לא<s n="adv"/></r></p></e> -->
+     <!-- in case no other rule applies -->
+     <e><p><l>x<s n="neg"/></l><r>لا<s n="adv"/></r></p></e>
 
      <!-- SECTION: Conjunctions -->
 
