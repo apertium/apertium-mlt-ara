@@ -15,6 +15,7 @@
 /apertium-mt-ar.post-ar.dix -text
 /autogen.sh -text
 /configure.ac -text
+dev/apertium-cleanstream.cc -text
 dev/ar_verbs/classes/__init__.py -text
 dev/ar_verbs/classes/defective.py -text
 dev/ar_verbs/classes/doubled.py -text
