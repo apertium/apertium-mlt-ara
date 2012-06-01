@@ -230,6 +230,14 @@
 |-
 | فرض || vblex || sound || 1 || || impose || ف-ر-ض || a-a || a-i || tv 
 |-
+| حلب || vblex || sound || 1 || || milk || ح-ل-ب || a-a || a-i || tv 
+|-
+| علف || vblex || sound || 1 || || feed || ع-ل-ف || a-a || a-i || tv 
+|-
+| حظر || vblex || sound || 1 || || forbid || ح-ظ-ر || a-a || a-u || tv 
+|-
+| ضبط || vblex || sound || 1 || || adjust || ض-ب-ط || a-a || a-u || tv 
+|-
 | فكر || vblex || sound || 2 || || think || ف-ك-ر || || || tv 
 |-
 | عبر || vblex || sound || 2 || || express || ع-ب-ر || || || tv 
@@ -251,6 +259,8 @@
 | نشط || vblex || sound || 2 || || stimulate || ن-ش-ط || || || tv 
 |-
 | صنف || vblex || sound || 2 || || classify || ص-ن-ف || || || tv 
+|-
+| عدل || vblex || sound || 2 || || adapt || ع-د-ل || || || tv 
 |-
 | غادر || vblex || sound || 3 || || leave || غ-د-ر || || || tv 
 |-
@@ -296,6 +306,8 @@
 |-
 | تقدم || vblex || sound || 5 || || develop || ق-د-م || || || iv 
 |-
+| تضمن || vblex || sound || 5 || || include || ض-م-ن || || || tv 
+|-
 | تراجع || vblex || sound || 6 || || recede || ر-ج-ع || || || iv
 |-
 | تفاعل || vblex || sound || 6 || || interact || ف-ع-ل || || || iv 
@@ -322,6 +334,8 @@
 |-
 | اعتبر || vblex || sound || 8 || || consider || ع-ب-ر || || || tv 
 |-
+| اعتمد || vblex || sound || 8 || || rely || ع-م-د || || || tv 
+|-
 | عد || vblex || doubled || 1 || || count || ع-د-د || a-a || a-u || tv 
 |-
 | هز || vblex || doubled || 1 || || shake || ه-ز-ز || a-a || a-u || tv 
@@ -347,6 +361,12 @@
 | شح || vblex || doubled || 1 || || be·stingy || ش-ح-ح || a-a || a-u || iv 
 |-
 | سد || vblex || doubled || 1 || || plug || س-د-د || a-a || a-u || tv 
+|-
+| ود || vblex || doubled || 1 || || be·fond || و-د-د || a-i || a-a || tv 
+|-
+| جز || vblex || doubled || 1 || || shear || ج-ز-ز || a-a || a-u || tv 
+|-
+| قص || vblex || doubled || 1 || || cut || ق-ص-ص || a-a || a-u || tv 
 |-
 | بدد || vblex || doubled || 2 || || scatter || ب-د-د || || || tv 
 |-
@@ -414,6 +434,8 @@
 |-
 | لون || vblex || hollow || 2 || || tint || ل-و-ن || || || tv 
 |-
+| روج || vblex || hollow || 2 || || promote || ر-و-ج || || || tv 
+|-
 | حاول || vblex || hollow || 3 || || try || ح-و-ل || || || tv 
 |-
 | أراد || vblex || hollow || 4 || || want || ر-و-د || || || tv 
@@ -434,17 +456,41 @@
 |-
 | رمى || vblex || defective || 1 || ى || throw || ر-م-ي || || || tv 
 |-
+| جرى || vblex || defective || 1 || ى || run || ج-ر-ي || || || iv 
+|-
+| بدا || vblex || defective || 1 || ا || appear || ب-د-و || || || iv 
+|-
+| بقي || vblex || defective || 1 || ي || remain || ب-ق-ي || || || iv 
+|-
+| دمي || vblex || defective || 1 || ي || bleed || د-م-ي || || || iv 
+|-
+| قوي || vblex || defective || 1 || ي || be·strong || ق-و-ي || || || iv 
+|-
+| غنى || vblex || defective || 2 || || sing || غ-ن-ي || || || tv 
+|-
+| نمى || vblex || defective || 2 || || develop || ن-م-ي || || || tv 
+|-
 | أعطى || vblex || defective || 4 || || give || ع-ط-و || || || tv 
 |-
 | أنهى || vblex || defective || 4 || || finish || ن-ه-ي || || || tv 
 |-
 | أعنى || vblex || defective || 4 || || mean || ع-ن-ي || || || tv 
 |-
+| أخفى || vblex || defective || 4 || || hide || خ-ف-ي || || || tv 
+|-
+| تعافى || vblex || defective || 6 || || recover || ع-ف-و || || || iv 
+|-
+| رأى || vblex || defective || irregular || || see || ر-ء-ي || || || tv 
+|-
+| أرى || vblex || defective || irregular || || show || ر-ء-ي || || || tv 
+|-
 | وجد || vblex || firstw || 1 || || take || و-خ-د || a-a || a-i || tv 
 |-
-| وصل || vblex || firstw || 1 || || reach || و-ص-ل || || || tv 
+| وصل || vblex || firstw || 1 || || reach || و-ص-ل || a-a || a-i || tv 
 |-
-| وصف || vblex || firstw || 1 || || describe || و-ص-ف || || || tv 
+| وصف || vblex || firstw || 1 || || describe || و-ص-ف || a-a || a-i || tv 
+|-
+| وزن || vblex || firstw || 1 || || weigh || و-ز-ن || a-a || a-i || tv 
 |-
 | اتفق || vblex || firstw || 8 || || agree || و-ف-ق || || || iv 
 |-

@@ -812,7 +812,7 @@ def defective_patt2_past(root, tv): #{
 
 	base = r[0] + r[1];
 
-	forms = defective_past_ya_actv(base);
+	forms = defective_past_ya_actv(base, tv);
 	if (tv == 'tv') :
 		forms.update(defective_past_pasv(base));
 
@@ -887,7 +887,7 @@ def defective_patt3_past(root, tv): #{
 #}
 
 
-def defective_patt3_imp(root, tv): #{
+def defective_patt3_impf(root, tv): #{
 	r = root.split('-'); # radicals
 
 	base = r[0] + 'ا' + r[1];
@@ -1077,7 +1077,7 @@ def defective_patt6_past(root, tv): #{
 
 	base = 'ت' + r[0] + 'ا' + r[1];
 
-	forms = defective_past_actv(base, tv);
+	forms = defective_past_ya_actv(base, tv);
 	if (tv == 'tv') : #{
 		base = 'ت' + r[0] + 'و' + r[1];
 		forms.update(defective_past_pasv(base));
@@ -1352,6 +1352,71 @@ def defective_patt10_pp(root): #{
 
 
 
+##------------------------------------------------------------------------------
+## irregular
+##------------------------------------------------------------------------------
+
+
+def defective_irregular(stem, root): #{
+	r = root.split('-'); # radicals
+
+	forms = {};
+
+	if stem == 'رأى' : #{
+
+		base = 'رأ';
+		forms.update(defective_past_ya_actv(base, 'tv'));
+		forms.update(defective_past_pasv(base));
+		base = 'ر';
+		forms.update(defective_pres_yy_actv(base, 'tv'));
+		forms.update(defective_subjun_yy_actv(base, 'tv'));
+		forms.update(defective_apocop_y_actv(base, 'tv'));
+		forms.update(defective_imp_y(base, 'tv'));
+		forms['actv.imp.p2.m.sg'] = [('ره', '-', '-'), ('ر', '-', 'LR')];
+		forms.update(defective_pres_pasv(base));
+
+		forms['pprs.m.sg'] = [('راء', '-', '-')] ;
+		forms['pprs.f.sg'] = [('رائة', '-', '-')] ;
+		forms['pprs.m.pl'] = [('رائون', '-', '-')] ;
+		forms['pprs.f.pl'] = [('رائات', '-', '-')] ;
+
+		forms['pp.m.sg'] = [('مرئي', '-', '-')] ;
+		forms['pp.f.sg'] = [('مرئية', '-', '-')] ;
+		forms['pp.m.pl'] = [('مرئيون', '-', '-')] ;
+		forms['pp.f.pl'] = [('مرئيات', '-', '-')] ;
+
+	#}
+	elif stem == 'أرى' : #{
+	# there is also another type with second hamza
+
+		base = 'أر';
+		forms.update(defective_past_ya_actv(base, 'tv'));
+		forms.update(defective_past_pasv(base));
+		base = 'ر';
+		forms.update(defective_pres_ya_actv(base, 'tv'));
+		forms.update(defective_subjun_ya_actv(base, 'tv'));
+		forms.update(defective_apocop_y_actv(base, 'tv'));
+		forms.update(defective_imp_y('أ' + base, 'tv'));
+		forms.update(defective_pres_pasv(base));
+
+		forms['pprs.m.sg'] = [('مر', '-', '-')] ;
+		forms['pprs.f.sg'] = [('مرئة', '-', '-')] ;
+		forms['pprs.m.pl'] = [('مرئون', '-', '-')] ;
+		forms['pprs.f.pl'] = [('مرئات', '-', '-')] ;
+
+		forms['pp.m.sg'] = [('مرى', '-', '-')] ;
+		forms['pp.f.sg'] = [('مراة', '-', '-')] ;
+		forms['pp.m.pl'] = [('مرون', '-', '-')] ;
+		forms['pp.f.pl'] = [('مرات', '-', '-')] ;
+
+	#}
+
+
+	return forms;
+#}
+
+
+
 ## ----------------------------------------------------------------------------##
 ## main
 ## ----------------------------------------------------------------------------##
@@ -1361,7 +1426,10 @@ def main(stem): #{
 
 	forms = {};
 
-	if stem['theme'] == '1' : #{
+	if stem['theme'] == 'irregular' : #{
+		forms.update(defective_irregular(stem['stem'], stem['root']));
+	#}
+	elif stem['theme'] == '1' : #{
 		forms.update(defective_patt1_past(stem['root'], stem['subtype'], stem['trans']));
 		forms.update(defective_patt1_impf(stem['root'], stem['subtype'], stem['trans']));
 		forms.update(defective_patt1_pp(stem['root']));
