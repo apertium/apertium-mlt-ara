@@ -419,7 +419,7 @@
 
     <def-macro n="modify_verb_and_genero" npar="1" c="Guess verb gender, no gender for p1">
 
-      <choose>
+      <choose> <!-- default gender set to m -->
         <when> 
           <test>
             <equal>
@@ -438,7 +438,7 @@
           <equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p1"/></equal>
         </test>
         <let>
-          <var n="genero"/><lit v=""/>
+          <var n="genero"/><lit-tag v="mf"/>
         </let>
       </when></choose>
       <choose><when c="in Maltese there is only plural, in Arabic - dual and plural; for the sake of the story dual is chosen here">
