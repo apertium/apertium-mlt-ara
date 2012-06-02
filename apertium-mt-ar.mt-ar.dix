@@ -2411,7 +2411,6 @@
      <e slr="1"><p><l>allura<s n="adv"/></l><r>حينئذ<s n="adv"/></r></p></e>
      <e><p><l>issa<s n="adv"/></l><r>الآن<s n="adv"/></r></p></e>
      <e><p><l>hekk<s n="adv"/></l><r>هكذا<s n="adv"/></r></p></e>
-     <e><p><l>ma<s n="adv"/></l><r>لا<s n="adv"/></r></p></e>
      <e><p><l>taħt<s n="adv"/></l><r>تحت<s n="pr"/></r></p></e> 
      <e><p><l>kullimkien<s n="adv"/></l><r>في<b/>كل<b/>مكان<s n="adv"/></r></p></e> 
      <e><p><l>hemm<s n="adv"/></l><r>هناك<s n="adv"/></r></p></e>
@@ -2420,7 +2419,7 @@
 
      <e><p><l>se<s n="adv"/></l><r>سوف<s n="adv"/></r></p></e> <!-- Future particle -->
      <e><p><l>qed<s n="adv"/></l><r></r></p></e> <!-- Progressive particle -->
-     <e><p><l>ħa<s n="adv"/></l><r></r></p></e> <!-- Hortative(?) particle -->
+     <e><p><l>ħa<s n="adv"/></l><r>هيا</r></p></e> <!-- Hortative(?) particle -->
 
      <!-- negation -->
      <e c="  0"><p><l>ma<s n="adv"/></l><r>لا<s n="adv"/></r></p></e>
@@ -2472,16 +2471,17 @@
      <e><p><l>soltu<s n="adv"/></l><r>عادة<s n="adv"/></r></p></e>
      <e><p><l>madankollu<s n="adv"/></l><r>مع<b/>ذلك<s n="adv"/></r></p></e>
      <e><p><l>sfortunatament<s n="adv"/></l><r>لسوء<b/>الحظ<s n="adv"/></r></p></e>
+     <e><p><l>fortunatament<s n="adv"/></l><r>لحسن<b/>الحظ<s n="adv"/></r></p></e>
      <e><p><l>'l<b/>hawn<s n="adv"/></l><r>هنا<s n="adv"/></r></p></e> <!-- not קדימה -->
      <e><p><l>sempliċiment<s n="adv"/></l><r>ببساطة<s n="adv"/></r></p></e>
-     <e><p><l>ilu<s n="adv"/></l><r>منذ<s n="adv"/></r></p></e> <!--  ? -->
+     <e><p><l>ilu<s n="adv"/></l><r>منذئذ<s n="adv"/></r></p></e> <!--  ? -->
      <e><p><l>ġeneralment<s n="adv"/></l><r>بشكل<b/>عام<s n="adv"/></r></p></e>
      <e><p><l>naturalment<s n="adv"/></l><r>طبعا<s n="adv"/></r></p></e>
      <e><p><l>eżattament<s n="adv"/></l><r>بالضبط<s n="adv"/></r></p></e>
      <e><p><l>normalment<s n="adv"/></l><r>عادة<s n="adv"/></r></p></e>
      <e><p><l>direttament<s n="adv"/></l><r>مباشرة<s n="adv"/></r></p></e>
-     <e><p><l>fuq<s n="adv"/></l><r>فوق<s n="adv"/></r></p></e>
-     <e><p><l>il<b/>fuq<s n="adv"/></l><r>فوق<s n="adv"/></r></p></e>
+     <e><p><l>fuq<s n="adv"/></l><r>فوقا<s n="adv"/></r></p></e>
+     <e><p><l>il<b/>fuq<s n="adv"/></l><r>فوقا<s n="adv"/></r></p></e>
      <e><p><l>personalment<s n="adv"/></l><r>شخصيا<s n="adv"/></r></p></e>
      <e><p><l>kompletament<s n="adv"/></l><r>تماما<s n="adv"/></r></p></e>
      <e><p><l>allegatament<s n="adv"/></l><r>زعما<s n="adv"/></r></p></e>
@@ -2509,7 +2509,8 @@
      <e><p><l>tradizzjonalment<s n="adv"/></l><r>تقليديا<s n="adv"/></r></p></e>
      <e><p><l>lokalment<s n="adv"/></l><r>محليا<s n="adv"/></r></p></e>
      <e><p><l>possibilment<s n="adv"/></l><r>ربما<s n="adv"/></r></p></e>
-     <e><p><l>strettament<s n="adv"/></l><r>بالتتحديد<s n="adv"/></r></p></e>
+     <e c="  0"><p><l>strettament<s n="adv"/></l><r>بصرامة<s n="adv"/></r></p></e>
+     <e slr="1"><p><l>strettament<s n="adv"/></l><r>بالتحديد<s n="adv"/></r></p></e>
      <e><p><l>essenzjalment<s n="adv"/></l><r>في<b/>الأساس<s n="adv"/></r></p></e>
      <e><p><l>storikament<s n="adv"/></l><r>تاريخيا<s n="adv"/></r></p></e>
      <e><p><l>sesswalment<s n="adv"/></l><r>جنسيا<s n="adv"/></r></p></e>
@@ -2523,11 +2524,11 @@
 
      <e><p><l>biex<s n="adv"/><s n="itg"/></l><r>مع<b/>ما<s n="adv"/><s n="itg"/></r></p></e>
     <e><p><l>għala<s n="adv"/><s n="itg"/></l><r>لماذا<s n="adv"/><s n="itg"/></r></p></e>
-     <e><p><l>jaqaw<s n="adv"/><s n="itg"/></l><r>ممكن<s n="adv"/><s n="itg"/></r></p></e>
+     <e><p><l>jaqaw<s n="adv"/><s n="itg"/></l><r>هل<b/>هذا<b/>ممكن<s n="adv"/><s n="itg"/></r></p></e>
      <e><p><l>jewilla<s n="adv"/><s n="itg"/></l><r>أو<b/>لا<s n="adv"/><s n="itg"/></r></p></e>
      <e><p><l>mnejn<s n="adv"/><s n="itg"/></l><r>من<b/>أين<s n="adv"/><s n="itg"/></r></p></e>
      <e><p><l>safejn<s n="adv"/><s n="itg"/></l><r>إلى<b/>أين<s n="adv"/><s n="itg"/></r></p></e>
-<!--     <e><p><l>minn<b/>sa<b/>fejn<s n="adv"/><s n="itg"/></l><r><s n="adv"/><s n="itg"/></r></p></e> -->
+     <e><p><l>minn<b/>sa<b/>fejn<s n="adv"/><s n="itg"/></l><r>بأي<b/>حق<s n="adv"/><s n="itg"/></r></p></e>  <!-- is it really used in mt? -->
      <e><p><l>għaliex<s n="adv"/><s n="itg"/></l><r>لماذا<s n="adv"/><s n="itg"/></r></p></e>
      <e><p><l>xiex<s n="adv"/><s n="itg"/></l><r>ما<s n="adv"/><s n="itg"/></r></p></e> <!-- and ماذا ? -->
 
@@ -2544,9 +2545,8 @@
      <e><p><l>tant<b/>kemm<s n="adv"/></l><r>كثيرا<b/>كذلك<s n="adv"/></r></p></e>
      <e><p><l>astronomikament<s n="adv"/></l><r>فلكيا<s n="adv"/></r></p></e>
      <e><p><l>hawnhekk<s n="adv"/></l><r>هنا<s n="adv"/></r></p></e>
-<!--     <e><p><l>lanqas<s n="adv"/></l><r>אפילו<s n="adv"/></r></p></e>
-     <e><p><l>lanqas<b/>biss<s n="adv"/></l><r>אפילו<b/>לא<s n="adv"/></r></p></e> 
--->
+     <e><p><l>lanqas<s n="adv"/></l><r>ولا<b/>حتى<s n="adv"/></r></p></e> <!-- not even, same as lanqas biss -->
+     <e><p><l>lanqas<b/>biss<s n="adv"/></l><r>ولا<b/>حتى<s n="adv"/></r></p></e> 
      <e><p><l>pulit<s n="adv"/></l><r>بشكل<b/>نظيف<s n="adv"/></r></p></e>
 
 
