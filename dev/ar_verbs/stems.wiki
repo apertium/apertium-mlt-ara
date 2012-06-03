@@ -336,6 +336,8 @@
 |-
 | اعتمد || vblex || sound || 8 || || rely || ع-م-د || || || tv 
 |-
+| ترجم || vblex || quad || 1 || || translate || ت-ر-ج-م || || || tv 
+|-
 | عد || vblex || doubled || 1 || || count || ع-د-د || a-a || a-u || tv 
 |-
 | هز || vblex || doubled || 1 || || shake || ه-ز-ز || a-a || a-u || tv 

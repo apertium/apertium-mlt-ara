@@ -1,4 +1,5 @@
 import sound
+import quad
 import doubled
 import hollow
 import defective
