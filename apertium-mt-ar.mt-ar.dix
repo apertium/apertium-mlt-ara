@@ -2419,7 +2419,7 @@
 
      <e><p><l>se<s n="adv"/></l><r>سوف<s n="adv"/></r></p></e> <!-- Future particle -->
      <e><p><l>qed<s n="adv"/></l><r></r></p></e> <!-- Progressive particle -->
-     <e><p><l>ħa<s n="adv"/></l><r>هيا</r></p></e> <!-- Hortative(?) particle -->
+     <e><p><l>ħa<s n="adv"/></l><r>هيا<s n="adv"/></r></p></e> <!-- Hortative(?) particle -->
 
      <!-- negation -->
      <e c="  0"><p><l>ma<s n="adv"/></l><r>لا<s n="adv"/></r></p></e>

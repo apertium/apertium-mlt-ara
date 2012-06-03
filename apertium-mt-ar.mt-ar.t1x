@@ -39,7 +39,16 @@
       <cat-item lemma="ser" tags="adv"/>
     </def-cat>
     <def-cat n="vrb">
-      <cat-item tags="vblex.*"/>
+<!--  <cat-item tags="vblex.*"/> -->
+      <cat-item tags="vblex.tv.past.*"/>
+      <cat-item tags="vblex.iv.past.*"/>
+      <cat-item tags="vblex.TD.past.*"/>
+      <cat-item tags="vblex.tv.pres.*"/>
+      <cat-item tags="vblex.iv.pres.*"/>
+      <cat-item tags="vblex.TD.pres.*"/>
+      <cat-item tags="vblex.tv.imp.*"/>
+      <cat-item tags="vblex.iv.imp.*"/>
+      <cat-item tags="vblex.TD.imp.*"/>
     </def-cat>
     <def-cat n="modalvrb">
       <cat-item tags="vblex.*" lemma="ħabb"/>
@@ -116,12 +125,17 @@
     </def-cat>
     <def-cat n="nom_attr"> 
       <cat-item tags="adj.*"/>
-      <cat-item tags="vblex.tv.actv.pprs.*"/>
-      <cat-item tags="vblex.iv.actv.pprs.*"/>
-      <cat-item tags="vblex.TD.actv.pprs.*"/>
-      <cat-item tags="vblex.tv.pasv.pprs.*"/>
-      <cat-item tags="vblex.iv.pasv.pprs.*"/>
-      <cat-item tags="vblex.TD.pasv.pprs.*"/>
+<!--      <cat-item tags="vblex.tv.pprs.*"/>
+      <cat-item tags="vblex.iv.pprs.*"/>
+      <cat-item tags="vblex.TD.pprs.*"/> -->
+    </def-cat>
+    <def-cat n="particip"> 
+      <cat-item tags="vblex.tv.pprs.*"/>
+      <cat-item tags="vblex.iv.pprs.*"/>
+      <cat-item tags="vblex.TD.pprs.*"/>
+      <cat-item tags="vblex.tv.pp.*"/>
+      <cat-item tags="vblex.iv.pp.*"/>
+      <cat-item tags="vblex.TD.pp.*"/>
     </def-cat>
     <def-cat n="cnjcoo"> 
       <cat-item tags="cnjcoo"/>
@@ -173,14 +187,18 @@
        <attr-item tags="actv"/>
        <attr-item tags="pasv"/>
     </def-attr>
+    <def-attr n="a_particip">
+       <attr-item tags="pprs"/>
+       <attr-item tags="pp"/>
+    </def-attr>
      <def-attr n="temps">
         <attr-item tags="pres"/>
         <attr-item tags="fut"/>
         <attr-item tags="past"/>
-        <attr-item tags="pp"/>
+<!--        <attr-item tags="pp"/> -->
         <attr-item tags="inf"/>
         <attr-item tags="ger"/>
-        <attr-item tags="pprs"/>
+<!--        <attr-item tags="pprs"/> -->
         <attr-item tags="imp"/>
      </def-attr>
     <def-attr n="poss">
@@ -253,12 +271,9 @@
     </def-attr>
     <def-attr n="a_nom_attr">
        <attr-item tags="adj"/>
-       <attr-item tags="vblex.tv.actv.pprs"/>
-       <attr-item tags="vblex.iv.actv.pprs"/>
-       <attr-item tags="vblex.TD.actv.pprs"/>
-       <attr-item tags="vblex.tv.pasv.pprs"/>
-       <attr-item tags="vblex.iv.pasv.pprs"/>
-       <attr-item tags="vblex.TD.pasv.pprs"/>
+       <attr-item tags="vblex.tv.pprs"/>
+       <attr-item tags="vblex.iv.pprs"/>
+       <attr-item tags="vblex.TD.pprs"/>
     </def-attr>
   </section-def-attrs>
 
@@ -277,6 +292,7 @@
   <section-def-macros>
     <def-macro n="f_concord1" npar="1">
       
+      <let><var n="genero"/><lit-tag v="m"/></let>
       <choose><!--To determine value of variables of gender and
 		  number and propagate to other rules.  Variables are
 		  not used again in this rule -->
@@ -1119,11 +1135,33 @@
     </rule>
 
 
+    <rule comment="rule: participia">
+       <pattern>
+         <pattern-item n="particip"/>
+       </pattern>
+       <action>
+         <call-macro n="f_concord1"><with-param pos="1"/></call-macro>
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="a_trans"/>
+<!--             <clip pos="1" side="tl" part="a_voice"/> -->
+             <clip pos="1" side="tl" part="a_particip"/>
+             <var n="genero"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </out>
+       </action>
+    </rule>
+
     <rule comment="rule: dir object (nom + adj etc.) in accusative ">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="nom"/>
-         <pattern-item n="nom_attr"/>
+<!--         <pattern-item n="nom_attr"/> -->
+	 <pattern-item n="particip"/>
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
@@ -1156,11 +1194,16 @@
            </lu>
 	   <b/>
            <lu>
-             <clip pos="3" side="tl" part="lem"/>
-             <clip pos="3" side="tl" part="a_nom_attr"/>
+             <clip pos="3" side="tl" part="lemh"/>
+<!--             <clip pos="3" side="tl" part="a_nom_attr"/> -->
+             <clip pos="3" side="tl" part="a_verb"/>
+             <clip pos="3" side="tl" part="a_trans"/>
+             <clip pos="3" side="tl" part="a_voice"/>
+             <clip pos="3" side="tl" part="a_particip"/>
              <var n="gen_chunk"/>
              <var n="nbr_chunk"/>
              <lit-tag v="acc"/>
+             <clip pos="3" side="tl" part="lemq"/>
            </lu>
 	   </out>
        </action>
