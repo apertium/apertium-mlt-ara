@@ -817,6 +817,7 @@
                <clip pos="2" side="tl" part="gen"/>
                <clip pos="2" side="tl" part="a_anim"/>
                <clip pos="2" side="tl" part="nbr"/>
+               <lit-tag v="nom"/>
              </lu>
            </mlu>
 	   <b/>
@@ -829,6 +830,7 @@
                <clip pos="4" side="tl" part="a_adj"/>
                <var n="gen_chunk"/>
                <var n="nbr_chunk"/>
+               <lit-tag v="nom"/>
              </lu>
            </mlu>
          </out>
@@ -836,7 +838,7 @@
     </rule>
 
 
-    <rule comment="rule: nom">  <!-- possessive pronouns conversion -->
+    <rule comment="rule: nom">  <!-- possessive pronouns conversion, case default to nom -->
        <pattern>
          <pattern-item n="nom"/>
        </pattern>
@@ -849,12 +851,34 @@
              <clip pos="1" side="tl" part="gen"/>
              <clip pos="1" side="tl" part="a_anim"/>
              <clip pos="1" side="tl" part="nbr"/>
+             <lit-tag v="nom"/>
              <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
          </out>
        </action>
     </rule>
+
+
+    <rule comment="rule: adj">  <!-- case default to nom -->
+       <pattern>
+         <pattern-item n="adj"/>
+       </pattern>
+       <action>
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_adj"/>
+             <clip pos="1" side="tl" part="gen"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <lit-tag v="nom"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </out>
+       </action>
+    </rule>
+
+
 
     <rule comment="rule: artic nom">
        <pattern>
@@ -875,6 +899,7 @@
                <clip pos="2" side="tl" part="gen"/>
                <clip pos="2" side="tl" part="a_anim"/>
                <clip pos="2" side="tl" part="nbr"/>
+               <lit-tag v="nom"/>
                <clip pos="2" side="tl" part="poss"/>
                <clip pos="2" side="tl" part="lemq"/>
              </lu>
@@ -901,6 +926,7 @@
                <clip pos="2" side="tl" part="a_adj"/>
                <clip pos="2" side="tl" part="gen"/>
                <clip pos="2" side="tl" part="nbr"/>
+               <lit-tag v="nom"/>
                <clip pos="2" side="tl" part="lemq"/>
              </lu>
            </mlu>
@@ -930,79 +956,7 @@
     </rule>
 
 
-    <rule comment="rule: nom det">
-       <pattern>
-         <pattern-item n="nom"/>
-         <pattern-item n="det"/>
-       </pattern>
-       <action>
-         <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
-         <choose>
-           <when>
-             <test>
-               <equal>
-                 <clip pos="2" side="tl" part="gen"/>
-                 <lit-tag v="GD"/>
-               </equal>
-             </test>
-             <let>
-               <clip pos="2" side="tl" part="gen"/><lit-tag v="m"/>
-             </let>
-             <choose>
-               <when>
-                 <test>
-                   <equal>
-                     <clip pos="1" side="tl" part="gen"/>
-                     <lit-tag v="f"/>
-                   </equal>
-                 </test>
-                 <let>
-                   <clip pos="2" side="tl" part="gen"/><lit-tag v="f"/>
-                 </let>
-               </when>
-             </choose>
-           </when>
-         </choose>
-         <choose>
-           <when>
-             <test>
-               <equal>
-                 <clip pos="2" side="tl" part="nbr"/>
-                 <lit-tag v="ND"/>
-               </equal>
-             </test>
-             <let>
-               <clip pos="2" side="tl" part="nbr"/><lit-tag v="sg"/>
-             </let>
-             <choose>
-               <when>
-                 <test>
-                   <equal>
-                     <clip pos="1" side="tl" part="nbr"/>
-                     <lit-tag v="pl"/>
-                   </equal>
-                 </test>
-                 <let>
-                   <clip pos="2" side="tl" part="nbr"/><lit-tag v="pl"/>
-                 </let>
-               </when>
-             </choose>
-           </when>
-         </choose>
-         <out>
-           <lu>
-             <clip pos="1" side="tl" part="whole"/>
-           </lu>
-           <b pos="1"/>
-           <lu>
-             <clip pos="2" side="tl" part="whole"/>
-           </lu>
-         </out>
-       </action>
-    </rule> 
-
-
-    <rule comment="rule: det">
+    <rule comment="rule: det">  <!-- ? -->
        <pattern>
          <pattern-item n="det"/>
        </pattern>
