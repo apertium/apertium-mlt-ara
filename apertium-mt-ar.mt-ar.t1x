@@ -879,6 +879,25 @@
     </rule>
 
 
+    <rule comment="rule: artic np"> <!-- no article with proper nouns -->
+       <pattern>
+         <pattern-item n="artic"/>
+         <pattern-item n="np"/>
+       </pattern>
+       <action>
+         <out>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <lit-tag v="nom"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+          </out>
+	</action>
+    </rule>
+
 
     <rule comment="rule: artic nom">
        <pattern>

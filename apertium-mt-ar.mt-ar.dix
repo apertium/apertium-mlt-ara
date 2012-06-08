@@ -186,7 +186,7 @@
      <e><p><l>taħt<s n="pr"/></l><r>تحت<s n="pr"/></r></p></e>
      <e><p><l>qrib<s n="pr"/></l><r>أقرب<s n="pr"/></r></p></e>
      <e><p><l>wara<s n="pr"/></l><r>وراء<s n="pr"/></r></p></e>
-     <e><p><l>ta'<s n="pr"/></l><r>لدى<s n="pr"/></r></p></e>
+     <e><p><l>ta'<s n="pr"/></l><r>ل<s n="pr"/></r></p></e>
      <e><p><l>quddiem<s n="pr"/></l><r>أمام<s n="pr"/></r></p></e>
 
 
@@ -1510,9 +1510,21 @@
 
      <e><p><l>Marija<s n="np"/><s n="ant"/><s n="f"/></l><r>مريم<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
      <e><p><l>Mary<s n="np"/><s n="ant"/><s n="f"/></l><r>مريم<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
-     <e c="  0"><p><l>Ġakbu<s n="np"/><s n="ant"/><s n="m"/></l><r>جيمس<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+     <e><p><l>Ġakbu<s n="np"/><s n="ant"/><s n="m"/></l><r>جيمس<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+
+     <e><p><l>Eurovision<s n="np"/><s n="al"/><s n="f"/></l><r>أوروفيزيون<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+     <e><p><l>European<b/>Broadcasting<b/>Union<s n="np"/><s n="al"/><s n="f"/></l><r>اتحاد<b/>البث<b/>الاوربي<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+     <e><p><l>EBU<s n="np"/><s n="al"/><s n="m"/></l><r>اتحاد<b/>البث<b/>الاوربي<s n="np"/><s n="al"/><s n="m"/></r></p></e>
 
      <e><p><l>Borġ<s n="np"/><s n="ant"/><s n="f"/></l><r>بورج<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+
+     <e><p><l>Ġermanja<s n="np"/><s n="top"/><s n="f"/></l><r>ألمانيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Finlandja<s n="np"/><s n="top"/><s n="f"/></l><r>فنلندا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Estonja<s n="np"/><s n="top"/><s n="f"/></l><r>استونيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Awstralja<s n="np"/><s n="top"/><s n="f"/></l><r>أستراليا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Iżrael<s n="np"/><s n="top"/><s n="m"/></l><r>إسرائيل<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+
+
 
      <!-- SECTION: Adjectives -->
 
@@ -2522,7 +2534,7 @@
      <e><p><l>indipendentement<s n="adv"/></l><r>بشكل<b/>مستقل<s n="adv"/></r></p></e>
      <e c="  0"><p><l>suċċessivament<s n="adv"/></l><r>بالتتابع<s n="adv"/></r></p></e>
      <e slr="1"><p><l>suċċessivament<s n="adv"/></l><r>على<b/>التوالي<s n="adv"/></r></p></e>
-     <e><p><l>esklużivament<s n="adv"/></l><r>حصرا<s n="adv"/></r></p></e>
+     <e><p><l>esklużivament<s n="adv"/></l><r>حصرا<s n="adv"/></r></p></e> <!-- فقط ? -->
 
      <e><p><l>biex<s n="adv"/><s n="itg"/></l><r>مع<b/>ما<s n="adv"/><s n="itg"/></r></p></e>
     <e><p><l>għala<s n="adv"/><s n="itg"/></l><r>لماذا<s n="adv"/><s n="itg"/></r></p></e>
@@ -2550,7 +2562,8 @@
      <e><p><l>lanqas<s n="adv"/></l><r>ولا<b/>حتى<s n="adv"/></r></p></e> <!-- not even, same as lanqas biss -->
      <e><p><l>lanqas<b/>biss<s n="adv"/></l><r>ولا<b/>حتى<s n="adv"/></r></p></e> 
      <e><p><l>pulit<s n="adv"/></l><r>بشكل<b/>نظيف<s n="adv"/></r></p></e>
-
+     <e><p><l>esklussivament<s n="adv"/></l><r>فقط<s n="adv"/></r></p></e>
+     <e><p><l>relattivament<s n="adv"/></l><r>نسبيا<s n="adv"/></r></p></e>
 
      <!-- SECTION: Verbs -->
 
