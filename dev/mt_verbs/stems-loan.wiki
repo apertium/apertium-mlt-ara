@@ -82,4 +82,16 @@
 | rċieva || vblex || loan || two_cons || receive || rċiev ||  || a || tv || rċievut
 |-
 | poġġa || vblex || loan || first_cons || sit || poġġ ||  || i || iv || poġġut
+|-
+| gawda || vblex || loan || first_cons || rejoice || gawd ||  || i || iv || gawdut
+|-
+| gawda || vblex || loan || first_cons || enjoy || gawd ||  || i || tv || gawdut
+|-
+| ikkompeta || vblex || loan || double_cons || compete || kkompet ||  || i || iv ||
+|-
+| inkoraġġixxa || vblex || loan || first_vowel || encourage || inkoraġġ || ixx || i || tv || inkoraġġut
+|-
+| serva || vblex || loan || first_cons || serve || serv || || i || tv || servut
+|-
+| issostna || vblex || loan || double_cons || nourish-oneself? || ssostn || || i || iv || 
 |}

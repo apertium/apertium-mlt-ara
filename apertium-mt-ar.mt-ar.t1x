@@ -27,6 +27,9 @@
     <def-cat n="pron">
       <cat-item tags="prn.*"/>
     </def-cat>
+    <def-cat n="non-np">
+      <cat-item tags="n.*"/>
+    </def-cat>
     <def-cat n="np">
       <cat-item tags="np"/>
       <cat-item tags="np.*"/>
@@ -111,9 +114,9 @@
     <def-cat n="ma_neg"> 
       <cat-item tags="adv" lemma="ma"/>
     </def-cat>
-<!--    <def-cat n="ta_poss"> 
-      <cat-item tags="pr.px3sg_f" lemma="ta'"/>
-    </def-cat> -->
+    <def-cat n="ta_pr"> 
+      <cat-item tags="pr" lemma="ta'"/>
+    </def-cat> 
     <def-cat n="biex"> 
       <cat-item tags="cnjsub" lemma="biex"/>
     </def-cat>
@@ -142,6 +145,9 @@
     </def-cat>
     <def-cat n="adv">
       <cat-item tags="adv"/>
+    </def-cat>
+    <def-cat n="detdem">
+      <cat-item tags="det.dem.*"/>
     </def-cat>
   </section-def-cats>
 
@@ -240,6 +246,9 @@
     </def-attr>
     <def-attr n="a_prn_ind">
        <attr-item tags="prn.ind"/>
+    </def-attr>
+    <def-attr n="a_det_dem">
+       <attr-item tags="det.dem"/>
     </def-attr>
     <def-attr n="a_verb">
        <attr-item tags="vblex"/>
@@ -792,6 +801,39 @@
 
 
   <section-rules>
+
+
+    <rule comment="rule: nom + adj gender and number agreement">
+       <pattern>
+         <pattern-item n="nom"/>
+         <pattern-item n="adj"/>
+       </pattern>
+       <action>
+         <call-macro n="f_concord2">
+           <with-param pos="1"/>
+           <with-param pos="2"/>
+         </call-macro>
+         <out>
+             <lu>
+               <clip pos="1" side="tl" part="lem"/>
+               <clip pos="1" side="tl" part="a_nom"/>
+               <clip pos="1" side="tl" part="gen"/>
+               <clip pos="1" side="tl" part="a_anim"/>
+               <clip pos="1" side="tl" part="nbr"/>
+               <lit-tag v="nom"/>
+             </lu>
+	   <b/>
+             <lu>
+               <clip pos="2" side="tl" part="lem"/>
+               <clip pos="2" side="tl" part="a_adj"/>
+               <var n="gen_chunk"/>
+               <var n="nbr_chunk"/>
+               <lit-tag v="nom"/>
+             </lu>
+         </out>
+       </action>
+    </rule>
+
 
 
     <rule comment="rule: nom + adj gender and number agreement">
@@ -2232,6 +2274,97 @@
 	 </out>
        </action>
     </rule> 
+
+
+    <rule comment="rule: artic np"> <!-- no article with proper nouns -->
+       <pattern>
+         <pattern-item n="artic"/>
+         <pattern-item n="non-np"/>
+         <pattern-item n="ta_pr"/>
+         <pattern-item n="artic"/>
+         <pattern-item n="np"/>
+       </pattern>
+       <action>
+         <out>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="a_anim"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <lit-tag v="nom"/>
+             <lit-tag v="cstr"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="5" side="tl" part="lemh"/>
+             <clip pos="5" side="tl" part="a_nom"/>
+             <clip pos="5" side="tl" part="gen"/>
+             <clip pos="5" side="tl" part="nbr"/>
+             <lit-tag v="gen"/>
+             <clip pos="5" side="tl" part="lemq"/>
+           </lu>
+          </out>
+	</action>
+    </rule>
+
+
+    <rule comment="rule: artic np"> <!-- no article with proper nouns -->
+       <pattern>
+         <pattern-item n="non-np"/>
+         <pattern-item n="ta_pr"/>
+         <pattern-item n="detdem"/>
+         <pattern-item n="nom"/>
+       </pattern>
+       <action>
+         <call-macro n="f_concord2">
+	   <with-param pos="4"/>
+           <with-param pos="3"/>
+         </call-macro>
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_nom"/>
+             <clip pos="1" side="tl" part="gen"/>
+             <clip pos="1" side="tl" part="a_anim"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <lit-tag v="nom"/>
+             <lit-tag v="cstr"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_det_dem"/>
+             <var n="gen_chunk"/>
+             <var n="nbr_chunk"/>
+<!-- TODO: add this
+             <lit-tag v="gen"/>
+-->
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+	   <mlu>
+	     <lu>
+               <lit v="ال"/>
+               <lit-tag v="det"/>
+               <lit-tag v="def"/>
+	     </lu>
+             <lu>
+               <clip pos="4" side="tl" part="lemh"/>
+               <clip pos="4" side="tl" part="a_nom"/>
+               <clip pos="4" side="tl" part="gen"/>
+               <clip pos="4" side="tl" part="a_anim"/>
+               <clip pos="4" side="tl" part="nbr"/>
+               <lit-tag v="gen"/>
+               <clip pos="4" side="tl" part="poss"/>
+               <clip pos="4" side="tl" part="lemq"/>
+             </lu>
+	    </mlu>
+          </out>
+	</action>
+    </rule>
 
 
   </section-rules>

@@ -269,6 +269,7 @@
 
      <e><p><l>ieħor<s n="prn"/><s n="ind"/></l><r>آخر<s n="prn"/><s n="ind"/></r></p></e>
 
+     <e><p><l>kull<s n="prn"/><s n="ind"/></l><r>كل<s n="prn"/><s n="ind"/></r></p></e>
 
 <!--     <e><p><l>i<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
      <e><p><l>na<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
@@ -388,7 +389,8 @@
      <!-- SECTION: Nouns -->
 
      <e><p><l>ġnien<s n="n"/><s n="m"/></l><r>حديقة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-     <e><p><l>tifel<s n="n"/><s n="m"/></l><r>ولد<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+     <e c="  0"><p><l>tifel<s n="n"/><s n="m"/></l><r>طفل<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+     <e slr="1"><p><l>tifel<s n="n"/><s n="m"/></l><r>ولد<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>tifla<s n="n"/><s n="f"/></l><r>بنت<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
      <e><p><l>temp<s n="n"/><s n="m"/></l><r>طقس<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>qattus<s n="n"/><s n="m"/></l><r>قط<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -459,7 +461,7 @@
      <e><p><l>gvern<s n="n"/><s n="m"/></l><r>حكومة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <!--     <e><p><l>superfamilja<s n="n"/><s n="f"/></l><r><s n="n"/><s n="m"/></r></p></e> -->
      <e><p><l>plejer<s n="n"/><s n="m"/></l><r>لاعب<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
-     <e><p><l>membru<s n="n"/><s n="m"/></l><r>عضو<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+     <e><p><l>membru<s n="n"/><s n="m"/></l><r>عضو<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- nn sometimes? -->
      <e><p><l>kont<s n="n"/><s n="m"/></l><r>حساب<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e c="  0"><p><l>parlament<s n="n"/><s n="m"/></l><r>برلمان<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e slr="1"><p><l>parlament<s n="n"/><s n="m"/></l><r>مجلس<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
