@@ -1440,7 +1440,6 @@
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
              <clip pos="2" side="tl" part="a_voice"/>
-             <clip pos="2" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="2" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1469,7 +1468,6 @@
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
              <clip pos="2" side="tl" part="a_voice"/>
-             <clip pos="2" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="2" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1501,7 +1499,6 @@
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
              <clip pos="2" side="tl" part="a_voice"/>
-             <clip pos="2" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="2" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1542,7 +1539,6 @@
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
              <clip pos="2" side="tl" part="a_voice"/>
-             <clip pos="2" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="2" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1569,7 +1565,6 @@
              <clip pos="5" side="tl" part="a_verb"/>
              <clip pos="5" side="tl" part="a_trans"/>
              <clip pos="5" side="tl" part="a_voice"/>
-             <clip pos="5" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="5" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1895,7 +1890,6 @@
              <clip pos="4" side="tl" part="a_verb"/>
              <clip pos="4" side="tl" part="a_trans"/>
              <clip pos="4" side="tl" part="a_voice"/>
-             <clip pos="4" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="4" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1945,7 +1939,6 @@
              <clip pos="4" side="tl" part="a_verb"/>
              <clip pos="4" side="tl" part="a_trans"/>
              <clip pos="4" side="tl" part="a_voice"/>
-             <clip pos="4" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="4" side="tl" part="pers"/>
              <var n="genero"/>
@@ -1998,7 +1991,6 @@
              <clip pos="4" side="tl" part="a_verb"/>
              <clip pos="4" side="tl" part="a_trans"/>
              <clip pos="4" side="tl" part="a_voice"/>
-             <clip pos="4" side="tl" part="temps"/>
              <lit-tag v="subjun"/>
              <clip pos="4" side="tl" part="pers"/>
              <var n="genero"/>
