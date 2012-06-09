@@ -391,8 +391,8 @@ for line in lines: #{
 
 	line = line.strip(); 
 
-	# '|-', '|}', headings, '{|'
-	if len(line) < 3 or line[0] == '!' or line[0] == '{':
+	# '|-', '|}', headings, '{|', comments
+	if len(line) < 3 or line[0] == '!' or line[0] == '{' or line[0] == '/' :
 	        continue;
     
 	line = line.lstrip('|');

@@ -84,8 +84,8 @@
 | poġġa || vblex || loan || first_cons || sit || poġġ ||  || i || iv || poġġut
 |-
 | gawda || vblex || loan || first_cons || rejoice || gawd ||  || i || iv || gawdut
-|-
-| gawda || vblex || loan || first_cons || enjoy || gawd ||  || i || tv || gawdut
+//|-
+//| gawda || vblex || loan || first_cons || enjoy || gawd ||  || i || tv || gawdut
 |-
 | ikkompeta || vblex || loan || double_cons || compete || kkompet ||  || i || iv ||
 |-
@@ -94,4 +94,9 @@
 | serva || vblex || loan || first_cons || serve || serv || || i || tv || servut
 |-
 | issostna || vblex || loan || double_cons || nourish-oneself? || ssostn || || i || iv || 
+// wow! - loan verb, patt. 7!
+|-
+| uża || vblex || loan || first_vowel || use || uż || || a || tv || użat 
+|-
+| intuża || vblex || loan || first_vowel || be-used || intuż || || a || iv || intużat 
 |}

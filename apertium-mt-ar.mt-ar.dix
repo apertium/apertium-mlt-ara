@@ -1507,6 +1507,8 @@
      <e><p><l>università<s n="n"/><s n="f"/></l><r>جامعة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>festival<s n="n"/><s n="m"/></l><r>مهرجان<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>konkors<s n="n"/><s n="m"/></l><r>مسابقة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+     <e><p><l>similarità<s n="n"/><s n="f"/></l><r>تشابه<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <e><p><l>stazzjon<s n="n"/><s n="f"/></l><r>محطة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 
      <!-- SECTION: Proper nouns -->
 
@@ -2874,7 +2876,7 @@
      <e><p><l>ikklassifika<s n="vblex"/><s n="tv"/></l><r>صنف<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ikkonsidra<s n="vblex"/><s n="tv"/></l><r>اعتبر<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ivvota<s n="vblex"/><s n="tv"/></l><r>صوت<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>  <!-- tv? -->
-
+     <e><p><l>gawda<s n="vblex"/><s n="iv"/></l><r>تمتع<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>  <!-- min -> ب -->
 
 
      <!-- SECTION: Punctuation -->

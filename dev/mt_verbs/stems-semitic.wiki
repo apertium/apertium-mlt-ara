@@ -299,6 +299,8 @@
 |-
 | fittex || vblex || quad || 1 || seek || f-t-t-x || i-e || i-e || tv ||  || m
 |-
+| xandar || vblex || quad || 1 || broadcast || x-n-d-r || a-a || a-a || tv ||  || m
+|-
 | tkellem || vblex || quad || 2 || speak || k-l-l-m || e-e || e-e || iv ||  || mi
 |-
 | dar || vblex || hollow || 1 || turn || d-w-r || a-a ||  || iv ||  || mi
