@@ -224,7 +224,8 @@
      <e><p><l>free<s n="prn"/><s n="p2"/></l><r>prpers<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f"/></e> 
      <e><p><l>free<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
      <e><p><l>free<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-     <e r="LR"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>     <e r="RL"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+     <e r="LR"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+     <e r="RL"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
      <e r="RL"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
 
 
@@ -304,6 +305,16 @@
 
      <e><p><l>dan<s n="det"/><s n="dem"/></l><r>هذا<s n="det"/><s n="dem"/></r></p></e>
      <e><p><l>dak<s n="det"/><s n="dem"/></l><r>ذلك<s n="det"/><s n="dem"/></r></p></e>
+
+     <e><p><l>ieħor<s n="det"/><s n="ind"/></l><r>آخر<s n="det"/><s n="ind"/></r></p></e>
+
+     <e><p><l>koll<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>كل<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
+     <e><p><l>aktar<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>أكثر<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
+     <e><p><l>iktar<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>أكثر<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
+     <e><p><l>anqas<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>أقل<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
+     <e><p><l>izjed<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>أقل<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
+     <e><p><l>aħħar<s n="det"/><s n="ord"/><s n="mf"/><s n="sp"/></l><r>أخير<s n="det"/><s n="ord"/><s n="mf"/><s n="sp"/></r></p></e>
+
 
 
 <!-- SECTION: Numerals -->
@@ -2449,7 +2460,8 @@
      <e><p><l>bilfors<s n="adv"/></l><r>بالتأكيد<s n="adv"/></r></p></e>
 
      <e><p><l>se<s n="adv"/></l><r>سوف<s n="adv"/></r></p></e> <!-- Future particle -->
-     <e><p><l>qed<s n="adv"/></l><r></r></p></e> <!-- Progressive particle -->
+     <e><p><l>ser<s n="adv"/></l><r>سوف<s n="adv"/></r></p></e> <!-- adv? 'going' -->
+     <e><p><l>qed<s n="adv"/></l><r>قد</r></p></e> <!-- Progressive particle -->
      <e><p><l>ħa<s n="adv"/></l><r>هيا<s n="adv"/></r></p></e> <!-- Hortative(?) particle -->
 
      <!-- negation -->
