@@ -1509,6 +1509,19 @@
      <e><p><l>konkors<s n="n"/><s n="m"/></l><r>مسابقة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>similarità<s n="n"/><s n="f"/></l><r>تشابه<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>stazzjon<s n="n"/><s n="f"/></l><r>محطة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+     <e><p><l>minuta<s n="n"/><s n="f"/></l><r>دقيقة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+     <e><p><l>sekonda<s n="n"/><s n="f"/></l><r>ثانية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+     <e><p><l>esebitur<s n="n"/><s n="m"/></l><r>عارض<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+     <e><p><l>kompetitur<s n="n"/><s n="m"/></l><r>منافس<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+     <e><p><l>parteċipant<s n="n"/><s n="m"/></l><r>مشارك<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+     <e><p><l>rebbieħ<s n="n"/><s n="m"/></l><r>فائز<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+     <e><p><l>sehem<s n="n"/><s n="m"/></l><r>حصة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+     <e><p><l>esebizzjoni<s n="n"/><s n="f"/></l><r>معرض<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <e><p><l>territorju<s n="n"/><s n="m"/></l><r>إقليم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <e><p><l>żagħżugħ<s n="n"/><s n="m"/></l><r>شاب<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+     <e><p><l>żagħżugħa<s n="n"/><s n="f"/></l><r>شابة<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
+     <e><p><l>ġurija<s n="n"/><s n="f"/></l><r>جوري<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+
 
      <!-- SECTION: Proper nouns -->
 
@@ -2399,14 +2412,14 @@
      <e><p><l>rifjutat<s n="adj"/></l><r>مرفوض<s n="adj"/></r></p></e>
      <e><p><l>skopert<s n="adj"/></l><r>مكتشف<s n="adj"/></r></p></e>
      <e r="LR"><p><l>skurjat<s n="adj"/></l><r>مسجل<s n="adj"/></r></p></e> <!--goal-->
-
+     <e><p><l>uffiċjali<s n="adj"/></l><r>رسمي<s n="adj"/></r></p></e>
 
      <!-- SECTION: Interjections -->
 
      <e><p><l>le<s n="ij"/></l><r>لا<s n="ij"/></r></p></e>
      <e><p><l>iva<s n="ij"/></l><r>نعم<s n="ij"/></r></p></e>
      <e><p><l>amen<s n="ij"/></l><r>آمين<s n="ij"/></r></p></e>
-
+     <e><p><l>grazzi<s n="ij"/></l><r>شكرا<s n="ij"/></r></p></e>
 
      <!-- SECTION: Adverbs -->
 
@@ -2877,7 +2890,12 @@
      <e><p><l>ikkonsidra<s n="vblex"/><s n="tv"/></l><r>اعتبر<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ivvota<s n="vblex"/><s n="tv"/></l><r>صوت<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>  <!-- tv? -->
      <e><p><l>gawda<s n="vblex"/><s n="iv"/></l><r>تمتع<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>  <!-- min -> ب -->
-
+     <e><p><l>xandar<s n="vblex"/><s n="tv"/></l><r>بث<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
+     <e><p><l>inkoraġġixxa<s n="vblex"/><s n="tv"/></l><r>شجع<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
+     <e><p><l>ikkompeta<s n="vblex"/><s n="iv"/></l><r>نافس<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
+     <e><p><l>inġabar<s n="vblex"/><s n="iv"/></l><r>اجتمع<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e> 
+     <e><p><l>intwera<s n="vblex"/><s n="iv"/></l><r>أظهر<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
+     <e><p><l>intuża<s n="vblex"/><s n="iv"/></l><r>استخدم<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e> 
 
      <!-- SECTION: Punctuation -->
      <e><re>[.:!]</re>   <p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>

@@ -262,6 +262,8 @@
 |-
 | عدل || vblex || sound || 2 || || adapt || ع-د-ل || || || tv 
 |-
+| شجع || vblex || sound || 2 || || encourage || ش-ج-ع || || || tv 
+|-
 | غادر || vblex || sound || 3 || || leave || غ-د-ر || || || tv 
 |-
 | ساعد || vblex || sound || 3 || || help || س-ع-د || || || tv 
@@ -269,6 +271,8 @@
 | مارس || vblex || sound || 3 || || exercise || م-ر-س || || || tv 
 |-
 | شارك || vblex || sound || 3 || || participate || ش-ر-ك || || || tv 
+|-
+| نافس || vblex || sound || 3 || || compete || ن-ف-س || || || tv 
 |-
 | أحضر || vblex || sound || 4 || || bring || ح-ض-ر || || || tv 
 |-
@@ -298,6 +302,8 @@
 |-
 | أمسك || vblex || sound || 4 || || hold || م-س-ك || || || tv 
 |-
+| أظهر || vblex || sound || 4 || || show || ظ-ه-ر || || || tv 
+|-
 | تكلم || vblex || sound || 5 || || speak || ك-ل-م || || || tv 
 |-
 | تخمر || vblex || sound || 5 || || ferment || خ-م-ر || || || iv 
@@ -307,6 +313,8 @@
 | تقدم || vblex || sound || 5 || || develop || ق-د-م || || || iv 
 |-
 | تضمن || vblex || sound || 5 || || include || ض-م-ن || || || tv 
+|-
+| تمتع || vblex || sound || 5 || || rejoice || م-ت-ع || || || iv 
 |-
 | تراجع || vblex || sound || 6 || || recede || ر-ج-ع || || || iv
 |-
@@ -335,6 +343,10 @@
 | اعتبر || vblex || sound || 8 || || consider || ع-ب-ر || || || tv 
 |-
 | اعتمد || vblex || sound || 8 || || rely || ع-م-د || || || tv 
+|-
+| اجتمع || vblex || sound || 8 || || be·gathered || ج-م-ع || || || iv 
+|-
+| استخدم || vblex || sound || 10 || || use || خ-د-م || || || tv 
 |-
 | ترجم || vblex || quad || 1 || || translate || ت-ر-ج-م || || || tv 
 |-
@@ -369,6 +381,8 @@
 | جز || vblex || doubled || 1 || || shear || ج-ز-ز || a-a || a-u || tv 
 |-
 | قص || vblex || doubled || 1 || || cut || ق-ص-ص || a-a || a-u || tv 
+|-
+| بث || vblex || doubled || 1 || || broadcast || ب-ث-ث || a-a || a-u || tv 
 |-
 | بدد || vblex || doubled || 2 || || scatter || ب-د-د || || || tv 
 |-
