@@ -112,7 +112,7 @@
 |-
 | خبط || vblex || sound || 1 || || strike || خ-ب-ط || a-a || a-i || tv
 |-
-| خدم || vblex || sound || 1 || || serve || خ-د-م || a-a || a-u || iv
+| خدم || vblex || sound || 1 || || serve || خ-د-م || a-a || a-u || tv
 |-
 | عمل || vblex || sound || 1 || || work || ع-م-ل || a-i || a-a || iv
 |-
@@ -463,6 +463,8 @@
 | أجاب || vblex || hollow || 4 || || answer || ج-و-ب || || || tv 
 |-
 | أشار || vblex || hollow || 4 || || indicate || ش-و-ر || || || iv 
+|-
+| أذاع || vblex || hollow || 4 || || broadcast || ذ-ي-ع || || || tv 
 |-
 | تزايد || vblex || hollow || 6 || || increase || ز-ي-د || || || iv 
 |-

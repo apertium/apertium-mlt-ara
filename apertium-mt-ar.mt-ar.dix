@@ -269,6 +269,9 @@
      <e><p><l>dan<s n="prn"/></l><r>هذا<s n="prn"/></r></p></e>
      <e><p><l>dak<s n="prn"/></l><r>ذلك<s n="prn"/></r></p></e>
 
+     <e><p><l>dak<b/>li<s n="prn"/><s n ="itg"/></l><r>ذلك<b/>الذي<s n="prn"/><s n ="itg"/></r></p></e>
+
+
      <e><p><l>ieħor<s n="prn"/><s n="ind"/></l><r>آخر<s n="prn"/><s n="ind"/></r></p></e>
 
      <e><p><l>kull<s n="prn"/><s n="ind"/></l><r>كل<s n="prn"/><s n="ind"/></r></p></e>
@@ -480,7 +483,7 @@
      <e c="  0"><p><l>parlament<s n="n"/><s n="m"/></l><r>برلمان<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e slr="1"><p><l>parlament<s n="n"/><s n="m"/></l><r>مجلس<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>ħaġa<s n="n"/><s n="f"/></l><r>شيء<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-     <e><p><l>vot<s n="n"/><s n="m"/></l><r>تصويت<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <e><p><l>vot<s n="n"/><s n="m"/></l><r>صوت<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- تصويت -->
      <e><p><l>liġi<s n="n"/><s n="f"/></l><r>قَنون<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>isem<s n="n"/><s n="m"/></l><r>اسم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>logħba<s n="n"/><s n="f"/></l><r>لعبة<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -1530,12 +1533,16 @@
 <!--     <e><p><l>parteċipant<s n="n"/><s n="m"/></l><r>مشارك<s n="n"/><s n="m"/><s n="aa"/></r></p></e> -->
      <e><p><l>rebbieħ<s n="n"/><s n="m"/></l><r>فائز<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>sehem<s n="n"/><s n="m"/></l><r>حصة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-     <e><p><l>esebizzjoni<s n="n"/><s n="f"/></l><r>معرض<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <e><p><l>esebizzjoni<s n="n"/><s n="f"/></l><r>أداء<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>territorju<s n="n"/><s n="m"/></l><r>إقليم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>żagħżugħ<s n="n"/><s n="m"/></l><r>شاب<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>żagħżugħa<s n="n"/><s n="f"/></l><r>شابة<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
      <e><p><l>ġurija<s n="n"/><s n="f"/></l><r>جوري<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-
+     <e><p><l>xandar<s n="n"/><s n="m"/></l><r>مذيع<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- also aa -->
+     <e><p><l>telespettatur<s n="n"/><s n="m"/></l><r>مشاهد<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+     <e><p><l>televotazzjoni<s n="n"/><s n="f"/></l><r>تصويت<b/>عن<b/>بعد<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <e><p><l>format<s n="n"/><s n="m"/></l><r>شكل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <e><p><l>kamp<s n="n"/><s n="m"/></l><r>مجال<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 
      <!-- SECTION: Proper nouns -->
 
@@ -2428,6 +2435,10 @@
      <e r="LR"><p><l>skurjat<s n="adj"/></l><r>مسجل<s n="adj"/></r></p></e> <!--goal-->
      <e><p><l>uffiċjali<s n="adj"/></l><r>رسمي<s n="adj"/></r></p></e>
      <e><p><l>parteċipant<s n="adj"/></l><r>مشارك<s n="adj"/></r></p></e>
+     <e><p><l>mistieden<s n="adj"/></l><r>مدعو<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>qawwi<s n="adj"/></l><r>قوي<s n="adj"/></r></p></e>
+     <e><p><l>finali<s n="adj"/></l><r>نهائي<s n="adj"/></r></p></e>
+
 
      <!-- SECTION: Interjections -->
 
@@ -2650,7 +2661,7 @@
      <e><p><l>bandal<s n="vblex"/><s n="tv"/></l><r>هز<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>baqa<s n="vblex"/><s n="iv"/></l><r>بقي<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>baram<s n="vblex"/><s n="tv"/></l><r>برم<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
-     <e><p><l>beda<s n="vblex"/><s n="tv"/></l><r>بدأ<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
+     <e><p><l>beda<s n="vblex"/><s n="tv"/></l><r>بدأ<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>beda<s n="vblex"/><s n="iv"/></l><r>ابتدأ<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>bela<s n="vblex"/><s n="tv"/></l><r>بلع<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>bell<s n="vblex"/><s n="tv"/></l><r>بل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
@@ -2741,7 +2752,7 @@
      <e r="LR"><p><l>ħabat<s n="vblex"/><s n="iv"/></l><r>حدث<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e c="  0"><p><l>ħadem<s n="vblex"/><s n="iv"/></l><r>عمل<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e slr="1"><p><l>ħadem<s n="vblex"/><s n="iv"/></l><r>اشتغل<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
-     <e slr="2"><p><l>ħadem<s n="vblex"/><s n="iv"/></l><r>خدم<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
+     <e slr="2"><p><l>ħadem<s n="vblex"/><s n="iv"/></l><r>خدم<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ħafer<s n="vblex"/><s n="tv"/></l><r>عذر<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ħakk<s n="vblex"/><s n="tv"/></l><r>خدش<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ħalaq<s n="vblex"/><s n="tv"/></l><r>خلق<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
@@ -2908,12 +2919,15 @@
      <e><p><l>ikkonsidra<s n="vblex"/><s n="tv"/></l><r>اعتبر<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ivvota<s n="vblex"/><s n="tv"/></l><r>صوت<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>  <!-- tv? -->
      <e><p><l>gawda<s n="vblex"/><s n="iv"/></l><r>تمتع<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>  <!-- min -> ب -->
-     <e><p><l>xandar<s n="vblex"/><s n="tv"/></l><r>بث<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
+     <e c="  0"><p><l>xandar<s n="vblex"/><s n="tv"/></l><r>أذاع<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
+     <e slr="1"><p><l>xandar<s n="vblex"/><s n="tv"/></l><r>بث<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
      <e><p><l>inkoraġġixxa<s n="vblex"/><s n="tv"/></l><r>شجع<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
      <e><p><l>ikkompeta<s n="vblex"/><s n="iv"/></l><r>نافس<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
      <e><p><l>inġabar<s n="vblex"/><s n="iv"/></l><r>اجتمع<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e> 
      <e><p><l>intwera<s n="vblex"/><s n="iv"/></l><r>أظهر<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
      <e><p><l>intuża<s n="vblex"/><s n="iv"/></l><r>استخدم<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e> 
+     <e><p><l>serva<s n="vblex"/><s n="tv"/></l><r>خدم<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e><p><l>issostna<s n="vblex"/><s n="iv"/></l><r>قال<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
 
      <!-- SECTION: Punctuation -->
      <e><re>[.:!]</re>   <p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
