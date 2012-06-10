@@ -264,6 +264,8 @@
 |-
 | شجع || vblex || sound || 2 || || encourage || ش-ج-ع || || || tv 
 |-
+| مثل || vblex || sound || 2 || || represent || م-ث-ل || || || tv 
+|-
 | غادر || vblex || sound || 3 || || leave || غ-د-ر || || || tv 
 |-
 | ساعد || vblex || sound || 3 || || help || س-ع-د || || || tv 
@@ -345,6 +347,8 @@
 | اعتمد || vblex || sound || 8 || || rely || ع-م-د || || || tv 
 |-
 | اجتمع || vblex || sound || 8 || || be·gathered || ج-م-ع || || || iv 
+|-
+| استلم || vblex || sound || 8 || || receive || س-ل-م || || || tv 
 |-
 | استخدم || vblex || sound || 10 || || use || خ-د-م || || || tv 
 |-

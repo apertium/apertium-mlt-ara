@@ -42,7 +42,7 @@
       <cat-item lemma="ser" tags="adv"/>
     </def-cat>
     <def-cat n="vrb">
-<!--  <cat-item tags="vblex.*"/> -->
+<!--  clean it! :) -->
       <cat-item tags="vblex.tv.past.*"/>
       <cat-item tags="vblex.iv.past.*"/>
       <cat-item tags="vblex.TD.past.*"/>
@@ -52,6 +52,15 @@
       <cat-item tags="vblex.tv.imp.*"/>
       <cat-item tags="vblex.iv.imp.*"/>
       <cat-item tags="vblex.TD.imp.*"/>
+      <cat-item tags="vblex.tv.past.*"/>
+      <cat-item tags="vaux.iv.past.*"/>
+      <cat-item tags="vaux.TD.past.*"/>
+      <cat-item tags="vaux.tv.pres.*"/>
+      <cat-item tags="vaux.iv.pres.*"/>
+      <cat-item tags="vaux.TD.pres.*"/>
+      <cat-item tags="vaux.tv.imp.*"/>
+      <cat-item tags="vaux.iv.imp.*"/>
+      <cat-item tags="vaux.TD.imp.*"/>
     </def-cat>
     <def-cat n="modalvrb">
       <cat-item tags="vblex.*" lemma="ħabb"/>
@@ -81,7 +90,7 @@
       <cat-item tags="vblex.tv.pres.*"/>
       <cat-item tags="vblex.iv.pres.*"/>
       <cat-item tags="vblex.TD.pres.*"/>
-<!--      <cat-item tags="vaux.iv.pres.*"/> -->
+      <cat-item tags="vaux.iv.pres.*"/> 
     </def-cat>
     <def-cat n="xneg"> 
       <cat-item tags="neg"/>
@@ -148,6 +157,9 @@
     </def-cat>
     <def-cat n="detdem">
       <cat-item tags="det.dem.*"/>
+    </def-cat>
+    <def-cat n="rel">
+      <cat-item tags="rel.*" lemma="li"/>
     </def-cat>
   </section-def-cats>
 
@@ -243,6 +255,16 @@
        <attr-item tags="prn.itg"/>
        <attr-item tags="prn.pers"/>
        <attr-item tags="prn.pos"/>
+    </def-attr>
+    <def-attr n="a_det">
+       <attr-item tags="det"/>
+       <attr-item tags="det.ref"/>
+       <attr-item tags="det.ind"/>
+       <attr-item tags="det.dem"/>
+       <attr-item tags="det.def"/>
+       <attr-item tags="det.itg"/>
+       <attr-item tags="det.pers"/>
+       <attr-item tags="det.pos"/>
     </def-attr>
     <def-attr n="a_prn_ind">
        <attr-item tags="prn.ind"/>
@@ -466,6 +488,7 @@
           <var n="genero"/><lit-tag v="mf"/>
         </let>
       </when></choose>
+<!--
       <choose><when c="in Maltese there is only plural, in Arabic - dual and plural; for the sake of the story dual is chosen here">
         <test><and>
           <equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p3"/></equal>
@@ -476,6 +499,7 @@
         </let>
       </when>
     </choose>
+-->
     </def-macro> 
 
 
@@ -1072,19 +1096,21 @@
     </rule>
 
 
+<!--
     <rule comment="rule: qed">
        <pattern>
          <pattern-item n="qed"/>
        </pattern>
        <action>
-	 <!-- miri: but with no additional blank -->
-<!--         <out c="Delete 'qed' when followed by unknown">
+         <out c="Delete 'qed' when followed by unknown">
            <b/>
-         </out>  -->
+         </out> 
        </action>
     </rule>
+-->
 
 
+<!--
     <rule comment="rule: se">
        <pattern>
          <pattern-item n="se"/>
@@ -1095,8 +1121,10 @@
          </out>
        </action>
     </rule>
+-->
 
 
+<!-- add future tense here -->
     <rule comment="rule: se verb">
        <pattern>
          <pattern-item n="se"/>
@@ -2357,6 +2385,143 @@
           </out>
 	</action>
     </rule>
+
+
+
+<!-- story2 rules -->
+
+
+<!-- in fact, there will be a rather complex set of rules for deleting الذي or setting gen, num and case -->
+    <rule comment="rule: deleting li">
+       <pattern>
+         <pattern-item n="rel"/>
+       </pattern>
+       <action>
+       </action>
+    </rule>
+
+    <rule comment="rule: dir object in accusativ ">
+       <pattern>
+         <pattern-item n="vrb"/>
+         <pattern-item n="nom"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+         <call-macro n="set_px_gen"><with-param pos="2"/></call-macro>
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="1" side="tl" part="a_voice"/>
+             <clip pos="1" side="tl" part="temps"/>
+             <clip pos="1" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="a_anim"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   </out>
+       </action>
+    </rule> 
+
+
+    <rule comment="rule: prep + gen ">
+       <pattern>
+         <pattern-item n="prep"/>
+         <pattern-item n="nom"/>
+	 <pattern-item n="det"/>
+       </pattern>
+       <action>
+         <call-macro n="f_concord2">
+           <with-param pos="2"/>
+           <with-param pos="3"/>
+	 </call-macro>
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="a_anim"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <lit-tag v="gen"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+<!--             <clip pos="3" side="tl" part="a_nom_attr"/> -->
+             <clip pos="3" side="tl" part="a_det"/>
+             <var n="gen_chunk"/>
+             <var n="nbr_chunk"/>
+             <lit-tag v="gen"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+	   </out>
+       </action>
+    </rule> 
+
+    <rule comment="rule: dir object in accusative">
+       <pattern>
+         <pattern-item n="vrb"/>
+         <pattern-item n="d_obj"/>
+         <pattern-item n="nom"/>
+         <pattern-item n="adj"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+         <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
+         <call-macro n="f_concord2">
+           <with-param pos="3"/>
+           <with-param pos="4"/>
+	 </call-macro>
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="a_trans"/>
+             <clip pos="1" side="tl" part="a_voice"/>
+             <clip pos="1" side="tl" part="temps"/>
+             <clip pos="1" side="tl" part="pers"/>
+             <var n="genero"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_nom"/>
+             <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="a_anim"/>
+             <clip pos="3" side="tl" part="nbr"/>
+             <lit-tag v="acc"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="4" side="tl" part="lem"/>
+             <clip pos="4" side="tl" part="a_adj"/>
+             <var n="gen_chunk"/>
+             <var n="nbr_chunk"/>
+             <lit-tag v="acc"/>
+           </lu>
+	   </out>
+       </action>
+    </rule> 
+
 
 
   </section-rules>
