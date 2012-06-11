@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transfer>
+
+  <section-def-cats>
+    <def-cat n="adj">
+      <cat-item tags="adj"/>
+      <cat-item tags="adj.*"/>
+    </def-cat>
+  </section-def-cats>
+
+
+  <section-def-attrs>
+    <def-attr n="a_adj">
+       <attr-item tags="adj"/>
+    </def-attr>
+  </section-def-attrs>
+
+
+  <section-def-vars>
+    <def-var n="numero"/>
+  </section-def-vars>
+
+
+<!--
+  <section-def-macros>
+  </section-def-macros>
+-->
+
+  <section-rules>
+
+    <rule comment="">
+      <pattern>
+         <pattern-item n="adj"/>
+       </pattern>
+       <action>
+       </action>
+    </rule>
+  </section-rules>
+
+</transfer>

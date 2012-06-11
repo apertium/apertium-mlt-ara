@@ -6,6 +6,8 @@
 /Makefile.am -text
 /NEWS -text
 /README -text
+/apertium-mt-ar.ar-mt.t1x -text
+/apertium-mt-ar.ar.acx -text
 /apertium-mt-ar.ar.dix -text
 /apertium-mt-ar.mt-ar.dix -text
 /apertium-mt-ar.mt-ar.t1x -text
