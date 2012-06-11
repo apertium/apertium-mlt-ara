@@ -45,6 +45,8 @@ for i in $POS; do
 		remove-other-pos () { grep -v -e '<part>' -e '<qst>' -e '<cnj'; }
 	elif [ "$i" = "pr" ]; then
 		remove-other-pos () { grep -v -e '<vblex>' -e '<vaux>' -e '<n>' -e '<adv>'; }
+	elif [ "$i" = "prn" ]; then
+		remove-other-pos () { grep -v -e '<vblex>' -e '<vaux>' -e '<n>'; }
 	else
 		remove-other-pos () { cat; }
 	fi

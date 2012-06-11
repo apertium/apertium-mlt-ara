@@ -1440,7 +1440,7 @@
      <e><p><l>katidral<s n="n"/><s n="m"/></l><r>كاتدرائية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>sieq<s n="n"/><s n="m"/></l><r>ساق<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e r="LR"><p><l>mil<s n="n"/><s n="m"/></l><r>ميل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-     <e R="LR"><p><l>patt<s n="n"/><s n="m"/></l><r>اتفاق<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <e r="LR"><p><l>patt<s n="n"/><s n="m"/></l><r>اتفاق<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e c="  0"><p><l>sid<s n="n"/><s n="m"/></l><r>مولى<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e slr="1" r="LR"><p><l>sid<s n="n"/><s n="m"/></l><r>صاحب<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>premju<s n="n"/><s n="m"/></l><r>جائزة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>

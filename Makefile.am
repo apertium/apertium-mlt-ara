@@ -9,7 +9,11 @@ BASENAME=apertium-$(PREFIX1)
 TARGETS_COMMON = \
      $(PREFIX1).automorf.bin \
      $(PREFIX1).autobil.bin $(PREFIX1).t1x.bin \
-     $(PREFIX1).autogen.bin $(PREFIX1).autopgen.bin
+     $(PREFIX1).autogen.bin $(PREFIX1).autopgen.bin \
+     $(PREFIX2).automorf.bin \
+     $(PREFIX2).autobil.bin $(PREFIX2).t1x.bin \
+     $(PREFIX2).autogen.bin
+
 
 
 # mt-ar
@@ -17,13 +21,9 @@ $(PREFIX1).automorf.bin: $(BASENAME).$(LANG1).dix $(BASENAME).$(LANG1).acx
 	apertium-validate-dictionary $(BASENAME).$(LANG1).dix 
 	lt-comp lr $(BASENAME).$(LANG1).dix $@ $(BASENAME).$(LANG1).acx
 
-.deps/$(BASENAME).$(PREFIX1).dix: $(BASENAME).$(PREFIX1).dix lexchoicebil.xsl
-	if [ ! -d .deps ]; then mkdir .deps; fi
-	xsltproc lexchoicebil.xsl $(BASENAME).$(PREFIX1).dix > $@
-
-$(PREFIX1).autobil.bin: .deps/$(BASENAME).$(PREFIX1).dix
-	apertium-validate-dictionary .deps/$(BASENAME).$(PREFIX1).dix
-	lt-comp lr .deps/$(BASENAME).$(PREFIX1).dix $@
+$(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
+	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
+	lt-comp lr $(BASENAME).$(PREFIX1).dix $@
 
 $(PREFIX1).t1x.bin: $(BASENAME).$(PREFIX1).t1x
 	apertium-validate-transfer $(BASENAME).$(PREFIX1).t1x
@@ -36,6 +36,27 @@ $(PREFIX1).autogen.bin: $(BASENAME).$(LANG2).dix
 $(PREFIX1).autopgen.bin: $(BASENAME).post-$(LANG2).dix
 	apertium-validate-dictionary $(BASENAME).post-$(LANG2).dix
 	lt-comp lr $(BASENAME).post-$(LANG2).dix $@
+
+# ar-mt
+$(PREFIX2).automorf.bin: $(BASENAME).$(LANG2).dix $(BASENAME).$(LANG2).acx
+	apertium-validate-dictionary $(BASENAME).$(LANG2).dix 
+	lt-comp lr $(BASENAME).$(LANG2).dix $@ $(BASENAME).$(LANG2).acx
+
+$(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
+	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
+	lt-comp rl $(BASENAME).$(PREFIX1).dix $@
+
+$(PREFIX2).t1x.bin: $(BASENAME).$(PREFIX2).t1x
+	apertium-validate-transfer $(BASENAME).$(PREFIX2).t1x
+	apertium-preprocess-transfer $(BASENAME).$(PREFIX2).t1x $@
+
+$(PREFIX2).autogen.bin: $(BASENAME).$(LANG1).dix
+	apertium-validate-dictionary $(BASENAME).$(LANG1).dix
+	lt-comp rl $(BASENAME).$(LANG1).dix $@
+
+#$(PREFIX2).autopgen.bin: $(BASENAME).post-$(LANG1).dix
+#	apertium-validate-dictionary $(BASENAME).post-$(LANG1).dix
+#	lt-comp lr $(BASENAME).post-$(LANG1).dix $@
 
 
 
