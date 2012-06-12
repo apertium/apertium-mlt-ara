@@ -19,7 +19,6 @@
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="xml" encoding="UTF-8"/>
-<xsl:param name="r2l"/>
 
 <xsl:template match="s">
   <s n="{./@n}"/>
@@ -58,21 +57,36 @@
 </xsl:template>
 
 <xsl:template match="p">
-  <p>
-      <xsl:choose>
-        <xsl:when test="not(count(../@slr)=0)">
-          <l><xsl:apply-templates select="./l/text()|./l/*[not(name(.)=string('s'))]"/>:<xsl:apply-templates select="../@slr"/><xsl:apply-templates select="./l/*[name(.)=string('s')]"/></l>
-        </xsl:when>
-        <xsl:otherwise>
-	  <l><xsl:apply-templates select="./l/*|./l/text()"/></l>
-        </xsl:otherwise>
-      </xsl:choose>
-      <r><xsl:apply-templates select="./r/*|./r/text()"/></r>
-  </p>
+  <p><xsl:apply-templates/></p>
 </xsl:template>
 
+<xsl:template match="l">
+  <l>
+      <xsl:choose>
+        <xsl:when test="not(count(../../@slr)=0)">
+          <xsl:apply-templates select="text()|*[not(name(.)=string('s'))]"/>:<xsl:apply-templates select="../../@slr"/><xsl:apply-templates select="*[name(.)=string('s')]"/>
+        </xsl:when>
+        <xsl:otherwise>
+	  <xsl:apply-templates select="*|text()"/>
+        </xsl:otherwise>
+      </xsl:choose>
+  </l>
+</xsl:template>
+<xsl:template match="r">
+  <r>
+      <xsl:choose>
+        <xsl:when test="not(count(../../@srl)=0)">
+          <xsl:apply-templates select="text()|*[not(name(.)=string('s'))]"/>:<xsl:apply-templates select="../../@srl"/><xsl:apply-templates select="*[name(.)=string('s')]"/>
+        </xsl:when>
+        <xsl:otherwise>
+	  <xsl:apply-templates select="*|text()"/>
+        </xsl:otherwise>
+      </xsl:choose>
+  </r>
+</xsl:template>
 
 <xsl:template match="i">
+  <!-- split into p with l and r -->
   <p>
       <xsl:choose>
         <xsl:when test="not(count(../@slr)=0)">
@@ -82,20 +96,33 @@
 	  <l><xsl:apply-templates select="*|text()"/></l>
         </xsl:otherwise>
       </xsl:choose>
-      <r><xsl:apply-templates select="*|text()"/></r>
+      <xsl:choose>
+        <xsl:when test="not(count(../@srl)=0)">
+          <r><xsl:apply-templates select="text()|*[not(name(.)=string('s'))]"/>:<xsl:apply-templates select="../@srl"/><xsl:apply-templates select="*[name(.)=string('s')]"/></r>
+        </xsl:when>
+        <xsl:otherwise>
+          <r><xsl:apply-templates select="*|text()"/></r>
+        </xsl:otherwise>
+      </xsl:choose>
   </p>
 </xsl:template>
 
 
 <xsl:template match="e">
-      <xsl:choose>
-        <xsl:when test="not(count(./@r)=0)">
-          <e r="{./@r}"><xsl:apply-templates select="./*"/></e>
-        </xsl:when>
-        <xsl:otherwise>
-          <e><xsl:apply-templates select="./*"/></e>
-        </xsl:otherwise>
-      </xsl:choose>
+  <xsl:choose>
+    <xsl:when test="not(count(./@r)=0)">
+      <e r="{./@r}"><xsl:apply-templates select="./*"/></e>
+    </xsl:when>
+    <xsl:when test="not(count(./@slr)=0)">
+      <e r="LR"><xsl:apply-templates select="./*"/></e>
+    </xsl:when>
+    <xsl:when test="not(count(./@srl)=0)">
+      <e r="RL"><xsl:apply-templates select="./*"/></e>
+    </xsl:when>
+    <xsl:otherwise>
+      <e><xsl:apply-templates select="./*"/></e>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 
