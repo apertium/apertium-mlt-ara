@@ -214,7 +214,7 @@
      <e><p><l>waqt<s n="pr"/></l><r>وقت<s n="pr"/></r></p></e>
      <e><p><l>nhar<s n="pr"/></l><r>يوم<s n="pr"/></r></p></e>
      <e r="LR"><p><l>milli<s n="pr"/></l><r>من<s n="pr"/></r></p></e>
-     <e c="  0" r="LR"><p><l>permezz<s n="pr"/></l><r>ب<s n="pr"/></r></p></e>
+     <e c="  0" r="LR"><p><l>permezz<s n="pr"/></l><r>في<s n="pr"/></r></p></e> <!-- maybe should be rather 'ب', but not in the story -->
      <e slr="1"><p><l>permezz<s n="pr"/></l><r>من<b/>قبل<s n="pr"/></r></p></e>
      <e><p><l>minħabba<s n="pr"/></l><r>بسبب<s n="pr"/></r></p></e>
      <e c="  0"><p><l>ħlief<s n="pr"/></l><r>غير<s n="pr"/></r></p></e>
@@ -256,7 +256,8 @@
      <e r="RL"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e> -->
 
 
-     <e><p><l>li<s n="rel"/><s n="an"/><s n="mf"/><s n="sp"/></l><r>أن<s n="cnjsub"/></r></p></e>
+     <e><p><l>li<s n="rel"/><s n="an"/></l><r>الذي<s n="rel"/></r></p></e>
+
      <e><p><l>jew<s n="prn"/></l><r>أو<s n="prn"/></r></p></e>
 
      <e><p><l>ħadd<s n="prn"/></l><r>أحد<s n="prn"/></r></p></e> 
@@ -1735,7 +1736,8 @@
      <e><p><l>mejjet<s n="adj"/></l><r>ميت<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>parlamentari<s n="adj"/></l><r>برلماني<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e><p><l>personali<s n="adj"/></l><r>شخصي<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
-     <e><p><l>partikolari<s n="adj"/></l><r>خاص<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+     <e c="  0"><p><l>partikolari<s n="adj"/></l><r>فردي<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+     <e slr="1"><p><l>partikolari<s n="adj"/></l><r>خاص<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e><p><l>kuljum<s n="adj"/></l><r>يومي<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e><p><l>ċertu<s n="adj"/></l><r>بعض<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- TODO -->
      <e><p><l>proprju<s n="adj"/></l><r>خاص<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- TODO ? -->
@@ -2455,7 +2457,8 @@
      <e><p><l>llum<s n="adv"/></l><r>اليوم<s n="adv"/></r></p></e>
      <e><p><l>ilbieraħ<s n="adv"/></l><r>امس<s n="adv"/></r></p></e>
      <e><p><l>il-bieraħ<s n="adv"/></l><r>امس<s n="adv"/></r></p></e>
-     <e><p><l>barra<s n="adv"/></l><r>خارجا<s n="adv"/></r></p></e> <!-- החוצה -->
+     <e c="  0"><p><l>barra<s n="adv"/></l><r>بالإضافة<b/>إلى<s n="adv"/></r></p></e>
+     <e slr="1"><p><l>barra<s n="adv"/></l><r>خارجا<s n="adv"/></r></p></e> <!-- החוצה -->
      <e><p><l>il<b/>barra<s n="adv"/></l><r>الخارج<s n="adv"/></r></p></e>
      <e><p><l>flimkien<s n="adv"/></l><r>معا<s n="adv"/></r></p></e>
      <e><p><l>ovvjament<s n="adv"/></l><r>طبعا<s n="adv"/></r></p></e> <!-- ברור -->
@@ -2582,6 +2585,7 @@
      <e slr="1"><p><l>suċċessivament<s n="adv"/></l><r>على<b/>التوالي<s n="adv"/></r></p></e>
      <e><p><l>esklużivament<s n="adv"/></l><r>حصرا<s n="adv"/></r></p></e> <!-- فقط ? -->
      <e><p><l>bmod<b/>dirett<s n="adv"/></l><r>بشكل<b/>مباشر<s n="adv"/></r></p></e> 
+     <e><p><l>il<b/>quddiem<s n="adv"/></l><r>فصاعدا<s n="adv"/></r></p></e> 
 
 
      <e><p><l>biex<s n="adv"/><s n="itg"/></l><r>مع<b/>ما<s n="adv"/><s n="itg"/></r></p></e>
@@ -2639,8 +2643,8 @@
      <e><p><l>fittex<s n="vblex"/><s n="tv"/></l><r>بحث<b/>عن<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>staqsa<s n="vblex"/><s n="TD"/></l><r>سأل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>tkellem<s n="vblex"/><s n="iv"/></l><r>تكلم<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
-<!--     <e><p><l>rċieva<s n="vblex"/><s n="tv"/></l><r>حصل<b/>على<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> -->
-     <e><p><l>rċieva<s n="vblex"/><s n="tv"/></l><r>استلم<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e><p><l>rċieva<s n="vblex"/><s n="tv"/></l><r>حصل<b/>على<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+<!--     <e><p><l>rċieva<s n="vblex"/><s n="tv"/></l><r>استلم<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> -->
      <e><p><l>daħak<s n="vblex"/><s n="tv"/></l><r>ضحك<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e> <!-- tv? -->
      <e><p><l>ħaseb<s n="vblex"/><s n="tv"/></l><r>فكر<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
 <!--     <e><p><l>ħaseb<s n="vblex"/><s n="tv"/></l><r>فكر<s n="vblex"/><s n="iv"/></r></p></e>  consider -->
@@ -2929,11 +2933,12 @@
      <e slr="1"><p><l>xandar<s n="vblex"/><s n="tv"/></l><r>بث<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
      <e><p><l>inkoraġġixxa<s n="vblex"/><s n="tv"/></l><r>شجع<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
      <e><p><l>ikkompeta<s n="vblex"/><s n="iv"/></l><r>نافس<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
-     <e><p><l>inġabar<s n="vblex"/><s n="iv"/></l><r>اجتمع<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e> 
+     <e><p><l>inġabar<s n="vblex"/><s n="iv"/></l><r>جمع<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e> 
      <e><p><l>intwera<s n="vblex"/><s n="iv"/></l><r>أظهر<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
      <e><p><l>intuża<s n="vblex"/><s n="iv"/></l><r>استخدم<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e> 
      <e><p><l>serva<s n="vblex"/><s n="tv"/></l><r>خدم<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>issostna<s n="vblex"/><s n="iv"/></l><r>قال<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e><p><l>ħa<b/>sehem<s n="vblex"/><s n="iv"/></l><r>شارك<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
 
      <!-- SECTION: Punctuation -->
      <e><re>[.:!]</re>   <p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>

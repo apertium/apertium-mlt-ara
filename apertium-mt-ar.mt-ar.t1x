@@ -183,6 +183,17 @@
     </def-cat>
     <def-cat n="rel">
       <cat-item tags="rel.*" lemma="li"/>
+      <cat-item tags="cnjsub" lemma="li"/> <!-- smiling with embarrassment :) -->
+					   <!-- but this will be fixed! -->
+    </def-cat>
+    <def-cat n="detqnt">
+      <cat-item tags="det.qnt"/>
+      <cat-item tags="det.qnt.*"/>
+    </def-cat>
+    <def-cat n="detqnt_comp">
+      <cat-item tags="det.qnt.*" lemma="aktar"/>
+      <cat-item tags="det.qnt.*" lemma="izjed"/>
+      <cat-item tags="det.qnt.*" lemma="anqas"/>
     </def-cat>
   </section-def-cats>
 
@@ -775,6 +786,7 @@
           <let><var n="genero"/><lit-tag v="f"/></let>
         </when>
         <otherwise>
+          <let><clip pos="1" side="tl" part="gen"/><lit-tag v="m"/></let>
           <let><var n="genero"/><lit-tag v="m"/></let>
         </otherwise>
       </choose>
@@ -2573,16 +2585,16 @@
     </rule> 
 
 
-<!--
+
     <rule comment="rule: prep + gen ">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
-         <pattern-item n="nom"/>
+         <pattern-item n="non-np"/>
 	 <pattern-item n="adj"/>
        </pattern>
        <action>
-         <call-macro n="f_concord2">
+         <call-macro n="myf_concord2">
            <with-param pos="3"/>
            <with-param pos="4"/>
 	 </call-macro>
@@ -2616,8 +2628,8 @@
              <lu>
                <clip pos="4" side="tl" part="lemh"/>
                <clip pos="4" side="tl" part="a_adj"/>
-               <var n="gen_chunk"/>
-               <var n="nbr_chunk"/>
+               <clip pos="4" side="tl" part="gen"/>
+               <clip pos="4" side="tl" part="nbr"/>
                <lit-tag v="gen"/>
                <clip pos="4" side="tl" part="lemq"/>
              </lu>
@@ -2625,7 +2637,7 @@
 	 </out>
        </action>
     </rule> 
--->
+
 
 
     <rule comment="rule: dir object in accusative">
@@ -2701,6 +2713,7 @@
     </rule> 
 
 
+    <!-- should be one rule for nouns in sg, another for pl nouns -->
     <rule comment="rule: prep + gen ">
        <pattern>
          <pattern-item n="prep"/>
@@ -2724,12 +2737,12 @@
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
 	   <b/>
-<!--	   <mlu>
+	   <mlu>
 	     <lu>
                <lit v="ال"/>
                <lit-tag v="det"/>
                <lit-tag v="def"/>
-	     </lu> -->
+	     </lu>
            <lu>
              <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_nom"/>
@@ -2739,6 +2752,7 @@
              <lit-tag v="gen"/>
              <clip pos="4" side="tl" part="lemq"/>
 	   </lu>
+	   </mlu>
 	 </out>
        </action>
     </rule> 
@@ -2869,8 +2883,8 @@
              <clip pos="2" side="tl" part="a_voice"/>
              <lit-tag v="subjun"/>
              <clip pos="2" side="tl" part="pers"/>
-<!--             <clip pos="2" side="tl" part="gen"/> -->
-             <lit-tag v="f"/>
+             <clip pos="2" side="tl" part="gen"/>
+<!--             <lit-tag v="f"/> -->
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
@@ -2889,6 +2903,305 @@
                <clip pos="4" side="tl" part="lemq"/>
 	     </lu>
            </mlu>
+	 </out>
+       </action>
+    </rule> 
+
+
+
+    <rule comment="rule: past or subj cnjsub - mt past remains">
+       <pattern>
+         <pattern-item n="past_subj_cnjsub"/>
+         <pattern-item n="vrbpast"/>
+         <pattern-item n="artic"/>
+         <pattern-item n="nom"/>
+       </pattern>
+       <action>
+         <call-macro n="verbf_concord2">
+           <with-param pos="2"/>
+           <with-param pos="4"/>
+         </call-macro>
+         <out>
+	   <lu>
+             <clip pos="1" side="tl" part="whole"/>   
+	   </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="a_trans"/>
+             <clip pos="2" side="tl" part="a_voice"/>
+             <clip pos="2" side="tl" part="temps"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <clip pos="2" side="tl" part="gen"/> 
+<!--             <lit-tag v="f"/> -->
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+	   <mlu>
+             <lu>
+               <clip pos="3" side="tl" part="whole"/>
+             </lu>
+             <lu>
+               <clip pos="4" side="tl" part="lemh"/>
+               <clip pos="4" side="tl" part="a_nom"/>
+               <clip pos="4" side="tl" part="gen"/>
+               <clip pos="4" side="tl" part="a_anim"/>
+               <clip pos="4" side="tl" part="nbr"/>
+               <lit-tag v="nom"/>
+               <clip pos="4" side="tl" part="lemq"/>
+	     </lu>
+           </mlu>
+	 </out>
+       </action>
+    </rule> 
+
+
+
+    <rule comment="rule: most/least of sth">
+       <pattern>
+         <pattern-item n="artic"/>
+         <pattern-item n="detqnt_comp"/>
+         <pattern-item n="nom"/>
+       </pattern>
+       <action>
+         <out>
+	   <lu>
+             <clip pos="2" side="tl" part="whole"/>   
+	   </lu>
+	   <b/>
+	   <mlu>
+             <lu>
+               <clip pos="1" side="tl" part="whole"/>
+             </lu>
+             <lu>
+               <clip pos="3" side="tl" part="lemh"/>
+               <clip pos="3" side="tl" part="a_nom"/>
+               <clip pos="3" side="tl" part="gen"/>
+               <clip pos="3" side="tl" part="a_anim"/>
+               <clip pos="3" side="tl" part="nbr"/>
+               <lit-tag v="gen"/>
+               <clip pos="3" side="tl" part="lemq"/>
+	     </lu>
+           </mlu>
+	 </out>
+       </action>
+    </rule> 
+
+
+
+    <rule comment="rule: relative sentence">
+       <pattern>
+         <pattern-item n="artic"/>
+         <pattern-item n="nom"/>
+         <pattern-item n="rel"/>
+         <pattern-item n="vrb"/> <!-- p3 -->
+       </pattern>
+       <action>
+         <call-macro n="myf_concord2">
+           <with-param pos="2"/>
+           <with-param pos="4"/> 
+         </call-macro>
+         <out>
+	   <mlu>
+             <lu>
+               <clip pos="1" side="tl" part="whole"/>
+             </lu>
+             <lu>
+               <clip pos="2" side="tl" part="lemh"/>
+               <clip pos="2" side="tl" part="a_nom"/>
+               <clip pos="2" side="tl" part="gen"/>
+               <clip pos="2" side="tl" part="a_anim"/>
+               <clip pos="2" side="tl" part="nbr"/>
+               <lit-tag v="nom"/>
+               <clip pos="2" side="tl" part="lemq"/>
+	     </lu>
+           </mlu>
+	   <b/>
+	   <lu>
+             <lit v="الذي"/>
+             <lit-tag v="rel"/>
+             <clip pos="4" side="tl" part="gen"/>
+             <clip pos="4" side="tl" part="nbr"/>
+	   </lu>
+	   <b/>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_verb"/>
+             <clip pos="4" side="tl" part="a_trans"/>
+             <clip pos="4" side="tl" part="a_voice"/>
+             <clip pos="4" side="tl" part="temps"/>
+             <clip pos="4" side="tl" part="pers"/>
+             <clip pos="4" side="tl" part="gen"/>
+             <clip pos="4" side="tl" part="nbr"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+	 </out>
+       </action>
+    </rule> 
+
+
+<!--
+    <rule comment="rule: noun and verb agreement">
+       <pattern>
+         <pattern-item n="artic"/>
+         <pattern-item n="nom"/>
+         <pattern-item n="vrb"/>
+       </pattern>
+       <action>
+         <call-macro n="verbf_concord2">
+           <with-param pos="3"/>
+           <with-param pos="2"/> 
+         </call-macro>
+         <out>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_verb"/>
+             <clip pos="3" side="tl" part="a_trans"/>
+             <clip pos="3" side="tl" part="a_voice"/>
+             <clip pos="3" side="tl" part="temps"/>
+             <clip pos="3" side="tl" part="pers"/>
+             <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="nbr"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+	   <mlu>
+             <lu>
+               <clip pos="1" side="tl" part="whole"/>
+             </lu>
+             <lu>
+               <clip pos="2" side="tl" part="lemh"/>
+               <clip pos="2" side="tl" part="a_nom"/>
+               <clip pos="2" side="tl" part="gen"/>
+               <clip pos="2" side="tl" part="a_anim"/>
+               <clip pos="2" side="tl" part="nbr"/>
+               <lit-tag v="nom"/>
+               <clip pos="2" side="tl" part="lemq"/>
+	     </lu>
+           </mlu>
+	 </out>
+       </action>
+    </rule> 
+-->
+
+
+<!--
+    <rule comment="rule: noun and verb agreement">
+       <pattern>
+         <pattern-item n="artic"/>
+         <pattern-item n="nom"/>
+         <pattern-item n="vrb"/> 
+         <pattern-item n="vrbpres"/> 
+       </pattern>
+       <action>
+         <call-macro n="verbf_concord2">
+           <with-param pos="3"/>
+           <with-param pos="2"/> 
+         </call-macro>
+         <call-macro n="myf_concord2">
+           <with-param pos="2"/>
+           <with-param pos="4"/> 
+         </call-macro>
+         <out>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_verb"/>
+             <clip pos="3" side="tl" part="a_trans"/>
+             <clip pos="3" side="tl" part="a_voice"/>
+             <clip pos="3" side="tl" part="temps"/>
+             <clip pos="3" side="tl" part="pers"/>
+             <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="nbr"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+	   <mlu>
+             <lu>
+               <clip pos="1" side="tl" part="whole"/>
+             </lu>
+             <lu>
+               <clip pos="2" side="tl" part="lemh"/>
+               <clip pos="2" side="tl" part="a_nom"/>
+               <clip pos="2" side="tl" part="gen"/>
+               <clip pos="2" side="tl" part="a_anim"/>
+               <clip pos="2" side="tl" part="nbr"/>
+               <lit-tag v="nom"/>
+               <clip pos="2" side="tl" part="lemq"/>
+	     </lu>
+           </mlu>
+	   <b/>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_verb"/>
+             <clip pos="4" side="tl" part="a_trans"/>
+             <clip pos="4" side="tl" part="a_voice"/>
+             <clip pos="4" side="tl" part="temps"/>
+             <clip pos="4" side="tl" part="pers"/>
+             <clip pos="4" side="tl" part="gen"/>
+             <clip pos="4" side="tl" part="nbr"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+	 </out>
+       </action>
+    </rule> 
+-->
+
+    <rule comment="rule: prep + pron and noun in gen">
+       <pattern>
+         <pattern-item n="prep"/>
+         <pattern-item n="detind"/>
+	 <pattern-item n="nom"/>
+         <pattern-item n="detind"/>
+         <pattern-item n="prep"/>
+         <pattern-item n="u_prn"/>
+       </pattern>
+       <action>
+         <call-macro n="myf_concord2">
+           <with-param pos="3"/>
+           <with-param pos="4"/>
+         </call-macro>
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="whole"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_nom"/>
+             <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="a_anim"/>
+             <clip pos="3" side="tl" part="nbr"/>
+             <lit-tag v="gen"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/>
+             <clip pos="4" side="tl" part="a_det"/>
+             <clip pos="4" side="tl" part="gen"/>
+             <clip pos="4" side="tl" part="nbr"/>
+             <lit-tag v="gen"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+	   <mlu>
+             <lu>
+               <clip pos="5" side="tl" part="whole"/>
+             </lu>
+	     <lu>
+               <lit v="ه"/>
+               <clip pos="6" side="tl" part="a_prn"/>
+               <clip pos="6" side="tl" part="pers"/>
+               <clip pos="4" side="tl" part="gen"/>
+               <clip pos="4" side="tl" part="nbr"/>
+             </lu>
+	   </mlu>
 	 </out>
        </action>
     </rule> 
