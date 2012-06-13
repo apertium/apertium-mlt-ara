@@ -305,7 +305,7 @@
 |-
 | dar || vblex || hollow || 1 || turn || d-w-r || a-a ||  || iv ||  || mi
 |-
-| sar || vblex || hollow || 1 || become || s-j-r || a-a ||  || tv ||  || mi
+| sar || vblex || hollow || 1 || occur || s-j-r || a-a ||  || iv ||  || mi
 |-
 | miet || vblex || hollow || 1 || die || m-w-t || ie-a ||  || iv ||  || 
 |-

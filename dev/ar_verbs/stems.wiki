@@ -444,6 +444,10 @@
 |-
 | ناب || vblex || hollow || 1 || و || represent || ن-و-ب || || || iv
 |-
+| صار || vblex || hollow || 1 || ي || become || ص-ي-ر || || || iv
+|-
+| صار || vblex || hollow || 1 || ي || take·place || ص-ي-ر || || || tv
+|-
 | غير || vblex || hollow || 2 || || change || غ-ي-ر || || || tv 
 |-
 | صوت || vblex || hollow || 2 || || vote || ص-و-ت || || || iv 
@@ -465,6 +469,8 @@
 | أشار || vblex || hollow || 4 || || indicate || ش-و-ر || || || iv 
 |-
 | أذاع || vblex || hollow || 4 || || broadcast || ذ-ي-ع || || || tv 
+|-
+| أقام || vblex || hollow || 4 || || organize || ق-و-م || || || tv 
 |-
 | تزايد || vblex || hollow || 6 || || increase || ز-ي-د || || || iv 
 |-

@@ -164,6 +164,8 @@
      <e c="  0"><p><l>biex<s n="cnjsub"/></l><r>كي<s n="cnjsub"/></r></p></e>
      <e slr="1"><p><l>biex<s n="cnjsub"/></l><r>لكي<s n="cnjsub"/></r></p></e>
      <e><p><l>kieku<s n="cnjsub"/></l><r>إذا<s n="cnjsub"/></r></p></e>
+     <e><p><l>wara<b/>li<s n="cnjsub"/></l><r>بعد<b/>أن<s n="cnjsub"/></r></p></e>
+
 
      <e><p><l>għalhekk<s n="cnjadv"/></l><r>لذلك<s n="cnjadv"/></r></p></e>
      <e><p><l>billi<s n="cnjadv"/></l><r>إذ<s n="cnjadv"/></r></p></e> <!-- since = because? not בעוד ש-->
@@ -189,7 +191,7 @@
      <e><p><l>wara<s n="pr"/></l><r>وراء<s n="pr"/></r></p></e>
      <e><p><l>ta'<s n="pr"/></l><r>ل<s n="pr"/></r></p></e>
      <e><p><l>quddiem<s n="pr"/></l><r>أمام<s n="pr"/></r></p></e>
-
+     <e><p><l>ta'<b/>madwar<s n="pr"/></l><r>حوالي<s n="pr"/></r></p></e>
 
      <e c="  0"><p><l>mingħajr<s n="pr"/></l><r>بدون<s n="pr"/></r></p></e>
      <e slr="1"><p><l>mingħajr<s n="pr"/></l><r>دون<s n="pr"/></r></p></e>
@@ -216,7 +218,7 @@
      <e slr="1"><p><l>permezz<s n="pr"/></l><r>من<b/>قبل<s n="pr"/></r></p></e>
      <e><p><l>minħabba<s n="pr"/></l><r>بسبب<s n="pr"/></r></p></e>
      <e c="  0"><p><l>ħlief<s n="pr"/></l><r>غير<s n="pr"/></r></p></e>
-     <e slr="1"><p><l>ħlief<s n="pr"/></l><r>إلا<s n="pr"/></r></p></e>
+     <e slr="1" r="RL"><p><l>ħlief<s n="pr"/></l><r>إلا<s n="pr"/></r></p></e>
 
 
      <!-- SECTION: Pronouns -->
@@ -269,7 +271,7 @@
      <e><p><l>dan<s n="prn"/></l><r>هذا<s n="prn"/></r></p></e>
      <e><p><l>dak<s n="prn"/></l><r>ذلك<s n="prn"/></r></p></e>
 
-     <e><p><l>dak<b/>li<s n="prn"/><s n ="itg"/></l><r>ذلك<b/>الذي<s n="prn"/><s n ="itg"/></r></p></e>
+     <e><p><l>dak<b/>li<s n="prn"/><s n ="itg"/></l><r>هو<b/>الذي<s n="prn"/><s n ="itg"/></r></p></e>
 
 
      <e><p><l>ieħor<s n="prn"/><s n="ind"/></l><r>آخر<s n="prn"/><s n="ind"/></r></p></e>
@@ -320,7 +322,7 @@
      <e><p><l>aħħar<s n="det"/><s n="ord"/><s n="mf"/><s n="sp"/></l><r>أخير<s n="det"/><s n="ord"/><s n="mf"/><s n="sp"/></r></p></e>
 
 <!-- hm, in fact maybe mt 'diversi' should also be 'qnt'; in ar: add <b/>من<s n="pr"/> ? -->
-     <e><p><l>diversi<s n="det"/><s n="ind"/><s n="mf"/><s n="pl"/></l><r>كثير<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
+     <e><p><l>diversi<s n="det"/><s n="ind"/><s n="mf"/><s n="pl"/></l><r>بعض<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
 
 
 <!-- SECTION: Numerals -->
@@ -488,8 +490,8 @@
      <e><p><l>isem<s n="n"/><s n="m"/></l><r>اسم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>logħba<s n="n"/><s n="f"/></l><r>لعبة<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>rebħa<s n="n"/><s n="f"/></l><r>انتصار<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-     <e c="  0"><p><l>pajjiż<s n="n"/><s n="m"/></l><r>بلد<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-     <e slr="1"><p><l>pajjiż<s n="n"/><s n="m"/></l><r>دولة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+     <e c="  0"><p><l>pajjiż<s n="n"/><s n="m"/></l><r>دولة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+     <e slr="1"><p><l>pajjiż<s n="n"/><s n="m"/></l><r>بلد<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>xahar<s n="n"/><s n="m"/></l><r>شهر<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>ħajja<s n="n"/><s n="f"/></l><r>حياة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>xogħol<s n="n"/><s n="m"/></l><r>عمل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -1537,7 +1539,7 @@
      <e><p><l>territorju<s n="n"/><s n="m"/></l><r>إقليم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>żagħżugħ<s n="n"/><s n="m"/></l><r>شاب<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>żagħżugħa<s n="n"/><s n="f"/></l><r>شابة<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
-     <e><p><l>ġurija<s n="n"/><s n="f"/></l><r>جوري<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <e><p><l>ġurija<s n="n"/><s n="f"/></l><r>لجنة<b/>تحكيم<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>xandar<s n="n"/><s n="m"/></l><r>مذيع<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- also aa -->
      <e><p><l>telespettatur<s n="n"/><s n="m"/></l><r>مشاهد<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>televotazzjoni<s n="n"/><s n="f"/></l><r>تصويت<b/>عن<b/>بعد<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -1551,8 +1553,8 @@
      <e><p><l>Ġakbu<s n="np"/><s n="ant"/><s n="m"/></l><r>جيمس<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 
      <e><p><l>Eurovision<s n="np"/><s n="al"/><s n="f"/></l><r>أوروفيزيون<s n="np"/><s n="al"/><s n="m"/></r></p></e>
-     <e><p><l>European<b/>Broadcasting<b/>Union<s n="np"/><s n="al"/><s n="f"/></l><r>اتحاد<b/>البث<b/>الاوربي<s n="np"/><s n="al"/><s n="m"/></r></p></e>
-     <e><p><l>EBU<s n="np"/><s n="al"/><s n="m"/></l><r>اتحاد<b/>البث<b/>الاوربي<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+     <e><p><l>European<b/>Broadcasting<b/>Union<s n="np"/><s n="al"/><s n="f"/></l><r>اتحاد<b/>الإذاعات<b/>الأوروبية<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+     <e><p><l>EBU<s n="np"/><s n="al"/><s n="m"/></l><r>اتحاد<b/>الإذاعات<b/>الأوروبية<s n="np"/><s n="al"/><s n="m"/></r></p></e>
 
      <e><p><l>Borġ<s n="np"/><s n="ant"/><s n="f"/></l><r>بورج<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
 
@@ -2579,6 +2581,8 @@
      <e c="  0"><p><l>suċċessivament<s n="adv"/></l><r>بالتتابع<s n="adv"/></r></p></e>
      <e slr="1"><p><l>suċċessivament<s n="adv"/></l><r>على<b/>التوالي<s n="adv"/></r></p></e>
      <e><p><l>esklużivament<s n="adv"/></l><r>حصرا<s n="adv"/></r></p></e> <!-- فقط ? -->
+     <e><p><l>bmod<b/>dirett<s n="adv"/></l><r>بشكل<b/>مباشر<s n="adv"/></r></p></e> 
+
 
      <e><p><l>biex<s n="adv"/><s n="itg"/></l><r>مع<b/>ما<s n="adv"/><s n="itg"/></r></p></e>
     <e><p><l>għala<s n="adv"/><s n="itg"/></l><r>لماذا<s n="adv"/><s n="itg"/></r></p></e>
@@ -2856,7 +2860,9 @@
      <e slr="1"><p><l>kotor<s n="vblex"/><s n="iv"/></l><r>تزايد<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>kisser<s n="vblex"/><s n="tv"/></l><r>كسر<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>fisser<s n="vblex"/><s n="tv"/></l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
-     <e><p><l>sar<s n="vblex"/><s n="tv"/></l><r>أصبح<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e><p><l>sar<s n="vblex"/><s n="iv"/></l><r>أقام<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
+<!--     <e><p><l>sar<s n="vblex"/><s n="iv"/></l><r>صار<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e> -->
+     <e><p><l>sar<s n="vblex"/><s n="tv"/></l><r>أصبح<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> <!-- maybe this one should be first, but it sounds awful in the story2 -->
      <e><p><l>miet<s n="vblex"/><s n="iv"/></l><r>مات<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>sam<s n="vblex"/><s n="iv"/></l><r>صام<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>qam<s n="vblex"/><s n="iv"/></l><r>قام<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
@@ -2918,7 +2924,7 @@
      <e><p><l>ikklassifika<s n="vblex"/><s n="tv"/></l><r>صنف<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ikkonsidra<s n="vblex"/><s n="tv"/></l><r>اعتبر<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ivvota<s n="vblex"/><s n="tv"/></l><r>صوت<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>  <!-- tv? -->
-     <e><p><l>gawda<s n="vblex"/><s n="iv"/></l><r>تمتع<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>  <!-- min -> ب -->
+     <e><p><l>gawda<s n="vblex"/><s n="iv"/></l><r>تمتع<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>  <!-- minn -> ب -->
      <e c="  0"><p><l>xandar<s n="vblex"/><s n="tv"/></l><r>أذاع<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
      <e slr="1"><p><l>xandar<s n="vblex"/><s n="tv"/></l><r>بث<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
      <e><p><l>inkoraġġixxa<s n="vblex"/><s n="tv"/></l><r>شجع<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
