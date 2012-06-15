@@ -191,9 +191,6 @@
     </def-cat>
     <def-cat n="rel">
       <cat-item tags="rel.*" lemma="li"/>
-<!--      <cat-item tags="cnjsub" lemma="li"/>-->
-					   <!-- smiling with embarrassment :) -->
-					   <!-- but this will be fixed! -->
     </def-cat>
     <def-cat n="detqnt">
       <cat-item tags="det.qnt"/>
@@ -308,6 +305,7 @@
        <attr-item tags="det.itg"/>
        <attr-item tags="det.pers"/>
        <attr-item tags="det.pos"/>
+       <attr-item tags="det.qnt"/>
     </def-attr>
     <def-attr n="a_prn_ind">
        <attr-item tags="prn.ind"/>
@@ -977,6 +975,26 @@
     </rule>
 
 
+    <rule comment="rule: determiners">  <!-- possessive pronouns conversion, add case? -->
+       <pattern>
+         <pattern-item n="det"/>
+       </pattern>
+       <action>
+         <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_det"/>
+             <clip pos="1" side="tl" part="gen"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="poss"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </out>
+       </action>
+    </rule>
+
+
     <rule comment="rule: adj">  <!-- case default to nom -->
        <pattern>
          <pattern-item n="adj"/>
@@ -1093,7 +1111,8 @@
     </rule>
 
 
-    <rule comment="rule: det">  <!-- ? -->
+<!--
+    <rule comment="rule: det"> 
        <pattern>
          <pattern-item n="det"/>
        </pattern>
@@ -1131,6 +1150,7 @@
          </out>
        </action>
     </rule>
+-->
 
 
     <rule comment="rule: numeral">

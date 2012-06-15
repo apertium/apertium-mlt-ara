@@ -165,6 +165,7 @@
      <e slr="1"><p><l>biex<s n="cnjsub"/></l><r>لكي<s n="cnjsub"/></r></p></e>
      <e><p><l>kieku<s n="cnjsub"/></l><r>إذا<s n="cnjsub"/></r></p></e>
      <e><p><l>wara<b/>li<s n="cnjsub"/></l><r>بعد<b/>أن<s n="cnjsub"/></r></p></e>
+     <e><p><l>tant<b/>li<s n="cnjsub"/></l><r>طالما<b/>أن<s n="cnjsub"/></r></p></e>
      <e><p><l>mingħajr<b/>ma<s n="cnjsub"/></l><r>دون<b/>أن<s n="cnjsub"/></r></p></e>
 
      <e><p><l>għalhekk<s n="cnjadv"/></l><r>لذلك<s n="cnjadv"/></r></p></e>
@@ -317,6 +318,7 @@
      <e><p><l>ieħor<s n="det"/><s n="ind"/></l><r>آخر<s n="det"/><s n="ind"/></r></p></e>
 
      <e><p><l>koll<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>كل<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
+     <e><p><l>tant<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>بعض<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
      <e><p><l>aktar<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>أكثر<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
      <e><p><l>iktar<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>أكثر<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
      <e><p><l>anqas<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>أقل<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -325,6 +327,7 @@
 
 <!-- hm, in fact maybe mt 'diversi' should also be 'qnt'; in ar: add <b/>من<s n="pr"/> ? -->
      <e><p><l>diversi<s n="det"/><s n="ind"/><s n="mf"/><s n="pl"/></l><r>بعض<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
+     <e><p><l>ebda<s n="det"/><s n="ind"/><s n="mf"/><s n="sp"/></l><r>ولا<s n="det"/><s n="ind"/><s n="mf"/><s n="sp"/></r></p></e>
 
 
 <!-- SECTION: Numerals -->
@@ -2591,7 +2594,8 @@
      <e c="  0"><p><l>suċċessivament<s n="adv"/></l><r>بالتتابع<s n="adv"/></r></p></e>
      <e slr="1"><p><l>suċċessivament<s n="adv"/></l><r>على<b/>التوالي<s n="adv"/></r></p></e>
      <e><p><l>esklużivament<s n="adv"/></l><r>حصرا<s n="adv"/></r></p></e> <!-- فقط ? -->
-     <e><p><l>bmod<b/>dirett<s n="adv"/></l><r>بشكل<b/>مباشر<s n="adv"/></r></p></e> 
+     <e c="  0"><p><l>bmod<b/>dirett<s n="adv"/></l><r>مباشرة<s n="adv"/></r></p></e> 
+     <e slr="1"><p><l>bmod<b/>dirett<s n="adv"/></l><r>بشكل<b/>مباشر<s n="adv"/></r></p></e> 
      <e><p><l>il<b/>quddiem<s n="adv"/></l><r>فصاعدا<s n="adv"/></r></p></e> 
 
 
@@ -2623,6 +2627,8 @@
      <e><p><l>pulit<s n="adv"/></l><r>بشكل<b/>نظيف<s n="adv"/></r></p></e>
      <e><p><l>esklussivament<s n="adv"/></l><r>فقط<s n="adv"/></r></p></e>
      <e><p><l>relattivament<s n="adv"/></l><r>نسبيا<s n="adv"/></r></p></e>
+     <e><p><l>tant<s n="adv"/></l><r>كثيرا<s n="adv"/></r></p></e>
+
 
      <!-- SECTION: Verbs -->
 
@@ -2672,7 +2678,8 @@
 
      <e><p><l>ammira<s n="vblex"/><s n="tv"/></l><r>عجب<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e> <!-- 1 or 5 من -->
      <e><p><l>bagħad<s n="vblex"/><s n="tv"/></l><r>كره<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
-     <e><p><l>bagħat<s n="vblex"/><s n="tv"/></l><r>بعث<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e c="  0"><p><l>bagħat<s n="vblex"/><s n="tv"/></l><r>أرسل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e slr="1"><p><l>bagħat<s n="vblex"/><s n="tv"/></l><r>بعث<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>bandal<s n="vblex"/><s n="tv"/></l><r>هز<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e c="  0"><p><l>baqa<s n="vblex"/><s n="iv"/></l><r>ظل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e slr="1"><p><l>baqa<s n="vblex"/><s n="iv"/></l><r>بقي<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>

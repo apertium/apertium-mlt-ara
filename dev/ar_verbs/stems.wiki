@@ -306,6 +306,8 @@
 |-
 | أظهر || vblex || sound || 4 || || show || ظ-ه-ر || || || tv 
 |-
+| أرسل || vblex || sound || 4 || || send || ر-س-ل || || || tv 
+|-
 | تكلم || vblex || sound || 5 || || speak || ك-ل-م || || || tv 
 |-
 | تخمر || vblex || sound || 5 || || ferment || خ-م-ر || || || iv 
