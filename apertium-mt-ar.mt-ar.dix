@@ -1546,7 +1546,8 @@
      <e c="  0"><p><l>xandar<s n="n"/><s n="m"/></l><r>إذاعة<s n="n"/><s n="f"/><s n="nn"/></r></p></e> 
      <e slr="1"><p><l>xandar<s n="n"/><s n="m"/></l><r>مذيع<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>telespettatur<s n="n"/><s n="m"/></l><r>مشاهد<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
-     <e><p><l>televotazzjoni<s n="n"/><s n="f"/></l><r>تصويت<b/>عن<b/>بعد<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <e c="  0"><p><l>televotazzjoni<s n="n"/><s n="f"/></l><r>تصويت<b/>عبر<b/>الهاتف<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <e slr="1"><p><l>televotazzjoni<s n="n"/><s n="f"/></l><r>تصويت<b/>عن<b/>بعد<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>format<s n="n"/><s n="m"/></l><r>شكل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>kamp<s n="n"/><s n="m"/></l><r>مجال<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>għan<s n="n"/><s n="m"/></l><r>هدف<s n="n"/><s n="m"/><s n="nn"/></r></p></e> 

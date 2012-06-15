@@ -191,7 +191,8 @@
     </def-cat>
     <def-cat n="rel">
       <cat-item tags="rel.*" lemma="li"/>
-      <cat-item tags="cnjsub" lemma="li"/> <!-- smiling with embarrassment :) -->
+<!--      <cat-item tags="cnjsub" lemma="li"/>-->
+					   <!-- smiling with embarrassment :) -->
 					   <!-- but this will be fixed! -->
     </def-cat>
     <def-cat n="detqnt">
