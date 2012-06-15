@@ -57,7 +57,7 @@
 |-
 | inkluda || vblex || loan || first_vowel || include || inklud ||  || i || tv || inkluż
 |-
-| ikkonsista || vblex || loan || double_cons || consist || kkonsist ||  || i || tv || konsistit
+| ikkonsista || vblex || loan || double_cons || consist || kkonsist ||  || i || iv || konsistit
 |-
 | iżviluppa || vblex || loan || two_cons || develop || żvilupp ||  || i || tv || żviluppat
 |-

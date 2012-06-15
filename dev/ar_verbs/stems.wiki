@@ -344,7 +344,7 @@
 |-
 | اعتبر || vblex || sound || 8 || || consider || ع-ب-ر || || || tv 
 |-
-| اعتمد || vblex || sound || 8 || || rely || ع-م-د || || || tv 
+| اعتمد || vblex || sound || 8 || || rely || ع-م-د || || || iv 
 |-
 | اجتمع || vblex || sound || 8 || || be·gathered || ج-م-ع || || || iv 
 |-
@@ -387,6 +387,8 @@
 | قص || vblex || doubled || 1 || || cut || ق-ص-ص || a-a || a-u || tv 
 |-
 | بث || vblex || doubled || 1 || || broadcast || ب-ث-ث || a-a || a-u || tv 
+|-
+| ظل || vblex || doubled || 1 || || remain || ظ-ل-ل || a-i || a-a || tv 
 |-
 | بدد || vblex || doubled || 2 || || scatter || ب-د-د || || || tv 
 |-
@@ -529,6 +531,8 @@
 | أمر || vblex || firsthamza || 1 || || order || ء-م-ر || a-a || a-u || tv 
 |-
 | تألق || vblex || firsthamza || 5 || || shine || ء-ل-ق || || || iv 
+|-
+| تألف || vblex || firsthamza || 5 || || consist || ء-ل-ف || || || iv 
 |-
 | استأجر || vblex || firsthamza || 10 || || rent || ء-ج-ر || || || tv 
 |-
