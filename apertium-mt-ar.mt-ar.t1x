@@ -305,6 +305,7 @@
        <attr-item tags="det.itg"/>
        <attr-item tags="det.pers"/>
        <attr-item tags="det.pos"/>
+       <attr-item tags="det.ord"/>
        <attr-item tags="det.qnt"/>
     </def-attr>
     <def-attr n="a_prn_ind">
@@ -980,6 +981,7 @@
          <pattern-item n="det"/>
        </pattern>
        <action>
+         <call-macro n="f_concord1"><with-param pos="1"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
          <out>
            <lu>
@@ -1270,6 +1272,7 @@
          </out>
        </action>
     </rule>
+
 
     <rule comment="rule: dir object (nom + adj etc.) in accusative ">
        <pattern>
@@ -3224,12 +3227,13 @@
     </rule> 
 
 
-<!--
+<!-- in fact it's pointless to add more rules in t1x.. --> 
     <rule comment="rule: noun and verb agreement">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="nom"/>
          <pattern-item n="vrb"/>
+         <pattern-item n="adv"/>
        </pattern>
        <action>
          <call-macro n="verbf_concord2">
@@ -3263,72 +3267,14 @@
                <clip pos="2" side="tl" part="lemq"/>
 	     </lu>
            </mlu>
-	 </out>
-       </action>
-    </rule> 
--->
-
-
-<!--
-    <rule comment="rule: noun and verb agreement">
-       <pattern>
-         <pattern-item n="artic"/>
-         <pattern-item n="nom"/>
-         <pattern-item n="vrb"/> 
-         <pattern-item n="vrbpres"/> 
-       </pattern>
-       <action>
-         <call-macro n="verbf_concord2">
-           <with-param pos="3"/>
-           <with-param pos="2"/> 
-         </call-macro>
-         <call-macro n="myf_concord2">
-           <with-param pos="2"/>
-           <with-param pos="4"/> 
-         </call-macro>
-         <out>
-           <lu>
-             <clip pos="3" side="tl" part="lemh"/>
-             <clip pos="3" side="tl" part="a_verb"/>
-             <clip pos="3" side="tl" part="a_trans"/>
-             <clip pos="3" side="tl" part="a_voice"/>
-             <clip pos="3" side="tl" part="temps"/>
-             <clip pos="3" side="tl" part="pers"/>
-             <clip pos="3" side="tl" part="gen"/>
-             <clip pos="3" side="tl" part="nbr"/>
-             <clip pos="3" side="tl" part="lemq"/>
-           </lu>
-	   <b/>
-	   <mlu>
-             <lu>
-               <clip pos="1" side="tl" part="whole"/>
-             </lu>
-             <lu>
-               <clip pos="2" side="tl" part="lemh"/>
-               <clip pos="2" side="tl" part="a_nom"/>
-               <clip pos="2" side="tl" part="gen"/>
-               <clip pos="2" side="tl" part="a_anim"/>
-               <clip pos="2" side="tl" part="nbr"/>
-               <lit-tag v="nom"/>
-               <clip pos="2" side="tl" part="lemq"/>
-	     </lu>
-           </mlu>
 	   <b/>
            <lu>
-             <clip pos="4" side="tl" part="lemh"/>
-             <clip pos="4" side="tl" part="a_verb"/>
-             <clip pos="4" side="tl" part="a_trans"/>
-             <clip pos="4" side="tl" part="a_voice"/>
-             <clip pos="4" side="tl" part="temps"/>
-             <clip pos="4" side="tl" part="pers"/>
-             <clip pos="4" side="tl" part="gen"/>
-             <clip pos="4" side="tl" part="nbr"/>
-             <clip pos="4" side="tl" part="lemq"/>
+             <clip pos="4" side="tl" part="whole"/>
            </lu>
 	 </out>
        </action>
     </rule> 
--->
+
 
     <rule comment="rule: prep + pron and noun in gen">
        <pattern>

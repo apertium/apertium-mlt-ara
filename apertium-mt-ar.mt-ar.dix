@@ -315,7 +315,7 @@
      <e><p><l>dan<s n="det"/><s n="dem"/></l><r>هذا<s n="det"/><s n="dem"/></r></p></e>
      <e><p><l>dak<s n="det"/><s n="dem"/></l><r>ذلك<s n="det"/><s n="dem"/></r></p></e>
 
-     <e><p><l>ieħor<s n="det"/><s n="ind"/></l><r>آخر<s n="det"/><s n="ind"/></r></p></e>
+     <e><p><l>ieħor<s n="det"/><s n="ind"/></l><r>آخر<s n="det"/><s n="ind"/></r></p><par n="mf_pl_m_f_pl"/></e>
 
      <e><p><l>koll<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>كل<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
      <e><p><l>tant<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>بعض<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
