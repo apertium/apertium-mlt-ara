@@ -281,15 +281,22 @@
      <e><p><l>dak<s n="prn"/></l><r>ذلك<s n="prn"/></r></p></e>
 
      <e><p><l>dak<b/>li<s n="prn"/><s n ="itg"/></l><r>هو<b/>الذي<s n="prn"/><s n ="itg"/></r></p></e>
+     <e><p><l>liema<s n="prn"/><s n ="itg"/><s n="mf"/><s n ="sp"/></l><r>أي<s n="prn"/><s n ="itg"/><s n="mf"/><s n ="sp"/></r></p></e>
      <e><p><l>nifs<s n="prn"/><s n ="ref"/></l><r>نفس<s n="prn"/><s n ="ref"/></r></p></e>
 
      <e><p><l>ieħor<s n="prn"/><s n="ind"/></l><r>آخر<s n="prn"/><s n="ind"/></r></p></e>
      <e><p><l>kull<s n="prn"/><s n="ind"/></l><r>كل<s n="prn"/><s n="ind"/></r></p></e>
+     <e><p><l>kemm<s n="prn"/><s n="ind"/></l><r>كما<s n="prn"/><s n="ind"/></r></p></e>
      <e><p><l>bosta<s n="prn"/><s n="ind"/></l><r>كثير<s n="prn"/><s n="ind"/></r></p><par n="mf_sp_mf_sg_pl"/></e>
+     <e><p><l>diversi<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></l><r>كثير<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
      <!-- not really sure whether we need that (basically it's dak + koll), maybe we do, why there is only m.sg form? -->
      <e><p><l>dak<b/>kollu<s n="prn"/><s n="ind"/></l><r>كل<b/>هذا<s n="prn"/><s n="ind"/></r></p></e>
      <e><p><l>kollox<s n="prn"/><s n="ind"/></l><r>كل<b/>شيء<s n="prn"/><s n="ind"/></r></p></e>
+     <e><p><l>kulħadd<s n="prn"/><s n="ind"/></l><r>كل<b/>أحد<s n="prn"/><s n="ind"/></r></p></e>
+     <e><p><l>kwalunkwe<b/>ħaġa<s n="prn"/><s n="ind"/></l><r>أي<b/>شيء<s n="prn"/><s n="ind"/></r></p></e>
 
+     <!-- several things on both sides - both واحد and وحدي etc. -->
+     <e><p><l>wieħed<s n="prn"/><s n="ind"/></l><r>واحد<s n="prn"/><s n="ind"/></r></p></e>
 
      <!-- SECTION: Determiners -->
 
@@ -315,7 +322,7 @@
 <!-- hm, in fact maybe mt 'diversi' should also be 'qnt'; in ar: add <b/>من<s n="pr"/> ? -->
      <e><p><l>diversi<s n="det"/><s n="ind"/><s n="mf"/><s n="pl"/></l><r>بعض<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
      <e><p><l>ebda<s n="det"/><s n="ind"/><s n="mf"/><s n="sp"/></l><r>ولا<s n="det"/><s n="ind"/><s n="mf"/><s n="sp"/></r></p></e>
-
+     <e><p><l>kwalunkwe<s n="det"/><s n="ind"/><s n="mf"/><s n="sp"/></l><r>أي<s n="det"/><s n="ind"/><s n="mf"/><s n="sp"/></r></p></e>
 
 <!-- SECTION: Numerals -->
 

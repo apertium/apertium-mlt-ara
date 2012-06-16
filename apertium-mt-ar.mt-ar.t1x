@@ -765,7 +765,7 @@
         </when>
         <when>
           <test><equal><clip pos="1" side="tl" part="poss"/><lit-tag v="px3pl"/></equal></test>
-          <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px3du"/></let>
+          <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px3pl_m"/></let>
           <choose><when>
             <test><equal><var n="genero"/><lit-tag v="f"/></equal></test>
             <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px3pl_f"/></let>
