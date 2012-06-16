@@ -124,6 +124,12 @@
         <e r="LR"><p><l><s n="GD"/></l><r><s n="f"/></r></p></e>
      </pardef>
 
+     <pardef n="mf_sp_mf_sg_pl">
+        <e r="LR"><p><l><s n="mf"/><s n="sp"/></l><r><s n="mf"/><s n="ND"/></r></p></e>
+        <e r="RL"><p><l><s n="mf"/><s n="sp"/></l><r><s n="mf"/><s n="sg"/></r></p></e>
+        <e r="RL"><p><l><s n="mf"/><s n="sp"/></l><r><s n="mf"/><s n="pl"/></r></p></e>
+     </pardef>
+
    </pardefs>
 
    <section id="main" type="standard">
@@ -275,42 +281,23 @@
      <e><p><l>dak<s n="prn"/></l><r>ذلك<s n="prn"/></r></p></e>
 
      <e><p><l>dak<b/>li<s n="prn"/><s n ="itg"/></l><r>هو<b/>الذي<s n="prn"/><s n ="itg"/></r></p></e>
-
+     <e><p><l>nifs<s n="prn"/><s n ="ref"/></l><r>نفس<s n="prn"/><s n ="ref"/></r></p></e>
 
      <e><p><l>ieħor<s n="prn"/><s n="ind"/></l><r>آخر<s n="prn"/><s n="ind"/></r></p></e>
-
      <e><p><l>kull<s n="prn"/><s n="ind"/></l><r>كل<s n="prn"/><s n="ind"/></r></p></e>
+     <e><p><l>bosta<s n="prn"/><s n="ind"/></l><r>كثير<s n="prn"/><s n="ind"/></r></p><par n="mf_sp_mf_sg_pl"/></e>
+     <!-- not really sure whether we need that (basically it's dak + koll), maybe we do, why there is only m.sg form? -->
+     <e><p><l>dak<b/>kollu<s n="prn"/><s n="ind"/></l><r>كل<b/>هذا<s n="prn"/><s n="ind"/></r></p></e>
+     <e><p><l>kollox<s n="prn"/><s n="ind"/></l><r>كل<b/>شيء<s n="prn"/><s n="ind"/></r></p></e>
 
-<!--     <e><p><l>i<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-     <e><p><l>na<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
-     <e r="LR"><p><l>ek<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="GD"/><s n="sg"/></r></p></e>
-     <e r="RL"><p><l>ek<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
-     <e r="RL"><p><l>ek<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
-     <e r="LR"><p><l>kom<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="GD"/><s n="pl"/></r></p></e>
-     <e r="RL"><p><l>kom<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
-     <e r="RL"><p><l>kom<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
-     <e><p><l>u<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-     <e><p><l>ha<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-     <e r="LR"><p><l>hom<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
-     <e r="RL"><p><l>hom<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
-     <e r="RL"><p><l>hom<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>  -->
-
-
-     <!-- SECTION: Possessive pronouns -->
-
-<!--     <e><p><l>tiegħi<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px1sg"/><s n="pos"/></r></p></e>
-     <e><p><l>tagħna<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px1pl"/><s n="pos"/></r></p></e>
-     <e><p><l>tiegħek<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px2sg"/><s n="pos"/></r></p></e>
-     <e><p><l>tagħkom<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px2pl"/><s n="pos"/></r></p></e>
-     <e><p><l>tiegħu<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px3sg_m"/><s n="pos"/></r></p></e>
-     <e><p><l>tagħha<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px3sg_f"/><s n="pos"/></r></p></e>
-     <e><p><l>tagħhom<s n="prn"/><s n="pos"/></l><r>لدى<s n="pr"/><s n="px3pl"/><s n="pos"/></r></p></e> -->
 
      <!-- SECTION: Determiners -->
 
      <e><p><l>l<s n="det"/><s n="def"/></l><r>ال<s n="det"/><s n="def"/></r></p></e>
      <e r="LR"><p><l>l<s n="det"/><s n="def"/><s n="mf"/><s n="sp"/></l><r>ال<s n="det"/><s n="def"/></r></p></e>
+     <!-- isn't it adverb transl.? maybe should rather be same as bosta -->
      <e><p><l>ħafna<s n="det"/><s n="qnt"/><s n="mf"/></l><r>جدا<s n="det"/><s n="qnt"/><s n="mf"/></r></p></e>
+     <e><p><l>bosta<s n="det"/><s n="qnt"/><s n="mf"/><s n="pl"/></l><r>كثير<b/>من<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
 
      <e><p><l>dan<s n="det"/><s n="dem"/></l><r>هذا<s n="det"/><s n="dem"/></r></p></e>
      <e><p><l>dak<s n="det"/><s n="dem"/></l><r>ذلك<s n="det"/><s n="dem"/></r></p></e>
@@ -2596,6 +2583,7 @@
      <e><p><l>esklużivament<s n="adv"/></l><r>حصرا<s n="adv"/></r></p></e> <!-- فقط ? -->
      <e c="  0"><p><l>bmod<b/>dirett<s n="adv"/></l><r>مباشرة<s n="adv"/></r></p></e> 
      <e slr="1"><p><l>bmod<b/>dirett<s n="adv"/></l><r>بشكل<b/>مباشر<s n="adv"/></r></p></e> 
+     <e><p><l>b'xi<b/>mod<b/>jew<b/>iehor<s n="adv"/></l><r>بطريقة<b/>أو<b/>بأخرى<s n="adv"/></r></p></e> 
      <e><p><l>il<b/>quddiem<s n="adv"/></l><r>فصاعدا<s n="adv"/></r></p></e> 
 
 
