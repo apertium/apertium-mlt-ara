@@ -295,6 +295,7 @@
        <attr-item tags="prn.itg"/>
        <attr-item tags="prn.pers"/>
        <attr-item tags="prn.pos"/>
+       <attr-item tags="prn.recip"/>
     </def-attr>
     <def-attr n="a_det">
        <attr-item tags="det"/>

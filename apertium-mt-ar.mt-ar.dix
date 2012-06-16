@@ -275,13 +275,12 @@
      <e><p><l>xi<s n="prn"/></l><r>ماذا<s n="prn"/></r></p></e>
      <e><p><l>ftit<s n="prn"/></l><r>بعض<s n="prn"/></r></p></e> 
 
-     <e><p><l>min<s n="prn"/></l><r>من<s n="prn"/></r></p></e> 
-
      <e><p><l>dan<s n="prn"/></l><r>هذا<s n="prn"/></r></p></e>
      <e><p><l>dak<s n="prn"/></l><r>ذلك<s n="prn"/></r></p></e>
 
      <e><p><l>dak<b/>li<s n="prn"/><s n ="itg"/></l><r>هو<b/>الذي<s n="prn"/><s n ="itg"/></r></p></e>
      <e><p><l>liema<s n="prn"/><s n ="itg"/><s n="mf"/><s n ="sp"/></l><r>أي<s n="prn"/><s n ="itg"/><s n="mf"/><s n ="sp"/></r></p></e>
+     <e><p><l>min<s n="prn"/><s n ="itg"/><s n="mf"/><s n ="sp"/></l><r>من<s n="prn"/><s n ="itg"/><s n="mf"/><s n ="sp"/></r></p></e>
      <e><p><l>nifs<s n="prn"/><s n ="ref"/></l><r>نفس<s n="prn"/><s n ="ref"/></r></p></e>
 
      <e><p><l>ieħor<s n="prn"/><s n="ind"/></l><r>آخر<s n="prn"/><s n="ind"/></r></p></e>
@@ -294,6 +293,11 @@
      <e><p><l>kollox<s n="prn"/><s n="ind"/></l><r>كل<b/>شيء<s n="prn"/><s n="ind"/></r></p></e>
      <e><p><l>kulħadd<s n="prn"/><s n="ind"/></l><r>كل<b/>أحد<s n="prn"/><s n="ind"/></r></p></e>
      <e><p><l>kwalunkwe<b/>ħaġa<s n="prn"/><s n="ind"/></l><r>أي<b/>شيء<s n="prn"/><s n="ind"/></r></p></e>
+     <e><p><l>xi<b/>ħadd<s n="prn"/><s n="ind"/></l><r>شخص<b/>ما<s n="prn"/><s n="ind"/></r></p></e>
+     <e><p><l>l-iktar<s n="prn"/><s n="ind"/></l><r>الأكثر<s n="prn"/><s n="ind"/></r></p></e>
+     <!-- hm -->
+     <e><p><l>stess<s n="prn"/><s n="ref"/><s n="mf"/><s n="sg"/></l><r>نفس<s n="prn"/><s n="ref"/><s n="mf"/><s n="sg"/><s n="px3sg_m"/></r></p></e>
+     <e><p><l>xulxin<s n="prn"/><s n="recip"/></l><r>بعض<b/>البعض<s n="prn"/><s n="recip"/></r></p></e>
 
      <!-- several things on both sides - both واحد and وحدي etc. -->
      <e><p><l>wieħed<s n="prn"/><s n="ind"/></l><r>واحد<s n="prn"/><s n="ind"/></r></p></e>
