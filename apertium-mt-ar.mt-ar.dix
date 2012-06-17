@@ -450,7 +450,7 @@
      <e slr="1"><p><l>post<s n="n"/><s n="m"/></l><r>وظيفة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e c="  0"><p><l>familja<s n="n"/><s n="f"/></l><r>عائلة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e slr="1"><p><l>familja<s n="n"/><s n="f"/></l><r>أسرة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-     <e><p><l>nies<s n="n"/><s n="mf"/><s n="pl"/></l><r>ناس<s n="n"/><s n="m"/><s n="aa"/><s n="pl"/></r></p></e>
+     <e><p><l>nies<s n="n"/><s n="mf"/><s n="pl"/></l><r>إنسان<s n="n"/><s n="m"/><s n="aa"/><s n="pl"/></r></p></e>
      <e c="  0"><p><l>żmien<s n="n"/><s n="m"/></l><r>وقت<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e slr="1"><p><l>żmien<s n="n"/><s n="m"/></l><r>زمان<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>divorzju<s n="n"/><s n="m"/></l><r>طلاق<s n="n"/><s n="m"/></r></p></e>
@@ -547,7 +547,7 @@
      <e><p><l>ħalla<s n="n"/><s n="f"/></l><r>حل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>sens<s n="n"/><s n="m"/></l><r>إحساس<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>livell<s n="n"/><s n="m"/></l><r>مستوى<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-     <e><p><l>ġar<s n="n"/><s n="m"/></l><r>جيران<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+     <e><p><l>ġar<s n="n"/><s n="m"/></l><r>جار<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>tip<s n="n"/><s n="m"/></l><r>نوع<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>oppożizzjoni<s n="n"/><s n="f"/></l><r>معارضة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e c="  0"><p><l>raġel<s n="n"/><s n="m"/></l><r>رجل<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
@@ -560,7 +560,7 @@
      <e><p><l>stqarrija<s n="n"/><s n="f"/></l><r>بيان<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>istqarrija<s n="n"/><s n="f"/></l><r>بيان<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>punt<s n="n"/><s n="m"/></l><r>نقطة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-     <e><p><l>flus<s n="n"/><s n="m"/><s n="sg"/></l><r>نقود<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
+     <e><p><l>flus<s n="n"/><s n="m"/><s n="sg"/></l><r>نقد<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
      <e r="LR"><p><l>flus<s n="n"/><s n="m"/></l><r>مال<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>kampjonat<s n="n"/><s n="m"/></l><r>بطولة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>pressjoni<s n="n"/><s n="f"/></l><r>ضغط<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -607,8 +607,8 @@
      <e r="LR"><p><l>karriera<s n="n"/><s n="f"/></l><r>مهنة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>introduzzjoni<s n="n"/><s n="f"/></l><r>مقدمة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>il-Ħadd<s n="n"/><s n="m"/></l><r>يوم<g><b/>الأحد</g><s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-     <e><p><l>elezzjoni<s n="n"/><s n="f"/><s n="sg"/></l><r>انتخابات<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
-     <e><p><l>arċisqof<s n="n"/><s n="m"/></l><r>رئيس الاساقفة<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+     <e><p><l>elezzjoni<s n="n"/><s n="f"/><s n="sg"/></l><r>انتخاب<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p></e>
+     <e><p><l>arċisqof<s n="n"/><s n="m"/></l><r>رئيس<b/>لاساقفة<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>abbuż<s n="n"/><s n="m"/></l><r>سوء<b/>المعاملة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>unur<s n="n"/><s n="m"/></l><r>احترام<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>Settembru<s n="n"/><s n="m"/></l><r>سبتمبر<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -624,6 +624,7 @@
      <e><p><l>koppja<s n="n"/><s n="f"/></l><r>نسخة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>gwerra<s n="n"/><s n="f"/></l><r>حرب<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>linja<s n="n"/><s n="f"/></l><r>خط<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <!-- TODO: what is that? -->
      <e><p><l>Taljan<s n="n"/><s n="f"/></l><r>الإيطالية<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>Awwissu<s n="n"/><s n="m"/></l><r>أغسطس<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>awtorità<s n="n"/><s n="f"/></l><r>سلطة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -641,6 +642,7 @@
      <e><p><l>prova<s n="n"/><s n="f"/></l><r>برهان<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>Jannar<s n="n"/><s n="m"/></l><r>يناير<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>champion<s n="n"/><s n="m"/></l><r>بطل<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+     <!-- TODO: swap? -->
      <e c="  0" r="LR"><p><l>azzjoni<s n="n"/><s n="f"/></l><r>إجراء<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e slr="1" r="LR"><p><l>azzjoni<s n="n"/><s n="f"/></l><r>فعل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>wirja<s n="n"/><s n="f"/></l><r>معرض<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
