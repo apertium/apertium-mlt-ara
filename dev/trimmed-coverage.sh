@@ -9,7 +9,7 @@ fi
 # This file is kept even after the script is ended:
 needed=/tmp/corpus-stat-all-needed.txt
 
-covgoal="63" # percent goal we aim for this week, according to http://wiki.apertium.org/wiki/Maltese_and_Arabic/Work_plan
+covgoal="68" # percent goal we aim for this week, according to http://wiki.apertium.org/wiki/Maltese_and_Arabic/Work_plan
 
 
 cd "$(dirname $0)"
@@ -46,7 +46,7 @@ pad () { printf "%*d" ${#numwords} "$1"; }
 pct_of_words () { printf "% 5.1f" $(calc -p "round( $1 / $numwords * 1000)/10"); }
 echo "Number of tokenised words in the corpus:         $(pad $numwords)"
 echo "Number of tokenised words unknown to analyser:   $(pad $numstar)  — $(pct_of_words $numstar) % of tokens had *"
-echo "                          unknown to bidix:      $(pad $numat)  — $(pct_of_words $numat) % of tokens had @" 
+echo "                          unknown to bidix:      $(pad $numat)  — $(pct_of_words $numat) % of tokens had @"
 echo "     w/transfer errors or unknown to generator:  $(pad $numhash)  — $(pct_of_words $numhash) % of tokens had #"
 echo ""
 echo "Error-free coverage of analyser only:            $(pad $numknown_upto_ana)  — $(pct_of_words $numknown_upto_ana) % of tokens had no *"
@@ -71,4 +71,4 @@ fi
 # This is the full list of unknown words:
 #cat "$sorted"
 
-rm -f "$transfout" "$genout" "$sorted" 
+rm -f "$transfout" "$genout" "$sorted"
