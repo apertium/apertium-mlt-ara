@@ -693,8 +693,8 @@
      <e><p><l>żjara<s n="n"/><s n="f"/></l><r>زيارة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>Novembru<s n="n"/><s n="m"/></l><r>نوفمبر<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>VAT<s n="n"/><s n="acr"/></l><r>ضريبة<g><b/>VAT</g><s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-     <e c="  0" r="LR"><p><l>geddum<s n="n"/><s n="m"/><s n="nn"/></l><r>فك<g><b/>أسفل</g><s n="n"/><s n="m"/></r></p></e>
-     <e slr="1" r="LR"><p><l>geddum<s n="n"/><s n="m"/><s n="nn"/></l><r>ذقن<s n="n"/><s n="m"/></r></p></e>
+     <e c="  0" r="LR"><p><l>geddum<s n="n"/><s n="m"/><s n="nn"/></l><r>فك<g><b/>أسفل</g><s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+     <e slr="1" r="LR"><p><l>geddum<s n="n"/><s n="m"/><s n="nn"/></l><r>ذقن<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>soluzzjoni<s n="n"/><s n="f"/></l><r>حل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>siegħa<s n="n"/><s n="f"/></l><r>ساعة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>pjaneta<s n="n"/><s n="mf"/></l><r>كوكب<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -742,7 +742,7 @@
      <e slr="1"><p><l>tramuntana<s n="n"/><s n="f"/></l><r>ريح<g><b/>شمال</g><s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e c="  0"><p><l>punent<s n="n"/><s n="m"/></l><r>غرب<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e slr="1"><p><l>punent<s n="n"/><s n="m"/></l><r>ريح<g><b/>غرب</g><s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-     <e><p><l>popolazzjoni<s n="n"/><s n="f"/><s n="sg"/></l><r>سكان<s n="n"/><s n="m"/><s n="aa"/><s n="pl"/></r></p></e> <!-- pers only -->
+     <e><p><l>popolazzjoni<s n="n"/><s n="f"/><s n="sg"/></l><r>ساكن<s n="n"/><s n="m"/><s n="aa"/><s n="pl"/></r></p></e> <!-- pers only -->
      <e><p><l>referenza<s n="n"/><s n="f"/></l><r>مرجع<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>rata<s n="n"/><s n="f"/></l><r>نسبة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>patri<s n="n"/><s n="m"/></l><r>راهب<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
