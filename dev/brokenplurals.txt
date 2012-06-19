@@ -336,4 +336,99 @@
 شرط; شرط; sg.basic ; n.m.nn
 شرط; شرط; du.dual; n.m.nn
 شرط; شروط; pl.basic; n.m.nn
-
+ضريبة; ضريب; sg.tamarb ; n.f.nn
+ضريبة; ضريبت; du.dual; n.f.nn
+ضريبة; ضرائب; pl.basic; n.f.nn
+ذقن; ذقن; sg.basic ; n.m.nn
+ذقن; ذقن; du.dual; n.m.nn
+ذقن; أذقان; pl.basic; n.m.nn
+ذقن; ذقون; pl.basic; n.m.nn
+كوكب; كوكب; sg.basic ; n.m.nn
+كوكب; كوكب; du.dual; n.m.nn
+كوكب; كواكب; pl.basic; n.m.nn
+حكم; حكم; sg.basic ; n.m.nn
+حكم; حكم; du.dual; n.m.nn
+حكم; أحكام; pl.basic; n.m.nn
+جملة; جمل; sg.tamarb ; n.f.nn
+جملة; جملت; du.dual; n.f.nn
+جملة; جمل; pl.basic; n.f.nn
+مكتب; مكتب; sg.basic ; n.m.nn
+مكتب; مكتب; du.dual; n.m.nn
+مكتب; مكاتب; pl.basic; n.m.nn
+ساحة; ساح; sg.tamarb ; n.f.nn
+ساحة; ساحت; du.dual; n.f.nn
+ساحة; ساح; pl.basic; n.f.nn
+ساحة; سوح; pl.basic; n.f.nn
+ميدان; ميدان; sg.basic ; n.m.nn
+ميدان; ميدان; du.dual; n.m.nn
+ميدان; ميادين; pl.basic; n.m.nn
+قائمة; قائم; sg.tamarb ; n.f.nn
+قائمة; قائمت; du.dual; n.f.nn
+قائمة; قوائم; pl.basic; n.f.nn
+قسيمة; قسيم; sg.tamarb ; n.f.nn
+قسيمة; قسيمت; du.dual; n.f.nn
+قسيمة; قسائم; pl.basic; n.f.nn
+مدرسة; مدرس; sg.tamarb ; n.f.nn
+مدرسة; مدرست; du.dual; n.f.nn
+مدرسة; مدارس; pl.basic; n.f.nn
+أجر; أجر; sg.basic ; n.m.nn
+أجر; أجر; du.dual; n.m.nn
+أجر; أجور; pl.basic; n.m.nn
+رأي; رأي; sg.basic ; n.m.nn
+رأي; رأي; du.dual; n.m.nn
+رأي; آرا; pl.hamzanolink; n.m.nn
+حجر; حجر; sg.basic ; n.m.nn
+حجر; حجر; du.dual; n.m.nn
+حجر; أحجار; pl.basic; n.m.nn
+حجر; حجار; pl.tamarb; n.m.nn
+حجر; حجار; pl.basic; n.m.nn
+شمس; شمس; sg.basic ; n.f.nn
+شمس; شمس; du.dual; n.f.nn
+شمس; شموس; pl.basic; n.f.nn
+برج; برج; sg.basic ; n.m.nn
+برج; برج; du.dual; n.m.nn
+برج; أبراج; pl.basic; n.m.nn
+فرق; فرق; sg.basic ; n.m.nn
+فرق; فرق; du.dual; n.m.nn
+فرق; فروق; pl.basic; n.m.nn
+ساكن; ساكن; sg.basic ; n.m.aa
+ساكن; ساكن; du.dual; n.m.aa
+ساكن; سكان; pl.basic; n.m.aa
+ساكن; سكن; pl.tamarb; n.m.aa
+مرجع; مرجع; sg.basic ; n.m.nn
+مرجع; مرجع; du.dual; n.m.nn
+مرجع; مراجع; pl.basic; n.m.nn
+نسبة; نسب; sg.tamarb ; n.f.nn
+نسبة; نسبت; du.dual; n.f.nn
+نسبة; نسب; pl.basic; n.f.nn
+راهب; راهب; sg.basic; n.m.aa
+راهب; راهب; du.dual; n.m.aa
+راهب; رهبان; pl.basic; n.m.aa
+شبكة; شبك; sg.tamarb ; n.f.nn
+شبكة; شبكت; du.dual; n.f.nn
+شبكة; شباك; pl.basic; n.f.nn
+رزمة; رزم; sg.tamarb ; n.f.nn
+رزمة; رزمت; du.dual; n.f.nn
+رزمة; رزم; pl.basic; n.f.nn
+بحر; بحر; sg.basic ; n.m.nn
+بحر; بحر; du.dual; n.m.nn
+بحر; بحار; pl.basic; n.m.nn
+بحر; بحور; pl.basic; n.m.nn
+بحر; أبحار; pl.basic; n.m.nn
+خدمة; خدم; sg.tamarb ; n.f.nn
+خدمة; خدمت; du.dual; n.f.nn
+خدمة; خدم; pl.basic; n.f.nn
+رمز; رمز; sg.basic ; n.m.nn
+رمز; رمز; du.dual; n.m.nn
+رمز; رموز; pl.basic; n.m.nn
+دليل; دليل; sg.basic ; n.f.nn
+دليل; دليل; du.dual; n.f.nn
+دليل; أدل; pl.tamarb; n.f.nn
+دليل; دلائل; pl.basic; n.f.nn
+دليل; أدلا; pl.hamzanolink; n.f.nn
+أس; أس; sg.basic ; n.m.nn
+أس; أس; du.dual; n.m.nn
+أس; أسس; pl.basic; n.m.nn
+مرحلة; مرحل; sg.tamarb ; n.f.nn
+مرحلة; مرحلت; du.dual; n.f.nn
+مرحلة; مراحل; pl.basic; n.f.nn

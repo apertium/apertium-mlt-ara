@@ -764,8 +764,8 @@
      <e slr="1" r="LR"><p><l>esponent<s n="n"/><s n="m"/></l><r>أس<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e c="  0"><p><l>dixxiplina<s n="n"/><s n="f"/></l><r>انضباط<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e slr="1"><p><l>dixxiplina<s n="n"/><s n="f"/></l><r>مجال<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-     <e c="  0"><p><l>distinzjoni<s n="n"/><s n="f"/></l><r>تميز<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-     <e slr="1"><p><l>distinzjoni<s n="n"/><s n="f"/></l><r>تمييز<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<!--     <e c="  0"><p><l>distinzjoni<s n="n"/><s n="f"/></l><r>تميز<s n="n"/><s n="m"/><s n="nn"/></r></p></e> -->
+     <e><p><l>distinzjoni<s n="n"/><s n="f"/></l><r>تمييز<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>difensur<s n="n"/><s n="m"/></l><r>مدافع<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>destinazzjoni<s n="n"/><s n="f"/></l><r>وجهة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>bidla<s n="n"/><s n="f"/></l><r>تغيير<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
