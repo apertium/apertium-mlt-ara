@@ -517,6 +517,10 @@
       <list-item v="تألف"/>
     </def-list>
 
+    <def-list n="kontra__verbs" c="mt verbs with 'kontra' prepostions translated to ar verbs without preposition">
+      <list-item v="نافس"/>
+    </def-list>
+
   </section-def-lists>
 
 
@@ -1038,6 +1042,7 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_adj"/>
+             <clip pos="1" side="tl" part="comp"/>
              <clip pos="1" side="tl" part="gen"/>
              <clip pos="1" side="tl" part="nbr"/>
              <lit-tag v="nom"/>
@@ -3614,7 +3619,7 @@
     </rule>
 
 
-   <rule comment="rule: prep + pron and noun in gen">
+   <rule comment="rule: relattivament adv">
       <pattern>
 	<pattern-item n="mod_adv"/>
         <pattern-item n="adv"/>
@@ -3631,6 +3636,8 @@
 	</out>
       </action>
     </rule>
+
+
 
   </section-rules>
 </transfer>
