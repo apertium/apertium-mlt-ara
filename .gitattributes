@@ -29,6 +29,7 @@ dev/ar_verbs/classes/sound.py -text
 dev/ar_verbs/classes/thirdhamza.py -text
 dev/ar_verbs/stems.wiki -text
 dev/ar_verbs/verb.py -text
+dev/brokenpluraladj.txt -text
 dev/brokenplurals.txt -text
 dev/inconsistency-summary.sh -text
 dev/inconsistency.sh -text

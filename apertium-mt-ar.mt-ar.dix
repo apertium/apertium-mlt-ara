@@ -1594,7 +1594,7 @@
      <e><p><l>uniku<s n="adj"/></l><r>فريد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>semitiku<s n="adj"/></l><r>سامي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>terroristiku<s n="adj"/></l><r>إرهابي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
-     <e c="  0"><p><l>kritiku<s n="adj"/></l><r>انتقاد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e c="  0"><p><l>kritiku<s n="adj"/></l><r>انتقادي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e slr="1" r="LR"><p><l>kritiku<s n="adj"/></l><r>حرج<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>sovjetiku<s n="adj"/></l><r>سوفيتي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>olimpiku<s n="adj"/></l><r>أولمبي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
@@ -1625,7 +1625,7 @@
      <e><p><l>kattoliku<s n="adj"/></l><r>كاثوليكي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>kimiku<s n="adj"/></l><r>كيميائي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>klassiku<s n="adj"/></l><r>كلاسيكي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
-     <e><p><l>lastiku<s n="adj"/></l><r>مطاط<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>lastiku<s n="adj"/></l><r>مطاط<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- elastiku? or  last(i)ku -ijiet, elastic material? -->
      <e><p><l>lingwistiku<s n="adj"/></l><r>لغوي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>matematiku<s n="adj"/></l><r>رياضي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>mediku<s n="adj"/></l><r>طبي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
@@ -1658,7 +1658,7 @@
      <e><p><l>kanoniku<s n="adj"/></l><r>قانوني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>karatteristiku<s n="adj"/></l><r>مميز<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>katastrofiku<s n="adj"/></l><r>كارثي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
-     <e><p><l>kategoriku<s n="adj"/></l><r>قطعة<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>kategoriku<s n="adj"/></l><r>قطعي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>logiku<s n="adj"/></l><r>منطقي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e r="LR"><p><l>prattiku<s n="adj"/></l><r>عملي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>prolifiku<s n="adj"/></l><r>خصيب<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
@@ -1749,7 +1749,7 @@
      <e slr="1"><p><l>partikolari<s n="adj"/></l><r>فردي<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e slr="2"><p><l>partikolari<s n="adj"/></l><r>خاص<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e><p><l>kuljum<s n="adj"/></l><r>يومي<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
-     <e><p><l>ċertu<s n="adj"/></l><r>بعض<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- TODO -->
+     <e><p><l>ċertu<s n="adj"/></l><r>بعض<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- TODO: certain: isn't it det? -->
      <e><p><l>proprju<s n="adj"/></l><r>خاص<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- TODO ? -->
      <e><p><l>ċivili<s n="adj"/></l><r>مدني<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e><p><l>diffiċli<s n="adj"/></l><r>صعب<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
@@ -1896,7 +1896,7 @@
      <e slr="2"><p><l>falz<s n="adj"/></l><r>مزور<s n="adj"/></r></p></e>
      <e r="LR"><p><l>prominent<s n="adj"/></l><r>بارز<s n="adj"/></r></p></e>
      <e><p><l>ħobla<s n="adj"/></l><r>حامل<s n="adj"/></r></p></e> <!-- pregnant -->
-     <e><p><l>qalil<s n="adj"/></l><r>عاصف<s n="adj"/></r></p></e>
+     <e><p><l>qalil<s n="adj"/></l><r>عاصف<s n="adj"/></r></p></e> <!-- ? -->
      <e><p><l>soċjalista<s n="adj"/></l><r>اشتراكي<s n="adj"/></r></p></e>
      <e><p><l>komunista<s n="adj"/></l><r>شيوعي<s n="adj"/></r></p></e>
      <e c="  0"><p><l>baħnan<s n="adj"/></l><r>أبله<s n="adj"/></r></p></e>
@@ -1906,7 +1906,7 @@
      <e><p><l>dejjaq<s n="adj"/></l><r>ضيق<s n="adj"/></r></p></e>
      <e><p><l>morali<s n="adj"/></l><r>أخلاقي<s n="adj"/></r></p></e><!-- TODO -->
 
-     <e><p><l>uniti<s n="adj"/></l><r>متحد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- sg unit -->
+     <e><p><l>unit<s n="adj"/></l><r>متحد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>arrestat<s n="adj"/></l><r>محبوس<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>qadim<s n="adj"/></l><r>قديم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>sportiv<s n="adj"/></l><r>رياضي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
@@ -2308,7 +2308,7 @@
      <e><p><l>baltiku<s n="adj"/></l><r>بلطيقي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>vulkaniku<s n="adj"/></l><r>بركاني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>norvegiz<s n="adj"/></l><r>نرويجي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
-     <e r="LR"><p><l>eminenti<s n="adj"/></l><r>بارز<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>eminenti<s n="adj"/></l><r>بارز<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e><p><l>klandestin<s n="adj"/></l><r>سري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>asjatiku<s n="adj"/></l><r>آسيوي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>artiku<s n="adj"/></l><r>قطبي<g>شمالي</g><s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
@@ -2473,7 +2473,7 @@
      <e><p><l>miġnun<s n="adj"/></l><r>مجنون<s n="adj"/></r></p></e>
      <e><p><l>miskin<s n="adj"/></l><r>مسكين<s n="adj"/></r></p></e>
      <e><p><l>oranġjo<s n="adj"/></l><r>برتقالي<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
-     <e><p><l>permanenti<s n="adj"/></l><r>دائم<s n="adj"/></r></p><par n="mf_sg_m_f_sg"/></e>
+     <e><p><l>permanenti<s n="adj"/></l><r>دائم<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e r="LR"><p><l>prominenti<s n="adj"/></l><r>بارز<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e r="LR"><p><l>subtropikali<s n="adj"/></l><r>شبه<b/>استوائي<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e><p><l>tork<s n="adj"/></l><r>تركي<s n="adj"/></r></p></e>
