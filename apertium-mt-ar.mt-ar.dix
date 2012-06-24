@@ -1585,9 +1585,9 @@
      <e><p><l>sabiħ<s n="adj"/></l><r>جميل<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>sħun<s n="adj"/></l><r>حار<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>kiesaħ<s n="adj"/></l><r>بارد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
-     <e><p><l>kbir<s n="adj"/></l><r>كبير<s n="adj"/></r></p></e>
-     <e><p><l>ferħan<s n="adj"/></l><r>فرح<s n="adj"/></r></p></e>
-     <e><p><l>attent<s n="adj"/></l><r>منتبه<s n="adj"/></r></p></e>
+     <e><p><l>kbir<s n="adj"/></l><r>كبير<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>ferħan<s n="adj"/></l><r>فرح<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>attent<s n="adj"/></l><r>منتبه<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>antik<s n="adj"/></l><r>قديم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
 
 
@@ -1873,19 +1873,19 @@
      <e r="LR"><p><l>ġuridiku<s n="adj"/></l><r>قانوني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>fqir<s n="adj"/></l><r>فقير<s n="adj"/></r></p></e> <!-- <par n="mf_pl_m_f_pl"/> : remove or add <comp> -->
      <e r="LR"><p><l>fondat<s n="adj"/></l><r>مؤسس<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
-     <e r="LR"><p><l>għani<s n="adj"/></l><r>غني<s n="adj"/></r></p></e>
+     <e r="LR"><p><l>għani<s n="adj"/></l><r>غني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e c="  0" r="LR"><p><l>falz<s n="adj"/></l><r>كاذب<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e slr="1"><p><l>falz<s n="adj"/></l><r>غير<b/>حقيقي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e slr="2"><p><l>falz<s n="adj"/></l><r>مزور<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>ħobla<s n="adj"/></l><r>حامل<s n="adj"/></r></p></e> <!-- pregnant -->
      <e><p><l>qalil<s n="adj"/></l><r>قاس<s n="adj"/></r></p></e>
      <e><p><l>soċjalista<s n="adj"/></l><r>اشتراكي<s n="adj"/></r></p><par n="mf_m_f"/></e>
-     <e><p><l>komunista<s n="adj"/></l><r>شيوعي<s n="adj"/></r></p></e>
+     <e><p><l>komunista<s n="adj"/></l><r>شيوعي<s n="adj"/></r></p><par n="mf_m_f"/></e>
      <e c="  0"><p><l>baħnan<s n="adj"/></l><r>أبله<s n="adj"/></r></p></e>
      <e slr="1"><p><l>baħnan<s n="adj"/></l><r>ساذج<s n="adj"/></r></p></e>
      <e><p><l>professjonista<s n="adj"/></l><r>محترف<s n="adj"/></r></p><par n="mf_m_f"/></e>
      <e><p><l>dejjaq<s n="adj"/></l><r>ضيق<s n="adj"/></r></p></e>
-     <e><p><l>morali<s n="adj"/></l><r>أخلاقي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>morali<s n="adj"/></l><r>أخلاقي<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e><p><l>unit<s n="adj"/></l><r>متحد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>arrestat<s n="adj"/></l><r>محبوس<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>qadim<s n="adj"/></l><r>قديم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
@@ -1948,7 +1948,7 @@
      <e slr="1"><p><l>mgħaġġel<s n="adj"/></l><r>متعجل<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>pollakk<s n="adj"/></l><r>بولندي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>immedjat<s n="adj"/></l><r>فوري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
-     <e><p><l>amministrattiv<s n="adj"/></l><r>מנהלי<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>amministrattiv<s n="adj"/></l><r>إداري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>indirizzat<s n="adj"/></l><r>موجه<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- but موجهون ? :) -->
      <e><p><l>ibbażat<s n="adj"/></l><r>مأسوس<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>korrett<s n="adj"/></l><r>صحيح<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
@@ -2369,7 +2369,7 @@
      <e><p><l>ħafif<s n="adj"/></l><r>خفيف<s n="adj"/></r></p></e>
      <e><p><l>immirat<s n="adj"/></l><r>مستهدف<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e r="LR"><p><l>introdott<s n="adj"/></l><r>مدرج<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- IV -->
-     <e><p><l>joniku<s n="adj"/></l><r>أيوني<s n="adj"/></r></p></e>
+     <e><p><l>joniku<s n="adj"/></l><r>أيوني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>kantant<s n="adj"/></l><r>مغن<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- tan. kas. & act. part. -->
      <e><p><l>dijalettiku<s n="adj"/></l><r>جدلي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>kardijaku<s n="adj"/></l><r>قلبي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
@@ -2403,12 +2403,12 @@
      <e><p><l>ewkaristiku<s n="adj"/></l><r>إفخارستي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>fartas<s n="adj"/></l><r>أصلع<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>ffirmat<s n="adj"/></l><r>موقع<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
-     <e><p><l>għaref<s n="adj"/></l><r>حكيم<s n="adj"/></r></p></e>
+     <e><p><l>għaref<s n="adj"/></l><r>حكيم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>għażiż<s n="adj"/></l><r>عزيز<s n="adj"/></r></p></e>
      <e><p><l>ħaj<s n="adj"/></l><r>حي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>imminenti<s n="adj"/></l><r>وشيك<s n="adj"/></r></p><par n="mf_m_f"/></e>
      <e r="LR"><p><l>imponenti<s n="adj"/></l><r>مفترض<s n="adj"/></r></p><par n="mf_m_f"/></e>
-     <e r="LR"><p><l>kunfidenzali<s n="adj"/></l><r>سري<s n="adj"/></r></p><par n="mf_m_f"/></e> 
+     <e r="LR"><p><l>kunfidenzali<s n="adj"/></l><r>سري<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e> 
      <e><p><l>marid<s n="adj"/></l><r>مريض<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>miġnun<s n="adj"/></l><r>مجنون<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>miskin<s n="adj"/></l><r>مسكين<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
