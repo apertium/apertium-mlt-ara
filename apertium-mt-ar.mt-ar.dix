@@ -1715,7 +1715,7 @@
      <e><p><l>ewropew<s n="adj"/></l><r>أوروبي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>qawwi<s n="adj"/></l><r>قوي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>nazzjonali<s n="adj"/></l><r>وطني<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
-     <e><p><l>għoli<s n="adj"/></l><r>عال<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+     <e><p><l>għoli<s n="adj"/></l><r>عال<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>differenti<s n="adj"/></l><r>مختلف<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e><p><l>magħruf<s n="adj"/></l><r>معروف<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>veru<s n="adj"/></l><r>حقيقي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
@@ -1880,7 +1880,7 @@
      <e slr="1"><p><l>falz<s n="adj"/></l><r>غير<b/>حقيقي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e slr="2"><p><l>falz<s n="adj"/></l><r>مزور<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>ħobla<s n="adj"/></l><r>حامل<s n="adj"/></r></p></e> <!-- pregnant -->
-     <e><p><l>qalil<s n="adj"/></l><r>قاس<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+     <e><p><l>qalil<s n="adj"/></l><r>قاس<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>soċjalista<s n="adj"/></l><r>اشتراكي<s n="adj"/></r></p><par n="mf_m_f"/></e>
      <e><p><l>komunista<s n="adj"/></l><r>شيوعي<s n="adj"/></r></p><par n="mf_m_f"/></e>
      <e c="  0"><p><l>baħnan<s n="adj"/></l><r>أبله<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
