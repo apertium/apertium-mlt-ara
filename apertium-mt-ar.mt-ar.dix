@@ -460,11 +460,12 @@
      <e><p><l>divorzju<s n="n"/><s n="m"/></l><r>طلاق<s n="n"/><s n="m"/></r></p></e>
      <e r="LR"><p><l>klassi<s n="n"/><s n="f"/></l><r>صف<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>skont<s n="n"/><s n="m"/></l><r>خصم<s n="n"/><s n="m"/></r></p></e>
-<!--     <e><p><l>infraklassi<s n="n"/><s n="f"/></l><r><s n="n"/><s n="m"/></r></p></e> -->
-<!--      <e><p><l>sottoklassi<s n="n"/><s n="f"/></l><r><s n="n"/><s n="m"/></r></p></e> -->
+     <e><p><l>infraklassi<s n="n"/><s n="f"/></l><r>فئة<b/>فرعية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>  <!-- صف ? -->
+      <e><p><l>sottoklassi<s n="n"/><s n="f"/></l><r>فئة<b/>فرعية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+      <e><p><l>superklassi<s n="n"/><s n="f"/></l><r>فئة<b/>فرعية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>kontinent<s n="n"/><s n="m"/></l><r>قارة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>persuna<s n="n"/><s n="f"/></l><r>شخص<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
-<!--     <e><p><l>superordni<s n="n"/><s n="f"/></l><r>مرة<s n="n"/><s n="m"/></r></p></e> -->
+<!--     <e><p><l>superordni<s n="n"/><s n="f"/></l><r><s n="n"/><s n="m"/></r></p></e>  رتيبة ? -->
      <e c="  0"><p><l>numru<s n="n"/><s n="f"/></l><r>عدد<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e slr="1"><p><l>numru<s n="n"/><s n="f"/></l><r>رقم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>gowl<s n="n"/><s n="m"/></l><r>هدف<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- also مرمىً ? -->
@@ -473,7 +474,7 @@
      <e><p><l>nazzjonalista<s n="n"/><s n="f"/></l><r>وطنية<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
      <e><p><l>ġeneru<s n="n"/><s n="m"/></l><r>نوع<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>marsupjal<s n="n"/><s n="m"/></l><r>جرابي<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-<!--     <e><p><l>sottofamilja<s n="n"/><s n="f"/></l><r><s n="n"/><s n="m"/></r></p></e> -->
+     <e><p><l>sottofamilja<s n="n"/><s n="f"/></l><r>عائلة<b/>فرعية<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- فصيلة -->
      <e><p><l>mammiferu<s n="n"/><s n="m"/></l><r>ثديي<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>bżonn<s n="n"/><s n="m"/></l><r>حاجة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>tim<s n="n"/><s n="m"/></l><r>فريق<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -485,7 +486,7 @@
      <e c="  0"><p><l>il-Sibt<s n="n"/><s n="m"/></l><r>يوم<g><b/>السبت</g><s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e slr="1"><p><l>il-Sibt<s n="n"/><s n="m"/></l><r>السبت<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>gvern<s n="n"/><s n="m"/></l><r>حكومة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-<!--     <e><p><l>superfamilja<s n="n"/><s n="f"/></l><r><s n="n"/><s n="m"/></r></p></e> -->
+     <e><p><l>superfamilja<s n="n"/><s n="f"/></l><r>فوق<b/>الفصيلة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>plejer<s n="n"/><s n="m"/></l><r>لاعب<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>membru<s n="n"/><s n="m"/></l><r>عضو<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- nn sometimes? -->
      <e><p><l>kont<s n="n"/><s n="m"/></l><r>حساب<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -502,8 +503,9 @@
      <e><p><l>xahar<s n="n"/><s n="m"/></l><r>شهر<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>ħajja<s n="n"/><s n="f"/></l><r>حياة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>xogħol<s n="n"/><s n="m"/></l><r>عمل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-     <e><p><l>uffiċjal<s n="n"/><s n="m"/></l><r>ضابط<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
-<!--     <e slr="1"><p><l>uffiċjal<s n="n"/><s n="m"/></l><r>שוטר<s n="n"/><s n="m"/></r></p></e> policeman??; + مسؤول، موظف? -->
+     <e><p><l>uffiċjal<s n="n"/><s n="m"/></l><r>موظف<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+<!--     <e slr="1"><p><l>uffiċjal<s n="n"/><s n="m"/></l><r>שוטר<s n="n"/><s n="m"/></r></p></e> policeman??; + مسؤول،ضابط? -->
+      <e><p><l>ufficjal<s n="n"/><s n="m"/></l><r>موظف<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- ضابط -->
      <e><p><l>kuxjenza<s n="n"/><s n="f"/></l><r>وعي<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e c="  0"><p><l>ħin<s n="n"/><s n="m"/></l><r>وقت<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e slr="1"><p><l>ħin<s n="n"/><s n="m"/></l><r>حين<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -629,7 +631,6 @@
      <e><p><l>koppja<s n="n"/><s n="f"/></l><r>نسخة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>gwerra<s n="n"/><s n="f"/></l><r>حرب<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>linja<s n="n"/><s n="f"/></l><r>خط<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-     <!-- TODO: what is that? -->
      <e><p><l>Taljana<s n="n"/><s n="f"/></l><r>الإيطالية<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>Awwissu<s n="n"/><s n="m"/></l><r>أغسطس<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>awtorità<s n="n"/><s n="f"/></l><r>سلطة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -643,7 +644,7 @@
      <e><p><l>ħsara<s n="n"/><s n="f"/></l><r>تلف<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>attenzjoni<s n="n"/><s n="f"/></l><r>اهتمام<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>kummissjoni<s n="n"/><s n="f"/></l><r>لجنة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-     <e><p><l>student<s n="n"/><s n="m"/></l><r>طالب<s n="n"/><s n="m"/><s n="aa"/></r></p></e> <!-- not studenti in sg -->
+     <e><p><l>student<s n="n"/><s n="m"/></l><r>طالب<s n="n"/><s n="m"/><s n="aa"/></r></p></e> 
      <e><p><l>prova<s n="n"/><s n="f"/></l><r>برهان<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>Jannar<s n="n"/><s n="m"/></l><r>يناير<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>champion<s n="n"/><s n="m"/></l><r>بطل<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
@@ -1196,7 +1197,7 @@
      <e><p><l>senter<s n="n"/><s n="m"/></l><r>بندقية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e><p><l>sekwenza<s n="n"/><s n="f"/></l><r>تسلسل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e c="  0"><p><l>sagrificcju<s n="n"/><s n="m"/></l><r>تضحية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-     <e slr="1"><p><l>sagrificcju<s n="n"/><s n="m"/></l><r>ضحية<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- earlier with ċċ -->
+     <e slr="1"><p><l>sagrificcju<s n="n"/><s n="m"/></l><r>ضحية<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- and with ċċ -->
      <e><p><l>riħa<s n="n"/><s n="f"/></l><r>رائحة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e c="  0" r="LR"><p><l>rappreżentazzjoni<s n="n"/><s n="f"/></l><r>نيابة<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e slr="1" r="LR"><p><l>rappreżentazzjoni<s n="n"/><s n="f"/></l><r>تمثيل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -1559,6 +1560,7 @@
      <e><p><l>ġurija<s n="n"/><s n="f"/></l><r>لجنة<b/>تحكيم<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
      <e c="  0"><p><l>xandar<s n="n"/><s n="m"/></l><r>إذاعة<s n="n"/><s n="f"/><s n="nn"/></r></p></e> 
      <e slr="1"><p><l>xandar<s n="n"/><s n="m"/></l><r>مذيع<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+     <e><p><l>xandara<s n="n"/><s n="f"/></l><r>مذيعة<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
      <e><p><l>telespettatur<s n="n"/><s n="m"/></l><r>مشاهد<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>telespettatura<s n="n"/><s n="f"/></l><r>مشاهدة<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
      <e c="  0"><p><l>televotazzjoni<s n="n"/><s n="f"/></l><r>تصويت<b/>عبر<b/>الهاتف<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -1947,7 +1949,7 @@
       <e><p><l>ntiena<s n="n"/><s n="f"/></l><r>نتانة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>opponent<s n="n"/><s n="m"/></l><r>خصم<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
       <e><p><l>opportuniżmu<s n="n"/><s n="m"/></l><r>انتهازية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-<!--      <e><p><l>pangolin<s n="n"/><s n="f"/></l><r><s n="n"/><s n="f"/><s n="nn"/></r></p></e> 'kind of toothless mammal flourishing in central Africa and Asia minor' he? great. -->
+<!--      <e><p><l>pangolin<s n="n"/><s n="f"/></l><r><s n="n"/><s n="f"/><s n="nn"/></r></p></e> 'kind of toothless mammal flourishing in central Africa and Asia minor'? great. -->
       <e><p><l>palla<s n="n"/><s n="f"/></l><r><s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e r="LR"><p><l>papra<s n="n"/><s n="f"/></l><r>بطة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>partiġġaniżmu<s n="n"/><s n="m"/></l><r>فدائية<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- hm -->
@@ -1960,7 +1962,7 @@
       <e><p><l>perpura<s n="n"/><s n="f"/></l><r>فزاعة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>personaliżmu<s n="n"/><s n="f"/></l><r>ذاتية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>pessimiżmu<s n="n"/><s n="m"/></l><r>تشاؤم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-      <e><p><l>pexxun<s n="n"/><s n="m"/></l><r>ساق<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- calf -->
+      <e><p><l>pexxun<s n="n"/><s n="m"/></l><r>ساق<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- calf/leg, not calf/animal -->
       <e><p><l>pezza<s n="n"/><s n="f"/></l><r>قطعة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>pinna<s n="n"/><s n="f"/></l><r>قلم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>pinta<s n="n"/><s n="f"/></l><r>نصف<b/>لتر<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -2113,12 +2115,54 @@
       <e><p><l>troffa<s n="n"/><s n="f"/></l><r>خصلة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>ubbidjenza<s n="n"/><s n="f"/></l><r>طاعة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>udjenza<s n="n"/><s n="f"/></l><r>قبول<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-      <e><p><l>ufficjal<s n="n"/><s n="m"/></l><r>موظف<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- ضابط -->
       <e><p><l>ugwaljanza<s n="n"/><s n="f"/></l><r>مساواة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>umbrella<s n="n"/><s n="f"/></l><r>مظلة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>urgenza<s n="n"/><s n="f"/></l><r>أمر<b/>ملح<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>varjazzjoni<s n="n"/><s n="f"/></l><r>اختلاف<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>veloċità<s n="n"/><s n="f"/></l><r>سرعة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+
+      <e><p><l>villaġġ<s n="n"/><s n="m"/></l><r>بلدة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+      <e><p><l>virga<s n="n"/><s n="f"/></l><r>قضيب<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>vjal<s n="n"/><s n="m"/></l><r>سبيل<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- hm -->
+      <e><p><l>vleġġa<s n="n"/><s n="f"/></l><r>سهم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>werċ<s n="n"/><s n="m"/></l><r>أحول<s n="n"/><s n="m"/><s n="aa"/></r></p></e>  <!-- adj -->
+      <e><p><l>werżieq<s n="n"/><s n="m"/></l><r>جدجد<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>xafra<s n="n"/><s n="f"/></l><r>شفرة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+      <e r="LR"><p><l>xalla<s n="n"/><s n="f"/></l><r>شال<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>xall<s n="n"/><s n="m"/></l><r>شال<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>xaqq<s n="n"/><s n="m"/></l><r>صدع<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- شق -->
+      <e><p><l>xatba<s n="n"/><s n="f"/></l><r>بوابة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+      <e><p><l>xejra<s n="n"/><s n="f"/></l><r>حظ<s n="n"/><s n="m"/><s n="nn"/></r></p></e>  <!-- hm -->
+      <e><p><l>xemgħa<s n="n"/><s n="f"/></l><r>شمعة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+      <e><p><l>xerqa<s n="n"/><s n="f"/></l><r>ورقة<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- leaf, really ? -->
+      <e><p><l>xiber<s n="n"/><s n="m"/></l><r>شبر<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>xifajk<s n="n"/><s n="m"/></l><r>وغد<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+      <e><p><l>xkaffa<s n="n"/><s n="f"/></l><r>رف<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>xkora<s n="n"/><s n="f"/></l><r>كيس<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>xoffa<s n="n"/><s n="f"/></l><r>خرزة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+      <e><p><l>xriek<s n="n"/><s n="m"/></l><r>بلاطة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+      <e><p><l>zalza<s n="n"/><s n="f"/></l><r>صلصة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+      <e><p><l>zappun<s n="n"/><s n="m"/></l><r>معول<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+      <e><p><l>żarbuna<s n="n"/><s n="f"/></l><r>حذاء<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- unit? -->
+      <e><p><l>żarġun<s n="n"/><s n="m"/></l><r>تشذيب<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- hm -->
+      <e r="LR"><p><l>żarmug<s n="n"/><s n="m"/></l><r>أرنب<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>żarżur<s n="n"/><s n="m"/></l><r>مغزل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>żebbuġa<s n="n"/><s n="f"/></l><r>زيتونة<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- unit to unit -->
+      <e><p><l>żejtuni<s n="n"/><s n="m"/></l><r>ساكن<g><b/>زيتون</g><s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+      <e><p><l>żellieqa<s n="n"/><s n="f"/></l><r>مزلق<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>żelluma<s n="n"/><s n="f"/></l><r>غلطة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+      <e r="LR"><p><l>żenbil<s n="n"/><s n="m"/></l><r>سلة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+      <e><p><l>żibġa<s n="n"/><s n="f"/></l><r>خرزة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+      <e r="LR"><p><l>żobb<s n="n"/><s n="m"/></l><r>قضيب<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>zokkor<s n="n"/><s n="m"/></l><r>سكر<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>zopp<s n="n"/><s n="m"/></l><r>أعرج<s n="n"/><s n="m"/><s n="aa"/></r></p></e>  <!-- & adj -->
+      <e><p><l>żunnara<s n="n"/><s n="f"/></l><r>حيوان<b/>أبقع<s n="n"/><s n="m"/><s n="nn"/></r></p></e> 
+      <e><p><l>zuntier<s n="n"/><s n="m"/></l><r>فناء<b/>الكنيسة<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>żurrieqi<s n="n"/><s n="m"/></l><r>ساكن<b/>زوريق<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+      <e><p><l>żurrieqa<s n="n"/><s n="f"/></l><r>ساكنة<b/>زوريق<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
+      <e r="LR"><p><l>żurżieqa<s n="n"/><s n="f"/></l><r>لعبة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+      <e><p><l>il-Erbgħa<s n="n"/><s n="m"/></l><r>يوم<g><b/>الأربعاء</g><s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>il-Hamis<s n="n"/><s n="m"/></l><r>يوم<g><b/>الخميس</g><s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 
 
      <!-- SECTION: Proper nouns -->
@@ -2138,6 +2182,102 @@
      <e><p><l>Estonja<s n="np"/><s n="top"/><s n="f"/></l><r>استونيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
      <e><p><l>Awstralja<s n="np"/><s n="top"/><s n="f"/></l><r>أستراليا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
      <e><p><l>Iżrael<s n="np"/><s n="top"/><s n="m"/></l><r>إسرائيل<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+
+
+     <e><p><l>Ċina<s n="np"/><s n="top"/><s n="f"/></l><r>الصين<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+     <e><p><l>Varsavja<s n="np"/><s n="top"/><s n="f"/></l><r>وارسو<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Libja<s n="np"/><s n="top"/><s n="f"/></l><r>ليبيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Angola<s n="np"/><s n="top"/><s n="f"/></l><r>أنغولا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Valletta<s n="np"/><s n="top"/><s n="f"/></l><r>فاليتا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Malta<s n="np"/><s n="top"/><s n="f"/></l><r>مالطا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Afrika<s n="np"/><s n="top"/><s n="f"/></l><r>أفريقيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Amerika<s n="np"/><s n="top"/><s n="f"/></l><r>أمريكا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Arġentina<s n="np"/><s n="top"/><s n="f"/></l><r>الأرجنتين<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+     <e><p><l>Asja<s n="np"/><s n="top"/><s n="f"/></l><r>آسيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Awstrija<s n="np"/><s n="top"/><s n="f"/></l><r>النمسا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Barcelona<s n="np"/><s n="top"/><s n="f"/></l><r>برشلونة<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Bolivja<s n="np"/><s n="top"/><s n="f"/></l><r>بوليفيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Brittanja<s n="np"/><s n="top"/><s n="f"/></l><r>بريطانيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Danimarka<s n="np"/><s n="top"/><s n="f"/></l><r>الدنمارك<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+     <e><p><l>Ewropa<s n="np"/><s n="top"/><s n="f"/></l><r>أوروبا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Franza<s n="np"/><s n="top"/><s n="f"/></l><r>فرنسا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Iżvezja<s n="np"/><s n="top"/><s n="f"/></l><r>السويد<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+     <e><p><l>Ġermanja<s n="np"/><s n="top"/><s n="f"/></l><r>ألمانيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Greċja<s n="np"/><s n="top"/><s n="f"/></l><r>برشلونة<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Ingilterra<s n="np"/><s n="top"/><s n="f"/></l><r>إنجلترا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Irlanda<s n="np"/><s n="top"/><s n="f"/></l><r>أيرلندا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Italja<s n="np"/><s n="top"/><s n="f"/></l><r>إيطاليا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Kanada<s n="np"/><s n="top"/><s n="f"/></l><r>كندا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Kolombja<s n="np"/><s n="top"/><s n="f"/></l><r>كولومبيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Londra<s n="np"/><s n="top"/><s n="f"/></l><r>لندن<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Norveġja<s n="np"/><s n="top"/><s n="f"/></l><r>نرويج<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+     <e><p><l>Polonja<s n="np"/><s n="top"/><s n="f"/></l><r>بولندا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Prussja<s n="np"/><s n="top"/><s n="f"/></l><r>بروسيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Russja<s n="np"/><s n="top"/><s n="f"/></l><r>روسيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Serbja<s n="np"/><s n="top"/><s n="f"/></l><r>صربيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Spanja<s n="np"/><s n="top"/><s n="f"/></l><r>إسبانيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Valencia<s n="np"/><s n="top"/><s n="f"/></l><r>فالنسيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Pariġi<s n="np"/><s n="top"/><s n="f"/></l><r>باريس<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Brussell<s n="np"/><s n="top"/><s n="f"/></l><r>بروكسل<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Milan<s n="np"/><s n="top"/><s n="f"/></l><r>ميلان<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Ġinevra<s n="np"/><s n="top"/><s n="f"/></l><r>جنيف<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Simshar<s n="np"/><s n="top"/><s n="f"/></l><r>سيمشار<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Bidnijja<s n="np"/><s n="top"/><s n="f"/></l><r>بيدنية<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Birkirkara<s n="np"/><s n="top"/><s n="f"/></l><r>بيركيركارا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Birżebbuġa<s n="np"/><s n="top"/><s n="f"/></l><r>بيرجبوجا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Bormla<s n="np"/><s n="top"/><s n="f"/></l><r>بورملا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Bubaqra<s n="np"/><s n="top"/><s n="f"/></l><r>بوبقرا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Buġibba<s n="np"/><s n="top"/><s n="f"/></l><r>بوجبا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Għajn<b/>Tuffieħa<s n="np"/><s n="top"/><s n="f"/></l><r>عين<b/>تفاحة<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Gwardamanġa<s n="np"/><s n="top"/><s n="f"/></l><r>غواردمنجا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Ħal<b/>Lija<s n="np"/><s n="top"/><s n="f"/></l><r>حال<b/>ليا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Ħal<b/>Luqa<s n="np"/><s n="top"/><s n="f"/></l><r>حال<b/>لوقى<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Ħal-Balzan<s n="np"/><s n="top"/><s n="f"/></l><r>حالبلزن<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Balzan<s n="np"/><s n="top"/><s n="f"/></l><r>بلزن<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Iċ-Ċirkewwa<s n="np"/><s n="top"/><s n="f"/></l><r>التشيركوا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Id-Dwejra<s n="np"/><s n="top"/><s n="f"/></l><r>الدويرة<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Baħrija<s n="np"/><s n="top"/><s n="f"/></l><r>البحرية<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Belt Valletta<s n="np"/><s n="top"/><s n="f"/></l><r>فاليتا<s n="np"/><s n="top"/><s n="f"/></r></p></e> <!-- LR of Valletta? -->
+     <e><p><l>Il-Birguma<s n="np"/><s n="top"/><s n="f"/></l><r>البرغوما<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Fgura<s n="np"/><s n="top"/><s n="f"/></l><r>الفغورا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Furjana<s n="np"/><s n="top"/><s n="f"/></l><r>الفورينا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Ġnejna<s n="np"/><s n="top"/><s n="f"/></l><r>الجنينة<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Gudja<s n="np"/><s n="top"/><s n="f"/></l><r>الغوديا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Gżira<s n="np"/><s n="top"/><s n="f"/></l><r>الجزيرة<s n="np"/><s n="top"/><s n="f"/></r></p></e> <!-- heh -->
+     <e><p><l>Il-Kalafrana<s n="np"/><s n="top"/><s n="f"/></l><r>الكلافرنا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Kalkara<s n="np"/><s n="top"/><s n="f"/></l><r>الكلكرا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Kappara<s n="np"/><s n="top"/><s n="f"/></l><r>الكبرا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Madliena<s n="np"/><s n="top"/><s n="f"/></l><r>المدلينا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Manikata<s n="np"/><s n="top"/><s n="f"/></l><r>المنيكا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Marfa<s n="np"/><s n="top"/><s n="f"/></l><r>المرفا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Marsa<s n="np"/><s n="top"/><s n="f"/></l><r>المرسا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Mellieħa<s n="np"/><s n="top"/><s n="f"/></l><r>المليحا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Mistra<s n="np"/><s n="top"/><s n="f"/></l><r>الميسترا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Mosta<s n="np"/><s n="top"/><s n="f"/></l><r>الموستا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Qajjenza<s n="np"/><s n="top"/><s n="f"/></l><r>القينزا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Qala<s n="np"/><s n="top"/><s n="f"/></l><r>القلا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Qawra<s n="np"/><s n="top"/><s n="f"/></l><r>القورة<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Il-Wardija<s n="np"/><s n="top"/><s n="f"/></l><r>الوردية<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Is-Salina<s n="np"/><s n="top"/><s n="f"/></l><r>السلينا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Ix-Xagħra<s n="np"/><s n="top"/><s n="f"/></l><r>الشعرة<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Ix-Xemxija<s n="np"/><s n="top"/><s n="f"/></l><r>الشمشية<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Ix-Xewkija<s n="np"/><s n="top"/><s n="f"/></l><r>الشوكية<s n="np"/><s n="top"/><s n="f"/></r></p></e> <!-- :) -->
+     <e><p><l>Ix-Xgħajra<s n="np"/><s n="top"/><s n="f"/></l><r>الشعيرة<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Kemmuna<s n="np"/><s n="top"/><s n="f"/></l><r>كمونا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>L-Għadira<s n="np"/><s n="top"/><s n="f"/></l><r>العديرة<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>L-Imdina<s n="np"/><s n="top"/><s n="f"/></l><r>الإمدينا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>L-Imqabba<s n="np"/><s n="top"/><s n="f"/></l><r>الإمقبة<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>L-Imsida<s n="np"/><s n="top"/><s n="f"/></l><r>الإمسيدا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>L-Imtarfa<s n="np"/><s n="top"/><s n="f"/></l><r>الإمترفا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>L-Isla<s n="np"/><s n="top"/><s n="f"/></l><r>الإسلا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Għawdex<s n="np"/><s n="top"/><s n="f"/></l><r>عودش<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Sliema<s n="np"/><s n="top"/><s n="f"/></l><r>سليما<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Santa<b/>Luċija<s n="np"/><s n="top"/><s n="f"/></l><r>سانتا <b/>لوسيا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>San<b/>Pawl<b/>tat-Tarġa<s n="np"/><s n="top"/><s n="f"/></l><r>سان<b/>بول<b/>تترجا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Santa<b/>Venera<s n="np"/><s n="top"/><s n="f"/></l><r>سانتا<b/>فينيرا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Tal-Pietà<s n="np"/><s n="top"/><s n="f"/></l><r>تالبيتا<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+     <e><p><l>Tas-Sliema<s n="np"/><s n="top"/><s n="f"/></l><r>تسليما<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+
 
 
 
