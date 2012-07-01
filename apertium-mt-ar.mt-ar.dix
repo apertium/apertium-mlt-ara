@@ -72,6 +72,7 @@
      <sdef n="al"/>
      <sdef n="ant"/>
      <sdef n="cog"/>
+     <sdef n="org"/>
      <sdef n="num"/>
 
      <sdef n="GD"/>
@@ -1573,14 +1574,14 @@
 
 
       <e><p><l>abbundanza<s n="n"/><s n="f"/></l><r>وفرة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-      <e><p><l>aġġornament<s n="n"/><s n="f"/></l><r>تحديث<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>aġġornament<s n="n"/><s n="m"/></l><r>تحديث<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>aggressjoni<s n="n"/><s n="f"/></l><r>عدوان<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>aljenazzjoni<s n="n"/><s n="f"/></l><r>عزلة<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- انزواء ? -->
       <e><p><l>ambaxxata<s n="n"/><s n="f"/></l><r>سفارة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>amministratur<s n="n"/><s n="m"/></l><r>مدير<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
       <e><p><l>anakroniżmu<s n="n"/><s n="m"/></l><r>مفارقة<b/>تأريخية<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- hm -->
       <e><p><l>angolu<s n="n"/><s n="m"/></l><r>زاوية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-<!--      <e><p><l>animatur<s n="n"/><s n="m"/></l><r><s n="n"/><s n="m"/><s n="aa"/></r></p></e> not cartoons, I guess، منشط then? -->
+      <e><p><l>animatur<s n="n"/><s n="m"/></l><r>منشط<s n="n"/><s n="m"/><s n="aa"/></r></p></e> <!-- not cartoons, I guess -->
       <e><p><l>antenat<s n="n"/><s n="m"/></l><r>سلف<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
       <e><p><l>antikamra<s n="n"/><s n="f"/></l><r>ردهة<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- دهليز ? -->
       <e><p><l>april<s n="n"/><s n="m"/></l><r>أبريل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -1612,12 +1613,10 @@
       <e><p><l>bastun<s n="n"/><s n="m"/></l><r>عصا<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>bażbuż<s n="n"/><s n="m"/></l><r>متمرض<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
       <e><p><l>beċċun<s n="n"/><s n="m"/></l><r>حمامة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-<!--      <e><p><l>bekkum<s n="n"/><s n="m"/></l><r><s n="n"/><s n="f"/><s n="nn"/></r></p></e> spider shell? I don't know what it means in English (now I do), no idea how to translate it -->
       <e><p><l>belbul<s n="n"/><s n="m"/></l><r>بلبل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>benefattur<s n="n"/><s n="m"/></l><r>فاعل<g><b/>خير</g><s n="n"/><s n="m"/><s n="aa"/></r></p></e>
       <e><p><l>berġa<s n="n"/><s n="f"/></l><r>عيادة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>beritta<s n="n"/><s n="f"/></l><r>قلنسوة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-<!--      <e><p><l>bermuċ<s n="n"/><s n="f"/></l><r><s n="n"/><s n="f"/><s n="nn"/></r></p></e> great: something repeatedly rolled between one's fingers -->
       <e><p><l>betbut<s n="n"/><s n="m"/></l><r>مزمار<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>beżbuża<s n="n"/><s n="f"/></l><r>خصلة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>beżżula<s n="n"/><s n="f"/></l><r>حلمة<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- ثدي ? -->
@@ -1631,7 +1630,7 @@
       <e><p><l>birra<s n="n"/><s n="f"/></l><r>بيرة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e r="LR"><p><l>bitħa<s n="n"/><s n="f"/></l><r>فناء<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- gt gives ملعب -->
       <e><p><l>bixkilla<s n="n"/><s n="f"/></l><r>قفص<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-      <e><p><l>bixrun<s n="n"/><s n="f"/></l><r>معصرة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>  <!-- place where grapes are squeezed - so should be ok -->
+      <e><p><l>bixrun<s n="n"/><s n="m"/></l><r>معصرة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>  <!-- place where grapes are squeezed - so should be ok -->
       <e><p><l>blata<s n="n"/><s n="f"/></l><r>صخرة<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- no, it's not 'shelf' like 'book-shelf':) "Inti Pietru, fuq din il-blata jiena nibni l-Knisja tiegħi" -->
       <e><p><l>blokka<s n="n"/><s n="f"/></l><r>كتلة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>bodbod<s n="n"/><s n="m"/></l><r>تيس<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -1650,7 +1649,7 @@
       <e><p><l>bxara<s n="n"/><s n="f"/></l><r>خبر<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>ċanga<s n="n"/><s n="f"/></l><r>لحم<b/>البقر<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- not plank -->
       <e><p><l>ċangun<s n="n"/><s n="m"/></l><r>بلاطة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-<!--      <e><p><l>ċappa<s n="n"/><s n="f"/></l><r><s n="n"/><s n="f"/><s n="nn"/></r></p></e> -->
+      <e><p><l>ċappa<s n="n"/><s n="f"/></l><r>مقطوع<g><b/>من<b/>الفاكهة</g><s n="n"/><s n="f"/><s n="nn"/></r></p></e> 
       <e r="LR"><p><l>ċappella<s n="n"/><s n="f"/></l><r>حجر<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>ċappetta<s n="n"/><s n="f"/></l><r>مفصلة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>ċarru<s n="n"/><s n="m"/></l><r>قطاع<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -1674,7 +1673,7 @@
       <e><p><l>ċorma<s n="n"/><s n="f"/></l><r>طاقم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>ċumnija<s n="n"/><s n="f"/></l><r>مدخنة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>ċurkett<s n="n"/><s n="m"/></l><r>خاتم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-      <e><p><l>darba<s n="n"/><s n="f"/></l><r>رقعة<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- 'patch'? or rather 'ulcer'??? -->
+      <e><p><l>dabra<s n="n"/><s n="f"/></l><r>رقعة<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- 'patch'? or rather 'ulcer'??? -->
       <e><p><l>daqq<s n="n"/><s n="m"/></l><r>دق<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>darsa<s n="n"/><s n="f"/></l><r>سن<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- molar tooth -->
       <e><p><l>debbus<s n="n"/><s n="f"/></l><r>هراوة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -1705,7 +1704,7 @@
       <e><p><l>dramma<s n="n"/><s n="f"/></l><r>مسرحية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>dramm<s n="n"/><s n="m"/></l><r>مسرحية<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- in fact 'dramma' should be LR form of 'dramm' -->
       <e><p><l>drawwa<s n="n"/><s n="f"/></l><r>عادة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-      <e><p><l>driegħ<s n="n"/><s n="f"/></l><r>ذراع<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- really m in mt? -->
+      <e><p><l>driegħ<s n="n"/><s n="m"/></l><r>ذراع<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- really m in mt? -->
       <e><p><l>dubbiena<s n="n"/><s n="f"/></l><r>ذبابة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>dublett<s n="n"/><s n="m"/></l><r>تنورة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>duħħan<s n="n"/><s n="m"/></l><r>دخان<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -1778,7 +1777,7 @@
       <e><p><l>ghaqda<s n="n"/><s n="f"/></l><r>جمعية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>għarusa<s n="n"/><s n="f"/></l><r>عروس<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
       <e><p><l>għarus<s n="n"/><s n="m"/></l><r>عريس<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- mf pl -->
-      <e><p><l>għazla<s n="n"/><s n="f"/></l><r>اختيار<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- hm, it's għażla -->
+      <e><p><l>għażla<s n="n"/><s n="f"/></l><r>اختيار<s n="n"/><s n="m"/><s n="nn"/></r></p></e> 
       <e><p><l>għoqda<s n="n"/><s n="f"/></l><r>عقدة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>għoxx<s n="n"/><s n="m"/></l><r>عش<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>gibda<s n="n"/><s n="f"/></l><r>جاذبية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -2609,6 +2608,208 @@
     <e><p><l>Saviour<s n="np"/><s n="ant"/><s n="m"/></l><r>منقذ<s n="np"/><s n="ant"/><s n="m"/></r></p></e>  <!-- np ? Ksawery? -->
 
 
+    <e><p><l>Borg<s n="np"/><s n="cog"/><s n="mf"/></l><r>بورج<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Foucault<s n="np"/><s n="cog"/><s n="mf"/></l><r>فوكو<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Dylan<s n="np"/><s n="cog"/><s n="mf"/></l><r>ديلان<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Debono<s n="np"/><s n="cog"/><s n="mf"/></l><r>ديبونو<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Pulis<s n="np"/><s n="cog"/><s n="mf"/></l><r>بوليس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Mintoff<s n="np"/><s n="cog"/><s n="mf"/></l><r>مينتوف<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Fenech<s n="np"/><s n="cog"/><s n="mf"/></l><r>فينيخ<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Bonnici<s n="np"/><s n="cog"/><s n="mf"/></l><r>بونيتشي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Zammit<s n="np"/><s n="cog"/><s n="mf"/></l><r>زاميت<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Sammut<s n="np"/><s n="cog"/><s n="mf"/></l><r>ساموت<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Ellis<s n="np"/><s n="cog"/><s n="mf"/></l><r>إيليس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Beethoven<s n="np"/><s n="cog"/><s n="mf"/></l><r>بيتهوفن<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Best<s n="np"/><s n="cog"/><s n="mf"/></l><r>بيست<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Bismarck<s n="np"/><s n="cog"/><s n="mf"/></l><r>بسمارك<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Brown<s n="np"/><s n="cog"/><s n="mf"/></l><r>برون<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Cervantes<s n="np"/><s n="cog"/><s n="mf"/></l><r>تسيربانتس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Escher<s n="np"/><s n="cog"/><s n="mf"/></l><r>إشر<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Ferguson<s n="np"/><s n="cog"/><s n="mf"/></l><r>فرغوسن<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Giggs<s n="np"/><s n="cog"/><s n="mf"/></l><r>غيغس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Goethe<s n="np"/><s n="cog"/><s n="mf"/></l><r>غوته<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Hargreaves<s n="np"/><s n="cog"/><s n="mf"/></l><r>هرغريفس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Hitler<s n="np"/><s n="cog"/><s n="mf"/></l><r>هتلر<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Keane<s n="np"/><s n="cog"/><s n="mf"/></l><r>كين<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Lavigne<s n="np"/><s n="cog"/><s n="mf"/></l><r>لافين<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Mears<s n="np"/><s n="cog"/><s n="mf"/></l><r>ميرس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Mozart<s n="np"/><s n="cog"/><s n="mf"/></l><r>موزارت<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Newton<s n="np"/><s n="cog"/><s n="mf"/></l><r>نيوتن<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Ronaldo<s n="np"/><s n="cog"/><s n="mf"/></l><r>رونالدو<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Rooney<s n="np"/><s n="cog"/><s n="mf"/></l><r>روني<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Smith<s n="np"/><s n="cog"/><s n="mf"/></l><r>سميث<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Taylor<s n="np"/><s n="cog"/><s n="mf"/></l><r>تيلور<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Gonzi<s n="np"/><s n="cog"/><s n="mf"/></l><r>غونزي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Artell<s n="np"/><s n="cog"/><s n="mf"/></l><r>أرتل<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Ayer<s n="np"/><s n="cog"/><s n="mf"/></l><r>أير<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Azzopardi<s n="np"/><s n="cog"/><s n="mf"/></l><r>أزوبردي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Babel<s n="np"/><s n="cog"/><s n="mf"/></l><r>ببل<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Bambina<s n="np"/><s n="cog"/><s n="mf"/></l><r>بمبينا<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Barbarossa<s n="np"/><s n="cog"/><s n="mf"/></l><r>بربروسا<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Beckham<s n="np"/><s n="cog"/><s n="mf"/></l><r>بيكام<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Bellini<s n="np"/><s n="cog"/><s n="mf"/></l><r>بيليني<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Berkeley<s n="np"/><s n="cog"/><s n="mf"/></l><r>بيركلي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Berlioz<s n="np"/><s n="cog"/><s n="mf"/></l><r>بيرليوز<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Blake<s n="np"/><s n="cog"/><s n="mf"/></l><r>بليك<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Boffa<s n="np"/><s n="cog"/><s n="mf"/></l><r>بوفا<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Boldini<s n="np"/><s n="cog"/><s n="mf"/></l><r>بولديني<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Bowie<s n="np"/><s n="cog"/><s n="mf"/></l><r>بوي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Branchel<s n="np"/><s n="cog"/><s n="mf"/></l><r>برانتشل<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Brdaric<s n="np"/><s n="cog"/><s n="mf"/></l><r>برداريتس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Bresciano<s n="np"/><s n="cog"/><s n="mf"/></l><r>بريشنو<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Buhagiar<s n="np"/><s n="cog"/><s n="mf"/></l><r>بوهاغير<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Cañedo<s n="np"/><s n="cog"/><s n="mf"/></l><r>كاندو<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Cara<s n="np"/><s n="cog"/><s n="mf"/></l><r>كارا<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Carachi<s n="np"/><s n="cog"/><s n="mf"/></l><r>كرتشي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Carrick<s n="np"/><s n="cog"/><s n="mf"/></l><r>كريك<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Cézanne<s n="np"/><s n="cog"/><s n="mf"/></l><r>سيزان<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Chamberlain<s n="np"/><s n="cog"/><s n="mf"/></l><r>تشيمبرلن<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Cianciolo<s n="np"/><s n="cog"/><s n="mf"/></l><r>تشنتشولو<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Codino<s n="np"/><s n="cog"/><s n="mf"/></l><r>كودينو<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Constable<s n="np"/><s n="cog"/><s n="mf"/></l><r>كنستبل<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Cremona<s n="np"/><s n="cog"/><s n="mf"/></l><r>كريمونا<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Cromwell<s n="np"/><s n="cog"/><s n="mf"/></l><r>كرومويل<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Dalaras<s n="np"/><s n="cog"/><s n="mf"/></l><r>دلرس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Dickens<s n="np"/><s n="cog"/><s n="mf"/></l><r>ديكنز<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Dimech<s n="np"/><s n="cog"/><s n="mf"/></l><r>ديمخ<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Battista<s n="np"/><s n="cog"/><s n="mf"/></l><r>باتيستا<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Dirac<s n="np"/><s n="cog"/><s n="mf"/></l><r>ديرك<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Drexler<s n="np"/><s n="cog"/><s n="mf"/></l><r>درشلر<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Dufresne<s n="np"/><s n="cog"/><s n="mf"/></l><r>ديفريسن<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Micallef<s n="np"/><s n="cog"/><s n="mf"/></l><r>ميكالف<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Fersen<s n="np"/><s n="cog"/><s n="mf"/></l><r>فرسن<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Camilleri<s n="np"/><s n="cog"/><s n="mf"/></l><r>كاميلري<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Edgar<s n="np"/><s n="cog"/><s n="mf"/></l><r>إدغر<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Edwards<s n="np"/><s n="cog"/><s n="mf"/></l><r>إدوردس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Eliot<s n="np"/><s n="cog"/><s n="mf"/></l><r>إليوت<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Endrich<s n="np"/><s n="cog"/><s n="mf"/></l><r>إندريتش<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Farrugia<s n="np"/><s n="cog"/><s n="mf"/></l><r>فروجاَ<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Frayn<s n="np"/><s n="cog"/><s n="mf"/></l><r>فرين<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Frendo<s n="np"/><s n="cog"/><s n="mf"/></l><r>فريندو<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Gainsborough<s n="np"/><s n="cog"/><s n="mf"/></l><r>غينسبورو<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Galea<s n="np"/><s n="cog"/><s n="mf"/></l><r>غليا<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Galli<s n="np"/><s n="cog"/><s n="mf"/></l><r>غلي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Goodall<s n="np"/><s n="cog"/><s n="mf"/></l><r>غودل<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Gounod<s n="np"/><s n="cog"/><s n="mf"/></l><r>غوند<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Grech<s n="np"/><s n="cog"/><s n="mf"/></l><r>غرخ<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Guérin<s n="np"/><s n="cog"/><s n="mf"/></l><r>غيرن<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Guiscard<s n="np"/><s n="cog"/><s n="mf"/></l><r>غيسكرد<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Hardy<s n="np"/><s n="cog"/><s n="mf"/></l><r>هردي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Hart<s n="np"/><s n="cog"/><s n="mf"/></l><r>هرت<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Hilsdon<s n="np"/><s n="cog"/><s n="mf"/></l><r>هيلسدن<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Hockney<s n="np"/><s n="cog"/><s n="mf"/></l><r>هكني<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Hollins<s n="np"/><s n="cog"/><s n="mf"/></l><r>هلينس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Hughes<s n="np"/><s n="cog"/><s n="mf"/></l><r>هغس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Hume<s n="np"/><s n="cog"/><s n="mf"/></l><r>هيوم<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Jackson<s n="np"/><s n="cog"/><s n="mf"/></l><r>جاكسون<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Koch<s n="np"/><s n="cog"/><s n="mf"/></l><r>كوخ<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Lagrange<s n="np"/><s n="cog"/><s n="mf"/></l><r>لغرنج<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Laparelli<s n="np"/><s n="cog"/><s n="mf"/></l><r>لبرلي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Leiva<s n="np"/><s n="cog"/><s n="mf"/></l><r>ليفا<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Levy<s n="np"/><s n="cog"/><s n="mf"/></l><r>ليفي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Lewis<s n="np"/><s n="cog"/><s n="mf"/></l><r>لويس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Locke<s n="np"/><s n="cog"/><s n="mf"/></l><r>لوك<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>López<s n="np"/><s n="cog"/><s n="mf"/></l><r>لوبز<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Malory<s n="np"/><s n="cog"/><s n="mf"/></l><r>ملوري<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>McBride<s n="np"/><s n="cog"/><s n="mf"/></l><r>مكبريد<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>McGrath<s n="np"/><s n="cog"/><s n="mf"/></l><r>مكغرث<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>McShane<s n="np"/><s n="cog"/><s n="mf"/></l><r>مكشن<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Mifsud<s n="np"/><s n="cog"/><s n="mf"/></l><r>مفسود<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Mill<s n="np"/><s n="cog"/><s n="mf"/></l><r>ميل<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Morris<s n="np"/><s n="cog"/><s n="mf"/></l><r>موريس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Neal<s n="np"/><s n="cog"/><s n="mf"/></l><r>نيل<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Nobel<s n="np"/><s n="cog"/><s n="mf"/></l><r>نوبل<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>O'Leary<s n="np"/><s n="cog"/><s n="mf"/></l><r>أوليري<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Orwell<s n="np"/><s n="cog"/><s n="mf"/></l><r>أورويل<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>O'Shea<s n="np"/><s n="cog"/><s n="mf"/></l><r>أوشي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Owen<s n="np"/><s n="cog"/><s n="mf"/></l><r>أوين<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Pirès<s n="np"/><s n="cog"/><s n="mf"/></l><r>بيريس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Poinsot<s n="np"/><s n="cog"/><s n="mf"/></l><r>بوانسو<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Preca<s n="np"/><s n="cog"/><s n="mf"/></l><r>بريكا<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Priestley<s n="np"/><s n="cog"/><s n="mf"/></l><r>بريستلي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Ramsey<s n="np"/><s n="cog"/><s n="mf"/></l><r>رمسي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Robins<s n="np"/><s n="cog"/><s n="mf"/></l><r>روبينس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Rocastle<s n="np"/><s n="cog"/><s n="mf"/></l><r>روكستل<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Rodríguez<s n="np"/><s n="cog"/><s n="mf"/></l><r>رودريغز<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Rubinstein<s n="np"/><s n="cog"/><s n="mf"/></l><r>روبنشتين<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Saha<s n="np"/><s n="cog"/><s n="mf"/></l><r>ساها<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Salomè<s n="np"/><s n="cog"/><s n="mf"/></l><r>سلومه<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Sant<s n="np"/><s n="cog"/><s n="mf"/></l><r>سانت<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Savona<s n="np"/><s n="cog"/><s n="mf"/></l><r>سفونا<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Saydon<s n="np"/><s n="cog"/><s n="mf"/></l><r>سيدون<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Scholes<s n="np"/><s n="cog"/><s n="mf"/></l><r>شولس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Schumann<s n="np"/><s n="cog"/><s n="mf"/></l><r>شومان<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Schwarzer<s n="np"/><s n="cog"/><s n="mf"/></l><r>شفرزر<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Shakespeare<s n="np"/><s n="cog"/><s n="mf"/></l><r>شكسبير<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Snow<s n="np"/><s n="cog"/><s n="mf"/></l><r><s n="np"/>سنو<s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Speedie<s n="np"/><s n="cog"/><s n="mf"/></l><r>سبيدي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Steele<s n="np"/><s n="cog"/><s n="mf"/></l><r>ستيل<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Suárez<s n="np"/><s n="cog"/><s n="mf"/></l><r>سوارز<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Veronesi<s n="np"/><s n="cog"/><s n="mf"/></l><r>فيرونيسي<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Wordsworth<s n="np"/><s n="cog"/><s n="mf"/></l><r>وردسورث<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Xerri<s n="np"/><s n="cog"/><s n="mf"/></l><r>شيري<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Zuckerberg<s n="np"/><s n="cog"/><s n="mf"/></l><r>زوكربرغ<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Obama<s n="np"/><s n="cog"/><s n="mf"/></l><r>أوباما<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Vella<s n="np"/><s n="cog"/><s n="mf"/></l><r>فيلا<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Muscat<s n="np"/><s n="cog"/><s n="mf"/></l><r>موسكت<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Franco<s n="np"/><s n="cog"/><s n="mf"/></l><r>فرانكو<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Abela<s n="np"/><s n="cog"/><s n="mf"/></l><r>أبيلا<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Caruana<s n="np"/><s n="cog"/><s n="mf"/></l><r>كاروانا<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Cassar<s n="np"/><s n="cog"/><s n="mf"/></l><r>كسر<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Mejlak<s n="np"/><s n="cog"/><s n="mf"/></l><r>ميلاك<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>von<b/>Neumann<s n="np"/><s n="cog"/><s n="mf"/></l><r>فون<b/>نيومان<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>von<b/>Fersen<s n="np"/><s n="cog"/><s n="mf"/></l><r>فون<b/>فرسن<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>von<b/>Lobkowitz<s n="np"/><s n="cog"/><s n="mf"/></l><r><b/>لوبكوفيتس<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+
+<!-- TODO add org in mt, gen, num etc -->
+    <e><p><l>Olimpjadi<s n="np"/><s n="al"/><s n="m"/></l><r>لأولمبياد<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>San<s n="np"/><s n="al"/><s n="m"/></l><r>سان<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>Air<b/>Malta<s n="np"/><s n="al"/><s n="m"/></l><r>طيران<b/>مالطا<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e><p><l>Partnership<b/>for<b/>Peace<s n="np"/><s n="al"/><s n="m"/></l><r>الشراكة<b/>من<b/>أجل<b/>السلام<s n="np"/><s n="al"/><s n="f"/></r></p></e>
+    <e><p><l>Wikipedija<s n="np"/><s n="al"/><s n="m"/></l><r>ويكيبيديا<s n="np"/><s n="al"/><s n="f"/></r></p></e>
+    <e><p><l>Papa<s n="np"/><s n="al"/><s n="m"/></l><r>البابا<s n="np"/><s n="al"/><s n="m"/></r></p></e> <!-- hm -->
+    <e><p><l>Reporter<s n="np"/><s n="al"/><s n="m"/></l><r>صحافي<s n="np"/><s n="al"/><s n="m"/></r></p></e> <!-- مراسل? n?  -->
+    <e><p><l>Sir<s n="np"/><s n="al"/><s n="m"/></l><r>سيد<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>Onor.<s n="np"/><s n="al"/><s n="m"/></l><r>سيد<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>Onor<s n="np"/><s n="al"/><s n="m"/></l><r>سيد<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>Dun<s n="np"/><s n="al"/><s n="m"/></l><r>أبونا<s n="np"/><s n="al"/><s n="m"/></r></p></e> <!-- hm -->
+    <e><p><l>United<s n="np"/><s n="al"/><s n="m"/></l><r>متحد<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>St<s n="np"/><s n="al"/><s n="m"/></l><r>القديس<s n="np"/><s n="al"/><s n="m"/></r></p></e> <!-- Saint? better without ال ? -->
+    <e><p><l>Mulej<s n="np"/><s n="al"/><s n="m"/></l><r>رب<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>Linux<s n="np"/><s n="al"/><s n="m"/></l><r>لينكس<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>Facebook<s n="np"/><s n="al"/><s n="m"/></l><r>فيس<b/>بوك<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>Google<s n="np"/><s n="al"/><s n="m"/></l><r>جوجل<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>PN<s n="np"/><s n="al"/><s n="m"/></l><r>الحزب<b/>الوطني<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e><p><l>PL<s n="np"/><s n="al"/><s n="m"/></l><r>حزب<b/>العمل<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e><p><l>MLP<s n="np"/><s n="al"/><s n="m"/></l><r>حزب<b/>العمل<b/>المالطي<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>FAM<s n="np"/><s n="al"/><s n="m"/></l><r>القوات<b/>المسلحة<b/>المالطية<s n="np"/><s n="org"/><s n="f"/></r></p></e> <!-- hm, it's pl -->
+    <e><p><l>MFA<s n="np"/><s n="al"/><s n="m"/></l><r>اتحاد<b/>كرة<b/>القدم<b/>المالطى<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e><p><l>MEPA<s n="np"/><s n="al"/><s n="m"/></l><r>هيئة<b/>البيئة<b/>والتخطيط<b/>المالطية<s n="np"/><s n="org"/><s n="f"/></r></p></e>
+    <e><p><l>GWU<s n="np"/><s n="al"/><s n="m"/></l><r>الاتحاد<b/>العمال<b/>العام<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e><p><l>TVM<s n="np"/><s n="al"/><s n="m"/></l><r>التلفزيون<b/>المالطي<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e><p><l>ERT<s n="np"/><s n="al"/><s n="m"/></l><r>فريق<b/>الاستجابة<b/>لحالات<b/>الطوارئ<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e><p><l>PBS<s n="np"/><s n="al"/><s n="m"/></l><r>الشركة<b/>البث<b/>العامة<s n="np"/><s n="org"/><s n="f"/></r></p></e>
+    <e><p><l>RTK<s n="np"/><s n="al"/><s n="m"/></l><r>الراديو<b/>الكاثوليكي<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e><p><l>GRTU<s n="np"/><s n="al"/><s n="m"/></l><r>اتحاد<b/>التجار<b/>العام<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>ALE<s n="np"/><s n="al"/><s n="m"/></l><r>تطبيق<b/>القوانين<b/>الإدارية<s n="np"/><s n="al"/><s n="m"/></r></p></e> <!-- ? -->
+    <e><p><l>UEFA<s n="np"/><s n="al"/><s n="m"/></l><r>الاتحاد<b/>الأوروبي<b/>لكرة<b/>القدم<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e><p><l>UE<s n="np"/><s n="al"/><s n="m"/></l><r>الاتحاد<b/>الأوروبي<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>AD<s n="np"/><s n="al"/><s n="m"/></l><r>البديل<b/>الديمقراطي<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>Alternattiva<b/>Demokratika<s n="np"/><s n="al"/><s n="m"/></l><r>البديل<b/>الديمقراطي<s n="np"/><s n="al"/><s n="m"/></r></p></e> <!-- حزب -->
+    <e><p><l>The<b/>Green<b/>Party<s n="np"/><s n="al"/><s n="m"/></l><r>حزب<b/>الخضر<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e><p><l>FIFA<s n="np"/><s n="al"/><s n="m"/></l><r>الاتحاد<b/>الدولي<b/>لكرة<b/>القدم<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e><p><l>Il-Ġens<s n="np"/><s n="al"/><s n="m"/></l><r>جريدة<b/>الجنس<s n="np"/><s n="al"/><s n="f"/></r></p></e> <!-- haha -->
+    <e><p><l>Partit<b/>Nazzjonalista<s n="np"/><s n="al"/><s n="m"/></l><r>الحزب<b/>الوطني<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e><p><l>Partit<b/>Laburista<s n="np"/><s n="al"/><s n="m"/></l><r>حزب<b/>العمل<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e><p><l>Kronaka<b/>f'Malta<s n="np"/><s n="al"/><s n="m"/></l><r>سجل<b/>للأحداث<b/>المالطي<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>Forzi<b/>Armati<b/>ta'<b/>Malta<s n="np"/><s n="al"/><s n="m"/></l><r>القوات<b/>المسلحة<b/>المالطية<s n="np"/><s n="org"/><s n="f"/></r></p></e>
+    <e><p><l>Manchester<b/>United<s n="np"/><s n="al"/><s n="m"/></l><r>مانشستر<b/>يونايتد<s n="np"/><s n="org"/><s n="m"/></r></p></e>
+    <e><p><l>Champions<b/>League<s n="np"/><s n="al"/><s n="m"/></l><r>دوري<b/>ابطال<b/>اوروبا<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>Premier<b/>League<s n="np"/><s n="al"/><s n="m"/></l><r>الدوري<b/>الممتاز<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>UEFA<b/>Europa<b/>League<s n="np"/><s n="al"/><s n="m"/></l><r>الدوري<b/>الأوروبي<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>UEFA<b/>Champions<b/>League<s n="np"/><s n="al"/><s n="m"/></l><r>دوري<b/>أبطال<b/>أوروبا<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+
+
      <!-- SECTION: Adjectives -->
 
      <e><p><l>żgħir<s n="adj"/></l><r>صغير<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
@@ -3426,7 +3627,7 @@
      <e><p><l>iblah<s n="adj"/></l><r>أبله<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>iblaq<s n="adj"/></l><r>أبلق<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>iżraq<s n="adj"/></l><r>أزرق<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
-     <e r="LR"><p><l>ikħal<s n="adj"/></l><r>أزرق<s n="adj"/></r></p></e>
+     <e r="LR"><p><l>ikħal<s n="adj"/></l><r>أزرق<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>ikrah<s n="adj"/></l><r>بشع<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>editorjali<s n="adj"/></l><r>تحريري<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e><p><l>ċuċ<s n="adj"/></l><r>سخيف<s n="adj"/></r></p><par n="mf_m_f"/></e>
