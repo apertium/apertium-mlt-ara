@@ -1378,7 +1378,7 @@
      <e c="  0"><p><l>xitan<s n="n"/><s n="m"/></l><r>شيطان<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e slr="1"><p><l>xitan<s n="n"/><s n="m"/></l><r>إبليس<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
      <e><p><l>suġġett<s n="n"/><s n="m"/></l><r>موضوع<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-     <e c="  0"><p><l>biża<s n="n"/><s n="m"/></l><r>فزعة<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- ethymol. -->
+     <e c="  0"><p><l>biża<s n="n"/><s n="m"/></l><r>فزع<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- ethymol. -->
      <e slr="1"><p><l>biża<s n="n"/><s n="m"/></l><r>خيف<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e slr="2"><p><l>biża<s n="n"/><s n="m"/></l><r>رهبة<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
      <e><p><l>deheb<s n="n"/><s n="m"/></l><r>ذهب<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -1848,13 +1848,13 @@
       <e><p><l>kappella<s n="n"/><s n="f"/></l><r>مصلى<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>kappell<s n="n"/><s n="m"/></l><r>قبعة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>karfusa<s n="n"/><s n="f"/></l><r>كرفس<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-      <e><p><l>karikatura<s n="n"/><s n="f"/></l><r>كاريكاتور<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>karikatura<s n="n"/><s n="f"/></l><r>كاريكاتورية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>karità<s n="n"/><s n="f"/></l><r>خيرية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>karkur<s n="n"/><s n="m"/></l><r>شبشب<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>karru<s n="n"/><s n="m"/></l><r>مقطورة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>kartell<s n="n"/><s n="m"/></l><r>كارتل<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>kartoċċ<s n="n"/><s n="m"/></l><r>خرطوشة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-      <e><p><l>kattoliċiżmu<s n="n"/><s n="m"/></l><r>كاثوليكيه<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+      <e><p><l>kattoliċiżmu<s n="n"/><s n="m"/></l><r>كاثوليكية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>kawza<s n="n"/><s n="f"/></l><r>سبب<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>kaxxa<s n="n"/><s n="f"/></l><r>صندوق<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>kaz<s n="n"/><s n="m"/></l><r>حالة<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- it's każ or kas -->
@@ -1863,7 +1863,7 @@
       <e><p><l>kewkba<s n="n"/><s n="f"/></l><r>نجم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>kexxun<s n="n"/><s n="m"/></l><r>درج<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>kitla<s n="n"/><s n="f"/></l><r>غلاية<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-      <e><p><l>kobba<s n="n"/><s n="f"/></l><r>قابس<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>kobba<s n="n"/><s n="f"/></l><r>سدادة<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- قابس -->
       <e><p><l>kollaboratur<s n="n"/><s n="m"/></l><r>متعاون<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
       <e><p><l>kolonjaliżmu<s n="n"/><s n="m"/></l><r>استعمار<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>komma<s n="n"/><s n="f"/></l><r>كم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -2099,7 +2099,7 @@
       <e><p><l>terħa<s n="n"/><s n="f"/></l><r>شريطة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>terra<s n="n"/><s n="f"/></l><r>مسحوق<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- بودرة -->
       <e><p><l>terroriżmu<s n="n"/><s n="m"/></l><r>إرهاب<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-      <e><p><l>tertuqa<s n="n"/><s n="f"/></l><r>فيلم<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- شريطة ? -->
+      <e r="LR"><p><l>tertuqa<s n="n"/><s n="f"/></l><r>فلم<s n="n"/><s n="m"/><s n="nn"/></r></p></e> <!-- شريطة ? -->
       <e><p><l>tibna<s n="n"/><s n="f"/></l><r>قشة<s n="n"/><s n="f"/><s n="nn"/></r></p></e> <!-- unit to unit -->
       <e><p><l>tikka<s n="n"/><s n="f"/></l><r>نقطة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>tila<s n="n"/><s n="f"/></l><r>قماش<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
