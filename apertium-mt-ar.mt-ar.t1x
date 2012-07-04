@@ -1771,6 +1771,7 @@
          <pattern-item n="nom"/>
        </pattern>
        <action>
+         <call-macro n="set_px_gen"><with-param pos="2"/></call-macro>
          <out>
 	   <lu>
              <clip pos="1" side="tl" part="whole"/>
