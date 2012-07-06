@@ -1,0 +1,17 @@
+DELIMITERS = "<.>" "<:>" "<!>" "<?>" "<|>" "<$.>" "<$:>" "<$!>" "<$?>" "<$|>" sent;
+
+LIST NOUN = n;
+LIST VERB = vblex;
+LIST DET = det;
+LIST PRN = prn;
+LIST PREP = pr;
+
+SECTION
+
+# 1
+SELECT DET IF
+        (0 DET)
+        (0 PRN)
+        (1 NOUN) ;
+
+
