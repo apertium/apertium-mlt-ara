@@ -13,7 +13,8 @@ TARGETS_COMMON = \
      $(PREFIX1).rlx.bin \
      $(PREFIX2).automorf.bin \
      $(PREFIX2).autobil.bin $(PREFIX2).t1x.bin \
-     $(PREFIX2).autogen.bin
+     $(PREFIX2).autogen.bin \
+     $(PREFIX2).autopgen.bin
 
 
 
@@ -62,11 +63,11 @@ $(PREFIX2).t1x.bin: $(BASENAME).$(PREFIX2).t1x
 
 $(PREFIX2).autogen.bin: $(BASENAME).$(LANG1).dix
 	apertium-validate-dictionary $(BASENAME).$(LANG1).dix
-	lt-comp rl $(BASENAME).$(LANG1).dix $@
+	lt-comp rl $(BASENAME).$(LANG1).dix $@ $(BASENAME).$(LANG1).acx
 
-#$(PREFIX2).autopgen.bin: $(BASENAME).post-$(LANG1).dix
-#	apertium-validate-dictionary $(BASENAME).post-$(LANG1).dix
-#	lt-comp lr $(BASENAME).post-$(LANG1).dix $@
+$(PREFIX2).autopgen.bin: $(BASENAME).post-$(LANG1).dix
+	apertium-validate-dictionary $(BASENAME).post-$(LANG1).dix
+	lt-comp lr $(BASENAME).post-$(LANG1).dix $@
 
 
 
