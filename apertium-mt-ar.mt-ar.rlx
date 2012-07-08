@@ -1,17 +1,81 @@
-DELIMITERS = "<.>" "<:>" "<!>" "<?>" "<|>" "<$.>" "<$:>" "<$!>" "<$?>" "<$|>" sent;
+DELIMITERS = "<.>" "<:>" "<;>" "<!>" "<?>" "<|>" "<$.>" "<$:>" "<;>" "<$!>" "<$?>" "<$|>" sent;
 
 LIST NOUN = n;
 LIST VERB = vblex;
 LIST DET = det;
 LIST PRN = prn;
 LIST PREP = pr;
+LIST ADV = adv;
+LIST ADJ = adj;
+LIST DETDEF = (det def);
+
+LIST CNJSUB = cnjsub;
+LIST REL = rel;
+
+LIST SG = sg;
+LIST PL = pl;
+
+LIST VRBSG = (vblex sg) (vaux sg);
+LIST VRBPL = (vblex pl) (vaux pl);
+
+# Hey, that's crucial :)
+SUBREADINGS = LTR ;
 
 SECTION
 
-# 1
-SELECT DET IF
-        (0 DET)
+# Silly rules, yes, but "I'll think about that tomorrow"
+
+SELECT:r1 DET IF
+        (0  DET)
         (0 PRN)
         (1 NOUN) ;
 
+SELECT:r2 VRBPL IF
+        (-1 VRBPL)
+        (0 VRBPL)
+        (0 VRBSG) ;
 
+# li
+SELECT:r3 CNJSUB IF
+        (-1 VERB)
+        (0 CNJSUB)
+        (0 REL) ;
+
+SELECT:r4 REL IF
+        (-1 NOUN)
+        (0 CNJSUB)
+        (0 REL) ;
+
+SELECT:r5 CNJSUB IF
+        (-1 ADV)
+        (0 CNJSUB)
+        (0 REL) ;
+
+SELECT:r6 NOUN IF
+        (-1 PREP) # -1 PREP, -1/1 DETDEF
+        (0 NOUN)
+        (0 ADJ) ;
+# fil-Malti 
+
+SELECT:r7 NOUN IF
+        (-2 CNJSUB)
+        (-1 DETDEF)
+        (0 NOUN)
+        (0 ADJ)
+        (1 VERB) ;
+# kienu jaħsbu li l-Malti ġej mill-Puniku
+
+SELECT:r8 NOUN IF
+        (-1 DETDEF)
+        (0 NOUN)
+        (0 VERB) ;
+# l-influwenza tal-Għarbi
+
+
+SELECT:r9 NOUN IF
+        (NOT *-2 NOUN)
+        (-1 DETDEF)
+        (0 NOUN)
+        (0 ADJ)
+        (1 PRN) ;
+# u l-kollettiv huwa

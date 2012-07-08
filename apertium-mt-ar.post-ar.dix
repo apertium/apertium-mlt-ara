@@ -103,12 +103,8 @@
 
     <pardef n="freepron">
       <!-- all personal pronouns should be put here -->
-      <e>  
-        <p>
-          <l>هي<b/></l>
-          <r>ها<b/></r>
-        </p>
-      </e>
+      <e><p><l>هي<b/></l><r>ها<b/></r></p></e>
+      <e><p><l>نحن<b/></l><r>نا<b/></r></p></e>
     </pardef>
 
 
@@ -124,7 +120,29 @@
 
       <e>
         <p>
+          <l><a/>و<b/><a/>ل<b/>ال</l>
+          <r>ولل</r>
+        </p>
+      </e> 
+      <e>
+        <p>
+          <l><a/>و<b/><a/>ل<b/></l>
+          <r>و</r>
+        </p>
+        <par n="letters"/>
+      </e> 
+
+
+      <e>
+        <p>
           <l><a/>ل<b/></l>
+          <r>ل</r>
+        </p> 
+        <par n="letters"/>
+      </e>
+      <e>
+        <p>
+          <l><a/>ل<b/><b/></l>
           <r>ل</r>
         </p> 
         <par n="letters"/>
@@ -134,6 +152,14 @@
         <p>
           <l><a/>ب<b/></l>
           <r>ب</r>
+        </p> 
+        <par n="letters"/>
+      </e>
+
+      <e>
+        <p>
+          <l><a/>ك<b/></l>
+          <r>ك</r>
         </p> 
         <par n="letters"/>
       </e>
