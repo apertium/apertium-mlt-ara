@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+  <alphabet/>
+  <sdefs>
+    <sdef n="test"/>
+  </sdefs>
+
+  <pardefs>
+
+    <pardef n="letters">
+      <!-- all letters should be put here -->
+      <e>
+        <i>a</i>
+      </e> 
+    </pardef>
+
+  </pardefs>
+
+  <section id="main" type="standard">
+      <e>
+        <p>
+          <l><a/>il-<b/></l>
+          <r>il-</r>
+        </p>
+      </e> 
+  </section>
+
+</dictionary>
