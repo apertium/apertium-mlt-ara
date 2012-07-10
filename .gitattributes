@@ -12,6 +12,7 @@
 /apertium-mt-ar.mt-ar.dix -text
 /apertium-mt-ar.mt-ar.rlx -text
 /apertium-mt-ar.mt-ar.t1x -text
+/apertium-mt-ar.mt-ar.t2x -text
 /apertium-mt-ar.mt.acx -text
 /apertium-mt-ar.mt.dix -text
 /apertium-mt-ar.mt.tsx -text
@@ -55,8 +56,9 @@ dev/story/story.mtar.txt -text svneol=unset#application/octet-stream
 dev/story/story2.mt.txt -text
 dev/story/story2.mtar.posted.txt -text svneol=unset#application/octet-stream
 dev/story/story2.mtar.txt -text svneol=unset#application/octet-stream
-dev/story/story3.ar.txt -text svneol=unset#application/octet-stream
 dev/story/story3.mt.txt -text
+dev/story/story3.mtar.posted.txt -text svneol=unset#application/octet-stream
+dev/story/story3.mtar.txt -text svneol=unset#application/octet-stream
 dev/testvoc-summary.mt-ar.txt -text
 dev/testvoc.sh -text
 dev/trimmed-coverage.sh -text

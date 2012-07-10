@@ -213,8 +213,6 @@
       <cat-item tags="det.qnt"/>
       <cat-item tags="det.qnt.*" lemma="ħafna"/>
       <cat-item tags="det.qnt.*" lemma="bosta"/>
-      <!-- don't ask :) disamb. needed 
-      <cat-item tags="prn.ind.*" lemma="bosta"/>  -->
     </def-cat>
     <def-cat n="detqnt_comp">
       <cat-item tags="det.qnt.*" lemma="aktar"/>
@@ -1111,7 +1109,7 @@
     <rule comment="rule 9: artic nom">
        <pattern>
          <pattern-item n="artic"/>
-         <pattern-item n="nom"/>
+         <pattern-item n="non-np"/>
        </pattern>
        <action>
 	 <!-- is it possible to have both artic. and poss. suffix ?? -->
@@ -1228,7 +1226,7 @@
 -->
 
 
-    <rule comment="rule 12: numeral">
+    <rule comment="rule 12: numerals">
        <pattern>
          <pattern-item n="numeral"/>
        </pattern>
@@ -2029,7 +2027,7 @@
 
 
     <!-- add ma + vrb_past + u + neg, + lu + neg, + u + lu + neg -->
-    <rule comment="rule 36: verb negation: ma + past -> لم + pres.apocop ">
+    <rule comment="rule 36: verb negation: ma + past -> لم + apocop ">
        <pattern>
          <pattern-item n="ma_neg"/>
          <pattern-item n="vrbpast"/>
@@ -3826,7 +3824,7 @@
 
 
    <!-- just an idea what to do with ta'... - my favourite Middle Egyptian (that is, hieroglyphic) construction, btw -->
-   <rule comment="rule 79': ta' oriġini Semitiċi">
+   <rule comment="rule 79: ta' oriġini Semitiċi">
        <pattern>
          <pattern-item n="ta_pr"/>
          <pattern-item n="non-np"/>
@@ -3860,7 +3858,7 @@
     </rule>
 
 
-   <rule comment="rule 79: għal sekli sħaħ">
+   <rule comment="rule 80: għal sekli sħaħ">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="non-np"/>
@@ -3898,7 +3896,7 @@
     </rule>
 
 
-   <rule comment="rule 80: Dawn il-ħakmiet influwenzaw">  <!-- det -->
+   <rule comment="rule 81: Dawn il-ħakmiet influwenzaw">  <!-- det -->
        <pattern>
          <pattern-item n="pron"/>
          <pattern-item n="artic"/>
@@ -3956,7 +3954,7 @@
     </rule>
 
 
-   <rule comment="rule 81: lill-poplu tagħna">
+   <rule comment="rule 82: lill-poplu tagħna">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -3984,7 +3982,7 @@
     </rule>
 
 
-   <rule comment="rule 82: bosta oqsma"> <!-- det -->
+   <rule comment="rule 83: bosta oqsma">
        <pattern>
          <pattern-item n="detqnt"/>
          <pattern-item n="non-np"/>
@@ -4018,7 +4016,7 @@
     </rule>
 
 
-    <rule comment="rule 83: s-sisien ta' lsienna"> 
+    <rule comment="rule 84: s-sisien ta' lsienna"> 
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="non-np"/>
@@ -4060,7 +4058,7 @@
     </rule>
 
 
-   <rule comment="rule 84: bosta forom grammatikali"> <!-- det -->
+   <rule comment="rule 85: bosta forom grammatikali"> 
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="detqnt"/>
@@ -4138,7 +4136,7 @@
     </rule>
 
 
-   <rule comment="rule 85: bħal forom verbali, aġġettivali u nominali"> 
+   <rule comment="rule 86: bħal forom verbali, aġġettivali u nominali"> 
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="non-np"/>
@@ -4213,7 +4211,7 @@
     </rule>
 
 
-   <rule comment="rule 86: L-ewwel perijodu storiku assoċjat"> <!-- det -->
+   <rule comment="rule 87: L-ewwel perijodu storiku assoċjat"> <!-- det -->
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="numord"/>
@@ -4294,7 +4292,7 @@
     </rule>
 
 
-    <rule comment="rule 87: l-perijodu ta' żmien il-Feniċi"> 
+    <rule comment="rule 88: l-perijodu ta' żmien il-Feniċi"> 
        <pattern>
 	 <pattern-item n="artic"/>
          <pattern-item n="non-np"/>
@@ -4347,7 +4345,7 @@
     </rule> 
 
 
-   <rule comment="rule 88: superlative, l-akbar effett"> 
+   <rule comment="rule 89: superlative, l-akbar effett"> 
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="adjcomp"/>
@@ -4380,8 +4378,8 @@
     </rule>
 
 
-    <rule comment="rule 89: kien + acc, kienu razza ta' nies Semitika">
-<!-- hey, sth with the rule is wrong, I get كانوا عنصر ناس ساميين, but it's better then كانوا عنصر ناس ساميا. Plus usual problem with articles, btw -->
+    <rule comment="rule 90: kien + acc, kienu razza ta' nies Semitika">
+<!-- hey, sth with the rule is wrong, I get كانوا عنصر ناس ساميين, but it's better then كانوا عنصر ناس ساميا. Plus standard article problems, btw -->
        <pattern>
          <pattern-item n="kien"/>
          <pattern-item n="non-np"/>
@@ -4473,7 +4471,7 @@
     </rule> 
 
 
-    <rule comment="rule 90 (story1): qed">
+    <rule comment="rule 91 (story1): qed">
        <pattern>
          <pattern-item n="qed"/>
          <pattern-item n="vrb"/>
@@ -4498,7 +4496,7 @@
     </rule>
 
 
-    <rule comment="rule 91:  (52 + adj, dir object in acc), taw għamla definita">
+    <rule comment="rule 92:  (52 + adj, dir object in acc), taw għamla definita">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="nom"/>
@@ -4547,7 +4545,7 @@
     </rule> 
 
  
-    <rule comment="rule 92: superlative, l-eqdem saff lingwistiku"> 
+    <rule comment="rule 93: superlative, l-eqdem saff lingwistiku"> 
       <pattern>
         <pattern-item n="artic"/>
         <pattern-item n="adjcomp"/>
@@ -4594,7 +4592,7 @@
 
 
 
-    <rule comment="rule 93: minn dik Ortodossa"> 
+    <rule comment="rule 94: minn dik Ortodossa"> 
       <pattern>
         <pattern-item n="prep"/>
         <pattern-item n="detdem"/>
@@ -4635,7 +4633,7 @@
   </rule>
 
 
-    <rule comment="rule 94: xi kliem"> 
+    <rule comment="rule 95: xi kliem"> 
       <pattern>
         <pattern-item n="xi"/>
         <pattern-item n="nompl"/>
@@ -4672,7 +4670,7 @@
   </rule>
 
 
-    <rule comment="rule 95: xi nomi Semitiċi"> 
+    <rule comment="rule 96: xi nomi Semitiċi"> 
       <pattern>
         <pattern-item n="xi"/>
         <pattern-item n="nompl"/>
@@ -4730,7 +4728,7 @@
     </action>
   </rule>
 
-    <rule comment="rule 96: xi forma"> 
+    <rule comment="rule 97: xi forma"> 
       <pattern>
         <pattern-item n="xi"/>
         <pattern-item n="nomsg"/>
@@ -4759,7 +4757,7 @@
   </rule>
 
 
-    <rule comment="rule 97:  (91 + pp, dir object in acc), insibu kliem primittiv marbut">
+    <rule comment="rule 98:  (91 + pp, dir object in acc), insibu kliem primittiv marbut">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="nom"/>
@@ -4825,7 +4823,7 @@
     </rule> 
 
 
-   <rule comment="rule 98: l-aktar"> <!-- prn?? -->
+   <rule comment="rule 99: l-aktar"> <!-- prn?? -->
      <pattern>
        <pattern-item n="artic"/>
        <pattern-item n="detqnt_comp"/>
@@ -4850,7 +4848,7 @@
   </rule>
 
 
-    <rule comment="rule 99:  xi ismijiet ta' postijiet u lokalitajiet"> 
+    <rule comment="rule 100:  xi ismijiet ta' postijiet u lokalitajiet"> 
       <pattern>
         <pattern-item n="xi"/>
         <pattern-item n="nompl"/>
@@ -4924,7 +4922,7 @@
   </rule>
 
 
-    <rule comment="rule 100:  Xi ismijiet ta' rħula u bliet Maltin"> 
+    <rule comment="rule 101:  Xi ismijiet ta' rħula u bliet Maltin"> 
       <pattern>
         <pattern-item n="xi"/>
         <pattern-item n="nompl"/>
@@ -5020,7 +5018,7 @@
   </rule>
 
 
-    <rule comment="rule 101:  f'bosta oqsma fosthom"> 
+    <rule comment="rule 102:  f'bosta oqsma fosthom"> 
       <pattern>
         <pattern-item n="detqnt"/>
         <pattern-item n="non-np"/>
@@ -5073,7 +5071,7 @@
    </rule>
 
 
-   <rule comment="rule 102: (82': st. cstr, not artic - and with rel), Bosta ismijiet ta' annimali u ħut li">
+   <rule comment="rule 103: (82', st. cstr, not artic - and with rel), Bosta ismijiet ta' annimali u ħut li">
        <pattern>
          <pattern-item n="detqnt"/>
          <pattern-item n="non-np"/>
@@ -5162,7 +5160,7 @@
     </rule>
 
 
-    <rule comment="rule 103: (42' verb direct object suffix, with cnjsub: add prn) li niddeskrivuhom ">  <!-- FIX: only for إن، أن, لكن -->
+    <rule comment="rule 104: (42' verb direct object suffix, with cnjsub: add prn) li niddeskrivuhom ">  <!-- FIX: only for إن، أن, لكن، كأن، ليت، لعل -->
        <pattern>
          <pattern-item n="cnjsub"/>
          <pattern-item n="vrb"/>
@@ -5209,7 +5207,7 @@
     </rule> 
 
 
-   <rule comment="rule 104: fost, fosthom kliem"> <!-- in fact should be based on prev. noun -->
+   <rule comment="rule 105: fost, fosthom kliem"> <!-- in fact should be based on prev. noun -->
        <pattern>
          <pattern-item n="fost_pr"/>
          <pattern-item n="u_prn"/>
@@ -5250,7 +5248,7 @@
     </rule>
 
 
-   <rule comment="rule 105: l-ismijiet tal-frott l-aktar bażiċi "> <!-- prn?? -->
+   <rule comment="rule 106: l-ismijiet tal-frott l-aktar bażiċi "> <!-- prn?? -->
      <pattern>
        <pattern-item n="artic"/>
        <pattern-item n="non-np"/>
@@ -5320,7 +5318,7 @@
   </rule>
 
 
-   <rule comment="rule 106: ismijiet li jibdew"> <!-- prn?? -->
+   <rule comment="rule 107: ismijiet li jibdew">
      <pattern>
        <pattern-item n="non-np"/>
        <pattern-item n="rel"/>
@@ -5358,7 +5356,7 @@
     </rule>
 
 
-   <rule comment="rule 107: L-influwenza tal-l-Morfoloġija Semitika hija"> 
+   <rule comment="rule 108: L-influwenza tal-l-Morfoloġija Semitika hija"> 
      <pattern>
        <pattern-item n="artic"/>
        <pattern-item n="non-np"/>
@@ -5443,7 +5441,7 @@
     </rule>
 
 
-    <rule comment="rule 108: xi forma jew oħra"> 
+    <rule comment="rule 109: xi forma jew oħra"> 
       <pattern>
         <pattern-item n="xi"/>
         <pattern-item n="nomsg"/>
@@ -5485,7 +5483,7 @@
   </rule>
 
 
-    <rule comment="rule 109: In-nomi ewlenin huma l-aktar bażiċi"> 
+    <rule comment="rule 110: In-nomi ewlenin huma l-aktar bażiċi"> 
       <pattern>
         <pattern-item n="artic"/>
         <pattern-item n="non-np"/>
@@ -5571,7 +5569,7 @@
 
 
     <!-- should be both def. or both undef. ... -->
-    <rule comment="rule 110: (55 + noun, prep + gen), tal-femminil singular ">
+    <rule comment="rule 111: (55 + noun, prep + gen), tal-femminil singular ">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>  <!-- artic here, so it's not st.cstr. -->
@@ -5608,7 +5606,7 @@
     </rule> 
 
 
-    <rule comment="rule 111: (2 + adv + vrb) In-nomi mnisslin x'aktarx mnisslin">
+    <rule comment="rule 112: (2 + adv + vrb) In-nomi mnisslin x'aktarx mnisslin">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="nom"/>
@@ -5671,7 +5669,7 @@
     </rule>
 
 
-    <rule comment="rule 112: Fil-qasam ta' metalli">  
+    <rule comment="rule 113: Fil-qasam ta' metalli">  
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -5718,7 +5716,7 @@
     </rule> 
 
 
-    <rule comment="rule 113: fil-forma tad-diminuttiv">  
+    <rule comment="rule 114: fil-forma tad-diminuttiv">  
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -5766,7 +5764,7 @@
     </rule> 
 
 
-    <rule comment="rule 114: n-nomi Semitiċi huma kklassifikati"> 
+    <rule comment="rule 115: n-nomi Semitiċi huma kklassifikati"> 
       <pattern>
         <pattern-item n="artic"/>
         <pattern-item n="non-np"/>
@@ -5837,7 +5835,7 @@
     </rule>
 
 
-    <rule comment="rule 115: ok, last rule, this one is really stupid (not only this one) - in-nomi mimmati huma nomi ta' post"> 
+    <rule comment="rule 116: ok, last rule, this one is really stupid (not only this one) - in-nomi mimmati huma nomi ta' post"> 
       <pattern>
         <pattern-item n="artic"/>
         <pattern-item n="non-np"/>
@@ -5920,7 +5918,7 @@
     </rule>
 
 
-    <rule comment="rule 116: xi nomi Semitiċi"> 
+    <rule comment="rule 117: xi nomi Semitiċi"> 
       <pattern>
         <pattern-item n="non-np"/>
         <pattern-item n="ta_pr"/>	
@@ -5983,7 +5981,7 @@
   </rule>
 
 
-    <rule comment="rule 117: xi forma jew oħra"> 
+    <rule comment="rule 118: xi forma jew oħra"> 
       <pattern>
         <pattern-item n="xi"/>
         <pattern-item n="nomsg"/>

@@ -313,7 +313,7 @@
      <e r="LR"><p><l>l<s n="det"/><s n="def"/><s n="mf"/><s n="sp"/></l><r>ال<s n="det"/><s n="def"/></r></p></e>
      <!-- isn't it adverb transl.? maybe should rather be same as bosta -->
      <e><p><l>ħafna<s n="det"/><s n="qnt"/><s n="mf"/></l><r>جدا<s n="det"/><s n="qnt"/><s n="mf"/></r></p></e>
-     <e><p><l>bosta<s n="det"/><s n="qnt"/><s n="mf"/><s n="pl"/></l><r>كثير<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e> <!-- better كثير<b/>م?ن -->
+     <e><p><l>bosta<s n="det"/><s n="qnt"/><s n="mf"/><s n="pl"/></l><r>كثير<b/>من<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
 
      <e><p><l>dan<s n="det"/><s n="dem"/></l><r>هذا<s n="det"/><s n="dem"/></r></p></e>
      <e><p><l>dak<s n="det"/><s n="dem"/></l><r>ذلك<s n="det"/><s n="dem"/></r></p></e>
@@ -2217,7 +2217,7 @@
       <e><p><l>tuffieħa<s n="n"/><s n="f"/></l><r>تفاحة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>naħla<s n="n"/><s n="f"/></l><r>نحلة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
       <e><p><l>dubbiena<s n="n"/><s n="f"/></l><r>ذبابة<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-      <e><p><l>ħass<s n="n"/><s n="m"/></l><r>خص<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+      <e><p><l>ħass<s n="n"/><s n="m"/></l><r>خس<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>tadam<s n="n"/><s n="m"/></l><r>طماطم<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>tursin<s n="n"/><s n="m"/></l><r>بقدونس<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
       <e><p><l>dubbien<s n="n"/><s n="m"/></l><r>ذباب<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
