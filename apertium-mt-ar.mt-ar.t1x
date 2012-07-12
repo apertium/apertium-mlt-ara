@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<transfer>
+<transfer default="chunk">
   <section-def-cats>
     <def-cat n="artic">
       <cat-item tags="det.def.*"/>
@@ -888,7 +888,7 @@
            <with-param pos="1"/>
            <with-param pos="2"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
              <lu>
                <clip pos="1" side="tl" part="lem"/>
                <clip pos="1" side="tl" part="a_nom"/>
@@ -905,7 +905,7 @@
                <clip pos="2" side="tl" part="nbr"/>
                <lit-tag v="nom"/>
              </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -922,7 +922,7 @@
            <with-param pos="2"/>
            <with-param pos="3"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <mlu>
              <lu>
                <clip pos="1" side="tl" part="whole"/>
@@ -949,7 +949,7 @@
                <lit-tag v="nom"/>
              </lu>
 	   </mlu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -966,7 +966,7 @@
            <with-param pos="2"/>
            <with-param pos="4"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <mlu>
              <lu>
                <clip pos="1" side="tl" part="whole"/>
@@ -994,7 +994,7 @@
                <lit-tag v="artic"/>
              </lu>
            </mlu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -1005,7 +1005,7 @@
        </pattern>
        <action>
          <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_nom"/>
@@ -1016,7 +1016,7 @@
              <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -1028,7 +1028,7 @@
        <action>
          <call-macro n="f_concord1"><with-param pos="1"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_det"/>
@@ -1037,7 +1037,7 @@
              <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -1050,7 +1050,7 @@
        <action>
          <call-macro n="f_concord1"><with-param pos="1"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_prn"/>
@@ -1060,7 +1060,7 @@
              <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -1071,7 +1071,7 @@
        </pattern>
        <action>
          <call-macro n="f_concord1"><with-param pos="1"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_adj"/>
@@ -1081,7 +1081,7 @@
              <lit-tag v="nom"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -1092,7 +1092,7 @@
          <pattern-item n="np"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
@@ -1101,7 +1101,7 @@
              <lit-tag v="nom"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-          </out>
+          </chunk></out>
 	</action>
     </rule>
 
@@ -1114,7 +1114,7 @@
        <action>
 	 <!-- is it possible to have both artic. and poss. suffix ?? -->
          <call-macro n="set_px_gen"><with-param pos="2"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <mlu>
              <lu>
                <clip pos="1" side="tl" part="whole"/>
@@ -1130,7 +1130,7 @@
                <clip pos="2" side="tl" part="lemq"/>
              </lu>
            </mlu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -1143,7 +1143,7 @@
        </pattern>
        <action>
          <call-macro n="f_concord1"><with-param pos="2"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <mlu>
              <lu>
                <clip pos="1" side="tl" part="whole"/>
@@ -1158,7 +1158,7 @@
                <clip pos="2" side="tl" part="lemq"/>
              </lu>
            </mlu>
-         </out>
+         </chunk></out>
        </action>
     </rule> 
 
@@ -1170,7 +1170,7 @@
        </pattern>
        <action>
          <call-macro n="f_concord1"><with-param pos="2"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
             <mlu> 
              <lu>
                <clip pos="1" side="tl" part="whole"/>
@@ -1179,7 +1179,7 @@
                <clip pos="2" side="tl" part="whole"/>
              </lu>
           </mlu> 
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -1216,11 +1216,11 @@
              </let>
            </when>
          </choose>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 -->
@@ -1232,11 +1232,11 @@
        </pattern>
        <action>
          <call-macro n="f_concord1"><with-param pos="1"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -1249,7 +1249,7 @@
        <action>
          <out c="Delete 'se' when followed by unknown">
            <b/>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 -->
@@ -1267,7 +1267,7 @@
          </let>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
 
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
@@ -1279,7 +1279,7 @@
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -1292,7 +1292,7 @@
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -1304,7 +1304,7 @@
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -1315,7 +1315,7 @@
        </pattern>
        <action>
          <call-macro n="f_concord1"><with-param pos="1"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -1326,7 +1326,7 @@
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -1345,7 +1345,7 @@
            <with-param pos="2"/>
            <with-param pos="3"/>
 	 </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -1380,7 +1380,7 @@
              <lit-tag v="acc"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -1399,7 +1399,7 @@
            <with-param pos="3"/>
            <with-param pos="4"/>
 	 </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -1433,7 +1433,7 @@
              <clip pos="4" side="tl" part="nbr"/>
              <lit-tag v="acc"/>
            </lu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -1446,7 +1446,7 @@
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="1"/></call-macro> 
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -1460,9 +1460,9 @@
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
 	   <b/>
-	 </out>
+	 </chunk><b/></out>
          <call-macro n="f_concord1"><with-param pos="2"/></call-macro>
-	 <out>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="lem"/>
              <clip pos="2" side="tl" part="a_prn_ind"/>
@@ -1470,7 +1470,7 @@
              <clip pos="2" side="tl" part="nbr"/>
              <lit-tag v="acc"/>
            </lu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -1482,7 +1482,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -1505,7 +1505,7 @@
              <lit-tag v="acc"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -1517,7 +1517,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -1541,7 +1541,7 @@
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
 	   </mlu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -1555,7 +1555,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -1592,7 +1592,7 @@
              <lit-tag v="acc"/>
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -1604,7 +1604,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -1618,10 +1618,10 @@
              <clip pos="1" side="tl" part="lemq"/>
 	   </lu>
 	   <b/><lu><lit v="أن"/><lit-tag v="cnjsub"/></lu><b/>
-	 </out>
+	 </chunk><b/></out>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="2"/></call-macro> 
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
@@ -1633,7 +1633,7 @@
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -1646,7 +1646,7 @@
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="2"/></call-macro> 
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
              <clip pos="1" side="tl" part="whole"/>   
 	   </lu><b/>
@@ -1661,7 +1661,7 @@
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -1676,7 +1676,7 @@
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="2"/></call-macro> 
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
              <clip pos="1" side="tl" part="whole"/>   
 	   </lu>
@@ -1700,7 +1700,7 @@
              <clip pos="3" side="tl" part="nbr"/>
              <lit-tag v="acc"/>
            </lu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -1716,7 +1716,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
              <clip pos="1" side="tl" part="whole"/>   
 	   </lu>
@@ -1744,9 +1744,9 @@
 	   <lu>
              <clip pos="4" side="tl" part="whole"/>   
 	   </lu>
-	 </out>
+	 </chunk><b/></out>
          <call-macro n="modify_verb_and_genero"><with-param pos="5"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="5" side="tl" part="lemh"/>
              <clip pos="5" side="tl" part="a_verb"/>
@@ -1758,7 +1758,7 @@
              <clip pos="5" side="tl" part="nbr"/>
              <clip pos="5" side="tl" part="lemq"/>
            </lu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -1790,7 +1790,7 @@
          <pattern-item n="nom"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
              <clip pos="1" side="tl" part="whole"/>
 	   </lu><b/>
@@ -1808,7 +1808,7 @@
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
 	   </mlu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -1821,7 +1821,7 @@
        </pattern>
        <action>
          <call-macro n="set_px_gen"><with-param pos="2"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
              <clip pos="1" side="tl" part="whole"/>
 	   </lu><b/>
@@ -1835,7 +1835,7 @@
              <clip pos="2" side="tl" part="poss"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -1847,11 +1847,11 @@
          <pattern-item n="det"/>
        </pattern>
        <action>
-	 <out>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
              <clip pos="2" side="tl" part="whole"/>
 	   </lu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -1864,7 +1864,7 @@
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="1"/></call-macro> 
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -1888,7 +1888,7 @@
              <clip pos="3" side="tl" part="poss"/>
              <clip pos="3" side="tl" part="lemq"/>
 	   </lu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule>
 
@@ -1899,7 +1899,7 @@
          <pattern-item n="pron"/>
        </pattern>
        <action>
-	  <out>
+	  <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="whole"/>
            </lu>
@@ -1907,7 +1907,7 @@
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
-	  </out>
+	  </chunk></out>
        </action>
     </rule>
 
@@ -1921,7 +1921,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
-	 <out>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -1934,7 +1934,7 @@
              <lit-tag v="neg"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule>
 
@@ -1947,7 +1947,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
-	 <out>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -1969,7 +1969,7 @@
              <lit-tag v="acc"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule> 
 
@@ -1984,7 +1984,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
-	 <out>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -2021,7 +2021,7 @@
              <lit-tag v="acc"/>
              <clip pos="5" side="tl" part="lemq"/>
            </lu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -2035,7 +2035,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
-	  <out>
+	  <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
 	     <lit v="لم"/><lit-tag v="adv"/>
 	   </lu><b/>
@@ -2051,7 +2051,7 @@
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-	  </out>
+	  </chunk></out>
        </action>
     </rule>
 
@@ -2065,7 +2065,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
-	  <out>
+	  <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
 	     <lit v="لم"/><lit-tag v="adv"/>
 	   </lu>
@@ -2087,9 +2087,9 @@
 	     <lit v="أن"/><lit-tag v="cnjsub"/>
 	   </lu>
 	   <b/>
-	 </out>
+	 </chunk><b/></out>
 	 <call-macro n="modify_verb_and_genero"><with-param pos="4"/></call-macro>
-	 <out>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_verb"/>
@@ -2101,7 +2101,7 @@
              <clip pos="4" side="tl" part="nbr"/>
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -2115,7 +2115,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
-	  <out>
+	  <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
 	     <lit v="لا"/><lit-tag v="adv"/>
 	   </lu>
@@ -2136,9 +2136,9 @@
 	     <lit v="أن"/><lit-tag v="cnjsub"/>
 	   </lu>
 	   <b/>
-	 </out>
+	 </chunk><b/></out>
 	 <call-macro n="modify_verb_and_genero"><with-param pos="4"/></call-macro>
-	 <out>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_verb"/>
@@ -2150,7 +2150,7 @@
              <clip pos="4" side="tl" part="nbr"/>
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -2167,7 +2167,7 @@
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
          <call-macro n="set_prn_suff_gen"><with-param pos="5"/></call-macro>
-	  <out>
+	  <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
 	     <lit v="لا"/><lit-tag v="adv"/>
 	   </lu>
@@ -2188,9 +2188,9 @@
 	     <lit v="أن"/><lit-tag v="cnjsub"/>
 	   </lu>
 	   <b/>
-  	 </out>
+  	 </chunk><b/></out>
 	 <call-macro n="modify_verb_and_genero"><with-param pos="4"/></call-macro>
-	 <out>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
              <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_verb"/>
@@ -2216,7 +2216,7 @@
                <clip pos="5" side="tl" part="nbr"/>
              </lu>
 	   </mlu>	
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -2231,7 +2231,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
-	  <out>
+	  <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
 	     <lit v="لا"/><lit-tag v="adv"/>
 	   </lu><b/>
@@ -2246,7 +2246,7 @@
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-	  </out>
+	  </chunk></out>
        </action>
     </rule>
 
@@ -2261,7 +2261,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
 	     <lit v="لا"/><lit-tag v="adv"/>
 	   </lu>
@@ -2286,7 +2286,7 @@
              <clip pos="4" side="tl" part="nbr"/>
              <lit-tag v="acc"/>
            </lu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -2299,7 +2299,7 @@
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
          <call-macro n="set_prn_suff_gen"><with-param pos="2"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <mlu>
              <lu>
                <clip pos="1" side="tl" part="lemh"/>
@@ -2321,7 +2321,7 @@
                <clip pos="2" side="tl" part="nbr"/>
              </lu>
 	   </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -2334,7 +2334,7 @@
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
          <call-macro n="set_prn_suff_gen"><with-param pos="2"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -2361,7 +2361,7 @@
                <clip pos="2" side="tl" part="nbr"/>
              </lu>
 	   </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -2376,7 +2376,7 @@
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
          <call-macro n="set_prn_suff_gen"><with-param pos="2"/></call-macro>
          <call-macro n="set_prn_suff_gen"><with-param pos="3"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <mlu>
              <lu>
                <clip pos="1" side="tl" part="lemh"/>
@@ -2412,7 +2412,7 @@
                <clip pos="3" side="tl" part="nbr"/>
              </lu>
 	   </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -2426,7 +2426,7 @@
        <action> 
          <call-macro n="set_prn_suff_gen"><with-param pos="2"/></call-macro>
 	 <!-- suffix gender & number should be modified! -->
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <mlu>
              <lu>
                <clip pos="1" side="tl" part="whole"/>
@@ -2439,7 +2439,7 @@
                <clip pos="2" side="tl" part="nbr"/>
              </lu>
 	   </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -2454,7 +2454,7 @@
        </pattern>
        <action> 
 	 <!-- suffix gender & number should be modified! -->
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <mlu>
              <lu>
                <clip pos="1" side="tl" part="whole"/>
@@ -2468,7 +2468,7 @@
                <lit-tag v="neg"/>
              </lu>
 	   </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -2482,7 +2482,7 @@
          <pattern-item n="np"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
@@ -2502,7 +2502,7 @@
              <lit-tag v="gen"/>
              <clip pos="5" side="tl" part="lemq"/>
            </lu>
-          </out>
+          </chunk></out>
 	</action>
     </rule>
 
@@ -2517,7 +2517,7 @@
          <pattern-item n="np"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -2541,7 +2541,7 @@
              <lit-tag v="gen"/>
              <clip pos="6" side="tl" part="lemq"/>
            </lu>
-          </out>
+          </chunk></out>
 	</action>
     </rule>
 
@@ -2564,7 +2564,7 @@
 	   <with-param pos="5"/>
            <with-param pos="4"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -2607,7 +2607,7 @@
                <clip pos="5" side="tl" part="lemq"/>
              </lu>
 	    </mlu>
-          </out>
+          </chunk></out>
 	</action>
     </rule>
 
@@ -2632,7 +2632,7 @@
        <action>
 	 <!-- is it possible to have both artic. and poss. suffix ?? -->
          <call-macro n="set_px_gen"><with-param pos="3"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
   	     <lit v="أن"/>
 	     <lit-tag v="cnjsub"/>
@@ -2653,7 +2653,7 @@
                <clip pos="3" side="tl" part="lemq"/>
              </lu>
            </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule>
 
@@ -2665,7 +2665,7 @@
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="2"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -2687,7 +2687,7 @@
              <lit-tag v="acc"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -2701,7 +2701,7 @@
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="3"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -2734,7 +2734,7 @@
              <lit-tag v="gen"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -2751,7 +2751,7 @@
            <with-param pos="2"/>
            <with-param pos="3"/>
 	 </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -2775,7 +2775,7 @@
              <lit-tag v="gen"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule>
 
@@ -2787,7 +2787,7 @@
          <pattern-item n="non-np"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -2807,7 +2807,7 @@
                <clip pos="3" side="tl" part="lemq"/>
              </lu>
 	   </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -2825,7 +2825,7 @@
            <with-param pos="3"/>
            <with-param pos="4"/>
 	 </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -2859,7 +2859,7 @@
                <clip pos="4" side="tl" part="lemq"/>
              </lu>
 	   </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -2880,7 +2880,7 @@
            <with-param pos="6"/>
            <with-param pos="7"/>
 	 </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -2925,7 +2925,7 @@
                <clip pos="7" side="tl" part="lemq"/>
              </lu>
 	   </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -2945,7 +2945,7 @@
            <with-param pos="3"/>
            <with-param pos="4"/>
 	 </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -2975,7 +2975,7 @@
              <clip pos="4" side="tl" part="nbr"/>
              <lit-tag v="acc"/>
            </lu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -2987,7 +2987,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
@@ -2999,7 +2999,7 @@
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule> 
 
@@ -3013,7 +3013,7 @@
 	 <pattern-item n="nom"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -3044,7 +3044,7 @@
              <clip pos="4" side="tl" part="lemq"/>
 	   </lu>
 	   </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -3070,7 +3070,7 @@
 	     <let><clip pos="2" side="tl" part="lem"/><lit v="ب"/></let> 
 	   </when> 
 	 </choose> 
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -3100,7 +3100,7 @@
              <lit-tag v="gen"/>
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule> 
 
@@ -3137,7 +3137,7 @@
 	     <let><clip pos="3" side="tl" part="lem"/><lit v="من"/></let> 
 	   </when> 
 	 </choose> 
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
 	     <lit v="prpers"/>
 	     <lit-tag v="prn"/>
@@ -3187,7 +3187,7 @@
              <clip pos="6" side="tl" part="nbr"/>
              <lit-tag v="gen"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule> 
 
@@ -3206,7 +3206,7 @@
            <with-param pos="4"/>
            <with-param pos="2"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -3234,7 +3234,7 @@
                <clip pos="4" side="tl" part="lemq"/>
 	     </lu>
 	   </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -3251,7 +3251,7 @@
            <with-param pos="2"/>
            <with-param pos="4"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
              <clip pos="1" side="tl" part="whole"/>   
 	   </lu>
@@ -3282,7 +3282,7 @@
                <clip pos="4" side="tl" part="lemq"/>
 	     </lu>
            </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -3300,7 +3300,7 @@
            <with-param pos="2"/>
            <with-param pos="4"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
              <clip pos="1" side="tl" part="whole"/>   
 	   </lu>
@@ -3331,7 +3331,7 @@
                <clip pos="4" side="tl" part="lemq"/>
 	     </lu>
            </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -3344,7 +3344,7 @@
          <pattern-item n="nom"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
              <clip pos="2" side="tl" part="whole"/>   
 	   </lu>
@@ -3363,7 +3363,7 @@
                <clip pos="3" side="tl" part="lemq"/>
 	     </lu>
            </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -3396,7 +3396,7 @@
              <call-macro n="modify_verb_and_genero"><with-param pos="4"/></call-macro>  
 	   </otherwise> -->
 	 </choose>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <mlu>
              <lu>
                <clip pos="1" side="tl" part="whole"/>
@@ -3430,7 +3430,7 @@
              <clip pos="4" side="tl" part="nbr"/>
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -3448,7 +3448,7 @@
            <with-param pos="3"/>
            <with-param pos="2"/> 
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_verb"/>
@@ -3479,7 +3479,7 @@
            <lu>
              <clip pos="4" side="tl" part="whole"/>
            </lu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -3498,7 +3498,7 @@
            <with-param pos="3"/>
            <with-param pos="4"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -3538,7 +3538,7 @@
                <clip pos="4" side="tl" part="nbr"/>
              </lu>
 	   </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -3556,7 +3556,7 @@
          <pattern-item n="u_prn"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -3582,7 +3582,7 @@
              <lit-tag v="px3sg_m"/>
              <clip pos="6" side="tl" part="lemq"/>
            </lu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule>
 
@@ -3597,7 +3597,7 @@
          <pattern-item n="non-np"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
@@ -3624,7 +3624,7 @@
                <clip pos="5" side="tl" part="lemq"/>
              </lu>
 	   </mlu>
-          </out>
+          </chunk></out>
 	</action>
     </rule>
 
@@ -3636,7 +3636,7 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
@@ -3649,7 +3649,7 @@
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="lemq"/>
 	   </lu>
-	</out>
+	</chunk></out>
        </action>
      </rule>
 
@@ -3661,11 +3661,11 @@
          <pattern-item n="xneg"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
 	     <lit v="لا"/><lit-tag v="adv"/>
 	   </lu>
-	</out>
+	</chunk></out>
        </action>
      </rule>
 
@@ -3690,7 +3690,7 @@
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="2"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
 	     <lit v="prpers"/>
 	     <lit-tag v="prn"/>
@@ -3709,7 +3709,7 @@
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -3720,7 +3720,7 @@
          <pattern-item n="non-np"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
@@ -3730,7 +3730,7 @@
              <lit-tag v="gen"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -3741,7 +3741,7 @@
         <pattern-item n="adv"/>
       </pattern>
       <action>
-	<out>
+	<out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
           <lu>
             <clip pos="2" side="tl" part="whole"/>
           </lu>  
@@ -3749,7 +3749,7 @@
           <lu>
             <clip pos="1" side="tl" part="whole"/>
           </lu> 
-	</out>
+	</chunk></out>
       </action>
     </rule>
 
@@ -3774,7 +3774,7 @@
          </call-macro>
          <call-macro n="modify_verb_and_genero"><with-param pos="5"/></call-macro>
          <call-macro n="set_prn_suff_gen"><with-param pos="6"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
@@ -3818,12 +3818,12 @@
                <clip pos="6" side="tl" part="nbr"/>
              </lu>
 	   </mlu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
 
-   <!-- just an idea what to do with ta'... - my favourite Middle Egyptian (that is, hieroglyphic) construction, btw -->
+   <!-- just an idea what to do with ta'... - my favourite Middle Egyptian (that is, hieroglyphic) construction, btw; yeah, but agreement still needed -->
    <rule comment="rule 79: ta' oriġini Semitiċi">
        <pattern>
          <pattern-item n="ta_pr"/>
@@ -3835,7 +3835,7 @@
            <with-param pos="2"/>
            <with-param pos="3"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="3" side="tl" part="lem"/>
              <clip pos="3" side="tl" part="a_adj"/>
@@ -3853,7 +3853,7 @@
              <lit-tag v="gen"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -3869,7 +3869,7 @@
            <with-param pos="2"/>
            <with-param pos="3"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -3891,7 +3891,7 @@
              <clip pos="3" side="tl" part="nbr"/>
              <lit-tag v="gen"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -3912,7 +3912,7 @@
            <with-param pos="3"/>
            <with-param pos="4"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_prn"/>
@@ -3949,7 +3949,7 @@
              <clip pos="4" side="tl" part="nbr"/>
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -3963,7 +3963,7 @@
          <pattern-item n="u_prn"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -3977,7 +3977,7 @@
              <lit-tag v="px1pl"/>   <!-- TODO: add macro or sth to set poss. suffixes properly!!! -->
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -3989,7 +3989,7 @@
        </pattern>
        <action>
          <call-macro n="f_concord1"><with-param pos="1"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -4011,7 +4011,7 @@
                <clip pos="2" side="tl" part="lemq"/>
              </lu>
 	   </mlu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -4026,7 +4026,7 @@
        <action>
 	 <!-- is it possible to have both artic. and poss. suffix ?? -->
          <call-macro n="set_px_gen"><with-param pos="4"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 <!--	   <lu>
   	     <lit v="أن"/>
 	     <lit-tag v="cnjsub"/>
@@ -4053,7 +4053,7 @@
              <lit-tag v="px1pl"/>   <!-- TODO: add macro or sth to set poss. suffixes properly!!! -->
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule>
 
@@ -4071,7 +4071,7 @@
            <with-param pos="3"/>
            <with-param pos="4"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -4085,9 +4085,9 @@
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
 	   <b/>
-	 </out>
+	 </chunk><b/></out>
          <call-macro n="f_concord1"><with-param pos="2"/></call-macro>
-	 <out>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="lem"/>
              <clip pos="2" side="tl" part="a_det"/>
@@ -4131,7 +4131,7 @@
                <clip pos="4" side="tl" part="lemq"/>
              </lu>
 	   </mlu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -4159,7 +4159,7 @@
            <with-param pos="2"/>
            <with-param pos="7"/>
          </call-macro>
-	 <out>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -4206,7 +4206,7 @@
              <lit-tag v="gen"/>
              <clip pos="7" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -4231,7 +4231,7 @@
            <with-param pos="4"/>
            <with-param pos="5"/>
          </call-macro>
-	 <out>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="whole"/>
            </lu>
@@ -4287,7 +4287,7 @@
                <clip pos="5" side="tl" part="lemq"/>
              </lu>
 	   </mlu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -4302,7 +4302,7 @@
          <pattern-item n="non-np"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
@@ -4340,7 +4340,7 @@
                <clip pos="6" side="tl" part="lemq"/>
              </lu>
 	   </mlu> 
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -4352,7 +4352,7 @@
          <pattern-item n="non-np"/>
        </pattern>
        <action>
-	 <out>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_adj"/>
@@ -4373,7 +4373,7 @@
              <lit-tag v="artic"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -4407,7 +4407,7 @@
 	 </otherwise>
        </choose>
        <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
-       <out>
+       <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
          <lu>
            <clip pos="1" side="tl" part="lemh"/>
            <clip pos="1" side="tl" part="a_verb"/>
@@ -4466,7 +4466,7 @@
            <clip pos="5" side="tl" part="lemq"/>
           </lu>
 	</mlu>
-        </out>
+        </chunk></out>
        </action>
     </rule> 
 
@@ -4479,7 +4479,7 @@
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="2"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_verb"/>
@@ -4491,7 +4491,7 @@
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -4509,7 +4509,7 @@
            <with-param pos="2"/>
            <with-param pos="3"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -4540,7 +4540,7 @@
            <lit-tag v="acc"/>
            <clip pos="3" side="tl" part="lemq"/>
          </lu>
-	   </out>
+	   </chunk></out>
        </action>
     </rule> 
 
@@ -4557,7 +4557,7 @@
         <with-param pos="3"/>
         <with-param pos="4"/>
       </call-macro>
-      <out>
+      <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
         <lu>
           <clip pos="2" side="tl" part="lemh"/>
           <clip pos="2" side="tl" part="a_adj"/>
@@ -4586,7 +4586,7 @@
           <lit-tag v="gen"/>
           <clip pos="4" side="tl" part="lemq"/>
         </lu>
-      </out>
+      </chunk></out>
     </action>
   </rule>
 
@@ -4603,7 +4603,7 @@
         <with-param pos="2"/>
         <with-param pos="3"/>
       </call-macro>
-      <out>
+      <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
         <lu>
           <clip pos="1" side="tl" part="whole"/>
         </lu>
@@ -4628,7 +4628,7 @@
             <clip pos="3" side="tl" part="lemq"/>
           </lu>
         </mlu>
-      </out>
+      </chunk></out>
     </action>
   </rule>
 
@@ -4639,7 +4639,7 @@
         <pattern-item n="nompl"/>
       </pattern>
       <action>
-      <out>
+      <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
         <lu>
           <lit v="بعض"/>
           <lit-tag v="det"/>
@@ -4665,7 +4665,7 @@
             <clip pos="2" side="tl" part="lemq"/>
           </lu>
         </mlu>
-      </out>
+      </chunk></out>
     </action>
   </rule>
 
@@ -4681,7 +4681,7 @@
         <with-param pos="2"/>
         <with-param pos="3"/>
       </call-macro>
-      <out>
+      <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
         <lu>
           <lit v="بعض"/>
           <lit-tag v="det"/>
@@ -4724,7 +4724,7 @@
             <clip pos="3" side="tl" part="lemq"/>
           </lu>
         </mlu>
-      </out>
+      </chunk></out>
     </action>
   </rule>
 
@@ -4734,7 +4734,7 @@
         <pattern-item n="nomsg"/>
       </pattern>
       <action>
-      <out>
+      <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
         <lu>
           <clip pos="2" side="tl" part="lemh"/>
           <clip pos="2" side="tl" part="a_nom"/>
@@ -4752,7 +4752,7 @@
           <clip pos="2" side="tl" part="gen"/>
           <lit-tag v="sg"/>
 	</lu>  -->
-      </out>
+      </chunk></out>
     </action>
   </rule>
 
@@ -4775,7 +4775,7 @@
            <with-param pos="2"/>
            <with-param pos="4"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
@@ -4818,7 +4818,7 @@
            <clip pos="4" side="tl" part="nbr"/>
            <clip pos="4" side="tl" part="lemq"/>
          </lu>
-       </out>
+       </chunk></out>
       </action>
     </rule> 
 
@@ -4829,7 +4829,7 @@
        <pattern-item n="detqnt_comp"/>
      </pattern>
      <action>
-       <out>
+       <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	<mlu>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
@@ -4843,7 +4843,7 @@
              <clip pos="2" side="tl" part="whole"/>  --> <!-- acc. cstr -->
           </lu>
 	</mlu>
-      </out>
+      </chunk></out>
     </action>
   </rule>
 
@@ -4858,7 +4858,7 @@
         <pattern-item n="non-np"/>
       </pattern>
       <action>
-      <out>
+      <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
         <lu>
           <lit v="بعض"/>
           <lit-tag v="det"/>
@@ -4917,7 +4917,7 @@
             <clip pos="6" side="tl" part="lemq"/>
 	  </lu>
         </mlu>
-      </out>
+      </chunk></out>
     </action>
   </rule>
 
@@ -4937,7 +4937,7 @@
          <with-param pos="6"/>
          <with-param pos="7"/>
        </call-macro>
-      <out>
+      <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
         <lu>
           <lit v="بعض"/>
           <lit-tag v="det"/>
@@ -5013,7 +5013,7 @@
             <clip pos="7" side="tl" part="lemq"/>
           </lu>
 	</mlu>
-      </out>
+      </chunk></out>
     </action>
   </rule>
 
@@ -5031,7 +5031,7 @@
          <with-param pos="2"/>
          <with-param pos="4"/>
        </call-macro>
-       <out>
+       <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
          <lu>
            <clip pos="1" side="tl" part="whole"/>
          </lu>
@@ -5066,7 +5066,7 @@
              <clip pos="4" side="tl" part="nbr"/>
            </lu>
  	 </mlu>
-       </out>
+       </chunk></out>
      </action>
    </rule>
 
@@ -5092,7 +5092,7 @@
            <with-param pos="6"/>
            <with-param pos="8"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -5155,7 +5155,7 @@
            <lu>
              <clip pos="8" side="tl" part="whole"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -5169,7 +5169,7 @@
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
          <call-macro n="set_prn_suff_gen"><with-param pos="3"/></call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>      
 	     <clip pos="1" side="tl" part="whole"/>
 	   </lu>
@@ -5202,7 +5202,7 @@
                <clip pos="3" side="tl" part="nbr"/>
              </lu>
 	   </mlu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -5219,7 +5219,7 @@
            <with-param pos="3"/>
            <with-param pos="2"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	 <mlu>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
@@ -5243,7 +5243,7 @@
            <clip pos="3" side="tl" part="poss"/>
            <clip pos="3" side="tl" part="lemq"/>
          </lu>
-       </out>
+       </chunk></out>
      </action>
     </rule>
 
@@ -5264,7 +5264,7 @@
          <with-param pos="5"/>
          <with-param pos="8"/>
        </call-macro>
-       <out>
+       <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
         <lu>
           <clip pos="2" side="tl" part="lemh"/>
           <clip pos="2" side="tl" part="a_nom"/>
@@ -5313,7 +5313,7 @@
           <lit-tag v="gen"/>
           <clip pos="8" side="tl" part="lemq"/>
         </lu>
-      </out>
+      </chunk></out>
     </action>
   </rule>
 
@@ -5329,7 +5329,7 @@
          <with-param pos="1"/>
          <with-param pos="2"/>
        </call-macro>
-       <out>
+       <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
          <lu>
            <clip pos="1" side="tl" part="lemh"/>
            <clip pos="1" side="tl" part="a_nom"/>
@@ -5351,7 +5351,7 @@
            <clip pos="2" side="tl" part="nbr"/>
            <clip pos="3" side="tl" part="lemq"/>
          </lu>
-       </out>
+       </chunk></out>
      </action>
     </rule>
 
@@ -5380,7 +5380,7 @@
          <with-param pos="2"/>
          <with-param pos="8"/>
        </call-macro>
-       <out>
+       <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
          <lu>
            <clip pos="2" side="tl" part="lemh"/>
            <clip pos="2" side="tl" part="a_nom"/>
@@ -5436,7 +5436,7 @@
           <lit-tag v="nom"/>
           <clip pos="8" side="tl" part="lemq"/>
         </lu>
-       </out>
+       </chunk></out>
      </action>
     </rule>
 
@@ -5453,7 +5453,7 @@
         <with-param pos="2"/>
         <with-param pos="4"/>
       </call-macro>
-      <out>
+      <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
         <lu>
           <clip pos="2" side="tl" part="lemh"/>
           <clip pos="2" side="tl" part="a_nom"/>
@@ -5478,7 +5478,7 @@
         <lu>
           <clip pos="4" side="tl" part="whole"/>
         </lu>
-      </out>
+      </chunk></out>
     </action>
   </rule>
 
@@ -5506,7 +5506,7 @@
           <with-param pos="2"/>
           <with-param pos="7"/>
         </call-macro>
-        <out>
+        <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	  <mlu>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -5563,7 +5563,7 @@
             <lit-tag v="nom"/>
             <clip pos="7" side="tl" part="lemq"/>
           </lu>
-        </out>
+        </chunk></out>
       </action>
     </rule>
 
@@ -5577,7 +5577,7 @@
          <pattern-item n="non-np"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
@@ -5601,7 +5601,7 @@
              <lit-tag v="gen"/>
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
-	 </out>
+	 </chunk></out>
        </action>
     </rule> 
 
@@ -5623,7 +5623,7 @@
            <with-param pos="2"/>
            <with-param pos="5"/>
          </call-macro>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <mlu>
              <lu>
                <clip pos="1" side="tl" part="whole"/>
@@ -5664,7 +5664,7 @@
              <clip pos="5" side="tl" part="nbr"/>
              <lit-tag v="nom"/>
            </lu>
-         </out>
+         </chunk></out>
        </action>
     </rule>
 
@@ -5678,7 +5678,7 @@
          <pattern-item n="non-np"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
              <clip pos="1" side="tl" part="whole"/>
 	   </lu>
@@ -5711,7 +5711,7 @@
                <clip pos="5" side="tl" part="lemq"/>
              </lu>
 	   </mlu>
-         </out>
+         </chunk></out>
        </action>
     </rule> 
 
@@ -5726,7 +5726,7 @@
          <pattern-item n="non-np"/>
        </pattern>
        <action>
-         <out>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	   <lu>
              <clip pos="1" side="tl" part="whole"/>
 	   </lu>
@@ -5759,7 +5759,7 @@
                <clip pos="6" side="tl" part="lemq"/>
              </lu>
 	   </mlu>
-         </out>
+         </chunk></out>
        </action>
     </rule> 
 
@@ -5785,7 +5785,7 @@
           <with-param pos="2"/>
           <with-param pos="5"/>
         </call-macro>
-        <out>
+        <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	  <mlu>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -5830,7 +5830,7 @@
             <lit-tag v="nom"/>
             <clip pos="5" side="tl" part="lemq"/>
           </lu>
-        </out>
+        </chunk></out>
       </action>
     </rule>
 
@@ -5854,7 +5854,7 @@
           <with-param pos="2"/>
           <with-param pos="4"/>
         </call-macro>
-        <out>
+        <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
 	  <mlu>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -5913,7 +5913,7 @@
             <clip pos="7" side="tl" part="poss"/>
             <clip pos="7" side="tl" part="lemq"/>
           </lu>
-        </out>
+        </chunk></out>
       </action>
     </rule>
 
@@ -5928,7 +5928,7 @@
         <pattern-item n="non-np"/>
       </pattern>
       <action>
-      <out>
+      <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
         <lu>
           <clip pos="1" side="tl" part="lemh"/>
           <clip pos="1" side="tl" part="a_nom"/>
@@ -5976,7 +5976,7 @@
             <clip pos="6" side="tl" part="lemq"/>
           </lu>
         </mlu>
-      </out>
+      </chunk></out>
     </action>
   </rule>
 
@@ -5998,7 +5998,7 @@
         <with-param pos="2"/>
         <with-param pos="5"/>
       </call-macro>
-      <out>
+      <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
         <lu>
           <clip pos="2" side="tl" part="lemh"/>
           <clip pos="2" side="tl" part="a_nom"/>
@@ -6025,7 +6025,7 @@
         <lu>
           <clip pos="5" side="tl" part="whole"/>
         </lu>
-      </out>
+      </chunk></out>
     </action>
   </rule>
 
