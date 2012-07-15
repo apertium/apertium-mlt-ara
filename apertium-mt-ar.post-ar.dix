@@ -103,8 +103,12 @@
 
     <pardef n="freepron">
       <!-- all personal pronouns should be put here -->
+      <e><p><l>أنا<b/></l><r>ني<b/></r></p></e>
+      <e><p><l>أنت<b/></l><r>ك<b/></r></p></e>
+      <e><p><l>هو<b/></l><r>ه<b/></r></p></e>
       <e><p><l>هي<b/></l><r>ها<b/></r></p></e>
       <e><p><l>نحن<b/></l><r>نا<b/></r></p></e>
+      <e><p><l>أنتم<b/></l><r>كم<b/></r></p></e>
     </pardef>
 
 

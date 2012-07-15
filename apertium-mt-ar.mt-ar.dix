@@ -101,20 +101,13 @@
      </pardef>
 
      <pardef n="mf_m_f">
-       <e r="LR"><p><l><s n="mf"/><s n="sg"/></l><r><s n="GD"/><s n="sg"/><s n="CD"/></r></p></e>
-       <e r="RL"><p><l><s n="mf"/><s n="sg"/></l><r><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
-       <e r="RL"><p><l><s n="mf"/><s n="sg"/></l><r><s n="m"/><s n="sg"/><s n="gen"/></r></p></e>
-       <e r="RL"><p><l><s n="mf"/><s n="sg"/></l><r><s n="m"/><s n="sg"/><s n="acc"/></r></p></e>
-       <e r="RL"><p><l><s n="mf"/><s n="sg"/></l><r><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
-       <e r="RL"><p><l><s n="mf"/><s n="sg"/></l><r><s n="f"/><s n="sg"/><s n="gen"/></r></p></e>
-       <e r="RL"><p><l><s n="mf"/><s n="sg"/></l><r><s n="f"/><s n="sg"/><s n="acc"/></r></p></e>
-       <e r="LR"><p><l><s n="mf"/><s n="pl"/></l><r><s n="GD"/><s n="pl"/><s n="CD"/></r></p></e>
-       <e r="RL"><p><l><s n="mf"/><s n="pl"/></l><r><s n="m"/><s n="pl"/><s n="nom"/></r></p></e>
-       <e r="RL"><p><l><s n="mf"/><s n="pl"/></l><r><s n="m"/><s n="pl"/><s n="gen"/></r></p></e>
-       <e r="RL"><p><l><s n="mf"/><s n="pl"/></l><r><s n="m"/><s n="pl"/><s n="acc"/></r></p></e>
-       <e r="RL"><p><l><s n="mf"/><s n="pl"/></l><r><s n="f"/><s n="pl"/><s n="nom"/></r></p></e>
-       <e r="RL"><p><l><s n="mf"/><s n="pl"/></l><r><s n="f"/><s n="pl"/><s n="gen"/></r></p></e>
-       <e r="RL"><p><l><s n="mf"/><s n="pl"/></l><r><s n="f"/><s n="pl"/><s n="acc"/></r></p></e>
+       <e r="LR"><p><l><s n="mf"/></l><r><s n="GD"/><s n="CD"/></r></p></e>
+       <e r="RL"><p><l><s n="mf"/></l><r><s n="m"/><s n="nom"/></r></p></e>
+       <e r="RL"><p><l><s n="mf"/></l><r><s n="m"/><s n="gen"/></r></p></e>
+       <e r="RL"><p><l><s n="mf"/></l><r><s n="m"/><s n="acc"/></r></p></e>
+       <e r="RL"><p><l><s n="mf"/></l><r><s n="f"/><s n="nom"/></r></p></e>
+       <e r="RL"><p><l><s n="mf"/></l><r><s n="f"/><s n="gen"/></r></p></e>
+       <e r="RL"><p><l><s n="mf"/></l><r><s n="f"/><s n="acc"/></r></p></e>
      </pardef>
 
 
@@ -293,7 +286,7 @@
      <!-- SECTION: Pronouns -->
 
      <e><p><l>free<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/></r></p></e>
-     <e><p><l>free<s n="prn"/><s n="p2"/></l><r>prpers<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f"/></e> 
+     <e><p><l>free<s n="prn"/><s n="p2"/></l><r>prpers<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f_nocase"/></e> 
      <e><p><l>free<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
      <e><p><l>free<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
      <e r="LR"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
@@ -304,7 +297,7 @@
      <!-- no indirect object suffixes in Arabic, translate as
 	  preposition ل 'for' + pronominal suffix -->
      <e><p><l>lu<s n="prn"/><s n="p1"/><s n="mf"/></l><r>ل<s n="pr"/><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/></r></p></e>
-     <e><p><l>lu<s n="prn"/><s n="p2"/></l><r>ل<s n="pr"/><j/>ه<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f"/></e> 
+     <e><p><l>lu<s n="prn"/><s n="p2"/></l><r>ل<s n="pr"/><j/>ه<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f_nocase"/></e> 
      <e><p><l>lu<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>ل<s n="pr"/><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
      <e><p><l>lu<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>ل<s n="pr"/><j/>ه<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
      <e r="LR"><p><l>lu<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>ل<s n="pr"/><j/>ه<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
@@ -315,7 +308,7 @@
      <!-- if no other rule applies, use free-standing direct object Arabic prn -->
      <!-- TODO add Arabic dual -->
      <e><p><l>u<s n="prn"/><s n="p1"/><s n="mf"/></l><r>إيا<s n="prn"/><s n="p1"/><s n="mf"/></r></p></e>
-     <e><p><l>u<s n="prn"/><s n="p2"/></l><r>إيا<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f"/></e> 
+     <e><p><l>u<s n="prn"/><s n="p2"/></l><r>إيا<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f_nocase"/></e> 
      <e><p><l>u<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
      <e><p><l>u<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 
@@ -393,74 +386,70 @@
 
 <!-- SECTION: Numerals -->
 
-<!-- <e>       <p><l>tnejn<s n="num"/></l>       <r>اثنان<s n="num"/></r></p></e>
-<e>       <p><l>ħam<s n="num"/></l>         <r>خمس<s n="num"/></r></p></e>
-<e r="LR"><p><l>sitt<s n="num"/></l>         <r>ست<s n="num"/></r></p></e> -->
-
 <!-- one pair, two pairs? -->
 <e>       <p><l>żewġ<s n="num"/></l>        <r>زوج<s n="num"/></r></p></e><!-- TODO -->
 
 
 <!-- 1..10 -->
-<e>       <p><l>wieħed<s n="num"/></l>      <r>واحد<s n="num"/></r></p></e>
-<e r="LR"><p><l>waħda<s n="num"/></l>       <r>واحدة<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>tnejn<s n="num"/></l>       <r>اثنان<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>tli<s n="num"/></l>         <r>ثلاثة<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>erb<s n="num"/></l>      <r>أربعة<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>ħam<s n="num"/></l>         <r>خمسة<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>sitt<s n="num"/></l>         <r>ستة<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>seb<s n="num"/></l>         <r>سبعة<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>tmi<s n="num"/></l>         <r>ثمانية<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>dis<s n="num"/></l>         <r>تسعة<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>għax<s n="num"/></l>        <r>عشرة<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
+<e>       <p><l>wieħed<s n="num"/></l>      <r>واحد<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e r="LR"><p><l>waħda<s n="num"/></l>       <r>واحدة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>tnejn<s n="num"/></l>       <r>اثنان<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>tli<s n="num"/></l>         <r>ثلاثة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>erb<s n="num"/></l>      <r>أربعة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>ħam<s n="num"/></l>         <r>خمسة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>sitt<s n="num"/></l>         <r>ستة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>seb<s n="num"/></l>         <r>سبعة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>tmi<s n="num"/></l>         <r>ثمانية<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>dis<s n="num"/></l>         <r>تسعة<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>għax<s n="num"/></l>        <r>عشرة<s n="num"/></r></p><par n="mf_m_f"/></e>
 
 <!-- 11..19 -->
-<e>       <p><l>ħdax<s n="num"/></l>        <r>أحد<b/>عشر<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>tnax<s n="num"/></l>        <r>اثنا<b/>عشر<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>tlettax<s n="num"/></l>     <r>ثلاثة<b/>عشر<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>erbatax<s n="num"/></l>     <r>أربعة<b/>عشر<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>ħmistax<s n="num"/></l>     <r>خمسة<b/>عشر<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>sittax<s n="num"/></l>      <r>ستة<b/>عشر<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>sbatax<s n="num"/></l>      <r>سبعة<b/>عشر<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>tmintax<s n="num"/></l>     <r>ثمانية<b/>عشر<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
-<e>       <p><l>dsatax<s n="num"/></l>      <r>تسعة<b/>عشر<s n="num"/></r></p><par n="mf_m_f_nocase"/></e>
+<e>       <p><l>ħdax<s n="num"/></l>        <r>أحد<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>tnax<s n="num"/></l>        <r>اثنا<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>tlettax<s n="num"/></l>     <r>ثلاثة<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>erbatax<s n="num"/></l>     <r>أربعة<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>ħmistax<s n="num"/></l>     <r>خمسة<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>sittax<s n="num"/></l>      <r>ستة<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>sbatax<s n="num"/></l>      <r>سبعة<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>tmintax<s n="num"/></l>     <r>ثمانية<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
+<e>       <p><l>dsatax<s n="num"/></l>      <r>تسعة<b/>عشر<s n="num"/></r></p><par n="mf_m_f"/></e>
 
 <!-- 20..90 -->
-<e>       <p><l>għoxrin<s n="num"/></l>     <r>عشرون<s n="num"/></r></p></e>
-<e>       <p><l>tletin<s n="num"/></l>      <r>ثلاثون<s n="num"/></r></p></e>
-<e>       <p><l>erbgħin<s n="num"/></l>     <r>أربعون<s n="num"/></r></p></e>
-<e>       <p><l>ħamsin<s n="num"/></l>      <r>خمسون<s n="num"/></r></p></e>
-<e>       <p><l>sittin<s n="num"/></l>      <r>ستون<s n="num"/></r></p></e>
-<e>       <p><l>sebgħin<s n="num"/></l>     <r>سبعون<s n="num"/></r></p></e>
-<e>       <p><l>tmenin<s n="num"/></l>      <r>ثمانون<s n="num"/></r></p></e>
-<e>       <p><l>disgħin<s n="num"/></l>     <r>تسعون<s n="num"/></r></p></e>
+<e>       <p><l>għoxrin<s n="num"/></l>     <r>عشرون<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e>       <p><l>tletin<s n="num"/></l>      <r>ثلاثون<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e>       <p><l>erbgħin<s n="num"/></l>     <r>أربعون<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e>       <p><l>ħamsin<s n="num"/></l>      <r>خمسون<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e>       <p><l>sittin<s n="num"/></l>      <r>ستون<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e>       <p><l>sebgħin<s n="num"/></l>     <r>سبعون<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e>       <p><l>tmenin<s n="num"/></l>      <r>ثمانون<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e>       <p><l>disgħin<s n="num"/></l>     <r>تسعون<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
 
 <!-- 100, 200, 1000, 2000 -->
-<e>       <p><l>mija<s n="num"/></l>        <r>مئة<s n="num"/></r></p></e>
-<e>       <p><l>mitejn<s n="num"/></l>      <r>مئتان<s n="num"/></r></p></e>
-<e>       <p><l>elf<s n="num"/></l>         <r>ألف<s n="num"/></r></p></e>
-<e>       <p><l>elfejn<s n="num"/></l>      <r>ألفان<s n="num"/></r></p></e>
+<e>       <p><l>mija<s n="num"/></l>        <r>مئة<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e>       <p><l>mitejn<s n="num"/></l>      <r>مئتان<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e>       <p><l>elf<s n="num"/></l>         <r>ألف<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e>       <p><l>elfejn<s n="num"/></l>      <r>ألفان<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
 
-<e>       <p><l>miljun<s n="num"/></l><r>مليون<s n="num"/></r></p></e>
-<e>       <p><l>biljun<s n="num"/></l><r>بليون<s n="num"/></r></p></e>
- <e>       <p><l>triljun<s n="num"/></l><r>تريليون<s n="num"/></r></p></e>
+<e>       <p><l>miljun<s n="num"/></l><r>مليون<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e>       <p><l>biljun<s n="num"/></l><r>بليون<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e>       <p><l>triljun<s n="num"/></l><r>تريليون<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
 
 <!-- one pair, two pairs? -->
 <!--<e>       <p><l>żewġ<s n="num"/></l>        <r>זוג<s n="num"/></r></p></e>--><!-- TODO -->
 
 
 <!-- 1st .. 10th, 100th -->
-<e>       <p><l>ewwel<s n="num"/><s n="ord"/></l><r>أول<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl_nocase"/></e>
-<e>       <p><l>tieni<s n="num"/><s n="ord"/></l><r>ثان<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl_nocase"/></e>
-<e>       <p><l>tielet<s n="num"/><s n="ord"/></l><r>ثالث<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl_nocase"/></e>
-<e>       <p><l>raba<s n="num"/><s n="ord"/></l><r>رابع<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl_nocase"/></e>
-<e>       <p><l>hames<s n="num"/><s n="ord"/></l><r>خامس<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl_nocase"/></e>
-<e>       <p><l>sitt<s n="num"/><s n="ord"/></l><r>سادس<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl_nocase"/></e>
-<e>       <p><l>seba<s n="num"/><s n="ord"/></l><r>سابع<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl_nocase"/></e>
-<e>       <p><l>tmien<s n="num"/><s n="ord"/></l><r>ثامن<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl_nocase"/></e>
-<e>       <p><l>disa<s n="num"/><s n="ord"/></l><r>تاسع<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl_nocase"/></e>
-<e>       <p><l>għaxar<s n="num"/><s n="ord"/></l><r>عاشر<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl_nocase"/></e>
- <e>       <p><l>mitt<s n="num"/><s n="ord"/></l><r>مئة<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl_nocase"/></e>  <!-- TODO -->
+<e>       <p><l>ewwel<s n="num"/><s n="ord"/></l><r>أول<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>tieni<s n="num"/><s n="ord"/></l><r>ثان<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>tielet<s n="num"/><s n="ord"/></l><r>ثالث<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>raba<s n="num"/><s n="ord"/></l><r>رابع<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>hames<s n="num"/><s n="ord"/></l><r>خامس<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>sitt<s n="num"/><s n="ord"/></l><r>سادس<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>seba<s n="num"/><s n="ord"/></l><r>سابع<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>tmien<s n="num"/><s n="ord"/></l><r>ثامن<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>disa<s n="num"/><s n="ord"/></l><r>تاسع<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+<e>       <p><l>għaxar<s n="num"/><s n="ord"/></l><r>عاشر<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+ <e>       <p><l>mitt<s n="num"/><s n="ord"/></l><r>مئة<s n="num"/><s n="ord"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>  <!-- TODO -->
 
 
 <e>       <p><l>XVI<s n="num"/></l>         <r>XVI<s n="num"/></r></p></e>
