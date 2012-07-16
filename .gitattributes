@@ -67,3 +67,6 @@ dev/trimmed-coverage.sh -text
 /lexchoicebil.xsl -text
 /modes.xml -text
 /mt-ar.prob -text
+/pending-tests.sh -text
+/regression-tests.sh -text
+/wiki-tests.sh -text
