@@ -23,7 +23,7 @@ elif [[ $1 = "mt-ar" ]]; then
 
 lt-expand ../apertium-mt-ar.mt.dix | expansion-to-pretransfer | tee $TMPDIR/tmp_testvoc1.txt |
         apertium-pretransfer|
-        apertium-transfer ../apertium-mt-ar.mt-ar.t1x  ../mt-ar.t1x.bin  ../mt-ar.autobil.bin | tee $TMPDIR/tmp_testvoc2.txt |
+        apertium-transfer ../apertium-mt-ar.mt-ar.t1x  ../mt-ar.t1x.bin ../mt-ar.autobil.bin | apertium-interchunk ../apertium-mt-ar.mt-ar.t2x ../mt-ar.t2x.bin | apertium-postchunk ../apertium-mt-ar.mt-ar.t3x ../mt-ar.t3x.bin | tee $TMPDIR/tmp_testvoc2.txt |
         lt-proc -d ../mt-ar.autogen.bin > $TMPDIR/tmp_testvoc3.txt
 paste -d _ $TMPDIR/tmp_testvoc1.txt $TMPDIR/tmp_testvoc2.txt $TMPDIR/tmp_testvoc3.txt | sed 's/\^.<sent>\$//g' | sed 's/_/   --------->  /g'
 

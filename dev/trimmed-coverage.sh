@@ -9,7 +9,7 @@ fi
 # This file is kept even after the script is ended:
 needed=/tmp/corpus-stat-all-needed.txt
 
-covgoal="75" # percent goal we aim for this week, according to http://wiki.apertium.org/wiki/Maltese_and_Arabic/Work_plan
+covgoal="77" # percent goal we aim for this week, according to http://wiki.apertium.org/wiki/Maltese_and_Arabic/Work_plan
 
 
 cd "$(dirname $0)"
@@ -23,7 +23,7 @@ TODOstripwords="the The of oblast in In it if ki any will his this who we right 
 
 
 ### Do the translation:
-apertium-deshtml | apertium -f none -d .. mt-ar-transfer | apertium-cleanstream -n | tee "$transfout" | lt-proc -d ../mt-ar.autogen.bin > "$genout"
+apertium-deshtml | apertium -f none -d .. mt-ar-postchunk | apertium-cleanstream -n | tee "$transfout" | lt-proc -d ../mt-ar.autogen.bin > "$genout"
 
 
 

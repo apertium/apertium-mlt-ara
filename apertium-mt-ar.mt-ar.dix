@@ -2279,6 +2279,7 @@
       <e r="LR"><p><l>lessiku<s n="n"/><s n="m"/><s n="sg"/></l><r>كلمة<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/></r></p><par n="nocase_nom_gen_acc"/></e>
       <e r="LR"><p><l>lessiku<s n="n"/><s n="m"/><s n="pl"/></l><r>كلمة<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/></r></p><par n="nocase_nom_gen_acc"/></e> <!-- and معجم, قاموس - but not in story3 -->
       <e><p><l>vokabolarju<s n="n"/><s n="m"/><s n="sg"/></l><r>مفرد<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p><par n="nocase_nom_gen_acc"/></e>
+      <e r="LR"><p><l>vokabolarju<s n="n"/><s n="m"/><s n="pl"/></l><r>مفرد<s n="n"/><s n="m"/><s n="nn"/><s n="pl"/></r></p><par n="nocase_nom_gen_acc"/></e>
       <e><p><l>alfabet<s n="n"/><s n="m"/><s n="sg"/></l><r>أبجد<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
       <e r="RL"><p><l>alfabet<s n="n"/><s n="m"/><s n="sg"/></l><r>أبجدية<s n="n"/><s n="f"/><s n="nn"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
       <e><p><l>alfabet<s n="n"/><s n="m"/><s n="pl"/></l><r>أبجدية<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/></r></p><par n="nocase_nom_gen_acc"/></e>
@@ -2309,9 +2310,8 @@
       <e><p><l>femminil<s n="n"/><s n="m"/></l><r>مؤنث<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
       <e><p><l>singular<s n="n"/><s n="m"/></l><r>مفرد<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
       <e><p><l>verb<s n="n"/><s n="m"/></l><r>فعل<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
-      <e><p><l>verb<b/>transittiv<s n="n"/><s n="m"/></l><r>فعل<b/>متعد<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e> <!-- add to ar.dix -->
       <e><p><l>feniċu<s n="n"/><s n="m"/></l><r>فينيقي<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nocase_nom_gen_acc"/></e>
-      <e><p><l>għarbi<s n="n"/><s n="m"/><s n="pl"/></l><r>عربي<s n="n"/><s n="m"/><s n="aa"/><s n="pl"/></r></p><par n="nocase_nom_gen_acc"/></e>  <!-- problem with language :( -->
+      <e><p><l>għarbi<s n="n"/><s n="m"/><s n="pl"/></l><r>عربي<s n="n"/><s n="m"/><s n="aa"/><s n="pl"/></r></p><par n="nocase_nom_gen_acc"/></e> 
       <e><p><l>burqax<s n="n"/><s n="m"/></l><r>سمك<b/>مبرقش<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
       <e><p><l>kollettiv<s n="n"/><s n="m"/><s n="sg"/></l><r>اسم<b/>جنس<b/>جمعي<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
 
