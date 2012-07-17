@@ -2320,6 +2320,14 @@
       <e><p><l>Puniku<s n="n"/><s n="m"/></l><r>بونيقية<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
       <e><p><l>Semitiku<s n="n"/><s n="m"/></l><r>سامية<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
 
+      <e><p><l>islam<s n="n"/><s n="m"/><s n="sg"/></l><r>إسلام<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
+      <e><p><l>mislem<s n="n"/><s n="m"/></l><r>مسلم<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nocase_nom_gen_acc"/></e>
+      <e><p><l>profeta<s n="n"/><s n="m"/></l><r>رسول<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nocase_nom_gen_acc"/></e>
+      <e><p><l>dizzjunarju<s n="n"/><s n="m"/></l><r>قاموس<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e> <!-- معجم ? -->
+      <e><p><l>qarrej<s n="n"/><s n="m"/></l><r>قارئ<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nocase_nom_gen_acc"/></e>
+      <e><p><l>kalif<s n="n"/><s n="m"/></l><r>خليفة<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nocase_nom_gen_acc"/></e>
+      <e><p><l>kitba<s n="n"/><s n="f"/></l><r>كتابة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
+
 
      <!-- SECTION: Proper nouns -->
 
@@ -2338,7 +2346,8 @@
      <e><p><l>Estonja<s n="np"/><s n="top"/><s n="f"/></l><r>استونيا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>Awstralja<s n="np"/><s n="top"/><s n="f"/></l><r>أستراليا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>Iżrael<s n="np"/><s n="top"/><s n="m"/></l><r>إسرائيل<s n="np"/><s n="top"/><s n="m"/></r></p><par n="nocase_nom_gen_acc"/></e>
-
+     <e><p><l>Mekka<s n="np"/><s n="top"/><s n="f"/></l><r>مكة<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nocase_nom_gen_acc"/></e>
+     <e><p><l>Hira<s n="np"/><s n="top"/><s n="f"/></l><r>الحيرة<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nocase_nom_gen_acc"/></e>
 
      <e><p><l>Ċina<s n="np"/><s n="top"/><s n="f"/></l><r>الصين<s n="np"/><s n="top"/><s n="m"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>Varsavja<s n="np"/><s n="top"/><s n="f"/></l><r>وارسو<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nocase_nom_gen_acc"/></e>
@@ -2767,6 +2776,11 @@
     <e><p><l>Ġan<s n="np"/><s n="ant"/><s n="m"/></l><r>جان<s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nocase_nom_gen_acc"/></e>
 
 
+     <e><p><l>Muħammed<s n="np"/><s n="ant"/><s n="m"/></l><r>محمد<s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nocase_nom_gen_acc"/></e>
+     <e><p><l>Gabriel<s n="np"/><s n="ant"/><s n="m"/></l><r>جبريل<s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nocase_nom_gen_acc"/></e>
+     <e><p><l>Abu<b/>Bakr<s n="np"/><s n="ant"/><s n="m"/></l><r>أبو<g><b/>بكر</g><s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nocase_nom_gen_acc"/></e>
+     <e><p><l>Uthman<s n="np"/><s n="ant"/><s n="m"/></l><r>عثمان<s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nocase_nom_gen_acc"/></e>
+
     <e><p><l>Borg<s n="np"/><s n="cog"/><s n="mf"/></l><r>بورج<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nocase_nom_gen_acc"/></e>
     <e><p><l>Foucault<s n="np"/><s n="cog"/><s n="mf"/></l><r>فوكو<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nocase_nom_gen_acc"/></e>
     <e><p><l>Dylan<s n="np"/><s n="cog"/><s n="mf"/></l><r>ديلان<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nocase_nom_gen_acc"/></e>
@@ -2968,6 +2982,8 @@
     <e><p><l>UEFA<b/>Europa<b/>League<s n="np"/><s n="al"/><s n="m"/></l><r>الدوري<b/>الأوروبي<s n="np"/><s n="al"/><s n="m"/></r></p><par n="nocase_nom_gen_acc"/></e>
     <e><p><l>UEFA<b/>Champions<b/>League<s n="np"/><s n="al"/><s n="m"/></l><r>دوري<b/>أبطال<b/>أوروبا<s n="np"/><s n="al"/><s n="m"/></r></p><par n="nocase_nom_gen_acc"/></e>
 
+    <e><p><l>Koran<s n="np"/><s n="al"/><s n="m"/></l><r>القرآن<s n="np"/><s n="al"/><s n="m"/></r></p><par n="nocase_nom_gen_acc"/></e>
+
 
      <!-- SECTION: Adjectives -->
 
@@ -3118,7 +3134,7 @@
      <e><p><l>twil<s n="adj"/></l><r>طويل<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e r="LR"><p><l>ċert<s n="adj"/></l><r>متأكد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>qaddis<s n="adj"/></l><r>مقدس<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
-     <e><p><l>santu<s n="adj"/></l><r>مقدس<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>santu<s n="adj"/></l><r>مقدس<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>lest<s n="adj"/></l><r>مستعد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>suppost<s n="adj"/></l><r>مفترض<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e><p><l>internazzjonali<s n="adj"/></l><r>دولي<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
@@ -3839,6 +3855,8 @@
      <e><p><l>ħoxni<s n="adj"/></l><r>ضخم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- hm, خشن? -->
      <e><p><l>mnissel<s n="adj"/></l><r>مشتق<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e r="LR"><p><l>bsaħħitu<s n="adj"/></l><r>قوي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>imqaddes<s n="adj"/></l><r>مقدس<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>imħabbar<s n="adj"/></l><r>موحى<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
 
      <!-- SECTION: Interjections -->
 
@@ -4362,6 +4380,14 @@
      <e><p><l>semma<s n="vblex"/><s n="tv"/></l><r>ذكر<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> <!-- & سمى ? -->
      <e><p><l>issejjaħ<s n="vblex"/><s n="iv"/></l><r>سمى<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e> 
      <e><p><l>uża<s n="vblex"/><s n="tv"/></l><r>استخدم<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+
+     <e><p><l>nkiteb<s n="vblex"/><s n="iv"/></l><r>كتب<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
+     <e><p><l>nqara<s n="vblex"/><s n="iv"/></l><r>قرأ<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
+     <e><p><l>emmen<s n="vblex"/><s n="iv"/></l><r>آمن<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
+     <e><p><l>tfakkar<s n="vblex"/><s n="iv"/></l><r>ذكر<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
+     <e><p><l>irranġa<s n="vblex"/><s n="tv"/></l><r>جعل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e><p><l>kompla<s n="vblex"/><s n="iv"/></l><r>واصل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e><p><l>rfina<s n="vblex"/><s n="tv"/></l><r>حسن<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
 
      <!-- SECTION: Punctuation -->
      <e><re>[.:!]</re>   <p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>

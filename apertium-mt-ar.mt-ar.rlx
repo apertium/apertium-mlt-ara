@@ -15,6 +15,9 @@ LIST REL = rel;
 LIST SG = sg;
 LIST PL = pl;
 
+LIST NOUNSG = (n sg);
+LIST NOUNPL = (n pl);
+
 LIST VRBSG = (vblex sg) (vaux sg);
 LIST VRBPL = (vblex pl) (vaux pl);
 
@@ -79,3 +82,8 @@ SELECT:r9 NOUN IF
         (0 ADJ)
         (1 PRN) ;
 # u l-kollettiv huwa
+
+SELECT:r10 VRBPL IF
+        (-1 NOUNPL)
+        (0 VRBPL)
+        (0 VRBSG) ;
