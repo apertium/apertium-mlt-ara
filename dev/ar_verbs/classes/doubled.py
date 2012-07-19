@@ -57,20 +57,26 @@ def doubled_past_pasv(base, base_t, base_n, r): #{
 
 	forms = {};
 
-	forms['pasv.past.p3.m.sg'] = [(base, '-', r)];
-	forms['pasv.past.p3.f.sg'] = [(base + 'ت', '-', r)];
-	forms['pasv.past.p2.m.sg'] = [(base_t + 'ت', '-', r)];
-	forms['pasv.past.p2.f.sg'] = [(base_t + 'ت', '-', r)];
-	forms['pasv.past.p1.mf.sg'] = [(base_t + 'ت', '-', r)];
-	forms['pasv.past.p3.m.du'] = [(base + 'ا', '-', r)];
-	forms['pasv.past.p3.f.du'] = [(base + 'تا', '-', r)];
-	forms['pasv.past.p2.mf.du'] = [(base_t + 'تما', '-', r)];
+	rlbase = base[0: 2] + 'ُ' + base[2: ];
+	rlbase_t = base_t[0: 2] + 'ُ' + base_t[2: ];
+	rlbase_n = base_n[0: 2] + 'ُ' + base_n[2: ];	
 
-	forms['pasv.past.p3.m.pl'] = [(base + 'وا', '-', r)];
-	forms['pasv.past.p3.f.pl'] = [(base_n + 'ن', '-', r)];
-	forms['pasv.past.p2.m.pl'] = [(base_t + 'تم', '-', r)];
-	forms['pasv.past.p2.f.pl'] = [(base_t + 'تن', '-', r)];
-	forms['pasv.past.p1.mf.pl'] = [(base_n + 'نا', '-', r)];
+
+	forms['pasv.past.p3.m.sg'] = [(base, '-', 'LR'), (rlbase, '-', 'RL')];
+	forms['pasv.past.p3.f.sg'] = [(base + 'ت', '-', 'LR'), (rlbase + 'ت', '-', 'RL')];
+	forms['pasv.past.p2.m.sg'] = [(base_t + 'ت', '-', 'LR'), (rlbase_t + 'ت', '-', 'RL')];
+	forms['pasv.past.p2.f.sg'] = [(base_t + 'ت', '-', 'LR'), (rlbase_t + 'ت', '-', 'RL')];
+	forms['pasv.past.p1.mf.sg'] = [(base_t + 'ت', '-', 'LR'), (rlbase_t + 'ت', '-', 'RL')];
+
+	forms['pasv.past.p3.m.du'] = [(base + 'ا', '-', 'LR'), (rlbase + 'ا', '-', 'RL')];
+	forms['pasv.past.p3.f.du'] = [(base + 'تا', '-', 'LR'), (rlbase + 'تا', '-', 'RL')];
+	forms['pasv.past.p2.mf.du'] = [(base_t + 'تما', '-', 'LR'), (rlbase_t + 'تما', '-', 'RL')];
+
+	forms['pasv.past.p3.m.pl'] = [(base + 'وا', '-', 'LR'), (rlbase + 'وا', '-', 'RL')];
+	forms['pasv.past.p3.f.pl'] = [(base_n + 'ن', '-', 'LR'), (rlbase_n + 'ن', '-', 'RL')];
+	forms['pasv.past.p2.m.pl'] = [(base_t + 'تم', '-', 'LR'), (rlbase_t + 'تم', '-', 'RL')];
+	forms['pasv.past.p2.f.pl'] = [(base_t + 'تن', '-', 'LR'), (rlbase_t + 'تن', '-', 'RL')];
+	forms['pasv.past.p1.mf.pl'] = [(base_n + 'نا', '-', 'LR'), (rlbase_n + 'نا', '-', 'RL')];
 
 	return forms;
 #}
@@ -125,21 +131,21 @@ def doubled_pres_pasv(base, base_n, r): #{
 
 	forms = {};
 
-	forms['pasv.pres.p3.m.sg'] = [('ي' + base, '-', r)];
-	forms['pasv.pres.p3.f.sg'] = [('ت' + base, '-', r)];
-	forms['pasv.pres.p2.m.sg'] = [('ت' + base, '-', r)];
-	forms['pasv.pres.p2.f.sg'] = [('ت' + base + 'ين', '-', r)];
-	forms['pasv.pres.p1.mf.sg'] = [('أ' + base, '-', r)];
+	forms['pasv.pres.p3.m.sg'] = [('ي' + base, '-', 'LR'), ('يُ' + base, '-', 'RL')];
+	forms['pasv.pres.p3.f.sg'] = [('ت' + base, '-', 'LR'), ('تُ' + base, '-', 'RL')];
+	forms['pasv.pres.p2.m.sg'] = [('ت' + base, '-', 'LR'), ('تُ' + base, '-', 'RL')];
+	forms['pasv.pres.p2.f.sg'] = [('ت' + base + 'ين', '-', 'LR'), ('تُ' + base + 'ين', '-', 'RL')];
+	forms['pasv.pres.p1.mf.sg'] = [('أ' + base, '-', 'LR'), ('اُ' + base, '-', 'RL')];
 
-	forms['pasv.pres.p3.m.du'] = [('ي' + base + 'ان', '-', r)];
-	forms['pasv.pres.p3.f.du'] = [('ت' + base + 'ان', '-', r)];
-	forms['pasv.pres.p2.mf.du'] = [('ت' + base + 'ان', '-', r)];
+	forms['pasv.pres.p3.m.du'] = [('ي' + base + 'ان', '-', 'LR'), ('يُ' + base + 'ان', '-', 'RL')];
+	forms['pasv.pres.p3.f.du'] = [('ت' + base + 'ان', '-', 'LR'), ('تُ' + base + 'ان', '-', 'RL')];
+	forms['pasv.pres.p2.mf.du'] = [('ت' + base + 'ان', '-', 'LR'), ('تُ' + base + 'ان', '-', 'RL')];
 
-	forms['pasv.pres.p3.m.pl'] = [('ي' + base + 'ون', '-', r)];
-	forms['pasv.pres.p3.f.pl'] = [('ي' + base_n + 'ن', '-', r)];
-	forms['pasv.pres.p2.m.pl'] = [('ت' + base + 'ون', '-', r)];
-	forms['pasv.pres.p2.f.pl'] = [('ت' + base_n + 'ن', '-', r)];
-	forms['pasv.pres.p1.mf.pl'] = [('ن' + base, '-', r)];
+	forms['pasv.pres.p3.m.pl'] = [('ي' + base + 'ون', '-', 'LR'), ('يُ' + base + 'ون', '-', 'RL')];
+	forms['pasv.pres.p3.f.pl'] = [('ي' + base_n + 'ن', '-', 'LR'), ('يُ' + base_n + 'ن', '-', 'RL')];
+	forms['pasv.pres.p2.m.pl'] = [('ت' + base + 'ون', '-', 'LR'), ('تُ' + base + 'ون', '-', 'RL')];
+	forms['pasv.pres.p2.f.pl'] = [('ت' + base_n + 'ن', '-', 'LR'), ('تُ' + base_n + 'ن', '-', 'RL')];
+	forms['pasv.pres.p1.mf.pl'] = [('ن' + base, '-', 'LR'), ('نُ' + base, '-', 'RL')];
 
 	return forms;
 #}
@@ -194,21 +200,21 @@ def doubled_subjun_pasv(base, base_n, r): #{
 
 	forms = {};
 
-	forms['pasv.subjun.p3.m.sg'] = [('ي' + base, '-', r)];
-	forms['pasv.subjun.p3.f.sg'] = [('ت' + base, '-', r)];
-	forms['pasv.subjun.p2.m.sg'] = [('ت' + base, '-', r)];
-	forms['pasv.subjun.p2.f.sg'] = [('ت' + base + 'ي', '-', r)];
-	forms['pasv.subjun.p1.mf.sg'] = [('أ' + base, '-', r)];
+	forms['pasv.subjun.p3.m.sg'] = [('ي' + base, '-', 'LR'), ('يُ' + base, '-', 'RL')];
+	forms['pasv.subjun.p3.f.sg'] = [('ت' + base, '-', 'LR'), ('تُ' + base, '-', 'RL')];
+	forms['pasv.subjun.p2.m.sg'] = [('ت' + base, '-', 'LR'), ('تُ' + base, '-', 'RL')];
+	forms['pasv.subjun.p2.f.sg'] = [('ت' + base + 'ي', '-', 'LR'), ('تُ' + base + 'ي', '-', 'RL')];
+	forms['pasv.subjun.p1.mf.sg'] = [('أ' + base, '-', 'LR'), ('اُ' + base, '-', 'RL')];
 
-	forms['pasv.subjun.p3.m.du'] = [('ي' + base + 'ا', '-', r)];
-	forms['pasv.subjun.p3.f.du'] = [('ت' + base + 'ا', '-', r)];
-	forms['pasv.subjun.p2.mf.du'] = [('ت' + base + 'ا', '-', r)];
+	forms['pasv.subjun.p3.m.du'] = [('ي' + base + 'ا', '-', 'LR'), ('يُ' + base + 'ا', '-', 'RL')];
+	forms['pasv.subjun.p3.f.du'] = [('ت' + base + 'ا', '-', 'LR'), ('تُ' + base + 'ا', '-', 'RL')];
+	forms['pasv.subjun.p2.mf.du'] = [('ت' + base + 'ا', '-', 'LR'), ('تُ' + base + 'ا', '-', 'RL')];
 
-	forms['pasv.subjun.p3.m.pl'] = [('ي' + base + 'وا', '-', r)];
-	forms['pasv.subjun.p3.f.pl'] = [('ي' + base_n + 'ن', '-', r)];
-	forms['pasv.subjun.p2.m.pl'] = [('ت' + base + 'وا', '-', r)];
-	forms['pasv.subjun.p2.f.pl'] = [('ت' + base_n + 'ن', '-', r)];
-	forms['pasv.subjun.p1.mf.pl'] = [('ن' + base, '-', r)];
+	forms['pasv.subjun.p3.m.pl'] = [('ي' + base + 'وا', '-', 'LR'), ('يُ' + base + 'وا', '-', 'RL')];
+	forms['pasv.subjun.p3.f.pl'] = [('ي' + base_n + 'ن', '-', 'LR'), ('يُ' + base_n + 'ن', '-', 'RL')];
+	forms['pasv.subjun.p2.m.pl'] = [('ت' + base + 'وا', '-', 'LR'), ('تُ' + base + 'وا', '-', 'RL')];
+	forms['pasv.subjun.p2.f.pl'] = [('ت' + base_n + 'ن', '-', 'LR'), ('تُ' + base_n + 'ن', '-', 'RL')];
+	forms['pasv.subjun.p1.mf.pl'] = [('ن' + base, '-', 'LR'), ('نُ' + base, '-', 'RL')];
 
 	return forms;
 #}
@@ -273,21 +279,21 @@ def doubled_apocop_pasv(base, base_n, r): #{
 
 	forms = {};
 
-	forms['pasv.apocop.p3.m.sg'] = [('ي' + base, '-', r)];
-	forms['pasv.apocop.p3.f.sg'] = [('ت' + base, '-', r)];
-	forms['pasv.apocop.p2.m.sg'] = [('ت' + base, '-', r)];
-	forms['pasv.apocop.p2.f.sg'] = [('ت' + base + 'ي', '-', r)];
-	forms['pasv.apocop.p1.mf.sg'] = [('أ' + base, '-', r)];
+	forms['pasv.apocop.p3.m.sg'] = [('ي' + base, '-', 'LR'), ('يُ' + base, '-', 'RL')];
+	forms['pasv.apocop.p3.f.sg'] = [('ت' + base, '-', 'LR'), ('تُ' + base, '-', 'RL')];
+	forms['pasv.apocop.p2.m.sg'] = [('ت' + base, '-', 'LR'), ('تُ' + base, '-', 'RL')];
+	forms['pasv.apocop.p2.f.sg'] = [('ت' + base + 'ي', '-', 'LR'), ('تُ' + base + 'ي', '-', 'RL')];
+	forms['pasv.apocop.p1.mf.sg'] = [('أ' + base, '-', 'LR'), ('اُ' + base, '-', 'RL')];
 
-	forms['pasv.apocop.p3.m.du'] = [('ي' + base + 'ا', '-', r)];
-	forms['pasv.apocop.p3.f.du'] = [('ت' + base + 'ا', '-', r)];
-	forms['pasv.apocop.p2.mf.du'] = [('ت' + base + 'ا', '-', r)];
+	forms['pasv.apocop.p3.m.du'] = [('ي' + base + 'ا', '-', 'LR'), ('يُ' + base + 'ا', '-', 'RL')];
+	forms['pasv.apocop.p3.f.du'] = [('ت' + base + 'ا', '-', 'LR'), ('تُ' + base + 'ا', '-', 'RL')];
+	forms['pasv.apocop.p2.mf.du'] = [('ت' + base + 'ا', '-', 'LR'), ('تُ' + base + 'ا', '-', 'RL')];
 
-	forms['pasv.apocop.p3.m.pl'] = [('ي' + base + 'وا', '-', r)];
-	forms['pasv.apocop.p3.f.pl'] = [('ي' + base_n + 'ن', '-', r)];
-	forms['pasv.apocop.p2.m.pl'] = [('ت' + base + 'وا', '-', r)];
-	forms['pasv.apocop.p2.f.pl'] = [('ت' + base_n + 'ن', '-', r)];
-	forms['pasv.apocop.p1.mf.pl'] = [('ن' + base, '-', r)];
+	forms['pasv.apocop.p3.m.pl'] = [('ي' + base + 'وا', '-', 'LR'), ('يُ' + base + 'وا', '-', 'RL')];
+	forms['pasv.apocop.p3.f.pl'] = [('ي' + base_n + 'ن', '-', 'LR'), ('يُ' + base_n + 'ن', '-', 'RL')];
+	forms['pasv.apocop.p2.m.pl'] = [('ت' + base + 'وا', '-', 'LR'), ('تُ' + base + 'وا', '-', 'RL')];
+	forms['pasv.apocop.p2.f.pl'] = [('ت' + base_n + 'ن', '-', 'LR'), ('تُ' + base_n + 'ن', '-', 'RL')];
+	forms['pasv.apocop.p1.mf.pl'] = [('ن' + base, '-', 'LR'), ('نُ' + base, '-', 'RL')];
 
 	return forms;
 #}
@@ -331,64 +337,31 @@ def doubled_imp(base, base_n, suftype, tv, r): #{
 #}
 
 
-
 def doubled_pprs(base, r): #{
 
+        forms = {};
 
-	forms = {};
+	forms['pprs.m.sg'] = [(base, 'S__بيت/', r)] ;
+	forms['pprs.f.sg'] = [(base, 'S__كلم/ة', r)] ;
+	forms['pprs.m.pl'] = [(base, 'S__مهندس/ون', r)] ;
+	forms['pprs.f.pl'] = [(base + 'ات', 'S__كلمات/', r)] ;
 
-        forms['pprs.m.sg.nom'] = [(base, '-', r)] ;
-        forms['pprs.m.sg.gen'] = [(base, '-', r)] ;
-        forms['pprs.m.sg.acc'] = [(base + 'ا', '-', r)] ;
-        forms['pprs.m.du.nom'] = [(base + 'ان', '-', r)] ;
-        forms['pprs.m.du.gen'] = [(base + 'ين', '-', r)] ;
-        forms['pprs.m.du.acc'] = [(base + 'ين', '-', r)] ;
-        forms['pprs.m.pl.nom'] = [(base + 'ين', '-', r)] ;
-        forms['pprs.m.pl.gen'] = [(base + 'ين', '-', r)] ;
-        forms['pprs.m.pl.acc'] = [(base + 'ين', '-', r)] ;
-
-        forms['pprs.f.sg.nom'] = [(base + 'ة', '-', r)] ;
-        forms['pprs.f.sg.gen'] = [(base + 'ة', '-', r)] ;
-        forms['pprs.f.sg.acc'] = [(base + 'ة', '-', r)] ;
-        forms['pprs.f.du.nom'] = [(base + 'تان', '-', r)] ;
-        forms['pprs.f.du.gen'] = [(base + 'تين', '-', r)] ;
-        forms['pprs.f.du.acc'] = [(base + 'تين', '-', r)] ;
-        forms['pprs.f.pl.nom'] = [(base + 'ات', '-', r)] ;
-        forms['pprs.f.pl.gen'] = [(base + 'ات', '-', r)] ;
-        forms['pprs.f.pl.acc'] = [(base + 'ات', '-', r)] ;
-
-	return forms ; 
+	return forms;
 #}
-
 
 
 def doubled_pp(base, r): #{
 
+        forms = {};
 
-	forms = {};
+	forms['pp.m.sg'] = [(base, 'S__بيت/', r)] ;
+	forms['pp.f.sg'] = [(base, 'S__كلم/ة', r)] ;
+	forms['pp.m.pl'] = [(base, 'S__مهندس/ون', r)] ;
+	forms['pp.f.pl'] = [(base + 'ات', 'S__كلمات/', r)] ;
 
-        forms['pp.m.sg.nom'] = [(base, '-', r)] ;
-        forms['pp.m.sg.gen'] = [(base, '-', r)] ;
-        forms['pp.m.sg.acc'] = [(base + 'ا', '-', r)] ;
-        forms['pp.m.du.nom'] = [(base + 'ان', '-', r)] ;
-        forms['pp.m.du.gen'] = [(base + 'ين', '-', r)] ;
-        forms['pp.m.du.acc'] = [(base + 'ين', '-', r)] ;
-        forms['pp.m.pl.nom'] = [(base + 'ين', '-', r)] ;
-        forms['pp.m.pl.gen'] = [(base + 'ين', '-', r)] ;
-        forms['pp.m.pl.acc'] = [(base + 'ين', '-', r)] ;
-
-        forms['pp.f.sg.nom'] = [(base + 'ة', '-', r)] ;
-        forms['pp.f.sg.gen'] = [(base + 'ة', '-', r)] ;
-        forms['pp.f.sg.acc'] = [(base + 'ة', '-', r)] ;
-        forms['pp.f.du.nom'] = [(base + 'تان', '-', r)] ;
-        forms['pp.f.du.gen'] = [(base + 'تين', '-', r)] ;
-        forms['pp.f.du.acc'] = [(base + 'تين', '-', r)] ;
-        forms['pp.f.pl.nom'] = [(base + 'ات', '-', r)] ;
-        forms['pp.f.pl.gen'] = [(base + 'ات', '-', r)] ;
-        forms['pp.f.pl.acc'] = [(base + 'ات', '-', r)] ;
-
-	return forms ; 
+	return forms;
 #}
+
 
 
 ## ----------------------------------------------------------------------------##

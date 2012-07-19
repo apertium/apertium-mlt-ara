@@ -282,6 +282,7 @@
      <e c="  0"><p><l>ħlief<s n="pr"/></l><r>غير<s n="pr"/></r></p></e>
      <e slr="1" r="RL"><p><l>ħlief<s n="pr"/></l><r>إلا<s n="pr"/></r></p></e>
 
+     <e><p><l>flok<s n="pr"/></l><r>بدلا<b/>من<s n="pr"/></r></p></e>
 
      <!-- SECTION: Pronouns -->
 
@@ -341,6 +342,7 @@
      <e><p><l>kull<s n="prn"/><s n="ind"/></l><r>كل<s n="prn"/><s n="ind"/></r></p></e>
      <e><p><l>kemm<s n="prn"/><s n="ind"/></l><r>كما<s n="prn"/><s n="ind"/></r></p></e>
      <e><p><l>bosta<s n="prn"/><s n="ind"/></l><r>كثير<s n="prn"/><s n="ind"/></r></p><par n="mf_sp_mf_sg_pl"/></e>
+     <e r="LR"><p><l>ħafna<s n="prn"/><s n="ind"/></l><r>كثير<s n="prn"/><s n="ind"/></r></p><par n="mf_sp_mf_sg_pl"/></e>
      <e><p><l>diversi<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></l><r>كثير<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
      <!-- not really sure whether we need that (basically it's dak + koll), maybe we do, why there is only m.sg form? -->
      <e><p><l>dak<b/>kollu<s n="prn"/><s n="ind"/></l><r>كل<b/>هذا<s n="prn"/><s n="ind"/></r></p></e>
@@ -360,9 +362,8 @@
 
      <e><p><l>l<s n="det"/><s n="def"/></l><r>ال<s n="det"/><s n="def"/></r></p></e>
      <e r="LR"><p><l>l<s n="det"/><s n="def"/><s n="mf"/><s n="sp"/></l><r>ال<s n="det"/><s n="def"/></r></p></e>
-     <!-- isn't it adverb transl.? maybe should rather be same as bosta -->
-     <e><p><l>ħafna<s n="det"/><s n="qnt"/><s n="mf"/></l><r>جدا<s n="det"/><s n="qnt"/><s n="mf"/></r></p></e>
      <e><p><l>bosta<s n="det"/><s n="qnt"/><s n="mf"/><s n="pl"/></l><r>كثير<b/>من<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
+     <e r="LR"><p><l>ħafna<s n="det"/><s n="qnt"/><s n="mf"/><s n="pl"/></l><r>كثير<b/>من<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
 
      <e><p><l>dan<s n="det"/><s n="dem"/></l><r>هذا<s n="det"/><s n="dem"/></r></p></e>
      <e><p><l>dak<s n="det"/><s n="dem"/></l><r>ذلك<s n="det"/><s n="dem"/></r></p></e>
@@ -3936,7 +3937,6 @@
      <e><p><l>kważi<s n="adv"/></l><r>تقريبا<s n="adv"/></r></p></e>
      <e><p><l>tassew<s n="adv"/></l><r>حقا<s n="adv"/></r></p></e>
      <e><p><l>għada<s n="adv"/></l><r>غدا<s n="adv"/></r></p></e>
-     <e><p><l>minflok<s n="adv"/></l><r>بدلا<b/>من<b/>ذلك<s n="adv"/></r></p></e>
      <e><p><l>tard<s n="adv"/></l><r>متأخرا<s n="adv"/></r></p></e>
      <e><p><l>iva<s n="adv"/></l><r>نعم<s n="adv"/></r></p></e> <!-- only ij? -->
      <e><p><l>il-bogħod<s n="adv"/></l><r>بعيدا<s n="adv"/></r></p></e>
@@ -4037,7 +4037,7 @@
      <e><p><l>fuq<b/>l-internet<s n="adv"/></l><r>على<b/>الإنترنت<s n="adv"/></r></p></e>
      <e><p><l>sewwasew<s n="adv"/></l><r>بالضبط<s n="adv"/></r></p></e>
      <e><p><l>sal-ġurnata<b/>tal-lum<s n="adv"/></l><r>حتى<b/>اليوم<s n="adv"/></r></p></e>
-
+     <e><p><l>ħafna<s n="adv"/></l><r>جدا<s n="adv"/></r></p></e>
 
      <e r="LR"><p><l>propjament<s n="adv"/></l><r>بالضبط<s n="adv"/></r></p></e>
      <e r="LR"><p><l>proprju<s n="adv"/></l><r>بالضبط<s n="adv"/></r></p></e>

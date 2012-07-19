@@ -304,6 +304,34 @@ def hollow_imp(base_short, base_long, base_n, tv): #{
 #}
 
 
+def hollow_pprs(base, r): #{
+
+        forms = {};
+
+	forms['pprs.m.sg'] = [(base, 'S__بيت/', r)] ;
+	forms['pprs.f.sg'] = [(base, 'S__كلم/ة', r)] ;
+	forms['pprs.m.pl'] = [(base, 'S__مهندس/ون', r)] ;
+	forms['pprs.f.pl'] = [(base + 'ات', 'S__كلمات/', r)] ;
+
+	return forms;
+#}
+
+
+def hollow_pp(base, r): #{
+
+        forms = {};
+
+	forms['pp.m.sg'] = [(base, 'S__بيت/', r)] ;
+	forms['pp.f.sg'] = [(base, 'S__كلم/ة', r)] ;
+	forms['pp.m.pl'] = [(base, 'S__مهندس/ون', r)] ;
+	forms['pp.f.pl'] = [(base + 'ات', 'S__كلمات/', r)] ;
+
+	return forms;
+#}
+
+
+
+
 ## ----------------------------------------------------------------------------##
 ## pattern 1
 ## ----------------------------------------------------------------------------##
@@ -364,37 +392,19 @@ def hollow_patt1_pres(root, subtype, tv): #{
 #}
 
 
-def hollow_patt1_pp(root): #{
-	r = root.split('-'); # radicals
-
-	base = r[0] + 'ائ' + r[2];
-
-	forms = {};
-
-	forms['pp.m.sg'] = [(base, '-', '-')] ;
-	forms['pp.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
-#}
-
-
 def hollow_patt1_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'م' + r[0] + 'و' + r[2];
-
-	forms = {};
-
-	forms['pprs.m.sg'] = [(base, '-', '-')] ;
-	forms['pprs.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return hollow_pprs(r[0] + 'ائ' + r[2], '-');
 #}
+
+
+def hollow_patt1_pp(root): #{
+	r = root.split('-'); # radicals
+
+	return hollow_pp('م' + r[0] + 'و' + r[2], '-');
+#}
+
 
 
 ## ----------------------------------------------------------------------------##
@@ -451,33 +461,14 @@ def hollow_patt2_pres(root, tv): #{
 def hollow_patt2_pp(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'م' + r[0] + r[1] + r[2]; 
-
-	forms = {};
-
-	forms['pp.m.sg'] = [(base, '-', '-')] ;
-	forms['pp.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
+	return hollow_pp('م' + r[0] + r[1] + r[2], '-');
 #}
 
 
 def hollow_patt2_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'م' + r[0] + r[1] + r[2]; 
-
-	forms = {};
-
-	forms['pprs.m.sg'] = [(base, '-', '-')] ;
-	forms['pprs.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return hollow_pprs('م' + r[0] + r[1] + r[2], '-');
 #}
 
 
@@ -549,33 +540,14 @@ def hollow_patt3_pres(root, tv): #{
 def hollow_patt3_pp(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'م' + r[0] + 'ا' + r[1] + r[2];
-
-	forms = {};
-
-	forms['pp.m.sg'] = [(base, '-', '-')] ;
-	forms['pp.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
+	return hollow_pp('م' + r[0] + 'ا' + r[1] + r[2], '-');
 #}
 
 
 def hollow_patt3_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'م' + r[0] + 'ا' + r[1] + r[2];
-
-	forms = {};
-
-	forms['pprs.m.sg'] = [(base, '-', '-')] ;
-	forms['pprs.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return hollow_pprs('م' + r[0] + 'ا' + r[1] + r[2], '-');
 #}
 
 
@@ -688,33 +660,14 @@ def hollow_patt4_imp(root, tv): #{
 def hollow_patt4_pp(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'م' + r[0] + 'ي' + r[2];
-
-	forms = {};
-
-	forms['pp.m.sg'] = [(base, '-', '-')] ;
-	forms['pp.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
+	return hollow_pp('م' + r[0] + 'ي' + r[2], '-');
 #}
 
 
 def hollow_patt4_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'م' + r[0] + 'ا' + r[2];
-
-	forms = {};
-
-	forms['pprs.m.sg'] = [(base, '-', '-')] ;
-	forms['pprs.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return hollow_pprs('م' + r[0] + 'ا' + r[2], '-');
 #}
 
 
@@ -821,16 +774,7 @@ def hollow_patt5_imp(root, tv): #{
 def hollow_patt5_pp(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'مت' + r[0] + r[1] + r[2]; 
-
-	forms = {};
-
-	forms['pp.m.sg'] = [(base, '-', '-')] ;
-	forms['pp.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
+	return hollow_pp('مت' + r[0] + r[1] + r[2], '-');
 #}
 
 
@@ -838,17 +782,7 @@ def hollow_patt5_pp(root): #{
 def hollow_patt5_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'مت' + r[0] + r[1] + r[2];
-
-	forms = {};
-
-	forms['pprs.m.sg'] = [(base, '-', '-')] ;
-	forms['pprs.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return hollow_pprs('مت' + r[0] + r[1] + r[2], '-');
 #}
 
 
@@ -969,33 +903,14 @@ def hollow_patt6_imp(root, tv): #{
 def hollow_patt6_pp(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'مت' + r[0] + 'ا' + r[1] + r[2];
-
-	forms = {};
-
-	forms['pp.m.sg'] = [(base, '-', '-')] ;
-	forms['pp.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
+	return hollow_pp('مت' + r[0] + 'ا' + r[1] + r[2], '-');
 #}
 
 
 def hollow_patt6_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'مت' + r[0] + 'ا' + r[1] + r[2];
-
-	forms = {};
-
-	forms['pprs.m.sg'] = [(base, '-', '-')] ;
-	forms['pprs.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return hollow_pprs('مت' + r[0] + 'ا' + r[1] + r[2], '-');
 #}
 
 
@@ -1087,16 +1002,7 @@ def hollow_patt7_imp(root, tv): #{
 def hollow_patt7_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'من' + r[0] + 'ا' + r[2]; 
-
-	forms = {};
-
-	forms['pprs.m.sg'] = [(base, '-', '-')] ;
-	forms['pprs.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
+	return hollow_pprs('من' + r[0] + 'ا' + r[2], '-');
 #}
 
 
@@ -1260,14 +1166,7 @@ def hollow_patt8_pp(root): #{
 	elif (r[0] == 'ز') :
 		base = 'م' + r[0] + 'د' + 'ا' + r[2];
 
-	forms = {};
-
-	forms['pp.m.sg'] = [(base, '-', '-')] ;
-	forms['pp.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
+	return hollow_pp(base, '-');
 #}
 
 
@@ -1283,15 +1182,7 @@ def hollow_patt8_pprs(root): #{
 	elif (r[0] == 'ز') :
 		base = 'م' + r[0] + 'د' + 'ا' + r[2];
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('م' + base, '-', '-')] ;
-	forms['pprs.f.sg'] = [('م' + base + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [('م' + base + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('م' + base + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return hollow_pprs(base, '-');
 #}
 
 
@@ -1405,33 +1296,14 @@ def hollow_patt10_imp(root, tv): #{
 def hollow_patt10_pp(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'مست' + r[0] + 'ي' + r[2];
-
-	forms = {};
-
-	forms['pp.m.sg'] = [(base, '-', '-')] ;
-	forms['pp.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
+	return hollow_pp('مست' + r[0] + 'ي' + r[2], '-');
 #}
 
 
 def hollow_patt10_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'مست' + r[0] + 'ا' + r[2];
-
-	forms = {};
-
-	forms['pprs.m.sg'] = [(base, '-', '-')] ;
-	forms['pprs.f.sg'] = [(base + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return hollow_pprs('مست' + r[0] + 'ا' + r[2], '-');
 #}
 
 

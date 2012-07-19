@@ -56,20 +56,26 @@ def secondhamza_past_pasv(base, base_t, base_n): #{
 
 	forms = {};
 
-	forms['pasv.past.p3.m.sg'] = [(base, '-', '-')];
-	forms['pasv.past.p3.f.sg'] = [(base + 'ت', '-', '-')];
-	forms['pasv.past.p2.m.sg'] = [(base_t + 'ت', '-', '-')];
-	forms['pasv.past.p2.f.sg'] = [(base_t + 'ت', '-', '-')];
-	forms['pasv.past.p1.mf.sg'] = [(base_t + 'ت', '-', '-')];
-	forms['pasv.past.p3.m.du'] = [(base + 'ا', '-', '-')];
-	forms['pasv.past.p3.f.du'] = [(base + 'تا', '-', '-')];
-	forms['pasv.past.p2.mf.du'] = [(base_t + 'تما', '-', '-')];
+	rlbase = base[0: 2] + 'ُ' + base[2: ];
+	rlbase_t = base_t[0: 2] + 'ُ' + base_t[2: ];
+	rlbase_n = base_n[0: 2] + 'ُ' + base_n[2: ];	
 
-	forms['pasv.past.p3.m.pl'] = [(base + 'وا', '-', '-')];
-	forms['pasv.past.p3.f.pl'] = [(base_n + 'ن', '-', '-')];
-	forms['pasv.past.p2.m.pl'] = [(base_t + 'تم', '-', '-')];
-	forms['pasv.past.p2.f.pl'] = [(base_t + 'تن', '-', '-')];
-	forms['pasv.past.p1.mf.pl'] = [(base_n + 'نا', '-', '-')];
+
+	forms['pasv.past.p3.m.sg'] = [(base, '-', 'LR'), (rlbase, '-', 'RL')];
+	forms['pasv.past.p3.f.sg'] = [(base + 'ت', '-', 'LR'), (rlbase + 'ت', '-', 'RL')];
+	forms['pasv.past.p2.m.sg'] = [(base_t + 'ت', '-', 'LR'), (rlbase_t + 'ت', '-', 'RL')];
+	forms['pasv.past.p2.f.sg'] = [(base_t + 'ت', '-', 'LR'), (rlbase_t + 'ت', '-', 'RL')];
+	forms['pasv.past.p1.mf.sg'] = [(base_t + 'ت', '-', 'LR'), (rlbase_t + 'ت', '-', 'RL')];
+
+	forms['pasv.past.p3.m.du'] = [(base + 'ا', '-', 'LR'), (rlbase + 'ا', '-', 'RL')];
+	forms['pasv.past.p3.f.du'] = [(base + 'تا', '-', 'LR'), (rlbase + 'تا', '-', 'RL')];
+	forms['pasv.past.p2.mf.du'] = [(base_t + 'تما', '-', 'LR'), (rlbase_t + 'تما', '-', 'RL')];
+
+	forms['pasv.past.p3.m.pl'] = [(base + 'وا', '-', 'LR'), (rlbase + 'وا', '-', 'RL')];
+	forms['pasv.past.p3.f.pl'] = [(base_n + 'ن', '-', 'LR'), (rlbase_n + 'ن', '-', 'RL')];
+	forms['pasv.past.p2.m.pl'] = [(base_t + 'تم', '-', 'LR'), (rlbase_t + 'تم', '-', 'RL')];
+	forms['pasv.past.p2.f.pl'] = [(base_t + 'تن', '-', 'LR'), (rlbase_t + 'تن', '-', 'RL')];
+	forms['pasv.past.p1.mf.pl'] = [(base_n + 'نا', '-', 'LR'), (rlbase_n + 'نا', '-', 'RL')];
 
 	return forms;
 #}
@@ -125,21 +131,21 @@ def secondhamza_pres_pasv(base, base_n): #{
 
 	forms = {};
 
-	forms['pasv.pres.p3.m.sg'] = [('ي' + base, '-', '-')];
-	forms['pasv.pres.p3.f.sg'] = [('ت' + base, '-', '-')];
-	forms['pasv.pres.p2.m.sg'] = [('ت' + base, '-', '-')];
-	forms['pasv.pres.p2.f.sg'] = [('ت' + base + 'ين', '-', '-')];
-	forms['pasv.pres.p1.mf.sg'] = [('أ' + base, '-', '-')];
+	forms['pasv.pres.p3.m.sg'] = [('ي' + base, '-', 'LR'), ('يُ' + base, '-', 'RL')];
+	forms['pasv.pres.p3.f.sg'] = [('ت' + base, '-', 'LR'), ('تُ' + base, '-', 'RL')];
+	forms['pasv.pres.p2.m.sg'] = [('ت' + base, '-', 'LR'), ('تُ' + base, '-', 'RL')];
+	forms['pasv.pres.p2.f.sg'] = [('ت' + base + 'ين', '-', 'LR'), ('تُ' + base + 'ين', '-', 'RL')];
+	forms['pasv.pres.p1.mf.sg'] = [('أ' + base, '-', 'LR'), ('اُ' + base, '-', 'RL')];
 
-	forms['pasv.pres.p3.m.du'] = [('ي' + base + 'ان', '-', '-')];
-	forms['pasv.pres.p3.f.du'] = [('ت' + base + 'ان', '-', '-')];
-	forms['pasv.pres.p2.mf.du'] = [('ت' + base + 'ان', '-', '-')];
+	forms['pasv.pres.p3.m.du'] = [('ي' + base + 'ان', '-', 'LR'), ('يُ' + base + 'ان', '-', 'RL')];
+	forms['pasv.pres.p3.f.du'] = [('ت' + base + 'ان', '-', 'LR'), ('تُ' + base + 'ان', '-', 'RL')];
+	forms['pasv.pres.p2.mf.du'] = [('ت' + base + 'ان', '-', 'LR'), ('تُ' + base + 'ان', '-', 'RL')];
 
-	forms['pasv.pres.p3.m.pl'] = [('ي' + base + 'ون', '-', '-')];
-	forms['pasv.pres.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-')];
-	forms['pasv.pres.p2.m.pl'] = [('ت' + base + 'ون', '-', '-')];
-	forms['pasv.pres.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-')];
-	forms['pasv.pres.p1.mf.pl'] = [('ن' + base, '-', '-')];
+	forms['pasv.pres.p3.m.pl'] = [('ي' + base + 'ون', '-', 'LR'), ('يُ' + base + 'ون', '-', 'RL')];
+	forms['pasv.pres.p3.f.pl'] = [('ي' + base_n + 'ن', '-', 'LR'), ('يُ' + base_n + 'ن', '-', 'RL')];
+	forms['pasv.pres.p2.m.pl'] = [('ت' + base + 'ون', '-', 'LR'), ('تُ' + base + 'ون', '-', 'RL')];
+	forms['pasv.pres.p2.f.pl'] = [('ت' + base_n + 'ن', '-', 'LR'), ('تُ' + base_n + 'ن', '-', 'RL')];
+	forms['pasv.pres.p1.mf.pl'] = [('ن' + base, '-', 'LR'), ('نُ' + base, '-', 'RL')];
 
 	return forms;
 #}
@@ -203,21 +209,21 @@ def secondhamza_subjun_pasv(base, base_n): #{
 
 	forms = {};
 
-	forms['pasv.subjun.p3.m.sg'] = [('ي' + base, '-', '-')];
-	forms['pasv.subjun.p3.f.sg'] = [('ت' + base, '-', '-')];
-	forms['pasv.subjun.p2.m.sg'] = [('ت' + base, '-', '-')];
-	forms['pasv.subjun.p2.f.sg'] = [('ت' + base + 'ي', '-', '-')];
-	forms['pasv.subjun.p1.mf.sg'] = [('أ' + base, '-', '-')];
+	forms['pasv.subjun.p3.m.sg'] = [('ي' + base, '-', 'LR'), ('يُ' + base, '-', 'RL')];
+	forms['pasv.subjun.p3.f.sg'] = [('ت' + base, '-', 'LR'), ('تُ' + base, '-', 'RL')];
+	forms['pasv.subjun.p2.m.sg'] = [('ت' + base, '-', 'LR'), ('تُ' + base, '-', 'RL')];
+	forms['pasv.subjun.p2.f.sg'] = [('ت' + base + 'ي', '-', 'LR'), ('تُ' + base + 'ي', '-', 'RL')];
+	forms['pasv.subjun.p1.mf.sg'] = [('أ' + base, '-', 'LR'), ('اُ' + base, '-', 'RL')];
 
-	forms['pasv.subjun.p3.m.du'] = [('ي' + base + 'ا', '-', '-')];
-	forms['pasv.subjun.p3.f.du'] = [('ت' + base + 'ا', '-', '-')];
-	forms['pasv.subjun.p2.mf.du'] = [('ت' + base + 'ا', '-', '-')];
+	forms['pasv.subjun.p3.m.du'] = [('ي' + base + 'ا', '-', 'LR'), ('يُ' + base + 'ا', '-', 'RL')];
+	forms['pasv.subjun.p3.f.du'] = [('ت' + base + 'ا', '-', 'LR'), ('تُ' + base + 'ا', '-', 'RL')];
+	forms['pasv.subjun.p2.mf.du'] = [('ت' + base + 'ا', '-', 'LR'), ('تُ' + base + 'ا', '-', 'RL')];
 
-	forms['pasv.subjun.p3.m.pl'] = [('ي' + base + 'وا', '-', '-')];
-	forms['pasv.subjun.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-')];
-	forms['pasv.subjun.p2.m.pl'] = [('ت' + base + 'وا', '-', '-')];
-	forms['pasv.subjun.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-')];
-	forms['pasv.subjun.p1.mf.pl'] = [('ن' + base, '-', '-')];
+	forms['pasv.subjun.p3.m.pl'] = [('ي' + base + 'وا', '-', 'LR'), ('يُ' + base + 'وا', '-', 'RL')];
+	forms['pasv.subjun.p3.f.pl'] = [('ي' + base_n + 'ن', '-', 'LR'), ('يُ' + base_n + 'ن', '-', 'RL')];
+	forms['pasv.subjun.p2.m.pl'] = [('ت' + base + 'وا', '-', 'LR'), ('تُ' + base + 'وا', '-', 'RL')];
+	forms['pasv.subjun.p2.f.pl'] = [('ت' + base_n + 'ن', '-', 'LR'), ('تُ' + base_n + 'ن', '-', 'RL')];
+	forms['pasv.subjun.p1.mf.pl'] = [('ن' + base, '-', 'LR'), ('نُ' + base, '-', 'RL')];
 
 	return forms;
 #}
@@ -271,21 +277,21 @@ def secondhamza_apocop_pasv(base, base_n): #{
 
 	forms = {};
 
-	forms['pasv.apocop.p3.m.sg'] = [('ي' + base, '-', '-')];
-	forms['pasv.apocop.p3.f.sg'] = [('ت' + base, '-', '-')];
-	forms['pasv.apocop.p2.m.sg'] = [('ت' + base, '-', '-')];
-	forms['pasv.apocop.p2.f.sg'] = [('ت' + base + 'ي', '-', '-')];
-	forms['pasv.apocop.p1.mf.sg'] = [('أ' + base, '-', '-')];
+	forms['pasv.apocop.p3.m.sg'] = [('ي' + base, '-', 'LR'), ('يُ' + base, '-', 'RL')];
+	forms['pasv.apocop.p3.f.sg'] = [('ت' + base, '-', 'LR'), ('تُ' + base, '-', 'RL')];
+	forms['pasv.apocop.p2.m.sg'] = [('ت' + base, '-', 'LR'), ('تُ' + base, '-', 'RL')];
+	forms['pasv.apocop.p2.f.sg'] = [('ت' + base + 'ي', '-', 'LR'), ('تُ' + base + 'ي', '-', 'RL')];
+	forms['pasv.apocop.p1.mf.sg'] = [('أ' + base, '-', 'LR'), ('اُ' + base, '-', 'RL')];
 
-	forms['pasv.apocop.p3.m.du'] = [('ي' + base + 'ا', '-', '-')];
-	forms['pasv.apocop.p3.f.du'] = [('ت' + base + 'ا', '-', '-')];
-	forms['pasv.apocop.p2.mf.du'] = [('ت' + base + 'ا', '-', '-')];
+	forms['pasv.apocop.p3.m.du'] = [('ي' + base + 'ا', '-', 'LR'), ('يُ' + base + 'ا', '-', 'RL')];
+	forms['pasv.apocop.p3.f.du'] = [('ت' + base + 'ا', '-', 'LR'), ('تُ' + base + 'ا', '-', 'RL')];
+	forms['pasv.apocop.p2.mf.du'] = [('ت' + base + 'ا', '-', 'LR'), ('تُ' + base + 'ا', '-', 'RL')];
 
-	forms['pasv.apocop.p3.m.pl'] = [('ي' + base + 'وا', '-', '-')];
-	forms['pasv.apocop.p3.f.pl'] = [('ي' + base_n + 'ن', '-', '-')];
-	forms['pasv.apocop.p2.m.pl'] = [('ت' + base + 'وا', '-', '-')];
-	forms['pasv.apocop.p2.f.pl'] = [('ت' + base_n + 'ن', '-', '-')];
-	forms['pasv.apocop.p1.mf.pl'] = [('ن' + base, '-', '-')];
+	forms['pasv.apocop.p3.m.pl'] = [('ي' + base + 'وا', '-', 'LR'), ('يُ' + base + 'وا', '-', 'RL')];
+	forms['pasv.apocop.p3.f.pl'] = [('ي' + base_n + 'ن', '-', 'LR'), ('يُ' + base_n + 'ن', '-', 'RL')];
+	forms['pasv.apocop.p2.m.pl'] = [('ت' + base + 'وا', '-', 'LR'), ('تُ' + base + 'وا', '-', 'RL')];
+	forms['pasv.apocop.p2.f.pl'] = [('ت' + base_n + 'ن', '-', 'LR'), ('تُ' + base_n + 'ن', '-', 'RL')];
+	forms['pasv.apocop.p1.mf.pl'] = [('ن' + base, '-', 'LR'), ('نُ' + base, '-', 'RL')];
 
 	return forms;
 #}
@@ -325,6 +331,34 @@ def secondhamza_imp(base, base_n, subtype, tv): #{
 
 	return forms ; 
 #}
+
+
+def secondhamza_pprs(base, r): #{
+
+        forms = {};
+
+	forms['pprs.m.sg'] = [(base, 'S__بيت/', r)] ;
+	forms['pprs.f.sg'] = [(base, 'S__كلم/ة', r)] ;
+	forms['pprs.m.pl'] = [(base, 'S__مهندس/ون', r)] ;
+	forms['pprs.f.pl'] = [(base + 'ات', 'S__كلمات/', r)] ;
+
+	return forms;
+#}
+
+
+def secondhamza_pp(base, r): #{
+
+        forms = {};
+
+	forms['pp.m.sg'] = [(base, 'S__بيت/', r)] ;
+	forms['pp.f.sg'] = [(base, 'S__كلم/ة', r)] ;
+	forms['pp.m.pl'] = [(base, 'S__مهندس/ون', r)] ;
+	forms['pp.f.pl'] = [(base + 'ات', 'S__كلمات/', r)] ;
+
+	return forms;
+#}
+
+
 
 
 ## ----------------------------------------------------------------------------##
@@ -437,29 +471,14 @@ def secondhamza_patt1_pres(root, vowels, tv): #{
 def secondhamza_patt1_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [(r[0] + 'ائ' + r[2], '-', '-')] ;
-	forms['pprs.f.sg'] = [(r[0] + 'ائ' + r[2] + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [(r[0] + 'ائ' + r[2] + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [(r[0] + 'ائ' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
+	return secondhamza_pprs(r[0] + 'ائ' + r[2], '-');
 #}
 
 
 def secondhamza_patt1_pp(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pp.m.sg'] = [('م' + r[0] + 'ؤو' + r[2], '-', '-')] ;
-	forms['pp.f.sg'] = [('م' + r[0] + 'ؤو' + r[2] + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [('م' + r[0] + 'ؤو' + r[2] + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [('م' + r[0] + 'ؤو' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return secondhamza_pp('م' + r[0] + 'ؤو' + r[2], '-');
 #}
 
 
@@ -549,29 +568,14 @@ def secondhamza_patt2_pres(root, tv): #{
 def secondhamza_patt2_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('م' + r[0] + 'ئ' + r[2], '-', '-')] ;
-	forms['pprs.f.sg'] = [('م' + r[0] + 'ئ' + r[2] + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [('م' + r[0] + 'ئ' + r[2] + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('م' + r[0] + 'ئ' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
+	return secondhamza_pprs('م' + r[0] + 'ئ' + r[2], '-');
 #}
 
 
 def secondhamza_patt2_pp(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pp.m.sg'] = [('م' + r[0] + 'أ' + r[2], '-', '-')] ;
-	forms['pp.f.sg'] = [('م' + r[0] + 'أ' + r[2] + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [('م' + r[0] + 'أ' + r[2] + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [('م' + r[0] + 'أ' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return secondhamza_pp('م' + r[0] + 'أ' + r[2], '-');
 #}
 
 
@@ -663,29 +667,14 @@ def secondhamza_patt3_pres(root, tv): #{
 def secondhamza_patt3_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('م' + r[0] + 'ائ' + r[2], '-', '-')] ;
-	forms['pprs.f.sg'] = [('م' + r[0] + 'ائ' + r[2] + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [('م' + r[0] + 'ائ' + r[2] + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('م' + r[0] + 'ائ' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
+	return secondhamza_pprs('م' + r[0] + 'ائ' + r[2], '-');
 #}
 
 
 def secondhamza_patt3_pp(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pp.m.sg'] = [('م' + r[0] + 'اء' + r[2], '-', '-')] ;
-	forms['pp.f.sg'] = [('م' + r[0] + 'اء' + r[2] + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [('م' + r[0] + 'اء' + r[2] + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [('م' + r[0] + 'اء' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return secondhamza_pp('م' + r[0] + 'اء' + r[2], '-');
 #}
 
 
@@ -784,29 +773,14 @@ def secondhamza_patt4_pres(root, tv): #{
 def secondhamza_patt4_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('م' + r[0] + 'ئ' + r[2], '-', '-')] ;
-	forms['pprs.f.sg'] = [('م' + r[0] + 'ئ' + r[2] + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [('م' + r[0] + 'ئ' + r[2] + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('م' + r[0] + 'ئ' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
+	return secondhamza_pprs('م' + r[0] + 'ئ' + r[2], '-');
 #}
 
 
 def secondhamza_patt4_pp(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pp.m.sg'] = [('م' + r[0] + 'أ' + r[2], '-', '-')] ;
-	forms['pp.f.sg'] = [('م' + r[0] + 'أ' + r[2] + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [('م' + r[0] + 'أ' + r[2] + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [('م' + r[0] + 'أ' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return secondhamza_pp('م' + r[0] + 'أ' + r[2], '-');
 #}
 
 
@@ -889,14 +863,7 @@ def secondhamza_patt5_pres(root, tv): #{
 def secondhamza_patt5_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('مت' + r[0] + 'ئ' + r[2], '-', '-')] ;
-	forms['pprs.f.sg'] = [('مت' + r[0] + 'ئ' + r[2] + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [('مت' + r[0] + 'ئ' + r[2] + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('مت' + r[0] + 'ئ' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
+	return secondhamza_pprs('مت' + r[0] + 'ئ' + r[2], '-');
 #}
 
 
@@ -904,15 +871,7 @@ def secondhamza_patt5_pprs(root): #{
 def secondhamza_patt5_pp(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pp.m.sg'] = [('مت' + r[0] + 'أ' + r[2], '-', '-')] ;
-	forms['pp.f.sg'] = [('مت' + r[0] + 'أ' + r[2] + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [('مت' + r[0] + 'أ' + r[2] + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [('مت' + r[0] + 'أ' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return secondhamza_pp('مت' + r[0] + 'أ' + r[2], '-');
 #}
 
 
@@ -995,29 +954,14 @@ def secondhamza_patt6_pres(root, tv): #{
 def secondhamza_patt6_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('مت' + r[0] + 'ائ' + r[2], '-', '-')] ;
-	forms['pprs.f.sg'] = [('مت' + r[0] + 'ائ' + r[2] + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [('مت' + r[0] + 'ائ' + r[2] + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('مت' + r[0] + 'ائ' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
+	return secondhamza_pprs('مت' + r[0] + 'ائ' + r[2], '-');
 #}
 
 
 def secondhamza_patt6_pp(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pp.m.sg'] = [('مت' + r[0] + 'اء' + r[2], '-', '-')] ;
-	forms['pp.f.sg'] = [('مت' + r[0] + 'اء' + r[2] + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [('مت' + r[0] + 'اء' + r[2] + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [('مت' + r[0] + 'اء' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return secondhamza_pp('مت' + r[0] + 'اء' + r[2], '-');
 #}
 
 
@@ -1087,14 +1031,7 @@ def secondhamza_patt7_pres(root, tv): #{
 def secondhamza_patt7_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('من' + r[0] + 'ئ' + r[2], '-', '-')] ;
-	forms['pprs.f.sg'] = [('من' + r[0] + 'ئ' + r[2] + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [('من' + r[0] + 'ئ' + r[2] + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('من' + r[0] + 'ئ' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
+	return secondhamza_pprs('من' + r[0] + 'ئ' + r[2], '-');
 #}
 
 
@@ -1221,14 +1158,7 @@ def secondhamza_patt8_pprs(root): #{
 	elif (r[0] == 'ز') :
 		base = r[0] + 'دئ' + r[2];
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('م' + base, '-', '-')] ;
-	forms['pprs.f.sg'] = [('م' + base + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [('م' + base + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('م' + base + 'ات', '-', '-')] ;
-
-	return forms;
+	return secondhamza_pprs('م' + base, '-');
 #}
 
 
@@ -1244,15 +1174,7 @@ def secondhamza_patt8_pp(root): #{
 	elif (r[0] == 'ز') :
 		base = r[0] + 'دأ' + r[2];
 
-	forms = {};
-
-	forms['pp.m.sg'] = [('م' + base, '-', '-')] ;
-	forms['pp.f.sg'] = [('م' + base + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [('م' + base + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [('م' + base + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return secondhamza_pp('م' + base, '-');
 #}
 
 
@@ -1353,29 +1275,14 @@ def secondhamza_patt10_pres(root, tv): #{
 def secondhamza_patt10_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('مست' + r[0] + 'ئ' + r[2], '-', '-')] ;
-	forms['pprs.f.sg'] = [('مست' + r[0] + 'ئ' + r[2] + 'ة', '-', '-')] ;
-	forms['pprs.m.pl'] = [('مست' + r[0] + 'ئ' + r[2] + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('مست' + r[0] + 'ئ' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
+	return secondhamza_pprs('مست' + r[0] + 'ئ' + r[2], '-');
 #}
 
 
 def secondhamza_patt10_pp(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pp.m.sg'] = [('مست' + r[0] + 'أ' + r[2], '-', '-')] ;
-	forms['pp.f.sg'] = [('مست' + r[0] + 'أ' + r[2] + 'ة', '-', '-')] ;
-	forms['pp.m.pl'] = [('مست' + r[0] + 'أ' + r[2] + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [('مست' + r[0] + 'أ' + r[2] + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return secondhamza_pp('مست' + r[0] + 'أ' + r[2], '-');
 #}
 
 

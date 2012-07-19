@@ -238,6 +238,12 @@
 |-
 | ضبط || vblex || sound || 1 || || adjust || ض-ب-ط || a-a || a-u || tv 
 |-
+| شهد || vblex || sound || 1 || || testify || ش-ه-د || a-i || a-a || tv 
+|-
+| ذكر || vblex || sound || 1 || || mention,remember || ذ-ك-ر || a-a || a-u || tv 
+|-
+| جعل || vblex || sound || 1 || || effect || ج-ع-ل || || || tv
+|-
 | فكر || vblex || sound || 2 || || think || ف-ك-ر || || || tv 
 |-
 | عبر || vblex || sound || 2 || || express || ع-ب-ر || || || tv 
@@ -264,7 +270,9 @@
 |-
 | شجع || vblex || sound || 2 || || encourage || ش-ج-ع || || || tv 
 |-
-| مثل || vblex || sound || 2 || || represent || م-ث-ل || || || tv 
+| مثل || vblex || sound || 2 || || represent || م-ث-ل || || || tv
+|-
+| حسن || vblex || sound || 2 || || improve || ح-س-ن || || || tv 
 |-
 | غادر || vblex || sound || 3 || || leave || غ-د-ر || || || tv 
 |-
@@ -308,7 +316,7 @@
 |-
 | أرسل || vblex || sound || 4 || || send || ر-س-ل || || || tv 
 |-
-| تكلم || vblex || sound || 5 || || speak || ك-ل-م || || || tv 
+| تكلم || vblex || sound || 5 || || speak || ك-ل-م || || || iv 
 |-
 | تخمر || vblex || sound || 5 || || ferment || خ-م-ر || || || iv 
 |-
@@ -402,6 +410,8 @@
 |-
 | أحس || vblex || doubled || 4 || || feel || ح-س-س || || || tv 
 |-
+| اشتق || vblex || doubled || 8 || || derive || ش-ق-ق || || || tv 
+|-
 | نام || vblex || hollow || 1 || ا || sleep || ن-و-م || || || iv 
 |-
 | قال || vblex || hollow || 1 || و || say || ق-و-ل || || || tv 
@@ -464,6 +474,8 @@
 |-
 | روج || vblex || hollow || 2 || || promote || ر-و-ج || || || tv 
 |-
+| بين || vblex || hollow || 2 || || explain || ب-ي-ن || || || tv
+|-
 | حاول || vblex || hollow || 3 || || try || ح-و-ل || || || tv 
 |-
 | أراد || vblex || hollow || 4 || || want || ر-و-د || || || tv 
@@ -502,6 +514,8 @@
 |-
 | نمى || vblex || defective || 2 || || develop || ن-م-ي || || || tv 
 |-
+| سمى || vblex || defective || 2 || || name || س-م-ي || || || tv 
+|-
 | أعطى || vblex || defective || 4 || || give || ع-ط-و || || || tv 
 |-
 | أنهى || vblex || defective || 4 || || finish || ن-ه-ي || || || tv 
@@ -516,13 +530,15 @@
 |-
 | أرى || vblex || defective || irregular || || show || ر-ء-ي || || || tv 
 |-
-| وجد || vblex || firstw || 1 || || take || و-خ-د || a-a || a-i || tv 
+| وجد || vblex || firstw || 1 || || take || و-ج-د || a-a || a-i || tv 
 |-
 | وصل || vblex || firstw || 1 || || reach || و-ص-ل || a-a || a-i || tv 
 |-
 | وصف || vblex || firstw || 1 || || describe || و-ص-ف || a-a || a-i || tv 
 |-
 | وزن || vblex || firstw || 1 || || weigh || و-ز-ن || a-a || a-i || tv 
+|-
+| واصل || vblex || firstw || 3 || || continue || و-ص-ل || || || tv
 |-
 | اتفق || vblex || firstw || 8 || || agree || و-ف-ق || || || iv 
 |-
@@ -531,6 +547,10 @@
 | أكل || vblex || firsthamza || 1 || || eat || ء-ك-ل || a-a || a-u || tv 
 |-
 | أمر || vblex || firsthamza || 1 || || order || ء-م-ر || a-a || a-u || tv 
+|-
+| أثر || vblex || firsthamza || 2 || || influence || ء-ث-ر || || || iv
+|-
+| آمن || vblex || firsthamza || 4 || || believe || ء-م-ن || || || iv
 |-
 | تألق || vblex || firsthamza || 5 || || shine || ء-ل-ق || || || iv 
 |-

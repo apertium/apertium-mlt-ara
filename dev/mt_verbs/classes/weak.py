@@ -60,7 +60,7 @@ def weak_consonant_forms (form_sg, form_sg_suff, r, tv): #{
 
 
 def weak_vowel_forms (form_pl, form_pl_suff, r, tv): #{
-# different with/without suffix forms only for past.p1.pl
+# different with/without suffix forms only for past.p1.mf.pl
 
 	if tv == 'iv' : #{
 	 	forms = [(form_pl, '-', r),
@@ -106,16 +106,16 @@ def weak_past(root, vowels, tv): #{
 
 	# This form is obtained by the omission of the two vowels in the stem
 	# and the addition of the dipthong 'ej' (for e-a) and 'aj' (for a-a)
-	forms['past.p2.sg'] = weak_consonant_forms(r[0] + r[1] + v[0] + 'jt', r[0] + r[1] + v[0] + 'jt', '-', tv);	
-	forms['past.p1.sg'] = weak_consonant_forms(r[0] + r[1] + v[0] + 'jt', r[0] + r[1] + v[0] + 'jt', '-', tv);	
+	forms['past.p2.mf.sg'] = weak_consonant_forms(r[0] + r[1] + v[0] + 'jt', r[0] + r[1] + v[0] + 'jt', '-', tv);	
+	forms['past.p1.mf.sg'] = weak_consonant_forms(r[0] + r[1] + v[0] + 'jt', r[0] + r[1] + v[0] + 'jt', '-', tv);	
 
 	# This form is obtained by the omission of the two vowels in the vocalic
 	# sequence + dipthong 'ew' or 'aw'
 	# In the context of the attached pronouns 'ew' and 'aw'
 	# are also treated like vowels
-	forms['past.p3.pl'] = weak_vowel_forms(r[0] + r[1] + v[0] + 'w', r[0] + r[1] + v[0] + 'w', '-', tv);
-	forms['past.p2.pl'] = weak_vowel_forms(r[0] + r[1] + v[0] + 'jtu', r[0] + r[1] + v[0] + 'jtu', '-', tv);
-	forms['past.p1.pl'] = weak_vowel_forms(r[0] + r[1] + v[0] + 'jna', r[0] + r[1] + v[0] + 'jnie', '-', tv);
+	forms['past.p3.mf.pl'] = weak_vowel_forms(r[0] + r[1] + v[0] + 'w', r[0] + r[1] + v[0] + 'w', '-', tv);
+	forms['past.p2.mf.pl'] = weak_vowel_forms(r[0] + r[1] + v[0] + 'jtu', r[0] + r[1] + v[0] + 'jtu', '-', tv);
+	forms['past.p1.mf.pl'] = weak_vowel_forms(r[0] + r[1] + v[0] + 'jna', r[0] + r[1] + v[0] + 'jnie', '-', tv);
 
 	return forms;
 #}
@@ -135,8 +135,8 @@ def weak_pres(root, vowels, tv): #{
 	# no first vowel elision in forms with suffixes? 
 	forms['pres.p3.m.sg'] = weak_vowel_forms('j' + v[0] + r[0] + r[1] + v[1] , 'j' + v[0] + r[0] + r[1] + presuff_vowel , '-', tv);
 	forms['pres.p3.f.sg'] = weak_vowel_forms('t' + v[0] + r[0] + r[1] + v[1] , 't' + v[0] + r[0] + r[1] + presuff_vowel , '-', tv);
-	forms['pres.p2.sg'] = weak_vowel_forms('t' + v[0] + r[0] + r[1] + v[1] , 't' + v[0] + r[0] + r[1] + presuff_vowel , '-', tv);
-	forms['pres.p1.sg'] = weak_vowel_forms('n' + v[0] + r[0] + r[1] + v[1] , 'n' + v[0] + r[0] + r[1] + presuff_vowel , '-', tv);
+	forms['pres.p2.mf.sg'] = weak_vowel_forms('t' + v[0] + r[0] + r[1] + v[1] , 't' + v[0] + r[0] + r[1] + presuff_vowel , '-', tv);
+	forms['pres.p1.mf.sg'] = weak_vowel_forms('n' + v[0] + r[0] + r[1] + v[1] , 'n' + v[0] + r[0] + r[1] + presuff_vowel , '-', tv);
 	
 	if vowels == 'a-a': #{
 		suffix =  'aw';
@@ -147,9 +147,9 @@ def weak_pres(root, vowels, tv): #{
 	#}
 										# QaRaJ		BeDaJ		MeXaJ	ReMaJ
 										# a-a		i-a		i-i	a-i
-	forms['pres.p3.pl'] = weak_vowel_forms('j' + v[0] + r[0] + r[1] + suffix, 'j' + v[0] + r[0] + r[1] + suffix, '-', tv);	# j-aQRa-w	j-iBDe-w	j-iMXu	j-aRMu
-	forms['pres.p2.pl'] = weak_vowel_forms('t' + v[0] + r[0] + r[1] + suffix, 't' + v[0] + r[0] + r[1] + suffix, '-', tv);	# t-aQRa-w
-	forms['pres.p1.pl'] = weak_vowel_forms('n' + v[0] + r[0] + r[1] + suffix, 'n' + v[0] + r[0] + r[1] + suffix, '-', tv);	# n-aQRa-w
+	forms['pres.p3.mf.pl'] = weak_vowel_forms('j' + v[0] + r[0] + r[1] + suffix, 'j' + v[0] + r[0] + r[1] + suffix, '-', tv);	# j-aQRa-w	j-iBDe-w	j-iMXu	j-aRMu
+	forms['pres.p2.mf.pl'] = weak_vowel_forms('t' + v[0] + r[0] + r[1] + suffix, 't' + v[0] + r[0] + r[1] + suffix, '-', tv);	# t-aQRa-w
+	forms['pres.p1.mf.pl'] = weak_vowel_forms('n' + v[0] + r[0] + r[1] + suffix, 'n' + v[0] + r[0] + r[1] + suffix, '-', tv);	# n-aQRa-w
 
 	return forms;
 #}
@@ -174,8 +174,8 @@ def weak_imp(root, vowels, tv): #{
 		pl_suffix = 'u'
 	#}
 
-	forms['imp.p2.sg'] = weak_vowel_forms(v[0] + r[0] + r[1] + v[1] , v[0] + r[0] + r[1] + presuff_sg_vowel , '-', tv);
-	forms['imp.p2.pl'] = weak_vowel_forms(v[0] + r[0] + r[1] + pl_suffix , v[0] + r[0] + r[1] + pl_suffix , '-', tv);
+	forms['imp.p2.mf.sg'] = weak_vowel_forms(v[0] + r[0] + r[1] + v[1] , v[0] + r[0] + r[1] + presuff_sg_vowel , '-', tv);
+	forms['imp.p2.mf.pl'] = weak_vowel_forms(v[0] + r[0] + r[1] + pl_suffix , v[0] + r[0] + r[1] + pl_suffix , '-', tv);
 
 	return forms;
 #}

@@ -188,15 +188,15 @@ def strong_pres(root, vowels, tv): #{
 	forms['pres.p3.m.sg'] += strong_pres_sg_forms(pres_sg, pres_sg_long, pres_sg_short, 'RL', ok, lok, tv);
 
 	forms['pres.p3.f.sg'] = strong_pres_sg_forms('t' + pres_sg, 't' + pres_sg_long, 't' + pres_sg_short, '-', ok, lok, tv);
-	forms['pres.p2.sg'] = strong_pres_sg_forms('t' + pres_sg, 't' + pres_sg_long, 't' + pres_sg_short, '-', ok, lok, tv);
-	forms['pres.p1.sg'] = strong_pres_sg_forms('n' + pres_sg, 'n' + pres_sg_long, 'n' + pres_sg_short, '-', ok, lok, tv);
+	forms['pres.p2.mf.sg'] = strong_pres_sg_forms('t' + pres_sg, 't' + pres_sg_long, 't' + pres_sg_short, '-', ok, lok, tv);
+	forms['pres.p1.mf.sg'] = strong_pres_sg_forms('n' + pres_sg, 'n' + pres_sg_long, 'n' + pres_sg_short, '-', ok, lok, tv);
 
 
-	forms['pres.p3.pl'] = strong_pres_pl_forms(pres_pl, 'LR', tv); # iDĦL-u iFTĦ-u
-	forms['pres.p3.pl'] += strong_pres_pl_forms('j' + pres_pl, 'LR', tv); # j-iDĦL-u j-iFTĦ-u
-	forms['pres.p3.pl'] += strong_pres_pl_forms(pres_pl, 'RL', tv); # iDĦL-u iFTĦ-u
-	forms['pres.p2.pl'] = strong_pres_pl_forms('t' + pres_pl, '-', tv);
-	forms['pres.p1.pl'] = strong_pres_pl_forms('n' + pres_pl, '-', tv);
+	forms['pres.p3.mf.pl'] = strong_pres_pl_forms(pres_pl, 'LR', tv); # iDĦL-u iFTĦ-u
+	forms['pres.p3.mf.pl'] += strong_pres_pl_forms('j' + pres_pl, 'LR', tv); # j-iDĦL-u j-iFTĦ-u
+	forms['pres.p3.mf.pl'] += strong_pres_pl_forms(pres_pl, 'RL', tv); # iDĦL-u iFTĦ-u
+	forms['pres.p2.mf.pl'] = strong_pres_pl_forms('t' + pres_pl, '-', tv);
+	forms['pres.p1.mf.pl'] = strong_pres_pl_forms('n' + pres_pl, '-', tv);
 
 	return forms;
 #}
@@ -251,8 +251,8 @@ def strong_imp(root, vowels, tv): #{
 	#}
 
 
-	forms['imp.p2.sg'] = strong_pres_sg_forms(pres_sg, pres_sg_long, pres_sg_short, '-', ok, lok, tv);
-	forms['imp.p2.pl'] = strong_pres_pl_forms(pres_pl, '-', tv);
+	forms['imp.p2.mf.sg'] = strong_pres_sg_forms(pres_sg, pres_sg_long, pres_sg_short, '-', ok, lok, tv);
+	forms['imp.p2.mf.pl'] = strong_pres_pl_forms(pres_pl, '-', tv);
 
 	return forms ; 
 #}
@@ -317,7 +317,7 @@ def strong_past_p3_sg_m_forms (past_sg, past_sg_long, past_sg_short, r, ok, lok,
 def strong_past_sg_forms (past_sg, past_sg_suff, r, ok, tv): #{
 # past.p3.f.sg, past.2.sg, past.1.sg
 # for past.p3.sg.f different forms with and without suffixes: kitbet, kitbit
-# for past.p2.sg and past.p1.sg only one form: ktibt
+# for past.p2.mf.sg and past.p1.mf.sg only one form: ktibt
 
 	if tv == 'iv' : #{
 		if ok == 'ok' : #{
@@ -421,7 +421,7 @@ def strong_past(root, vowels, tv): #{
 		first_v_p2_p1 = '';
 	#}
 
-# precons_form? (base for p2.sg, p1.sg, p2.pl, p1.pl)
+# precons_form? (base for p2.mf.sg, p1.mf.sg, p2.mf.pl, p1.mf.pl)
 
 	forms['past.p3.m.sg'] = strong_past_p3_sg_m_forms(r[0] + v[0] + r[1] + v[1] + final_r_p3_sg_m_free, r[0] + v[0] + r[1] + vowel_preconssuff + r[2], r[0] + v[0] + r[1] + r[2], '', ok, 'l' + ok, tv);
 
@@ -432,13 +432,13 @@ def strong_past(root, vowels, tv): #{
 	else :
 		forms['past.p3.f.sg'] = strong_past_sg_forms(r[0] + v[0] + r[1] + r[2] + 'et', r[0] + v[0] + r[1] + r[2] + 'it', '-', 'ek', tv);	# Omit second vowel of stem word
 
-	forms['past.p2.sg'] = strong_past_sg_forms(r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', '-', ok, tv);	# Omit first vowel of stem word
-	forms['past.p1.sg'] = strong_past_sg_forms(r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', '-', ok, tv);	# Omit first vowel of stem word
+	forms['past.p2.mf.sg'] = strong_past_sg_forms(r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', '-', ok, tv);	# Omit first vowel of stem word
+	forms['past.p1.mf.sg'] = strong_past_sg_forms(r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', '-', ok, tv);	# Omit first vowel of stem word
 
-	forms['past.p3.pl'] = strong_past_pl_forms(r[0] + v[0] + r[1] + r[2] + 'u', r[0] + v[0] + r[1] + r[2] + 'u', '-', tv);	# Omit second vowel of stem word
+	forms['past.p3.mf.pl'] = strong_past_pl_forms(r[0] + v[0] + r[1] + r[2] + 'u', r[0] + v[0] + r[1] + r[2] + 'u', '-', tv);	# Omit second vowel of stem word
 
-	forms['past.p2.pl'] = strong_past_pl_forms(r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', '-', tv);	# Omit first vowel of stem word
-	forms['past.p1.pl'] = strong_past_pl_forms(r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'na', r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'nie', '-', tv);	# Omit first vowel of stem word
+	forms['past.p2.mf.pl'] = strong_past_pl_forms(r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', '-', tv);	# Omit first vowel of stem word
+	forms['past.p1.mf.pl'] = strong_past_pl_forms(r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'na', r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'nie', '-', tv);	# Omit first vowel of stem word
 
 	return forms;
 #}

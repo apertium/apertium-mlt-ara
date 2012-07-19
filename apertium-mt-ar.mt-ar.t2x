@@ -13,9 +13,13 @@
       <cat-item tags="SV.*"/>
     </def-cat>
 
-    <def-cat n="nom">
-      <cat-item tags="n"/>
-      <cat-item tags="n.*"/>
+    <def-cat n="SP">
+      <cat-item tags="SP"/>
+      <cat-item tags="SP.*"/>
+    </def-cat>
+
+    <def-cat n="p3freeprn">
+      <cat-item tags="SN.p3.*.*" lemma="freeprn"/>
     </def-cat>
 
   </section-def-cats>
@@ -79,12 +83,110 @@
   </section-def-attrs>
 
   <section-def-vars>
-    <def-var n="c_defnes"/>
+    <def-var n="sbj_gen"/>
+    <def-var n="sbj_nbr"/>
+    <def-var n="last_gen"/>
+    <def-var n="last_nbr"/>
   </section-def-vars>
+
+
+  <section-def-macros>
+
+    <def-macro n="set_last_n" npar="1">
+      <choose>
+	<when> 
+	  <test><equal><clip pos="1" part="nbr"/><lit-tag v="sg"/></equal></test>
+	  <let><var n="last_gen"/><clip pos="1" part="gen"/></let> 
+	  <let><var n="last_nbr"/><clip pos="1" part="nbr"/></let>
+	</when>
+	<otherwise>
+	  <choose>
+	    <when>
+	      <test><equal><clip pos="1" part="a_anim"/><lit-tag v="aa"/></equal></test>
+  	      <let><var n="last_gen"/><clip pos="1" part="gen"/></let> 
+	      <let><var n="last_nbr"/><lit-tag v="pl"/></let>
+	    </when>
+	    <otherwise> 
+  	      <let><var n="last_gen"/><lit-tag v="f"/></let> 
+	      <let><var n="last_nbr"/><lit-tag v="sg"/></let>
+	    </otherwise>
+	  </choose>
+	</otherwise>
+      </choose>    
+    </def-macro>
+
+
+    <def-macro n="set_sbj" npar="1">
+      <choose>
+	<when> 
+	  <test><equal><clip pos="1" part="nbr"/><lit-tag v="sg"/></equal></test>
+	  <let><var n="sbj_gen"/><clip pos="1" part="gen"/></let> 
+	  <let><var n="sbj_nbr"/><clip pos="1" part="nbr"/></let>
+	</when>
+	<otherwise>
+	  <choose>
+	    <when>
+	      <test><equal><clip pos="1" part="a_anim"/><lit-tag v="aa"/></equal></test>
+  	      <let><var n="sbj_gen"/><clip pos="1" part="gen"/></let> 
+	      <let><var n="sbj_nbr"/><lit-tag v="pl"/></let>
+	    </when>
+	    <otherwise> 
+  	      <let><var n="sbj_gen"/><lit-tag v="f"/></let> 
+	      <let><var n="sbj_nbr"/><lit-tag v="sg"/></let>
+	    </otherwise>
+	  </choose>
+	</otherwise>
+      </choose>    
+    </def-macro>
+
+    <def-macro n="verb_agreement" npar="2">
+      <choose>
+ 	<when>
+ 	  <test><and>   <!-- that's what happens when verb goes first -->
+	    <!-- well, not quite: add nn.pl fix -->
+ 	    <equal><clip pos="1" part="pers"/><lit-tag v="p3"/></equal>
+ 	    <equal><clip pos="1" part="nbr"/><clip pos="2" part="nbr"/></equal>
+ 	    <equal><clip pos="2" part="defnes"/><lit-tag v="def"/></equal>
+ 	  </and></test>
+	  <let><clip pos="1" part="nbr"/><lit-tag v="sg"/></let>
+	  <let><clip pos="1" part="gen"/><clip pos="2" part="gen"/></let>
+	</when>
+      </choose>
+    </def-macro>
+
+  </section-def-macros>
+
 
 
   <section-rules>
 
+    <rule comment="REGLA: SP SN">
+      <pattern>
+ 	<pattern-item n="SP"/>
+ 	<pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <call-macro n="set_last_n"><with-param pos="2"/></call-macro>
+	<let><clip pos="2" part="case"/><lit-tag v="gen"/></let>
+        <out>
+	  <chunk>
+	    <clip pos="1" part="lem"/>
+ 	    <clip pos="1" part="tags"/>
+	    <clip pos="1" part="chcontent"/>
+ 	  </chunk>
+ 	  <b/>
+	  <chunk>
+	    <clip pos="2" part="lem"/>
+ 	    <clip pos="2" part="tags"/>
+	    <clip pos="2" part="chcontent"/>
+ 	  </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+    <!-- 'verbal clause' in Arabic: it means that the verb goes first :) -->
     <!-- Needs refinement, probably -->
     <rule comment="REGLA: SV SN">
       <pattern>
@@ -92,16 +194,8 @@
  	<pattern-item n="SN"/>
       </pattern>
       <action>
-	<choose>
- 	  <when>
- 	    <test><and>   <!-- that's what happens when verb goes first -->
- 	      <equal><clip pos="1" part="pers"/><lit-tag v="p3"/></equal>
- 	      <equal><clip pos="1" part="nbr"/><clip pos="2" part="nbr"/></equal>
- 	      <equal><clip pos="2" part="defnes"/><lit-tag v="def"/></equal>
- 	    </and></test>
-	    <let><clip pos="1" part="nbr"/><lit-tag v="sg"/></let>
-	  </when>
-	</choose>
+        <call-macro n="set_last_n"><with-param pos="2"/></call-macro>
+        <call-macro n="verb_agreement"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <out>
 	  <chunk>
 	    <clip pos="1" part="lem"/>
@@ -118,14 +212,31 @@
       </action>
     </rule>
 
-    <rule comment="CHUNK: NOM">
+
+    <!-- nominal clauses -->
+
+    <rule comment="REGLA: SN p3freeprn">
       <pattern>
-        <pattern-item n="nom"/>
+ 	<pattern-item n="SN"/>
+ 	<pattern-item n="p3freeprn"/>
       </pattern>
       <action>
+        <call-macro n="set_last_n"><with-param pos="1"/></call-macro>
+	<let><clip pos="2" part="gen"/><var n="last_gen"/></let>
+	<let><clip pos="2" part="nbr"/><var n="last_nbr"/></let>
         <out>
-          <chunk><clip pos="1" part="whole"/></chunk>
-        </out>
+	  <chunk>
+	    <clip pos="1" part="lem"/>
+ 	    <clip pos="1" part="tags"/>
+	    <clip pos="1" part="chcontent"/>
+ 	  </chunk>
+ 	  <b/>
+	  <chunk>
+	    <clip pos="2" part="lem"/>
+ 	    <clip pos="2" part="tags"/>
+	    <clip pos="2" part="chcontent"/>
+ 	  </chunk>
+ 	 </out>
       </action>
     </rule>
 

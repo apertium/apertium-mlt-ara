@@ -84,7 +84,7 @@ def hollow_sg_forms (form_sg, form_sg_suff, r, ok, tv): #{
 
 def hollow_pl_forms (form_pl, form_pl_suff, r, tv): #{
 # all past forms end with a vowel
-# different with/without suffix forms only for past.p1.pl
+# different with/without suffix forms only for past.p1.mf.pl
 
 	if tv == 'iv' : #{
 	 	forms = [(form_pl, '-', r),
@@ -136,14 +136,14 @@ def hollow_past(root, vowels, tv): #{
 		ok = 'ek';
 	#}
 
-	forms['past.p2.sg'] = hollow_sg_forms(r[0] + link_vowel + r[2] + 't', r[0] + link_vowel + r[2] + 't', '-', ok, tv);	
-	forms['past.p1.sg'] = hollow_sg_forms(r[0] + link_vowel + r[2] + 't', r[0] + link_vowel + r[2] + 't', '-', ok, tv);	
+	forms['past.p2.mf.sg'] = hollow_sg_forms(r[0] + link_vowel + r[2] + 't', r[0] + link_vowel + r[2] + 't', '-', ok, tv);	
+	forms['past.p1.mf.sg'] = hollow_sg_forms(r[0] + link_vowel + r[2] + 't', r[0] + link_vowel + r[2] + 't', '-', ok, tv);	
 
-	forms['past.p2.pl'] = hollow_pl_forms(r[0] + link_vowel + r[2] + 'tu', r[0] + link_vowel + r[2] + 'tu', '-', tv);
-	forms['past.p1.pl'] = hollow_pl_forms(r[0] + link_vowel + r[2] + 'na', r[0] + link_vowel + r[2] + 'nie', '-', tv);
+	forms['past.p2.mf.pl'] = hollow_pl_forms(r[0] + link_vowel + r[2] + 'tu', r[0] + link_vowel + r[2] + 'tu', '-', tv);
+	forms['past.p1.mf.pl'] = hollow_pl_forms(r[0] + link_vowel + r[2] + 'na', r[0] + link_vowel + r[2] + 'nie', '-', tv);
 
 # v[0]/'a'
-	forms['past.p3.pl'] = hollow_pl_forms(r[0] + v[0] + r[2] + 'u', r[0] + v[0] + r[2] + 'u', '-', tv);
+	forms['past.p3.mf.pl'] = hollow_pl_forms(r[0] + v[0] + r[2] + 'u', r[0] + v[0] + r[2] + 'u', '-', tv);
 
 
 #	# This is not in the grammar, but it seems that 'ie' (mutation of long 'a')
@@ -151,18 +151,18 @@ def hollow_past(root, vowels, tv): #{
 #	if v[0] == 'ie': #{
 #
 #		# I'm not so  sure
-#		# usually past.p1.pl share rules with 
-#		# past.p2.pl, past.p2.sg, past.p1.sg
+#		# usually past.p1.mf.pl share rules with 
+#		# past.p2.mf.pl, past.p2.mf.sg, past.p1.mf.sg
 #		# and r[0] + 'ie' + r[2] + 'na' can be
-#		# past.3.sg.m + prn.p1.pl d.o. 
+#		# past.3.sg.m + prn.p1.mf.pl d.o. 
 #
-#		# or maybe past.3.sg.m + prn.p1.pl d.o. is
+#		# or maybe past.3.sg.m + prn.p1.mf.pl d.o. is
 #		# r[0] + 'i/o' + r[2] + 'na' too?
 #
-#		forms['past.p1.pl'] = [(r[0] + 'ie' + r[2] + 'na', '-', '-')];
+#		forms['past.p1.mf.pl'] = [(r[0] + 'ie' + r[2] + 'na', '-', '-')];
 #		
 #		# that's the usual rule though
-#		forms['past.p3.pl'] = [(r[0] + 'ie' + r[2] + 'u', '-', '-')];	
+#		forms['past.p3.mf.pl'] = [(r[0] + 'ie' + r[2] + 'u', '-', '-')];	
 	#}
 
 	return forms;
@@ -188,8 +188,8 @@ def hollow_imp(root, vowels, tv): #{
 	#}
 	ok = 'ek';
 		
-	forms['imp.p2.sg'] = hollow_sg_forms(r[0] + link_vowel + r[2], r[0] + link_vowel + r[2], '-', ok, tv);
-	forms['imp.p2.pl'] = hollow_pl_forms(r[0] + link_vowel + r[2] + 'u', r[0] + link_vowel + r[2] + 'u', '-', tv);
+	forms['imp.p2.mf.sg'] = hollow_sg_forms(r[0] + link_vowel + r[2], r[0] + link_vowel + r[2], '-', ok, tv);
+	forms['imp.p2.mf.pl'] = hollow_pl_forms(r[0] + link_vowel + r[2] + 'u', r[0] + link_vowel + r[2] + 'u', '-', tv);
 
 	return forms;
 #}
@@ -234,30 +234,30 @@ def hollow_pres(root, vowels, tv): #{
 	forms['pres.p3.f.sg'] += hollow_sg_forms('t' + form_sg, 't' + form_sg, 'LR', ok, tv);		# trid		tsir(!)		tdur(!)
 	forms['pres.p3.f.sg'] += hollow_sg_forms('i' + r[0] + form_sg, 'i' + r[0] + form_sg, 'RL', ok, tv);	# ~irrid	~issir		~iddur
 
-	forms['pres.p2.sg'] = hollow_sg_forms('i' + r[0] + form_sg, 'i' + r[0] + form_sg, 'LR', ok, tv);		# irrid 	issir		iddur
-	forms['pres.p2.sg'] += hollow_sg_forms(r[0] + form_sg, r[0] + form_sg, 'LR', ok, tv);			# rrid		ssir		ddur
-	forms['pres.p2.sg'] += hollow_sg_forms('t' + form_sg, 't' + form_sg, 'LR', ok, tv);			# trid 		tsir(!)		tdur(!)
-	forms['pres.p2.sg'] += hollow_sg_forms('i' + r[0] + form_sg, 'i' + r[0] + form_sg, 'RL', ok, tv);		# ~irrid	~issir		~iddur
+	forms['pres.p2.mf.sg'] = hollow_sg_forms('i' + r[0] + form_sg, 'i' + r[0] + form_sg, 'LR', ok, tv);		# irrid 	issir		iddur
+	forms['pres.p2.mf.sg'] += hollow_sg_forms(r[0] + form_sg, r[0] + form_sg, 'LR', ok, tv);			# rrid		ssir		ddur
+	forms['pres.p2.mf.sg'] += hollow_sg_forms('t' + form_sg, 't' + form_sg, 'LR', ok, tv);			# trid 		tsir(!)		tdur(!)
+	forms['pres.p2.mf.sg'] += hollow_sg_forms('i' + r[0] + form_sg, 'i' + r[0] + form_sg, 'RL', ok, tv);		# ~irrid	~issir		~iddur
 
-	forms['pres.p1.sg'] = hollow_sg_forms('in' + form_sg, 'in' + form_sg, 'LR', ok, tv);			# inrid		insir		indur
-	forms['pres.p1.sg'] += hollow_sg_forms('n' + form_sg, 'n' + form_sg, 'LR', ok, tv);			# nrid		nsir		ndur
-	forms['pres.p1.sg'] += hollow_sg_forms('in' + form_sg, 'in' + form_sg, 'RL', ok, tv);		# ~inrid	~insir		~indur
+	forms['pres.p1.mf.sg'] = hollow_sg_forms('in' + form_sg, 'in' + form_sg, 'LR', ok, tv);			# inrid		insir		indur
+	forms['pres.p1.mf.sg'] += hollow_sg_forms('n' + form_sg, 'n' + form_sg, 'LR', ok, tv);			# nrid		nsir		ndur
+	forms['pres.p1.mf.sg'] += hollow_sg_forms('in' + form_sg, 'in' + form_sg, 'RL', ok, tv);		# ~inrid	~insir		~indur
 
 
 	form_pl = r[0] + link_vowel + r[2] + 'u';
 
-	forms['pres.p3.pl'] = hollow_pl_forms('i' + form_pl, 'i' + form_pl, 'LR', tv);		# iridu		isiru		iduru
-	forms['pres.p3.pl'] += hollow_pl_forms('j' + form_pl, 'j' + form_pl, 'LR', tv);		# jridu		jsiru		jduru
-	forms['pres.p3.pl'] += hollow_pl_forms('i' + form_pl, 'i' + form_pl, 'RL', tv);		# ~iridu	~isiru		~iduru
+	forms['pres.p3.mf.pl'] = hollow_pl_forms('i' + form_pl, 'i' + form_pl, 'LR', tv);		# iridu		isiru		iduru
+	forms['pres.p3.mf.pl'] += hollow_pl_forms('j' + form_pl, 'j' + form_pl, 'LR', tv);		# jridu		jsiru		jduru
+	forms['pres.p3.mf.pl'] += hollow_pl_forms('i' + form_pl, 'i' + form_pl, 'RL', tv);		# ~iridu	~isiru		~iduru
 
-	forms['pres.p2.pl'] = hollow_pl_forms('i' + r[0] + form_pl, 'i' + r[0] + form_pl, 'LR', tv);	# irridu	issiru		idduru
-	forms['pres.p2.pl'] += hollow_pl_forms(r[0] + form_pl, r[0] + form_pl, 'LR', tv);		# rridu		ssiru		dduru
-	forms['pres.p2.pl'] += hollow_pl_forms('t' + form_pl, 't' + form_pl, 'LR', tv);		# tridu		tsiru(!)	tduru(!)
-	forms['pres.p2.pl'] += hollow_pl_forms('i' + r[0] + form_pl, 'i' + r[0] + form_pl, 'RL', tv);	# ~irridu	~issiru		~idduru
+	forms['pres.p2.mf.pl'] = hollow_pl_forms('i' + r[0] + form_pl, 'i' + r[0] + form_pl, 'LR', tv);	# irridu	issiru		idduru
+	forms['pres.p2.mf.pl'] += hollow_pl_forms(r[0] + form_pl, r[0] + form_pl, 'LR', tv);		# rridu		ssiru		dduru
+	forms['pres.p2.mf.pl'] += hollow_pl_forms('t' + form_pl, 't' + form_pl, 'LR', tv);		# tridu		tsiru(!)	tduru(!)
+	forms['pres.p2.mf.pl'] += hollow_pl_forms('i' + r[0] + form_pl, 'i' + r[0] + form_pl, 'RL', tv);	# ~irridu	~issiru		~idduru
 
-	forms['pres.p1.pl'] = hollow_pl_forms('in' + form_pl, 'in' + form_pl, 'LR', tv);		# inridu	insiru		induru
-	forms['pres.p1.pl'] += hollow_pl_forms('n' + form_pl, 'n' + form_pl, 'LR', tv);		# nridu		nsiru		nduru
-	forms['pres.p1.pl'] += hollow_pl_forms('in' + form_pl, 'in' + form_pl, 'RL', tv);		# ~inridu	~insiru		~induru
+	forms['pres.p1.mf.pl'] = hollow_pl_forms('in' + form_pl, 'in' + form_pl, 'LR', tv);		# inridu	insiru		induru
+	forms['pres.p1.mf.pl'] += hollow_pl_forms('n' + form_pl, 'n' + form_pl, 'LR', tv);		# nridu		nsiru		nduru
+	forms['pres.p1.mf.pl'] += hollow_pl_forms('in' + form_pl, 'in' + form_pl, 'RL', tv);		# ~inridu	~insiru		~induru
 	
 	return forms;
 #}

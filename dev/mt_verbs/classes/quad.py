@@ -97,21 +97,21 @@ def quad_past(root, vowels, tv): #{
 
 	# with suffix(es)
 	if v[1] == 'e' : #{
-		past_long = r[0] + v[0] + r[1] + r[2] + 'i' + r[3]; # kexkixni (past.p3.sg.m + prn.p1.sg)
+		past_long = r[0] + v[0] + r[1] + r[2] + 'i' + r[3]; # kexkixni (past.p3.sg.m + prn.p1.mf.sg)
 	else :
-		past_long = r[0] + v[0] + r[1] + r[2] + v[1] + r[3]; # dardarni (past.p3.sg.m + prn.p1.sg)
+		past_long = r[0] + v[0] + r[1] + r[2] + v[1] + r[3]; # dardarni (past.p3.sg.m + prn.p1.mf.sg)
 
-	past_short = r[0] + v[0] + r[1] + r[2] + r[3]; # dardrek, kexkxek (past.p3.sg.m + prn.p2.sg)
+	past_short = r[0] + v[0] + r[1] + r[2] + r[3]; # dardrek, kexkxek (past.p3.sg.m + prn.p2.mf.sg)
 
 
 	forms['past.p3.m.sg'] = quad_e_consonant_forms (past, past_long, past_short, '-', tv);
 	forms['past.p3.f.sg'] = quad_consonant_forms (past_short + 'et', past_short + 'it', '-', tv);
-	forms['past.p2.sg'] = quad_consonant_forms (past_long + 't', past_long + 't', '-', tv);
-	forms['past.p1.sg'] = quad_consonant_forms (past_long + 't', past_long + 't', '-', tv);
+	forms['past.p2.mf.sg'] = quad_consonant_forms (past_long + 't', past_long + 't', '-', tv);
+	forms['past.p1.mf.sg'] = quad_consonant_forms (past_long + 't', past_long + 't', '-', tv);
 
-	forms['past.p3.pl'] = quad_vowel_forms (past_short + 'u', past_short + 'u', '-', tv);
-	forms['past.p2.pl'] = quad_vowel_forms (past_long + 'tu', past_long + 'tu', '-', tv);
-	forms['past.p1.pl'] = quad_vowel_forms (past_long + 'na', past_long + 'nie', '-', tv);
+	forms['past.p3.mf.pl'] = quad_vowel_forms (past_short + 'u', past_short + 'u', '-', tv);
+	forms['past.p2.mf.pl'] = quad_vowel_forms (past_long + 'tu', past_long + 'tu', '-', tv);
+	forms['past.p1.mf.pl'] = quad_vowel_forms (past_long + 'na', past_long + 'nie', '-', tv);
 
 
 	return forms;
@@ -147,29 +147,35 @@ def quad_pres(root, vowels, tv): #{
 	# ċ, d, ġ, s, x, ż ?
 	forms['pres.p3.f.sg'] = quad_e_consonant_forms ('i' + r[0] + pres, 'i' + r[0] + pres_long, 'i' + r[0] + pres_short, 'LR', tv);	# iddardar
 	forms['pres.p3.f.sg'] += quad_e_consonant_forms (r[0] + pres, r[0] + pres_long, r[0] + pres_short, 'LR', tv);	# ddardar
+	forms['pres.p3.f.sg'] = quad_e_consonant_forms ('it' + pres, 'it' + pres_long, 'it' + pres_short, 'LR', tv);	# iddardar
+	forms['pres.p3.f.sg'] += quad_e_consonant_forms ('t' + pres, 't' + pres_long, 't' + pres_short, 'LR', tv);	# ddardar
 	forms['pres.p3.f.sg'] += quad_e_consonant_forms ('i' + r[0] + pres, 'i' + r[0] + pres_long, 'i' + r[0] + pres_short, 'RL', tv);	# ~iddardar
 
-	forms['pres.p2.sg'] = quad_e_consonant_forms ('i' + r[0] + pres, 'i' + r[0] + pres_long, 'i' + r[0] + pres_short, 'LR', tv);	# iddardar
-	forms['pres.p2.sg'] += quad_e_consonant_forms (r[0] + pres, r[0] + pres_long, r[0] + pres_short, 'LR', tv);	# ddardar
-	forms['pres.p2.sg'] += quad_e_consonant_forms ('i' + r[0] + pres, 'i' + r[0] + pres_long, 'i' + r[0] + pres_short, 'RL', tv);	# ~iddardar
+	forms['pres.p2.mf.sg'] = quad_e_consonant_forms ('i' + r[0] + pres, 'i' + r[0] + pres_long, 'i' + r[0] + pres_short, 'LR', tv);	# iddardar
+	forms['pres.p2.mf.sg'] += quad_e_consonant_forms (r[0] + pres, r[0] + pres_long, r[0] + pres_short, 'LR', tv);	# ddardar
+	forms['pres.p2.mf.sg'] = quad_e_consonant_forms ('it' + pres, 'it' + pres_long, 'it' + pres_short, 'LR', tv);	# iddardar
+	forms['pres.p2.mf.sg'] += quad_e_consonant_forms ('t' + pres, 't' + pres_long, 't' + pres_short, 'LR', tv);	# ddardar
+	forms['pres.p2.mf.sg'] += quad_e_consonant_forms ('i' + r[0] + pres, 'i' + r[0] + pres_long, 'i' + r[0] + pres_short, 'RL', tv);	# ~iddardar
 
-	forms['pres.p1.sg'] = quad_e_consonant_forms ('in' + pres, 'in' + pres_long, 'in' + pres_short, 'LR', tv);		# indardar
-	forms['pres.p1.sg'] += quad_e_consonant_forms ('n' + pres, 'n' + pres_long, 'n' + pres_short, 'LR', tv);		# ndardar
-	forms['pres.p1.sg'] += quad_e_consonant_forms ('in' + pres, 'in' + pres_long, 'in' + pres_short, 'RL', tv);	# indardar
+	forms['pres.p1.mf.sg'] = quad_e_consonant_forms ('in' + pres, 'in' + pres_long, 'in' + pres_short, 'LR', tv);		# indardar
+	forms['pres.p1.mf.sg'] += quad_e_consonant_forms ('n' + pres, 'n' + pres_long, 'n' + pres_short, 'LR', tv);		# ndardar
+	forms['pres.p1.mf.sg'] += quad_e_consonant_forms ('in' + pres, 'in' + pres_long, 'in' + pres_short, 'RL', tv);	# indardar
 
 
 
-	forms['pres.p3.pl'] = quad_vowel_forms ('i' + pres_short + 'u', 'i' + pres_short + 'u', 'LR', tv);		# idardru
-	forms['pres.p3.pl'] += quad_vowel_forms ('j' + pres_short + 'u', 'j' + pres_short + 'u', 'LR', tv); 		# jdardru
-	forms['pres.p3.pl'] += quad_vowel_forms ('i' + pres_short + 'u', 'i' + pres_short + 'u', 'RL', tv);		# ~idardru
+	forms['pres.p3.mf.pl'] = quad_vowel_forms ('i' + pres_short + 'u', 'i' + pres_short + 'u', 'LR', tv);		# idardru
+	forms['pres.p3.mf.pl'] += quad_vowel_forms ('j' + pres_short + 'u', 'j' + pres_short + 'u', 'LR', tv); 		# jdardru
+	forms['pres.p3.mf.pl'] += quad_vowel_forms ('i' + pres_short + 'u', 'i' + pres_short + 'u', 'RL', tv);		# ~idardru
 
-	forms['pres.p2.pl'] = quad_vowel_forms ('i' + r[0] + pres_short + 'u', 'i' + r[0] + pres_short + 'u', 'LR', tv);	# iddardru
-	forms['pres.p2.pl'] += quad_vowel_forms (r[0] + pres_short + 'u', r[0] + pres_short + 'u', 'LR', tv);		# ddardru
-	forms['pres.p2.pl'] += quad_vowel_forms ('i' + r[0] + pres_short + 'u', 'i' + r[0] + pres_short + 'u', 'RL', tv);	# ~iddardru
+	forms['pres.p2.mf.pl'] = quad_vowel_forms ('i' + r[0] + pres_short + 'u', 'i' + r[0] + pres_short + 'u', 'LR', tv);	# iddardru
+	forms['pres.p2.mf.pl'] += quad_vowel_forms (r[0] + pres_short + 'u', r[0] + pres_short + 'u', 'LR', tv);		# ddardru
+	forms['pres.p2.mf.pl'] = quad_vowel_forms ('it' + pres_short + 'u', 'it' + pres_short + 'u', 'LR', tv);	# iddardru
+	forms['pres.p2.mf.pl'] += quad_vowel_forms ('t' + pres_short + 'u', 't' + pres_short + 'u', 'LR', tv);		# ddardru
+	forms['pres.p2.mf.pl'] += quad_vowel_forms ('i' + r[0] + pres_short + 'u', 'i' + r[0] + pres_short + 'u', 'RL', tv);	# ~iddardru
 
-	forms['pres.p1.pl'] = quad_vowel_forms ('in' + pres_short + 'u', 'in' + pres_short + 'u', 'LR', tv);		# indardru
-	forms['pres.p1.pl'] += quad_vowel_forms ('n' + pres_short + 'u', 'in' + pres_short + 'u', 'LR', tv);		# indardru
-	forms['pres.p1.pl'] += quad_vowel_forms ('in' + pres_short + 'u', 'in' + pres_short + 'u', 'RL', tv);		# indardru
+	forms['pres.p1.mf.pl'] = quad_vowel_forms ('in' + pres_short + 'u', 'in' + pres_short + 'u', 'LR', tv);		# indardru
+	forms['pres.p1.mf.pl'] += quad_vowel_forms ('n' + pres_short + 'u', 'in' + pres_short + 'u', 'LR', tv);		# indardru
+	forms['pres.p1.mf.pl'] += quad_vowel_forms ('in' + pres_short + 'u', 'in' + pres_short + 'u', 'RL', tv);		# indardru
 
 	return forms;
 #}
@@ -195,8 +201,8 @@ def quad_imp(root, vowels, tv): #{
 	
 	suffix = 'u';
 
-	forms['imp.p2.sg'] = quad_e_consonant_forms (pres, pres_long, pres_short, '-', tv);
-	forms['imp.p2.pl'] = quad_vowel_forms (pres_short + 'u', pres_short + 'u', '-', tv);
+	forms['imp.p2.mf.sg'] = quad_e_consonant_forms (pres, pres_long, pres_short, '-', tv);
+	forms['imp.p2.mf.pl'] = quad_vowel_forms (pres_short + 'u', pres_short + 'u', '-', tv);
 
 	return forms;
 #}
@@ -239,11 +245,11 @@ def quad_patt2_past(root, vowels, tv): #{
 
 	# with suffix(es)
 	if v[1] == 'e' : #{
-		past_long = prefix_cons + r[0] + v[0] + r[1] + r[2] + 'i' + r[3]; # ssellifni (past.p3.sg.m + prn.p1.sg)
+		past_long = prefix_cons + r[0] + v[0] + r[1] + r[2] + 'i' + r[3]; # ssellifni (past.p3.sg.m + prn.p1.mf.sg)
 	else :
-		past_long = prefix_cons + r[0] + v[0] + r[1] + r[2] + v[1] + r[3]; # tfakkarni (past.p3.sg.m + prn.p1.sg, doesn't really make sense)
+		past_long = prefix_cons + r[0] + v[0] + r[1] + r[2] + v[1] + r[3]; # tfakkarni (past.p3.sg.m + prn.p1.mf.sg, doesn't really make sense)
 
-	past_short = prefix_cons + r[0] + v[0] + r[1] + r[2] + r[3]; # tfakkrek, ssellfek (past.p3.sg.m + prn.p2.sg)
+	past_short = prefix_cons + r[0] + v[0] + r[1] + r[2] + r[3]; # tfakkrek, ssellfek (past.p3.sg.m + prn.p2.mf.sg)
 
 
 	forms['past.p3.m.sg'] = quad_e_consonant_forms ('i' + past, 'i' + past_long, 'i' + past_short, 'LR', tv);
@@ -254,25 +260,25 @@ def quad_patt2_past(root, vowels, tv): #{
 	forms['past.p3.f.sg'] += quad_consonant_forms (past_short + 'et', past_short + 'it', 'LR', tv);
 	forms['past.p3.f.sg'] += quad_consonant_forms ('i' + past_short + 'et', 'i' + past_short + 'it', 'RL', tv);
 
-	forms['past.p2.sg'] = quad_consonant_forms ('i' + past_long + 't', 'i' + past_long + 't', 'LR', tv);
-	forms['past.p2.sg'] += quad_consonant_forms (past_long + 't', past_long + 't', 'LR', tv);
-	forms['past.p2.sg'] += quad_consonant_forms ('i' + past_long + 't', 'i' + past_long + 't', 'RL', tv);
+	forms['past.p2.mf.sg'] = quad_consonant_forms ('i' + past_long + 't', 'i' + past_long + 't', 'LR', tv);
+	forms['past.p2.mf.sg'] += quad_consonant_forms (past_long + 't', past_long + 't', 'LR', tv);
+	forms['past.p2.mf.sg'] += quad_consonant_forms ('i' + past_long + 't', 'i' + past_long + 't', 'RL', tv);
 
-	forms['past.p1.sg'] = quad_consonant_forms ('i' + past_long + 't', 'i' + past_long + 't', 'LR', tv);
-	forms['past.p1.sg'] += quad_consonant_forms (past_long + 't', past_long + 't', 'LR', tv);
-	forms['past.p1.sg'] += quad_consonant_forms ('i' + past_long + 't', 'i' + past_long + 't', 'RL', tv);
+	forms['past.p1.mf.sg'] = quad_consonant_forms ('i' + past_long + 't', 'i' + past_long + 't', 'LR', tv);
+	forms['past.p1.mf.sg'] += quad_consonant_forms (past_long + 't', past_long + 't', 'LR', tv);
+	forms['past.p1.mf.sg'] += quad_consonant_forms ('i' + past_long + 't', 'i' + past_long + 't', 'RL', tv);
 
-	forms['past.p3.pl'] = quad_vowel_forms ('i' + past_short + 'u', 'i' + past_short + 'u', 'LR', tv);
-	forms['past.p3.pl'] += quad_vowel_forms (past_short + 'u', past_short + 'u', 'LR', tv);
-	forms['past.p3.pl'] += quad_vowel_forms ('i' + past_short + 'u', 'i' + past_short + 'u', 'RL', tv);
+	forms['past.p3.mf.pl'] = quad_vowel_forms ('i' + past_short + 'u', 'i' + past_short + 'u', 'LR', tv);
+	forms['past.p3.mf.pl'] += quad_vowel_forms (past_short + 'u', past_short + 'u', 'LR', tv);
+	forms['past.p3.mf.pl'] += quad_vowel_forms ('i' + past_short + 'u', 'i' + past_short + 'u', 'RL', tv);
 
-	forms['past.p2.pl'] = quad_vowel_forms ('i' + past_long + 'tu', 'i' + past_long + 'tu', 'LR', tv);
-	forms['past.p2.pl'] += quad_vowel_forms (past_long + 'tu', past_long + 'tu', 'LR', tv);
-	forms['past.p2.pl'] += quad_vowel_forms ('i' + past_long + 'tu', 'i' + past_long + 'tu', 'RL', tv);
+	forms['past.p2.mf.pl'] = quad_vowel_forms ('i' + past_long + 'tu', 'i' + past_long + 'tu', 'LR', tv);
+	forms['past.p2.mf.pl'] += quad_vowel_forms (past_long + 'tu', past_long + 'tu', 'LR', tv);
+	forms['past.p2.mf.pl'] += quad_vowel_forms ('i' + past_long + 'tu', 'i' + past_long + 'tu', 'RL', tv);
 
-	forms['past.p1.pl'] = quad_vowel_forms ('i' + past_long + 'na', 'i' + past_long + 'nie', 'LR', tv);
-	forms['past.p1.pl'] += quad_vowel_forms (past_long + 'na', past_long + 'nie', 'LR', tv);
-	forms['past.p1.pl'] += quad_vowel_forms ('i' + past_long + 'na', 'i' + past_long + 'nie', 'RL', tv);
+	forms['past.p1.mf.pl'] = quad_vowel_forms ('i' + past_long + 'na', 'i' + past_long + 'nie', 'LR', tv);
+	forms['past.p1.mf.pl'] += quad_vowel_forms (past_long + 'na', past_long + 'nie', 'LR', tv);
+	forms['past.p1.mf.pl'] += quad_vowel_forms ('i' + past_long + 'na', 'i' + past_long + 'nie', 'RL', tv);
 
 	return forms;
 #}
@@ -309,26 +315,26 @@ def quad_patt2_pres(root, vowels, tv): #{
 #	forms['pres.p3.f.sg'] += quad_e_consonant_forms (r[0] + pres, r[0] + pres_long, r[0] + pres_short, 'LR');	# ddardar
 #	forms['pres.p3.f.sg'] += quad_e_consonant_forms ('i' + r[0] + pres, 'i' + r[0] + pres_long, 'i' + r[0] + pres_short, 'RL');	# ~iddardar
 
-	forms['pres.p2.sg'] = quad_e_consonant_forms ('ti' + pres, 'ti' + pres_long, 'ti' + pres_short, '-', tv);	# 
-#	forms['pres.p2.sg'] += quad_e_consonant_forms (r[0] + pres, r[0] + pres_long, r[0] + pres_short, 'LR');	# ddardar
-#	forms['pres.p2.sg'] += quad_e_consonant_forms ('i' + r[0] + pres, 'i' + r[0] + pres_long, 'i' + r[0] + pres_short, 'RL');	# ~iddardar
+	forms['pres.p2.mf.sg'] = quad_e_consonant_forms ('ti' + pres, 'ti' + pres_long, 'ti' + pres_short, '-', tv);	# 
+#	forms['pres.p2.mf.sg'] += quad_e_consonant_forms (r[0] + pres, r[0] + pres_long, r[0] + pres_short, 'LR');	# ddardar
+#	forms['pres.p2.mf.sg'] += quad_e_consonant_forms ('i' + r[0] + pres, 'i' + r[0] + pres_long, 'i' + r[0] + pres_short, 'RL');	# ~iddardar
 
-	forms['pres.p1.sg'] = quad_e_consonant_forms ('ni' + pres, 'ni' + pres_long, 'ni' + pres_short, '-', tv);		# 
-#	forms['pres.p1.sg'] += quad_e_consonant_forms ('n' + pres, 'n' + pres_long, 'n' + pres_short, 'LR');		# ndardar
-#	forms['pres.p1.sg'] += quad_e_consonant_forms ('in' + pres, 'in' + pres_long, 'in' + pres_short, 'RL');	# indardar
+	forms['pres.p1.mf.sg'] = quad_e_consonant_forms ('ni' + pres, 'ni' + pres_long, 'ni' + pres_short, '-', tv);		# 
+#	forms['pres.p1.mf.sg'] += quad_e_consonant_forms ('n' + pres, 'n' + pres_long, 'n' + pres_short, 'LR');		# ndardar
+#	forms['pres.p1.mf.sg'] += quad_e_consonant_forms ('in' + pres, 'in' + pres_long, 'in' + pres_short, 'RL');	# indardar
 
 
-	forms['pres.p3.pl'] = quad_vowel_forms ('ji' + pres_short + 'u', 'ji' + pres_short + 'u', '-', tv);		# 
-#	forms['pres.p3.pl'] += quad_vowel_forms ('j' + pres_short + 'u', 'j' + pres_short + 'u', 'LR'); 		# jdardru
-#	forms['pres.p3.pl'] += quad_vowel_forms ('i' + pres_short + 'u', 'i' + pres_short + 'u', 'RL');		# ~idardru
+	forms['pres.p3.mf.pl'] = quad_vowel_forms ('ji' + pres_short + 'u', 'ji' + pres_short + 'u', '-', tv);		# 
+#	forms['pres.p3.mf.pl'] += quad_vowel_forms ('j' + pres_short + 'u', 'j' + pres_short + 'u', 'LR'); 		# jdardru
+#	forms['pres.p3.mf.pl'] += quad_vowel_forms ('i' + pres_short + 'u', 'i' + pres_short + 'u', 'RL');		# ~idardru
 
-	forms['pres.p2.pl'] = quad_vowel_forms ('ti' + pres_short + 'u', 'ti' + pres_short + 'u', '-', tv);	# 
-#	forms['pres.p2.pl'] += quad_vowel_forms (r[0] + pres_short + 'u', r[0] + pres_short + 'u', 'LR');		# ddardru
-#	forms['pres.p2.pl'] += quad_vowel_forms ('i' + r[0] + pres_short + 'u', 'i' + r[0] + pres_short + 'u', 'RL');	# ~iddardru
+	forms['pres.p2.mf.pl'] = quad_vowel_forms ('ti' + pres_short + 'u', 'ti' + pres_short + 'u', '-', tv);	# 
+#	forms['pres.p2.mf.pl'] += quad_vowel_forms (r[0] + pres_short + 'u', r[0] + pres_short + 'u', 'LR');		# ddardru
+#	forms['pres.p2.mf.pl'] += quad_vowel_forms ('i' + r[0] + pres_short + 'u', 'i' + r[0] + pres_short + 'u', 'RL');	# ~iddardru
 
-	forms['pres.p1.pl'] = quad_vowel_forms ('ni' + pres_short + 'u', 'ni' + pres_short + 'u', '-', tv);		# 
-#	forms['pres.p1.pl'] += quad_vowel_forms ('n' + pres_short + 'u', 'in' + pres_short + 'u', 'LR');		# indardru
-#	forms['pres.p1.pl'] += quad_vowel_forms ('in' + pres_short + 'u', 'in' + pres_short + 'u', 'RL');		# indardru
+	forms['pres.p1.mf.pl'] = quad_vowel_forms ('ni' + pres_short + 'u', 'ni' + pres_short + 'u', '-', tv);		# 
+#	forms['pres.p1.mf.pl'] += quad_vowel_forms ('n' + pres_short + 'u', 'in' + pres_short + 'u', 'LR');		# indardru
+#	forms['pres.p1.mf.pl'] += quad_vowel_forms ('in' + pres_short + 'u', 'in' + pres_short + 'u', 'RL');		# indardru
 
 	return forms;
 #}
@@ -359,8 +365,8 @@ def quad_patt2_imp(root, vowels, tv): #{
 	
 	suffix = 'u';
 
-	forms['imp.p2.sg'] = quad_e_consonant_forms (pres, pres_long, pres_short, '-', tv);
-	forms['imp.p2.pl'] = quad_vowel_forms (pres_short + 'u', pres_short + 'u', '-', tv);
+	forms['imp.p2.mf.sg'] = quad_e_consonant_forms (pres, pres_long, pres_short, '-', tv);
+	forms['imp.p2.mf.pl'] = quad_vowel_forms (pres_short + 'u', pres_short + 'u', '-', tv);
 
 	return forms;
 #}

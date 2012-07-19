@@ -99,4 +99,6 @@
 | uża || vblex || loan || first_vowel || use || uż || || a || tv || użat 
 |-
 | intuża || vblex || loan || first_vowel || be-used || intuż || || a || iv || intużat 
+|-
+| influwenza || vblex || loan || first_vowel || influence || influwenz ||  || a || tv || influwenzat
 |}

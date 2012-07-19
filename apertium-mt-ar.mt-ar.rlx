@@ -9,8 +9,14 @@ LIST ADV = adv;
 LIST ADJ = adj;
 LIST DETDEF = (det def);
 
+LIST VRBPART = (pprs) (pp);
+LIST PAST = (past);
+LIST PRES = (pres);
+LIST IMP = (imp);
+
 LIST CNJSUB = cnjsub;
 LIST REL = rel;
+LIST ITG = itg;
 
 LIST SG = sg;
 LIST PL = pl;
@@ -20,6 +26,13 @@ LIST NOUNPL = (n pl);
 
 LIST VRBSG = (vblex sg) (vaux sg);
 LIST VRBPL = (vblex pl) (vaux pl);
+
+LIST BOS = (>>>) ;
+LIST EOS = (<<<) ;
+
+
+SET SENTBOUNDARY = CNJSUB | REL | ITG | EOS;
+
 
 # Hey, that's crucial :)
 SUBREADINGS = LTR ;
@@ -58,7 +71,7 @@ SELECT:r6 NOUN IF
         (-1 PREP) # -1 PREP, -1/1 DETDEF
         (0 NOUN)
         (0 ADJ) ;
-# fil-Malti 
+# fil-Malti ; hm, apparently there are constructions like l-veru Koran :(
 
 SELECT:r7 NOUN IF
         (-2 CNJSUB)
@@ -87,3 +100,32 @@ SELECT:r10 VRBPL IF
         (-1 NOUNPL)
         (0 VRBPL)
         (0 VRBSG) ;
+
+# ħafna
+SELECT:r11 ADV IF
+        (-1 ADJ)
+        (0 ADV)
+        (0 DET)
+        (0 PRN) ;
+
+SELECT:r12 ADV IF
+        (-1 VERB)
+        (0 ADV)
+        (0 DET)
+        (0 PRN) ;
+
+SELECT:r13 VRBPL IF
+        (NOT *-1 NOUN BARRIER SENTBOUNDARY)
+        (0 VRBPL)
+        (0 VRBSG)
+        (1 DETDEF)
+        (2 NOUNPL);
+
+SELECT:r14 ADJ IF
+        (0 ADJ)
+        (0 VRBPART);
+
+SELECT:r15 PAST IF
+        (-1 PRN)
+        (0 PAST)
+        (0 IMP) ;

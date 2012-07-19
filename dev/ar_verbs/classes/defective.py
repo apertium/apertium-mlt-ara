@@ -196,20 +196,23 @@ def defective_past_pasv(base): #{
 
 	forms = {};
 
-	forms['pasv.past.p3.m.sg'] = [(base + 'ي', '-', '-')];
-	forms['pasv.past.p3.f.sg'] = [(base + 'يت', '-', '-')];
-	forms['pasv.past.p2.m.sg'] = [(base + 'يت', '-', '-')];
-	forms['pasv.past.p2.f.sg'] = [(base + 'يت', '-', '-')];
-	forms['pasv.past.p1.mf.sg'] = [(base + 'يت', '-', '-')];
-	forms['pasv.past.p3.m.du'] = [(base + 'يا', '-', '-')];
-	forms['pasv.past.p3.f.du'] = [(base + 'يتا', '-', '-')];
-	forms['pasv.past.p2.mf.du'] = [(base + 'يتما', '-', '-')];
+	rlbase = base[0: 2] + 'ُ' + base[2: ];
 
-	forms['pasv.past.p3.m.pl'] = [(base + 'وا', '-', '-')];
-	forms['pasv.past.p3.f.pl'] = [(base + 'ين', '-', '-')];
-	forms['pasv.past.p2.m.pl'] = [(base + 'يتم', '-', '-')];
-	forms['pasv.past.p2.f.pl'] = [(base + 'يتن', '-', '-')];
-	forms['pasv.past.p1.mf.pl'] = [(base + 'ينا', '-', '-')];
+	forms['pasv.past.p3.m.sg'] = [(base + 'ي', '-', 'LR'), (rlbase + 'ي', '-', 'RL')];
+	forms['pasv.past.p3.f.sg'] = [(base + 'يت', '-', 'LR'), (rlbase + 'يت', '-', 'RL')];
+	forms['pasv.past.p2.m.sg'] = [(base + 'يت', '-', 'LR'), (rlbase + 'يت', '-', 'RL')];
+	forms['pasv.past.p2.f.sg'] = [(base + 'يت', '-', 'LR'), (rlbase + 'يت', '-', 'RL')];
+	forms['pasv.past.p1.mf.sg'] = [(base + 'يت', '-', 'LR'), (rlbase + 'يت', '-', 'RL')];
+
+	forms['pasv.past.p3.m.du'] = [(base + 'يا', '-', 'LR'), (rlbase + 'يا', '-', 'RL')];
+	forms['pasv.past.p3.f.du'] = [(base + 'يتا', '-', 'LR'), (rlbase + 'يتا', '-', 'RL')];
+	forms['pasv.past.p2.mf.du'] = [(base + 'يتما', '-', 'LR'), (rlbase + 'يتما', '-', 'RL')];
+
+	forms['pasv.past.p3.m.pl'] = [(base + 'وا', '-', 'LR'), (rlbase + 'وا', '-', 'RL')];
+	forms['pasv.past.p3.f.pl'] = [(base + 'ين', '-', 'LR'), (rlbase + 'ين', '-', 'RL')];
+	forms['pasv.past.p2.m.pl'] = [(base + 'يتم', '-', 'LR'), (rlbase + 'يتم', '-', 'RL')];
+	forms['pasv.past.p2.f.pl'] = [(base + 'يتن', '-', 'LR'), (rlbase + 'يتن', '-', 'RL')];
+	forms['pasv.past.p1.mf.pl'] = [(base + 'ينا', '-', 'LR'), (rlbase + 'ينا', '-', 'RL')];
 
 	return forms;
 #}
@@ -359,21 +362,22 @@ def defective_pres_yy_actv(base, tv): #{
 def defective_pres_pasv(base): #{
 
 	forms = {};
-	forms['pasv.pres.p3.m.sg'] = [('ي' + base + 'ى', '-', '-')];
-	forms['pasv.pres.p3.f.sg'] = [('ت' + base + 'ى', '-', '-')];
-	forms['pasv.pres.p2.m.sg'] = [('ت' + base + 'ى', '-', '-')];
-	forms['pasv.pres.p2.f.sg'] = [('ت' + base + 'ين', '-', '-')];
-	forms['pasv.pres.p1.mf.sg'] = [('أ' + base + 'ى', '-', '-')];
 
-	forms['pasv.pres.p3.m.du'] = [('ي' + base + 'يان', '-', '-')];
-	forms['pasv.pres.p3.f.du'] = [('ت' + base + 'يان', '-', '-')];
-	forms['pasv.pres.p2.mf.du'] = [('ت' + base + 'يان', '-', '-')];
+	forms['pasv.pres.p3.m.sg'] = [('ي' + base + 'ى', '-', 'LR'), ('يُ' + base + 'ى', '-', 'RL')];
+	forms['pasv.pres.p3.f.sg'] = [('ت' + base + 'ى', '-', 'LR'), ('تُ' + base + 'ى', '-', 'RL')];
+	forms['pasv.pres.p2.m.sg'] = [('ت' + base + 'ى', '-', 'LR'), ('تُ' + base + 'ى', '-', 'RL')];
+	forms['pasv.pres.p2.f.sg'] = [('ت' + base + 'ين', '-', 'LR'), ('تُ' + base + 'ين', '-', 'RL')];
+	forms['pasv.pres.p1.mf.sg'] = [('أ' + base + 'ى', '-', 'LR'), ('اُ' + base + 'ى', '-', 'RL')];
 
-	forms['pasv.pres.p3.m.pl'] = [('ي' + base + 'ون', '-', '-')];
-	forms['pasv.pres.p3.f.pl'] = [('ي' + base + 'ين', '-', '-')];
-	forms['pasv.pres.p2.m.pl'] = [('ت' + base + 'ون', '-', '-')];
-	forms['pasv.pres.p2.f.pl'] = [('ت' + base + 'ين', '-', '-')];
-	forms['pasv.pres.p1.mf.pl'] = [('ن' + base + 'ى', '-', '-')];
+	forms['pasv.pres.p3.m.du'] = [('ي' + base + 'يان', '-', 'LR'), ('يُ' + base + 'يان', '-', 'RL')];
+	forms['pasv.pres.p3.f.du'] = [('ت' + base + 'يان', '-', 'LR'), ('تُ' + base + 'يان', '-', 'RL')];
+	forms['pasv.pres.p2.mf.du'] = [('ت' + base + 'يان', '-', 'LR'), ('تُ' + base + 'يان', '-', 'RL')];
+
+	forms['pasv.pres.p3.m.pl'] = [('ي' + base + 'ون', '-', 'LR'), ('يُ' + base + 'ون', '-', 'RL')];
+	forms['pasv.pres.p3.f.pl'] = [('ي' + base + 'ين', '-', 'LR'), ('يُ' + base + 'ين', '-', 'RL')];
+	forms['pasv.pres.p2.m.pl'] = [('ت' + base + 'ون', '-', 'LR'), ('تُ' + base + 'ون', '-', 'RL')];
+	forms['pasv.pres.p2.f.pl'] = [('ت' + base + 'ين', '-', 'LR'), ('تُ' + base + 'ين', '-', 'RL')];
+	forms['pasv.pres.p1.mf.pl'] = [('ن' + base + 'ى', '-', 'LR'), ('نُ' + base + 'ى', '-', 'RL')];
 
 	return forms;
 #}
@@ -524,21 +528,22 @@ def defective_subjun_yy_actv(base, tv): #{
 def defective_subjun_pasv(base): #{
 
 	forms = {};
-	forms['pasv.subjun.p3.m.sg'] = [('ي' + base + 'ى', '-', '-')];
-	forms['pasv.subjun.p3.f.sg'] = [('ت' + base + 'ى', '-', '-')];
-	forms['pasv.subjun.p2.m.sg'] = [('ت' + base + 'ى', '-', '-')];
-	forms['pasv.subjun.p2.f.sg'] = [('ت' + base + 'ي', '-', '-')];
-	forms['pasv.subjun.p1.mf.sg'] = [('أ' + base + 'ى', '-', '-')];
 
-	forms['pasv.subjun.p3.m.du'] = [('ي' + base + 'يا', '-', '-')];
-	forms['pasv.subjun.p3.f.du'] = [('ت' + base + 'يا', '-', '-')];
-	forms['pasv.subjun.p2.mf.du'] = [('ت' + base + 'يا', '-', '-')];
+	forms['pasv.subjun.p3.m.sg'] = [('ي' + base + 'ى', '-', 'LR'), ('يُ' + base + 'ى', '-', 'RL')];
+	forms['pasv.subjun.p3.f.sg'] = [('ت' + base + 'ى', '-', 'LR'), ('تُ' + base + 'ى', '-', 'RL')];
+	forms['pasv.subjun.p2.m.sg'] = [('ت' + base + 'ى', '-', 'LR'), ('تُ' + base + 'ى', '-', 'RL')];
+	forms['pasv.subjun.p2.f.sg'] = [('ت' + base + 'ي', '-', 'LR'), ('تُ' + base + 'ي', '-', 'RL')];
+	forms['pasv.subjun.p1.mf.sg'] = [('أ' + base + 'ى', '-', 'LR'), ('اُ' + base + 'ى', '-', 'RL')];
 
-	forms['pasv.subjun.p3.m.pl'] = [('ي' + base + 'وا', '-', '-')];
-	forms['pasv.subjun.p3.f.pl'] = [('ي' + base + 'ين', '-', '-')];
-	forms['pasv.subjun.p2.m.pl'] = [('ت' + base + 'وا', '-', '-')];
-	forms['pasv.subjun.p2.f.pl'] = [('ت' + base + 'ين', '-', '-')];
-	forms['pasv.subjun.p1.mf.pl'] = [('ن' + base + 'ى', '-', '-')];
+	forms['pasv.subjun.p3.m.du'] = [('ي' + base + 'يا', '-', 'LR'), ('يُ' + base + 'يا', '-', 'RL')];
+	forms['pasv.subjun.p3.f.du'] = [('ت' + base + 'يا', '-', 'LR'), ('تُ' + base + 'يا', '-', 'RL')];
+	forms['pasv.subjun.p2.mf.du'] = [('ت' + base + 'يا', '-', 'LR'), ('تُ' + base + 'يا', '-', 'RL')];
+
+	forms['pasv.subjun.p3.m.pl'] = [('ي' + base + 'وا', '-', 'LR'), ('يُ' + base + 'وا', '-', 'RL')];
+	forms['pasv.subjun.p3.f.pl'] = [('ي' + base + 'ين', '-', 'LR'), ('يُ' + base + 'ين', '-', 'RL')];
+	forms['pasv.subjun.p2.m.pl'] = [('ت' + base + 'وا', '-', 'LR'), ('تُ' + base + 'وا', '-', 'RL')];
+	forms['pasv.subjun.p2.f.pl'] = [('ت' + base + 'ين', '-', 'LR'), ('تُ' + base + 'ين', '-', 'RL')];
+	forms['pasv.subjun.p1.mf.pl'] = [('ن' + base + 'ى', '-', 'LR'), ('نُ' + base + 'ى', '-', 'RL')];
 
 	return forms;
 #}
@@ -641,21 +646,22 @@ def defective_apocop_y_actv(base, tv): #{
 def defective_apocop_pasv(base): #{
 
 	forms = {};
-	forms['pasv.apocop.p3.m.sg'] = [('ي' + base, '-', '-')];
-	forms['pasv.apocop.p3.f.sg'] = [('ت' + base, '-', '-')];
-	forms['pasv.apocop.p2.m.sg'] = [('ت' + base, '-', '-')];
-	forms['pasv.apocop.p2.f.sg'] = [('ت' + base + 'ي', '-', '-')];
-	forms['pasv.apocop.p1.mf.sg'] = [('أ' + base, '-', '-')];
 
-	forms['pasv.apocop.p3.m.du'] = [('ي' + base + 'يا', '-', '-')];
-	forms['pasv.apocop.p3.f.du'] = [('ت' + base + 'يا', '-', '-')];
-	forms['pasv.apocop.p2.mf.du'] = [('ت' + base + 'يا', '-', '-')];
+	forms['pasv.apocop.p3.m.sg'] = [('ي' + base, '-', 'LR'), ('يُ' + base, '-', 'RL')];
+	forms['pasv.apocop.p3.f.sg'] = [('ت' + base, '-', 'LR'), ('تُ' + base, '-', 'RL')];
+	forms['pasv.apocop.p2.m.sg'] = [('ت' + base, '-', 'LR'), ('تُ' + base, '-', 'RL')];
+	forms['pasv.apocop.p2.f.sg'] = [('ت' + base + 'ي', '-', 'LR'), ('تُ' + base + 'ي', '-', 'RL')];
+	forms['pasv.apocop.p1.mf.sg'] = [('أ' + base, '-', 'LR'), ('اُ' + base, '-', 'RL')];
 
-	forms['pasv.apocop.p3.m.pl'] = [('ي' + base + 'وا', '-', '-')];
-	forms['pasv.apocop.p3.f.pl'] = [('ي' + base + 'ين', '-', '-')];
-	forms['pasv.apocop.p2.m.pl'] = [('ت' + base + 'وا', '-', '-')];
-	forms['pasv.apocop.p2.f.pl'] = [('ت' + base + 'ين', '-', '-')];
-	forms['pasv.apocop.p1.mf.pl'] = [('ن' + base, '-', '-')];
+	forms['pasv.apocop.p3.m.du'] = [('ي' + base + 'يا', '-', 'LR'), ('يُ' + base + 'يا', '-', 'RL')];
+	forms['pasv.apocop.p3.f.du'] = [('ت' + base + 'يا', '-', 'LR'), ('تُ' + base + 'يا', '-', 'RL')];
+	forms['pasv.apocop.p2.mf.du'] = [('ت' + base + 'يا', '-', 'LR'), ('تُ' + base + 'يا', '-', 'RL')];
+
+	forms['pasv.apocop.p3.m.pl'] = [('ي' + base + 'وا', '-', 'LR'), ('يُ' + base + 'وا', '-', 'RL')];
+	forms['pasv.apocop.p3.f.pl'] = [('ي' + base + 'ين', '-', 'LR'), ('يُ' + base + 'ين', '-', 'RL')];
+	forms['pasv.apocop.p2.m.pl'] = [('ت' + base + 'وا', '-', 'LR'), ('تُ' + base + 'وا', '-', 'RL')];
+	forms['pasv.apocop.p2.f.pl'] = [('ت' + base + 'ين', '-', 'LR'), ('تُ' + base + 'ين', '-', 'RL')];
+	forms['pasv.apocop.p1.mf.pl'] = [('ن' + base, '-', 'LR'), ('نُ' + base, '-', 'RL')];
 
 	return forms;
 #}
@@ -713,6 +719,34 @@ def defective_imp_y(base, tv): #{
 
 	return forms ; 
 #}
+
+
+
+def defective_pprs(base, r): #{
+
+        forms = {};
+
+	forms['pprs.m.sg'] = [(base, 'S__قاض/', r)] ;
+	forms['pprs.f.sg'] = [(base + 'ي', 'S__كلم/ة', r)] ;
+	forms['pprs.m.pl'] = [(base, 'S__مهندس/ون', r)] ;
+	forms['pprs.f.pl'] = [(base + 'يات', 'S__كلمات/', r)] ;
+
+	return forms;
+#}
+
+
+def defective_pp(base, r): #{
+
+        forms = {};
+
+	forms['pp.m.sg'] = [(base, 'S__مستشف/ى', r)] ;
+	forms['pp.f.sg'] = [(base + 'ا', 'S__كلم/ة', r)] ;
+	forms['pp.m.pl'] = [(base, 'S__مهندس/ون', r)] ;
+	forms['pp.f.pl'] = [(base + 'يات', 'S__كلمات/', r)] ;
+
+	return forms;
+#}
+
 
 
 ## ----------------------------------------------------------------------------##
@@ -776,14 +810,7 @@ def defective_patt1_impf(root, subtype, tv): #{
 def defective_patt1_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [(r[0] + 'ا' + r[1], '-', '-')] ;
-	forms['pprs.f.sg'] = [(r[0] + 'ا' + r[1] + 'ية', '-', '-')] ;
-	forms['pprs.m.pl'] = [(r[0] + 'ا' + r[1] + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [(r[0] + 'ا' + r[1] + 'يات', '-', '-')] ;
-
-	return forms;
+	return defective_pprs(r[0] + 'ا' + r[1], '-');
 #}
 
 
@@ -792,10 +819,10 @@ def defective_patt1_pp(root): #{
 
 	forms = {};
 
-	forms['pp.m.sg'] = [('م' + r[0] + r[1] + 'ي', '-', '-')] ;
-	forms['pp.f.sg'] = [('م' + r[0] + r[1] + 'ية', '-', '-')] ;
-	forms['pp.m.pl'] = [('م' + r[0] + r[1] + 'يون', '-', '-')] ;
-	forms['pp.f.pl'] = [('م' + r[0] + r[1] + 'يات', '-', '-')] ;
+	forms['pp.m.sg'] = [('م' + r[0] + r[1] + 'ي', 'S__بيت/', '-')] ;
+	forms['pp.f.sg'] = [('م' + r[0] + r[1] + 'ية', 'S__كلم/ة', '-')] ;
+	forms['pp.m.pl'] = [('م' + r[0] + r[1] + 'ي', 'S__مهندس/ون', '-')] ;
+	forms['pp.f.pl'] = [('م' + r[0] + r[1] + 'يات', 'S__كلمات/', '-')] ;
 
 	return forms;
 
@@ -841,28 +868,14 @@ def defective_patt2_impf(root, tv): #{
 def defective_patt2_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('م' + r[0] + r[1], '-', '-')] ;
-	forms['pprs.f.sg'] = [('م' + r[0] + r[1] + 'ية', '-', '-')] ;
-	forms['pprs.m.pl'] = [('م' + r[0] + r[1]  + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('م' + r[0] + r[1]  + 'يات', '-', '-')] ;
-
-	return forms;
+	return defective_pprs('م' + r[0] + r[1], '-');
 #}
 
 
 def defective_patt2_pp(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pp.m.sg'] = [('م' + r[0] + r[1] + 'ى', '-', '-')] ;
-	forms['pp.f.sg'] = [('م' + r[0] + r[1]  + 'اة', '-', '-')] ;
-	forms['pp.m.pl'] = [('م' + r[0] + r[1]  + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [('م' + r[0] + r[1]  + 'ات', '-', '-')] ;
-
-	return forms;
+	return defective_pprs('م' + r[0] + r[1], '-');
 
 #}
 
@@ -908,29 +921,14 @@ def defective_patt3_impf(root, tv): #{
 def defective_patt3_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('م' + r[0] + 'ا' + r[1], '-', '-')] ;
-	forms['pprs.f.sg'] = [('م' + r[0] + 'ا' + r[1] + 'ية', '-', '-')] ;
-	forms['pprs.m.pl'] = [('م' + r[0] + 'ا' + r[1] + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('م' + r[0] + 'ا' + r[1] + 'يات', '-', '-')] ;
-
-	return forms;
+	return defective_pprs('م' + r[0] + 'ا' + r[1], '-');
 #}
 
 
 def defective_patt3_pp(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pp.m.sg'] = [('م' + r[0] + 'ا' + r[1] + 'ى', '-', '-')] ;
-	forms['pp.f.sg'] = [('م' + r[0] + 'ا' + r[1] + 'اة', '-', '-')] ;
-	forms['pp.m.pl'] = [('م' + r[0] + 'ا' + r[1] + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [('م' + r[0] + 'ا' + r[1] + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return defective_pp('م' + r[0] + 'ا' + r[1], '-');
 #}
 
 
@@ -974,29 +972,14 @@ def defective_patt4_impf(root, tv): #{
 def defective_patt4_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('م' + r[0] + r[1], '-', '-')] ;
-	forms['pprs.f.sg'] = [('م' + r[0] + r[1] + 'ية', '-', '-')] ;
-	forms['pprs.m.pl'] = [('م' + r[0] + r[1] + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('م' + r[0] + r[1] + 'يات', '-', '-')] ;
-
-	return forms;
+	return defective_pprs('م' + r[0] + r[1], '-');
 #}
 
 
 def defective_patt4_pp(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pp.m.sg'] = [('م' + r[0] + r[1] + 'ى', '-', '-')] ;
-	forms['pp.f.sg'] = [('م' + r[0] + r[1] + 'اة', '-', '-')] ;
-	forms['pp.m.pl'] = [('م' + r[0] + r[1] + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [('م' + r[0] + r[1] + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return defective_pp('م' + r[0] + r[1], '-');
 #}
 
 
@@ -1040,14 +1023,7 @@ def defective_patt5_impf(root, tv): #{
 def defective_patt5_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('مت' + r[0] + r[1], '-', '-')] ;
-	forms['pprs.f.sg'] = [('مت' + r[0] + r[1] + 'ية', '-', '-')] ;
-	forms['pprs.m.pl'] = [('مت' + r[0] + r[1] + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('مت' + r[0] + r[1] + 'يات', '-', '-')] ;
-
-	return forms;
+	return defective_pprs('مت' + r[0] + r[1], '-');
 #}
 
 
@@ -1055,15 +1031,7 @@ def defective_patt5_pprs(root): #{
 def defective_patt5_pp(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pp.m.sg'] = [('مت' + r[0] + r[1] + 'ى', '-', '-')] ;
-	forms['pp.f.sg'] = [('مت' + r[0] + r[1] + 'اة', '-', '-')] ;
-	forms['pp.m.pl'] = [('مت' + r[0] + r[1] + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [('مت' + r[0] + r[1] + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return defective_pp('مت' + r[0] + r[1], '-');
 #}
 
 
@@ -1108,29 +1076,14 @@ def defective_patt6_impf(root, tv): #{
 def defective_patt6_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('مت' + r[0] + 'ا' + r[1], '-', '-')] ;
-	forms['pprs.f.sg'] = [('مت' + r[0] + 'ا' + r[1] + 'ية', '-', '-')] ;
-	forms['pprs.m.pl'] = [('مت' + r[0] + 'ا' + r[1] + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('مت' + r[0] + 'ا' + r[1] + 'يات', '-', '-')] ;
-
-	return forms;
+	return defective_pprs('مت' + r[0] + 'ا' + r[1], '-');
 #}
 
 
 def defective_patt6_pp(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pp.m.sg'] = [('مت' + r[0] + 'ا' + r[1] + 'ى', '-', '-')] ;
-	forms['pp.f.sg'] = [('مت' + r[0] + 'ا' + r[1] + 'اة', '-', '-')] ;
-	forms['pp.m.pl'] = [('مت' + r[0] + 'ا' + r[1] + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [('مت' + r[0] + 'ا' + r[1] + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return defective_pp('مت' + r[0] + 'ا' + r[1], '-');
 #}
 
 
@@ -1165,14 +1118,7 @@ def defective_patt7_pres(root, tv): #{
 def defective_patt7_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('من' + r[0] + r[1], '-', '-')] ;
-	forms['pprs.f.sg'] = [('من' + r[0] + r[1] + 'ية', '-', '-')] ;
-	forms['pprs.m.pl'] = [('من' + r[0] + r[1] + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('من' + r[0] + r[1] + 'يات', '-', '-')] ;
-
-	return forms;
+	return defective_pprs('من' + r[0] + r[1], '-');
 #}
 
 
@@ -1244,14 +1190,7 @@ def defective_patt8_pprs(root): #{
 	elif (r[0] == 'ز') :
 		base = r[0] + 'د' + r[1] + r[2];
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [('م' + base, '-', '-')] ;
-	forms['pprs.f.sg'] = [('م' + base + 'ية', '-', '-')] ;
-	forms['pprs.m.pl'] = [('م' + base + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [('م' + base + 'يات', '-', '-')] ;
-
-	return forms;
+	return defective_pprs('م' + base, '-');
 #}
 
 
@@ -1267,15 +1206,7 @@ def defective_patt8_pp(root): #{
 	elif (r[0] == 'ز') :
 		base = r[0] + 'د' + r[1] + r[2];
 
-	forms = {};
-
-	forms['pp.m.sg'] = [('م' + base + 'ى', '-', '-')] ;
-	forms['pp.f.sg'] = [('م' + base + 'اة', '-', '-')] ;
-	forms['pp.m.pl'] = [('م' + base + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [('م' + base + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return defective_pp('م' + base, '-');
 #}
 
 
@@ -1320,34 +1251,15 @@ def defective_patt10_impf(root, tv): #{
 
 def defective_patt10_pprs(root): #{
 	r = root.split('-'); # radicals
-	
-	base = 'مست' + r[0] + r[1];
 
-	forms = {};
-
-	forms['pprs.m.sg'] = [(base, '-', '-')] ;
-	forms['pprs.f.sg'] = [(base + 'ية', '-', '-')] ;
-	forms['pprs.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pprs.f.pl'] = [(base + 'يات', '-', '-')] ;
-
-	return forms;
+	return defective_pprs('مست' + r[0] + r[1], '-');
 #}
 
 
 def defective_patt10_pp(root): #{
 	r = root.split('-'); # radicals
 
-	base = 'مست' + r[0] + r[1];
-
-	forms = {};
-
-	forms['pp.m.sg'] = [(base + 'ى', '-', '-')] ;
-	forms['pp.f.sg'] = [(base + 'اة', '-', '-')] ;
-	forms['pp.m.pl'] = [(base + 'ون', '-', '-')] ;
-	forms['pp.f.pl'] = [(base + 'ات', '-', '-')] ;
-
-	return forms;
-
+	return defective_pp('مست' + r[0] + r[1], '-');
 #}
 
 
@@ -1375,15 +1287,15 @@ def defective_irregular(stem, root): #{
 		forms['actv.imp.p2.m.sg'] = [('ره', '-', '-'), ('ر', '-', 'LR')];
 		forms.update(defective_pres_pasv(base));
 
-		forms['pprs.m.sg'] = [('راء', '-', '-')] ;
-		forms['pprs.f.sg'] = [('رائة', '-', '-')] ;
-		forms['pprs.m.pl'] = [('رائون', '-', '-')] ;
-		forms['pprs.f.pl'] = [('رائات', '-', '-')] ;
+		forms['pprs.m.sg'] = [('را', 'S__جز/ء', '-')] ;
+		forms['pprs.f.sg'] = [('رائ', 'S__كلم/ة', '-')] ;
+		forms['pprs.m.pl'] = [('رائ', 'S__مهندس/ون', '-')] ;
+		forms['pprs.f.pl'] = [('رائات', 'S__كلمات/', '-')] ;
 
-		forms['pp.m.sg'] = [('مرئي', '-', '-')] ;
-		forms['pp.f.sg'] = [('مرئية', '-', '-')] ;
-		forms['pp.m.pl'] = [('مرئيون', '-', '-')] ;
-		forms['pp.f.pl'] = [('مرئيات', '-', '-')] ;
+		forms['pp.m.sg'] = [('مرئي', 'S__بيت/', '-')] ;
+		forms['pp.f.sg'] = [('مرئي', 'S__كلم/ة', '-')] ;
+		forms['pp.m.pl'] = [('مرئيون', 'S__مهندس/ون', '-')] ;
+		forms['pp.f.pl'] = [('مرئيات', 'S__كلمات/', '-')] ;
 
 	#}
 	elif stem == 'أرى' : #{
@@ -1399,15 +1311,15 @@ def defective_irregular(stem, root): #{
 		forms.update(defective_imp_y('أ' + base, 'tv'));
 		forms.update(defective_pres_pasv(base));
 
-		forms['pprs.m.sg'] = [('مر', '-', '-')] ;
-		forms['pprs.f.sg'] = [('مرئة', '-', '-')] ;
-		forms['pprs.m.pl'] = [('مرئون', '-', '-')] ;
-		forms['pprs.f.pl'] = [('مرئات', '-', '-')] ;
+		forms['pprs.m.sg'] = [('مر', 'S__قاض/', '-')] ;
+		forms['pprs.f.sg'] = [('مرئ', 'S__كلم/ة', '-')] ;
+		forms['pprs.m.pl'] = [('مرئ', 'S__مهندس/ون', '-')] ;
+		forms['pprs.f.pl'] = [('مرئات', 'S__كلمات/', '-')] ;
 
-		forms['pp.m.sg'] = [('مرى', '-', '-')] ;
-		forms['pp.f.sg'] = [('مراة', '-', '-')] ;
-		forms['pp.m.pl'] = [('مرون', '-', '-')] ;
-		forms['pp.f.pl'] = [('مرات', '-', '-')] ;
+		forms['pp.m.sg'] = [('مر', 'S__مستشف/ى', '-')] ;
+		forms['pp.f.sg'] = [('مرا', 'S__كلم/ة', '-')] ;
+		forms['pp.m.pl'] = [('مر', 'S__مهندس/ون', '-')] ;
+		forms['pp.f.pl'] = [('مرات', 'S__كلمات/', '-')] ;
 
 	#}
 
