@@ -66,6 +66,7 @@ dev/testvoc.sh -text
 dev/trimmed-coverage.sh -text
 /lexchoicebil.xsl -text
 /modes.xml -text
+/mt-ar-unsupervised.make -text
 /mt-ar.prob -text
 /pending-tests.sh -text
 /regression-tests.sh -text
