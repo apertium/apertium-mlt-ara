@@ -243,7 +243,8 @@
      <e><p><l>ma'<s n="pr"/></l><r>مع<s n="pr"/></r></p></e>
      <e><p><l>ġo<s n="pr"/></l><r>خلال<s n="pr"/></r></p></e>
      <e><p><l>minn<s n="pr"/></l><r>من<s n="pr"/></r></p></e>
-     <e><p><l>sa<s n="pr"/></l><r>إلى<s n="pr"/></r></p></e> <!-- miri: more than 1 meaning -->
+     <e><p><l>sa<s n="pr"/></l><r>إلى<s n="pr"/></r></p></e>  <!-- place -->
+     <e slr="1"><p><l>sa<s n="pr"/></l><r>حتى<s n="pr"/></r></p></e>   <!-- time -->
      <e><p><l>ħdejn<s n="pr"/></l><r>قرب<s n="pr"/></r></p></e>
      <e><p><l>għal<s n="pr"/></l><r>ل<s n="pr"/></r></p></e>
      <e><p><l>grazzi<b/>għal<s n="pr"/></l><r>بفضل<s n="pr"/></r></p></e>
@@ -276,13 +277,14 @@
      <e><p><l>waqt<s n="pr"/></l><r>وقت<s n="pr"/></r></p></e>
      <e><p><l>nhar<s n="pr"/></l><r>يوم<s n="pr"/></r></p></e>
      <e r="LR"><p><l>milli<s n="pr"/></l><r>من<s n="pr"/></r></p></e>
-     <e c="  0" r="LR"><p><l>permezz<s n="pr"/></l><r>في<s n="pr"/></r></p></e> <!-- maybe should be rather 'ب', but not in the story -->
-     <e slr="1"><p><l>permezz<s n="pr"/></l><r>من<b/>قبل<s n="pr"/></r></p></e>
+     <e><p><l>permezz<s n="pr"/></l><r>من<b/>قبل<s n="pr"/></r></p></e>
+     <e slr="1" r="LR"><p><l>permezz<s n="pr"/></l><r>في<s n="pr"/></r></p></e> <!-- maybe should be rather 'ب', but not in the story -->
      <e><p><l>minħabba<s n="pr"/></l><r>بسبب<s n="pr"/></r></p></e>
      <e c="  0"><p><l>ħlief<s n="pr"/></l><r>غير<s n="pr"/></r></p></e>
      <e slr="1" r="RL"><p><l>ħlief<s n="pr"/></l><r>إلا<s n="pr"/></r></p></e>
 
      <e><p><l>flok<s n="pr"/></l><r>بدلا<b/>من<s n="pr"/></r></p></e>
+     <e><p><l>ta'<b/>wara<s n="pr"/></l><r>بعد<s n="pr"/></r></p></e>
 
      <!-- SECTION: Pronouns -->
 
@@ -602,7 +604,7 @@
      <e><p><l>fatt<s n="n"/><s n="m"/></l><r>حقيقة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>kwistjoni<s n="n"/><s n="f"/></l><r>قضية<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>ħalla<s n="n"/><s n="f"/></l><r>حل<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
-     <e><p><l>sens<s n="n"/><s n="m"/></l><r>إحساس<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
+     <e><p><l>sens<s n="n"/><s n="m"/></l><r>معنى<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>  <!-- إحساس; story4, but this seems better anyway -->
      <e><p><l>livell<s n="n"/><s n="m"/></l><r>مستوى<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>ġar<s n="n"/><s n="m"/></l><r>جار<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>tip<s n="n"/><s n="m"/></l><r>نوع<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
@@ -799,7 +801,8 @@
      <e><p><l>konstellazzjoni<s n="n"/><s n="f"/></l><r>برج<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>kostellazzjoni<s n="n"/><s n="f"/></l><r>برج<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e> <!-- should be merged -->
      <e><p><l>differenza<s n="n"/><s n="f"/></l><r>فرق<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
-     <e><p><l>verżjoni<s n="n"/><s n="f"/></l><r>إصدار<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
+     <e r="LR"><p><l>verżjoni<s n="n"/><s n="f"/></l><r>نسخة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
+     <e slr="1"><p><l>verżjoni<s n="n"/><s n="f"/></l><r>إصدار<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e c="  0"><p><l>tramuntana<s n="n"/><s n="f"/></l><r>شمال<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e slr="1"><p><l>tramuntana<s n="n"/><s n="f"/></l><r>ريح<g><b/>شمال</g><s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e c="  0"><p><l>punent<s n="n"/><s n="m"/></l><r>غرب<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
@@ -1587,8 +1590,8 @@
      <e><p><l>website<s n="n"/><s n="m"/></l><r>موقع<b/>انترنت<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>konsumatur<s n="n"/><s n="m"/></l><r>مستهلك<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>żiemel<s n="n"/><s n="m"/></l><r>حصان<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
-     <e><p><l>tifsir<s n="n"/><s n="m"/></l><r>معنى<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
-     <e><p><l>tifsira<s n="n"/><s n="f"/></l><r>معنى<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
+     <e r="LR"><p><l>tifsir<s n="n"/><s n="m"/></l><r>معنى<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
+     <e r="LR"><p><l>tifsira<s n="n"/><s n="f"/></l><r>معنى<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>misteru<s n="n"/><s n="m"/></l><r>سر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e> <!-- also misterju? -->
      <e><p><l>mudell<s n="n"/><s n="m"/></l><r>نموذج<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>ajruport<s n="n"/><s n="m"/></l><r>مطار<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nocase_nom_gen_acc"/></e>
@@ -3882,7 +3885,7 @@
      <e><p><l>dejjem<s n="adv"/></l><r>دائما<s n="adv"/></r></p></e>
      <e><p><l>bil-mogħod<s n="adv"/></l><r>ببطء<s n="adv"/></r></p></e>
      <e><p><l>bħalissa<s n="adv"/></l><r>الآن<s n="adv"/></r></p></e>
-     <e><p><l>imbagħad<s n="adv"/></l><r>حينئذ<s n="adv"/></r></p></e> 
+     <e><p><l>imbagħad<s n="adv"/></l><r>بعدئذ<s n="adv"/></r></p></e> 
      <e><p><l>anke<s n="adv"/></l><r>أيضا<s n="adv"/></r></p></e>
      <e c="  0"><p><l>allura<s n="adv"/></l><r>لذلك<s n="adv"/></r></p></e>
      <e slr="1"><p><l>allura<s n="adv"/></l><r>حينئذ<s n="adv"/></r></p></e>
@@ -4043,7 +4046,7 @@
      <e r="LR"><p><l>proprju<s n="adv"/></l><r>بالضبط<s n="adv"/></r></p></e>
      <e r="LR"><p><l>bilmod<s n="adv"/></l><r>ببطء<s n="adv"/></r></p></e>
      <e><p><l>biżżejjed<s n="adv"/></l><r>بالكفاية<s n="adv"/></r></p></e>
-
+     <e><p><l>ta'<b/>wara<s n="adv"/></l><r>بعد<b/>ذلك<s n="adv"/></r></p></e>
 
      <!-- SECTION: Verbs -->
 
@@ -4294,7 +4297,7 @@
      <e c="  0"><p><l>kotor<s n="vblex"/><s n="iv"/></l><r>كثر<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e slr="1"><p><l>kotor<s n="vblex"/><s n="iv"/></l><r>تزايد<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>kisser<s n="vblex"/><s n="tv"/></l><r>كسر<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
-     <e><p><l>fisser<s n="vblex"/><s n="tv"/></l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e><p><l>fisser<s n="vblex"/><s n="tv"/></l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>  <!-- hm, hm, وضح, أوضح ? -->
      <e><p><l>sar<s n="vblex"/><s n="iv"/></l><r>أقام<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
 <!--     <e><p><l>sar<s n="vblex"/><s n="iv"/></l><r>صار<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e> -->
      <e><p><l>sar<s n="vblex"/><s n="tv"/></l><r>أصبح<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> <!-- maybe this one should be first, but it sounds awful in the story2 -->
@@ -4302,7 +4305,8 @@
      <e><p><l>sam<s n="vblex"/><s n="iv"/></l><r>صام<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>qam<s n="vblex"/><s n="iv"/></l><r>قام<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>żar<s n="vblex"/><s n="tv"/></l><r>زار<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
-     <e><p><l>qies<s n="vblex"/><s n="tv"/></l><r>قاس<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e r="LR"><p><l>qies<s n="vblex"/><s n="tv"/></l><r>اعتبر<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> <!-- consider the matter -->
+     <e slr="1"><p><l>qies<s n="vblex"/><s n="tv"/></l><r>قاس<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> <!-- measure -->
      <e><p><l>tar<s n="vblex"/><s n="iv"/></l><r>طار<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>żied<s n="vblex"/><s n="tv"/></l><r>زاد<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e c="  0"><p><l>qiem<s n="vblex"/><s n="tv"/></l><r>كرم<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
@@ -4320,7 +4324,7 @@
      <e><p><l>rass<s n="vblex"/><s n="tv"/></l><r>ضغط<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e r="LR"><p><l>sadd<s n="vblex"/><s n="tv"/></l><r>سد<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e r="LR"><p><l>xaqq<s n="vblex"/><s n="tv"/></l><r>صدع<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
-     <e c="  0" r="LR"><p><l>żamm<s n="vblex"/><s n="tv"/></l><r>أمسك<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e c="  0" r="LR"><p><l>żamm<s n="vblex"/><s n="tv"/></l><r>أمسك<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> <!-- حفظ ?? -->
      <e slr="1" r="LR"><p><l>żamm<s n="vblex"/><s n="tv"/></l><r>قبض<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>leqq<s n="vblex"/><s n="iv"/></l><r>تألق<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>temm<s n="vblex"/><s n="tv"/></l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>

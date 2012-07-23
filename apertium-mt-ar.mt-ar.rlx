@@ -129,3 +129,28 @@ SELECT:r15 PAST IF
         (-1 PRN)
         (0 PAST)
         (0 IMP) ;
+
+SELECT:r16 PREP IF
+        (0 PREP)
+        (0 NOUN)
+        (1 DETDEF) 
+        (2 NOUN) ;
+# iżda _skont_ l-Misilmin, il-ħabib tal-Profeta Abu Bakr, fost oħrajn, kien jikteb it-testi
+
+SELECT:r17 NOUN IF
+        (NOT -2 NOUN)
+        (-1 DETDEF)
+        (0 NOUN)
+        (0 ADJ)
+        (NOT 1 NOUN)
+
+SELECT:r18 DET IF
+        (0  DET)
+        (0 PRN)
+        (1 DETDEF)
+        (2 NOUN) ;
+
+SELECT:r19 ADV IF
+        (0 ADV)
+        (0 PREP)
+        (1 PREP);

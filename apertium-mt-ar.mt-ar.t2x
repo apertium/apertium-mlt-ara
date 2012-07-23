@@ -55,6 +55,10 @@
       <attr-item tags="acc"/>
       <attr-item tags="CD"/>
     </def-attr>
+    <def-attr n="a_anim">
+      <attr-item tags="aa"/>
+      <attr-item tags="nn"/>
+    </def-attr>
     <def-attr n="defnes">
       <attr-item tags="ind"/>
       <attr-item tags="def"/>
@@ -239,6 +243,33 @@
  	 </out>
       </action>
     </rule>
+
+
+    <rule comment="REGLA: SN SV">
+      <pattern>
+ 	<pattern-item n="SN"/>
+ 	<pattern-item n="SV"/>
+      </pattern>
+      <action>
+        <call-macro n="set_last_n"><with-param pos="1"/></call-macro>
+	<let><clip pos="2" part="gen"/><var n="last_gen"/></let>
+	<let><clip pos="2" part="nbr"/><var n="last_nbr"/></let>
+        <out>
+	  <chunk>
+	    <clip pos="1" part="lem"/>
+ 	    <clip pos="1" part="tags"/>
+	    <clip pos="1" part="chcontent"/>
+ 	  </chunk>
+ 	  <b/>
+	  <chunk>
+	    <clip pos="2" part="lem"/>
+ 	    <clip pos="2" part="tags"/>
+	    <clip pos="2" part="chcontent"/>
+ 	  </chunk>
+ 	 </out>
+      </action>
+    </rule>
+
 
   </section-rules>
 
