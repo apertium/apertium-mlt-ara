@@ -154,3 +154,8 @@ SELECT:r19 ADV IF
         (0 ADV)
         (0 PREP)
         (1 PREP);
+
+SELECT:r19 PRN IF
+        (0 DET)
+        (0 PRN)
+        (NOT 1 NOUN LINK NOT 1 DETDEF);

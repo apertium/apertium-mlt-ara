@@ -1181,7 +1181,8 @@
          <pattern-item n="det"/>
        </pattern>
        <action>
-         <call-macro n="f_concord1"><with-param pos="1"/></call-macro>
+<!--         <call-macro n="f_concord1"><with-param pos="1"/></call-macro> -->
+         <call-macro n="set_gen_nbr_case"><with-param pos="1"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
          <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
@@ -2446,19 +2447,31 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
-	  <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
-	   <lu>
-	     <lit v="لا"/><lit-tag v="adv"/>
-	   </lu><b/>
-           <lu>
-             <clip pos="2" side="tl" part="lemh"/>
-             <clip pos="2" side="tl" part="a_verb"/>
-             <clip pos="2" side="tl" part="a_trans"/>
-             <clip pos="2" side="tl" part="a_voice"/>
-             <lit-tag v="pres"/>
-             <clip pos="2" side="tl" part="pers"/>
-             <var n="genero"/>
-             <clip pos="2" side="tl" part="nbr"/>
+	  <out>
+	    <chunk name="vrb"> 
+ 	     <tags>
+ 	       <tag><lit-tag v="SV"/></tag>
+               <tag><clip pos="2" side="tl" part="a_voice"/></tag>
+ 	       <tag><lit-tag v="pres"/></tag>
+ 	       <tag><clip pos="2" side="tl" part="pers"/></tag>
+ 	       <tag><clip pos="2" side="tl" part="gen"/></tag>
+ 	      <!--  <tag><var n="genero"/></tag>  -->
+   	       <tag><clip pos="2" side="tl" part="nbr"/></tag>
+ 	     </tags>
+  	     <lu>
+	       <lit v="لا"/><lit-tag v="adv"/>
+	     </lu>
+	     <b/>
+             <lu>
+               <clip pos="2" side="tl" part="lemh"/>
+               <clip pos="2" side="tl" part="a_verb"/>
+               <clip pos="2" side="tl" part="a_trans"/>
+               <clip pos="2" side="tl" part="a_voice"/>
+               <lit-tag v="pres"/>
+               <clip pos="2" side="tl" part="pers"/>
+               <clip pos="2" side="tl" part="gen" link-to="5"/>
+<!--             <var n="genero"/>  -->
+             <clip pos="2" side="tl" part="nbr" link-to="6"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
 	  </chunk></out>
@@ -7274,6 +7287,34 @@
        </action>
     </rule> 
 
+
+    <rule comment="rule 138: pronouns">  <!-- should I have animacy tag here? -->
+       <pattern>
+         <pattern-item n="prep"/>
+         <pattern-item n="pron"/>
+       </pattern>
+       <action>
+         <call-macro n="set_gen_nbr_case"><with-param pos="2"/></call-macro>
+         <call-macro n="set_px_gen"><with-param pos="2"/></call-macro>
+	 <let><clip pos="2" side="tl" part="case"/><lit-tag v="gen"/></let>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_prn"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="case"/>
+             <clip pos="2" side="tl" part="poss"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+         </chunk></out>
+       </action>
+    </rule>
 
   </section-rules>
 </transfer>

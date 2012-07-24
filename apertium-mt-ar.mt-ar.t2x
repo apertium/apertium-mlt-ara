@@ -226,6 +226,7 @@
       </pattern>
       <action>
         <call-macro n="set_last_n"><with-param pos="1"/></call-macro>
+        <call-macro n="set_sbj"><with-param pos="1"/></call-macro>
 	<let><clip pos="2" part="gen"/><var n="last_gen"/></let>
 	<let><clip pos="2" part="nbr"/><var n="last_nbr"/></let>
         <out>
@@ -269,6 +270,37 @@
  	 </out>
       </action>
     </rule>
+
+
+<!--
+    <rule comment="REGLA: SV">
+      <pattern>
+ 	<pattern-item n="SV"/>
+      </pattern>
+      <action>
+        <choose>
+  	  <when> 
+	    <test><equal><clip pos="1" part="pers"/><lit-tag v="p3"/></equal></test>
+	    <let><clip pos="1" part="gen"/><var n="sbj_gen"/></let> 
+	    <let><clip pos="1" part="nbr"/><var n="sbj_nbr"/></let>
+	  </when>
+	</choose>
+        <out>
+	  <chunk>
+	    <clip pos="1" part="lem"/>
+ 	    <clip pos="1" part="tags"/>
+	    <clip pos="1" part="chcontent"/>
+ 	  </chunk>
+ 	  <b/>
+	  <chunk>
+	    <clip pos="2" part="lem"/>
+ 	    <clip pos="2" part="tags"/>
+	    <clip pos="2" part="chcontent"/>
+ 	  </chunk>
+ 	 </out>
+      </action>
+    </rule>
+-->
 
 
   </section-rules>

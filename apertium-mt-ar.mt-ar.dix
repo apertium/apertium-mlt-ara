@@ -87,6 +87,9 @@
      <sdef n="actv"/>
      <sdef n="pasv"/>
 
+     <sdef n="pprs"/>
+     <sdef n="pp"/>
+
      <sdef n="cm"          c="Comma"/>
      <sdef n="sent"        c="Sentence marker"/>
    </sdefs>
@@ -272,13 +275,13 @@
      <e><p><l>bi<s n="pr"/></l><r>ب<s n="pr"/></r></p></e>
      <e r="LR"><p><l>favur<s n="pr"/></l><r>مع<s n="pr"/></r></p></e>
      <e><p><l>matul<s n="pr"/></l><r>خلال<s n="pr"/></r></p></e>
-     <e c="  0"><p><l>skont<s n="pr"/></l><r>حسب<s n="pr"/></r></p></e>
+     <e c="  0"><p><l>skont<s n="pr"/></l><r>بالنسبة<b/>ل<s n="pr"/></r></p></e>
      <e slr="1"><p><l>skont<s n="pr"/></l><r>من<b/>قبل<s n="pr"/></r></p></e>
      <e><p><l>waqt<s n="pr"/></l><r>وقت<s n="pr"/></r></p></e>
      <e><p><l>nhar<s n="pr"/></l><r>يوم<s n="pr"/></r></p></e>
      <e r="LR"><p><l>milli<s n="pr"/></l><r>من<s n="pr"/></r></p></e>
-     <e><p><l>permezz<s n="pr"/></l><r>من<b/>قبل<s n="pr"/></r></p></e>
-     <e slr="1" r="LR"><p><l>permezz<s n="pr"/></l><r>في<s n="pr"/></r></p></e> <!-- maybe should be rather 'ب', but not in the story -->
+     <e><p><l>permezz<s n="pr"/></l><r>بوساطة<s n="pr"/></r></p></e>
+<!--     <e slr="1" r="LR"><p><l>permezz<s n="pr"/></l><r>في<s n="pr"/></r></p></e> --> <!-- maybe should be rather من قبل, but not in the story (ب ?) -->
      <e><p><l>minħabba<s n="pr"/></l><r>بسبب<s n="pr"/></r></p></e>
      <e c="  0"><p><l>ħlief<s n="pr"/></l><r>غير<s n="pr"/></r></p></e>
      <e slr="1" r="RL"><p><l>ħlief<s n="pr"/></l><r>إلا<s n="pr"/></r></p></e>
@@ -335,12 +338,12 @@
      <e><p><l>dan<s n="prn"/></l><r>هذا<s n="prn"/></r></p></e>
      <e><p><l>dak<s n="prn"/></l><r>ذلك<s n="prn"/></r></p></e>
 
-     <e><p><l>dak<b/>li<s n="prn"/><s n ="itg"/></l><r>هو<b/>الذي<s n="prn"/><s n ="itg"/></r></p></e>
+     <e><p><l>dak<b/>li<s n="prn"/><s n ="itg"/></l><r>هو<b/>الذي<s n="prn"/><s n ="itg"/></r></p></e> <!-- ??? -->
      <e><p><l>liema<s n="prn"/><s n ="itg"/><s n="mf"/><s n ="sp"/></l><r>أي<s n="prn"/><s n ="itg"/><s n="mf"/><s n ="sp"/></r></p></e>
      <e><p><l>min<s n="prn"/><s n ="itg"/><s n="mf"/><s n ="sp"/></l><r>من<s n="prn"/><s n ="itg"/><s n="mf"/><s n ="sp"/></r></p></e>
      <e><p><l>nifs<s n="prn"/><s n ="ref"/></l><r>نفس<s n="prn"/><s n ="ref"/></r></p></e>
 
-     <e><p><l>ieħor<s n="prn"/><s n="ind"/></l><r>آخر<s n="prn"/><s n="ind"/></r></p><par n="mf_pl_m_f_pl_nocase"/></e>
+     <e><p><l>ieħor<s n="prn"/><s n="ind"/></l><r>آخر<s n="prn"/><s n="ind"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>kull<s n="prn"/><s n="ind"/></l><r>كل<s n="prn"/><s n="ind"/></r></p></e>
      <e><p><l>kemm<s n="prn"/><s n="ind"/></l><r>كما<s n="prn"/><s n="ind"/></r></p></e>
      <e><p><l>bosta<s n="prn"/><s n="ind"/></l><r>كثير<s n="prn"/><s n="ind"/></r></p><par n="mf_sp_mf_sg_pl"/></e>
@@ -3860,7 +3863,7 @@
      <e><p><l>mnissel<s n="adj"/></l><r>مشتق<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e r="LR"><p><l>bsaħħitu<s n="adj"/></l><r>قوي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e r="LR"><p><l>imqaddes<s n="adj"/></l><r>مقدس<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
-     <e r="LR"><p><l>imħabbar<s n="adj"/></l><r>موحى<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>imħabbar<s n="adj"/></l><r>مكشوف<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- موحى -->
 
      <!-- SECTION: Interjections -->
 
@@ -4047,6 +4050,8 @@
      <e r="LR"><p><l>bilmod<s n="adv"/></l><r>ببطء<s n="adv"/></r></p></e>
      <e><p><l>biżżejjed<s n="adv"/></l><r>بالكفاية<s n="adv"/></r></p></e>
      <e><p><l>ta'<b/>wara<s n="adv"/></l><r>بعد<b/>ذلك<s n="adv"/></r></p></e>
+     <e><p><l>f'daqqa<s n="adv"/></l><r>فجأة<s n="adv"/></r></p></e> <!-- في حين or sth like that? -->
+
 
      <!-- SECTION: Verbs -->
 
@@ -4297,10 +4302,10 @@
      <e c="  0"><p><l>kotor<s n="vblex"/><s n="iv"/></l><r>كثر<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e slr="1"><p><l>kotor<s n="vblex"/><s n="iv"/></l><r>تزايد<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>kisser<s n="vblex"/><s n="tv"/></l><r>كسر<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
-     <e><p><l>fisser<s n="vblex"/><s n="tv"/></l><r>أعنى<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>  <!-- hm, hm, وضح, أوضح ? -->
-     <e><p><l>sar<s n="vblex"/><s n="iv"/></l><r>أقام<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
-<!--     <e><p><l>sar<s n="vblex"/><s n="iv"/></l><r>صار<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e> -->
-     <e><p><l>sar<s n="vblex"/><s n="tv"/></l><r>أصبح<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> <!-- maybe this one should be first, but it sounds awful in the story2 -->
+     <e><p><l>fisser<s n="vblex"/><s n="tv"/></l><r>وضح<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>  <!-- hm, أعنى ? -->
+<!--     <e><p><l>sar<s n="vblex"/><s n="iv"/></l><r>أقام<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e> -->
+     <e><p><l>sar<s n="vblex"/><s n="iv"/></l><r>صار<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
+<!--     <e><p><l>sar<s n="vblex"/><s n="tv"/></l><r>أصبح<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> maybe this one should be first, but it sounds awful in the story2 -->
      <e><p><l>miet<s n="vblex"/><s n="iv"/></l><r>مات<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>sam<s n="vblex"/><s n="iv"/></l><r>صام<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>qam<s n="vblex"/><s n="iv"/></l><r>قام<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
@@ -4390,7 +4395,7 @@
      <e><p><l>emmen<s n="vblex"/><s n="iv"/></l><r>آمن<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>tfakkar<s n="vblex"/><s n="iv"/></l><r>ذكر<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
      <e><p><l>irranġa<s n="vblex"/><s n="tv"/></l><r>جعل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
-     <e><p><l>kompla<s n="vblex"/><s n="iv"/></l><r>واصل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e><p><l>kompla<s n="vblex"/><s n="iv"/></l><r>واصل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> <!-- or تابع ? -->
      <e><p><l>rfina<s n="vblex"/><s n="tv"/></l><r>حسن<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
 
      <!-- SECTION: Punctuation -->
