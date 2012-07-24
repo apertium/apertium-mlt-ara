@@ -61,6 +61,7 @@ dev/story/story3.mt.txt -text
 dev/story/story3.mtar.posted.txt -text svneol=unset#application/octet-stream
 dev/story/story3.mtar.txt -text svneol=unset#application/octet-stream
 dev/story/story4.mt.txt -text
+dev/story/story4.mtar.posted.txt -text svneol=unset#application/octet-stream
 dev/story/story4.mtar.txt -text svneol=unset#application/octet-stream
 dev/testvoc-summary.mt-ar.txt -text
 dev/testvoc.sh -text
