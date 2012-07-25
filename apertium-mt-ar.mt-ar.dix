@@ -31,20 +31,17 @@
      <sdef n="aa" c="animate"/>
      <sdef n="nn" c="inanimate" />
 
-     <sdef n="mfp" c="masculine/feminine, person" />
+     <sdef n="an"/>
 
      <sdef n="m"/>
      <sdef n="f"/>
      <sdef n="mf"/>
-     <sdef n="nt"/>
 
      <sdef n="nom"/>
      <sdef n="gen"/>
      <sdef n="acc"/>
      <sdef n="genacc"/>
      <sdef n="comp"/>
-
-     <sdef n="an"/>
 
      <sdef n="p1"/>
      <sdef n="p2"/>
@@ -80,6 +77,7 @@
      <sdef n="TD"/>
      <sdef n="CD"/>
 
+     <sdef n="past"/>
      <sdef n="pres"/>
 
      <sdef n="tv"/>
@@ -4021,14 +4019,10 @@
      <e><p><l>għaliex<s n="adv"/><s n="itg"/></l><r>لماذا<s n="adv"/><s n="itg"/></r></p></e>
      <e><p><l>xiex<s n="adv"/><s n="itg"/></l><r>ما<s n="adv"/><s n="itg"/></r></p></e> <!-- and ماذا ? -->
 
-     <e><p><l>mhux<s n="adv"/></l><r>لا<s n="adv"/></r></p></e><!-- TODO -->
-     <e><p><l>mħumiex<s n="adv"/></l><r>لا<s n="adv"/></r></p></e><!-- TODO -->
-     <e><p><l>mħix<s n="adv"/></l><r>لا<s n="adv"/></r></p></e><!-- TODO -->
-
      <e><p><l>hemm<s n="adv"/></l><r>هناك<s n="adv"/></r></p></e>
      <e><p><l>hemmhekk<s n="adv"/></l><r>هناك<s n="adv"/></r></p></e>
      <e><p><l>'l<b/>hemm<s n="adv"/></l><r>هناك<s n="adv"/></r></p></e>
-     <e><p><l>għad<s n="adv"/></l><r>باستمرار<s n="adv"/></r></p></e> <!-- still -->
+     <e><p><l>għad<s n="adv"/></l><r>باستمرار<s n="adv"/></r></p></e> <!-- still? -->
      <e><p><l>xorta<s n="adv"/></l><r>بهذا<b/>الشكل<s n="adv"/></r></p></e>
      <e><p><l>verament<s n="adv"/></l><r>حقا<s n="adv"/></r></p></e>
      <e><p><l>tant<b/>kemm<s n="adv"/></l><r>كثيرا<b/>كذلك<s n="adv"/></r></p></e>
@@ -4056,7 +4050,12 @@
      <!-- SECTION: Verbs -->
 
      <e><p><l>kien<s n="vaux"/><s n="iv"/></l><r>كان<s n="vaux"/><s n="iv"/><s n="actv"/></r></p></e>
-     <e><p><l>għad<s n="vaux"/></l><r>ما<b/>زال<s n="vaux"/><s n="actv"/></r></p></e> 
+     <e><p><l>għad<s n="vaux"/></l><r>ما<b/>زال<s n="vaux"/><s n="iv"/><s n="actv"/></r></p></e> 
+
+     <!-- heh, that's wrong, but everything is fixed in t1x -->
+     <e r="LR"><p><l>kellu<s n="vaux"/><s n="iv"/></l><r>كان<s n="vaux"/><s n="iv"/><s n="actv"/></r></p></e>
+
+     <e><p><l>qagħad<s n="vaux"/><s n="iv"/></l><r>قعد<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
 
      <e><p><l>ħabb<s n="vblex"/><s n="tv"/></l><r>أحب<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>seta<s n="vblex"/><s n="tv"/></l><r>استطاع<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>

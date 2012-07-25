@@ -272,35 +272,39 @@
     </rule>
 
 
-<!--
     <rule comment="REGLA: SV">
       <pattern>
  	<pattern-item n="SV"/>
       </pattern>
       <action>
-        <choose>
+ <!--       <choose>
   	  <when> 
 	    <test><equal><clip pos="1" part="pers"/><lit-tag v="p3"/></equal></test>
 	    <let><clip pos="1" part="gen"/><var n="sbj_gen"/></let> 
 	    <let><clip pos="1" part="nbr"/><var n="sbj_nbr"/></let>
 	  </when>
-	</choose>
-        <out>
-	  <chunk>
-	    <clip pos="1" part="lem"/>
- 	    <clip pos="1" part="tags"/>
-	    <clip pos="1" part="chcontent"/>
- 	  </chunk>
- 	  <b/>
-	  <chunk>
-	    <clip pos="2" part="lem"/>
- 	    <clip pos="2" part="tags"/>
-	    <clip pos="2" part="chcontent"/>
- 	  </chunk>
- 	 </out>
-      </action>
-    </rule>
--->
+	</choose>  -->
+       <choose>
+	 <when> 
+	   <test><equal><clip pos="1" part="gen"/><lit-tag v="GD"/></equal></test>
+	   <let><clip pos="1" part="gen"/><lit-tag v="m"/></let> 
+	 </when>
+       </choose>
+       <choose>
+  	 <when> 
+	   <test><equal><clip pos="1" part="nbr"/><lit-tag v="ND"/></equal></test>
+	   <let><clip pos="1" part="nbr"/><lit-tag v="sg"/></let> 
+	 </when>
+       </choose>
+       <out>
+	 <chunk>
+	   <clip pos="1" part="lem"/>
+ 	   <clip pos="1" part="tags"/>
+	   <clip pos="1" part="chcontent"/>
+ 	 </chunk>
+       </out>
+     </action>
+   </rule>
 
 
   </section-rules>
