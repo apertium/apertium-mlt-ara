@@ -5616,8 +5616,13 @@
      <!-- heh, that's wrong, but everything is fixed in t1x -->
      <e r="LR"><p><l>kellu<s n="vaux"/><s n="iv"/></l><r>كان<s n="vaux"/><s n="iv"/><s n="actv"/></r></p></e>
 
-     <e><p><l>qagħad<s n="vaux"/><s n="iv"/></l><r>قعد<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
+     <!-- only pprs forms as vaux; in most cases should be simply deleted on ar side -->
+     <e><p><l>qagħad<s n="vaux"/><s n="iv"/><s n="pprs"/><s n="m"/><s n="sg"/></l><r>وجد<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+     <e><p><l>qagħad<s n="vaux"/><s n="iv"/><s n="pprs"/><s n="f"/><s n="sg"/></l><r>وجد<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+     <e><p><l>qagħad<s n="vaux"/><s n="iv"/><s n="pprs"/><s n="mf"/><s n="pl"/></l><r>وجد<s n="vblex"/><s n="tv"/><s n="pasv"/><s n="pres"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e> <!-- should be GD -->
 
+     <!-- not vaux -->
+     <e><p><l>qagħad<s n="vblex"/><s n="iv"/></l><r>قعد<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>ħabb<s n="vblex"/><s n="tv"/></l><r>أحب<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>seta<s n="vblex"/><s n="tv"/></l><r>استطاع<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ried<s n="vblex"/><s n="tv"/></l><r>أراد<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>

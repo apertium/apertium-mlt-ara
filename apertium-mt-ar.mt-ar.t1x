@@ -1703,6 +1703,15 @@
          <pattern-item n="particip"/>
        </pattern>
        <action>
+	 <choose>
+	   <when>
+	     <test><and>
+		<equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
+		<equal><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></equal>
+	     </and></test>  <!-- TODO: set GD -->
+	     <let><clip pos="1" side="tl" part="gen"/><lit-tag v="m"/></let>
+	   </when>
+	 </choose>
          <call-macro n="set_gen_nbr_case"><with-param pos="1"/></call-macro>
          <out>
 	   <chunk name="part">
@@ -2161,16 +2170,15 @@
     </rule> 
 
 
-
-    <rule comment="rule 27: qagħad ('to stay')"> <!-- OK -->
-    <!-- but double blank is left :( -->
+<!-- add rules with context, like qagħad + pres -->
+<!--    <rule comment="rule 27: qagħad ('to stay')"> 
        <pattern>
          <pattern-item n="qagħad"/>
        </pattern>
        <action>
        </action>
     </rule>
-
+-->
 
     <rule comment="rule 28: dualis ">   <!-- 2 numeral + plural noun -> dualis -->
        <pattern>
