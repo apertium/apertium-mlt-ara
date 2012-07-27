@@ -46,8 +46,6 @@
 |-
 | بعث || vblex || sound || 1 || || send || ب-ع-ث || a-a || a-a || tv 
 |-
-| عجب || vblex || sound || 1 || || be·amazed || ع-ج-ب || a-i || a-a || tv 
-|-
 | برم || vblex || sound || 1 || || twist || ب-ر-م || a-a || a-u || tv 
 |-
 | بلع || vblex || sound || 1 || || swallow || ب-ل-ع || a-a || a-u || tv 
@@ -244,6 +242,28 @@
 |-
 | جعل || vblex || sound || 1 || || effect || ج-ع-ل || || || tv
 |-
+| صدم || vblex || sound || 1 || || shock || ص-د-م || || || tv
+|-
+| غمز || vblex || sound || 1 || || wink || غ-م-ز || || || tv
+|-
+| قرص || vblex || sound || 1 || || pinch || ق-ر-ص || || || tv
+|-
+| جرش || vblex || sound || 1 || || crush || ج-ر-ش || || || tv
+|-
+| قرب || vblex || sound || 1 || || be٠near || ق-ر-ب || || || iv
+|-
+| سلخ || vblex || sound || 1 || || skin || س-ل-خ || || || tv
+|-
+| طحن || vblex || sound || 1 || || grind || ط-ح-ن || || || tv
+|-
+| حطم || vblex || sound || 1 || || smash || ح-ط-م || || || tv
+|-
+| صرخ || vblex || sound || 1 || || scream || ص-ر-خ || || || iv
+|-
+| لطخ || vblex || sound || 1 || || stain || ل-ط-خ || || || tv
+|-
+| خرب || vblex || sound || 1 || || destroy || خ-ر-ب || || || tv
+|-
 | فكر || vblex || sound || 2 || || think || ف-ك-ر || || || tv 
 |-
 | عبر || vblex || sound || 2 || || express || ع-ب-ر || || || tv 
@@ -274,6 +294,14 @@
 |-
 | حسن || vblex || sound || 2 || || improve || ح-س-ن || || || tv 
 |-
+| قشر || vblex || sound || 2 || || husk || ق-ش-ر || || || tv 
+|-
+| جرد || vblex || sound || 2 || || deprive || ج-ر-د || || || tv 
+|-
+| صفق || vblex || sound || 2 || || clap || ص-ف-ق || || || iv 
+|-
+| حرك || vblex || sound || 2 || || move || ح-ر-ك || || || tv 
+|-
 | غادر || vblex || sound || 3 || || leave || غ-د-ر || || || tv 
 |-
 | ساعد || vblex || sound || 3 || || help || س-ع-د || || || tv 
@@ -283,6 +311,8 @@
 | شارك || vblex || sound || 3 || || participate || ش-ر-ك || || || tv 
 |-
 | نافس || vblex || sound || 3 || || compete || ن-ف-س || || || tv 
+|-
+| هاجم || vblex || sound || 3 || || attack || ه-ج-م || || || tv 
 |-
 | أحضر || vblex || sound || 4 || || bring || ح-ض-ر || || || tv 
 |-
@@ -315,6 +345,10 @@
 | أظهر || vblex || sound || 4 || || show || ظ-ه-ر || || || tv 
 |-
 | أرسل || vblex || sound || 4 || || send || ر-س-ل || || || tv 
+|-
+| أزعج || vblex || sound || 4 || || annoy || ز-ع-ج || || || tv 
+|-
+| أعجب || vblex || sound || 4 || || appeal || ع-ج-ب || || || tv 
 |-
 | تكلم || vblex || sound || 5 || || speak || ك-ل-م || || || iv 
 |-
@@ -360,9 +394,15 @@
 |-
 | استلم || vblex || sound || 8 || || receive || س-ل-م || || || tv 
 |-
+| اعترف || vblex || sound || 8 || || confess || ع-ر-ف || || || tv 
+|-
 | استخدم || vblex || sound || 10 || || use || خ-د-م || || || tv 
 |-
 | ترجم || vblex || quad || 1 || || translate || ت-ر-ج-م || || || tv 
+|-
+| تمتم || vblex || quad || 1 || || stammer || ت-م-ت-م || || || iv 
+|-
+| تلفن || vblex || quad || 1 || || phone || ت-ل-ف-ن || || || iv 
 |-
 | عد || vblex || doubled || 1 || || count || ع-د-د || a-a || a-u || tv 
 |-
@@ -488,6 +528,8 @@
 |-
 | أقام || vblex || hollow || 4 || || organize || ق-و-م || || || tv 
 |-
+| أعاق || vblex || hollow || 4 || || impede || ع-و-ق || || || tv 
+|-
 | تزايد || vblex || hollow || 6 || || increase || ز-ي-د || || || iv 
 |-
 | اختار || vblex || hollow || 8 || || choose || خ-ي-ر || || || tv 
@@ -520,8 +562,6 @@
 |-
 | أنهى || vblex || defective || 4 || || finish || ن-ه-ي || || || tv 
 |-
-| أعنى || vblex || defective || 4 || || mean || ع-ن-ي || || || tv 
-|-
 | أخفى || vblex || defective || 4 || || hide || خ-ف-ي || || || tv 
 |-
 | تعافى || vblex || defective || 6 || || recover || ع-ف-و || || || iv 
@@ -538,7 +578,13 @@
 |-
 | وزن || vblex || firstw || 1 || || weigh || و-ز-ن || a-a || a-i || tv 
 |-
+| وضح || vblex || firstw || 2 || || explain || و-ض-ح || || || tv 
+|-
+| وبخ || vblex || firstw || 2 || || reproach || و-ب-خ || || || tv 
+|-
 | واصل || vblex || firstw || 3 || || continue || و-ص-ل || || || tv
+|-
+| أوسخ || vblex || firstw || 4 || || dirty || و-س-خ || || || tv
 |-
 | اتفق || vblex || firstw || 8 || || agree || و-ف-ق || || || iv 
 |-

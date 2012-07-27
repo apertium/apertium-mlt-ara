@@ -37,7 +37,7 @@
 |-
 | ċaħad || vblex || strong || 1 || deny || ċ-ħ-d || a-a || i-a || tv ||  || mi
 |-
-| daħak || vblex || strong || 1 || laugh || d-ħ-k || a-a || i-a || tv ||  || mi
+| daħak || vblex || strong || 1 || laugh || d-ħ-k || a-a || i-a || iv ||  || mi
 |-
 | dalam || vblex || strong || 1 || grow·dark || d-l-m || a-a || i-a || iv ||  || mu
 |-
@@ -71,7 +71,7 @@
 |-
 | maxat || vblex || strong || 1 || comb || m-x-t || a-a || o-o || tv ||  || mi 
 |-
-| qagħad || vaux || strong || 1 || sit || q-għ-d || a-a || o-o || iv ||  || ma
+| qagħad || vblex || strong || 1 || sit || q-għ-d || a-a || o-o || iv ||  || ma
 |-
 | bagħad || vblex || strong || 1 || hate || b-għ-d || a-a || o-o || tv ||  || mi
 |-
@@ -125,13 +125,13 @@
 |-
 | ħalef || vblex || strong || 1 || swear || ħ-l-f || a-e || a-e || iv ||  || ma
 |-
-| għalef || vblex || strong || 1 || feed·animals || għ-l-f || a-e || a-e || TD ||  || 
+| għalef || vblex || strong || 1 || feed·animals || għ-l-f || a-e || a-e || tv ||  || 
 |-
 | ħasel || vblex || strong || 1 || wash || ħ-s-l || a-e || a-e || tv ||  || ma
 |-
 | għamel || vblex || strong || 1 || make || għ-m-l || a-e || a-e || tv ||  || ma
 |-
-| qabel || vblex || strong || 1 || agree || q-b-l || a-e || a-e || tv ||  || ma
+| qabel || vblex || strong || 1 || agree || q-b-l || a-e || a-e || iv ||  || ma
 |-
 | qabeż || vblex || strong || 1 || jump || q-b-ż || a-e || a-e || tv ||  || ma
 |-
@@ -447,23 +447,25 @@
 |-
 | ċanfar || vblex || quad || 1 || reproach || ċ-n-f-r || a-a || a-a || tv ||  || im
 |-
-| ċapċap || vblex || quad || 1 || clap || ċ-p-ċ-p || a-a || a-a || tv ||  || im
+| ċapċap || vblex || quad || 1 || clap || ċ-p-ċ-p || a-a || a-a || iv ||  || im
 |-
-| ċappas || vblex || quad || 1 || smear || ċ-p-p-s || a-a || a-a || tv ||  || im
+| ċappas || vblex || quad || 1 || stain || ċ-p-p-s || a-a || a-a || tv ||  || im
 |-
-| ċaqlaq || vblex || quad || 1 || shake || ċ-q-l-q || a-a || a-a || tv ||  || im
+| ċaqlaq || vblex || quad || 1 || move || ċ-q-l-q || a-a || a-a || tv ||  || im
 |-
 | qarmeċ || vblex || quad || 1 || crunch || q-r-m-ċ || a-e || a-e || tv ||  || im
 |-
-| ħawtel || vblex || quad || 1 || be·diligent || ħ-w-t-l || a-e || a-e || tv ||  || im
+| ħawtel || vblex || quad || 1 || be·diligent || ħ-w-t-l || a-e || a-e || iv ||  || im
 |-
 | kexkex || vblex || quad || 1 || shock || k-x-k-x || e-e || e-e || tv ||  || im
 |-
 | petpet || vblex || quad || 1 || blink || p-t-p-t || e-e || e-e || tv ||  || im
 |-
-| temtem || vblex || quad || 1 || stutter || t-m-t-m || e-e || e-e || tv ||  || im
+| temtem || vblex || quad || 1 || stutter || t-m-t-m || e-e || e-e || iv ||  || im
 |-
 | xengel || vblex || quad || 1 || swing || x-n-g-l || e-e || e-e || tv ||  || im
+|-
+| ċempel || vblex || quad || 1 || ring٠up || ċ-m-p-l || e-e || e-e || iv ||  || im
 |-
 | ċempel || vblex || quad || 1 || ring || ċ-m-p-l || e-e || e-e || tv ||  || im
 |-
@@ -475,11 +477,11 @@
 |-
 | tertaq || vblex || quad || 1 || shatter || t-r-t-q || e-a || e-a || tv ||  || im
 |-
-| werżaq || vblex || quad || 1 || scream || w-r-ż-q || e-a || e-a || tv ||  || im
+| werżaq || vblex || quad || 1 || scream || w-r-ż-q || e-a || e-a || iv ||  || im
 |-
 | fixkel || vblex || quad || 1 || obstruct || f-x-k-l || i-e || i-e || tv ||  || im
 |-
-| bixkel || vblex || quad || 1 || cheat || b-x-k-l || i-e || i-e || iv ||  || im
+| bixkel || vblex || quad || 1 || cheat || b-x-k-l || i-e || i-e || tv ||  || im
 |-
 | berbaq || vblex || quad || 1 || squander || b-r-b-q || e-a || e-a || tv ||  || im
 |}

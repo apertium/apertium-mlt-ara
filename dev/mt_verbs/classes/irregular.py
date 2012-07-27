@@ -334,7 +334,8 @@ def irregular_forms (stem): #{
 		forms['past.p3.m.sg'] = [('kien', '-', '-'),
 					 ('kien', 'S__qtalt/x', '-')];
 		forms['past.p3.f.sg'] = [('kienet', '-', '-'),
-					 ('kienit', 'S__qtalt/x', '-')];
+					 ('kinit', 'S__qtalt/x', '-'),
+					 ('kienit', 'S__qtalt/x', 'LR')];
 		forms['past.p2.mf.sg'] =  [('kont', '-', '-'),
 					('kont', 'S__qtalt/x', '-')];	
 		forms['past.p1.mf.sg'] =  [('kont', '-', '-'),
