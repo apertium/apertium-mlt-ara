@@ -1,4 +1,5 @@
-TAGGER_UNSUPERVISED_ITERATIONS=8
+TAGGER_UNSUPERVISED_ITERATIONS=1
+# gets crazy when TAGGER_UNSUPERVISED_ITERATIONS > 2 
 BASENAME=apertium-mt-ar
 LANG1=mt
 LANG2=ar
@@ -15,6 +16,7 @@ $(PREFIX).prob: $(BASENAME).$(LANG1).tsx $(TAGGER)/$(LANG1).dic $(TAGGER)/$(LANG
                            $(BASENAME).$(LANG1).tsx \
                            $(PREFIX).prob;
 
+# important: no cg-proc here, this way we should have all ambiguity classes in mt.dic
 $(TAGGER)/$(LANG1).dic: $(BASENAME).$(LANG1).dix $(PREFIX).automorf.bin $(PREFIX).rlx.bin
 	@echo "Generating $@";
 	@echo "This may take some time. Please, take a cup of coffee and come back later.";
@@ -33,12 +35,14 @@ $(TAGGER)/$(LANG1).dic: $(BASENAME).$(LANG1).dix $(PREFIX).automorf.bin $(PREFIX
 	@echo "\\[" >>$(LANG1).dic.expanded
 	@echo ")" >>$(LANG1).dic.expanded
 	@echo "\\]" >>$(LANG1).dic.expanded
-	lt-proc -a $(PREFIX).automorf.bin < $(LANG1).dic.expanded | cg-proc $(PREFIX).rlx.bin | \
+	lt-proc -a $(PREFIX).automorf.bin < $(LANG1).dic.expanded | \
 	apertium-filter-ambiguity $(BASENAME).$(LANG1).tsx > $@
 	rm $(LANG1).dic.expanded;
 
 $(TAGGER)/$(LANG1).crp: $(PREFIX).automorf.bin $(PREFIX).rlx.bin $(TAGGER)/$(LANG1).crp.txt
-	apertium-destxt < $(TAGGER)/$(LANG1).crp.txt | lt-proc $(PREFIX).automorf.bin | cg-proc $(PREFIX).rlx.bin > $(TAGGER)/$(LANG1).crp 
+	apertium-destxt < $(TAGGER)/$(LANG1).crp.txt | \
+	lt-proc $(PREFIX).automorf.bin | \
+	cg-proc $(PREFIX).rlx.bin > $(TAGGER)/$(LANG1).crp
 
 clean:
 	rm -f $(PREFIX).prob
