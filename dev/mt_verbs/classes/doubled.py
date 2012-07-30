@@ -147,7 +147,7 @@ def doubled_imp(root, vowels, tv): #{
 
 	suffix = 'u'
 
-	forms['imp.p2.mf.sg'] = doubled_consonant_forms (r[0] + v[1] + r[1] + r[2], r[0] + v[1] + r[1] + r[2], '-', ek, tv);
+ 	forms['imp.p2.mf.sg'] = doubled_consonant_forms (r[0] + v[1] + r[1] + r[2], r[0] + v[1] + r[1] + r[2], '-', ek, tv);
 	forms['imp.p2.mf.pl'] = doubled_vowel_forms (r[0] + v[1] + r[1] + r[2] + suffix , r[0] + v[1] + r[1] + r[2] + suffix , '-', tv);
 
 	return forms;
@@ -178,7 +178,8 @@ def main(stem): #{
 		forms = doubled_past(stem['root'], stem['vowel_perf'], stem['trans']);
 		if stem['vowel_impf'] != '' : #{
 			forms.update(doubled_pres(stem['root'], stem['vowel_impf'], stem['trans']));
-			forms.update(doubled_imp(stem['root'], stem['vowel_impf'], stem['trans']));
+			if stem['trans'] == 'tv':
+				forms.update(doubled_imp(stem['root'], stem['vowel_impf'], stem['trans']));
 		#}
 		if stem['pp'] != '' : #{
 			forms.update(doubled_pp(stem['root'], stem['vowel_perf'], stem['pp']));

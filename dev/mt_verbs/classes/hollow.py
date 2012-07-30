@@ -278,7 +278,8 @@ def main(stem): #{
 			forms.update(hollow_pp(stem['root'], stem['vowel_perf'], stem['pp']));
 
 		forms.update(hollow_pres(stem['root'], stem['vowel_perf'], stem['trans']));
-		forms.update(hollow_imp(stem['root'], stem['vowel_perf'], stem['trans']));
+		if stem['trans'] == 'tv':
+			forms.update(hollow_imp(stem['root'], stem['vowel_perf'], stem['trans']));
 
 	#}
 

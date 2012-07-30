@@ -460,7 +460,8 @@ def main(stem): #{
 
 		if stem['vowel_impf'] != '': 
 			forms.update(strong_pres(stem['root'], stem['vowel_impf'], stem['trans']));
-			forms.update(strong_imp(stem['root'], stem['vowel_impf'], stem['trans']));
+			if stem['trans'] == 'tv':
+				forms.update(strong_imp(stem['root'], stem['vowel_impf'], stem['trans']));
 
 	#}
 

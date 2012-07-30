@@ -190,7 +190,8 @@ def main(stem): #{
 
 		forms = weak_past(stem['root'], stem['vowel_perf'], stem['trans']);
 		forms.update(weak_pres(stem['root'], stem['vowel_impf'], stem['trans']));
-		forms.update(weak_imp(stem['root'], stem['vowel_impf'], stem['trans']));
+		if stem['trans'] == 'tv' :
+			forms.update(weak_imp(stem['root'], stem['vowel_impf'], stem['trans']));
 		if stem['pp'] != '' : #{
 			forms.update(weak_pp(stem['root'], stem['vowel_perf'], stem['pp']));
 # pprs

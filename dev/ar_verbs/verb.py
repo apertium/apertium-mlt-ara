@@ -166,7 +166,7 @@ for line in lines: #{
 	row = line.split('||'); 
 
 
-	stem = {'stem': row[0].strip(), 'cat': row[1].strip(), 'type': row[2].strip(), 'theme': row[3].strip(), 'subtype': row[4].strip(), 'gloss': row[5].strip(), 'root': row[6].strip(), 'vowels_perf': row[7].strip(), 'vowels_impf': row[8].strip(), 'trans': row[9].strip()};
+	stem = {'stem': row[0].strip(), 'cat': row[1].strip(), 'type': row[2].strip(), 'theme': row[3].strip(), 'subtype': row[4].strip(), 'gloss': row[5].strip(), 'root': row[6].strip(), 'vowels_perf': row[7].strip(), 'vowels_impf': row[8].strip(), 'trans': row[9].strip(), 'lemq': row[10].strip()};
 	stems = stems + [stem];
 #        if stem['cat'] == 'vaux' :
 #                aux_verbs = aux_verbs + [stem['stem']];
@@ -189,8 +189,8 @@ for stem in stems: #{
     	    sys.stderr.write("Error: Missing class '{0}'\n".format(stem['type']));
     	    sys.exit(1);
 
-    	infl[stem['stem'] + '.' + stem['trans']] = stem_class.main(stem);
-	verb_cat[stem['stem'] + '.' + stem['trans']] = stem['cat'];
+    	infl[stem['stem'] + '.' + stem['lemq'] + '.' + stem['trans']] = stem_class.main(stem);
+	verb_cat[stem['stem'] + '.' + stem['lemq'] + '.' + stem['trans']] = stem['cat'];
 
 #    	infl[stem['stem']] = stem_class.main(stem);
 #}
@@ -202,7 +202,8 @@ for stem in infl: #{
 
 	s = stem.split('.');
 	stem_stem = s[0];
-	stem_trans = s[1];
+	stem_lemq = s[1];
+	stem_trans = s[2];
 
 	for flex in infl[stem]: #{
 		for subflex in infl[stem][flex]: #{
@@ -221,13 +222,21 @@ for stem in infl: #{
 			right = '%s<s n="%s"/><s n="%s"/>%s' % (stem_stem, verb_cat[stem], stem_trans, sym(flex));
 			paradigm = subflex[1];
 
-			if paradigm == "-": # no suffix
-				entry  = '<e%s%s><p><l>%s%s</l><r>%s</r></p></e>' % (r, lm, a, left,right);
-			else :  # suffix, in this case subflex[1] tells us which paradigm should be used
-				entry = '<e%s><p><l>%s%s</l><r>%s</r></p><par n="%s"/></e>' % (r, a, left, right, paradigm);
-
-			print entry.decode('utf-8')
+			if stem_lemq == '': #{
+				if paradigm == "-": # no suffix
+					entry  = '<e%s%s><p><l>%s%s</l><r>%s</r></p></e>' % (r, lm, a, left, right);
+				else :  # suffix, in this case subflex[1] tells us which paradigm should be used
+					entry = '<e%s><p><l>%s%s</l><r>%s</r></p><par n="%s"/></e>' % (r, a, left, right, paradigm);
 			#}
+			else: #{
+				if paradigm == "-": # no suffix
+					entry  = '<e%s%s><p><l>%s%s<b/>%s</l><r>%s<g><b/>%s</g></r></p></e>' % (r, lm, a, left, stem_lemq, right, stem_lemq);
+				else :  # suffix, in this case subflex[1] tells us which paradigm should be used
+					entry = '<e%s><p><l>%s%s</l><r>%s</r></p><par n="%s"/><p><l><b/>%s</l><r><g><b/>%s</g></r></p></e>' % (r, a, left, right, paradigm, stem_lemq, stem_lemq);
+			#}
+
+			print entry.decode('utf-8');
+
 		#}
 	#}
 #}

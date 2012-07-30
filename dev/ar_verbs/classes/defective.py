@@ -875,7 +875,7 @@ def defective_patt2_pprs(root): #{
 def defective_patt2_pp(root): #{
 	r = root.split('-'); # radicals
 
-	return defective_pprs('م' + r[0] + r[1], '-');
+	return defective_pp('م' + r[0] + r[1], '-');
 
 #}
 
@@ -1284,7 +1284,7 @@ def defective_irregular(stem, root): #{
 		forms.update(defective_subjun_yy_actv(base, 'tv'));
 		forms.update(defective_apocop_y_actv(base, 'tv'));
 		forms.update(defective_imp_y(base, 'tv'));
-		forms['actv.imp.p2.m.sg'] = [('ره', '-', '-'), ('ر', '-', 'LR')];
+		forms['actv.imp.p2.m.sg'] = [('ره', '-', 'LR'), ('ر', '-', '-')];
 		forms.update(defective_pres_pasv(base));
 
 		forms['pprs.m.sg'] = [('را', 'S__جز/ء', '-')] ;

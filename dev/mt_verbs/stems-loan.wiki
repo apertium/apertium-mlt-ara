@@ -33,7 +33,7 @@
 |-
 | esperjenza || vblex || loan || first_vowel || experience || esperjenz ||  || a || tv ||
 |-
-| iddeċida || vblex || loan || double_cons || decide || ddeċid ||  || i || iv || deċiż
+| iddeċida || vblex || loan || double_cons || decide || ddeċid ||  || i || tv || deċiż
 |-
 | ordna || vblex || loan || first_vowel || order || ordn ||  || a || tv || 
 |-
@@ -47,7 +47,7 @@
 |-
 | ittraduċa || vblex || loan || double_cons || translate || ttraduċ ||  || i || tv || tradott
 |-
-| irreaġixxa || vblex || loan || double_cons || react || rreaġ || ixx || i || iv || reaġit
+| irreaġixxa || vblex || loan || double_cons || react || rreaġ || ixx || i || iv ||
 |-
 | ipprojbixxa || vblex || loan || double_cons || prohibit || pprojb || ixx || i || tv || projbit
 |-

@@ -93,7 +93,7 @@
 |-
 | qabad || vblex || strong || 1 || catch || q-b-d || a-a || a-a || tv ||  || ma
 |-
-| naqas || vblex || strong || 1 || decrease || n-q-s || a-a || o-o || iv ||  || mi
+| naqas || vblex || strong || 1 || decrease || n-q-s || a-a || o-o || iv ||  ||
 |-
 | naqas || vblex || strong || 1 || need || n-q-s || a-a || o-o || tv ||  || mi
 |-
@@ -143,7 +143,7 @@
 |-
 | ħeles || vblex || strong || 1 || set·free || ħ-l-s || e-e || e-e || tv ||  || me
 |-
-| ħeles || vblex || strong || 1 || be·free || ħ-l-s || e-e || e-e || iv ||  || me
+| ħeles || vblex || strong || 1 || be·free || ħ-l-s || e-e || e-e || iv ||  ||
 |-
 | għereq || vblex || strong || 1 || stink || għ-r-q || e-e || e-e || iv ||  || me
 |-
@@ -269,9 +269,9 @@
 |-
 | xorob || vblex || strong || 1 || drink || x-r-b || o-o || i-o || tv ||  || mi
 |-
-| ħolom || vblex || strong || 1 || dream || ħ-l-m || o-o || o-o || tv ||  || mo
+| ħolom || vblex || strong || 1 || dream || ħ-l-m || o-o || o-o || iv ||  || mo
 |-
-| korob || vblex || strong || 1 || groan || k-r-b || o-o || o-o || iv ||  || mi
+| korob || vblex || strong || 1 || groan || k-r-b || o-o || o-o || iv ||  ||
 |-
 | ħoloq || vblex || strong || 1 || be·created || ħ-l-q || o-o || o-o || iv ||  || ma
 |-
@@ -385,11 +385,11 @@
 |-
 | qarr || vblex || doubled || 1 || go·to·confession || q-r-r || a-a || i-e || tv ||  || ma
 |-
-| raqq || vblex || doubled || 1 || become·thin || r-q-q || a-a || i-e || iv ||  || ma
+| raqq || vblex || doubled || 1 || become·thin || r-q-q || a-a || i-e || iv ||  || 
 |-
-| saħħ || vblex || doubled || 1 || be·sound || s-ħ-ħ || a-a || i-e || iv ||  || ma
+| saħħ || vblex || doubled || 1 || be·sound || s-ħ-ħ || a-a || i-e || iv ||  || 
 |-
-| xaħħ || vblex || doubled || 1 || be·stingy || x-ħ-ħ || a-a || i-e || iv ||  || ma
+| xaħħ || vblex || doubled || 1 || be·stingy || x-ħ-ħ || a-a || i-e || iv ||  ||
 |-
 | damm || vblex || doubled || 1 || string·together || d-m-m || a-a || i-o || tv ||  || mi
 |-
@@ -461,11 +461,11 @@
 |-
 | petpet || vblex || quad || 1 || blink || p-t-p-t || e-e || e-e || tv ||  || im
 |-
-| temtem || vblex || quad || 1 || stutter || t-m-t-m || e-e || e-e || iv ||  || im
+| temtem || vblex || quad || 1 || stutter || t-m-t-m || e-e || e-e || iv ||  ||
 |-
 | xengel || vblex || quad || 1 || swing || x-n-g-l || e-e || e-e || tv ||  || im
 |-
-| ċempel || vblex || quad || 1 || ring٠up || ċ-m-p-l || e-e || e-e || iv ||  || im
+| ċempel || vblex || quad || 1 || ring٠up || ċ-m-p-l || e-e || e-e || iv ||  ||
 |-
 | ċempel || vblex || quad || 1 || ring || ċ-m-p-l || e-e || e-e || tv ||  || im
 |-

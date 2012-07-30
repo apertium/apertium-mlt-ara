@@ -2730,7 +2730,10 @@
          <call-macro n="set_prn_suff_gen"><with-param pos="2"/></call-macro>
 	 <choose>
 	   <when>
-	     <test><equal><clip pos="1" side="tl" part="a_trans"/><lit-tag v="tv"/></equal></test>
+	     <test><and>
+	       <equal><clip pos="1" side="tl" part="a_trans"/><lit-tag v="tv"/></equal>
+	       <equal><clip pos="1" side="tl" part="a_voice"/><lit-tag v="actv"/></equal>
+	     </and></test>
            <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
   	     <mlu>
                <lu>
@@ -2832,43 +2835,87 @@
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
          <call-macro n="set_prn_suff_gen"><with-param pos="2"/></call-macro>
          <call-macro n="set_prn_suff_gen"><with-param pos="3"/></call-macro>
-         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
-	   <mlu>
-             <lu>
+	 <choose>
+	   <when>
+	     <test><and>
+	       <equal><clip pos="1" side="tl" part="a_trans"/><lit-tag v="tv"/></equal>
+	       <equal><clip pos="1" side="tl" part="a_voice"/><lit-tag v="actv"/></equal>
+	     </and></test>
+             <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+	       <mlu>
+                 <lu>
+                   <clip pos="1" side="tl" part="lemh"/>
+                   <clip pos="1" side="tl" part="a_verb"/>
+                   <clip pos="1" side="tl" part="a_trans"/> 
+                   <clip pos="1" side="tl" part="a_voice"/>
+                   <clip pos="1" side="tl" part="temps"/>
+                   <clip pos="1" side="tl" part="pers"/>
+                   <var n="genero"/>
+                   <clip pos="1" side="tl" part="nbr"/>
+                   <clip pos="1" side="tl" part="lemq"/>
+                 </lu>
+	         <lu>
+                   <lit v="ه"/>
+                   <clip pos="2" side="tl" part="a_prn"/>
+                   <clip pos="2" side="tl" part="pers"/>
+                   <clip pos="2" side="tl" part="gen"/>
+                   <clip pos="2" side="tl" part="nbr"/>
+                 </lu>
+	       </mlu>
+	       <b/>
+	       <mlu>
+	         <lu>
+                   <lit v="ل"/>
+                   <lit-tag v="pr"/>
+	         </lu>
+	         <lu>
+                   <lit v="ه"/>
+                   <clip pos="3" side="tl" part="a_prn"/>
+                   <clip pos="3" side="tl" part="pers"/>
+                   <clip pos="3" side="tl" part="gen"/>
+                   <clip pos="3" side="tl" part="nbr"/>
+                 </lu>
+	       </mlu>
+	     </chunk></out>
+  	   </when>
+  	   <otherwise>
+           <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+  	     <lu>
                <clip pos="1" side="tl" part="lemh"/>
                <clip pos="1" side="tl" part="a_verb"/>
-               <clip pos="1" side="tl" part="a_trans"/> 
+               <clip pos="1" side="tl" part="a_trans"/>
                <clip pos="1" side="tl" part="a_voice"/>
                <clip pos="1" side="tl" part="temps"/>
-<!--               <clip pos="1" side="tl" part="mood"/>  -->
                <clip pos="1" side="tl" part="pers"/>
                <var n="genero"/>
                <clip pos="1" side="tl" part="nbr"/>
                <clip pos="1" side="tl" part="lemq"/>
              </lu>
+	     <b/>
 	     <lu>
-               <lit v="ه"/>
+               <lit v="إيا"/>
                <clip pos="2" side="tl" part="a_prn"/>
                <clip pos="2" side="tl" part="pers"/>
                <clip pos="2" side="tl" part="gen"/>
                <clip pos="2" side="tl" part="nbr"/>
              </lu>
-	   </mlu>
-	   <b/>
-	   <mlu>
-	     <lu>
-               <lit v="ل"/>
-               <lit-tag v="pr"/>
-	     </lu>
-	     <lu>
-               <lit v="ه"/>
-               <clip pos="3" side="tl" part="a_prn"/>
-               <clip pos="3" side="tl" part="pers"/>
-               <clip pos="3" side="tl" part="gen"/>
-               <clip pos="3" side="tl" part="nbr"/>
-             </lu>
-	   </mlu>
-	 </chunk></out>
+	     <b/>
+	     <mlu>
+	       <lu>
+                 <lit v="ل"/>
+                 <lit-tag v="pr"/>
+	       </lu>
+	       <lu>
+                 <lit v="ه"/>
+                 <clip pos="3" side="tl" part="a_prn"/>
+                 <clip pos="3" side="tl" part="pers"/>
+                 <clip pos="3" side="tl" part="gen"/>
+                 <clip pos="3" side="tl" part="nbr"/>
+               </lu>
+	     </mlu>
+	   </chunk></out>
+	   </otherwise>
+	 </choose>
        </action>
     </rule> 
 

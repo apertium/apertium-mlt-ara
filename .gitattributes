@@ -27,6 +27,7 @@ dev/ar_verbs/classes/doubled.py -text
 dev/ar_verbs/classes/firsthamza.py -text
 dev/ar_verbs/classes/firstw.py -text
 dev/ar_verbs/classes/hollow.py -text
+dev/ar_verbs/classes/irregular.py -text
 dev/ar_verbs/classes/quad.py -text
 dev/ar_verbs/classes/secondhamza.py -text
 dev/ar_verbs/classes/sound.py -text

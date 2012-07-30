@@ -7,4 +7,5 @@ import firstw
 import firsthamza
 import secondhamza
 import thirdhamza
+import irregular
 
