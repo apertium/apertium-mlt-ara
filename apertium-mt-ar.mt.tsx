@@ -63,6 +63,7 @@
   </def-label>
   <def-label name="N">
     <tags-item tags="n.*.*"/>
+    <tags-item tags="np.*"/>
   </def-label>
 
   <def-label name="N-POSS">
@@ -75,9 +76,12 @@
     <tags-item tags="n.*.*.px3sg_m"/>
   </def-label>
 
+<!--
   <def-label name="NP">
     <tags-item tags="np.*"/>
   </def-label>
+-->
+
   <def-label name="NUM" closed="true">
     <tags-item tags="num"/>
     <tags-item tags="num.*"/>
@@ -124,28 +128,30 @@
     <tags-item tags="vaux.*.*.*.*.sg"/>
   </def-label>
   <def-label name="VBLEX-IMP-SG">
-    <tags-item tags="vblex.*.imp.*.sg"/>
+    <tags-item tags="vblex.*.imp.*.*.sg"/>
   </def-label>
   <def-label name="VBLEX-IMP-PL">
-    <tags-item tags="vblex.*.imp.*.pl"/>
+    <tags-item tags="vblex.*.imp.*.*.pl"/>
   </def-label>
   <def-label name="VBLEX-PL">
-    <tags-item tags="vblex.*.*.*.*.pl"/>
-    <tags-item tags="vblex.*.*.p3.m.pl"/>  <!-- TODO: remove from mt.dix 
--->
+    <tags-item tags="vblex.*.past.*.*.pl"/>
+    <tags-item tags="vblex.*.pres.*.*.pl"/>
+    <tags-item tags="vblex.*.*.p3.m.pl"/>  <!-- TODO: remove from mt.dix  -->
   </def-label>
   <def-label name="VBLEX-SG">
-    <tags-item tags="vblex.*.*.*.*.sg"/>
+    <tags-item tags="vblex.*.past.*.*.sg"/>
+    <tags-item tags="vblex.*.pres.*.*.sg"/>
     <tags-item tags="vblex.*.*.p3.*.sg.px3sg_m"/>  <!-- TODO: to be removed as well -->
   </def-label>
 
 
-  <def-mult name="adv+neg" closed="true">
+  <!-- ??? -->
+<!--   <def-mult name="adv+neg" closed="true">
     <sequence>
       <tags-item tags="adv"/>
       <label-item label="NEG"/>
     </sequence>
-  </def-mult>
+  </def-mult> -->
   <def-mult name="pr+adv" closed="true">
     <sequence>
       <tags-item tags="pr"/>
@@ -170,10 +176,23 @@
       <tags-item tags="n.*"/>
     </sequence>
   </def-mult>
+  <def-mult name="det.def.mf.sp+n">
+    <sequence>
+      <tags-item tags="det.def.mf.sp"/>
+      <tags-item tags="n.*"/>
+    </sequence>
+  </def-mult>
   <def-mult name="pr+prnp" closed="true">
     <sequence>
       <tags-item tags="pr"/>
       <label-item label="PRNP"/>
+    </sequence>
+  </def-mult>
+  <def-mult name="pr+prnp+neg" closed="true">
+    <sequence>
+      <tags-item tags="pr"/>
+      <label-item label="PRNP"/>
+      <label-item label="NEG"/>
     </sequence>
   </def-mult>
   <def-mult name="vaux.pl+neg" closed="true">
@@ -191,13 +210,13 @@
 
   <def-mult name="vblex.imp.pl+neg">
     <sequence>
-      <tags-item tags="vblex.*.imp.*.pl"/>
+      <tags-item tags="vblex.*.imp.*.*.pl"/>
       <label-item label="NEG"/>
     </sequence>
   </def-mult>
   <def-mult name="vblex.imp.sg+neg">
     <sequence>
-      <tags-item tags="vblex.*.imp.*.sg"/>
+      <tags-item tags="vblex.*.imp.*.*.sg"/>
       <label-item label="NEG"/>
     </sequence>
   </def-mult>
@@ -205,27 +224,27 @@
 
   <def-mult name="vblex.imp.sg+prnp">
     <sequence>
-      <tags-item tags="vblex.*.imp.*.sg"/>
+      <tags-item tags="vblex.*.imp.*.*.sg"/>
       <label-item label="PRNP"/>
     </sequence>
   </def-mult>
   <def-mult name="vblex.imp.sg+prnp+neg">
     <sequence>
-      <tags-item tags="vblex.*.imp.*.sg"/>
+      <tags-item tags="vblex.*.imp.*.*.sg"/>
       <label-item label="PRNP"/>
       <label-item label="NEG"/>
     </sequence>
   </def-mult>
   <def-mult name="vblex.imp.sg+prnp+prnp">
     <sequence>
-      <tags-item tags="vblex.*.imp.*.sg"/>
+      <tags-item tags="vblex.*.imp.*.*.sg"/>
       <label-item label="PRNP"/>
       <label-item label="PRNP"/>
     </sequence>
   </def-mult>
   <def-mult name="vblex.imp.sg+prnp+prnp+neg">
     <sequence>
-      <tags-item tags="vblex.*.imp.*.sg"/>
+      <tags-item tags="vblex.*.imp.*.*.sg"/>
       <label-item label="PRNP"/>
       <label-item label="PRNP"/>
       <label-item label="NEG"/>
@@ -234,27 +253,27 @@
 
   <def-mult name="vblex.imp.pl+prnp">
     <sequence>
-      <tags-item tags="vblex.*.imp.*.pl"/>
+      <tags-item tags="vblex.*.imp.*.*.pl"/>
       <label-item label="PRNP"/>
     </sequence>
   </def-mult>
   <def-mult name="vblex.imp.pl+prnp+neg">
     <sequence>
-      <tags-item tags="vblex.*.imp.*.pl"/>
+      <tags-item tags="vblex.*.imp.*.*.pl"/>
       <label-item label="PRNP"/>
       <label-item label="NEG"/>
     </sequence>
   </def-mult>
   <def-mult name="vblex.imp.pl+prnp+prnp">
     <sequence>
-      <tags-item tags="vblex.*.imp.*.pl"/>
+      <tags-item tags="vblex.*.imp.*.*.pl"/>
       <label-item label="PRNP"/>
       <label-item label="PRNP"/>
     </sequence>
   </def-mult>
   <def-mult name="vblex.imp.pl+prnp+prnp+neg">
     <sequence>
-      <tags-item tags="vblex.*.imp.*.pl"/>
+      <tags-item tags="vblex.*.imp.*.*.pl"/>
       <label-item label="PRNP"/>
       <label-item label="PRNP"/>
       <label-item label="NEG"/>
@@ -262,6 +281,12 @@
   </def-mult>
 
 
+  <def-mult name="vblex.sg+neg">
+    <sequence>
+      <label-item label="VBLEX-SG"/>
+      <label-item label="NEG"/>
+    </sequence>
+  </def-mult>
   <def-mult name="vblex.sg+prnp">
     <sequence>
       <label-item label="VBLEX-SG"/>
@@ -291,6 +316,12 @@
     </sequence>
   </def-mult>
 
+  <def-mult name="vblex.pl+neg">
+    <sequence>
+      <label-item label="VBLEX-PL"/>
+      <label-item label="NEG"/>
+    </sequence>
+  </def-mult>
   <def-mult name="vblex.pl+prnp">
     <sequence>
       <label-item label="VBLEX-PL"/>
@@ -320,7 +351,7 @@
     </sequence>
   </def-mult>
 
-
+  <!-- participles are not negated this way, are they? -->
   <def-mult name="vblex.pp.pl+neg">
     <sequence>
       <tags-item tags="vblex.*.pp.pl"/>
