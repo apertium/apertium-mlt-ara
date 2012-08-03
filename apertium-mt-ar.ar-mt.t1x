@@ -11,15 +11,61 @@
       <cat-item tags="adj"/>
       <cat-item tags="adj.*"/>
     </def-cat>
+
+    <def-cat n="verb">
+      <cat-item tags="vblex.*"/>
+    </def-cat>
+
   </section-def-cats>
 
   <section-def-attrs>
+    <def-attr n="a_nom">
+       <attr-item tags="n"/>
+       <attr-item tags="np"/>
+    </def-attr>
     <def-attr n="a_adj">
        <attr-item tags="adj"/>
     </def-attr>
     <def-attr n="a_cas">
        <attr-item tags="nom"/>
        <attr-item tags="gen"/>
+       <attr-item tags="acc"/>
+    </def-attr>
+    <def-attr n="a_stat">
+       <attr-item tags="cstr"/>
+       <attr-item tags="artic"/>
+    </def-attr>
+    <def-attr n="gen">
+       <attr-item tags="m"/>
+       <attr-item tags="f"/>
+       <attr-item tags="mf"/>
+       <attr-item tags="GD"/>
+    </def-attr>
+    <def-attr n="nbr">
+       <attr-item tags="sg"/>
+       <attr-item tags="pl"/>
+       <attr-item tags="sp"/>
+       <attr-item tags="du"/>
+       <attr-item tags="ND"/>
+    </def-attr>
+    <def-attr n="a_poss">
+      <attr-item tags="px1sg"/>
+      <attr-item tags="px1pl"/>
+      <attr-item tags="px2sg_m"/>
+      <attr-item tags="px2sg_f"/>
+      <attr-item tags="px2pl_m"/>
+      <attr-item tags="px2pl_f"/>
+      <attr-item tags="px2du"/>
+      <attr-item tags="px3sg_m"/>
+      <attr-item tags="px3sg_f"/>
+      <attr-item tags="px3pl_m"/>
+      <attr-item tags="px3pl_f"/>
+      <attr-item tags="px3du"/>
+    </def-attr>
+
+    <def-attr n="a_mode">
+       <attr-item tags="subjun"/>
+       <attr-item tags="apocop"/>
     </def-attr>
   </section-def-attrs>
 
@@ -41,14 +87,21 @@
          <pattern-item n="nom"/>
        </pattern>
        <action>
-         <let>
-             <clip pos="1" side="tl" part="a_cas"/>
-             <lit v=""/>
-         </let>
+         <let><clip pos="1" side="tl" part="a_stat"/><lit v=""/></let>
+         <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> 
+<!-- for now, should be tiegħ + suffix -->
          <out>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
            </lu>
+<!--	   <lu>
+	     <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_nom"/>
+             <clip pos="1" side="tl" part="gen"/>
+             <clip pos="1" side="tl" part="a_cas"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>  -->
          </out>
        </action>
     </rule>
@@ -58,10 +111,8 @@
          <pattern-item n="adj"/>
        </pattern>
        <action>
-         <let>
-             <clip pos="1" side="tl" part="a_cas"/>
-             <lit v=""/>
-         </let>
+         <let><clip pos="1" side="tl" part="a_cas"/><lit v=""/></let>
+         <let><clip pos="1" side="tl" part="a_stat"/><lit v=""/></let>
          <out>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
@@ -70,6 +121,20 @@
        </action>
     </rule>
 
+
+    <rule comment="verb">
+      <pattern>
+         <pattern-item n="verb"/>
+       </pattern>
+       <action>
+         <let><clip pos="1" side="tl" part="a_mode"/><lit v="pres"/></let>
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+         </out>
+       </action>
+    </rule>
 
   </section-rules>
 
