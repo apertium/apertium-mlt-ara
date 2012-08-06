@@ -14,6 +14,15 @@
 
     <def-cat n="verb">
       <cat-item tags="vblex.*"/>
+      <cat-item tags="vaux.*"/>
+    </def-cat>
+
+    <def-cat n="num">
+      <cat-item tags="num.*"/>
+    </def-cat>
+
+    <def-cat n="hu_prn">
+      <cat-item tags="prn.*" lemma="ه"/>
     </def-cat>
 
   </section-def-cats>
@@ -67,6 +76,17 @@
        <attr-item tags="subjun"/>
        <attr-item tags="apocop"/>
     </def-attr>
+
+    <def-attr n="a_prn">
+       <attr-item tags="prn"/>
+    </def-attr>
+
+    <def-attr n="pers">
+       <attr-item tags="p1"/>
+       <attr-item tags="p2"/>
+       <attr-item tags="p3"/>
+    </def-attr>
+
   </section-def-attrs>
 
 
@@ -111,8 +131,26 @@
          <pattern-item n="adj"/>
        </pattern>
        <action>
-         <let><clip pos="1" side="tl" part="a_cas"/><lit v=""/></let>
+         <let><clip pos="1" side="tl" part="a_cas"/><lit v=""/></let> 
          <let><clip pos="1" side="tl" part="a_stat"/><lit v=""/></let>
+         <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> 
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+         </out>
+       </action>
+    </rule>
+
+
+    <rule comment="num">
+      <pattern>
+         <pattern-item n="num"/>
+       </pattern>
+       <action>
+         <let><clip pos="1" side="tl" part="a_cas"/><lit v=""/></let> 
+         <let><clip pos="1" side="tl" part="a_stat"/><lit v=""/></let>
+         <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> 
          <out>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
@@ -127,7 +165,30 @@
          <pattern-item n="verb"/>
        </pattern>
        <action>
-         <let><clip pos="1" side="tl" part="a_mode"/><lit v="pres"/></let>
+         <let><clip pos="1" side="tl" part="a_mode"/><lit-tag v="pres"/></let>
+         <let><clip pos="1" side="tl" part="a_cas"/><lit v=""/></let> 
+         <let><clip pos="1" side="tl" part="a_stat"/><lit v=""/></let>
+         <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> 
+	 <choose>
+	   <when>
+	     <test><equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="du"/></equal></test>
+             <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></let> 
+             <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>
+	   <when>
+	     <test><equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p2"/></equal></test>
+             <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></let> 
+             <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>
+	   <when>
+	     <test><and>
+	       <equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
+	       <equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p3"/></equal>
+	     </and></test>
+             <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></let> 
+             <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>	
+         </choose> 
          <out>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
@@ -135,6 +196,71 @@
          </out>
        </action>
     </rule>
+
+
+    <rule comment="verb + suff. prn">
+      <pattern>
+         <pattern-item n="verb"/>
+         <pattern-item n="hu_prn"/>
+       </pattern>
+       <action>
+         <let><clip pos="1" side="tl" part="a_mode"/><lit-tag v="pres"/></let>
+	 <choose>
+	   <when>
+	     <test><equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="du"/></equal></test>
+             <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></let> 
+             <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>
+	   <when>
+	     <test><equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p2"/></equal></test>
+             <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>
+	   <when>
+	     <test><and>
+	       <equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
+	       <equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p3"/></equal>
+	     </and></test>
+             <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>	
+         </choose> 
+
+	 <choose>
+	   <when>
+	     <test><equal><clip pos="2" side="tl" part="nbr"/><lit-tag v="du"/></equal></test>
+             <let><clip pos="2" side="tl" part="nbr"/><lit-tag v="pl"/></let> 
+             <let><clip pos="2" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>
+	   <when>
+	     <test><equal><clip pos="2" side="tl" part="pers"/><lit-tag v="p2"/></equal></test>
+             <let><clip pos="2" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>
+	   <when>
+	     <test><and>
+	       <equal><clip pos="2" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
+	       <equal><clip pos="2" side="tl" part="pers"/><lit-tag v="p3"/></equal>
+	     </and></test>
+             <let><clip pos="2" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>	
+         </choose> 
+
+         <out>
+	   <mlu>
+             <lu>
+               <clip pos="1" side="tl" part="whole"/>
+             </lu>
+	     <lu>
+               <lit v="u"/>
+               <clip pos="2" side="tl" part="a_prn"/>
+               <clip pos="2" side="tl" part="pers"/>
+               <clip pos="2" side="tl" part="gen"/>
+               <clip pos="2" side="tl" part="nbr"/>
+             </lu>
+	   </mlu>
+         </out>
+       </action>
+    </rule>
+
+
 
   </section-rules>
 
