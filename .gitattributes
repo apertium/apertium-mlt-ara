@@ -52,15 +52,23 @@ dev/mt_verbs/stems-loan.wiki -text
 dev/mt_verbs/stems-semitic.wiki -text
 dev/mt_verbs/verb.py -text
 dev/story/story.ar.txt -text svneol=unset#application/octet-stream
+dev/story/story.gt.posted.txt -text svneol=unset#application/octet-stream
+dev/story/story.gt.txt -text svneol=unset#application/octet-stream
 dev/story/story.mt.txt -text
 dev/story/story.mtar.posted.txt -text svneol=unset#application/octet-stream
 dev/story/story.mtar.txt -text svneol=unset#application/octet-stream
+dev/story/story2.gt.posted.txt -text svneol=unset#application/octet-stream
+dev/story/story2.gt.txt -text svneol=unset#application/octet-stream
 dev/story/story2.mt.txt -text
 dev/story/story2.mtar.posted.txt -text svneol=unset#application/octet-stream
 dev/story/story2.mtar.txt -text svneol=unset#application/octet-stream
+dev/story/story3.gt.posted.txt -text svneol=unset#application/octet-stream
+dev/story/story3.gt.txt -text svneol=unset#application/octet-stream
 dev/story/story3.mt.txt -text
 dev/story/story3.mtar.posted.txt -text svneol=unset#application/octet-stream
 dev/story/story3.mtar.txt -text svneol=unset#application/octet-stream
+dev/story/story4.gt.posted.txt -text svneol=unset#application/octet-stream
+dev/story/story4.gt.txt -text svneol=unset#application/octet-stream
 dev/story/story4.mt.txt -text
 dev/story/story4.mtar.posted.txt -text svneol=unset#application/octet-stream
 dev/story/story4.mtar.txt -text svneol=unset#application/octet-stream
