@@ -28,7 +28,7 @@ hasherrors=$(mktemp -t testvoc.XXXXXXXXXX)
 
 for i in $POS; do
 	if [ "$i" = "det" ]; then
-		remove-other-pos () { grep -v -e '<n>' -e '<np>'; }
+		remove-other-pos () { grep -v -e '<n>' -e '<np>' -e '<adj>' -e '<num>'; }
 	elif [ "$i" = "preadv" ]; then
 		remove-other-pos () { grep -v -e '<adj>' -e '<adv>'; }
 	elif [ "$i" = "adj" ]; then
@@ -44,7 +44,7 @@ for i in $POS; do
 	elif [ "$i" = "v" ]; then
 		remove-other-pos () { grep -v -e '<part>' -e '<qst>' -e '<cnj'; }
 	elif [ "$i" = "pr" ]; then
-		remove-other-pos () { grep -v -e '<vblex>' -e '<vaux>' -e '<n>' -e '<adv>'; }
+		remove-other-pos () { grep -v -e '<vblex>' -e '<vaux>' -e '<n>' -e '<adv>' -e '<adj>' -e '<num>'; }
 	elif [ "$i" = "prn" ]; then
 		remove-other-pos () { grep -v -e '<vblex>' -e '<vaux>' -e '<n>'; }
 	else
