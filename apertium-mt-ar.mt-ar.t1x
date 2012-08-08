@@ -1726,6 +1726,7 @@
                <clip pos="1" side="tl" part="lemh"/>
                <clip pos="1" side="tl" part="a_verb"/>
                <clip pos="1" side="tl" part="a_trans"/>
+               <clip pos="1" side="tl" part="a_voice"/>
                <clip pos="1" side="tl" part="a_particip"/>
                <clip pos="1" side="tl" part="gen"/> 
                <clip pos="1" side="tl" part="nbr"/>
@@ -5383,7 +5384,7 @@
 <!--             <clip pos="3" side="tl" part="a_nom_attr"/> -->
            <clip pos="4" side="tl" part="a_verb"/>
            <clip pos="4" side="tl" part="a_trans"/>
-<!--           <clip pos="4" side="tl" part="a_voice"/> -->
+           <clip pos="4" side="tl" part="a_voice"/> 
            <clip pos="4" side="tl" part="a_particip"/>
            <clip pos="4" side="tl" part="gen"/>
            <clip pos="4" side="tl" part="nbr"/>
@@ -7329,6 +7330,7 @@
                <clip pos="4" side="tl" part="lemh"/>
                <clip pos="4" side="tl" part="a_verb"/>
                <clip pos="4" side="tl" part="a_trans"/>
+               <clip pos="4" side="tl" part="a_voice"/>
                <clip pos="4" side="tl" part="a_particip"/>
                <clip pos="4" side="tl" part="gen"/> 
                <clip pos="4" side="tl" part="nbr"/>
@@ -7386,6 +7388,7 @@
                <clip pos="2" side="tl" part="lemh"/>
                <clip pos="2" side="tl" part="a_verb"/>
                <clip pos="2" side="tl" part="a_trans"/>
+               <clip pos="2" side="tl" part="a_voice"/>
                <clip pos="2" side="tl" part="a_particip"/>
                <clip pos="2" side="tl" part="gen"/> 
                <clip pos="2" side="tl" part="nbr"/>
@@ -7552,6 +7555,7 @@
                <clip pos="3" side="tl" part="lemh"/>
                <clip pos="3" side="tl" part="a_verb"/>
                <clip pos="3" side="tl" part="a_trans"/>
+               <clip pos="3" side="tl" part="a_voice"/>
                <clip pos="3" side="tl" part="a_particip"/>
                <clip pos="3" side="tl" part="gen"/>
                <clip pos="3" side="tl" part="nbr"/>
