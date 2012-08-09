@@ -291,6 +291,18 @@
 |-
 | xehed || vblex || strong || 1 || give·evidence || x-h-d || e-e || i-e || tv ||  || mi
 |-
+| wieġeb || vblex || strong || 3a || answer || w-ġ-b || || || tv ||  || 
+|-
+| twieġeb || vblex || strong || 6a || be٠answered || w-ġ-b || || || iv ||  || 
+|-
+| ttieħed || vblex || strong || 6a || be٠taken || t-ħ-d || || || iv ||  || mi 
+|-
+| ngħażel || vblex || strong || 7 || be٠chosen || għ-ż-l || a-e || a-e || iv ||  || 
+|-
+| nħareġ || vblex || strong || 7 || be٠taken٠out || ħ-r-ġ || a-e || a-e || iv ||  || 
+|-
+| nkiteb || vblex || strong || 7 || be٠written || k-t-b || i-e || i-e || iv ||  || 
+|-
 | kisser || vblex || quad || 1 || smash || k-s-s-r || i-e || i-e || tv ||  || m
 |-
 | fisser || vblex || quad || 1 || mean || f-s-s-r || i-e || i-e || tv ||  || m
@@ -306,6 +318,8 @@
 | nissel || vblex || quad || 1 || derive || n-s-s-l || i-e || i-e || tv ||  || m
 |-
 | tkellem || vblex || quad || 2 || speak || k-l-l-m || e-e || e-e || iv ||  || mi
+|-
+| ixxandar || vblex || quad || 2 || be٠broadcast || x-n-d-r || a-a || a-a || iv ||  || 
 |-
 | dar || vblex || hollow || 1 || turn || d-w-r || a-a ||  || iv ||  || mi
 |-
@@ -359,6 +373,10 @@
 |-
 | qiem || vblex || hollow || 1 || venerate || q-w-m || ie-a ||  || tv ||  || me
 |-
+| nġab || vblex || hollow || 7 || be٠brought || ġ-j-b || a-a ||  || iv ||  ||
+|-
+| nġieb || vblex || hollow || 7 || be٠brought || ġ-j-b || ie-a ||  || iv ||  ||
+|-
 | qara || vblex || weak || 1 || read || q-r-j || a-a || a-a || tv ||  || mo
 |-
 | mexa || vblex || weak || 1 || walk || m-x-j || e-a || i-i || tv ||  || mi
@@ -378,6 +396,10 @@
 | rema || vblex || weak || 1 || throw·away || r-m-j || e-a || a-i || tv ||  || mo
 |-
 | ġara || vblex || weak || 1 || run || ġ-r-j || a-a || i-i || iv ||  || mi
+|-
+| nbeda || vblex || weak || 7 || be٠commenced || b-d-j || e-a ||  || iv ||  ||
+|-
+| nħeba || vblex || weak || 7 || be٠hidden || ħ-b-j || e-a ||  || iv ||  ||
 |-
 | radd || vblex || doubled || 1 || restore || r-d-d || a-a || a-o || tv ||  || mi
 |-
@@ -430,6 +452,10 @@
 | ħabb || vblex || doubled || 1 || love || ħ-b-b || a-a || i-o || tv ||  || ma
 |-
 | għadd || vblex || doubled || 1 || count || għ-d-d || a-a || i-o || tv ||  || ma
+|-
+| nħabb || vblex || doubled || 7 || be٠loved || ħ-b-b || a-a || || iv ||  ||
+|-
+| nħass || vblex || doubled || 7 || be٠felt || ħ-s-s || a-a || || iv ||  ||
 |-
 | qaħqaħ || vblex || quad || 1 || cough || q-ħ-q-ħ || a-a || a-a || iv ||  || im
 |-

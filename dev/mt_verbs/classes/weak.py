@@ -8,33 +8,6 @@
 ## ----------------------------------------------------------------------------##
 
 
-def weak_pprs(root): #{
-	r = root.split('-'); # radicals
-
-	forms = {};
-	
-	forms['pprs.m.sg'] = [(r[0] + 'ie' + r[1] + 'i', '-', '-')] ;
-	forms['pprs.f.sg'] = [(r[0] + 'ie' + r[1] + 'ja', '-', '-')] ;
-	forms['pprs.mf.pl'] = [(r[0] + 'e' + r[1] + 'jin', '-', '-')] ;
-
-	return forms;
-#}
-
-
-def weak_pp(root, vowels, pref): #{
-	r = root.split('-'); # radicals
-	v = vowels.split('-'); # vowels
-
-	forms = {};
-	
-	forms['pp.m.sg'] = [(pref + r[0] + r[1] + 'i', '-', '-')] ;
-	forms['pp.f.sg'] = [(pref + r[0] + r[1] + 'ija', '-', '-')] ;
-	forms['pp.mf.pl'] = [(pref + r[0] + r[1] + 'ijin', '-', '-')] ;
-
-	return forms;
-#}
-
-
 # no ek/ok
 def weak_consonant_forms (form_sg, form_sg_suff, r, tv): #{
 # only past.p3.sg.f have different forms with and without suffixes
@@ -82,7 +55,41 @@ def weak_vowel_forms (form_pl, form_pl_suff, r, tv): #{
 #}
 
 
-def weak_past(root, vowels, tv): #{
+
+## ----------------------------------------------------------------------------##
+## pattern 1
+## ----------------------------------------------------------------------------##
+
+
+def weak_patt1_pprs(root): #{
+	r = root.split('-'); # radicals
+
+	forms = {};
+	
+	forms['pprs.m.sg'] = [(r[0] + 'ie' + r[1] + 'i', '-', '-')] ;
+	forms['pprs.f.sg'] = [(r[0] + 'ie' + r[1] + 'ja', '-', '-')] ;
+	forms['pprs.mf.pl'] = [(r[0] + 'e' + r[1] + 'jin', '-', '-')] ;
+
+	return forms;
+#}
+
+
+def weak_patt1_pp(root, vowels, pref): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+	forms = {};
+	
+	forms['pp.m.sg'] = [(pref + r[0] + r[1] + 'i', '-', '-')] ;
+	forms['pp.f.sg'] = [(pref + r[0] + r[1] + 'ija', '-', '-')] ;
+	forms['pp.mf.pl'] = [(pref + r[0] + r[1] + 'ijin', '-', '-')] ;
+
+	return forms;
+#}
+
+
+
+def weak_patt1_past(root, vowels, tv): #{
 	r = root.split('-'); # radicals
 	v = vowels.split('-'); # vowels
 
@@ -121,7 +128,7 @@ def weak_past(root, vowels, tv): #{
 #}
 
 
-def weak_pres(root, vowels, tv): #{
+def weak_patt1_pres(root, vowels, tv): #{
 	r = root.split('-'); # radicals
 	v = vowels.split('-'); # vowels
 
@@ -140,7 +147,7 @@ def weak_pres(root, vowels, tv): #{
 	
 	if vowels == 'a-a': #{
 		suffix =  'aw';
-	elif vowels == 'i-a': #{
+	elif vowels == 'e-a': #{   # was: 'i-a'
 		suffix =  'ew';
 	else: #{
 		suffix = 'u'
@@ -155,7 +162,7 @@ def weak_pres(root, vowels, tv): #{
 #}
 
 
-def weak_imp(root, vowels, tv): #{
+def weak_patt1_imp(root, vowels, tv): #{
 	r = root.split('-'); # radicals
 	v = vowels.split('-'); # vowels
 
@@ -168,7 +175,7 @@ def weak_imp(root, vowels, tv): #{
 	
 	if vowels == 'a-a': #{
 		pl_suffix =  'aw';
-	elif vowels == 'i-a': #{
+	elif vowels == 'e-a': #{    # 'i-a'?
 		pl_suffix =  'ew';
 	else: #{
 		pl_suffix = 'u'
@@ -182,20 +189,138 @@ def weak_imp(root, vowels, tv): #{
 
 
 
+## ----------------------------------------------------------------------------##
+## pattern 7
+## ----------------------------------------------------------------------------##
+
+
+def weak_patt7_past(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+	forms = {};
+
+	if v[0] == 'e' and v[1] == 'a': #{
+
+		forms['past.p3.m.sg'] = weak_vowel_forms('n' + r[0] + v[0] + r[1] + v[1], 'n' + r[0] + r[1] + 'ie', '-', tv);
+		forms['past.p3.m.sg'] += weak_vowel_forms('in' + r[0] + v[0] + r[1] + v[1], 'in' + r[0] + r[1] + 'ie', 'LR', tv);
+		forms['past.p3.f.sg'] = weak_consonant_forms('n' + r[0] + r[1] + 'iet', 'n' + r[0] + r[1] + 'it', '-', tv);
+		forms['past.p3.f.sg'] += weak_consonant_forms('in' + r[0] + r[1] + 'iet', 'in' + r[0] + r[1] + 'it', 'LR', tv);
+	#}
+	else : #{
+		forms['past.p3.m.sg'] = weak_vowel_forms('n' + r[0] + v[0] + r[1] + v[1], 'n' + r[0] + r[1] + 'a', '-', tv);
+		forms['past.p3.m.sg'] += weak_vowel_forms('in' + r[0] + v[0] + r[1] + v[1], 'in' + r[0] + r[1] + 'a', 'LR', tv);
+		forms['past.p3.f.sg'] = weak_consonant_forms('n' + r[0] + r[1] + 'at', 'n' + r[0] + r[1] + 'at', '-', tv);
+		forms['past.p3.f.sg'] += weak_consonant_forms('in' + r[0] + r[1] + 'at', 'in' + r[0] + r[1] + 'at', 'LR', tv);
+	#}
+
+	# This form is obtained by the omission of the two vowels in the stem
+	# and the addition of the dipthong 'ej' (for e-a) and 'aj' (for a-a)
+	forms['past.p2.mf.sg'] = weak_consonant_forms('n' + r[0] + r[1] + v[0] + 'jt', 'n' + r[0] + r[1] + v[0] + 'jt', '-', tv);	
+	forms['past.p2.mf.sg'] += weak_consonant_forms('in' + r[0] + r[1] + v[0] + 'jt', 'in' + r[0] + r[1] + v[0] + 'jt', 'LR', tv);	
+	forms['past.p1.mf.sg'] = weak_consonant_forms('n' + r[0] + r[1] + v[0] + 'jt', 'n' + r[0] + r[1] + v[0] + 'jt', '-', tv);	
+	forms['past.p1.mf.sg'] += weak_consonant_forms('in' + r[0] + r[1] + v[0] + 'jt', 'in' + r[0] + r[1] + v[0] + 'jt', 'LR', tv);	
+
+	# This form is obtained by the omission of the two vowels in the vocalic
+	# sequence + dipthong 'ew' or 'aw'
+	# with attached pronouns 'ew' and 'aw'
+	# are also treated like vowels
+	forms['past.p3.mf.pl'] = weak_vowel_forms('n' + r[0] + r[1] + v[0] + 'w', 'n' + r[0] + r[1] + v[0] + 'w', '-', tv);
+	forms['past.p3.mf.pl'] += weak_vowel_forms('in' + r[0] + r[1] + v[0] + 'w', 'in' + r[0] + r[1] + v[0] + 'w', 'LR', tv);
+	forms['past.p2.mf.pl'] = weak_vowel_forms('n' + r[0] + r[1] + v[0] + 'jtu', 'n' + r[0] + r[1] + v[0] + 'jtu', '-', tv);
+	forms['past.p2.mf.pl'] += weak_vowel_forms('in' + r[0] + r[1] + v[0] + 'jtu', 'in' + r[0] + r[1] + v[0] + 'jtu', 'LR', tv);
+	forms['past.p1.mf.pl'] = weak_vowel_forms('n' + r[0] + r[1] + v[0] + 'jna', 'n' + r[0] + r[1] + v[0] + 'jnie', '-', tv);
+	forms['past.p1.mf.pl'] += weak_vowel_forms('in' + r[0] + r[1] + v[0] + 'jna', 'in' + r[0] + r[1] + v[0] + 'jnie', 'LR', tv);
+
+	return forms;
+#}
+
+
+def weak_patt7_pres(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+	forms = {};
+
+	presuff_vowel = v[1];
+	# That's only my guess
+	if v[0] == 'e' and v[1] == 'a': 
+		presuff_vowel = 'ie';
+
+	# no first vowel elision in forms with suffixes? 
+	forms['pres.p3.m.sg'] = weak_vowel_forms('jin' + r[0] + v[0] + r[1] + v[1] , 'jin' + r[0] + r[1] + presuff_vowel , '-', tv);
+	forms['pres.p3.f.sg'] = weak_vowel_forms('tin' + r[0] + v[0] + r[1] + v[1] , 'tin' + r[0] + r[1] + presuff_vowel , '-', tv);
+	forms['pres.p2.mf.sg'] = weak_vowel_forms('tin' + r[0] + v[0] + r[1] + v[1] , 'tin' + r[0] + r[1] + presuff_vowel , '-', tv);
+	forms['pres.p1.mf.sg'] = weak_vowel_forms('nin' + r[0] + v[0] + r[1] + v[1] , 'nin' + r[0] + r[1] + presuff_vowel , '-', tv);
+	
+	if vowels == 'a-a': #{
+		suffix =  'aw';
+	elif vowels == 'e-a': #{
+		suffix =  'ew';
+	else: #{
+		suffix = 'u'
+	#}
+
+	forms['pres.p3.mf.pl'] = weak_vowel_forms('jin' + r[0] + r[1] + suffix, 'jin' + r[0] + r[1] + suffix, '-', tv);	
+	forms['pres.p2.mf.pl'] = weak_vowel_forms('tin' + r[0] + r[1] + suffix, 'tin' + r[0] + r[1] + suffix, '-', tv);	
+	forms['pres.p1.mf.pl'] = weak_vowel_forms('nin' + r[0] + r[1] + suffix, 'nin' + r[0] + r[1] + suffix, '-', tv);	
+
+	return forms;
+#}
+
+
+def weak_patt7_imp(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+	forms = {};
+
+	presuff_sg_vowel = v[1];
+	# That's only my guess
+	if v[0] == 'e' and v[1] == 'a': 
+		presuff_sg_vowel = 'ie';
+	
+	if vowels == 'a-a': #{
+		pl_suffix =  'aw';
+	elif vowels == 'e-a': #{ 
+		pl_suffix =  'ew';
+	else: #{
+		pl_suffix = 'u'
+	#}
+
+	# also 'n' prefix/only 'n' or 'in' prefix?
+	forms['imp.p2.mf.sg'] = weak_vowel_forms('in' + r[0] + v[0] + r[1] + v[1] , 'in' + r[0] + v[0] + r[1] + presuff_sg_vowel , '-', tv);
+	forms['imp.p2.mf.pl'] = weak_vowel_forms('in' + r[0] + v[0] + r[1] + pl_suffix , 'in' + r[0] + v[0] + r[1] + pl_suffix , '-', tv);
+
+	return forms;
+#}
+
+
+## ----------------------------------------------------------------------------##
+
+
 def main(stem): #{
 
 	forms = {};
 
 	if stem['theme'] == '1' : #{
 
-		forms = weak_past(stem['root'], stem['vowel_perf'], stem['trans']);
-		forms.update(weak_pres(stem['root'], stem['vowel_impf'], stem['trans']));
-		if stem['trans'] == 'tv' :
-			forms.update(weak_imp(stem['root'], stem['vowel_impf'], stem['trans']));
+		forms = weak_patt1_past(stem['root'], stem['vowel_perf'], stem['trans']);
+		forms.update(weak_patt1_pres(stem['root'], stem['vowel_impf'], stem['trans']));
+#		if stem['trans'] == 'tv' :
+		forms.update(weak_patt1_imp(stem['root'], stem['vowel_impf'], stem['trans']));
 		if stem['pp'] != '' : #{
-			forms.update(weak_pp(stem['root'], stem['vowel_perf'], stem['pp']));
+			forms.update(weak_patt1_pp(stem['root'], stem['vowel_perf'], stem['pp']));
 # pprs
 	#}
+
+	if stem['theme'] == '7' : #{
+
+		forms = weak_patt7_past(stem['root'], stem['vowel_perf'], stem['trans']);
+		forms.update(weak_patt7_pres(stem['root'], stem['vowel_perf'], stem['trans']));
+		forms.update(weak_patt7_imp(stem['root'], stem['vowel_perf'], stem['trans']));
+	#}
+
 
 	return forms;
 
