@@ -17,8 +17,11 @@
       <cat-item tags="vaux.*"/>
     </def-cat>
 
-    <def-cat n="partic">
+    <def-cat n="pprs">
       <cat-item tags="vblex.*.pprs.*"/>
+    </def-cat>
+
+    <def-cat n="pp">
       <cat-item tags="vblex.*.pp.*"/>
     </def-cat>
 
@@ -48,6 +51,10 @@
     </def-attr>
     <def-attr n="a_adj">
        <attr-item tags="adj"/>
+    </def-attr>
+    <def-attr n="a_vrb">
+       <attr-item tags="vblex.tv"/>
+       <attr-item tags="vblex.iv"/>
     </def-attr>
     <def-attr n="a_cas">
        <attr-item tags="nom"/>
@@ -198,9 +205,43 @@
     </rule>
 
 
-    <rule comment="participles">
+    <rule comment="pprs">
       <pattern>
-         <pattern-item n="partic"/>
+         <pattern-item n="pprs"/>
+       </pattern>
+       <action>
+         <let><clip pos="1" side="tl" part="a_cas"/><lit v=""/></let> 
+         <let><clip pos="1" side="tl" part="a_stat"/><lit v=""/></let>
+         <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> 
+	 <choose>
+	   <when>
+	     <test><equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="du"/></equal></test>
+             <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></let> 
+             <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>
+	   <when>
+	     <test><equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></equal></test>
+             <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>
+         </choose> 
+         <out>
+	   <lu>
+	     <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_vrb"/>
+             <lit-tag v="pres"/>
+             <lit-tag v="p3"/>
+             <clip pos="1" side="tl" part="gen"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </out>
+       </action>
+    </rule>
+
+
+    <rule comment="pp">
+      <pattern>
+         <pattern-item n="pp"/>
        </pattern>
        <action>
          <let><clip pos="1" side="tl" part="a_cas"/><lit v=""/></let> 
