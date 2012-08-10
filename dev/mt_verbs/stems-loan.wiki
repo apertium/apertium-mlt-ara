@@ -99,4 +99,8 @@
 | intuża || vblex || loan || first_vowel || be-used || intuż || || a || iv || intużat 
 |-
 | influwenza || vblex || loan || first_vowel || influence || influwenz ||  || a || tv || influwenzat
+|-
+| iskopra || vblex || loan || two_cons || discover || skopr ||  || i || tv || skopert
+|-
+| irranġa || vblex || loan || double_cons || arrange || rranġa ||  || a || tv || ranġat
 |}

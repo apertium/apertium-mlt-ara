@@ -176,12 +176,12 @@ def doubled_patt1_pp(root, vowels, pref): #{
 
 
 ## ----------------------------------------------------------------------------##
-## pattern 7
+## pattern 7a
 ## ----------------------------------------------------------------------------##
 
 
 # no ek/ok?
-def doubled_patt7_past(root, vowels, tv): #{
+def doubled_patt7a_past(root, vowels, tv): #{
 	r = root.split('-'); # radicals
 	v = vowels.split('-'); # vowels
 
@@ -208,7 +208,7 @@ def doubled_patt7_past(root, vowels, tv): #{
 
 
 # ek/ok done
-def doubled_patt7_pres(root, vowels, tv): #{
+def doubled_patt7a_pres(root, vowels, tv): #{
 	r = root.split('-'); # radicals
 	v = vowels.split('-'); # vowels
 
@@ -234,7 +234,7 @@ def doubled_patt7_pres(root, vowels, tv): #{
 
 
 # ek/ok done
-def doubled_patt7_imp(root, vowels, tv): #{
+def doubled_patt7a_imp(root, vowels, tv): #{
 	r = root.split('-'); # radicals
 	v = vowels.split('-'); # vowels
 
@@ -249,6 +249,86 @@ def doubled_patt7_imp(root, vowels, tv): #{
 
  	forms['imp.p2.mf.sg'] = doubled_consonant_forms ('in' + r[0] + v[1] + r[1] + r[2], 'in' + r[0] + v[1] + r[1] + r[2], '-', ek, tv);
 	forms['imp.p2.mf.pl'] = doubled_vowel_forms ('in' + r[0] + v[1] + r[1] + r[2] + suffix , 'in' + r[0] + v[1] + r[1] + r[2] + suffix , '-', tv);
+
+	return forms;
+#}
+
+
+
+## ----------------------------------------------------------------------------##
+## pattern 7b
+## ----------------------------------------------------------------------------##
+
+
+# no ek/ok?
+def doubled_patt7b_past(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+	forms = {};
+	ek = 'ek';
+
+	forms['past.p3.m.sg'] = doubled_consonant_forms ('nt' + r[0] + v[0] + r[1] + r[2], 'nt' + r[0] + v[0] + r[1] + r[2], '-', ek, tv);
+	forms['past.p3.m.sg'] += doubled_consonant_forms ('int' + r[0] + v[0] + r[1] + r[2], 'int' + r[0] + v[0] + r[1] + r[2], 'LR', ek, tv);
+	forms['past.p3.f.sg'] = doubled_consonant_forms ('nt' + r[0] + v[0] + r[1] + r[2] + 'et', 'nt' + r[0] + v[0] + r[1] + r[2] + 'it', '-', ek, tv);
+	forms['past.p3.f.sg'] += doubled_consonant_forms ('int' + r[0] + v[0] + r[1] + r[2] + 'et', 'int' + r[0] + v[0] + r[1] + r[2] + 'it', 'LR', ek, tv);
+	forms['past.p2.mf.sg'] = doubled_consonant_forms ('nt' + r[0] + v[0] + r[1] + r[2] + 'ejt', 'nt' + r[0] + v[0] + r[1] + r[2] + 'ejt', '-', ek, tv);
+	forms['past.p2.mf.sg'] += doubled_consonant_forms ('int' + r[0] + v[0] + r[1] + r[2] + 'ejt', 'int' + r[0] + v[0] + r[1] + r[2] + 'ejt', 'LR', ek, tv);
+	forms['past.p1.mf.sg'] = doubled_consonant_forms ('nt' + r[0] + v[0] + r[1] + r[2] + 'ejt', 'nt' + r[0] + v[0] + r[1] + r[2] + 'ejt', '-', ek, tv);
+	forms['past.p1.mf.sg'] += doubled_consonant_forms ('int' + r[0] + v[0] + r[1] + r[2] + 'ejt', 'int' + r[0] + v[0] + r[1] + r[2] + 'ejt', 'LR', ek, tv);
+	forms['past.p3.mf.pl'] = doubled_vowel_forms ('nt' + r[0] + v[0] + r[1] + r[2] + 'u', 'nt' + r[0] + v[0] + r[1] + r[2] + 'u', '-', tv);
+	forms['past.p3.mf.pl'] += doubled_vowel_forms ('int' + r[0] + v[0] + r[1] + r[2] + 'ew', 'int' + r[0] + v[0] + r[1] + r[2] + 'ew', 'LR', tv);
+	forms['past.p2.mf.pl'] = doubled_vowel_forms ('nt' + r[0] + v[0] + r[1] + r[2] + 'ejtu', 'nt' + r[0] + v[0] + r[1] + r[2] + 'ejtu', '-', tv);
+	forms['past.p2.mf.pl'] += doubled_vowel_forms ('int' + r[0] + v[0] + r[1] + r[2] + 'ejtu', 'int' + r[0] + v[0] + r[1] + r[2] + 'ejtu', 'LR', tv);
+	forms['past.p1.mf.pl'] = doubled_vowel_forms ('nt' + r[0] + v[0] + r[1] + r[2] + 'ejna', 'nt' + r[0] + v[0] + r[1] + r[2] + 'ejna', '-', tv);
+	forms['past.p1.mf.pl'] += doubled_vowel_forms ('int' + r[0] + v[0] + r[1] + r[2] + 'ejna', 'int' + r[0] + v[0] + r[1] + r[2] + 'ejna', 'LR', tv);
+
+	return forms;
+#}
+
+
+# ek/ok done
+def doubled_patt7b_pres(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+	forms = {};
+
+	if v[1] == 'o' :
+		ek = 'ok';
+	else :
+		ek = 'ek';
+
+	forms['pres.p3.m.sg'] = doubled_consonant_forms ('jint' + r[0] + v[1] + r[1] + r[2], 'jint' + r[0] + v[1] + r[1] + r[2], '-', ek, tv); 
+	forms['pres.p3.f.sg'] = doubled_consonant_forms ('tint' + r[0] + v[1] + r[1] + r[2], 'tint' + r[0] + v[1] + r[1] + r[2], '-', ek, tv);	
+	forms['pres.p2.mf.sg'] = doubled_consonant_forms ('tint' + r[0] + v[1] + r[1] + r[2], 'tint' + r[0] + v[1] + r[1] + r[2], '-', ek, tv);	
+	forms['pres.p1.mf.sg'] = doubled_consonant_forms ('nint' + r[0] + v[1] + r[1] + r[2], 'nint' + r[0] + v[1] + r[1] + r[2], 'LR', ek, tv);	
+
+	forms['pres.p3.mf.pl'] = doubled_vowel_forms ('jint' + r[0] + v[1] + r[1] + r[2] + 'u', 'jint' + r[0] + v[1] + r[1] + r[2] + 'u', 'LR', tv);
+	forms['pres.p2.mf.pl'] = doubled_vowel_forms ('tint' + r[0] + v[1] + r[1] + r[2] + 'u', 'tint' + r[0] + v[1] + r[1] + r[2] + 'u', '-', tv);
+	forms['pres.p1.mf.pl'] = doubled_vowel_forms ('nint' + r[0] + v[1] + r[1] + r[2] + 'u', 'nint' + r[0] + v[1] + r[1] + r[2] + 'u', 'LR', tv);
+
+
+	return forms;
+#}
+
+
+# ek/ok done
+def doubled_patt7b_imp(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+	forms = {};
+
+	if v[1] == 'o' :
+		ek = 'ok';
+	else :
+		ek = 'ek';	
+
+	suffix = 'u'
+
+ 	forms['imp.p2.mf.sg'] = doubled_consonant_forms ('int' + r[0] + v[1] + r[1] + r[2], 'int' + r[0] + v[1] + r[1] + r[2], '-', ek, tv);
+	forms['imp.p2.mf.pl'] = doubled_vowel_forms ('int' + r[0] + v[1] + r[1] + r[2] + suffix , 'int' + r[0] + v[1] + r[1] + r[2] + suffix , '-', tv);
 
 	return forms;
 #}
@@ -275,15 +355,20 @@ def main(stem): #{
 		#}
 
 
-	if stem['theme'] == '7' : #{
+	if stem['theme'] == '7a' : #{
 
-		forms = doubled_patt7_past(stem['root'], stem['vowel_perf'], stem['trans']);
-		if stem['vowel_impf'] != '' : #{
-			forms.update(doubled_patt7_pres(stem['root'], stem['vowel_perf'], stem['trans']));
-		#	if stem['trans'] == 'tv':
-			forms.update(doubled_patt7_imp(stem['root'], stem['vowel_perf'], stem['trans']));
-		#}
+		forms = doubled_patt7a_past(stem['root'], stem['vowel_perf'], stem['trans']);
+		forms.update(doubled_patt7a_pres(stem['root'], stem['vowel_perf'], stem['trans']));
+		forms.update(doubled_patt7a_imp(stem['root'], stem['vowel_perf'], stem['trans']));
 
+	#}
+
+
+	if stem['theme'] == '7b' : #{
+
+		forms = doubled_patt7b_past(stem['root'], stem['vowel_perf'], stem['trans']);
+		forms.update(doubled_patt7b_pres(stem['root'], stem['vowel_perf'], stem['trans']));
+		forms.update(doubled_patt7b_imp(stem['root'], stem['vowel_perf'], stem['trans']));
 
 	#}
 

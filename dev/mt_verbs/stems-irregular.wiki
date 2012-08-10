@@ -25,6 +25,8 @@
 |-
 | wera || vblex || irregular || show || tv
 |-
+| ntwera || vblex || irregular || be٠shown || iv
+|-
 | kien || vaux || irregular || be || iv
 |-
 | kellu || vaux || irregular || have || iv

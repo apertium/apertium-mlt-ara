@@ -297,11 +297,29 @@
 |-
 | ttieħed || vblex || strong || 6a || be٠taken || t-ħ-d || || || iv ||  || mi 
 |-
-| ngħażel || vblex || strong || 7 || be٠chosen || għ-ż-l || a-e || a-e || iv ||  || 
+| nħareġ || vblex || strong || 7a || be٠taken٠out || ħ-r-ġ || a-e || a-e || iv ||  || 
 |-
-| nħareġ || vblex || strong || 7 || be٠taken٠out || ħ-r-ġ || a-e || a-e || iv ||  || 
+| nkiteb || vblex || strong || 7a || be٠written || k-t-b || i-e || i-e || iv ||  || 
 |-
-| nkiteb || vblex || strong || 7 || be٠written || k-t-b || i-e || i-e || iv ||  || 
+| nsilef || vblex || strong || 7a || be٠lent || s-l-f || i-e || i-e || iv ||  || 
+|-
+| nħeles || vblex || strong || 7a || be٠set٠free || ħ-l-s || e-e || e-e || iv ||  || 
+|-
+| ngħalaq || vblex || strong || 7a || be٠closed || għ-l-q || a-a || a-a || iv ||  || 
+|-
+| nkixef || vblex || strong || 7a || be٠uncovered || k-x-f || i-e || i-e || iv ||  || 
+|-
+| ngiref || vblex || strong || 7a || be٠scratched || g-r-f || i-e || i-e || iv ||  || 
+|-
+| nġabar || vblex || strong || 7a || be٠gathered || ġ-b-r || a-a || a-a || iv ||  || 
+|-
+| ntgħażel || vblex || strong || 7b || be٠chosen || għ-ż-l || a-e || a-e || iv ||  || 
+|-
+| ntbagħat || vblex || strong || 7b || be٠sent || b-għ-t || a-a || a-a || iv ||  || 
+|-
+| ttiekel || vblex || strong || 8a || be٠eaten || t-k-l || ie-e || ie-e || iv ||  || m 
+|-
+| nstama || vblex || strong || 8b || be٠heard || s-m-għ || a-a || a-a || iv ||  || 
 |-
 | kisser || vblex || quad || 1 || smash || k-s-s-r || i-e || i-e || tv ||  || m
 |-
@@ -320,6 +338,12 @@
 | tkellem || vblex || quad || 2 || speak || k-l-l-m || e-e || e-e || iv ||  || mi
 |-
 | ixxandar || vblex || quad || 2 || be٠broadcast || x-n-d-r || a-a || a-a || iv ||  || 
+|-
+| issemma || vblex || quad || 2 || listen || s-m-m- || e-a || e-a || iv ||  || 
+|-
+| tnissel || vblex || quad || 2 || originate,be٠derived || n-s-s-l || i-e || i-e || iv ||  || 
+|-
+| tkisser || vblex || quad || 2 || be٠cut || k-s-s-r || i-e || i-e || iv ||  || 
 |-
 | dar || vblex || hollow || 1 || turn || d-w-r || a-a ||  || iv ||  || mi
 |-
@@ -373,9 +397,11 @@
 |-
 | qiem || vblex || hollow || 1 || venerate || q-w-m || ie-a ||  || tv ||  || me
 |-
-| nġab || vblex || hollow || 7 || be٠brought || ġ-j-b || a-a ||  || iv ||  ||
+| nġab || vblex || hollow || 7a || be٠brought || ġ-j-b || a-a ||  || iv ||  ||
 |-
-| nġieb || vblex || hollow || 7 || be٠brought || ġ-j-b || ie-a ||  || iv ||  ||
+| nġieb || vblex || hollow || 7a || be٠brought || ġ-j-b || ie-a ||  || iv ||  ||
+|-
+| ntqies || vblex || hollow || 7b || be٠measured || q-j-s || ie-a ||  || iv ||  ||
 |-
 | qara || vblex || weak || 1 || read || q-r-j || a-a || a-a || tv ||  || mo
 |-
@@ -397,9 +423,19 @@
 |-
 | ġara || vblex || weak || 1 || run || ġ-r-j || a-a || i-i || iv ||  || mi
 |-
+| ħalla || vblex || weak || 2 || leave || ħ-l-j || a-a || a-a || tv ||  || m
+|-
+| tħalla || vblex || weak || 5 || be٠left || ħ-l-j || a-a || a-a || iv ||  ||
+|-
 | nbeda || vblex || weak || 7 || be٠commenced || b-d-j || e-a ||  || iv ||  ||
 |-
 | nħeba || vblex || weak || 7 || be٠hidden || ħ-b-j || e-a ||  || iv ||  ||
+|-
+| ngħata || vblex || weak || 7 || be٠given || għ-t-j || a-a ||  || iv ||  ||
+|-
+| nqara || vblex || weak || 7 || be٠read || q-r-j || a-a ||  || iv ||  ||
+|-
+| staqsa || vblex || weak || 10 || ask || q-s-j || a-a || a-i || tv ||  ||
 |-
 | radd || vblex || doubled || 1 || restore || r-d-d || a-a || a-o || tv ||  || mi
 |-
@@ -453,9 +489,15 @@
 |-
 | għadd || vblex || doubled || 1 || count || għ-d-d || a-a || i-o || tv ||  || ma
 |-
-| nħabb || vblex || doubled || 7 || be٠loved || ħ-b-b || a-a || || iv ||  ||
+| nħabb || vblex || doubled || 7a || be٠loved || ħ-b-b || a-a || || iv ||  ||
 |-
-| nħass || vblex || doubled || 7 || be٠felt || ħ-s-s || a-a || || iv ||  ||
+| nħass || vblex || doubled || 7a || be٠felt || ħ-s-s || a-a || || iv ||  ||
+|-
+| nkedd || vblex || doubled || 7a || be٠vexed || k-d-d || e-e || || iv ||  ||
+|-
+| nħatt || vblex || doubled || 7a || be٠unloaded || ħ-t-t || a-a || || iv ||  ||
+|-
+| ntradd || vblex || doubled || 7b || be٠restored || r-d-d || a-a || || iv ||  ||
 |-
 | qaħqaħ || vblex || quad || 1 || cough || q-ħ-q-ħ || a-a || a-a || iv ||  || im
 |-

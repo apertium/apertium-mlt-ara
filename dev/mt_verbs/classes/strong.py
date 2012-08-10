@@ -687,11 +687,11 @@ def strong_patt6a_past(root, tv): #{
 
 
 ## ----------------------------------------------------------------------------##
-##  pattern 7
+##  pattern 7a - that is, 'n' prefix
 ## ----------------------------------------------------------------------------##
 
 
-def strong_patt7_pres(root, vowels, tv): #{
+def strong_patt7a_pres(root, vowels, tv): #{
 	r = root.split('-'); # radicals
 	v = vowels.split('-'); # vowels
 
@@ -742,7 +742,7 @@ def strong_patt7_pres(root, vowels, tv): #{
 
 
 
-def strong_patt7_imp(root, vowels, tv): #{
+def strong_patt7a_imp(root, vowels, tv): #{
 	r = root.split('-'); # radicals
 	v = vowels.split('-'); # vowels
 	
@@ -787,7 +787,7 @@ def strong_patt7_imp(root, vowels, tv): #{
 
 
 
-def strong_patt7_past(root, vowels, tv): #{
+def strong_patt7a_past(root, vowels, tv): #{
 	r = root.split('-'); # radicals
 	v = vowels.split('-'); # vowels
 
@@ -858,6 +858,519 @@ def strong_patt7_past(root, vowels, tv): #{
 
 
 ## ----------------------------------------------------------------------------##
+##  pattern 7b - that is, 'nt' prefix
+## ----------------------------------------------------------------------------##
+
+
+def strong_patt7b_pres(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+
+	forms = {};
+	ok = 'ek';
+	lok = 'lek';
+
+
+	if r[0] == 'w' :
+		first_r = 't';
+	else :
+		first_r = r[0];
+
+
+	if v[1] == 'e' :
+		vowel_preconssuff = 'i';
+	else :
+		vowel_preconssuff = v[1];
+
+	if r[2] == 'għ' :
+		pres_sg = 'int' + first_r + v[0] + r[1] + v[1];  # right?
+	else :
+		pres_sg = 'int' + first_r + v[0] + r[1] + v[1] + r[2];
+	
+	pres_sg_long = 'int' + first_r + v[0] + r[1] + vowel_preconssuff + r[2];
+	if vowel_preconssuff == 'o' :
+		lok = 'lok';
+
+	pres_sg_short = 'int' + first_r + v[0] + r[1] + r[2];
+	if v[0] == 'o' :
+		ok = 'ok';
+	pres_pl = 'int' + first_r + v[0] + r[1] + r[2] + 'u';
+
+
+	forms['pres.p3.m.sg'] = strong_pres_sg_forms('j' + pres_sg, 'j' + pres_sg_long, 'j' + pres_sg_short, '-', ok, lok, tv);
+	forms['pres.p3.f.sg'] = strong_pres_sg_forms('t' + pres_sg, 't' + pres_sg_long, 't' + pres_sg_short, '-', ok, lok, tv);
+	forms['pres.p2.mf.sg'] = strong_pres_sg_forms('t' + pres_sg, 't' + pres_sg_long, 't' + pres_sg_short, '-', ok, lok, tv);
+	forms['pres.p1.mf.sg'] = strong_pres_sg_forms('n' + pres_sg, 'n' + pres_sg_long, 'n' + pres_sg_short, '-', ok, lok, tv);
+
+
+	forms['pres.p3.mf.pl'] = strong_pres_pl_forms('j' + pres_pl, '-', tv);
+	forms['pres.p2.mf.pl'] = strong_pres_pl_forms('t' + pres_pl, '-', tv);
+	forms['pres.p1.mf.pl'] = strong_pres_pl_forms('n' + pres_pl, '-', tv);
+
+	return forms;
+#}
+
+
+
+def strong_patt7b_imp(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+	
+	forms = {};
+
+	ok = 'ek';
+	lok = 'lek';
+
+	if r[0] == 'w' :
+		first_r = 't';
+	else :
+		first_r = r[0];
+
+
+	if v[1] == 'e' :
+		vowel_preconssuff = 'i';
+	else :
+		vowel_preconssuff = v[1];
+
+	if r[2] == 'għ' :
+		pres_sg = 'int' + first_r + v[0] + r[1] + v[1];
+	else :
+		pres_sg = 'int' + first_r + v[0] + r[1] + v[1] + r[2];
+
+
+	pres_sg_long = 'int' + first_r + v[0] + r[1] + vowel_preconssuff + r[2];
+	if vowel_preconssuff == 'o' :
+		lok = 'lok';
+
+
+	pres_sg_short = 'int' + first_r + v[0] + r[1] + r[2];
+	if v[0] == 'o' :
+		ok = 'ok';
+	pres_pl = 'int' + first_r + v[0] + r[1] + r[2] + 'u';
+
+
+	forms['imp.p2.mf.sg'] = strong_pres_sg_forms(pres_sg, pres_sg_long, pres_sg_short, '-', ok, lok, tv);
+	forms['imp.p2.mf.pl'] = strong_pres_pl_forms(pres_pl, '-', tv);
+
+	return forms ; 
+#}
+
+
+
+def strong_patt7b_past(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+	forms = {};
+
+	if v[1] == 'e' :
+		vowel_preconssuff =  'i';
+	else :
+		vowel_preconssuff = v[1];
+	
+
+	if vowel_preconssuff == 'o' :
+		ok = 'ok';
+	else :
+		ok = 'ek';
+
+
+	if r[2] == 'għ' : #{
+		final_r_p3_sg_m_free = '';
+		final_r_p2_p1 = 'j';
+	#}
+	else : #{
+		final_r_p3_sg_m_free = r[2];
+		final_r_p2_p1 = r[2];
+	#}
+
+
+	# If the first radical is 'w' or 'għ' then we have a full disyllabic form
+	if r[0] == 'għ': #{   # not with 'w' 
+		first_v_p2_p1 = v[0];
+	else :
+		first_v_p2_p1 = '';
+	#}
+
+	# TODO: if r[0] == 'w', then r[0] = 't'
+
+# precons_form? (base for p2.mf.sg, p1.mf.sg, p2.mf.pl, p1.mf.pl)
+
+	forms['past.p3.m.sg'] = strong_past_p3_sg_m_forms('nt' + r[0] + v[0] + r[1] + v[1] + final_r_p3_sg_m_free, 'nt' + r[0] + v[0] + r[1] + vowel_preconssuff + r[2], 'n' + r[0] + v[0] + r[1] + r[2], '', ok, 'l' + ok, tv);
+	forms['past.p3.m.sg'] += strong_past_p3_sg_m_forms('int' + r[0] + v[0] + r[1] + v[1] + final_r_p3_sg_m_free, 'int' + r[0] + v[0] + r[1] + vowel_preconssuff + r[2], 'in' + r[0] + v[0] + r[1] + r[2], 'LR', ok, 'l' + ok, tv);
+
+	if r[2] == 'għ' :
+		forms['past.p3.f.sg'] = strong_past_sg_forms('nt' + r[0] + v[0] + r[1] + r[2] + 'et', 'nt' + r[0] + v[0] + r[1] + r[2] + 'et', '-', 'ek', tv); 
+		forms['past.p3.f.sg'] += strong_past_sg_forms('int' + r[0] + v[0] + r[1] + r[2] + 'et', 'int' + r[0] + v[0] + r[1] + r[2] + 'et', 'LR', 'ek', tv); 
+	elif v[1] == 'o' :
+		forms['past.p3.f.sg'] = strong_past_sg_forms('nt' + r[0] + v[0] + r[1] + r[2] + 'ot', 'nt' + r[0] + v[0] + r[1] + r[2] + 'it', '-', 'ok', tv); 
+		forms['past.p3.f.sg'] += strong_past_sg_forms('int' + r[0] + v[0] + r[1] + r[2] + 'ot', 'int' + r[0] + v[0] + r[1] + r[2] + 'it', 'LR', 'ok', tv); 
+	else :
+		forms['past.p3.f.sg'] = strong_past_sg_forms('nt' + r[0] + v[0] + r[1] + r[2] + 'et', 'nt' + r[0] + v[0] + r[1] + r[2] + 'it', '-', 'ek', tv);
+		forms['past.p3.f.sg'] += strong_past_sg_forms('int' + r[0] + v[0] + r[1] + r[2] + 'et', 'int' + r[0] + v[0] + r[1] + r[2] + 'it', 'LR', 'ek', tv);
+
+	forms['past.p2.mf.sg'] = strong_past_sg_forms('nt' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', 'nt' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', '-', ok, tv);
+	forms['past.p2.mf.sg'] += strong_past_sg_forms('int' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', 'int' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', 'LR', ok, tv);
+	forms['past.p1.mf.sg'] = strong_past_sg_forms('nt' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', 'nt' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', '-', ok, tv);
+	forms['past.p1.mf.sg'] += strong_past_sg_forms('int' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', 'int' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', '-', ok, tv);
+
+	forms['past.p3.mf.pl'] = strong_past_pl_forms('nt' + r[0] + v[0] + r[1] + r[2] + 'u', 'nt' + r[0] + v[0] + r[1] + r[2] + 'u', '-', tv);
+	forms['past.p3.mf.pl'] += strong_past_pl_forms('int' + r[0] + v[0] + r[1] + r[2] + 'u', 'int' + r[0] + v[0] + r[1] + r[2] + 'u', 'LR', tv);
+
+	forms['past.p2.mf.pl'] = strong_past_pl_forms('nt' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', 'nt' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', '-', tv);
+	forms['past.p2.mf.pl'] += strong_past_pl_forms('int' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', 'int' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', 'LR', tv);
+	forms['past.p1.mf.pl'] = strong_past_pl_forms('nt' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'na', 'nt' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'nie', '-', tv);
+	forms['past.p1.mf.pl'] += strong_past_pl_forms('int' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'na', 'int' + r[0] + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'nie', '-', tv);
+
+	return forms;
+#}
+
+
+
+## ----------------------------------------------------------------------------##
+##  pattern 8a - that is, 't' infix
+## ----------------------------------------------------------------------------##
+
+
+def strong_patt8a_pres(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+
+	forms = {};
+	ok = 'ek';
+	lok = 'lek';
+
+
+#	if r[0] == 'w' :
+#		first_r = 't';
+#	else :
+	first_r = r[0] + 't';
+
+
+	if v[1] == 'e' :
+		vowel_preconssuff = 'i';
+	else :
+		vowel_preconssuff = v[1];
+
+	if r[2] == 'għ' :
+		pres_sg = 'i' + first_r + v[0] + r[1] + v[1];  # right?
+	else :
+		pres_sg = 'i' + first_r + v[0] + r[1] + v[1] + r[2];
+	
+	pres_sg_long = 'i' + first_r + v[0] + r[1] + vowel_preconssuff + r[2];
+	if vowel_preconssuff == 'o' :
+		lok = 'lok';
+
+	pres_sg_short = 'i' + first_r + v[0] + r[1] + r[2];
+	if v[0] == 'o' :
+		ok = 'ok';
+	pres_pl = 'i' + first_r + v[0] + r[1] + r[2] + 'u';
+
+
+	forms['pres.p3.m.sg'] = strong_pres_sg_forms('j' + pres_sg, 'j' + pres_sg_long, 'j' + pres_sg_short, '-', ok, lok, tv);
+	forms['pres.p3.f.sg'] = strong_pres_sg_forms('t' + pres_sg, 't' + pres_sg_long, 't' + pres_sg_short, '-', ok, lok, tv);
+	forms['pres.p2.mf.sg'] = strong_pres_sg_forms('t' + pres_sg, 't' + pres_sg_long, 't' + pres_sg_short, '-', ok, lok, tv);
+	forms['pres.p1.mf.sg'] = strong_pres_sg_forms('n' + pres_sg, 'n' + pres_sg_long, 'n' + pres_sg_short, '-', ok, lok, tv);
+
+
+	forms['pres.p3.mf.pl'] = strong_pres_pl_forms('j' + pres_pl, '-', tv);
+	forms['pres.p2.mf.pl'] = strong_pres_pl_forms('t' + pres_pl, '-', tv);
+	forms['pres.p1.mf.pl'] = strong_pres_pl_forms('n' + pres_pl, '-', tv);
+
+	return forms;
+#}
+
+
+
+def strong_patt8a_imp(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+	
+	forms = {};
+
+	ok = 'ek';
+	lok = 'lek';
+
+#	if r[0] == 'w' :
+#		first_r = 't';
+#	else :
+	first_r = r[0] + 't';
+
+
+	if v[1] == 'e' :
+		vowel_preconssuff = 'i';
+	else :
+		vowel_preconssuff = v[1];
+
+	if r[2] == 'għ' :
+		pres_sg = 'i' + first_r + v[0] + r[1] + v[1];
+	else :
+		pres_sg = 'i' + first_r + v[0] + r[1] + v[1] + r[2];
+
+
+	pres_sg_long = 'i' + first_r + v[0] + r[1] + vowel_preconssuff + r[2];
+	if vowel_preconssuff == 'o' :
+		lok = 'lok';
+
+
+	pres_sg_short = 'i' + first_r + v[0] + r[1] + r[2];
+	if v[0] == 'o' :
+		ok = 'ok';
+	pres_pl = 'i' + first_r + v[0] + r[1] + r[2] + 'u';
+
+
+	forms['imp.p2.mf.sg'] = strong_pres_sg_forms(pres_sg, pres_sg_long, pres_sg_short, '-', ok, lok, tv);
+	forms['imp.p2.mf.pl'] = strong_pres_pl_forms(pres_pl, '-', tv);
+
+	return forms ; 
+#}
+
+
+
+def strong_patt8a_past(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+	forms = {};
+
+	if v[1] == 'e' :
+		vowel_preconssuff =  'i';
+	else :
+		vowel_preconssuff = v[1];
+	
+
+	if vowel_preconssuff == 'o' :
+		ok = 'ok';
+	else :
+		ok = 'ek';
+
+
+	if r[2] == 'għ' : #{
+		final_r_p3_sg_m_free = '';
+		final_r_p2_p1 = 'j';
+	#}
+	else : #{
+		final_r_p3_sg_m_free = r[2];
+		final_r_p2_p1 = r[2];
+	#}
+
+
+	# If the first radical is 'w' or 'għ' then we have a full disyllabic form
+	if r[0] == 'għ': #{   # not with 'w' 
+		first_v_p2_p1 = v[0];
+	else :
+		first_v_p2_p1 = '';
+	#}
+
+	# TODO: if r[0] == 'w', then r[0] = 't'
+
+# precons_form? (base for p2.mf.sg, p1.mf.sg, p2.mf.pl, p1.mf.pl)
+
+	forms['past.p3.m.sg'] = strong_past_p3_sg_m_forms(r[0] + 't' + v[0] + r[1] + v[1] + final_r_p3_sg_m_free, r[0] + 't' + v[0] + r[1] + vowel_preconssuff + r[2], r[0] + 't' + v[0] + r[1] + r[2], '', ok, 'l' + ok, tv);
+	forms['past.p3.m.sg'] += strong_past_p3_sg_m_forms('i' + r[0] + 't' + v[0] + r[1] + v[1] + final_r_p3_sg_m_free, 'i' + r[0] + 't' + v[0] + r[1] + vowel_preconssuff + r[2], 'i' + r[0] + 't' + v[0] + r[1] + r[2], 'LR', ok, 'l' + ok, tv);
+
+	if r[2] == 'għ' :
+		forms['past.p3.f.sg'] = strong_past_sg_forms(r[0] + 't' + v[0] + r[1] + r[2] + 'et', r[0] + 't' + v[0] + r[1] + r[2] + 'et', '-', 'ek', tv); 
+		forms['past.p3.f.sg'] += strong_past_sg_forms('i' + r[0] + 't' + v[0] + r[1] + r[2] + 'et', 'i' + r[0] + 't' + v[0] + r[1] + r[2] + 'et', 'LR', 'ek', tv); 
+	elif v[1] == 'o' :
+		forms['past.p3.f.sg'] = strong_past_sg_forms(r[0] + 't' + v[0] + r[1] + r[2] + 'ot', r[0] + 't' + v[0] + r[1] + r[2] + 'it', '-', 'ok', tv); 
+		forms['past.p3.f.sg'] += strong_past_sg_forms('i' + r[0] + 't' + v[0] + r[1] + r[2] + 'ot', 'i' + r[0] + 't' + v[0] + r[1] + r[2] + 'it', 'LR', 'ok', tv); 
+	else :
+		forms['past.p3.f.sg'] = strong_past_sg_forms(r[0] + 't' + v[0] + r[1] + r[2] + 'et', r[0] + 't' + v[0] + r[1] + r[2] + 'it', '-', 'ek', tv);
+		forms['past.p3.f.sg'] += strong_past_sg_forms('i' + r[0] + 't' + v[0] + r[1] + r[2] + 'et', 'i' + r[0] + 't' + v[0] + r[1] + r[2] + 'it', 'LR', 'ek', tv);
+
+	forms['past.p2.mf.sg'] = strong_past_sg_forms(r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', '-', ok, tv);
+	forms['past.p2.mf.sg'] += strong_past_sg_forms('i' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', 'i' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', 'LR', ok, tv);
+	forms['past.p1.mf.sg'] = strong_past_sg_forms(r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', '-', ok, tv);
+	forms['past.p1.mf.sg'] += strong_past_sg_forms('i' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', 'i' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', '-', ok, tv);
+
+	forms['past.p3.mf.pl'] = strong_past_pl_forms(r[0] + 't' + v[0] + r[1] + r[2] + 'u', r[0] + 't' + v[0] + r[1] + r[2] + 'u', '-', tv);
+	forms['past.p3.mf.pl'] += strong_past_pl_forms('i' + r[0] + 't' + v[0] + r[1] + r[2] + 'u', 'i' + r[0] + 't' + v[0] + r[1] + r[2] + 'u', 'LR', tv);
+
+	forms['past.p2.mf.pl'] = strong_past_pl_forms(r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', '-', tv);
+	forms['past.p2.mf.pl'] += strong_past_pl_forms('i' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', 'i' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', 'LR', tv);
+	forms['past.p1.mf.pl'] = strong_past_pl_forms(r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'na', r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'nie', '-', tv);
+	forms['past.p1.mf.pl'] += strong_past_pl_forms('i' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'na', 'i' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'nie', '-', tv);
+
+	return forms;
+#}
+
+
+
+## ----------------------------------------------------------------------------##
+##  pattern 8b - that is, 'n' prefix + 't' infix
+## ----------------------------------------------------------------------------##
+
+
+def strong_patt8b_pres(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+
+	forms = {};
+	ok = 'ek';
+	lok = 'lek';
+
+
+#	if r[0] == 'w' :
+#		first_r = 't';
+#	else :
+	first_r = r[0] + 't';
+
+
+	if v[1] == 'e' :
+		vowel_preconssuff = 'i';
+	else :
+		vowel_preconssuff = v[1];
+
+	if r[2] == 'għ' :
+		pres_sg = 'in' + first_r + v[0] + r[1] + v[1];  # right?
+	else :
+		pres_sg = 'in' + first_r + v[0] + r[1] + v[1] + r[2];
+	
+	pres_sg_long = 'in' + first_r + v[0] + r[1] + vowel_preconssuff + r[2];
+	if vowel_preconssuff == 'o' :
+		lok = 'lok';
+
+	pres_sg_short = 'in' + first_r + v[0] + r[1] + r[2];
+	if v[0] == 'o' :
+		ok = 'ok';
+	pres_pl = 'in' + first_r + v[0] + r[1] + r[2] + 'u';
+
+
+	forms['pres.p3.m.sg'] = strong_pres_sg_forms('j' + pres_sg, 'j' + pres_sg_long, 'j' + pres_sg_short, '-', ok, lok, tv);
+	forms['pres.p3.f.sg'] = strong_pres_sg_forms('t' + pres_sg, 't' + pres_sg_long, 't' + pres_sg_short, '-', ok, lok, tv);
+	forms['pres.p2.mf.sg'] = strong_pres_sg_forms('t' + pres_sg, 't' + pres_sg_long, 't' + pres_sg_short, '-', ok, lok, tv);
+	forms['pres.p1.mf.sg'] = strong_pres_sg_forms('n' + pres_sg, 'n' + pres_sg_long, 'n' + pres_sg_short, '-', ok, lok, tv);
+
+
+	forms['pres.p3.mf.pl'] = strong_pres_pl_forms('j' + pres_pl, '-', tv);
+	forms['pres.p2.mf.pl'] = strong_pres_pl_forms('t' + pres_pl, '-', tv);
+	forms['pres.p1.mf.pl'] = strong_pres_pl_forms('n' + pres_pl, '-', tv);
+
+	return forms;
+#}
+
+
+
+def strong_patt8b_imp(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+	
+	forms = {};
+
+	ok = 'ek';
+	lok = 'lek';
+
+#	if r[0] == 'w' :
+#		first_r = 't';
+#	else :
+	first_r = r[0] + 't';
+
+
+	if v[1] == 'e' :
+		vowel_preconssuff = 'i';
+	else :
+		vowel_preconssuff = v[1];
+
+	if r[2] == 'għ' :
+		pres_sg = 'in' + first_r + v[0] + r[1] + v[1];
+	else :
+		pres_sg = 'in' + first_r + v[0] + r[1] + v[1] + r[2];
+
+
+	pres_sg_long = 'in' + first_r + v[0] + r[1] + vowel_preconssuff + r[2];
+	if vowel_preconssuff == 'o' :
+		lok = 'lok';
+
+
+	pres_sg_short = 'in' + first_r + v[0] + r[1] + r[2];
+	if v[0] == 'o' :
+		ok = 'ok';
+	pres_pl = 'in' + first_r + v[0] + r[1] + r[2] + 'u';
+
+
+	forms['imp.p2.mf.sg'] = strong_pres_sg_forms(pres_sg, pres_sg_long, pres_sg_short, '-', ok, lok, tv);
+	forms['imp.p2.mf.pl'] = strong_pres_pl_forms(pres_pl, '-', tv);
+
+	return forms ; 
+#}
+
+
+
+def strong_patt8b_past(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+	forms = {};
+
+	if v[1] == 'e' :
+		vowel_preconssuff =  'i';
+	else :
+		vowel_preconssuff = v[1];
+	
+
+	if vowel_preconssuff == 'o' :
+		ok = 'ok';
+	else :
+		ok = 'ek';
+
+
+	if r[2] == 'għ' : #{
+		final_r_p3_sg_m_free = '';
+		final_r_p2_p1 = 'j';
+	#}
+	else : #{
+		final_r_p3_sg_m_free = r[2];
+		final_r_p2_p1 = r[2];
+	#}
+
+
+	# If the first radical is 'w' or 'għ' then we have a full disyllabic form
+	if r[0] == 'għ': #{   # not with 'w' 
+		first_v_p2_p1 = v[0];
+	else :
+		first_v_p2_p1 = '';
+	#}
+
+	# TODO: if r[0] == 'w', then r[0] = 't'
+
+# precons_form? (base for p2.mf.sg, p1.mf.sg, p2.mf.pl, p1.mf.pl)
+
+	forms['past.p3.m.sg'] = strong_past_p3_sg_m_forms('n' + r[0] + 't' + v[0] + r[1] + v[1] + final_r_p3_sg_m_free, 'n' + r[0] + 't' + v[0] + r[1] + vowel_preconssuff + r[2], 'n' + r[0] + 't' + v[0] + r[1] + r[2], '', ok, 'l' + ok, tv);
+	forms['past.p3.m.sg'] += strong_past_p3_sg_m_forms('in' + r[0] + 't' + v[0] + r[1] + v[1] + final_r_p3_sg_m_free, 'in' + r[0] + 't' + v[0] + r[1] + vowel_preconssuff + r[2], 'in' + r[0] + 't' + v[0] + r[1] + r[2], 'LR', ok, 'l' + ok, tv);
+
+	if r[2] == 'għ' :
+		forms['past.p3.f.sg'] = strong_past_sg_forms('n' + r[0] + 't' + v[0] + r[1] + r[2] + 'et', 'n' + r[0] + 't' + v[0] + r[1] + r[2] + 'et', '-', 'ek', tv); 
+		forms['past.p3.f.sg'] += strong_past_sg_forms('in' + r[0] + 't' + v[0] + r[1] + r[2] + 'et', 'in' + r[0] + 't' + v[0] + r[1] + r[2] + 'et', 'LR', 'ek', tv); 
+	elif v[1] == 'o' :
+		forms['past.p3.f.sg'] = strong_past_sg_forms('n' + r[0] + 't' + v[0] + r[1] + r[2] + 'ot', 'n' + r[0] + 't' + v[0] + r[1] + r[2] + 'it', '-', 'ok', tv); 
+		forms['past.p3.f.sg'] += strong_past_sg_forms('in' + r[0] + 't' + v[0] + r[1] + r[2] + 'ot', 'in' + r[0] + 't' + v[0] + r[1] + r[2] + 'it', 'LR', 'ok', tv); 
+	else :
+		forms['past.p3.f.sg'] = strong_past_sg_forms('n' + r[0] + 't' + v[0] + r[1] + r[2] + 'et', 'n' + r[0] + 't' + v[0] + r[1] + r[2] + 'it', '-', 'ek', tv);
+		forms['past.p3.f.sg'] += strong_past_sg_forms('in' + r[0] + 't' + v[0] + r[1] + r[2] + 'et', 'in' + r[0] + 't' + v[0] + r[1] + r[2] + 'it', 'LR', 'ek', tv);
+
+	forms['past.p2.mf.sg'] = strong_past_sg_forms('n' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', 'n' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', '-', ok, tv);
+	forms['past.p2.mf.sg'] += strong_past_sg_forms('in' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', 'in' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', 'LR', ok, tv);
+	forms['past.p1.mf.sg'] = strong_past_sg_forms('n' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', 'n' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', '-', ok, tv);
+	forms['past.p1.mf.sg'] += strong_past_sg_forms('in' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', 'in' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 't', '-', ok, tv);
+
+	forms['past.p3.mf.pl'] = strong_past_pl_forms('n' + r[0] + 't' + v[0] + r[1] + r[2] + 'u', 'n' + r[0] + 't' + v[0] + r[1] + r[2] + 'u', '-', tv);
+	forms['past.p3.mf.pl'] += strong_past_pl_forms('in' + r[0] + 't' + v[0] + r[1] + r[2] + 'u', 'in' + r[0] + 't' + v[0] + r[1] + r[2] + 'u', 'LR', tv);
+
+	forms['past.p2.mf.pl'] = strong_past_pl_forms('n' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', 'n' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', '-', tv);
+	forms['past.p2.mf.pl'] += strong_past_pl_forms('in' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', 'in' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'tu', 'LR', tv);
+	forms['past.p1.mf.pl'] = strong_past_pl_forms('n' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'na', 'n' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'nie', '-', tv);
+	forms['past.p1.mf.pl'] += strong_past_pl_forms('in' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'na', 'in' + r[0] + 't' + first_v_p2_p1 + r[1] + vowel_preconssuff + final_r_p2_p1 + 'nie', '-', tv);
+
+	return forms;
+#}
+
+
+
+## ----------------------------------------------------------------------------##
 
 
 def main(stem): #{
@@ -898,10 +1411,34 @@ def main(stem): #{
 	#}
 
 
-	if stem['theme'] == '7' : #{
-		forms.update(strong_patt7_past(stem['root'],  stem['vowel_perf'], stem['trans']));
-		forms.update(strong_patt7_pres(stem['root'], stem['vowel_perf'], stem['trans']));
-		forms.update(strong_patt7_imp(stem['root'], stem['vowel_perf'], stem['trans']));
+	if stem['theme'] == '7a' : #{
+		forms.update(strong_patt7a_past(stem['root'],  stem['vowel_perf'], stem['trans']));
+		forms.update(strong_patt7a_pres(stem['root'], stem['vowel_perf'], stem['trans']));
+		forms.update(strong_patt7a_imp(stem['root'], stem['vowel_perf'], stem['trans']));
+
+	#}
+
+
+	if stem['theme'] == '7b' : #{
+		forms.update(strong_patt7b_past(stem['root'],  stem['vowel_perf'], stem['trans']));
+		forms.update(strong_patt7b_pres(stem['root'], stem['vowel_perf'], stem['trans']));
+		forms.update(strong_patt7b_imp(stem['root'], stem['vowel_perf'], stem['trans']));
+
+	#}
+
+
+	if stem['theme'] == '8a' : #{
+		forms.update(strong_patt8a_past(stem['root'],  stem['vowel_perf'], stem['trans']));
+		forms.update(strong_patt8a_pres(stem['root'], stem['vowel_perf'], stem['trans']));
+		forms.update(strong_patt8a_imp(stem['root'], stem['vowel_perf'], stem['trans']));
+
+	#}
+
+
+	if stem['theme'] == '8b' : #{
+		forms.update(strong_patt8b_past(stem['root'],  stem['vowel_perf'], stem['trans']));
+		forms.update(strong_patt8b_pres(stem['root'], stem['vowel_perf'], stem['trans']));
+		forms.update(strong_patt8b_imp(stem['root'], stem['vowel_perf'], stem['trans']));
 
 	#}
 

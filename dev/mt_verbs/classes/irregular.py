@@ -34,6 +34,23 @@ def irreg_consonant_forms (form_sg, form_sg_suff, r, ek): #{
 #}
 
 
+def irreg_iv_consonant_forms (form_sg, form_sg_suff, r, ek): #{
+
+	if ek == 'ok' :
+		forms = [(form_sg, '-', r),
+			 (form_sg_suff, 'S__qtalt/x', r),
+			 (form_sg_suff, 'S__xrobt/ilha', r),
+			 (form_sg_suff, 'S__xrobt/ilhiex', r)];
+	else :
+		forms = [(form_sg, '-', r),
+			 (form_sg_suff, 'S__qtalt/x', r),
+			 (form_sg_suff, 'S__qtalt/ilha', r),
+			 (form_sg_suff, 'S__qtalt/ilhiex', r)];
+
+	return forms;
+#}
+
+
 def irreg_vowel_forms (form_pl, form_pl_suff, r): #{
 
 	forms = [(form_pl, '-', r),
@@ -44,6 +61,17 @@ def irreg_vowel_forms (form_pl, form_pl_suff, r): #{
 		 (form_pl_suff, 'S__qtaltu/lhiex', r),
 		 (form_pl_suff, 'S__qtaltu/hielha', r),
 		 (form_pl_suff, 'S__qtaltu/hielhiex', r)];
+
+	return forms;
+#}
+
+
+def irreg_iv_vowel_forms (form_pl, form_pl_suff, r): #{
+
+	forms = [(form_pl, '-', r),
+		 (form_pl_suff, 'S__qtalt/x', r),
+		 (form_pl_suff, 'S__qtaltu/lha', r),
+		 (form_pl_suff, 'S__qtaltu/lhiex', r)];
 
 	return forms;
 #}
@@ -106,11 +134,11 @@ def irregular_forms (stem): #{
 		forms['pres.p3.mf.pl'] = irreg_vowel_forms('jieħdu', 'jeħdu', '-');
 		forms['pres.p3.mf.pl'] += irreg_vowel_forms('jieħdu', 'jieħdu', 'LR');
 		forms['pres.p2.mf.pl'] = irreg_vowel_forms('tieħdu', 'teħdu', '-');
-		forms['pres.p2.mf.pl'] = irreg_vowel_forms('tieħdu', 'tieħdu', 'LR');
+		forms['pres.p2.mf.pl'] = irreg_vowel_forms('tieħdu', 'tieħdu', '-');
 		forms['pres.p1.mf.pl'] = irreg_vowel_forms('nieħdu', 'neħdu', '-');
 		forms['pres.p1.mf.pl'] = irreg_vowel_forms('nieħdu', 'nieħdu', '-');
 
-#		forms['imp.p2.mf.sg'] = irreg_consonant_forms('ħu', 'ħud', '-', 'ek');
+		forms['imp.p2.mf.sg'] = irreg_consonant_forms('ħu', 'ħud', '-', 'ek');
 		forms['imp.p2.mf.pl'] = irreg_vowel_forms('ħudu', 'ħudu', '-');
 
 		forms['pp.m.sg'] = [('meħud', '-', '-')] ;
@@ -303,6 +331,38 @@ def irregular_forms (stem): #{
 #		forms['pprs.m.sg'] = [('ġej', '-', '-')] ;
 #		forms['pprs.f.sg'] = [('ġejja', '-', '-')] ;
 #		forms['pprs.mf.pl'] = [('ġejjin', '-', '-')] ;
+	#}
+
+	# needs checking
+	elif stem == 'ntwera' : #{
+		# shouldn't it be ('ntwera', 'ntwerie', ...)
+		# in other words: ma ntwerax? or rather ma ntweriex?
+		forms['past.p3.m.sg'] = irreg_iv_vowel_forms('ntwera', 'ntwera', '-');
+		forms['past.p3.m.sg'] += irreg_iv_vowel_forms('intwera', 'intwera', '-');
+		forms['past.p3.f.sg'] = irreg_iv_consonant_forms('ntweriet', 'ntweriet', '-', 'ek');
+		forms['past.p3.f.sg'] += irreg_iv_consonant_forms('intweriet', 'intweriet', '-', 'ek');
+		forms['past.p2.mf.sg'] = irreg_iv_consonant_forms('ntwerejt', 'ntwerejt', '-', 'ek');	
+		forms['past.p2.mf.sg'] += irreg_iv_consonant_forms('intwerejt', 'intwerejt', '-', 'ek');	
+		forms['past.p1.mf.sg'] = irreg_iv_consonant_forms('ntwerejt', 'ntwerejt', '-', 'ek');
+		forms['past.p1.mf.sg'] += irreg_iv_consonant_forms('intwerejt', 'intwerejt', '-', 'ek');
+		forms['past.p3.mf.pl'] = irreg_iv_vowel_forms('ntwerew', 'ntwerew', '-');
+		forms['past.p3.mf.pl'] += irreg_iv_vowel_forms('intwerew', 'intwerew', '-');
+		forms['past.p2.mf.pl'] = irreg_iv_vowel_forms('ntwerejtu', 'ntwerejtu', '-');
+		forms['past.p2.mf.pl'] += irreg_iv_vowel_forms('intwerejtu', 'intwerejtu', '-');
+		forms['past.p1.mf.pl'] = irreg_iv_vowel_forms('ntwerejna', 'ntwerejnie', '-');
+		forms['past.p1.mf.pl'] += irreg_iv_vowel_forms('intwerejna', 'intwerejnie', '-');
+
+		forms['pres.p3.m.sg'] = irreg_iv_vowel_forms('jintwera', 'jintwera', '-');
+		forms['pres.p3.f.sg'] = irreg_iv_vowel_forms('tintwera', 'tintwera', '-');
+		forms['pres.p2.mf.sg'] = irreg_iv_vowel_forms('tintwera', 'tintwera', '-');
+		forms['pres.p1.mf.sg'] = irreg_iv_vowel_forms('nintwera', 'nintwera', '-');
+		forms['pres.p3.mf.pl'] = irreg_iv_vowel_forms('jintwerew', 'jintwerew', '-');
+		forms['pres.p2.mf.pl'] = irreg_iv_vowel_forms('tintwerew', 'tintwerew', '-');
+		forms['pres.p1.mf.pl'] = irreg_iv_vowel_forms('nintwerew', 'nintwerew', '-');
+
+		forms['imp.p2.mf.sg'] = irreg_vowel_forms('intwera', 'intwera', '-');
+		forms['imp.p2.mf.pl'] = irreg_vowel_forms('intweru', 'intweru', '-');
+
 	#}
 
 	elif stem == 'jaf' : #{

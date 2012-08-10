@@ -271,27 +271,14 @@ def hollow_patt1_pres(root, vowels, tv): #{
 
 
 ## ----------------------------------------------------------------------------##
-## pattern 7
+## pattern 7a, prefix 'n'
 ## ----------------------------------------------------------------------------##
 
 
 # Borg p. 375 
 
 
-def hollow_patt7_pprs(root, vowel): #{
-	r = root.split('-'); # radicals
-
-	forms = {};
-	
-	forms['pp.m.sg'] = [('mi' + r[0] + 'ju' + r[2], '-', '-')] ;
-	forms['pp.f.sg'] = [('mi' + r[0] + 'ju' + r[2] + 'a', '-', '-')] ;
-	forms['pp.mf.pl'] = [('mi' + r[0] + 'ju' + r[2] + 'in', '-', '-')] ;
-
-	return forms;
-#}
-
-
-def hollow_patt7_past(root, vowels, tv): #{
+def hollow_patt7a_past(root, vowels, tv): #{
 	r = root.split('-'); # radicals
 	v = vowels.split('-'); # vowels
 
@@ -334,7 +321,7 @@ def hollow_patt7_past(root, vowels, tv): #{
 
 
 # no ek/ok
-def hollow_patt7_imp(root, vowels, tv): #{
+def hollow_patt7a_imp(root, vowels, tv): #{
 	r = root.split('-'); # radicals
 	v = vowels.split('-'); # vowels
 
@@ -353,7 +340,7 @@ def hollow_patt7_imp(root, vowels, tv): #{
 
 
 # no ek/ok
-def hollow_patt7_pres(root, vowels, tv): #{
+def hollow_patt7a_pres(root, vowels, tv): #{
 	r = root.split('-'); # radicals
 	v = vowels.split('-'); # vowels
 
@@ -367,16 +354,114 @@ def hollow_patt7_pres(root, vowels, tv): #{
 
 	form_sg = r[0] + link_vowel + r[2];
 
-	forms['pres.p3.m.sg'] = hollow_sg_forms('jin' + form_sg, 'jin' + form_sg, 'LR', ok, tv);	
-	forms['pres.p3.f.sg'] = hollow_sg_forms('tin' + form_sg, 'tin' + form_sg, 'LR', ok, tv);
-	forms['pres.p2.mf.sg'] = hollow_sg_forms('tin' + form_sg, 'tin' + form_sg, 'LR', ok, tv);
-	forms['pres.p1.mf.sg'] = hollow_sg_forms('nin' + form_sg, 'nin' + form_sg, 'LR', ok, tv);
+	forms['pres.p3.m.sg'] = hollow_sg_forms('jin' + form_sg, 'jin' + form_sg, '-', ok, tv);	
+	forms['pres.p3.f.sg'] = hollow_sg_forms('tin' + form_sg, 'tin' + form_sg, '-', ok, tv);
+	forms['pres.p2.mf.sg'] = hollow_sg_forms('tin' + form_sg, 'tin' + form_sg, '-', ok, tv);
+	forms['pres.p1.mf.sg'] = hollow_sg_forms('nin' + form_sg, 'nin' + form_sg, '-', ok, tv);
 
 	form_pl = r[0] + link_vowel + r[2] + 'u';
 
-	forms['pres.p3.mf.pl'] = hollow_pl_forms('jin' + form_pl, 'jin' + form_pl, 'LR', tv);
-	forms['pres.p2.mf.pl'] = hollow_pl_forms('tin' + form_pl, 'tin' + form_pl, 'LR', tv);
-	forms['pres.p1.mf.pl'] = hollow_pl_forms('nin' + form_pl, 'nin' + form_pl, 'LR', tv);
+	forms['pres.p3.mf.pl'] = hollow_pl_forms('jin' + form_pl, 'jin' + form_pl, '-', tv);
+	forms['pres.p2.mf.pl'] = hollow_pl_forms('tin' + form_pl, 'tin' + form_pl, '-', tv);
+	forms['pres.p1.mf.pl'] = hollow_pl_forms('nin' + form_pl, 'nin' + form_pl, '-', tv);
+	
+	return forms;
+#}
+
+
+
+## ----------------------------------------------------------------------------##
+## pattern 7b, prefix 'nt'
+## ----------------------------------------------------------------------------##
+
+
+
+def hollow_patt7b_past(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+	if r[1] != 'j' and r[1] != 'w': #{
+		print >> sys.stderr, 'Hollow verb without second radical as \'w\' or \'j\'';
+	#}
+
+	forms = {};
+
+	forms['past.p3.m.sg'] = hollow_sg_forms('nt' + r[0] + v[0] + r[2], 'nt' + r[0] + v[0] + r[2], '-', 'ek', tv);
+	forms['past.p3.m.sg'] += hollow_sg_forms('int' + r[0] + v[0] + r[2], 'int' + r[0] + v[0] + r[2], 'LR', 'ek', tv);
+
+	forms['past.p3.f.sg'] = hollow_sg_forms('nt' + r[0] + v[0] + r[2] + 'et', 'nt' + r[0] + v[0] + r[2] + 'it', '-', 'ek', tv);
+	forms['past.p3.f.sg'] += hollow_sg_forms('int' + r[0] + v[0] + r[2] + 'et', 'int' + r[0] + v[0] + r[2] + 'it', 'LR', 'ek', tv);
+
+	ok = 'ek';
+	if v[0] == 'ie': #{
+		link_vowel = 'i';
+	elif v[0] == 'a': #{
+		link_vowel = 'a';
+	#}
+
+	forms['past.p2.mf.sg'] = hollow_sg_forms('nt' + r[0] + link_vowel + r[2] + 't', 'nt' + r[0] + link_vowel + r[2] + 't', '-', ok, tv);	
+	forms['past.p2.mf.sg'] += hollow_sg_forms('int' + r[0] + link_vowel + r[2] + 't', 'int' + r[0] + link_vowel + r[2] + 't', 'LR', ok, tv);	
+	forms['past.p1.mf.sg'] = hollow_sg_forms('nt' + r[0] + link_vowel + r[2] + 't', 'nt' + r[0] + link_vowel + r[2] + 't', '-', ok, tv);	
+	forms['past.p1.mf.sg'] += hollow_sg_forms('int' + r[0] + link_vowel + r[2] + 't', 'int' + r[0] + link_vowel + r[2] + 't', 'LR', ok, tv);	
+
+	forms['past.p2.mf.pl'] = hollow_pl_forms('nt' + r[0] + link_vowel + r[2] + 'tu', 'nt' + r[0] + link_vowel + r[2] + 'tu', '-', tv);
+	forms['past.p2.mf.pl'] += hollow_pl_forms('int' + r[0] + link_vowel + r[2] + 'tu', 'int' + r[0] + link_vowel + r[2] + 'tu', 'LR', tv);
+	forms['past.p1.mf.pl'] = hollow_pl_forms('nt' + r[0] + link_vowel + r[2] + 'na', 'nt' + r[0] + link_vowel + r[2] + 'nie', '-', tv);
+	forms['past.p1.mf.pl'] += hollow_pl_forms('int' + r[0] + link_vowel + r[2] + 'na', 'int' + r[0] + link_vowel + r[2] + 'nie', 'LR', tv);
+
+	forms['past.p3.mf.pl'] = hollow_pl_forms('nt' + r[0] + v[0] + r[2] + 'u', 'nt' + r[0] + v[0] + r[2] + 'u', '-', tv);
+	forms['past.p3.mf.pl'] += hollow_pl_forms('int' + r[0] + v[0] + r[2] + 'u', 'int' + r[0] + v[0] + r[2] + 'u', 'LR', tv);
+
+	#}
+
+	return forms;
+#}
+
+
+# no ek/ok
+def hollow_patt7b_imp(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+	if r[1] != 'j' and r[1] != 'w': #{
+		print >> sys.stderr, 'Hollow verb without second radical as \'w\' or \'j\'';
+	#}
+
+	forms = {};
+	ok = 'ek';
+		
+	forms['imp.p2.mf.sg'] = hollow_sg_forms('int' + r[0] + v[0] + r[2], 'int' + r[0] + v[0] + r[2], '-', ok, tv);
+	forms['imp.p2.mf.pl'] = hollow_pl_forms('int' + r[0] + v[0] + r[2] + 'u', 'int' + r[0] + v[0] + r[2] + 'u', '-', tv);
+
+	return forms;
+#}
+
+
+# no ek/ok
+def hollow_patt7b_pres(root, vowels, tv): #{
+	r = root.split('-'); # radicals
+	v = vowels.split('-'); # vowels
+
+	if r[1] != 'j' and r[1] != 'w': #{
+		print >> sys.stderr, 'Hollow verb without second radical as \'w\' or \'j\'';
+	#}
+	ok = 'ek';
+
+	forms = {};
+	link_vowel = v[0];
+
+	form_sg = r[0] + link_vowel + r[2];
+
+	forms['pres.p3.m.sg'] = hollow_sg_forms('jint' + form_sg, 'jint' + form_sg, '-', ok, tv);	
+	forms['pres.p3.f.sg'] = hollow_sg_forms('tint' + form_sg, 'tint' + form_sg, '-', ok, tv);
+	forms['pres.p2.mf.sg'] = hollow_sg_forms('tint' + form_sg, 'tint' + form_sg, '-', ok, tv);
+	forms['pres.p1.mf.sg'] = hollow_sg_forms('nint' + form_sg, 'nint' + form_sg, '-', ok, tv);
+
+	form_pl = r[0] + link_vowel + r[2] + 'u';
+
+	forms['pres.p3.mf.pl'] = hollow_pl_forms('jint' + form_pl, 'jint' + form_pl, '-', tv);
+	forms['pres.p2.mf.pl'] = hollow_pl_forms('tint' + form_pl, 'tint' + form_pl, '-', tv);
+	forms['pres.p1.mf.pl'] = hollow_pl_forms('nint' + form_pl, 'nint' + form_pl, '-', tv);
 	
 	return forms;
 #}
@@ -402,13 +487,20 @@ def main(stem): #{
 
 	#}
 
-	if stem['theme'] == '7' : #{
+	if stem['theme'] == '7a' : #{
 
-		forms = hollow_patt7_past(stem['root'], stem['vowel_perf'], stem['trans']);
-		forms.update(hollow_patt7_pprs(stem['root'], stem['pprs']));
-		forms.update(hollow_patt7_pres(stem['root'], stem['vowel_perf'], stem['trans']));
-	#	if stem['trans'] == 'tv':
-		forms.update(hollow_patt7_imp(stem['root'], stem['vowel_perf'], stem['trans']));
+		forms = hollow_patt7a_past(stem['root'], stem['vowel_perf'], stem['trans']);
+		forms.update(hollow_patt7a_pres(stem['root'], stem['vowel_perf'], stem['trans']));
+		forms.update(hollow_patt7a_imp(stem['root'], stem['vowel_perf'], stem['trans']));
+
+	#}
+
+
+	if stem['theme'] == '7b' : #{
+
+		forms = hollow_patt7b_past(stem['root'], stem['vowel_perf'], stem['trans']);
+		forms.update(hollow_patt7b_pres(stem['root'], stem['vowel_perf'], stem['trans']));
+		forms.update(hollow_patt7b_imp(stem['root'], stem['vowel_perf'], stem['trans']));
 
 	#}
 
