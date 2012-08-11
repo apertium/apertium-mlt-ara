@@ -1344,37 +1344,43 @@ def main(stem): #{
 	elif stem['theme'] == '1' : #{
 		forms.update(defective_patt1_past(stem['root'], stem['subtype'], stem['trans']));
 		forms.update(defective_patt1_impf(stem['root'], stem['subtype'], stem['trans']));
-		forms.update(defective_patt1_pp(stem['root']));
+		if stem['trans'] == 'tv':
+			forms.update(defective_patt1_pp(stem['root']));
 		forms.update(defective_patt1_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '2' : #{
 		forms.update(defective_patt2_past(stem['root'], stem['trans']));
 		forms.update(defective_patt2_impf(stem['root'], stem['trans']));
-		forms.update(defective_patt2_pp(stem['root']));
+		if stem['trans'] == 'tv':
+			forms.update(defective_patt2_pp(stem['root']));
 		forms.update(defective_patt2_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '3' : #{
 		forms.update(defective_patt3_past(stem['root'], stem['trans']));
 		forms.update(defective_patt3_impf(stem['root'], stem['trans']));
-		forms.update(defective_patt3_pp(stem['root']));
+		if stem['trans'] == 'tv':
+			forms.update(defective_patt3_pp(stem['root']));
 		forms.update(defective_patt3_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '4' : #{
 		forms.update(defective_patt4_past(stem['root'], stem['trans']));
 		forms.update(defective_patt4_impf(stem['root'], stem['trans']));
-		forms.update(defective_patt4_pp(stem['root']));
+		if stem['trans'] == 'tv':
+			forms.update(defective_patt4_pp(stem['root']));
 		forms.update(defective_patt4_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '5' : #{
 		forms.update(defective_patt5_past(stem['root'], stem['trans']));
 		forms.update(defective_patt5_impf(stem['root'], stem['trans']));
-		forms.update(defective_patt5_pp(stem['root']));
+		if stem['trans'] == 'tv':
+			forms.update(defective_patt5_pp(stem['root']));
 		forms.update(defective_patt5_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '6' : #{
 		forms.update(defective_patt6_past(stem['root'], stem['trans']));
 		forms.update(defective_patt6_impf(stem['root'], stem['trans']));
-		forms.update(defective_patt6_pp(stem['root']));
+		if stem['trans'] == 'tv':
+			forms.update(defective_patt6_pp(stem['root']));
 		forms.update(defective_patt6_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '7' : #{
@@ -1385,13 +1391,15 @@ def main(stem): #{
 	elif stem['theme'] == '8' : #{
 		forms.update(defective_patt8_past(stem['root'], stem['trans']));
 		forms.update(defective_patt8_impf(stem['root'], stem['trans']));
-		forms.update(defective_patt8_pp(stem['root']));
+		if stem['trans'] == 'tv':
+			forms.update(defective_patt8_pp(stem['root']));
 		forms.update(defective_patt8_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '10' : #{
 		forms.update(defective_patt10_past(stem['root'], stem['trans']));
 		forms.update(defective_patt10_impf(stem['root'], stem['trans']));
-		forms.update(defective_patt10_pp(stem['root']));
+		if stem['trans'] == 'tv':
+			forms.update(defective_patt10_pp(stem['root']));
 		forms.update(defective_patt10_pprs(stem['root']));
 	#}
 

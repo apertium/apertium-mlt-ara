@@ -125,7 +125,7 @@
 |-
 | ħalef || vblex || strong || 1 || swear || ħ-l-f || a-e || a-e || iv ||  || ma
 |-
-| għalef || vblex || strong || 1 || feed·animals || għ-l-f || a-e || a-e || tv ||  || 
+| għalef || vblex || strong || 1 || feed·animals || għ-l-f || a-e || a-e || tv ||  || ma
 |-
 | ħasel || vblex || strong || 1 || wash || ħ-s-l || a-e || a-e || tv ||  || ma
 |-
@@ -255,7 +255,7 @@
 |-
 | żifen || vblex || strong || 1 || dance || ż-f-n || i-e || i-e || tv ||  || mi
 |-
-| wiżen || vblex || strong || 1 || weigh || w-ż-n || i-e ||  || tv ||  || mi
+| wiżen || vblex || strong || 1 || weigh || w-ż-n || i-e || i-e || tv ||  || mi
 |-
 | siket || vblex || strong || 1 || be·silent || s-k-t || i-e || i-o || iv ||  || mi
 |-
@@ -291,6 +291,8 @@
 |-
 | xehed || vblex || strong || 1 || give·evidence || x-h-d || e-e || i-e || tv ||  || mi
 |-
+| għaraf || vblex || strong || 1 || recognise || għ-r-f || a-a || a-a || tv ||  || ma
+|-
 | wieġeb || vblex || strong || 3a || answer || w-ġ-b || || || tv ||  || 
 |-
 | twieġeb || vblex || strong || 6a || be٠answered || w-ġ-b || || || iv ||  || 
@@ -313,13 +315,107 @@
 |-
 | nġabar || vblex || strong || 7a || be٠gathered || ġ-b-r || a-a || a-a || iv ||  || 
 |-
+| ntiżen || vblex || strong || 7a || be٠weighed || t-ż-n || i-e || i-e || iv ||  || 
+|-
+| nbaram || vblex || strong || 7a || be٠twisted || b-r-m || a-a || a-a || iv ||  || 
+|-
+| nbeżaq || vblex || strong || 7a || be٠spat٠out || b-ż-q || e-a || e-a || iv ||  || 
+|-
+| nbela || vblex || strong || 7a || be٠swallowed || b-l-għ || e-a || e-a || iv ||  || 
+|-
+| nxehed || vblex || strong || 7a || be٠given٠as٠evidence || x-h-d || e-e || e-e || iv ||  || 
+|-
+| nġibed || vblex || strong || 7a || be٠pulled,attracted || ġ-b-d || i-e || i-e || iv ||  || 
+|-
+| nċaħad || vblex || strong || 7a || be٠denied || ċ-ħ-d || a-a || a-a || iv ||  || 
+|-
+| nħaraq || vblex || strong || 7a || be٠burnt || ħ-r-q || a-a || a-a || iv ||  || 
+|-
+| nħaleb || vblex || strong || 7a || be٠milked || ħ-l-b || a-e || a-e || iv ||  || 
+|-
+| nqabad || vblex || strong || 7a || be٠caught || q-b-d || a-a || a-a || iv ||  || 
+|-
+| ntilef || vblex || strong || 7a || be٠lost || t-l-f || i-e || i-e || iv ||  || 
+|-
+| nħataf || vblex || strong || 7a || be٠seized || ħ-t-f || a-a || a-a || iv ||  ||
+|-
+| nħanaq || vblex || strong || 7a || become·hoarse || ħ-n-q || a-a || a-a || iv ||  || 
+|-
+| ndifen || vblex || strong || 7a || be·buried || d-f-n || i-e || i-e || iv ||  || 
+|-
+| ndilek || vblex || strong || 7a || be·anointed || d-l-k || i-e || i-e || iv ||  || 
+|-
+| nsebaq || vblex || strong || 7a || be·outstripped || s-b-q || e-a || e-a || iv ||  || 
+|-
+| nżeba || vblex || strong || 7a || be٠painted || ż-b-għ || e-a || e-a || iv ||  ||
+|-
+| ntaħan || vblex || strong || 7a || be٠ground,smashed || t-ħ-n || a-a || a-a || iv ||  ||
+|-
+| ntalab || vblex || strong || 7a || be٠asked٠for || t-l-b || a-a || a-a || iv ||  ||
+|-
+| nħaqar || vblex || strong || 7a || be٠oppressed || ħ-q-r || a-a || a-a || iv ||  ||
+|-
+| nħafer || vblex || strong || 7a || be٠forgiven || ħ-f-r || a-e || a-e || iv ||  ||
+|-
+| ngidem || vblex || strong || 7a || be٠bitten || g-d-m || i-e || i-e || iv ||  ||
+|-
+| nħatar || vblex || strong || 7a || be٠(s)elected || ħ-t-r || a-a || a-a || iv ||  ||
+|-
+| nbidel || vblex || strong || 7a || be٠changed || b-d-l || i-e || i-e || iv ||  ||
+|-
+| nfetaħ || vblex || strong || 7a || be٠opened || f-t-ħ || e-a || e-a || iv ||  ||
+|-
+| ngħorok || vblex || strong || 7a || be٠rubbed || għ-r-k || o-o || o-o || iv ||  ||
+|-
+| nfired || vblex || strong || 7a || be٠separated || f-r-d || i-e || i-e || iv ||  ||
+|-
+| nfetaq || vblex || strong || 7a || be٠unsewn || f-t-q || e-a || e-a || iv ||  ||
+|-
+| nqatel || vblex || strong || 7a || be٠killed || q-t-l || a-e || a-e || iv ||  ||
+|-
+| nqata || vblex || strong || 7a || be٠cut || q-t-għ || a-a || a-a || iv ||  ||
+|-
+| nbagħad || vblex || strong || 7a || be٠hated || b-għ-d || a-a || a-a || iv ||  ||
+|-
+| nkiseb || vblex || strong || 7a || be٠acquired || k-s-b || i-e || i-e || iv ||  ||
+|-
 | ntgħażel || vblex || strong || 7b || be٠chosen || għ-ż-l || a-e || a-e || iv ||  || 
 |-
 | ntbagħat || vblex || strong || 7b || be٠sent || b-għ-t || a-a || a-a || iv ||  || 
 |-
+| ntlaħaq || vblex || strong || 7b || be٠reached || l-ħ-q || a-a || a-a || iv ||  || 
+|-
+| ntgħażaq || vblex || strong || 7b || be٠dug || għ-ż-q || a-a || a-a || iv ||  || 
+|-
+| ntlaqat || vblex || strong || 7b || be٠hit || l-q-t || a-a || a-a || iv ||  || 
+|-
+| ntrabat || vblex || strong || 7b || be٠tied || r-b-t || a-a || a-a || iv ||  || 
+|-
+| ntrefa || vblex || strong || 7b || be٠raised || r-f-għ || e-a || e-a || iv ||  ||
+|-
+| ntgħamel || vblex || strong || 7b || be٠made || għ-m-l || a-e || a-e || iv ||  ||
+|-
+| ntlagħaq || vblex || strong || 7b || be٠licked٠up || l-għ-q || a-a || a-a || iv ||  ||
+|-
+| ntlemaħ || vblex || strong || 7b || be٠perceived || l-m-ħ || e-a || e-a || iv ||  || 
+|-
 | ttiekel || vblex || strong || 8a || be٠eaten || t-k-l || ie-e || ie-e || iv ||  || m 
 |-
+| ntefaq || vblex || strong || 8a || be٠spent || n-f-q || e-a || e-a || iv ||  || 
+|-
+| rtikeb || vblex || strong || 8a || be٠ridden || r-k-b || i-e || i-e || iv ||  || 
+|-
+| stelaħ || vblex || strong || 8a || be٠skinned || s-l-ħ || e-a || e-a || iv ||  || 
+|-
 | nstama || vblex || strong || 8b || be٠heard || s-m-għ || a-a || a-a || iv ||  || 
+|-
+| nsteraq || vblex || strong || 8b || be٠stollen || s-r-q || e-a || e-a || iv ||  || 
+|-
+| nxtorob || vblex || strong || 8b || be٠drunk٠up || x-r-b || o-o || o-o || iv ||  || 
+|-
+| nxtegħel || vblex || strong || 8b || be٠lit,switched٠on || x-għ-l || e-e || e-e || iv ||  || 
+|-
+| nftiehem || vblex || strong || 8b || be٠understood || f-h-m || ie-e || ie-e || iv ||  || 
 |-
 | kisser || vblex || quad || 1 || smash || k-s-s-r || i-e || i-e || tv ||  || m
 |-
@@ -335,15 +431,39 @@
 |-
 | nissel || vblex || quad || 1 || derive || n-s-s-l || i-e || i-e || tv ||  || m
 |-
+| kellem || vblex || quad || 1 || speak || k-l-l-m || e-e || e-e || tv ||  || m
+|-
+| sejjaħ || vblex || quad || 1 || call || s-j-j-ħ || e-a || e-a || tv ||  || m
+|-
 | tkellem || vblex || quad || 2 || speak || k-l-l-m || e-e || e-e || iv ||  || mi
-|-
-| ixxandar || vblex || quad || 2 || be٠broadcast || x-n-d-r || a-a || a-a || iv ||  || 
-|-
-| issemma || vblex || quad || 2 || listen || s-m-m- || e-a || e-a || iv ||  || 
 |-
 | tnissel || vblex || quad || 2 || originate,be٠derived || n-s-s-l || i-e || i-e || iv ||  || 
 |-
 | tkisser || vblex || quad || 2 || be٠cut || k-s-s-r || i-e || i-e || iv ||  || 
+|-
+| issemma || vblex || quad || 2 || listen || s-m-m- || e-a || e-a || iv ||  || 
+|-
+| tfisser || vblex || quad || 2 || be٠explained || f-s-s-r || i-e || i-e || iv ||  ||
+|-
+| tgħażżeż || vblex || quad || 2 || be٠beloved || għ-ż-ż-ż || a-a || a-a || iv ||  ||
+|-
+| therreż || vblex || quad || 2 || be٠pounded || h-r-r-ż || e-e || e-e || iv ||  ||
+|-
+| tqejjem || vblex || quad || 2 || be٠venerated || q-j-j-m || e-e || e-e || iv ||  ||
+|-
+| tfittex || vblex || quad || 2 || be٠looked٠for || f-t-t-x || i-e || i-e || iv ||  ||
+|-
+| themmeż || vblex || quad || 2 || be٠fastened·with·pin || h-m-m-ż || e-e || e-e || iv ||  ||
+|-
+| iddaħħal || vblex || quad || 2 || be٠entered || d-ħ-ħ-l || a-a || a-a || iv ||  || 
+|-
+| treġġa || vblex || quad || 2 || be٠returned || r-ġ-ġ- || e-a || e-a || iv ||  || 
+|-
+| issejjaħ || vblex || quad || 2 || be٠called || s-j-j-ħ || e-a || e-a || iv ||  || 
+|-
+| ixxaqqaq || vblex || quad || 2 || be٠split || x-q-q-q || a-a || a-a || iv ||  || 
+|-
+| trassas || vblex || quad || 2 || be٠squeezed || r-s-s-s || a-a || a-a || iv ||  || 
 |-
 | dar || vblex || hollow || 1 || turn || d-w-r || a-a ||  || iv ||  || mi
 |-
@@ -399,9 +519,23 @@
 |-
 | nġab || vblex || hollow || 7a || be٠brought || ġ-j-b || a-a ||  || iv ||  ||
 |-
+| nsab || vblex || hollow || 7a || be٠found || s-j-b || a-a || a-a || iv ||  ||
+|-
 | nġieb || vblex || hollow || 7a || be٠brought || ġ-j-b || ie-a ||  || iv ||  ||
 |-
+| nbiegħ || vblex || hollow || 7a || be٠sold || b-j-għ || ie-a ||  || iv ||  ||
+|-
+| ndaq || vblex || hollow || 7a || be٠tasted || d-w-q || a-a || a-a || iv ||  ||
+|-
+| ngħex || vblex || hollow || 7a || be٠lived || għ-j-x || e-e || e-e || iv ||  ||
+|-
 | ntqies || vblex || hollow || 7b || be٠measured || q-j-s || ie-a ||  || iv ||  ||
+|-
+| ntqal || vblex || hollow || 7b || be٠said || q-w-l || a-a ||  || iv ||  ||
+|-
+| żdied || vblex || hollow || 7c || be٠increased || ż-j-d || ie-a ||  || iv ||  ||
+|-
+| nstab || vblex || hollow || 8b || be٠found || s-j-b || a-a || a-a  || iv ||  ||
 |-
 | qara || vblex || weak || 1 || read || q-r-j || a-a || a-a || tv ||  || mo
 |-
@@ -427,13 +561,19 @@
 |-
 | tħalla || vblex || weak || 5 || be٠left || ħ-l-j || a-a || a-a || iv ||  ||
 |-
-| nbeda || vblex || weak || 7 || be٠commenced || b-d-j || e-a ||  || iv ||  ||
+| nbeda || vblex || weak || 7a || be٠commenced || b-d-j || e-a ||  || iv ||  ||
 |-
-| nħeba || vblex || weak || 7 || be٠hidden || ħ-b-j || e-a ||  || iv ||  ||
+| nħeba || vblex || weak || 7a || be٠hidden || ħ-b-j || e-a ||  || iv ||  ||
 |-
-| ngħata || vblex || weak || 7 || be٠given || għ-t-j || a-a ||  || iv ||  ||
+| ngħata || vblex || weak || 7a || be٠given || għ-t-j || a-a ||  || iv ||  ||
 |-
-| nqara || vblex || weak || 7 || be٠read || q-r-j || a-a ||  || iv ||  ||
+| nqara || vblex || weak || 7a || be٠read || q-r-j || a-a ||  || iv ||  ||
+|-
+| nħela || vblex || weak || 7a || be٠wasted || ħ-l-j || e-a ||  || iv ||  ||
+|-
+| ntara || vblex || weak || 7a || be٠seen || t-r-j || a-a ||  || iv ||  ||
+|-
+| ntrema || vblex || weak || 7b || be٠thrown٠out || r-m-j || e-a ||  || iv ||  ||
 |-
 | staqsa || vblex || weak || 10 || ask || q-s-j || a-a || a-i || tv ||  ||
 |-
@@ -441,7 +581,9 @@
 |-
 | mess || vblex || doubled || 1 || touch || m-s-s || e-e || e-i || tv ||  || mi
 |-
-| qarr || vblex || doubled || 1 || go·to·confession || q-r-r || a-a || i-e || tv ||  || ma
+| qarr || vblex || doubled || 1 || confess٠sb || q-r-r || a-a || i-e || tv ||  || ma
+|-
+| qerr || vblex || doubled || 1 || confess٠sth || q-r-r || e-e || i-e || tv ||  || me
 |-
 | raqq || vblex || doubled || 1 || become·thin || r-q-q || a-a || i-e || iv ||  || 
 |-
@@ -497,7 +639,27 @@
 |-
 | nħatt || vblex || doubled || 7a || be٠unloaded || ħ-t-t || a-a || || iv ||  ||
 |-
+| nżamm || vblex || doubled || 7a || be٠kept || ż-m-m || a-a || || iv ||  ||
+|-
+| ntemm || vblex || doubled || 7a || be٠finished || t-m-m || e-e || || iv ||  ||
+|-
+| nġarr || vblex || doubled || 7a || be٠carried || ġ-r-r || a-a || || iv ||  ||
+|-
+| ndaqq || vblex || doubled || 7a || be٠beaten || d-q-q || a-a || || iv ||  ||
+|-
+| ngħadd || vblex || doubled || 7a || be٠counted || għ-d-d || a-a || || iv ||  ||
+|-
+| nħall || vblex || doubled || 7a || be٠untied || ħ-l-l || a-a || || iv ||  ||
+|-
 | ntradd || vblex || doubled || 7b || be٠restored || r-d-d || a-a || || iv ||  ||
+|-
+| ntbell || vblex || doubled || 7b || be٠wet || b-l-l || e-e || || iv ||  ||
+|-
+| ntbexx || vblex || doubled || 7b || be٠sprayed || b-x-x || e-e || || iv ||  ||
+|-
+| ntmess || vblex || doubled || 7b || be٠touched || m-s-s || e-e || || iv ||  ||
+|-
+| nstadd || vblex || doubled || 8b || be٠stoped || s-d-d || a-a || || iv ||  ||
 |-
 | qaħqaħ || vblex || quad || 1 || cough || q-ħ-q-ħ || a-a || a-a || iv ||  || im
 |-
@@ -552,4 +714,34 @@
 | bixkel || vblex || quad || 1 || cheat || b-x-k-l || i-e || i-e || tv ||  || im
 |-
 | berbaq || vblex || quad || 1 || squander || b-r-b-q || e-a || e-a || tv ||  || im
+|-
+| tbandal || vblex || quad || 2 || be٠swung || b-n-d-l || a-a || a-a || iv ||  ||
+|-
+| tfesdaq || vblex || quad || 2 || be·shelled || f-s-d-q || e-a || e-a || iv ||  ||
+|-
+| tberbaq || vblex || quad || 2 || be٠squandered || b-r-b-q || e-a || e-a || iv ||  ||
+|-
+| tqarmeċ || vblex || quad || 2 || be٠crunched || q-r-m-ċ || a-e || a-e || iv ||  ||
+|-
+| iċċaqlaq || vblex || quad || 2 || be٠moved || ċ-q-l-q || a-a || a-a || iv ||  ||
+|-
+| ittertaq || vblex || quad || 2 || be٠crushed٠up || t-r-t-q || e-a || e-a || iv ||  ||
+|-
+| tbixkel || vblex || quad || 2 || be٠embroiled || b-x-k-l || i-e || i-e || iv ||  ||
+|-
+| tkasbar || vblex || quad || 2 || get٠dirty || k-s-b-r || a-a || a-a || iv ||  ||
+|-
+| tħarbat || vblex || quad || 2 || be٠routed || ħ-r-b-t || a-a || a-a || iv ||  ||
+|-
+| ixxandar || vblex || quad || 2 || be٠broadcast || x-n-d-r || a-a || a-a || iv ||  || 
+|-
+| tkexkex || vblex || quad || 2 || be٠shocked || k-x-k-x || e-e || e-e || iv ||  ||
+|-
+| iddendel || vblex || quad || 2 || be٠hung || d-n-d-l || e-e || e-e || iv ||  ||
+|-
+| iddardar || vblex || quad || 2 || be·turbid || d-r-d-r || a-a || a-a || iv ||  || 
+|-
+| iċċappas || vblex || quad || 2 || be·stained || ċ-p-p-s || a-a || a-a || iv ||  || 
+|-
+| tgerbeb || vblex || quad || 2 || be·rolled || g-r-b-b || e-e || e-e || iv ||  || 
 |}

@@ -206,9 +206,10 @@ def irregular_forms (stem): #{
 		forms['imp.p2.mf.pl'] = irreg_consonant_forms('għedu', 'għedu', '-', 'ek');
 		forms['imp.p2.mf.pl'] += irreg_consonant_forms('għidu', 'għidu', '-', 'ek');
 
-#		forms['pp.m.sg'] = [('mogħti', '-', '-')] ;
-#		forms['pp.f.sg'] = [('mogħtija', '-', '-')] ;
-#		forms['pp.mf.pl'] = [('mogħtijin', '-', '-')] ;
+		# also mequl/moqul?
+		forms['pp.m.sg'] = [('maqul', '-', '-')] ;
+		forms['pp.f.sg'] = [('maqula', '-', '-')] ;
+		forms['pp.mf.pl'] = [('maqulin', '-', '-')] ;
 	#}
 
 	elif stem == 'ġie' : #{

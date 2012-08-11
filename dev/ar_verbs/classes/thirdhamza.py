@@ -1018,37 +1018,43 @@ def main(stem): #{
 	if stem['theme'] == '1' : #{
 		forms.update(thirdhamza_patt1_past(stem['root'], stem['vowels_perf'], stem['trans']));
 		forms.update(thirdhamza_patt1_pres(stem['root'], stem['vowels_impf'], stem['trans']));
-		forms.update(thirdhamza_patt1_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(thirdhamza_patt1_pp(stem['root']));
 		forms.update(thirdhamza_patt1_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '2' : #{
 		forms.update(thirdhamza_patt2_past(stem['root'], stem['trans']));
 		forms.update(thirdhamza_patt2_pres(stem['root'], stem['trans']));
-		forms.update(thirdhamza_patt2_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(thirdhamza_patt2_pp(stem['root']));
 		forms.update(thirdhamza_patt2_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '3' : #{
 		forms.update(thirdhamza_patt3_past(stem['root'], stem['trans']));
 		forms.update(thirdhamza_patt3_pres(stem['root'], stem['trans']));
-		forms.update(thirdhamza_patt3_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(thirdhamza_patt3_pp(stem['root']));
 		forms.update(thirdhamza_patt3_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '4' : #{
 		forms.update(thirdhamza_patt4_past(stem['root'], stem['trans']));
 		forms.update(thirdhamza_patt4_pres(stem['root'], stem['trans']));
-		forms.update(thirdhamza_patt4_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(thirdhamza_patt4_pp(stem['root']));
 		forms.update(thirdhamza_patt4_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '5' : #{
 		forms.update(thirdhamza_patt5_past(stem['root'], stem['trans']));
 		forms.update(thirdhamza_patt5_pres(stem['root'], stem['trans']));
-		forms.update(thirdhamza_patt5_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(thirdhamza_patt5_pp(stem['root']));
 		forms.update(thirdhamza_patt5_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '6' : #{
 		forms.update(thirdhamza_patt6_past(stem['root'], stem['trans']));
 		forms.update(thirdhamza_patt6_pres(stem['root'], stem['trans']));
-		forms.update(thirdhamza_patt6_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(thirdhamza_patt6_pp(stem['root']));
 		forms.update(thirdhamza_patt6_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '7' : #{
@@ -1059,13 +1065,15 @@ def main(stem): #{
 	elif stem['theme'] == '8' : #{
 		forms.update(thirdhamza_patt8_past(stem['root'], stem['trans']));
 		forms.update(thirdhamza_patt8_pres(stem['root'], stem['trans']));
-		forms.update(thirdhamza_patt8_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(thirdhamza_patt8_pp(stem['root']));
 		forms.update(thirdhamza_patt8_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '10' : #{
 		forms.update(thirdhamza_patt10_past(stem['root'], stem['trans']));
 		forms.update(thirdhamza_patt10_pres(stem['root'], stem['trans']));
-		forms.update(thirdhamza_patt10_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(thirdhamza_patt10_pp(stem['root']));
 		forms.update(thirdhamza_patt10_pprs(stem['root']));
 	#}
 

@@ -400,8 +400,8 @@ def main(stem): #{
 
 		forms = quad_past(stem['root'], stem['vowel_perf'], stem['trans']);
 		forms.update(quad_pres(stem['root'], stem['vowel_perf'], stem['trans']));
-		if stem['trans'] == 'tv':
-			forms.update(quad_imp(stem['root'], stem['vowel_perf'], stem['trans']));
+#		if stem['trans'] == 'tv':
+		forms.update(quad_imp(stem['root'], stem['vowel_perf'], stem['trans']));
 		if stem['pp'] != '' : #{
 			forms.update(quad_pp(stem['root'], stem['vowel_perf'], stem['pp']));
 	#}
@@ -409,8 +409,8 @@ def main(stem): #{
 	elif stem['theme'] == '2' : #{
 		forms = quad_patt2_past(stem['root'], stem['vowel_perf'], stem['trans']);
 		forms.update(quad_patt2_pres(stem['root'], stem['vowel_perf'], stem['trans']));
-		if stem['trans'] == 'tv':
-			forms.update(quad_patt2_imp(stem['root'], stem['vowel_perf'], stem['trans']));
+#		if stem['trans'] == 'tv':
+		forms.update(quad_patt2_imp(stem['root'], stem['vowel_perf'], stem['trans']));
 		if stem['pp'] != '' : #{
 			forms.update(quad_patt2_pp(stem['root'], stem['vowel_perf'], stem['pp']));
 		#}

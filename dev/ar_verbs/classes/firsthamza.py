@@ -1566,7 +1566,8 @@ def main(stem): #{
 		forms.update(firsthamza_patt1_subjun(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt1_apocop(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt1_imp(stem['root'], stem['vowels_impf'], stem['trans']));
-		forms.update(firsthamza_patt1_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(firsthamza_patt1_pp(stem['root']));
 		forms.update(firsthamza_patt1_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '2' : #{
@@ -1575,7 +1576,8 @@ def main(stem): #{
 		forms.update(firsthamza_patt2_subjun(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt2_apocop(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt2_imp(stem['root'], stem['trans']));
-		forms.update(firsthamza_patt2_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(firsthamza_patt2_pp(stem['root']));
 		forms.update(firsthamza_patt2_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '3' : #{
@@ -1584,7 +1586,8 @@ def main(stem): #{
 		forms.update(firsthamza_patt3_subjun(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt3_apocop(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt3_imp(stem['root'], stem['trans']));
-		forms.update(firsthamza_patt3_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(firsthamza_patt3_pp(stem['root']));
 		forms.update(firsthamza_patt3_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '4' : #{
@@ -1593,7 +1596,8 @@ def main(stem): #{
 		forms.update(firsthamza_patt4_subjun(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt4_apocop(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt4_imp(stem['root'], stem['trans']));
-		forms.update(firsthamza_patt4_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(firsthamza_patt4_pp(stem['root']));
 		forms.update(firsthamza_patt4_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '5' : #{
@@ -1602,7 +1606,8 @@ def main(stem): #{
 		forms.update(firsthamza_patt5_subjun(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt5_apocop(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt5_imp(stem['root'], stem['trans']));
-		forms.update(firsthamza_patt5_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(firsthamza_patt5_pp(stem['root']));
 		forms.update(firsthamza_patt5_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '6' : #{
@@ -1611,7 +1616,8 @@ def main(stem): #{
 		forms.update(firsthamza_patt6_subjun(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt6_apocop(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt6_imp(stem['root'], stem['trans']));
-		forms.update(firsthamza_patt6_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(firsthamza_patt6_pp(stem['root']));
 		forms.update(firsthamza_patt6_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '8' : #{
@@ -1620,7 +1626,8 @@ def main(stem): #{
 		forms.update(firsthamza_patt8_subjun(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt8_apocop(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt8_imp(stem['root'], stem['trans']));
-		forms.update(firsthamza_patt8_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(firsthamza_patt8_pp(stem['root']));
 		forms.update(firsthamza_patt8_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '10' : #{
@@ -1629,7 +1636,8 @@ def main(stem): #{
 		forms.update(firsthamza_patt10_subjun(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt10_apocop(stem['root'], stem['trans']));
 		forms.update(firsthamza_patt10_imp(stem['root'], stem['trans']));
-		forms.update(firsthamza_patt10_pp(stem['root']));
+                if stem['trans'] == 'tv':
+			forms.update(firsthamza_patt10_pp(stem['root']));
 		forms.update(firsthamza_patt10_pprs(stem['root']));
 	#}
 

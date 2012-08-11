@@ -31,11 +31,11 @@
 |-
 | ipprova || vblex || loan || double_cons || try || pprov ||  || a || tv ||
 |-
-| esperjenza || vblex || loan || first_vowel || experience || esperjenz ||  || a || tv ||
+| esperjenza || vblex || loan || first_vowel || experience || esperjenz ||  || a || tv || esperjenzat
 |-
 | iddeċida || vblex || loan || double_cons || decide || ddeċid ||  || i || tv || deċiż
 |-
-| ordna || vblex || loan || first_vowel || order || ordn ||  || a || tv || 
+| ordna || vblex || loan || first_vowel || order || ordn ||  || a || tv || ordnat
 |-
 | falla || vblex || loan || first_cons || fail || fall ||  || i || iv || fallut
 |-
@@ -102,5 +102,11 @@
 |-
 | iskopra || vblex || loan || two_cons || discover || skopr ||  || i || tv || skopert
 |-
-| irranġa || vblex || loan || double_cons || arrange || rranġa ||  || a || tv || ranġat
+| irranġa || vblex || loan || double_cons || arrange || rranġ ||  || a || tv || ranġat
+|-
+| organizza || vblex || loan || first_vowel || organize || organizz ||  || a || tv || organizzat
+|-
+| emenda || vblex || loan || first_vowel || amend || emend ||  || a || tv || emendat
+|-
+| ippressa || vblex || loan || double_cons || press || ppress ||  || a || tv || ppressat
 |}
