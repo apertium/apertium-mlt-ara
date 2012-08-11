@@ -1,3 +1,4 @@
+
 {| class="wikitable" 
  |-
  ! Stem
@@ -21,11 +22,11 @@
 |-
 | kiel || vblex || irregular || eat || tv
 |-
-| jaf || vblex || irregular || know || tv
-|-
 | wera || vblex || irregular || show || tv
 |-
 | ntwera || vblex || irregular || be٠shown || iv
+|-
+| emmen || vblex || irregular || believe || iv
 |-
 | kien || vaux || irregular || be || iv
 |-

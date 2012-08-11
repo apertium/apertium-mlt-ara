@@ -188,7 +188,7 @@
 |-
 | نفخ || vblex || sound || 1 || || blow || ن-ف-خ || a-a || a-u || tv ||
 |-
-| نزل || vblex || sound || 1 || || descent || ن-ز-ل || a-a || a-i || tv ||
+| نزل || vblex || sound || 1 || || descent || ن-ز-ل || a-a || a-i || iv ||
 |-
 | كبر || vblex || sound || 1 || || grow || ك-ب-ر || a-u || a-u || iv ||
 |-
@@ -264,7 +264,7 @@
 |-
 | فقد || vblex || sound || 1 || || lose٠weight || ف-ق-د || || || iv || الوزن
 |-
-| فتق || vblex || sound || 1 || || unseam || ف-ت-ق || || || iv ||
+| فتق || vblex || sound || 1 || || unseam || ف-ت-ق || || || tv ||
 |-
 | فكر || vblex || sound || 2 || || think || ف-ك-ر || || || iv || 
 |-
@@ -316,7 +316,7 @@
 |-
 | شارك || vblex || sound || 3 || || participate || ش-ر-ك || || || tv || 
 |-
-| نافس || vblex || sound || 3 || || compete || ن-ف-س || || || tv || 
+| نافس || vblex || sound || 3 || || compete || ن-ف-س || || || iv || 
 |-
 | هاجم || vblex || sound || 3 || || attack || ه-ج-م || || || tv || 
 |-
@@ -365,6 +365,8 @@
 | تضمن || vblex || sound || 5 || || include || ض-م-ن || || || tv || 
 |-
 | تمتع || vblex || sound || 5 || || rejoice || م-ت-ع || || || iv || 
+|-
+| تحدث || vblex || sound || 5 || || talk || ح-د-ث || || || iv || 
 |-
 | تراجع || vblex || sound || 6 || || recede || ر-ج-ع || || || iv ||
 |-
@@ -442,7 +444,7 @@
 |-
 | بث || vblex || doubled || 1 || || broadcast || ب-ث-ث || a-a || a-u || tv || 
 |-
-| ظل || vblex || doubled || 1 || || remain || ظ-ل-ل || a-i || a-a || tv || 
+| ظل || vblex || doubled || 1 || || remain || ظ-ل-ل || a-i || a-a || iv || 
 |-
 | رد || vblex || doubled || 1 || || react || ر-د-د || a-i || a-u || iv || الفعل 
 |-

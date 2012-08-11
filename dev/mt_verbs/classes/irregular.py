@@ -306,6 +306,10 @@ def irregular_forms (stem): #{
 		forms['imp.p2.mf.sg'] = irreg_consonant_forms('kul', 'kul', '-', 'ek');
 		forms['imp.p2.mf.pl'] = irreg_vowel_forms('kulu', 'kulu', '-');
 
+		forms['pp.m.sg'] = [('mikul', '-', '-')] ;
+		forms['pp.f.sg'] = [('mikula', '-', '-')] ;
+		forms['pp.mf.pl'] = [('mikulin', '-', '-')] ;
+
 	#}
 
 
@@ -329,9 +333,10 @@ def irregular_forms (stem): #{
 		forms['imp.p2.mf.sg'] = irreg_vowel_forms('uri', 'uri', '-');
 		forms['imp.p2.mf.pl'] = irreg_vowel_forms('uru', 'uru', '-');
 
-#		forms['pprs.m.sg'] = [('ġej', '-', '-')] ;
-#		forms['pprs.f.sg'] = [('ġejja', '-', '-')] ;
-#		forms['pprs.mf.pl'] = [('ġejjin', '-', '-')] ;
+		forms['pp.m.sg'] = [('muri', '-', '-')] ;
+		forms['pp.f.sg'] = [('murija', '-', '-')] ;
+		forms['pp.mf.pl'] = [('murijin', '-', '-')] ;
+
 	#}
 
 	# needs checking
@@ -368,13 +373,17 @@ def irregular_forms (stem): #{
 
 	elif stem == 'jaf' : #{
 
-# 		forms['past.p3.m.sg'] = irreg_consonant_forms('kiel', 'kiel', '-', 'ek');
-#		forms['past.p3.f.sg'] = irreg_consonant_forms('kielet', 'kielit', '-', 'ek');
-#		forms['past.p2.mf.sg'] = irreg_consonant_forms('kilt', 'kilt', '-', 'ek');	
-#		forms['past.p1.mf.sg'] = irreg_consonant_forms('kilt', 'kilt', '-', 'ek');
-#		forms['past.p3.mf.pl'] = irreg_vowel_forms('kielu', 'kielu', '-');
-#		forms['past.p2.mf.pl'] = irreg_vowel_forms('kiltu', 'kiltu', '-');
-#		forms['past.p1.mf.pl'] = irreg_vowel_forms('kilna', 'kilnie', '-');
+
+# past forms are not right, once generated should be corrected and not generated any more
+# (problems: kien jaf, kien jaf+ha, ma kien+x jaf, ma kien+x jaf+ha)
+
+ 		forms['past.p3.m.sg'] = irreg_consonant_forms('kien<b/>jaf', 'kien<b/>jaf', '-', 'ek');
+		forms['past.p3.f.sg'] = irreg_consonant_forms('kienet<b/>taf', 'kienet<b/>taf', '-', 'ek');
+		forms['past.p2.mf.sg'] = irreg_consonant_forms('kont<b/>taf', 'kont<b/>taf', '-', 'ek');	
+		forms['past.p1.mf.sg'] = irreg_consonant_forms('kont<b/>naf', 'kont<b/>naf', '-', 'ek');
+		forms['past.p3.mf.pl'] = irreg_vowel_forms('kienu<b/>jafu', 'kienu<b/>jafu', '-');
+		forms['past.p2.mf.pl'] = irreg_vowel_forms('kontu<b/>tafu', 'kontu<b/>tafu', '-');
+		forms['past.p1.mf.pl'] = irreg_vowel_forms('konna<b/>nafu', 'konna<b/>nafu', '-');
 
 		# 1 ^jiekolhom/*jiekolhom$  1 ^jiekolhielu/*jiekolhielu$
 		forms['pres.p3.m.sg'] = irreg_consonant_forms('jaf', 'jaf', '-', 'ek');
@@ -386,10 +395,54 @@ def irregular_forms (stem): #{
 		forms['pres.p2.mf.pl'] = irreg_vowel_forms('tafu', 'tafu', '-');
 		forms['pres.p1.mf.pl'] = irreg_vowel_forms('nafu', 'nafu', '-');
 
-#		forms['imp.p2.mf.sg'] = irreg_consonant_forms('kul', 'kul', '-', 'ek');
-#		forms['imp.p2.mf.pl'] = irreg_vowel_forms('kulu', 'kulu', '-');
+		forms['imp.p2.mf.sg'] = irreg_consonant_forms('af', 'af', '-', 'ek');
+		forms['imp.p2.mf.pl'] = irreg_vowel_forms('afu', 'afu', '-');
 
 	#}
+
+
+	elif stem == 'emmen' : #{
+		forms['past.p3.m.sg'] = [('emmen', '-', '-'),
+					 ('emmen', 'S__qtalt/x', '-')];
+		forms['past.p3.f.sg'] = [('emmnet', '-', '-'),
+					 ('emmnit', 'S__qtalt/x', '-')];
+		forms['past.p2.mf.sg'] =  [('emmint', '-', '-'),
+					('emmint', 'S__qtalt/x', '-')];	
+		forms['past.p1.mf.sg'] =  [('emmint', '-', '-'),
+					('emmint', 'S__qtalt/x', '-')];
+		forms['past.p3.mf.pl'] =  [('emmnu', '-', '-'),
+					('emmnu', 'S__qtalt/x', '-')];
+		forms['past.p2.mf.pl'] =  [('emmintu', '-', '-'),
+					('emminntu', 'S__qtalt/x', '-')];
+		forms['past.p1.mf.pl'] =  [('emminna', '-', '-'),
+					('emminnie', 'S__qtalt/x', '-')];
+
+		forms['pres.p3.m.sg'] = [('jemmen', '-', '-'),
+					 ('jemmen', 'S__qtalt/x', '-')];
+		forms['pres.p3.f.sg'] = [('temmen', '-', '-'),
+					 ('temmen', 'S__qtalt/x', '-')];
+		forms['pres.p2.mf.sg'] =  [('temmen', '-', '-'),
+					('temmen', 'S__qtalt/x', '-')];
+		forms['pres.p1.mf.sg'] =  [('nemmen', '-', '-'),
+					('nemmen', 'S__qtalt/x', '-')];
+		forms['pres.p3.mf.pl'] =  [('jemmnu', '-', '-'),
+					('jemmnu', 'S__qtalt/x', '-')];
+		forms['pres.p2.mf.pl'] =  [('temmnu', '-', '-'),
+					('temmnu', 'S__qtalt/x', '-')];
+		forms['pres.p1.mf.pl'] =  [('nemmnu', '-', '-'),
+					('nemmnu', 'S__qtalt/x', '-')];
+
+		forms['imp.p2.mf.sg'] = [('emmen', '-', '-'),
+				      ('emmen', 'S__qtalt/x', '-')];
+		forms['imp.p2.mf.pl'] = [('emmnu', '-', '-'),
+				      ('emmnu', 'S__qtalt/x', '-')];
+
+		forms['pp.m.sg'] = [('mwemmen', '-', '-')] ;
+		forms['pp.f.sg'] = [('mwemmna', '-', '-')] ;
+		forms['pp.mf.pl'] = [('mwemmnin', '-', '-')] ;
+
+	#}
+
 
 	elif stem == 'kien' : #{
 		forms['past.p3.m.sg'] = [('kien', '-', '-'),

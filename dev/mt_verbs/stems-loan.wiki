@@ -29,7 +29,7 @@
 |-
 | eżerċita || vblex || loan || first_vowel || exercise || eżerċit ||  || a || tv || eżerċitat
 |-
-| ipprova || vblex || loan || double_cons || try || pprov ||  || a || tv ||
+| ipprova || vblex || loan || double_cons || try || pprov ||  || a || tv || provat
 |-
 | esperjenza || vblex || loan || first_vowel || experience || esperjenz ||  || a || tv || esperjenzat
 |-
@@ -109,4 +109,8 @@
 | emenda || vblex || loan || first_vowel || amend || emend ||  || a || tv || emendat
 |-
 | ippressa || vblex || loan || double_cons || press || ppress ||  || a || tv || ppressat
+|-
+| kompla || vblex || loan || first_cons || continue,complete || kompl ||  || i || tv || komplut
+|-
+| rfina || vblex || loan || two_cons || refine || rfin ||  || a || tv || rfinat
 |}

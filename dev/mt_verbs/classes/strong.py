@@ -497,12 +497,12 @@ def strong_patt3a_pprs(root): #{
 
 	forms = {};
 	
-	forms['pprs.m.sg'] = [('m' + r[0] + 'ie' + r[1] + 'e' + r[2] , '-', '-')] ;
-	forms['pprs.m.sg'] = [('im' + r[0] + 'ie' + r[1] + 'e' + r[2] , '-', 'LR')] ;
-	forms['pprs.f.sg'] = [('m' + r[0] + 'ie' + r[1] + r[2] + 'a' , '-', '-')] ;
-	forms['pprs.f.sg'] = [('im' + r[0] + 'ie' + r[1] + r[2] + 'a' , '-', 'LR')] ;
-	forms['pprs.mf.pl'] = [('m' + r[0] + 'e' + r[1] + r[2] + 'in' , '-', '-')] ;
-	forms['pprs.mf.pl'] = [('im' + r[0] + 'e' + r[1] + r[2] + 'in' , '-', 'LR')] ;
+	forms['pp.m.sg'] = [('m' + r[0] + 'ie' + r[1] + 'e' + r[2] , '-', '-')] ;
+	forms['pp.m.sg'] += [('im' + r[0] + 'ie' + r[1] + 'e' + r[2] , '-', 'LR')] ;
+	forms['pp.f.sg'] = [('m' + r[0] + 'ie' + r[1] + r[2] + 'a' , '-', '-')] ;
+	forms['pp.f.sg'] += [('im' + r[0] + 'ie' + r[1] + r[2] + 'a' , '-', 'LR')] ;
+	forms['pp.mf.pl'] = [('m' + r[0] + 'e' + r[1] + r[2] + 'in' , '-', '-')] ;
+	forms['pp.mf.pl'] += [('im' + r[0] + 'e' + r[1] + r[2] + 'in' , '-', 'LR')] ;
 
 	return forms;
 #}

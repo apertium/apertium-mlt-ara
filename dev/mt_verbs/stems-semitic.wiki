@@ -59,7 +59,7 @@
 |-
 | taħan || vblex || strong || 1 || grind || t-ħ-n || a-a || i-a || tv ||  || mi
 |-
-| wasal || vblex || strong || 1 || arrive || w-s-l || a-a ||  || iv ||  || ma
+| wasal || vblex || strong || 1 || arrive || w-s-l || a-a || a-a || iv ||  || ma
 |-
 | daħal || vblex || strong || 1 || enter || d-ħ-l || a-a || i-o || tv ||  || mi
 |-
@@ -167,7 +167,7 @@
 |-
 | xeher || vblex || strong || 1 || wail || x-h-r || e-e || i-e || iv ||  || mi
 |-
-| xegħel || vblex || strong || 1 || switch·on || x-għ-l || e-e ||  || tv ||  || mi
+| xegħel || vblex || strong || 1 || switch·on || x-għ-l || e-e || i-e || tv ||  || mi
 |-
 | resaq || vblex || strong || 1 || approach || r-s-q || e-a || e-a || tv ||  || me
 |-
@@ -295,6 +295,8 @@
 |-
 | wieġeb || vblex || strong || 3a || answer || w-ġ-b || || || tv ||  || 
 |-
+| ħares || vblex || strong || 3b || look || ħ-r-s || || || iv ||  || m
+|-
 | twieġeb || vblex || strong || 6a || be٠answered || w-ġ-b || || || iv ||  || 
 |-
 | ttieħed || vblex || strong || 6a || be٠taken || t-ħ-d || || || iv ||  || mi 
@@ -399,6 +401,8 @@
 |-
 | ntlemaħ || vblex || strong || 7b || be٠perceived || l-m-ħ || e-a || e-a || iv ||  || 
 |-
+| ntmesaħ || vblex || strong || 7b || be٠wiped || m-s-ħ || e-a || e-a || iv ||  || 
+|-
 | ttiekel || vblex || strong || 8a || be٠eaten || t-k-l || ie-e || ie-e || iv ||  || m 
 |-
 | ntefaq || vblex || strong || 8a || be٠spent || n-f-q || e-a || e-a || iv ||  || 
@@ -441,13 +445,13 @@
 |-
 | tkisser || vblex || quad || 2 || be٠cut || k-s-s-r || i-e || i-e || iv ||  || 
 |-
-| issemma || vblex || quad || 2 || listen || s-m-m- || e-a || e-a || iv ||  || 
-|-
 | tfisser || vblex || quad || 2 || be٠explained || f-s-s-r || i-e || i-e || iv ||  ||
 |-
 | tgħażżeż || vblex || quad || 2 || be٠beloved || għ-ż-ż-ż || a-a || a-a || iv ||  ||
 |-
 | therreż || vblex || quad || 2 || be٠pounded || h-r-r-ż || e-e || e-e || iv ||  ||
+|-
+| issemma || vblex || quad || 2 || listen || s-m-m- || e-a || e-a || iv ||  || 
 |-
 | tqejjem || vblex || quad || 2 || be٠venerated || q-j-j-m || e-e || e-e || iv ||  ||
 |-
@@ -533,9 +537,9 @@
 |-
 | ntqal || vblex || hollow || 7b || be٠said || q-w-l || a-a ||  || iv ||  ||
 |-
-| żdied || vblex || hollow || 7c || be٠increased || ż-j-d || ie-a ||  || iv ||  ||
-|-
 | nstab || vblex || hollow || 8b || be٠found || s-j-b || a-a || a-a  || iv ||  ||
+|-
+| żdied || vblex || hollow || 8c || be٠increased || ż-j-d || ie-a ||  || iv ||  ||
 |-
 | qara || vblex || weak || 1 || read || q-r-j || a-a || a-a || tv ||  || mo
 |-
@@ -559,6 +563,8 @@
 |-
 | ħalla || vblex || weak || 2 || leave || ħ-l-j || a-a || a-a || tv ||  || m
 |-
+| semma || vblex || weak || 2 || name || s-m-j || e-a || e-a || tv ||  || m
+|-
 | tħalla || vblex || weak || 5 || be٠left || ħ-l-j || a-a || a-a || iv ||  ||
 |-
 | nbeda || vblex || weak || 7a || be٠commenced || b-d-j || e-a ||  || iv ||  ||
@@ -574,6 +580,8 @@
 | ntara || vblex || weak || 7a || be٠seen || t-r-j || a-a ||  || iv ||  ||
 |-
 | ntrema || vblex || weak || 7b || be٠thrown٠out || r-m-j || e-a ||  || iv ||  ||
+|-
+| mtela || vblex || weak || 8a || be٠filled || m-l-j || e-a ||  || iv ||  ||
 |-
 | staqsa || vblex || weak || 10 || ask || q-s-j || a-a || a-i || tv ||  ||
 |-
@@ -650,6 +658,8 @@
 | ngħadd || vblex || doubled || 7a || be٠counted || għ-d-d || a-a || || iv ||  ||
 |-
 | nħall || vblex || doubled || 7a || be٠untied || ħ-l-l || a-a || || iv ||  ||
+|-
+| ndamm || vblex || doubled || 7a || be٠strung || d-m-m || a-a || || iv ||  ||
 |-
 | ntradd || vblex || doubled || 7b || be٠restored || r-d-d || a-a || || iv ||  ||
 |-

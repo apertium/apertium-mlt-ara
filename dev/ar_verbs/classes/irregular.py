@@ -193,20 +193,20 @@ def irregular_forms(stem): #{
 		forms['actv.past.p1.mf.pl'] = [('جئنا', '-', '-'), ('جئينا', paradigm, '-')];
 
 
-		forms['pasv.past.p3.m.sg'] = [('جيء', '-', '-')];
-		forms['pasv.past.p3.f.sg'] = [('جيئت', '-', '-')];
-		forms['pasv.past.p2.m.sg'] = [('جئت', '-', '-')];
-		forms['pasv.past.p2.f.sg'] = [('جئت', '-', '-')];
-		forms['pasv.past.p1.mf.sg'] = [('جئت', '-', '-')];
+#		forms['pasv.past.p3.m.sg'] = [('جيء', '-', '-')];
+#		forms['pasv.past.p3.f.sg'] = [('جيئت', '-', '-')];
+#		forms['pasv.past.p2.m.sg'] = [('جئت', '-', '-')];
+#		forms['pasv.past.p2.f.sg'] = [('جئت', '-', '-')];
+#		forms['pasv.past.p1.mf.sg'] = [('جئت', '-', '-')];
 
-		forms['pasv.past.p3.m.du'] = [('جيءا', '-', '-')];
-		forms['pasv.past.p3.f.du'] = [('جيئتا', '-', '-')];
-		forms['pasv.past.p2.mf.du'] = [('جيئتما', '-', '-')];
+#		forms['pasv.past.p3.m.du'] = [('جيءا', '-', '-')];
+#		forms['pasv.past.p3.f.du'] = [('جيئتا', '-', '-')];
+#		forms['pasv.past.p2.mf.du'] = [('جيئتما', '-', '-')];
 
-		forms['pasv.past.p3.m.pl'] = [('جيئوا', '-', '-')];
-		forms['pasv.past.p3.f.pl'] = [('جئن', '-', '-')];
-		forms['pasv.past.p2.m.pl'] = [('جئتم', '-', '-')];
-		forms['pasv.past.p2.f.pl'] = [('جئتن', '-', '-')];
+#		forms['pasv.past.p3.m.pl'] = [('جيئوا', '-', '-')];
+#		forms['pasv.past.p3.f.pl'] = [('جئن', '-', '-')];
+#		forms['pasv.past.p2.m.pl'] = [('جئتم', '-', '-')];
+#		forms['pasv.past.p2.f.pl'] = [('جئتن', '-', '-')];
 		forms['pasv.past.p1.mf.pl'] = [('جئنا', '-', '-')];
 
 
@@ -227,21 +227,21 @@ def irregular_forms(stem): #{
 		forms['actv.pres.p1.mf.pl'] = [('نجيء', '-', '-'), ('نجيء', paradigm, '-')];
 
 
-		forms['pasv.pres.p3.m.sg'] = [('يجاء', '-', '-')];
-		forms['pasv.pres.p3.f.sg'] = [('تجاء', '-', '-')];
-		forms['pasv.pres.p2.m.sg'] = [('تجاء', '-', '-')];
-		forms['pasv.pres.p2.f.sg'] = [('تجاين', '-', '-')];
-		forms['pasv.pres.p1.mf.sg'] = [('أجاء', '-', '-')];
+#		forms['pasv.pres.p3.m.sg'] = [('يجاء', '-', '-')];
+#		forms['pasv.pres.p3.f.sg'] = [('تجاء', '-', '-')];
+#		forms['pasv.pres.p2.m.sg'] = [('تجاء', '-', '-')];
+#		forms['pasv.pres.p2.f.sg'] = [('تجاين', '-', '-')];
+#		forms['pasv.pres.p1.mf.sg'] = [('أجاء', '-', '-')];
 
-		forms['pasv.pres.p3.m.du'] = [('يجاءان', '-', '-')];
-		forms['pasv.pres.p3.f.du'] = [('تجاءان', '-', '-')];
-		forms['pasv.pres.p2.mf.du'] = [('تجاءان', '-', '-')];
+#		forms['pasv.pres.p3.m.du'] = [('يجاءان', '-', '-')];
+#		forms['pasv.pres.p3.f.du'] = [('تجاءان', '-', '-')];
+#		forms['pasv.pres.p2.mf.du'] = [('تجاءان', '-', '-')];
 
-		forms['pasv.pres.p3.m.pl'] = [('يجاؤون', '-', '-')];
-		forms['pasv.pres.p3.f.pl'] = [('يجأن', '-', '-')];
-		forms['pasv.pres.p2.m.pl'] = [('تجاؤون', '-', '-')];
-		forms['pasv.pres.p2.f.pl'] = [('تجان', '-', '-')];
-		forms['pasv.pres.p1.mf.pl'] = [('نجاء', '-', '-')];
+#		forms['pasv.pres.p3.m.pl'] = [('يجاؤون', '-', '-')];
+#		forms['pasv.pres.p3.f.pl'] = [('يجأن', '-', '-')];
+#		forms['pasv.pres.p2.m.pl'] = [('تجاؤون', '-', '-')];
+#		forms['pasv.pres.p2.f.pl'] = [('تجان', '-', '-')];
+#		forms['pasv.pres.p1.mf.pl'] = [('نجاء', '-', '-')];
 
 
 		forms['actv.subjun.p3.m.sg'] = [('يجيء', '-', '-'), ('يجيء', paradigm, '-')];
@@ -261,21 +261,21 @@ def irregular_forms(stem): #{
 		forms['actv.subjun.p1.mf.pl'] = [('نجيء', '-', '-'), ('نجيء', paradigm, '-')];
 
 
-		forms['pasv.subjun.p3.m.sg'] = [('يجاء', '-', '-')];
-		forms['pasv.subjun.p3.f.sg'] = [('تجاء', '-', '-')];
-		forms['pasv.subjun.p2.m.sg'] = [('تجاء', '-', '-')];
-		forms['pasv.subjun.p2.f.sg'] = [('تجائي', '-', '-')];
-		forms['pasv.subjun.p1.mf.sg'] = [('أجاء', '-', '-')];
+#		forms['pasv.subjun.p3.m.sg'] = [('يجاء', '-', '-')];
+#		forms['pasv.subjun.p3.f.sg'] = [('تجاء', '-', '-')];
+#		forms['pasv.subjun.p2.m.sg'] = [('تجاء', '-', '-')];
+#		forms['pasv.subjun.p2.f.sg'] = [('تجائي', '-', '-')];
+#		forms['pasv.subjun.p1.mf.sg'] = [('أجاء', '-', '-')];
 
-		forms['pasv.subjun.p3.m.du'] = [('يجاءا', '-', '-')];
-		forms['pasv.subjun.p3.f.du'] = [('تجاءا', '-', '-')];
-		forms['pasv.subjun.p2.mf.du'] = [('تجاءا', '-', '-')];
+#		forms['pasv.subjun.p3.m.du'] = [('يجاءا', '-', '-')];
+#		forms['pasv.subjun.p3.f.du'] = [('تجاءا', '-', '-')];
+#		forms['pasv.subjun.p2.mf.du'] = [('تجاءا', '-', '-')];
 
-		forms['pasv.subjun.p3.m.pl'] = [('يجاؤوا', '-', '-')];
-		forms['pasv.subjun.p3.f.pl'] = [('يجأن', '-', '-')];
-		forms['pasv.subjun.p2.m.pl'] = [('تجاؤوا', '-', '-')];
-		forms['pasv.subjun.p2.f.pl'] = [('تجان', '-', '-')];
-		forms['pasv.subjun.p1.mf.pl'] = [('نجاء', '-', '-')];
+#		forms['pasv.subjun.p3.m.pl'] = [('يجاؤوا', '-', '-')];
+#		forms['pasv.subjun.p3.f.pl'] = [('يجأن', '-', '-')];
+#		forms['pasv.subjun.p2.m.pl'] = [('تجاؤوا', '-', '-')];
+#		forms['pasv.subjun.p2.f.pl'] = [('تجان', '-', '-')];
+#		forms['pasv.subjun.p1.mf.pl'] = [('نجاء', '-', '-')];
 
 
 		forms['actv.apocop.p3.m.sg'] = [('يجئ', '-', '-'), ('يجئ', paradigm, '-')];
@@ -295,21 +295,21 @@ def irregular_forms(stem): #{
 		forms['actv.apocop.p1.mf.pl'] = [('نجئ', '-', '-'), ('نجئ', paradigm, '-')];
 
 
-		forms['pasv.apocop.p3.m.sg'] = [('يجأ', '-', '-')];
-		forms['pasv.apocop.p3.f.sg'] = [('تجأ', '-', '-')];
-		forms['pasv.apocop.p2.m.sg'] = [('تجأ', '-', '-')];
-		forms['pasv.apocop.p2.f.sg'] = [('تجئي', '-', '-')];
-		forms['pasv.apocop.p1.mf.sg'] = [('أجأ', '-', '-')];
+#		forms['pasv.apocop.p3.m.sg'] = [('يجأ', '-', '-')];
+#		forms['pasv.apocop.p3.f.sg'] = [('تجأ', '-', '-')];
+#		forms['pasv.apocop.p2.m.sg'] = [('تجأ', '-', '-')];
+#		forms['pasv.apocop.p2.f.sg'] = [('تجئي', '-', '-')];
+#		forms['pasv.apocop.p1.mf.sg'] = [('أجأ', '-', '-')];
 
-		forms['pasv.apocop.p3.m.du'] = [('يجاءا', '-', '-')];
-		forms['pasv.apocop.p3.f.du'] = [('تجاءا', '-', '-')];
-		forms['pasv.apocop.p2.mf.du'] = [('تجاءا', '-', '-')];
+#		forms['pasv.apocop.p3.m.du'] = [('يجاءا', '-', '-')];
+#		forms['pasv.apocop.p3.f.du'] = [('تجاءا', '-', '-')];
+#		forms['pasv.apocop.p2.mf.du'] = [('تجاءا', '-', '-')];
 
-		forms['pasv.apocop.p3.m.pl'] = [('يجاؤوا', '-', '-')];
-		forms['pasv.apocop.p3.f.pl'] = [('يجأن', '-', '-')];
-		forms['pasv.apocop.p2.m.pl'] = [('تجاؤوا', '-', '-')];
-		forms['pasv.apocop.p2.f.pl'] = [('تجان', '-', '-')];
-		forms['pasv.apocop.p1.mf.pl'] = [('نجأ', '-', '-')];
+#		forms['pasv.apocop.p3.m.pl'] = [('يجاؤوا', '-', '-')];
+#		forms['pasv.apocop.p3.f.pl'] = [('يجأن', '-', '-')];
+#		forms['pasv.apocop.p2.m.pl'] = [('تجاؤوا', '-', '-')];
+#		forms['pasv.apocop.p2.f.pl'] = [('تجان', '-', '-')];
+#		forms['pasv.apocop.p1.mf.pl'] = [('نجأ', '-', '-')];
 
 
 		forms['actv.imp.p2.m.sg'] = [('جئ', '-', '-'), ('جئ', paradigm, '-')];
@@ -327,12 +327,12 @@ def irregular_forms(stem): #{
 		forms['pprs.f.pl'] = [('جائيات', 'S__كلمات/', '-')] ;
 
 
-		forms['pp.m.sg'] = [('مجي', 'S__جز/ء', '-')] ;
-		forms['pp.f.sg'] = [('مجيئ', 'S__كلم/ة', '-')] ;
-		forms['pp.m.du'] = [('مجي', 'S__جز/ءان', '-')] ;
-		forms['pp.f.du'] = [('مجيئت', 'S__كلم/ة', '-')] ;
-		forms['pp.m.pl'] = [('مجيئ', 'S__مهندس/ون', '-')] ;
-		forms['pp.f.pl'] = [('مجيئات', 'S__كلمات/', '-')] ;
+#		forms['pp.m.sg'] = [('مجي', 'S__جز/ء', '-')] ;
+#		forms['pp.f.sg'] = [('مجيئ', 'S__كلم/ة', '-')] ;
+#		forms['pp.m.du'] = [('مجي', 'S__جز/ءان', '-')] ;
+#		forms['pp.f.du'] = [('مجيئت', 'S__كلم/ة', '-')] ;
+#		forms['pp.m.pl'] = [('مجيئ', 'S__مهندس/ون', '-')] ;
+#		forms['pp.f.pl'] = [('مجيئات', 'S__كلمات/', '-')] ;
 
 	#}
 

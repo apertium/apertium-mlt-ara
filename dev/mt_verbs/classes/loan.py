@@ -300,16 +300,15 @@ def loan_imp(stem, ixx, vowel_pres, tv): #{
 #	if subtype == 'double_cons' :  # or maybe both with and without 'i'?
 #		stem = 'i' + stem;
 #
-	if tv == 'tv': #{
-		if vowel_pres == 'i': #{
-			# jistabilixxa, but jistabilini
-			forms['imp.p2.mf.sg'] = loan_vowel_forms(stem + ixx + 'i', stem + 'i', '-', tv);
-			forms['imp.p2.mf.pl'] = loan_vowel_forms(stem + ixx + 'u', stem + 'u', '-', tv);
-		#}
-		else : #{   vowel_pres == a
-			forms['imp.p2.mf.sg'] = loan_vowel_forms(stem + ixx + 'a', stem + 'a', '-', tv);
-			forms['imp.p2.mf.pl'] = loan_vowel_forms(stem + ixx + 'aw', stem + 'aw', '-', tv);
-		#}
+#	if tv == 'tv': #{
+	if vowel_pres == 'i': #{
+		# jistabilixxa, but jistabilini
+		forms['imp.p2.mf.sg'] = loan_vowel_forms(stem + ixx + 'i', stem + 'i', '-', tv);
+		forms['imp.p2.mf.pl'] = loan_vowel_forms(stem + ixx + 'u', stem + 'u', '-', tv);
+	#}
+	else : #{   vowel_pres == a
+		forms['imp.p2.mf.sg'] = loan_vowel_forms(stem + ixx + 'a', stem + 'a', '-', tv);
+		forms['imp.p2.mf.pl'] = loan_vowel_forms(stem + ixx + 'aw', stem + 'aw', '-', tv);
 	#}
 
 	return forms;
