@@ -25,6 +25,10 @@
       <cat-item tags="vblex.*.pp.*"/>
     </def-cat>
 
+    <def-cat n="laysa">
+      <cat-item tags="vaux.*" lemma="ليس"/>
+    </def-cat>
+
     <def-cat n="num">
       <cat-item tags="num.*"/>
     </def-cat>
@@ -120,6 +124,54 @@
   <section-def-macros>
   </section-def-macros>
 -->
+
+
+
+  <section-def-lists>
+
+    <def-list n="no_pasv">
+      <list-item v="ried"/>
+      <list-item v="seta"/>
+      <list-item v="rċieva"/>
+      <list-item v="fixkel"/>
+      <list-item v="qarr"/>
+      <list-item v="qerr"/>
+      <list-item v="ammira"/>
+      <list-item v="organizza"/>
+      <list-item v="heġem"/>
+      <list-item v="ordna"/>
+      <list-item v="ivvjola"/>
+      <list-item v="ittraduċa"/>
+      <list-item v="inkluda"/>
+      <list-item v="ġeżż"/>
+      <list-item v="irranġa"/>
+      <list-item v="kellem"/>
+      <list-item v="rfina"/>
+      <list-item v="ipprojbixxa"/>
+      <list-item v="stimula"/>
+      <list-item v="esperjenza"/>
+      <list-item v="serva"/>
+      <list-item v="ippenetra"/>
+      <list-item v="ippromwova"/>
+      <list-item v="żar"/>
+      <list-item v="għan"/>
+      <list-item v="staqsa"/>
+      <list-item v="ipparteċipa"/>
+      <list-item v="inkoraġġixxa"/>
+      <list-item v="ikklassifika"/>
+      <list-item v="aġġastja"/>
+      <list-item v="esprima"/>
+      <list-item v="emenda"/>
+      <list-item v="għaraf"/>  <!-- ngħaraf -->
+      <list-item v="ippressa"/>
+      <list-item v="għalef"/> <!-- ngħalef/ntgħalef -->
+      <list-item v="ħasel"/>
+      <list-item v="petpet"/>
+    </def-list>
+
+  </section-def-lists>
+
+
 
   <section-rules>
 
@@ -267,6 +319,51 @@
     </rule>
 
 
+    <rule comment="laysa">  <!-- ليس translated to neg. pronouns -->
+      <pattern>
+         <pattern-item n="laysa"/>
+       </pattern>
+       <action>
+	 <choose>
+	   <when>
+	     <test><equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="du"/></equal></test>
+             <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></let> 
+             <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>
+	   <when>
+	     <test><equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p2"/></equal></test>
+             <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>
+	   <when>
+	     <test><equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></equal></test>
+             <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>
+         </choose> 
+         <out>
+           <lu>
+	     <lit v="ma"/>
+             <lit-tag v="adv"/>
+           </lu>
+	   <b/>
+	   <mlu>
+	     <lu>
+	       <lit v="free"/>
+               <lit-tag v="prn"/>
+               <clip pos="1" side="tl" part="pers"/>
+               <clip pos="1" side="tl" part="gen"/>
+               <clip pos="1" side="tl" part="nbr"/>
+             </lu>
+             <lu>
+	       <lit v="x"/>
+               <lit-tag v="neg"/>
+             </lu>
+	   </mlu>
+         </out>
+       </action>
+    </rule>
+
+
+
     <rule comment="verb">
       <pattern>
          <pattern-item n="verb"/>
@@ -284,15 +381,12 @@
 	   </when>
 	   <when>
 	     <test><equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p2"/></equal></test>
-             <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></let> 
              <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
 	   </when>
 	   <when>
-	     <test><and>
+	     <test>
 	       <equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
-	       <equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p3"/></equal>
-	     </and></test>
-             <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></let> 
+	     </test>
              <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
 	   </when>	
          </choose> 
@@ -323,10 +417,9 @@
              <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
 	   </when>
 	   <when>
-	     <test><and>
+	     <test>
 	       <equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
-	       <equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p3"/></equal>
-	     </and></test>
+	     </test>
              <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
 	   </when>	
          </choose> 
@@ -342,29 +435,48 @@
              <let><clip pos="2" side="tl" part="gen"/><lit-tag v="mf"/></let> 
 	   </when>
 	   <when>
-	     <test><and>
+	     <test>
 	       <equal><clip pos="2" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
-	       <equal><clip pos="2" side="tl" part="pers"/><lit-tag v="p3"/></equal>
-	     </and></test>
+	     </test>
              <let><clip pos="2" side="tl" part="gen"/><lit-tag v="mf"/></let> 
 	   </when>	
          </choose> 
 
-         <out>
-	   <mlu>
+	 <choose>
+	   <when>
+	     <test><equal><clip pos="1" side="tl" part="a_trans"/><lit-tag v="tv"/></equal></test>
+           <out>
+  	     <mlu>
+               <lu>
+                 <clip pos="1" side="tl" part="whole"/>
+               </lu>
+	       <lu>
+                 <lit v="u"/>
+	         <lit-tag v="prn"/>
+                 <clip pos="2" side="tl" part="pers"/>
+                 <clip pos="2" side="tl" part="gen"/>
+                 <clip pos="2" side="tl" part="nbr"/>
+               </lu>
+	     </mlu>
+           </out>
+	 </when>
+	 <otherwise>
+           <out>
              <lu>
                <clip pos="1" side="tl" part="whole"/>
              </lu>
-	     <lu>
-               <lit v="u"/>
-               <clip pos="2" side="tl" part="a_prn"/>
+	     <b/>
+             <lu>
+               <lit v="free"/>
+	       <lit-tag v="prn"/>
                <clip pos="2" side="tl" part="pers"/>
                <clip pos="2" side="tl" part="gen"/>
                <clip pos="2" side="tl" part="nbr"/>
              </lu>
-	   </mlu>
-         </out>
-       </action>
+           </out>
+	 </otherwise>
+       </choose>
+     </action>
     </rule>
 
 
@@ -386,10 +498,9 @@
              <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
 	   </when>
 	   <when>
-	     <test><and>
+	     <test>
 	       <equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
-	       <equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p3"/></equal>
-	     </and></test>
+	     </test>
              <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
 	   </when>	
          </choose> 
