@@ -589,6 +589,108 @@ def strong_patt3a_past(root, tv): #{
 
 
 ## ----------------------------------------------------------------------------##
+##  pattern 3b ħares, i/jħares
+## ----------------------------------------------------------------------------##
+
+
+def strong_patt3b_pp(root): #{
+	r = root.split('-'); # radicals
+
+	forms = {};
+	
+	forms['pp.m.sg'] = [('m' + r[0] + 'a' + r[1] + 'e' + r[2] , '-', '-')] ;
+	forms['pp.m.sg'] += [('im' + r[0] + 'a' + r[1] + 'e' + r[2] , '-', 'LR')] ;
+	forms['pp.f.sg'] = [('m' + r[0] + 'a' + r[1] + r[2] + 'a' , '-', '-')] ;
+	forms['pp.f.sg'] += [('im' + r[0] + 'a' + r[1] + r[2] + 'a' , '-', 'LR')] ;
+	forms['pp.mf.pl'] = [('m' + r[0] + 'a' + r[1] + r[2] + 'in' , '-', '-')] ;
+	forms['pp.mf.pl'] += [('im' + r[0] + 'a' + r[1] + r[2] + 'in' , '-', 'LR')] ;
+
+	return forms;
+#}
+
+
+# TODO: second vowel handling !!
+
+
+def strong_patt3b_pres(root, tv): #{
+	r = root.split('-'); # radicals
+
+	forms = {};
+	ok = 'ek';
+	lok = 'lek';
+
+	pres_sg = r[0] + 'a' + r[1] + 'e' + r[2]; 
+	pres_sg_long = r[0] + 'a' + r[1] + 'i' + r[2];
+	pres_sg_short = r[0] + 'a' + r[1] + r[2];
+	pres_pl = r[0] + 'a' + r[1] + r[2] + 'u'; 
+	pres_pl_short = r[0] + 'a' + r[1] + r[2] + 'u'; 
+
+	forms['pres.p3.m.sg'] = strong_pres_sg_forms('i' + pres_sg, 'i' + pres_sg_long, 'i' + pres_sg_short, '-', ok, lok, tv);
+	forms['pres.p3.m.sg'] += strong_pres_sg_forms('j' + pres_sg, 'j' + pres_sg_long, 'j' + pres_sg_short, 'LR', ok, lok, tv);
+
+	forms['pres.p3.f.sg'] = strong_pres_sg_forms('t' + pres_sg, 't' + pres_sg_long, 't' + pres_sg_short, '-', ok, lok, tv);
+	forms['pres.p2.mf.sg'] = strong_pres_sg_forms('t' + pres_sg, 't' + pres_sg_long, 't' + pres_sg_short, '-', ok, lok, tv);
+	forms['pres.p1.mf.sg'] = strong_pres_sg_forms('n' + pres_sg, 'n' + pres_sg_long, 'n' + pres_sg_short, '-', ok, lok, tv);
+
+
+	forms['pres.p3.mf.pl'] = strong_patt3_pres_pl_forms('i' + pres_pl, 'i' + pres_pl_short, '-', tv);
+	forms['pres.p3.mf.pl'] += strong_patt3_pres_pl_forms('j' + pres_pl, 'j' + pres_pl_short, 'LR', tv); 
+	forms['pres.p2.mf.pl'] = strong_patt3_pres_pl_forms('t' + pres_pl, 't' + pres_pl, '-', tv);
+	forms['pres.p1.mf.pl'] = strong_patt3_pres_pl_forms('n' + pres_pl, 'n' + pres_pl, '-', tv);
+
+	return forms;
+#}
+
+
+
+def strong_patt3b_imp(root, tv): #{
+	r = root.split('-'); # radicals
+	
+	forms = {};
+	ok = 'ek';
+	lok = 'lek';
+
+	pres_sg = r[0] + 'a' + r[1] + 'e' + r[2]; 
+	pres_sg_long = r[0] + 'a' + r[1] + 'i' + r[2];
+	pres_sg_short = r[0] + 'a' + r[1] + r[2];
+	pres_pl = r[0] + 'a' + r[1] + r[2] + 'u'; 
+	pres_pl_short = r[0] + 'a' + r[1] + r[2] + 'u'; 
+
+	forms['imp.p2.mf.sg'] = strong_pres_sg_forms(pres_sg, pres_sg_long, pres_sg_short, '-', ok, lok, tv);
+	forms['imp.p2.mf.pl'] = strong_patt3_pres_pl_forms(pres_pl, pres_pl_short, '-', tv);
+
+	return forms ; 
+#}
+
+
+
+def strong_patt3b_past(root, tv): #{
+	r = root.split('-'); # radicals
+
+	forms = {};
+
+	ok = 'ek';
+	lok = 'lek';
+
+	# I guess that the first vowel never disappears completely, as it's patt. 3
+
+	forms['past.p3.m.sg'] = strong_past_p3_sg_m_forms(r[0] + 'a' + r[1] + 'e' + r[2], r[0] + 'a' + r[1] + 'i' + r[2], r[0] + 'a' + r[1] + r[2], '', ok, 'lok', tv);
+	forms['past.p3.f.sg'] = strong_past_sg_forms(r[0] + 'a' + r[1] + r[2] + 'et', r[0] + 'a' + r[1] + r[2] + 'it', '-', 'ek', tv);
+
+	forms['past.p2.mf.sg'] = strong_past_sg_forms(r[0] + 'a' + r[1] + 'i' + r[2] + 't', r[0] + 'a' + r[1] + 'i' + r[2] + 't', '-', ok, tv);	
+	forms['past.p1.mf.sg'] = strong_past_sg_forms(r[0] + 'a' + r[1] + 'i' + r[2] + 't', r[0] + 'a' + r[1] + 'i' + r[2] + 't', '-', ok, tv);	
+
+	forms['past.p3.mf.pl'] = strong_past_pl_forms(r[0] + 'a' + r[1] + r[2] + 'u', r[0] + 'a' + r[1] + r[2] + 'u', '-', tv);
+
+	forms['past.p2.mf.pl'] = strong_past_pl_forms(r[0] + 'a' + r[1] + 'i' + r[2] + 'tu', r[0] + 'a' + r[1] + 'i' + r[2] + 'tu', '-', tv);	
+	forms['past.p1.mf.pl'] = strong_past_pl_forms(r[0] + 'a' + r[1] + 'i' + r[2] + 'na', r[0] + 'a' + r[1] + 'i' + r[2] + 'nie', '-', tv);	
+
+	return forms;
+#}
+
+
+
+## ----------------------------------------------------------------------------##
 ##  pattern 6a twieġeb, i/jtwieġeb
 ## ----------------------------------------------------------------------------##
 
@@ -1398,6 +1500,15 @@ def main(stem): #{
 		forms.update(strong_patt3a_pprs(stem['root']));
 		forms.update(strong_patt3a_pres(stem['root'], stem['trans']));
 		forms.update(strong_patt3a_imp(stem['root'], stem['trans']));
+
+	#}
+
+
+	if stem['theme'] == '3b' : #{
+		forms.update(strong_patt3b_past(stem['root'],  stem['trans']));
+		forms.update(strong_patt3b_pp(stem['root']));
+		forms.update(strong_patt3b_pres(stem['root'], stem['trans']));
+		forms.update(strong_patt3b_imp(stem['root'], stem['trans']));
 
 	#}
 

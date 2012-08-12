@@ -112,6 +112,11 @@
        <attr-item tags="p3"/>
     </def-attr>
 
+    <def-attr n="a_partic">
+       <attr-item tags="pprs"/>
+       <attr-item tags="pp"/>
+    </def-attr>
+
   </section-def-attrs>
 
 
@@ -167,7 +172,33 @@
       <list-item v="għalef"/> <!-- ngħalef/ntgħalef -->
       <list-item v="ħasel"/>
       <list-item v="petpet"/>
+      <list-item v="ipprova"/>
+      <list-item v="ipprojbixxa"/>
+      <list-item v="kanta"/>
+      <list-item v="infurza"/>
+      <list-item v="iddeċida"/>
+      <list-item v="qaras"/>
+      <list-item v="gideb"/>  <!-- ngideb? -->
+      <list-item v="kines"/>  <!-- nkines? -->
+      <list-item v="eżerċita"/>
+      <list-item v="irrappreżenta"/>
+      <list-item v="maxat"/>  <!-- ntmaxat/mtaxat -->
+      <list-item v="firex"/>  <!-- nfirex -->
+      <list-item v="nefaħ"/>  <!-- ntefaħ, ntnefaħ -->
+      <list-item v="farfar"/>  <!-- tfarfar -->
+      <list-item v="naqas"/>
+      <list-item v="iżviluppa"/>
+      <list-item v="aggredixxa"/>
+      <list-item v="ċanfar"/>
+      <list-item v="iddeskriva"/>
+      <list-item v="kompla"/>
     </def-list>
+
+
+    <def-list n="no_pp">
+      <list-item v="issemma"/>
+    </def-list>
+
 
   </section-def-lists>
 
@@ -257,6 +288,8 @@
     </rule>
 
 
+<!-- TODO: add list of mt verbs with pprs -->
+
     <rule comment="pprs">
       <pattern>
          <pattern-item n="pprs"/>
@@ -309,12 +342,31 @@
 	     <test><equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></equal></test>
              <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
 	   </when>
-         </choose> 
-         <out>
-           <lu>
-             <clip pos="1" side="tl" part="whole"/>
-           </lu>
-         </out>
+         </choose>
+
+	 <choose>
+	   <when>
+	     <test><in><clip pos="1" side="tl" part="lem"/><list n="no_pp"/></in></test>
+	     <out>
+  	       <lu>
+	         <clip pos="1" side="tl" part="lemh"/>
+                 <clip pos="1" side="tl" part="a_vrb"/>
+                 <lit-tag v="pres"/>
+                 <lit-tag v="p3"/>
+                 <clip pos="1" side="tl" part="gen"/>
+                 <clip pos="1" side="tl" part="nbr"/>
+                 <clip pos="1" side="tl" part="lemq"/>
+               </lu>
+	     </out>
+	   </when> 
+	   <otherwise>
+             <out>
+               <lu>
+                 <clip pos="1" side="tl" part="whole"/>
+               </lu>
+             </out>
+	   </otherwise>
+	 </choose>
        </action>
     </rule>
 

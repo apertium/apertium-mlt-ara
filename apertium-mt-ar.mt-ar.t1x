@@ -350,6 +350,8 @@
         <attr-item tags="ger"/>
 <!--        <attr-item tags="pprs"/> -->
         <attr-item tags="imp"/>
+        <attr-item tags="subjun"/>   <!-- ar only -->
+        <attr-item tags="apocop"/>   <!-- ar only -->
      </def-attr>
     <def-attr n="poss">
        <attr-item tags="px1sg"/>
@@ -1671,6 +1673,17 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+
+	 <choose>
+	   <when>
+	     <test><and>
+	       <equal><clip pos="1" side="tl" part="a_voice"/><lit-tag v="pasv"/></equal>
+	       <equal><clip pos="1" side="tl" part="temps"/><lit-tag v="imp"/></equal>
+	     </and></test>
+             <let><clip pos="1" side="tl" part="temps"/><lit-tag v="apocop"/></let> 
+	   </when> 
+	 </choose>
+
          <out>
   	   <chunk name="verb">
  	     <tags>
@@ -1713,6 +1726,21 @@
 	   </when>
 	 </choose>
          <call-macro n="set_gen_nbr_case"><with-param pos="1"/></call-macro>
+
+	 <choose>
+	   <when>
+	     <test><and>
+	       <equal><clip pos="1" side="tl" part="a_trans"/><lit-tag v="iv"/></equal>
+	       <equal><clip pos="1" side="tl" part="a_particip"/><lit-tag v="pp"/></equal>
+	     </and></test>
+             <let><clip pos="1" side="tl" part="a_particip"/><lit-tag v="pprs"/></let> 
+	   </when> 
+	   <when>
+	     <test><equal><clip pos="1" side="tl" part="a_voice"/><lit-tag v="pasv"/></equal></test>
+             <let><clip pos="1" side="tl" part="a_voice"/><lit-tag v="actv"/></let> 
+	   </when> 
+	 </choose>
+
          <out>
 	   <chunk name="part">
 	     <tags>
@@ -2759,6 +2787,16 @@
 	   </chunk></out>
 	 </when>
 	 <otherwise>
+  	   <choose>
+	     <when>
+	       <test><and>
+	         <equal><clip pos="1" side="tl" part="a_voice"/><lit-tag v="pasv"/></equal>
+	         <equal><clip pos="1" side="tl" part="temps"/><lit-tag v="imp"/></equal>
+	       </and></test>
+               <let><clip pos="1" side="tl" part="temps"/><lit-tag v="apocop"/></let> 
+	     </when> 
+	   </choose>
+
            <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
   	     <lu>
                <clip pos="1" side="tl" part="lemh"/>
@@ -2794,6 +2832,17 @@
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
          <call-macro n="set_prn_suff_gen"><with-param pos="2"/></call-macro>
+
+	 <choose>
+	   <when>
+	     <test><and>
+	       <equal><clip pos="1" side="tl" part="a_voice"/><lit-tag v="pasv"/></equal>
+	       <equal><clip pos="1" side="tl" part="temps"/><lit-tag v="imp"/></equal>
+	     </and></test>
+             <let><clip pos="1" side="tl" part="temps"/><lit-tag v="apocop"/></let> 
+	   </when> 
+	 </choose>
+
          <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -2880,6 +2929,17 @@
 	     </chunk></out>
   	   </when>
   	   <otherwise>
+
+  	   <choose>
+	     <when>
+	       <test><and>
+	         <equal><clip pos="1" side="tl" part="a_voice"/><lit-tag v="pasv"/></equal>
+	         <equal><clip pos="1" side="tl" part="temps"/><lit-tag v="imp"/></equal> 
+	       </and></test>
+               <let><clip pos="1" side="tl" part="temps"/><lit-tag v="apocop"/></let> 
+	      </when> 
+	   </choose>
+
            <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
   	     <lu>
                <clip pos="1" side="tl" part="lemh"/>

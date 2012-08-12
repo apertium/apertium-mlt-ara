@@ -94,7 +94,7 @@
 
    <pardefs>
 
-     <!-- well, some mt nouns are used in du as well -->
+     <!-- well, some mt nouns - and numerals! - are used in du as well -->
      <pardef n="nbr_nocase_nom_gen_acc">
        <e r="LR"><p><l><s n="sg"/></l><r><s n="sg"/><s n="CD"/></r></p></e>
        <e r="LR"><p><l><s n="du"/></l><r><s n="du"/><s n="CD"/></r></p></e>
@@ -463,8 +463,8 @@
 
 
 <!-- 1..10 -->
-<e>       <p><l>wieħed<s n="num"/></l>      <r>واحد<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
-<e r="LR"><p><l>waħda<s n="num"/></l>       <r>واحدة<s n="num"/></r></p><par n="mf_sp_m_f_sp"/></e>
+<e>       <p><l>wieħed<s n="num"/><s n="m"/><s n="sg"/></l>      <r>واحد<s n="num"/><s n="m"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e><p><l>wieħed<s n="num"/><s n="f"/><s n="sg"/></l>       <r>واحد<s n="num"/><s n="f"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
 <e>       <p><l>tnejn<s n="num"/></l>       <r>اثنان<s n="num"/></r></p><par n="mf_sp_m_f_sp"/></e>
 <e>       <p><l>tli<s n="num"/></l>         <r>ثلاثة<s n="num"/></r></p><par n="mf_sp_m_f_sp"/></e>
 <e>       <p><l>erb<s n="num"/></l>      <r>أربعة<s n="num"/></r></p><par n="mf_sp_m_f_sp"/></e>
@@ -497,14 +497,12 @@
 <e>       <p><l>disgħin<s n="num"/><s n="mf"/><s n="sp"/></l><r>تسعون<s n="num"/><s n="mf"/><s n="sp"/></r></p><par n="nocase_nom_gen_acc"/></e>
 
 <!-- 100, 200, 1000, 2000 -->
-<e>       <p><l>mija<s n="num"/></l>        <r>مئة<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
-<e>       <p><l>mitejn<s n="num"/></l>      <r>مئتان<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
-<e>       <p><l>elf<s n="num"/></l>         <r>ألف<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
-<e>       <p><l>elfejn<s n="num"/></l>      <r>ألفان<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e>       <p><l>mija<s n="num"/><s n="mf"/></l>        <r>مئة<s n="num"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+<e>       <p><l>elf<s n="num"/><s n="mf"/></l>         <r>ألف<s n="num"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
 
-<e>       <p><l>miljun<s n="num"/></l><r>مليون<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
-<e>       <p><l>biljun<s n="num"/></l><r>بليون<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
-<e>       <p><l>triljun<s n="num"/></l><r>تريليون<s n="num"/></r></p><par n="nocase_nom_gen_acc"/></e>
+<e>       <p><l>miljun<s n="num"/><s n="mf"/></l><r>مليون<s n="num"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+<e>       <p><l>biljun<s n="num"/><s n="mf"/></l><r>بليون<s n="num"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+<e>       <p><l>triljun<s n="num"/><s n="mf"/></l><r>تريليون<s n="num"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
 
 <!-- one pair, two pairs? -->
 <!--<e>       <p><l>żewġ<s n="num"/></l>        <r>זוג<s n="num"/></r></p></e>--><!-- TODO -->
@@ -6848,7 +6846,7 @@
      <e r="LR"><p><l>spiċċa<s n="vblex"/><s n="tv"/></l><r>أنهى<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>għadd<s n="vblex"/><s n="tv"/></l><r>عد<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ngħadd<s n="vblex"/><s n="iv"/></l><r>عد<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
-     <e><p><l>ħares<s n="vblex"/><s n="TD"/></l><r>نظر<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
+     <e><p><l>ħares<s n="vblex"/><s n="iv"/></l><r>نظر<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>mar<s n="vblex"/><s n="tv"/></l><r>ذهب<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>raqad<s n="vblex"/><s n="iv"/></l><r>نام<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e c="  0"><p><l>ġara<s n="vblex"/><s n="iv"/></l><r>جرى<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>

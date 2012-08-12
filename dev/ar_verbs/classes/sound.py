@@ -750,7 +750,7 @@ def sound_patt3_imp(root, tv): #{
 def sound_patt3_pprs(root): #{
 	r = root.split('-'); # radicals
 
-	return sound_pp('م' + r[0] + 'ا' + r[1] + r[2], '-');
+	return sound_pprs('م' + r[0] + 'ا' + r[1] + r[2], '-');
 #}
 
 

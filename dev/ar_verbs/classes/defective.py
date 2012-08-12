@@ -801,6 +801,8 @@ def defective_patt1_impf(root, subtype, tv): #{
 
 	if (tv == 'tv') :
 		forms.update(defective_pres_pasv(base));
+		forms.update(defective_subjun_pasv(base));
+		forms.update(defective_apocop_pasv(base));
 
 	return forms;
 #}
@@ -857,9 +859,11 @@ def defective_patt2_impf(root, tv): #{
 	forms.update(defective_apocop_y_actv(base, tv));
 	forms.update(defective_imp_y(base, tv));
 
-
-	if (tv == 'tv') :
+	if (tv == 'tv') : #{
 		forms.update(defective_pres_pasv(base));
+		forms.update(defective_subjun_pasv(base));
+		forms.update(defective_apocop_pasv(base));
+	#}
 
 	return forms;
 #}
@@ -912,6 +916,8 @@ def defective_patt3_impf(root, tv): #{
 
 	if (tv == 'tv') : #{
 		forms.update(defective_pres_pasv(base));
+		forms.update(defective_subjun_pasv(base));
+		forms.update(defective_apocop_pasv(base));
 	#}
 
 	return forms;
@@ -963,6 +969,8 @@ def defective_patt4_impf(root, tv): #{
 
 	if (tv == 'tv') : #{
 		forms.update(defective_pres_pasv(base));
+		forms.update(defective_subjun_pasv(base));
+		forms.update(defective_apocop_pasv(base));
 	#}
 
 	return forms;
@@ -1014,6 +1022,8 @@ def defective_patt5_impf(root, tv): #{
 
 	if (tv == 'tv') : #{
 		forms.update(defective_pres_pasv(base));
+		forms.update(defective_subjun_pasv(base));
+		forms.update(defective_apocop_pasv(base));
 	#}
 
 	return forms;
@@ -1067,6 +1077,8 @@ def defective_patt6_impf(root, tv): #{
 
 	if (tv == 'tv') : #{
 		forms.update(defective_pres_pasv(base));
+		forms.update(defective_subjun_pasv(base));
+		forms.update(defective_apocop_pasv(base));
 	#}
 
 	return forms;
@@ -1171,6 +1183,8 @@ def defective_patt8_impf(root, tv): #{
 
 	if (tv == 'tv') : #{
 		forms.update(defective_pres_pasv(base));
+		forms.update(defective_subjun_pasv(base));
+		forms.update(defective_apocop_pasv(base));
 	#}
 
 	return forms;
@@ -1243,6 +1257,8 @@ def defective_patt10_impf(root, tv): #{
 
 	if (tv == 'tv') : #{
 		forms.update(defective_pres_pasv(base));
+		forms.update(defective_subjun_pasv(base));
+		forms.update(defective_apocop_pasv(base));
 	#}
 
 	return forms;
@@ -1344,7 +1360,8 @@ def main(stem): #{
 	elif stem['theme'] == '1' : #{
 		forms.update(defective_patt1_past(stem['root'], stem['subtype'], stem['trans']));
 		forms.update(defective_patt1_impf(stem['root'], stem['subtype'], stem['trans']));
-		if stem['trans'] == 'tv':
+		if stem['trans'] 
+== 'tv':
 			forms.update(defective_patt1_pp(stem['root']));
 		forms.update(defective_patt1_pprs(stem['root']));
 	#}

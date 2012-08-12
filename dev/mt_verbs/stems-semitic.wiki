@@ -469,6 +469,8 @@
 |-
 | trassas || vblex || quad || 2 || be٠squeezed || r-s-s-s || a-a || a-a || iv ||  || 
 |-
+| tfakkar || vblex || quad || 2 || be٠commemorated || f-k-k-r || a-a || a-a || iv ||  ||
+|-
 | dar || vblex || hollow || 1 || turn || d-w-r || a-a ||  || iv ||  || mi
 |-
 | sar || vblex || hollow || 1 || occur || s-j-r || a-a ||  || iv ||  || mi
