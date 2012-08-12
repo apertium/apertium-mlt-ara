@@ -37,6 +37,10 @@
       <cat-item tags="det.*"/>
     </def-cat>
 
+    <def-cat n="prn">
+      <cat-item tags="prn.*"/>
+    </def-cat>
+
     <def-cat n="pr">
       <cat-item tags="pr"/>
       <cat-item tags="pr.*"/>
@@ -87,13 +91,16 @@
       <attr-item tags="px1pl"/>
       <attr-item tags="px2sg_m"/>
       <attr-item tags="px2sg_f"/>
+      <attr-item tags="px2sg"/>    <!-- mt -->
       <attr-item tags="px2pl_m"/>
       <attr-item tags="px2pl_f"/>
+      <attr-item tags="px2pl"/>    <!-- mt -->
       <attr-item tags="px2du"/>
       <attr-item tags="px3sg_m"/>
       <attr-item tags="px3sg_f"/>
       <attr-item tags="px3pl_m"/>
       <attr-item tags="px3pl_f"/>
+      <attr-item tags="px3pl"/>    <!-- mt -->
       <attr-item tags="px3du"/>
     </def-attr>
 
@@ -124,11 +131,6 @@
     <def-var n="numero"/>
   </section-def-vars>
 
-
-<!--
-  <section-def-macros>
-  </section-def-macros>
--->
 
 
 
@@ -200,7 +202,59 @@
     </def-list>
 
 
+    <def-list n="prn_with_suff">
+      <list-item v="wieħed"/>
+      <list-item v="nifs"/>
+    </def-list>
+
+
   </section-def-lists>
+
+
+
+
+  <section-def-macros>
+
+    <def-macro n="set_px" npar="1">
+      <choose>
+	<when> 
+	  <test><equal><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px2sg_m"/></equal></test>
+	  <let><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px2sg"/></let>
+	</when>
+	<when> 
+	  <test><equal><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px2sg_f"/></equal></test>
+	  <let><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px2sg"/></let>
+	</when>
+	<when> 
+	  <test><equal><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px2du"/></equal></test>
+	  <let><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px2pl"/></let>
+	</when>
+	<when> 
+	  <test><equal><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px2pl_m"/></equal></test>
+	  <let><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px2pl"/></let>
+	</when>
+	<when> 
+	  <test><equal><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px2pl_f"/></equal></test>
+	  <let><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px2pl"/></let>
+	</when>
+	<when> 
+	  <test><equal><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px3du"/></equal></test>
+	  <let><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px3pl"/></let>
+	</when>
+	<when> 
+	  <test><equal><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px3pl_m"/></equal></test>
+	  <let><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px3pl"/></let>
+	</when>
+	<when> 
+	  <test><equal><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px3pl_f"/></equal></test>
+	  <let><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px3pl"/></let>
+	</when>
+       </choose> 
+    </def-macro>
+
+
+  </section-def-macros>
+
 
 
 
@@ -286,6 +340,39 @@
          </out>
        </action>
     </rule>
+
+
+    <rule comment="prn">
+      <pattern>
+         <pattern-item n="prn"/>
+       </pattern>
+       <action>
+         <let><clip pos="1" side="tl" part="a_cas"/><lit v=""/></let> 
+         <let><clip pos="1" side="tl" part="a_stat"/><lit v=""/></let>
+	 <choose>
+	   <when>
+	     <test><equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="du"/></equal></test>
+             <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></let> 
+             <let><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></let> 
+	   </when>
+	 </choose>
+	 <choose>
+	   <when>
+	     <test><in><clip pos="1" side="tl" part="lem"/><list n="prn_with_suff"/></in></test>
+             <call-macro n="set_px"><with-param pos="1"/></call-macro>
+	   </when>
+	   <otherwise> <!-- freeprn? -->
+             <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let>
+	   </otherwise>    
+	 </choose>
+         <out>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+         </out>
+       </action>
+    </rule>
+
 
 
 <!-- TODO: add list of mt verbs with pprs -->

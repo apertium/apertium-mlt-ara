@@ -1360,8 +1360,7 @@ def main(stem): #{
 	elif stem['theme'] == '1' : #{
 		forms.update(defective_patt1_past(stem['root'], stem['subtype'], stem['trans']));
 		forms.update(defective_patt1_impf(stem['root'], stem['subtype'], stem['trans']));
-		if stem['trans'] 
-== 'tv':
+		if stem['trans'] == 'tv':
 			forms.update(defective_patt1_pp(stem['root']));
 		forms.update(defective_patt1_pprs(stem['root']));
 	#}

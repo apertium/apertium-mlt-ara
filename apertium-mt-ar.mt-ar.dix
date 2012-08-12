@@ -355,6 +355,8 @@
      <e><p><l>flok<s n="pr"/></l><r>بدلا<b/>من<s n="pr"/></r></p></e>
      <e><p><l>ta'<b/>wara<s n="pr"/></l><r>بعد<s n="pr"/></r></p></e>
 
+
+
      <!-- SECTION: Pronouns -->
 
      <e><p><l>free<s n="prn"/><s n="p1"/><s n="mf"/></l><r>prpers<s n="prn"/><s n="p1"/><s n="mf"/></r></p></e>
@@ -366,8 +368,32 @@
      <e r="RL"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
 
 
+     <!-- paradigm -->
+
+     <e r="RL"><p><l>free<s n="prn"/><s n="p1"/><s n="mf"/></l><r>إيا<s n="prn"/><s n="p1"/><s n="mf"/></r></p></e>
+     <e  r="RL"><p><l>free<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>إيا<s n="prn"/><s n="p2"/><s n="m"/><s n="sg"/></r></p></e>
+     <e r="RL"><p><l>free<s n="prn"/><s n="p2"/><s n="mf"/><s n="sg"/></l><r>إيا<s n="prn"/><s n="p2"/><s n="f"/><s n="sg"/></r></p></e>
+     <e  r="RL"><p><l>free<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+     <e r="RL"><p><l>free<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+     <e r="RL"><p><l>free<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>إيا<s n="prn"/><s n="p2"/><s n="mf"/><s n="du"/></r></p></e>
+     <e r="RL"><p><l>free<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>إيا<s n="prn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+     <e r="RL"><p><l>free<s n="prn"/><s n="p2"/><s n="mf"/><s n="pl"/></l><r>إيا<s n="prn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>
+     <e r="RL"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="mf"/><s n="du"/></r></p></e>
+     <e r="RL"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+     <e r="RL"><p><l>free<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+
+
+     <!-- if no other rule applies, use free-standing direct object Arabic prn -->
+     <e r="LR"><p><l>u<s n="prn"/><s n="p1"/><s n="mf"/></l><r>إيا<s n="prn"/><s n="p1"/><s n="mf"/></r></p></e>
+     <e r="LR"><p><l>u<s n="prn"/><s n="p2"/></l><r>إيا<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f_nocase"/></e> 
+     <e r="LR"><p><l>u<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+     <e r="LR"><p><l>u<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+     <e r="LR"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
+
+
      <!-- no indirect object suffixes in Arabic, translate as
 	  preposition ل 'for' + pronominal suffix -->
+     <!-- hm, I think it should be simply removed: its prep (lil/ل) + suff. prns, on both sides -->
      <e><p><l>lu<s n="prn"/><s n="p1"/><s n="mf"/></l><r>ل<s n="pr"/><j/>ه<s n="prn"/><s n="p1"/><s n="mf"/></r></p></e>
      <e><p><l>lu<s n="prn"/><s n="p2"/></l><r>ل<s n="pr"/><j/>ه<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f_nocase"/></e> 
      <e><p><l>lu<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>ل<s n="pr"/><j/>ه<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
@@ -376,18 +402,6 @@
      <!-- no RL rules needed? will be translated simply as prep + prn --> 
 <!--     <e r="RL"><p><l>lu<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
      <e r="RL"><p><l>lu<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>prpers<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e> --> 
-
-     <!-- if no other rule applies, use free-standing direct object Arabic prn -->
-     <!-- TODO add Arabic dual -->
-     <e><p><l>u<s n="prn"/><s n="p1"/><s n="mf"/></l><r>إيا<s n="prn"/><s n="p1"/><s n="mf"/></r></p></e>
-     <e><p><l>u<s n="prn"/><s n="p2"/></l><r>إيا<s n="prn"/><s n="p2"/></r></p><par n="mf_m_f_nocase"/></e> 
-     <e><p><l>u<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-     <e><p><l>u<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-
-     <e r="LR"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
-     <!-- hm, what should be done with RL?? -->
-<!--     <e r="RL"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
-     <e r="RL"><p><l>u<s n="prn"/><s n="p3"/><s n="mf"/><s n="pl"/></l><r>إيا<s n="prn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e> -->
 
 
      <e><p><l>li<s n="rel"/><s n="an"/></l><r>الذي<s n="rel"/></r></p></e>
@@ -407,14 +421,14 @@
      <e><p><l>dak<b/>li<s n="prn"/><s n ="itg"/></l><r>هو<b/>الذي<s n="prn"/><s n ="itg"/></r></p></e> <!-- ??? -->
      <e><p><l>liema<s n="prn"/><s n ="itg"/><s n="mf"/><s n ="sp"/></l><r>أي<s n="prn"/><s n ="itg"/><s n="mf"/><s n ="sp"/></r></p></e>
      <e><p><l>min<s n="prn"/><s n ="itg"/><s n="mf"/><s n ="sp"/></l><r>من<s n="prn"/><s n ="itg"/><s n="mf"/><s n ="sp"/></r></p></e>
-     <e><p><l>nifs<s n="prn"/><s n ="ref"/></l><r>نفس<s n="prn"/><s n ="ref"/></r></p></e>
 
      <e><p><l>ieħor<s n="prn"/><s n="ind"/></l><r>آخر<s n="prn"/><s n="ind"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>kull<s n="prn"/><s n="ind"/></l><r>كل<s n="prn"/><s n="ind"/></r></p></e>
      <e><p><l>kemm<s n="prn"/><s n="ind"/></l><r>كما<s n="prn"/><s n="ind"/></r></p></e>
-     <e><p><l>bosta<s n="prn"/><s n="ind"/></l><r>كثير<s n="prn"/><s n="ind"/></r></p><par n="mf_sp_mf_sg_pl"/></e>
-     <e r="LR"><p><l>ħafna<s n="prn"/><s n="ind"/></l><r>كثير<s n="prn"/><s n="ind"/></r></p><par n="mf_sp_mf_sg_pl"/></e>
-     <e><p><l>diversi<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></l><r>كثير<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
+     <e><p><l>bosta<s n="prn"/><s n="ind"/><s n="mf"/><s n="sp"/></l><r>كثير<s n="prn"/><s n="ind"/><s n="mf"/><s n="sg"/></r></p></e>
+     <e><p><l>ħafna<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></l><r>كثير<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
+
+     <e r="LR"><p><l>diversi<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></l><r>كثير<s n="prn"/><s n="ind"/><s n="mf"/><s n="pl"/></r></p></e>
      <!-- not really sure whether we need that (basically it's dak + koll), maybe we do, why there is only m.sg form? -->
      <e><p><l>dak<b/>kollu<s n="prn"/><s n="ind"/></l><r>كل<b/>هذا<s n="prn"/><s n="ind"/></r></p></e>
      <e><p><l>kollox<s n="prn"/><s n="ind"/></l><r>كل<b/>شيء<s n="prn"/><s n="ind"/></r></p></e>
@@ -423,34 +437,36 @@
      <e><p><l>xi<b/>ħadd<s n="prn"/><s n="ind"/></l><r>شخص<b/>ما<s n="prn"/><s n="ind"/></r></p></e>
      <e><p><l>l-iktar<s n="prn"/><s n="ind"/></l><r>الأكثر<s n="prn"/><s n="ind"/></r></p></e>
      <!-- hm -->
-     <e><p><l>stess<s n="prn"/><s n="ref"/><s n="mf"/><s n="sg"/></l><r>نفس<s n="prn"/><s n="ref"/><s n="mf"/><s n="sg"/><s n="px3sg_m"/></r></p></e>
+     <e r="LR"><p><l>stess<s n="prn"/><s n="ref"/><s n="mf"/><s n="sg"/></l><r>نفس<s n="prn"/><s n="ref"/><s n="mf"/><s n="sg"/><s n="px3sg_m"/></r></p></e>
      <e><p><l>xulxin<s n="prn"/><s n="recip"/></l><r>بعض<b/>البعض<s n="prn"/><s n="recip"/></r></p></e>
 
+     <e><p><l>nifs<s n="prn"/><s n ="ref"/></l><r>نفس<s n="prn"/><s n ="ref"/></r></p></e>
      <!-- several things on both sides - both واحد and وحدي etc. -->
      <e><p><l>wieħed<s n="prn"/><s n="ind"/></l><r>واحد<s n="prn"/><s n="ind"/></r></p></e>
 
      <!-- SECTION: Determiners -->
 
-<!--     <e><p><l>l<s n="det"/><s n="def"/></l><r>ال<s n="det"/><s n="def"/></r></p></e> -->
+
      <e><p><l>l<s n="det"/><s n="def"/><s n="mf"/><s n="sp"/></l><r>ال<s n="det"/><s n="def"/></r></p></e>
      <e><p><l>bosta<s n="det"/><s n="qnt"/><s n="mf"/><s n="pl"/></l><r>كثير<b/>من<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
      <e r="LR"><p><l>ħafna<s n="det"/><s n="qnt"/><s n="mf"/><s n="pl"/></l><r>كثير<b/>من<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
+     <e r="RL"><p><l>ħafna<s n="det"/><s n="qnt"/><s n="mf"/><s n="pl"/></l><r>كثير<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
 
      <e><p><l>dan<s n="det"/><s n="dem"/></l><r>هذا<s n="det"/><s n="dem"/></r></p></e>
      <e><p><l>dak<s n="det"/><s n="dem"/></l><r>ذلك<s n="det"/><s n="dem"/></r></p></e>
 
-     <e><p><l>ieħor<s n="det"/><s n="ind"/></l><r>آخر<s n="det"/><s n="ind"/></r></p><par n="mf_pl_m_f_pl_nocase"/></e>
+     <e><p><l>ieħor<s n="det"/><s n="ind"/></l><r>آخر<s n="det"/><s n="ind"/></r></p><par n="mf_pl_m_f_pl"/></e>
 
      <e><p><l>koll<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>كل<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
-     <e><p><l>tant<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>بعض<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
-     <e><p><l>aktar<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>أكثر<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
+     <e r="LR"><p><l>tant<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>بعض<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
+     <e r="LR"><p><l>aktar<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>أكثر<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
      <e><p><l>iktar<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>أكثر<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
+     <e r="LR"><p><l>izjed<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>أكثر<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
      <e><p><l>anqas<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>أقل<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
-     <e><p><l>izjed<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></l><r>أقل<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
      <e><p><l>aħħar<s n="det"/><s n="ord"/><s n="mf"/><s n="sp"/></l><r>أخير<s n="det"/><s n="ord"/><s n="mf"/><s n="sp"/></r></p></e>
 
 <!-- hm, in fact maybe mt 'diversi' should also be 'qnt'; in ar: add <b/>من<s n="pr"/> ? -->
-     <e><p><l>diversi<s n="det"/><s n="ind"/><s n="mf"/><s n="pl"/></l><r>بعض<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
+     <e><p><l>diversi<s n="det"/><s n="ind"/><s n="mf"/><s n="pl"/></l><r>بعض<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e> <!-- maybe would be better to translate بعض as xi? -->
      <e><p><l>ebda<s n="det"/><s n="ind"/><s n="mf"/><s n="sp"/></l><r>ولا<s n="det"/><s n="ind"/><s n="mf"/><s n="sp"/></r></p></e>
      <e><p><l>ċertu<s n="det"/><s n="ind"/><s n="mf"/><s n="sp"/></l><r>ذات<s n="det"/><s n="ind"/><s n="mf"/><s n="sp"/></r></p></e>
      <e><p><l>kwalunkwe<s n="det"/><s n="ind"/><s n="mf"/><s n="sp"/></l><r>أي<s n="det"/><s n="ind"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -6671,6 +6687,8 @@
      <e r="RL"><p><l>ma<s n="adv"/></l><r>لم<s n="adv"/></r></p></e>
      <e slr="2" r="LR"><p><l>ma<s n="adv"/></l><r>لن<s n="adv"/></r></p></e>
      <e r="RL"><p><l>ma<s n="adv"/></l><r>لن<s n="adv"/></r></p></e>
+     <e slr="3" r="LR"><p><l>ma<s n="adv"/></l><r>ما<s n="adv"/></r></p></e>
+     <e r="RL"><p><l>ma<s n="adv"/></l><r>ما<s n="adv"/></r></p></e>
 
      <!-- miri (פנימה, בתוך, בפנים) -->
      <e><p><l>ġewwa<s n="adv"/></l><r>داخلا<s n="adv"/></r></p></e>
