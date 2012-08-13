@@ -55,7 +55,12 @@
   <section-def-attrs>
     <def-attr n="a_nom">
        <attr-item tags="n"/>
-       <attr-item tags="np"/>
+       <attr-item tags="n.acr"/>
+       <attr-item tags="np.ant"/>
+       <attr-item tags="np.cog"/>
+       <attr-item tags="np.top"/>
+       <attr-item tags="np.org"/>
+       <attr-item tags="np.al"/>
     </def-attr>
     <def-attr n="a_adj">
        <attr-item tags="adj"/>
@@ -269,17 +274,13 @@
          <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> 
 <!-- for now, should be tiegħ + suffix -->
          <out>
-           <lu>
-             <clip pos="1" side="tl" part="whole"/>
-           </lu>
-<!--	   <lu>
+	   <lu>
 	     <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_nom"/>
              <clip pos="1" side="tl" part="gen"/>
-             <clip pos="1" side="tl" part="a_cas"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="lemq"/>
-           </lu>  -->
+           </lu> 
          </out>
        </action>
     </rule>
