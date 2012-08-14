@@ -77,6 +77,7 @@ dev/testvoc-summary.ar-mt.txt -text
 dev/testvoc-summary.mt-ar.txt -text
 dev/testvoc.sh -text
 dev/trimmed-coverage.sh -text
+dev/waw-ambig.sh -text
 /lexchoicebil.xsl -text
 /modes.xml -text
 /mt-ar-unsupervised.make -text
