@@ -113,4 +113,12 @@
 | kompla || vblex || loan || first_cons || continue,complete || kompl ||  || i || tv || komplut
 |-
 | rfina || vblex || loan || two_cons || refine || rfin ||  || a || tv || rfinat
+|-
+| attenda || vblex || loan || first_vowel || attend || attend ||  || a || tv ||
+|-
+| irriproduċa || vblex || loan || double_cons || reproduce || rriproduċ ||  || i || tv || riprodott
+|-
+| ipproduċa || vblex || loan || double_cons || produce || pproduċ ||  || i || tv || prodott
+|-
+| esplora || vblex || loan || first_vowel || explore || esplor ||  || a || tv || esplorat
 |}

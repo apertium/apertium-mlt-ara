@@ -293,6 +293,10 @@
 |-
 | għaraf || vblex || strong || 1 || recognise || għ-r-f || a-a || a-a || tv ||  || ma
 |-
+| ħakem || vblex || strong || 1 || govern || ħ-k-m || a-e || a-e || tv ||  || ma
+|-
+| xebah || vblex || strong || 1 || resemble || x-b-h || e-a || i-a || tv ||  || mi
+|-
 | wieġeb || vblex || strong || 3a || answer || w-ġ-b || || || tv ||  || 
 |-
 | ħares || vblex || strong || 3b || look || ħ-r-s || || || iv ||  || m
@@ -381,6 +385,8 @@
 |-
 | nkiseb || vblex || strong || 7a || be٠acquired || k-s-b || i-e || i-e || iv ||  ||
 |-
+| ngħaqad || vblex || strong || 7a || be٠joined || għ-q-d || a-a || a-a || iv ||  ||
+|-
 | ntgħażel || vblex || strong || 7b || be٠chosen || għ-ż-l || a-e || a-e || iv ||  || 
 |-
 | ntbagħat || vblex || strong || 7b || be٠sent || b-għ-t || a-a || a-a || iv ||  || 
@@ -438,6 +444,10 @@
 | kellem || vblex || quad || 1 || speak || k-l-l-m || e-e || e-e || tv ||  || m
 |-
 | sejjaħ || vblex || quad || 1 || call || s-j-j-ħ || e-a || e-a || tv ||  || m
+|-
+| saħħar || vblex || quad || 1 || charm || s-ħ-ħ-r || a-a || a-a || tv ||  || m
+|-
+| għaqqad || vblex || quad || 1 || join || għ-q-q-d || a-a || a-a || tv ||  || m
 |-
 | tkellem || vblex || quad || 2 || speak || k-l-l-m || e-e || e-e || iv ||  || mi
 |-
