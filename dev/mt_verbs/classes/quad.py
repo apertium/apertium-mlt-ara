@@ -208,17 +208,20 @@ def quad_imp(root, vowels, tv): #{
 #}
 
 
+# check if all quad1/strong2 have pp and if prefix is always 'm' (and 'im')
+
 def quad_pp(root, vowels, pref): #{
 	r = root.split('-'); # radicals
 	v = vowels.split('-'); # vowels
 
-	# also mdardar after vowels??
-
 	forms = {};
 
-	forms['pp.m.sg'] = [(pref + r[0] + v[0] + r[1] + r[2] + v[1] + r[3], '-', '-')];	# imdardar
-	forms['pp.f.sg'] = [(pref + r[0] + v[0] + r[1] + r[2] + r[3] + 'a', '-', '-')];	# imdardra
-	forms['pp.mf.pl'] = [(pref + r[0] + v[0] + r[1] + r[2] + r[3] + 'in', '-', '-')];	# imdardrin
+	forms['pp.m.sg'] = [('m' + r[0] + v[0] + r[1] + r[2] + v[1] + r[3], '-', '-'),
+			    ('im' + r[0] + v[0] + r[1] + r[2] + v[1] + r[3], '-', 'LR')];	# (i)mdardar
+	forms['pp.f.sg'] = [('m' + r[0] + v[0] + r[1] + r[2] + r[3] + 'a', '-', '-'),
+			    ('im' + r[0] + v[0] + r[1] + r[2] + r[3] + 'a', '-', 'LR')];	# (i)mdardra
+	forms['pp.mf.pl'] = [('m' + r[0] + v[0] + r[1] + r[2] + r[3] + 'in', '-', '-'),
+			     ('im' + r[0] + v[0] + r[1] + r[2] + r[3] + 'in', '-', 'LR')];	# (i)mdardrin
 
 	return forms;
 #}

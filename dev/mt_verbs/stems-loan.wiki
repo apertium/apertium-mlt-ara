@@ -114,11 +114,23 @@
 |-
 | rfina || vblex || loan || two_cons || refine || rfin ||  || a || tv || rfinat
 |-
-| attenda || vblex || loan || first_vowel || attend || attend ||  || a || tv ||
+| attenda || vblex || loan || first_vowel || attend || attend ||  || i || tv || attendut
 |-
 | irriproduċa || vblex || loan || double_cons || reproduce || rriproduċ ||  || i || tv || riprodott
 |-
 | ipproduċa || vblex || loan || double_cons || produce || pproduċ ||  || i || tv || prodott
 |-
 | esplora || vblex || loan || first_vowel || explore || esplor ||  || a || tv || esplorat
+|-
+| eżista || vblex || loan || first_vowel || exist || eżist ||  || i || iv || eżistit
+|-
+| rnexxa || vblex || loan || two_cons || succeed || rnexx ||  || i || iv || rnexxut
+|-
+| sostna || vblex || loan || first_cons || sustain || sostn ||  || i || tv || sostnut
+|-
+| skorja || vblex || loan || two_cons || score٠a٠goal || skorj ||  || a || tv || skorjat
+|-
+| iċċelebra || vblex || loan || double_cons || celebrate || ċċelebr ||  || a || tv || ċelebrat
+|-
+| irrealizza || vblex || loan || double_cons || realise || rrealizz ||  || a || tv || realizzat
 |}

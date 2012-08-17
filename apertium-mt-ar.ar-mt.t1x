@@ -199,6 +199,13 @@
       <list-item v="ċanfar"/>
       <list-item v="iddeskriva"/>
       <list-item v="kompla"/>
+      <list-item v="attenda"/> <!-- no pp -->
+      <list-item v="xebaħ"/>
+      <list-item v="stenna"/>
+      <list-item v="esplora"/>
+      <list-item v="sostna"/>
+      <list-item v="skorja"/>
+      <list-item v="irrealizza"/>
     </def-list>
 
 

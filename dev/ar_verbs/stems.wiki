@@ -266,6 +266,16 @@
 |-
 | فتق || vblex || sound || 1 || || unseam || ف-ت-ق || || || tv ||
 |-
+| حضر || vblex || sound || 1 || || be٠present,attend || ح-ض-ر || || || tv ||
+|-
+| حكم || vblex || sound || 1 || || govern || ح-ك-م || || || tv ||
+|-
+| سحر || vblex || sound || 1 || || charm || س-ح-ر || || || tv ||
+|-
+| نجح || vblex || sound || 1 || || succeed || ن-ج-ح || || || iv ||
+|-
+| زعم || vblex || sound || 1 || || maintain,claim || ز-ع-م || || || tv ||
+|-
 | فكر || vblex || sound || 2 || || think || ف-ك-ر || || || iv || 
 |-
 | عبر || vblex || sound || 2 || || express || ع-ب-ر || || || tv || 
@@ -307,6 +317,8 @@
 | كدر || vblex || sound || 2 || || render٠turbid || ك-د-ر || || || tv || 
 |-
 | عرف٢ || vblex || sound || 2 || || inform,confess || ع-ر-ف || || || tv || 
+|-
+| سجل || vblex || sound || 2 || || register,score || س-ج-ل || || || tv || 
 |-
 | غادر || vblex || sound || 3 || || leave || غ-د-ر || || || tv || 
 |-
@@ -353,6 +365,12 @@
 | أزعج || vblex || sound || 4 || || annoy || ز-ع-ج || || || tv || 
 |-
 | أعجب || vblex || sound || 4 || || appeal || ع-ج-ب || || || tv || 
+|-
+| أنتج || vblex || sound || 4 || || produce || ن-ت-ج || || || tv || 
+|-
+| أشبه || vblex || sound || 4 || || ressemble || ش-ب-ه || || || tv || 
+|-
+| أدرك || vblex || sound || 4 || || realize || د-ر-ك || || || tv || 
 |-
 | تكلم || vblex || sound || 5 || || speak || ك-ل-م || || || iv || 
 |-
@@ -402,7 +420,13 @@
 |-
 | اعترف || vblex || sound || 8 || || confess || ع-ر-ف || || || tv || 
 |-
+| انتظر || vblex || sound || 8 || || wait || ن-ظ-ر || || || tv || 
+|-
+| احتفل || vblex || sound || 8 || || celebrate || ح-ف-ل || || || iv || 
+|-
 | استخدم || vblex || sound || 10 || || use || خ-د-م || || || tv || 
+|-
+| استكشف || vblex || sound || 10 || || explore || ك-ش-ف || || || tv || 
 |-
 | ترجم || vblex || quad || 1 || || translate || ت-ر-ج-م || || || tv || 
 |-
@@ -447,6 +471,8 @@
 | ظل || vblex || doubled || 1 || || remain || ظ-ل-ل || a-i || a-a || iv || 
 |-
 | رد || vblex || doubled || 1 || || react || ر-د-د || a-i || a-u || iv || الفعل 
+|-
+| مر || vblex || doubled || 1 || || pass || م-ر-ر || a-a || a-u || iv || 
 |-
 | بدد || vblex || doubled || 2 || || scatter || ب-د-د || || || tv || 
 |-
@@ -512,6 +538,8 @@
 |-
 | دام || vblex || hollow || 1 || و || last || د-و-م || || || iv ||
 |-
+| صاغ || vblex || hollow || 1 || و || form || ص-و-غ || || || tv ||
+|-
 | غير || vblex || hollow || 2 || || change || غ-ي-ر || || || tv || 
 |-
 | صوت || vblex || hollow || 2 || || vote || ص-و-ت || || || iv || 
@@ -568,6 +596,8 @@
 |-
 | سمى || vblex || defective || 2 || || name || س-م-ي || || || tv || 
 |-
+| غطى || vblex || defective || 2 || || cover || غ-ط-و || || || tv || 
+|-
 | أعطى || vblex || defective || 4 || || give || ع-ط-و || || || tv || 
 |-
 | أنهى || vblex || defective || 4 || || finish || ن-ه-ي || || || tv || 
@@ -575,6 +605,8 @@
 | أخفى || vblex || defective || 4 || || hide || خ-ف-ي || || || tv || 
 |-
 | تعافى || vblex || defective || 6 || || recover || ع-ف-و || || || iv || 
+|-
+| التقى || vblex || defective || 8 || || meet || ل-ق-ي || || || iv || 
 |-
 | رأى || vblex || irregular || 1 || || see || ر-ء-ي || || || tv || 
 |-
@@ -587,6 +619,8 @@
 | وصف || vblex || firstw || 1 || || describe || و-ص-ف || a-a || a-i || tv || 
 |-
 | وزن || vblex || firstw || 1 || || weigh || و-ز-ن || a-a || a-i || tv || 
+|-
+| وضع || vblex || firstw || 1 || || put || و-ض-ع || a-a || a-a || tv || 
 |-
 | وضح || vblex || firstw || 2 || || explain || و-ض-ح || || || tv || 
 |-
@@ -611,6 +645,8 @@
 | تألق || vblex || firsthamza || 5 || || shine || ء-ل-ق || || || iv || 
 |-
 | تألف || vblex || firsthamza || 5 || || consist || ء-ل-ف || || || iv || 
+|-
+| تأسس || vblex || firsthamza || 5 || || be٠founded || ء-س-س || || || iv || 
 |-
 | استأجر || vblex || firsthamza || 10 || || rent || ء-ج-ر || || || tv || 
 |-
