@@ -1434,8 +1434,8 @@
 -->
 
 
-<!-- add future tense here -->
-    <rule comment="rule 14: se verb">
+<!-- add future tense ('س' + pres); for now second form 'سوف ' + pres is ok -->
+<!--    <rule comment="rule 14: se verb">
        <pattern>
          <pattern-item n="se"/>
          <pattern-item n="vrb"/>
@@ -1461,7 +1461,7 @@
          </chunk></out>
        </action>
     </rule>
-
+-->
 
     <rule comment="rule 140: kellu ('to have') past">
        <pattern>

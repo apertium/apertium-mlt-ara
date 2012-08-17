@@ -25,10 +25,28 @@ awk -F'/' '{
 sub(/^\^/,"");
 for(i=2;i<NF;i++){
   gsub(/</,"<s n=\"", $i);
-  gsub(/>/, "\">",$i);
+  gsub(/>/, "\"/>",$i);
   gsub(/\+/,"<j/>",$i);
   print "<e c=\"waw-ambig\"><p><l>و"$1"</l><r>و<s n=\"cnjcoo\"/><j/>"$i"</r></p></e>"
 }
 }' |\
 # remove dupes, sort by <r>
 sort -u | sort -k2 -t 'r'
+
+
+### and fa-ambig. forms:
+
+lt-expand apertium-mt-ar.ar.dix |\
+grep '^ف' | sed 's/^ف//' | cut -f1 -d: |\
+lt-proc ar-mt.automorf.bin |grep -ve '/\*' -e '\^.*\^' |\
+awk -F'/' '{
+sub(/^\^/,"");
+for(i=2;i<NF;i++){
+  gsub(/</,"<s n=\"", $i);
+  gsub(/>/, "\"/>",$i);
+  gsub(/\+/,"<j/>",$i);
+  print "<e c=\"fa-ambig\"><p><l>ف"$1"</l><r>ف<s n=\"cnjcoo\"/><j/>"$i"</r></p></e>"
+}
+}' |\
+sort -u | sort -k2 -t 'r'
+
