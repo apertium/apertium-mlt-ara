@@ -13,6 +13,11 @@
       <cat-item tags="SV.*"/>
     </def-cat>
 
+    <def-cat n="kana">   <!-- كان وأخواتها: 'kana and her sisters', intransitive, but used with acc -->
+      <cat-item tags="SV" lemma="kana"/>
+      <cat-item tags="SV.*" lemma="kana"/>
+    </def-cat>
+
     <def-cat n="SP">
       <cat-item tags="SP"/>
       <cat-item tags="SP.*"/>
@@ -198,8 +203,17 @@
  	<pattern-item n="SN"/>
       </pattern>
       <action>
-        <call-macro n="set_last_n"><with-param pos="2"/></call-macro>
-        <call-macro n="verb_agreement"><with-param pos="1"/><with-param pos="2"/></call-macro>
+	<choose>
+	  <when>
+	    <test><and>
+	      <not><equal><clip pos="2" part="gen"/><lit-tag v="mf"/></equal></not>
+	      <not><equal><clip pos="2" part="gen"/><lit-tag v="GD"/></equal></not>
+	      <equal><clip pos="1" part="pers"/><lit-tag v="p3"/></equal>
+	    </and></test>
+            <call-macro n="set_last_n"><with-param pos="2"/></call-macro>
+            <call-macro n="verb_agreement"><with-param pos="1"/><with-param pos="2"/></call-macro>
+	  </when>
+	</choose>
         <out>
 	  <chunk>
 	    <clip pos="1" part="lem"/>
@@ -246,15 +260,26 @@
     </rule>
 
 
+   <!-- OYKOYN! cognomina are mf! -->
+
     <rule comment="REGLA: SN SV">
       <pattern>
  	<pattern-item n="SN"/>
  	<pattern-item n="SV"/>
       </pattern>
       <action>
-        <call-macro n="set_last_n"><with-param pos="1"/></call-macro>
-	<let><clip pos="2" part="gen"/><var n="last_gen"/></let>
-	<let><clip pos="2" part="nbr"/><var n="last_nbr"/></let>
+	<choose>
+	  <when>
+	    <test><and>
+	      <not><equal><clip pos="1" part="gen"/><lit-tag v="mf"/></equal></not>
+	      <not><equal><clip pos="1" part="gen"/><lit-tag v="GD"/></equal></not>
+	      <equal><clip pos="2" part="pers"/><lit-tag v="p3"/></equal>
+	    </and></test>
+            <call-macro n="set_last_n"><with-param pos="1"/></call-macro>
+	    <let><clip pos="2" part="gen"/><var n="last_gen"/></let>
+	    <let><clip pos="2" part="nbr"/><var n="last_nbr"/></let>
+	  </when>
+	</choose>
         <out>
 	  <chunk>
 	    <clip pos="1" part="lem"/>

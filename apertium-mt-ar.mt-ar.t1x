@@ -15,7 +15,7 @@
     </def-cat>
     <def-cat n="nom">
       <cat-item tags="n.*"/>
-      <cat-item tags="np.*"/>
+<!--      <cat-item tags="np.*"/>   --> 
     </def-cat>
     <def-cat n="numeral">
       <cat-item tags="num.*"/>
@@ -835,6 +835,10 @@
     </def-macro>
 
 
+
+    <!-- OYYYYYYYYKOYYYYYYYN! -->
+
+
     <def-macro n="modify_verb_and_genero" npar="1" c="Guess verb gender, no gender for p1">
 
       <choose> <!-- default gender set to m -->
@@ -1023,12 +1027,45 @@
     </rule>
 
 
-    <rule comment="rule 4: nom">  <!-- possessive pronouns conversion, case default to nom -->
+    <rule comment="rule 4: np"> 
+       <pattern>
+         <pattern-item n="np"/>
+       </pattern>
+       <action>
+<!--         <call-macro n="set_gen_nbr_case"><with-param pos="1"/></call-macro> some ar np-s do have GD -->
+         <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
+	 <out>
+	   <chunk name="np">
+	     <tags>
+	       <tag><lit-tag v="SN"/></tag>  
+	       <tag><clip pos="1" side="tl" part="gen"/></tag>
+	       <tag><clip pos="1" side="tl" part="a_anim"/></tag>  <!-- aa for ant, cog; nn otherwise -->
+	       <tag><clip pos="1" side="tl" part="nbr"/></tag>
+	       <tag><clip pos="1" side="tl" part="case"/></tag>
+	       <tag><lit-tag v="def"/></tag>
+	     </tags>
+             <lu>
+               <clip pos="1" side="tl" part="lemh"/>
+               <clip pos="1" side="tl" part="a_nom"/>
+               <clip pos="1" side="tl" part="gen"/>
+               <clip pos="1" side="tl" part="a_anim"/>
+               <clip pos="1" side="tl" part="nbr"/>
+	       <lit-tag v="nom"/>
+               <clip pos="1" side="tl" part="lemq"/>
+             </lu>
+           </chunk>
+	 </out>
+       </action>
+    </rule>
+
+
+
+    <rule comment="rule 5: nom">  <!-- possessive pronouns conversion, case default to nom -->
        <pattern>
          <pattern-item n="nom"/>
        </pattern>
        <action>
-         <call-macro n="set_gen_nbr_case"><with-param pos="1"/></call-macro>
+<!--         <call-macro n="set_gen_nbr_case"><with-param pos="1"/></call-macro> some ar np-s do have GD -->
          <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
 	 <out>
 	   <chunk name="n_px">
@@ -1057,7 +1094,7 @@
     </rule>
 
 
-    <rule comment="rule 5: determiners">  <!-- possessive pronouns conversion, add case? -->
+    <rule comment="rule 6: determiners">  <!-- possessive pronouns conversion, add case? -->
        <pattern>
          <pattern-item n="det"/>
        </pattern>
@@ -1078,7 +1115,7 @@
     </rule>
 
 
-    <rule comment="rule 6: pronouns">  <!-- possessive pronouns conversion, add case? -->
+    <rule comment="rule 7: pronouns">  <!-- possessive pronouns conversion, add case? -->
        <pattern>
          <pattern-item n="freepron"/>
        </pattern>
@@ -1108,7 +1145,7 @@
 
 
 
-    <rule comment="rule 7: pronouns">  <!-- possessive pronouns conversion, add case? -->
+    <rule comment="rule 8: pronouns">  <!-- possessive pronouns conversion, add case? -->
        <pattern>
          <pattern-item n="pron"/>
        </pattern>
@@ -1130,12 +1167,13 @@
     </rule>
 
 
-    <rule comment="rule 8: adj">  <!-- case default to nom -->
+    <rule comment="rule 9: adj">  <!-- case default to nom -->
        <pattern>
          <pattern-item n="adj"/>
        </pattern>
        <action>
-         <call-macro n="f_concord1"><with-param pos="1"/></call-macro>
+	 <call-macro n="set_gen_nbr_case"><with-param pos="1"/></call-macro>
+<!--         <call-macro n="f_concord1"><with-param pos="1"/></call-macro> -->
          <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -1151,7 +1189,7 @@
     </rule>
 
 
-    <rule comment="rule 9: artic np"> <!-- no article with proper nouns; do not add 'artic' state? -->
+    <rule comment="rule 10: artic np"> <!-- no article with proper nouns; do not add 'artic' state? -->
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="np"/>
@@ -1182,7 +1220,7 @@
     </rule>
 
 
-    <rule comment="rule 10: artic nom">
+    <rule comment="rule 11: artic nom">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="non-np"/>
@@ -1223,7 +1261,7 @@
 
 
 
-    <rule comment="rule 11: artic adj">
+    <rule comment="rule 12: artic adj">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="adj"/>
@@ -1251,7 +1289,7 @@
     </rule> 
 
 
-    <rule comment="rule 12: artic numeral">
+    <rule comment="rule 13: artic numeral">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="numeral"/>
@@ -1278,7 +1316,7 @@
     </rule>
 
 
-    <rule comment="rule 13: numerals">
+    <rule comment="rule 14: numerals">
        <pattern>
          <pattern-item n="numeral"/>
        </pattern>
@@ -1341,7 +1379,7 @@
     </rule>
 -->
 
-    <rule comment="rule 140: kellu ('to have') past">
+    <rule comment="rule 15: kellu ('to have') past">
        <pattern>
          <pattern-item n="kellupast"/>
        </pattern>
@@ -1395,7 +1433,7 @@
     </rule>
 
 
-    <rule comment="rule 141: kellu pres">
+    <rule comment="rule 16: kellu pres">
        <pattern>
          <pattern-item n="kellupres"/>
        </pattern>
@@ -1428,7 +1466,7 @@
     </rule>
 
 
-    <rule comment="rule 142: kellu past neg.">
+    <rule comment="rule 17: kellu past neg.">
        <pattern>
          <pattern-item n="ma_neg"/>
          <pattern-item n="kellupast"/>
@@ -1489,7 +1527,7 @@
     </rule>
 
 
-    <rule comment="rule 143: kellu pres neg">
+    <rule comment="rule 18: kellu pres neg">
        <pattern>
          <pattern-item n="ma_neg"/>
          <pattern-item n="kellupres"/>
@@ -1545,7 +1583,7 @@
     </rule>
 
 
-    <rule comment="rule 15: verb">
+    <rule comment="rule 19: verb">
        <pattern>
          <pattern-item n="vrb"/>
        </pattern>
@@ -1589,7 +1627,7 @@
      </rule>
 
 
-    <rule comment="rule 16: participia">
+    <rule comment="rule 20: participia">
        <pattern>
          <pattern-item n="particip"/>
        </pattern>
@@ -1645,7 +1683,7 @@
     </rule>
 
 
-    <rule comment="rule 17: dir object (nom + adj etc.) in accusative ">
+    <rule comment="rule 21: dir object (nom + adj etc.) in accusative ">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="nom"/>
@@ -1667,7 +1705,7 @@
              <clip pos="1" side="tl" part="a_voice"/>
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="pers"/>
-             <var n="genero"/>
+             <var n="genero"/>   <!-- hm -->
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
@@ -1699,7 +1737,7 @@
     </rule> 
 
 
-    <rule comment="rule 18: dir object in accusative, constructions with with adverb between verb and direct object ">
+    <rule comment="rule 22: dir object in accusative, constructions with with adverb between verb and direct object ">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="adv"/>
@@ -1752,7 +1790,7 @@
     </rule> 
 
 
-    <rule comment="rule 19: dir object in accusative ">
+    <rule comment="rule 23: dir object in accusative ">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="pron_ind"/>
@@ -1789,7 +1827,7 @@
     </rule> 
 
 
-    <rule comment="rule 20: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
+    <rule comment="rule 24: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
        <pattern>
          <pattern-item n="kien"/>
          <pattern-item n="nom"/>
@@ -1824,13 +1862,14 @@
     </rule> 
 
 
-    <rule comment="rule 21: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
+    <rule comment="rule 25: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
        <pattern>
          <pattern-item n="kien"/>
          <pattern-item n="adj"/>
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+	 <call-macro n="set_gen_nbr_case"><with-param pos="2"/></call-macro>
          <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -1860,7 +1899,7 @@
     </rule> 
 
 
-    <rule comment="rule 22: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
+    <rule comment="rule 26: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
        <pattern>
          <pattern-item n="kien"/>
          <pattern-item n="nom"/>
@@ -1911,7 +1950,7 @@
     </rule> 
 
 
-    <rule comment="rule 23: modal verbs ('want', 'like', 'can' etc.): in Arabic followed by أن + so-called subjunctive mood ">
+    <rule comment="rule 27: modal verbs ('want', 'like', 'can' etc.): in Arabic followed by أن + so-called subjunctive mood ">
        <pattern>
          <pattern-item n="modalvrb"/>
          <pattern-item n="vrbpres"/>
@@ -1952,7 +1991,7 @@
     </rule> 
 
 
-    <rule comment="rule 24: biex (in order that) in Arabic is followed subjunctive mood ">
+    <rule comment="rule 28: biex (in order that) in Arabic is followed subjunctive mood ">
        <pattern>
          <pattern-item n="biex"/>
          <pattern-item n="vrbpres"/>
@@ -1981,7 +2020,7 @@
 
 
 
-    <rule comment="rule 25: biex (in order that) in Arabic is followed subjunctive mood; direct object in accusative ">
+    <rule comment="rule 29: biex (in order that) in Arabic is followed subjunctive mood; direct object in accusative ">
        <pattern>
          <pattern-item n="biex"/>
          <pattern-item n="vrbpres"/>
@@ -2020,7 +2059,7 @@
 
 
 
-    <rule comment="rule 26: biex (in order that) in Arabic is followed subjunctive mood; direct object in accusative ">
+    <rule comment="rule 30: biex (in order that) in Arabic is followed subjunctive mood; direct object in accusative ">
        <pattern>
          <pattern-item n="biex"/>
          <pattern-item n="vrbpres"/>
@@ -2087,7 +2126,7 @@
     </rule>
 -->
 
-    <rule comment="rule 28: dualis ">   <!-- 2 numeral + plural noun -> dualis -->
+    <rule comment="rule 31: dualis ">   <!-- 2 numeral + plural noun -> dualis -->
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="det"/>
@@ -2119,7 +2158,7 @@
 
 
     <!-- was prepgen -->
-    <rule comment="rule 29: prep noun">   <!-- genitive after prepositions -->
+    <rule comment="rule 32: prep noun">   <!-- genitive after prepositions -->
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="nom"/>
@@ -2146,7 +2185,7 @@
 
 
 
-    <rule comment="rule 30: direct object determined">  <!-- to get rid of lil when used as Hebrew את after verbs -->
+    <rule comment="rule 33: direct object determined">  <!-- to get rid of lil when used as Hebrew את after verbs -->
        <pattern>
          <pattern-item n="d_obj"/>
          <pattern-item n="det"/>
@@ -2160,7 +2199,7 @@
        </action>
     </rule> 
 
-    <rule comment="rule 31: direct object">
+    <rule comment="rule 34: direct object">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="d_obj"/>
@@ -2198,7 +2237,7 @@
     </rule>
 
 
-    <rule comment="rule 32: negation"> <!-- constructions like "M'hi (qed tara)" -->
+    <rule comment="rule 35: negation"> <!-- constructions like "M'hi (qed tara)" -->
        <pattern>
          <pattern-item n="ma_neg"/>
          <pattern-item n="pron"/>
@@ -2253,7 +2292,7 @@
     </rule>
 -->
 
-    <rule comment="rule 34: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
+    <rule comment="rule 36: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
        <pattern>
          <pattern-item n="kien"/>
          <pattern-item n="xneg"/>
@@ -2288,7 +2327,7 @@
     </rule> 
 
 
-    <rule comment="rule 35: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
+    <rule comment="rule 37: kien ('to be'): in Arabic noun/adj after كان, 'to be', is in accusative ">
        <pattern>
          <pattern-item n="kien"/>
          <pattern-item n="xneg"/>
@@ -2341,7 +2380,7 @@
 
 
     <!-- add ma + vrb_past + u + neg, + lu + neg, + u + lu + neg -->
-    <rule comment="rule 36: verb negation: ma + past -> لم + apocop ">
+    <rule comment="rule 38: verb negation: ma + past -> لم + apocop ">
        <pattern>
          <pattern-item n="ma_neg"/>
          <pattern-item n="vrbpast"/>
@@ -2380,7 +2419,7 @@
     </rule>
 
 
-    <rule comment="rule 37: modal verbs ('want', 'like', 'can' etc.): in Arabic followed by أن + so-called subjunctive mood ">
+    <rule comment="rule 39: modal verbs ('want', 'like', 'can' etc.): in Arabic followed by أن + so-called subjunctive mood ">
        <pattern>
          <pattern-item n="ma_neg"/>
          <pattern-item n="modalpast"/>
@@ -2399,7 +2438,6 @@
              <clip pos="2" side="tl" part="a_verb"/>
              <clip pos="2" side="tl" part="a_trans"/>
              <clip pos="2" side="tl" part="a_voice"/>
-             <lit-tag v="pres"/>
              <lit-tag v="apocop"/>
              <clip pos="2" side="tl" part="pers"/>
              <var n="genero"/>
@@ -2430,7 +2468,7 @@
     </rule> 
 
 
-    <rule comment="rule 38: modal verbs ('want', 'like', 'can' etc.): in Arabic followed by أن + so-called subjunctive mood ">
+    <rule comment="rule 40: modal verbs ('want', 'like', 'can' etc.): in Arabic followed by أن + so-called subjunctive mood ">
        <pattern>
          <pattern-item n="ma_neg"/>
          <pattern-item n="modalpres"/>
@@ -2480,7 +2518,7 @@
 
 
 
-    <rule comment="rule 39: modal verbs ('want', 'like', 'can' etc.): in Arabic followed by أن + so-called subjunctive mood ">
+    <rule comment="rule 41: modal verbs ('want', 'like', 'can' etc.): in Arabic followed by أن + so-called subjunctive mood ">
        <pattern>
          <pattern-item n="ma_neg"/>
          <pattern-item n="modalpres"/>
@@ -2547,7 +2585,7 @@
 
 
     <!-- add ma + vrb_pres + u + neg, + lu + neg, + u + lu + neg -->
-    <rule comment="rule 40: verb negation: ma + pres -> لا + pres ">
+    <rule comment="rule 42: verb negation: ma + pres -> لا + pres ">
        <pattern>
          <pattern-item n="ma_neg"/>
          <pattern-item n="vrbpres"/>
@@ -2588,7 +2626,7 @@
 
 
 
-    <rule comment="rule 41: ma + pres, dir object in accusative ">
+    <rule comment="rule 43: ma + pres, dir object in accusative ">
        <pattern>
          <pattern-item n="ma_neg"/>
          <pattern-item n="vrbpres"/>
@@ -2627,7 +2665,7 @@
     </rule> 
 
 
-    <rule comment="rule 42: direct object suffix ">
+    <rule comment="rule 44: direct object suffix ">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="u_prn"/>
@@ -2702,7 +2740,7 @@
     </rule> 
 
 
-    <rule comment="rule 43: indirect object suffix ">
+    <rule comment="rule 45: indirect object suffix ">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="lu_prn"/>
@@ -2753,7 +2791,7 @@
     </rule> 
 
 
-    <rule comment="rule 44: direct and indirect object suffixes ">
+    <rule comment="rule 46: direct and indirect object suffixes ">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="u_prn"/>
@@ -2860,7 +2898,7 @@
 
 
 
-    <rule comment="rule 45: preposition + pronominal suffix">
+    <rule comment="rule 47: preposition + pronominal suffix">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="u_prn"/>
@@ -2887,7 +2925,7 @@
 
 
     <!-- temporal solution: should be ليس (verb) + prep + suff -->
-    <rule comment="rule 46: neg + preposition + pronominal suffix">
+    <rule comment="rule 48: neg + preposition + pronominal suffix">
        <pattern>
          <!-- <pattern-item n="ma_neg"/> -->
          <pattern-item n="prep"/>
@@ -2915,7 +2953,7 @@
     </rule> 
 
 
-    <rule comment="rule 47: artic np"> <!-- no article with proper nouns -->
+    <rule comment="rule 49: artic np"> <!-- no article with proper nouns -->
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="non-np"/>
@@ -2949,7 +2987,7 @@
     </rule>
 
 
-    <rule comment="rule 48: artic np"> <!-- no article with proper nouns -->
+    <rule comment="rule 50: artic np"> <!-- no article with proper nouns -->
        <pattern>
 	 <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -2993,7 +3031,7 @@
 
 
 
-    <rule comment="rule 49: għal membri ta' din konfederazzjoni"> 
+    <rule comment="rule 51: għal membri ta' din konfederazzjoni"> 
        <pattern>
          <pattern-item n="prep"/>	 
          <pattern-item n="non-np"/>
@@ -3056,7 +3094,7 @@
 
 
 <!-- in fact, there will be a rather complex set of rules for deleting الذي or setting gen, num and case -->  
-    <rule comment="rule 50: deleting li">
+    <rule comment="rule 52: deleting li">
        <pattern>
          <pattern-item n="rel"/>
        </pattern>
@@ -3065,7 +3103,7 @@
     </rule>
 
 
-    <rule comment="rule 51: li -> أن"> <!-- FIX -->
+    <rule comment="rule 53: li -> أن"> <!-- FIX -->
        <pattern>
          <pattern-item n="rel"/>
          <pattern-item n="artic"/>
@@ -3099,7 +3137,7 @@
        </action>
     </rule>
 
-    <rule comment="rule 52: dir object in accusativ ">
+    <rule comment="rule 54: dir object in accusativ ">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="nom"/>
@@ -3134,7 +3172,7 @@
     </rule> 
 
 
-    <rule comment="rule 53: dir object in accusativ ">
+    <rule comment="rule 55: dir object in accusativ ">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="nom"/>
@@ -3182,7 +3220,7 @@
 
 
 <!-- hey, should be det, but _not_ article -->
-    <rule comment="rule 54: prep + gen "> 
+    <rule comment="rule 56: prep + gen "> 
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="nom"/>
@@ -3222,7 +3260,7 @@
     </rule>
 
 
-    <rule comment="rule 55: prep + gen ">
+    <rule comment="rule 57: prep + gen ">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -3255,7 +3293,7 @@
 
 
 
-    <rule comment="rule 56: prep + gen ">
+    <rule comment="rule 58: prep + gen ">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -3307,7 +3345,7 @@
 
 
 
-    <rule comment="rule 57: fil-kamp tal-mużika popolari">
+    <rule comment="rule 59: fil-kamp tal-mużika popolari">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -3373,7 +3411,7 @@
 
 
 
-    <rule comment="rule 58: dir object in accusative">
+    <rule comment="rule 60: dir object in accusative">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="d_obj"/>
@@ -3422,7 +3460,7 @@
     </rule> 
 
 
-    <rule comment="rule 59: mt ġie + pp = ar pass voice">
+    <rule comment="rule 61: mt ġie + pp = ar pass voice">
        <pattern>
          <pattern-item n="gie"/>
          <pattern-item n="pp"/>
@@ -3447,7 +3485,7 @@
 
 
     <!-- should be one rule for nouns in sg, another for pl nouns -->
-    <rule comment="rule 60: prep + gen ">
+    <rule comment="rule 62: prep + gen ">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -3492,7 +3530,7 @@
 
 
     <!-- that's only form mt verb + prep -> ar verb + prep; what if mt verb + prep -> ar verb + d.o.? -->
-    <rule comment="rule 61: mt verbs with 'minn' prep.">
+    <rule comment="rule 63: mt verbs with 'minn' prep.">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="minn_pr"/>
@@ -3549,7 +3587,7 @@
 
 
     <!-- that's only form mt verb + prep -> ar verb + prep; what if mt verb + prep -> ar verb + d.o.? -->
-    <rule comment="rule 62: mt verbs with 'fi' prep.">
+    <rule comment="rule 64: mt verbs with 'fi' prep.">
        <pattern>
          <pattern-item n="detdem"/>
          <pattern-item n="vrb"/>
@@ -3633,13 +3671,11 @@
        </action>
     </rule> 
 
-
-
-
-    <rule comment="rule 63: prep + pron and noun in gen">
+ 
+    <rule comment="rule 65: prep + pron and noun in gen">
        <pattern>
          <pattern-item n="prep"/>
-         <pattern-item n="pron"/>
+         <pattern-item n="det"/>
          <pattern-item n="artic"/>
 	 <pattern-item n="nom"/>
        </pattern>
@@ -3655,10 +3691,10 @@
 	   <b/>
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
-             <clip pos="2" side="tl" part="a_prn"/>
+             <clip pos="2" side="tl" part="a_det"/>
              <clip pos="2" side="tl" part="gen"/>
              <clip pos="2" side="tl" part="nbr"/>
-             <lit-tag v="gen"/>
+<!--             <lit-tag v="gen"/>  -->
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
 	   <b/>
@@ -4406,10 +4442,18 @@
            <with-param pos="3"/>
            <with-param pos="1"/>
          </call-macro>
-         <call-macro n="myf_concord2">
-           <with-param pos="3"/>
-           <with-param pos="4"/>
-         </call-macro>
+	 <choose>
+	   <when>
+	     <test><equal><clip pos="4" side="tl" part="pers"/><lit-tag v="p3"/></equal></test>
+             <call-macro n="myf_concord2">
+               <with-param pos="3"/>
+               <with-param pos="4"/>
+             </call-macro>
+	   </when>
+	   <otherwise>
+             <call-macro n="modify_verb_and_genero"><with-param pos="4"/></call-macro>
+	   </otherwise>
+	 </choose>
          <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -6981,7 +7025,18 @@
        </pattern>
        <action>
          <call-macro n="set_gen_nbr_case"><with-param pos="3"/></call-macro>
-         <call-macro n="myf_concord2"><with-param pos="3"/><with-param pos="2"/></call-macro>
+	 <choose>
+	   <when>
+  	     <test><and>
+	       <not><equal><clip pos="3" side="tl" part="gen"/><lit-tag v="mf"/></equal></not>
+	       <not><equal><clip pos="3" side="tl" part="nbr"/><lit-tag v="sp"/></equal></not>
+	     </and></test>
+             <call-macro n="myf_concord2"><with-param pos="3"/><with-param pos="2"/></call-macro>
+	   </when>
+	   <otherwise>
+             <call-macro n="f_concord1"><with-param pos="2"/></call-macro>
+	   </otherwise>
+	 </choose>
          <out>
 	   <chunk name="np_art_adj">
 	     <tags>
@@ -7289,6 +7344,15 @@
        </pattern>
        <action>
          <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+	 <choose>
+	   <when>
+	     <test><and>
+		<equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
+		<equal><clip pos="1" side="tl" part="gen"/><lit-tag v="mf"/></equal>
+	     </and></test>  <!-- TODO: set GD -->
+	     <let><clip pos="1" side="tl" part="gen"/><lit-tag v="m"/></let>
+	   </when>
+	 </choose>
          <call-macro n="set_gen_nbr_case"><with-param pos="2"/></call-macro>
 	  <out>
 	    <chunk name="vrb">  <!-- vaux? كان وأخواتها؟ -->
@@ -7514,8 +7578,30 @@
        </pattern>
        <action>
          <call-macro n="set_gen_nbr_case"><with-param pos="1"/></call-macro>
-  	 <let><clip pos="2" side="tl" part="gen"/><clip pos="1" side="tl" part="gen"/></let>
-	 <let><clip pos="2" side="tl" part="nbr"/><clip pos="1" side="tl" part="nbr"/></let>
+	 <choose>
+	   <when>
+	     <test><and>
+  	       <not><equal><clip pos="2" side="tl" part="gen"/><lit-tag v="mf"/></equal></not>
+	       <not><equal><clip pos="2" side="tl" part="gen"/><lit-tag v="GD"/></equal></not>
+	     </and></test>
+  	     <let><clip pos="2" side="tl" part="gen"/><clip pos="1" side="tl" part="gen"/></let>
+	   </when>
+	   <otherwise>
+  	     <let><clip pos="2" side="tl" part="gen"/><lit-tag v="m"/></let>
+	   </otherwise>
+	 </choose>
+	 <choose>
+	   <when>
+	     <test><and>
+  	       <not><equal><clip pos="2" side="tl" part="gen"/><lit-tag v="sp"/></equal></not>
+	       <not><equal><clip pos="2" side="tl" part="gen"/><lit-tag v="ND"/></equal></not>
+	     </and></test>
+	     <let><clip pos="2" side="tl" part="nbr"/><clip pos="1" side="tl" part="nbr"/></let>
+	   </when>
+	   <otherwise>
+  	     <let><clip pos="2" side="tl" part="nbr"/><lit-tag v="sg"/></let>
+	   </otherwise>
+	 </choose>
          <out>
 	   <chunk name="np">
 	     <tags>

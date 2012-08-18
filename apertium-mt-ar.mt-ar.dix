@@ -7077,6 +7077,16 @@
      <e><p><l>amen<s n="ij"/></l><r>آمين<s n="ij"/></r></p></e>
      <e><p><l>grazzi<s n="ij"/></l><r>شكرا<s n="ij"/></r></p></e>
 
+
+     <!-- SECTION: Abbreviations -->
+
+     <e><p><l>Dr<s n="abbr"/></l><r>د<s n="abbr"/></r></p></e>
+     <e><p><l>pm<s n="abbr"/></l><r>بعد<b/>الظهر<s n="adv"/></r></p></e>
+     <e><p><l>am<s n="abbr"/></l><r>قبل<b/>الظهر<s n="adv"/></r></p></e>
+<!--     <e><p><l>Fr<s n="abbr"/></l><r><s n=""/></r></p></e> -->
+
+
+
      <!-- SECTION: Adverbs -->
 
      <e><p><l>illum<s n="adv"/></l><r>اليوم<s n="adv"/></r></p></e>
