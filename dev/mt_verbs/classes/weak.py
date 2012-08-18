@@ -111,15 +111,14 @@ def weak_patt1_past(root, vowels, tv): #{
 		forms['past.p3.f.sg'] = weak_consonant_forms(r[0] + r[1] + 'at', r[0] + r[1] + 'at', '-', tv);
 	#}
 
-	# This form is obtained by the omission of the two vowels in the stem
-	# and the addition of the dipthong 'ej' (for e-a) and 'aj' (for a-a)
+	# This form is obtained by omission of the two vowels in the stem
+	# and addition of the dipthong 'ej' (for e-a) and 'aj' (for a-a)
 	forms['past.p2.mf.sg'] = weak_consonant_forms(r[0] + r[1] + v[0] + 'jt', r[0] + r[1] + v[0] + 'jt', '-', tv);	
 	forms['past.p1.mf.sg'] = weak_consonant_forms(r[0] + r[1] + v[0] + 'jt', r[0] + r[1] + v[0] + 'jt', '-', tv);	
 
-	# This form is obtained by the omission of the two vowels in the vocalic
+	# This form is obtained by omission of the two vowels in the vocalic
 	# sequence + dipthong 'ew' or 'aw'
-	# In the context of the attached pronouns 'ew' and 'aw'
-	# are also treated like vowels
+	# before suffixed pronouns, 'ew' and 'aw' are treated like vowels
 	forms['past.p3.mf.pl'] = weak_vowel_forms(r[0] + r[1] + v[0] + 'w', r[0] + r[1] + v[0] + 'w', '-', tv);
 	forms['past.p2.mf.pl'] = weak_vowel_forms(r[0] + r[1] + v[0] + 'jtu', r[0] + r[1] + v[0] + 'jtu', '-', tv);
 	forms['past.p1.mf.pl'] = weak_vowel_forms(r[0] + r[1] + v[0] + 'jna', r[0] + r[1] + v[0] + 'jnie', '-', tv);
@@ -147,10 +146,11 @@ def weak_patt1_pres(root, vowels, tv): #{
 	
 	if vowels == 'a-a': #{
 		suffix =  'aw';
-	elif vowels == 'e-a': #{   # was: 'i-a'
+	elif v[1] == 'i' :
+		suffix = 'u';
+	else :
+#	elif vowels == 'e-a' or vowels == 'i-a' : #{   
 		suffix =  'ew';
-	else: #{
-		suffix = 'u'
 	#}
 										# QaRaJ		BeDaJ		MeXaJ	ReMaJ
 										# a-a		i-a		i-i	a-i
@@ -175,11 +175,11 @@ def weak_patt1_imp(root, vowels, tv): #{
 	
 	if vowels == 'a-a': #{
 		pl_suffix =  'aw';
-	elif vowels == 'e-a': #{    # 'i-a'?
-		pl_suffix =  'ew';
-	else: #{
+	elif v[1] == 'i' :
 		pl_suffix = 'u'
-	#}
+	else :
+#	elif vowels == 'e-a': #{    # 'i-a'?
+		pl_suffix =  'ew';
 
 	forms['imp.p2.mf.sg'] = weak_vowel_forms(v[0] + r[0] + r[1] + v[1] , v[0] + r[0] + r[1] + presuff_sg_vowel , '-', tv);
 	forms['imp.p2.mf.pl'] = weak_vowel_forms(v[0] + r[0] + r[1] + pl_suffix , v[0] + r[0] + r[1] + pl_suffix , '-', tv);
@@ -337,13 +337,12 @@ def weak_patt5_pres(root, vowels, tv): #{
 	forms['pres.p2.mf.sg'] = weak_vowel_forms('ti' + prefix_cons + r[0] + v[0] + r[1] + r[1] + v[1] , 'ti' + prefix_cons + r[0] + v[0] + r[1] + r[1] + presuff_vowel , '-', tv);
 	forms['pres.p1.mf.sg'] = weak_vowel_forms('ni' + prefix_cons + r[0] + v[0] + r[1] + r[1] + v[1] , 'ni' + prefix_cons + r[0] + v[0] + r[1] + r[1] + presuff_vowel , '-', tv);
 	
-	if vowels == 'a-a': #{
+	if vowels == 'a-a': 
 		suffix =  'aw';
-	elif vowels == 'e-a': #{   # was: 'i-a'
-		suffix =  'ew';
-	else: #{
+	elif v[1] == 'i' :
 		suffix = 'u'
-	#}
+	else : 
+		suffix =  'ew';
 
 	forms['pres.p3.mf.pl'] = weak_vowel_forms('ji' + prefix_cons + r[0] + v[0] + r[1] + r[1] + suffix, 'ji' + prefix_cons + r[0] + v[0] + r[1] + r[1] + suffix, '-', tv);
 	forms['pres.p2.mf.pl'] = weak_vowel_forms('ti' + prefix_cons + r[0] + v[0] + r[1] + r[1] + suffix, 'ti' + prefix_cons + r[0] + v[0] + r[1] + r[1] + suffix, '-', tv);	
@@ -368,13 +367,14 @@ def weak_patt5_imp(root, vowels, tv): #{
 	if v[1] == 'a': 
 		presuff_sg_vowel = 'ie';
 
-	if vowels == 'a-a': #{
+
+	if vowels == 'a-a': 
 		pl_suffix =  'aw';
-	elif vowels == 'e-a': #{    # 'i-a'?
-		pl_suffix =  'ew';
-	else: #{
+	elif v[1] == 'i' :
 		pl_suffix = 'u'
-	#}
+	else : 
+		pl_suffix =  'ew';
+
 
 	forms['imp.p2.mf.sg'] = weak_vowel_forms(prefix_cons + r[0] + v[0] + r[1] + r[1] + v[1], 't' + r[0] + v[0] + r[1] + r[1] + presuff_sg_vowel , '-', tv);
 	forms['imp.p2.mf.pl'] = weak_vowel_forms(prefix_cons + r[0] + v[0] + r[1] + r[1] + pl_suffix , 't' + r[0] + v[0] + r[1] + r[1] + pl_suffix , '-', tv);
@@ -448,13 +448,12 @@ def weak_patt7a_pres(root, vowels, tv): #{
 	forms['pres.p2.mf.sg'] = weak_vowel_forms('tin' + r[0] + v[0] + r[1] + v[1] , 'tin' + r[0] + r[1] + presuff_vowel , '-', tv);
 	forms['pres.p1.mf.sg'] = weak_vowel_forms('nin' + r[0] + v[0] + r[1] + v[1] , 'nin' + r[0] + r[1] + presuff_vowel , '-', tv);
 	
-	if vowels == 'a-a': #{
+	if vowels == 'a-a':
 		suffix =  'aw';
-	elif vowels == 'e-a': #{
-		suffix =  'ew';
-	else: #{
+	elif v[1] == 'i' :
 		suffix = 'u'
-	#}
+	else:
+		suffix =  'ew';
 
 	forms['pres.p3.mf.pl'] = weak_vowel_forms('jin' + r[0] + r[1] + suffix, 'jin' + r[0] + r[1] + suffix, '-', tv);	
 	forms['pres.p2.mf.pl'] = weak_vowel_forms('tin' + r[0] + r[1] + suffix, 'tin' + r[0] + r[1] + suffix, '-', tv);	
@@ -474,15 +473,14 @@ def weak_patt7a_imp(root, vowels, tv): #{
 	# That's only my guess
 	if v[0] == 'e' and v[1] == 'a': 
 		presuff_sg_vowel = 'ie';
-	
-	if vowels == 'a-a': #{
-		pl_suffix =  'aw';
-	elif vowels == 'e-a': #{ 
-		pl_suffix =  'ew';
-	else: #{
-		pl_suffix = 'u'
-	#}
 
+	if vowels == 'a-a':
+		pl_suffix =  'aw';
+	elif v[1] == 'i' :
+		pl_suffix = 'u'
+	else:
+		pl_suffix =  'ew';
+	
 	# also 'n' prefix/only 'n' or 'in' prefix?
 	forms['imp.p2.mf.sg'] = weak_vowel_forms('in' + r[0] + v[0] + r[1] + v[1] , 'in' + r[0] + v[0] + r[1] + presuff_sg_vowel , '-', tv);
 	forms['imp.p2.mf.pl'] = weak_vowel_forms('in' + r[0] + v[0] + r[1] + pl_suffix , 'in' + r[0] + v[0] + r[1] + pl_suffix , '-', tv);
@@ -555,14 +553,14 @@ def weak_patt7b_pres(root, vowels, tv): #{
 	forms['pres.p3.f.sg'] = weak_vowel_forms('tint' + r[0] + v[0] + r[1] + v[1] , 'tint' + r[0] + r[1] + presuff_vowel , '-', tv);
 	forms['pres.p2.mf.sg'] = weak_vowel_forms('tint' + r[0] + v[0] + r[1] + v[1] , 'tint' + r[0] + r[1] + presuff_vowel , '-', tv);
 	forms['pres.p1.mf.sg'] = weak_vowel_forms('nint' + r[0] + v[0] + r[1] + v[1] , 'nint' + r[0] + r[1] + presuff_vowel , '-', tv);
-	
-	if vowels == 'a-a': #{
+
+	if vowels == 'a-a':
 		suffix =  'aw';
-	elif vowels == 'e-a': #{
-		suffix =  'ew';
-	else: #{
+	elif v[1] == 'i' :
 		suffix = 'u'
-	#}
+	else:
+		suffix =  'ew';
+	
 
 	forms['pres.p3.mf.pl'] = weak_vowel_forms('jint' + r[0] + r[1] + suffix, 'jint' + r[0] + r[1] + suffix, '-', tv);	
 	forms['pres.p2.mf.pl'] = weak_vowel_forms('tint' + r[0] + r[1] + suffix, 'tint' + r[0] + r[1] + suffix, '-', tv);	
@@ -582,14 +580,14 @@ def weak_patt7b_imp(root, vowels, tv): #{
 	# That's only my guess
 	if v[0] == 'e' and v[1] == 'a': 
 		presuff_sg_vowel = 'ie';
-	
-	if vowels == 'a-a': #{
+
+	if vowels == 'a-a':
 		pl_suffix =  'aw';
-	elif vowels == 'e-a': #{ 
-		pl_suffix =  'ew';
-	else: #{
+	elif v[1] == 'i' :
 		pl_suffix = 'u'
-	#}
+	else:
+		pl_suffix =  'ew';
+	
 
 	# also 'nt' prefix/only 'nt' or 'int' prefix?
 	forms['imp.p2.mf.sg'] = weak_vowel_forms('int' + r[0] + v[0] + r[1] + v[1] , 'int' + r[0] + v[0] + r[1] + presuff_sg_vowel , '-', tv);
@@ -665,14 +663,14 @@ def weak_patt8a_pres(root, vowels, tv): #{
 	forms['pres.p3.f.sg'] = weak_vowel_forms('ti' + r[0] + 't' + v[0] + r[1] + v[1] , 'ti' + r[0] + 't' + r[1] + presuff_vowel , '-', tv);
 	forms['pres.p2.mf.sg'] = weak_vowel_forms('ti' + r[0] + 't' + v[0] + r[1] + v[1] , 'ti' + r[0] + 't' + r[1] + presuff_vowel , '-', tv);
 	forms['pres.p1.mf.sg'] = weak_vowel_forms('ni' + r[0] + 't' + v[0] + r[1] + v[1] , 'ni' + r[0] + 't' + r[1] + presuff_vowel , '-', tv);
-	
-	if vowels == 'a-a': #{
+
+	if vowels == 'a-a':
 		suffix =  'aw';
-	elif vowels == 'e-a': #{
-		suffix =  'ew';
-	else: #{
+	elif v[1] == 'i' :
 		suffix = 'u'
-	#}
+	else:
+		suffix =  'ew';
+	
 
 	forms['pres.p3.mf.pl'] = weak_vowel_forms('ji' + r[0] + 't' + r[1] + suffix, 'ji' + r[0] + 't' + r[1] + suffix, '-', tv);	
 	forms['pres.p2.mf.pl'] = weak_vowel_forms('ti' + r[0] + 't' + r[1] + suffix, 'ti' + r[0] + 't' + r[1] + suffix, '-', tv);	
@@ -692,14 +690,14 @@ def weak_patt8a_imp(root, vowels, tv): #{
 	# That's only my guess
 	if v[0] == 'e' and v[1] == 'a': 
 		presuff_sg_vowel = 'ie';
-	
-	if vowels == 'a-a': #{
+
+	if vowels == 'a-a':
 		pl_suffix =  'aw';
-	elif vowels == 'e-a': #{ 
-		pl_suffix =  'ew';
-	else: #{
+	elif v[1] == 'i' :
 		pl_suffix = 'u'
-	#}
+	else:
+		pl_suffix =  'ew';
+	
 
 	# also 'n' prefix/only 'n' or 'in' prefix?
 	forms['imp.p2.mf.sg'] = weak_vowel_forms('i' + r[0] + 't' + v[0] + r[1] + v[1] , 'i' + r[0] + 't' + v[0] + r[1] + presuff_sg_vowel , '-', tv);
@@ -775,14 +773,14 @@ def weak_patt8b_pres(root, vowels, tv): #{
 	forms['pres.p3.f.sg'] = weak_vowel_forms('tin' + r[0] + 't' + v[0] + r[1] + v[1] , 'tin' + r[0] + 't' + r[1] + presuff_vowel , '-', tv);
 	forms['pres.p2.mf.sg'] = weak_vowel_forms('tin' + r[0] + 't' + v[0] + r[1] + v[1] , 'tin' + r[0] + 't' + r[1] + presuff_vowel , '-', tv);
 	forms['pres.p1.mf.sg'] = weak_vowel_forms('nin' + r[0] + 't' + v[0] + r[1] + v[1] , 'nin' + r[0] + 't' + r[1] + presuff_vowel , '-', tv);
-	
-	if vowels == 'a-a': #{
+
+	if vowels == 'a-a':
 		suffix =  'aw';
-	elif vowels == 'e-a': #{
-		suffix =  'ew';
-	else: #{
+	elif v[1] == 'i' :
 		suffix = 'u'
-	#}
+	else:
+		suffix =  'ew';
+	
 
 	forms['pres.p3.mf.pl'] = weak_vowel_forms('jin' + r[0] + 't' + r[1] + suffix, 'jin' + r[0] + 't' + r[1] + suffix, '-', tv);	
 	forms['pres.p2.mf.pl'] = weak_vowel_forms('tin' + r[0] + 't' + r[1] + suffix, 'tin' + r[0] + 't' + r[1] + suffix, '-', tv);	
@@ -802,14 +800,14 @@ def weak_patt8b_imp(root, vowels, tv): #{
 	# That's only my guess
 	if v[0] == 'e' and v[1] == 'a': 
 		presuff_sg_vowel = 'ie';
-	
-	if vowels == 'a-a': #{
+
+	if vowels == 'a-a':
 		pl_suffix =  'aw';
-	elif vowels == 'e-a': #{ 
-		pl_suffix =  'ew';
-	else: #{
+	elif v[1] == 'i' :
 		pl_suffix = 'u'
-	#}
+	else:
+		pl_suffix =  'ew';
+	
 
 	# also 'nt' prefix/only 'nt' or 'int' prefix?
 	forms['imp.p2.mf.sg'] = weak_vowel_forms('in' + r[0] + 't' + v[0] + r[1] + v[1] , 'in' + r[0] + 't' + v[0] + r[1] + presuff_sg_vowel , '-', tv);
@@ -881,14 +879,14 @@ def weak_patt10_pres(root, vowels, tv): #{
 	forms['pres.p3.f.sg'] = weak_vowel_forms('tist' + v[0] + r[0] + r[1] + v[1] , 'tist' + v[0] + r[0] + r[1] + presuff_vowel , '-', tv);
 	forms['pres.p2.mf.sg'] = weak_vowel_forms('tist' + v[0] + r[0] + r[1] + v[1] , 'tist' + v[0] + r[0] + r[1] + presuff_vowel , '-', tv);
 	forms['pres.p1.mf.sg'] = weak_vowel_forms('nist' + v[0] + r[0] + r[1] + v[1] , 'nist' + v[0] + r[0] + r[1] + presuff_vowel , '-', tv);
-	
-	if vowels == 'a-a': #{
+
+	if vowels == 'a-a':
 		suffix =  'aw';
-	elif vowels == 'e-a': #{   # was: 'i-a'
-		suffix =  'ew';
-	else: #{
+	elif v[1] == 'i' :
 		suffix = 'u'
-	#}
+	else:
+		suffix =  'ew';
+	
 
 	forms['pres.p3.mf.pl'] = weak_vowel_forms('jist' + v[0] + r[0] + r[1] + suffix, 'jist' + v[0] + r[0] + r[1] + suffix, '-', tv);
 	forms['pres.p2.mf.pl'] = weak_vowel_forms('tist' + v[0] + r[0] + r[1] + suffix, 'tist' + v[0] + r[0] + r[1] + suffix, '-', tv);	
@@ -908,13 +906,13 @@ def weak_patt10_imp(root, vowels, tv): #{
 	if v[1] == 'a': 
 		presuff_sg_vowel = 'ie';
 
-	if vowels == 'a-a': #{
+	if vowels == 'a-a':
 		pl_suffix =  'aw';
-	elif vowels == 'e-a': #{    # 'i-a'?
-		pl_suffix =  'ew';
-	else: #{
+	elif v[1] == 'i' :
 		pl_suffix = 'u'
-	#}
+	else:
+		pl_suffix =  'ew';
+
 
 	forms['imp.p2.mf.sg'] = weak_vowel_forms('st' + v[0] + r[0] + r[1] + v[1], 'st' + v[0] + r[0] + r[1] + presuff_sg_vowel , '-', tv);
 	forms['imp.p2.mf.pl'] = weak_vowel_forms('st' + v[0] + r[0] + r[1] + pl_suffix , 'st' + v[0] + r[0] + r[1] + pl_suffix , '-', tv);
