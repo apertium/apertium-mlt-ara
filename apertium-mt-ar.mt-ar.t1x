@@ -433,7 +433,6 @@
        <attr-item tags="comp"/>
     </def-attr>
      <def-attr n="mood">   <!-- Arabic only: verb (imperfectum) moods -->
-        <attr-item tags="indic"/>
         <attr-item tags="apocop"/>
         <attr-item tags="subjun"/>
      </def-attr>
@@ -458,197 +457,6 @@
 
 
   <section-def-lists>
-
-    <def-list n="aa_nouns">
-      <list-item v="أب"/>
-      <list-item v="إبليس"/>
-      <list-item v="ابن"/>
-      <list-item v="أحول"/>
-      <list-item v="أخ"/>
-      <list-item v="أخت"/>
-      <list-item v="أرمل"/>
-      <list-item v="أستاذ"/>
-      <list-item v="أسقف"/>
-      <list-item v="إسكافي"/>
-      <list-item v="اشتراكي"/>
-      <list-item v="اشتراكية"/>
-      <list-item v="أعرج"/>
-      <list-item v="أعمى"/>
-      <list-item v="ألماني"/>
-      <list-item v="ألمانية"/>
-      <list-item v="إله"/>
-      <list-item v="أم"/>
-      <list-item v="إمبراطور"/>
-      <list-item v="امرأة"/>
-      <list-item v="إنسان"/>
-      <list-item v="أنصار"/>
-      <list-item v="إيطالي"/>
-      <list-item v="إيطالية"/>
-      <list-item v="بحار"/>
-      <list-item v="برتغالية"/>
-      <list-item v="بروتستانتي"/>
-      <list-item v="بروتستانتية"/>
-      <list-item v="بطل"/>
-      <list-item v="بنت"/>
-      <list-item v="تابعة"/>
-      <list-item v="تاجر"/>
-      <list-item v="تركي"/>
-      <list-item v="تركية"/>
-      <list-item v="تشيكية"/>
-      <list-item v="ثرثار"/>
-      <list-item v="جار"/>
-      <list-item v="جندي"/>
-      <list-item v="حارس"/>
-      <list-item v="حارس&lt;b/&gt;مرمى"/>
-      <list-item v="حبيب"/>
-      <list-item v="خاطبة"/>
-      <list-item v="خبير"/>
-      <list-item v="خصم"/>
-      <list-item v="دكتاتور"/>
-      <list-item v="راهب"/>
-      <list-item v="راو"/>
-      <list-item v="رجل"/>
-      <list-item v="رسام"/>
-      <list-item v="رسول"/>
-      <list-item v="رضيع"/>
-      <list-item v="رئيس"/>
-      <list-item v="رئيس&lt;b/&gt;اساقفة"/>
-      <list-item v="رئيس&lt;b/&gt;تحرير"/>
-      <list-item v="رئيس&lt;b/&gt;ملائكة"/>
-      <list-item v="زانية"/>
-      <list-item v="زعيم"/>
-      <list-item v="ساحر"/>
-      <list-item v="ساكن"/>
-      <list-item v="ساكن&lt;g&gt;&lt;b/&gt;زوريق&lt;/g&gt;"/>
-      <list-item v="ساكن&lt;g&gt;&lt;b/&gt;زيتون&lt;/g&gt;"/>
-      <list-item v="ساكن&lt;g&gt;&lt;b/&gt;قورم&lt;/g&gt;"/>
-      <list-item v="ساكنة&lt;g&gt;&lt;b/&gt;زوريق&lt;/g&gt;"/>
-      <list-item v="سائح"/>
-      <list-item v="سائق"/>
-      <list-item v="سجين"/>
-      <list-item v="سفير"/>
-      <list-item v="سكرتير"/>
-      <list-item v="سلطان"/>
-      <list-item v="سلف"/>
-      <list-item v="سيد"/>
-      <list-item v="شاب"/>
-      <list-item v="شابة"/>
-      <list-item v="شاعر"/>
-      <list-item v="شاعرة"/>
-      <list-item v="شخص"/>
-      <list-item v="شريك"/>
-      <list-item v="شريكة"/>
-      <list-item v="شيطان"/>
-      <list-item v="صاحب"/>
-      <list-item v="صحافي"/>
-      <list-item v="صحافية"/>
-      <list-item v="صديق"/>
-      <list-item v="صقلي"/>
-      <list-item v="صياد&lt;b/&gt;طيور"/>
-      <list-item v="صياد&lt;g/&gt;سمك"/>
-      <list-item v="طالب"/>
-      <list-item v="طبيب"/>
-      <list-item v="طفل"/>
-      <list-item v="عابس"/>
-      <list-item v="عارض"/>
-      <list-item v="عارضة"/>
-      <list-item v="عاشق"/>
-      <list-item v="عالم"/>
-      <list-item v="عامل"/>
-      <list-item v="عبد"/>
-      <list-item v="عربي"/>
-      <list-item v="عروس"/>
-      <list-item v="عريس"/>
-      <list-item v="عفريت"/>
-      <list-item v="عمدة"/>
-      <list-item v="فاعل&lt;b/&gt;خير"/>
-      <list-item v="فائز"/>
-      <list-item v="فائزة"/>
-      <list-item v="فتاة"/>
-      <list-item v="فظ"/>
-      <list-item v="فقير"/>
-      <list-item v="فنان"/>
-      <list-item v="فنانة"/>
-      <list-item v="فيلسوف"/>
-      <list-item v="فينيقي"/>
-      <list-item v="قبطان"/>
-      <list-item v="قبطانة"/>
-      <list-item v="قريب"/>
-      <list-item v="قس"/>
-      <list-item v="كاتب"/>
-      <list-item v="كاردينال"/>
-      <list-item v="كاهن"/>
-      <list-item v="لاعب"/>
-      <list-item v="مبتدئ"/>
-      <list-item v="متحدث"/>
-      <list-item v="مترجم"/>
-      <list-item v="متعاون"/>
-      <list-item v="متمرض"/>
-      <list-item v="محافظ"/>
-      <list-item v="محام"/>
-      <list-item v="محتج"/>
-      <list-item v="محتجة"/>
-      <list-item v="محكم&lt;b/&gt;تفتيش"/>
-      <list-item v="مدافع"/>
-      <list-item v="مدع"/>
-      <list-item v="مدير"/>
-      <list-item v="مذيع"/>
-      <list-item v="مذيعة"/>
-      <list-item v="مراقب"/>
-      <list-item v="مرب"/>
-      <list-item v="مرشح"/>
-      <list-item v="مزارع"/>
-      <list-item v="مساعد"/>
-      <list-item v="مستثمر"/>
-      <list-item v="مستهلك"/>
-      <list-item v="مشارك"/>
-      <list-item v="مشاهد"/>
-      <list-item v="مشاهدة"/>
-      <list-item v="مطور"/>
-      <list-item v="مفتش"/>
-      <list-item v="مفوض"/>
-      <list-item v="مقاول"/>
-      <list-item v="مقيم"/>
-      <list-item v="مقيمة"/>
-      <list-item v="ملأك"/>
-      <list-item v="ملحن"/>
-      <list-item v="ملك"/>
-      <list-item v="ملكة"/>
-      <list-item v="ممثل"/>
-      <list-item v="ممثلة"/>
-      <list-item v="منافس"/>
-      <list-item v="منافس&lt;b/&gt;نصف&lt;b/&gt;نهائي"/>
-      <list-item v="منافسة"/>
-      <list-item v="مندوب"/>
-      <list-item v="منشط"/>
-      <list-item v="منشق"/>
-      <list-item v="منشقة"/>
-      <list-item v="منظم"/>
-      <list-item v="مهاجر"/>
-      <list-item v="مهاجرة"/>
-      <list-item v="مهرج"/>
-      <list-item v="مواطن"/>
-      <list-item v="مؤسس"/>
-      <list-item v="موظف"/>
-      <list-item v="مؤلف"/>
-      <list-item v="مولى"/>
-      <list-item v="ناخب"/>
-      <list-item v="ناشط"/>
-      <list-item v="ناشطة"/>
-      <list-item v="نائب"/>
-      <list-item v="نحات"/>
-      <list-item v="همجي"/>
-      <list-item v="وزير"/>
-      <list-item v="وسيط"/>
-      <list-item v="وطني"/>
-      <list-item v="وطنية"/>
-      <list-item v="وغد"/>
-      <list-item v="ولد"/>
-      <list-item v="يتيم"/>
-      <list-item v="يوناني"/>
-      <list-item v="يونانية"/>
-    </def-list>
-
 
     <def-list n="minn_bi_verbs" c="mt verbs with 'minn' prepostions translated to ar verbs with 'ب' preposition">
       <list-item v="تمتع"/>
@@ -838,9 +646,7 @@
 	  <choose>
 	    <when> <!-- aa & pl: copy gen and nbr -->
 	      <test>
-	  	<in caseless="yes">
-		  <clip pos="1" side="tl" part="lem"/><list n="aa_nouns"/>
-		</in>
+	  	<equal><clip pos="1" side="tl" part="a_anim"/><lit-tag v="aa"/></equal>
 	      </test>
   	      <let><clip pos="2" side="tl" part="nbr"/><lit-tag v="pl"/></let> 
 	      <let>
@@ -856,6 +662,69 @@
 	</otherwise>
       </choose>    
     </def-macro>
+
+
+    <def-macro n="adjf_concord2" npar="2">   <!-- same as myf_concord2 -->
+
+      <!-- first set number and gender, if not set -->
+      <choose>
+	<when> 
+	  <test>
+	    <equal>
+	      <clip pos="1" side="tl" part="gen"/>
+	      <lit-tag v="GD"/>
+	    </equal>
+	  </test>
+          <let><clip pos="1" side="tl" part="gen"/><lit-tag v="m"/></let>
+	</when>
+      </choose>
+
+      <choose>
+	<when> 
+	  <test>
+	    <equal>
+	      <clip pos="1" side="tl" part="nbr"/>
+	      <lit-tag v="ND"/>
+	    </equal>
+	  </test>
+          <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="sg"/></let>
+	</when>
+      </choose>      
+
+      <choose>
+	<when>  <!-- singular: copy nbr and gen --> 
+	  <test>
+	    <equal>
+	      <clip pos="1" side="tl" part="nbr"/><lit-tag v="sg"/>
+	    </equal>
+	  </test>
+	  <let><clip pos="2" side="tl" part="nbr"/><lit-tag v="sg"/></let> 
+	  <let>
+	     <clip pos="2" side="tl" part="gen"/>
+	     <clip pos="1" side="tl" part="gen"/>
+	  </let>
+	</when>
+	<otherwise> <!-- plural -->
+	  <choose>
+	    <when> <!-- aa & pl: copy gen and nbr -->
+	      <test>
+		<equal><clip pos="1" side="tl" part="a_anim"/><lit-tag v="aa"/></equal>
+	      </test>
+  	      <let><clip pos="2" side="tl" part="nbr"/><lit-tag v="pl"/></let> 
+	      <let>
+	         <clip pos="2" side="tl" part="gen"/>
+	         <clip pos="1" side="tl" part="gen"/>
+	      </let>
+	    </when>
+	    <otherwise> <!-- nn & pl: set nbr to sg and gen to f -->
+	      <let><clip pos="2" side="tl" part="nbr"/><lit-tag v="sg"/></let>
+	      <let><clip pos="2" side="tl" part="gen"/><lit-tag v="f"/></let>
+	    </otherwise>
+	  </choose>
+	</otherwise>
+      </choose>    
+    </def-macro>
+
 
 
     <def-macro n="verbf_concord2" npar="2"> <!-- first verb, second noun etc. -->
@@ -902,9 +771,7 @@
 	  <choose>
 	    <when> <!-- aa & pl: copy gen, set nbr to _sg_ -->
 	      <test>
-	  	<in>
-		  <clip pos="2" side="tl" part="lem"/><list n="aa_nouns"/>
-		</in>
+		<equal><clip pos="2" side="tl" part="a_anim"/><lit-tag v="aa"/></equal>
 	      </test>
   	      <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="sg"/></let> 
 	      <let>
@@ -1009,7 +876,7 @@
        </pattern>
        <action>
          <call-macro n="set_gen_nbr_case"><with-param pos="1"/></call-macro>
-         <call-macro n="myf_concord2"><with-param pos="1"/><with-param pos="2"/></call-macro>
+         <call-macro n="adjf_concord2"><with-param pos="1"/><with-param pos="2"/></call-macro>
          <out>
 	   <chunk name="n_adj">
 	     <tags>
@@ -1053,7 +920,7 @@
        </pattern>
        <action>
          <call-macro n="set_gen_nbr_case"><with-param pos="2"/></call-macro>
-         <call-macro n="myf_concord2"><with-param pos="2"/><with-param pos="3"/></call-macro>
+         <call-macro n="adjf_concord2"><with-param pos="2"/><with-param pos="3"/></call-macro>
          <out>
 	   <chunk name="art_n_art_adj">
 	     <tags>
@@ -1109,7 +976,7 @@
        </pattern>
        <action>
          <call-macro n="set_gen_nbr_case"><with-param pos="2"/></call-macro>
-         <call-macro n="myf_concord2"><with-param pos="2"/><with-param pos="4"/></call-macro>
+         <call-macro n="adjf_concord2"><with-param pos="2"/><with-param pos="4"/></call-macro>
          <out>
 	   <chunk name="art_n_art_adj">
 	     <tags>
@@ -1161,19 +1028,31 @@
          <pattern-item n="nom"/>
        </pattern>
        <action>
+         <call-macro n="set_gen_nbr_case"><with-param pos="1"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
-         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
-           <lu>
-             <clip pos="1" side="tl" part="lemh"/>
-             <clip pos="1" side="tl" part="a_nom"/>
-             <clip pos="1" side="tl" part="gen"/>
-             <clip pos="1" side="tl" part="a_anim"/>
-             <clip pos="1" side="tl" part="nbr"/>
-             <lit-tag v="nom"/>
-             <clip pos="1" side="tl" part="poss"/>
-             <clip pos="1" side="tl" part="lemq"/>
-           </lu>
-         </chunk></out>
+	 <out>
+	   <chunk name="n_px">
+	     <tags>
+	       <tag><lit-tag v="SN"/></tag>
+	       <tag><clip pos="1" side="tl" part="gen"/></tag>
+	       <tag><clip pos="1" side="tl" part="a_anim"/></tag>
+	       <tag><clip pos="1" side="tl" part="nbr"/></tag>
+	       <tag><clip pos="1" side="tl" part="case"/></tag>
+	       <tag><lit-tag v="def"/></tag>
+	     </tags>
+             <lu>
+               <clip pos="1" side="tl" part="lemh"/>
+               <clip pos="1" side="tl" part="a_nom"/>
+               <clip pos="1" side="tl" part="gen"/>
+               <clip pos="1" side="tl" part="a_anim"/>
+               <clip pos="1" side="tl" part="nbr"/>
+<!--	       <clip pos="1" side="tl" part="case" link-to="4"/> 4 when np (a_anim empty), 5 otherwise :( -->
+	       <lit-tag v="nom"/>
+               <clip pos="1" side="tl" part="poss"/>
+               <clip pos="1" side="tl" part="lemq"/>
+             </lu>
+           </chunk>
+	 </out>
        </action>
     </rule>
 
@@ -1183,7 +1062,6 @@
          <pattern-item n="det"/>
        </pattern>
        <action>
-<!--         <call-macro n="f_concord1"><with-param pos="1"/></call-macro> -->
          <call-macro n="set_gen_nbr_case"><with-param pos="1"/></call-macro>
          <call-macro n="set_px_gen"><with-param pos="1"/></call-macro>
          <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
