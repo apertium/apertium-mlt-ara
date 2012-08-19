@@ -277,6 +277,7 @@
      <e c="  0"><p><l>li<s n="cnjsub"/></l><r>أن<s n="cnjsub"/></r></p></e>
      <e slr="1"><p><l>li<s n="cnjsub"/></l><r>ل<s n="cnjsub"/></r></p></e>
      <e><p><l>għax<s n="cnjsub"/></l><r>لأن<s n="cnjsub"/></r></p></e>
+     <e r="LR"><p><l>peress<b/>li<s n="cnjsub"/></l><r>لأن<s n="cnjsub"/></r></p></e> <!-- check if that's ok  -->
      <e><p><l>bħalma<s n="cnjsub"/></l><r>كما<s n="cnjsub"/></r></p></e>
      <e><p><l>sabiex<s n="cnjsub"/></l><r>لكي<s n="cnjsub"/></r></p></e>
      <e r="RL"><p><l>sabiex<s n="cnjsub"/></l><r>ل<s n="cnjsub"/></r></p></e>
@@ -356,8 +357,11 @@
 
 
      <e><p><l>flok<s n="pr"/></l><r>بدلا<b/>من<s n="pr"/></r></p></e>
-     <e><p><l>ta'<b/>wara<s n="pr"/></l><r>بعد<s n="pr"/></r></p></e>
-
+     <e><p><l>ta'<b/>wara<s n="pr"/></l><r>بعد<s n="pr"/></r></p></e>  <!-- not pr, right? -->
+     <e><p><l>barra<s n="pr"/></l><r>خارج<s n="pr"/></r></p></e>
+     <e slr="1" r="LR"><p><l>barra<s n="pr"/></l><r>بالإضافة<b/>إلى<s n="pr"/></r></p></e>
+     <e><p><l>minbarra<s n="pr"/></l><r>بالإضافة<b/>إلى<s n="pr"/></r></p></e>
+     <e r="LR"><p><l>mingħand<s n="pr"/></l><r>من<s n="pr"/></r></p></e>
 
 
      <!-- SECTION: Pronouns -->
@@ -637,6 +641,7 @@
      <e><p><l>mammiferu<s n="n"/><s n="m"/></l><r>ثديي<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>bżonn<s n="n"/><s n="m"/></l><r>حاجة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>tim<s n="n"/><s n="m"/></l><r>فريق<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e r="LR"><p><l>skwadra<s n="n"/><s n="f"/></l><r>فريق<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>knisja<s n="n"/><s n="f"/></l><r>كنيسة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>dritt<s n="n"/><s n="m"/></l><r>حق<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e c="  0"><p><l>partit<s n="n"/><s n="m"/></l><r>حزب<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -756,6 +761,7 @@
      <e><p><l>dinja<s n="n"/><s n="f"/></l><r>عالم<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e> <!-- دنيا ? -->
      <e><p><l>unjoni<s n="n"/><s n="f"/></l><r>اتحاد<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>riżultat<s n="n"/><s n="m"/></l><r>نتيجة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e r="LR"><p><l>skor<s n="n"/><s n="m"/></l><r>نتيجة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>kap<s n="n"/><s n="m"/></l><r>رئيس<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e r="LR"><p><l>president<s n="n"/><s n="m"/></l><r>رئيس<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>belt<g><b/>kapitali</g><s n="n"/><s n="f"/></l><r>عاصمة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -1575,6 +1581,7 @@
      <e c="  0"><p><l>xitan<s n="n"/><s n="m"/></l><r>شيطان<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e slr="1"><p><l>xitan<s n="n"/><s n="m"/></l><r>إبليس<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>suġġett<s n="n"/><s n="m"/></l><r>موضوع<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e r="LR"><p><l>oġġett<s n="n"/><s n="m"/></l><r>موضوع<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e c="  0"><p><l>biża<s n="n"/><s n="m"/></l><r>فزع<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="sg_sg_du_pl"/><par n="nocase_nom_gen_acc"/></e> <!-- ethymol. -->
      <e slr="1"><p><l>biża<s n="n"/><s n="m"/></l><r>خيف<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e slr="2"><p><l>biża<s n="n"/><s n="m"/></l><r>رهبة<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -1948,6 +1955,8 @@
       <e r="RL"><p><l>flus<s n="n"/><s n="mf"/><s n="sg"/></l><r>نقد<s n="n"/><s n="m"/><s n="nn"/><s n="du"/></r></p><par n="nocase_nom_gen_acc"/></e>  <!-- du ?? -->
      <e slr="1" r="LR"><p><l>flus<s n="n"/><s n="mf"/></l><r>مال<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="sg_sg_du_pl"/><par n="nocase_nom_gen_acc"/></e>
      <e r="RL"><p><l>flus<s n="n"/><s n="mf"/></l><r>مال<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="sg_sg_du_pl"/><par n="nocase_nom_gen_acc"/></e> <!-- flus may be pl itself -->
+     <e r="LR"><p><l>finanza<s n="n"/><s n="f"/><s n="sg"/></l><r>مال<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
+     <e r="LR"><p><l>finanza<s n="n"/><s n="f"/><s n="pl"/></l><r>مال<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
       <e r="LR"><p><l>forġa<s n="n"/><s n="f"/></l><r>تشكيل<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e> <!-- or تزوير? :) -->
       <e><p><l>forka<s n="n"/><s n="f"/></l><r>مشنقة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e> <!-- hm -->
       <e><p><l>forn<s n="n"/><s n="m"/></l><r>فرن<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -2466,6 +2475,7 @@
      <e><p><l>kaċċatur<s n="n"/><s n="m"/></l><r>صياد<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>indirizz<s n="n"/><s n="m"/></l><r>عنوان<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>mħallef<s n="n"/><s n="m"/></l><r>قاض<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e r="LR"><p><l>maġistrat<s n="n"/><s n="m"/></l><r>قاض<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>  <!-- hm -->
      <e r="RL"><p><l>mħallef<s n="n"/><s n="m"/><s n="sg"/></l><r>محكم<b/>تفتيش<s n="n"/><s n="m"/><s n="aa"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e r="RL"><p><l>mħallef<s n="n"/><s n="m"/><s n="pl"/></l><r>محكم<b/>تفتيش<s n="n"/><s n="m"/><s n="aa"/><s n="du"/></r></p><par n="nocase_nom_gen_acc"/></e>  <!-- hm -->
      <e><p><l>għalliem<s n="n"/><s n="m"/></l><r>مدرس<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -2527,7 +2537,12 @@
       <e><p><l>Għawdxi<s n="n"/><s n="m"/></l><r>ساكن<g><b/>غوزو</g><s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
       <e><p><l>Għawdxi<s n="n"/></l><r>ساكنة<g><b/>غوزو</g><s n="n"/><s n="f"/><s n="aa"/></r></p><par n="f_sg_m_pl_f"/><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>dħul<s n="n"/><s n="m"/><s n="sg"/></l><r>دخول<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
-     <e><p><l>nofsinhar<s n="n"/><s n="m"/></l><r>ظهر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="sg_sg_du_pl"/><par n="nocase_nom_gen_acc"/></e>
+     <e><p><l>nofsinhar<s n="n"/><s n="m"/><s n="sg"/></l><r>جنوب<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
+     <e slr="1" r="LR"><p><l>nofsinhar<s n="n"/><s n="m"/></l><r>ظهر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="sg_sg_du_pl"/><par n="nocase_nom_gen_acc"/></e>
+     <e r="RL"><p><l>nofsinhar<s n="n"/><s n="m"/></l><r>ظهر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="sg_sg_du_pl"/><par n="nocase_nom_gen_acc"/></e>
+     <e><p><l>ikel<s n="n"/><s n="m"/></l><r>طعام<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="sg_sg_du_pl"/><par n="nocase_nom_gen_acc"/></e>
+     <e><p><l>serje<s n="n"/><s n="f"/></l><r>مسلسل<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e><p><l>metru<s n="n"/><s n="m"/></l><r>متر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
 
      <!-- SECTION: Proper nouns -->
 
@@ -3134,6 +3149,19 @@
     <e><p><l>von<b/>Fersen<s n="np"/><s n="cog"/><s n="mf"/></l><r>فون<b/>فرسن<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
     <e><p><l>von<b/>Lobkowitz<s n="np"/><s n="cog"/><s n="mf"/></l><r>فون<b/>لوبكوفيتس<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
     <e><p><l>Pullicino<s n="np"/><s n="cog"/><s n="mf"/></l><r>بوليتشينو<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Adami<s n="np"/><s n="cog"/><s n="mf"/></l><r>أدمي<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Bernoulli<s n="np"/><s n="cog"/><s n="mf"/></l><r>بيرنولي<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Dürer<s n="np"/><s n="cog"/><s n="mf"/></l><r>دورر<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Falzon<s n="np"/><s n="cog"/><s n="mf"/></l><r>فلزون<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Hollande<s n="np"/><s n="cog"/><s n="mf"/></l><r>أولاند<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Mallia<s n="np"/><s n="cog"/><s n="mf"/></l><r>ماليا<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Mizzi<s n="np"/><s n="cog"/><s n="mf"/></l><r>ميتسي<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Scerri<s n="np"/><s n="cog"/><s n="mf"/></l><r>شري<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Schrödinger<s n="np"/><s n="cog"/><s n="mf"/></l><r>شرودنغر<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Vassalli<s n="np"/><s n="cog"/><s n="mf"/></l><r>فسالي<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Vassallo<s n="np"/><s n="cog"/><s n="mf"/></l><r>فسالو<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+
+
 
 <!-- TODO add org in mt, gen, num etc -->
     <e><p><l>Olimpjadi<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></l><r>أولمبياد<s n="np"/><s n="al"/><s n="m"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
@@ -4216,8 +4244,13 @@
     <e><p><l>Zsolt<s n="np"/><s n="ant"/><s n="m"/></l><r>زسولت<s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
     <e><p><l>Zubin<s n="np"/><s n="ant"/><s n="m"/></l><r>زوبين<s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
     <e><p><l>Fran<s n="np"/><s n="ant"/><s n="m"/></l><r>فران<s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
-
-
+    <e><p><l>Benedittu<s n="np"/><s n="ant"/><s n="m"/></l><r>بينيديتو<s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Filippu<s n="np"/><s n="ant"/><s n="m"/></l><r>فيليبو<s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Ġirolmu<s n="np"/><s n="ant"/><s n="m"/></l><r>جيرولمو<s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Ġużè<s n="np"/><s n="ant"/><s n="m"/></l><r>جوشة<s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Karmenu<s n="np"/><s n="ant"/><s n="m"/></l><r>كرمينو<s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Mikelanġlu<s n="np"/><s n="ant"/><s n="m"/></l><r>ميكيلانجيلو<s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Napuljun<s n="np"/><s n="ant"/><s n="m"/></l><r>نابليون<s n="np"/><s n="ant"/><s n="m"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
 
      <e><p><l>Abbey<s n="np"/><s n="ant"/><s n="f"/></l><r>أبي<s n="np"/><s n="ant"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>Abigail<s n="np"/><s n="ant"/><s n="f"/></l><r>أبيغيل<s n="np"/><s n="ant"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -5899,6 +5932,29 @@
     <e><p><l>Zurich<s n="np"/><s n="top"/><s n="f"/></l><r>زيوريخ<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
 
 
+    <e><p><l>Albanija<s n="np"/><s n="top"/><s n="f"/></l><r>ألبانيا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Belġju<s n="np"/><s n="top"/><s n="m"/></l><r>بلجيكا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Bolonja<s n="np"/><s n="top"/><s n="f"/></l><r>بولونيا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Bulgarija<s n="np"/><s n="top"/><s n="f"/></l><r>بلغاريا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Ċipru<s n="np"/><s n="top"/><s n="f"/></l><r>قبرص<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Firenze<s n="np"/><s n="top"/><s n="f"/></l><r>فلورنسا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Indja<s n="np"/><s n="top"/><s n="f"/></l><r>الهند<s n="np"/><s n="top"/><s n="m"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Iskozja<s n="np"/><s n="top"/><s n="f"/></l><r>أسكتلندا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Iżvizzera<s n="np"/><s n="top"/><s n="f"/></l><r>سويسرا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Kastilija<s n="np"/><s n="top"/><s n="f"/></l><r>قشتالة<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Kroazja<s n="np"/><s n="top"/><s n="f"/></l><r>كرواتيا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Olanda<s n="np"/><s n="top"/><s n="f"/></l><r>هولندا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Rumanija<s n="np"/><s n="top"/><s n="f"/></l><r>رومانيا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Sirja<s n="np"/><s n="top"/><s n="f"/></l><r>سوريا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Turkija<s n="np"/><s n="top"/><s n="f"/></l><r>تركيا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Ukrajna<s n="np"/><s n="top"/><s n="f"/></l><r>أوكرانيا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Ungerija<s n="np"/><s n="top"/><s n="f"/></l><r>هنغاريا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Venezja<s n="np"/><s n="top"/><s n="f"/></l><r>البندقية<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Vjenna<s n="np"/><s n="top"/><s n="f"/></l><r>فيينا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+
+
+
+
      <e><p><l>Aqua<s n="np"/><s n="al"/><s n="GD"/></l><r>أكوا<s n="np"/><s n="al"/><s n="GD"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>Ars<s n="np"/><s n="al"/><s n="GD"/></l><r>أرس<s n="np"/><s n="al"/><s n="GD"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>Arte<s n="np"/><s n="al"/><s n="GD"/></l><r>أرته<s n="np"/><s n="al"/><s n="GD"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -7075,6 +7131,10 @@
      <e><p><l>futur<s n="adj"/></l><r>مستقبلي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>integrali<s n="adj"/></l><r>متكامل<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e><p><l>finanzjarju<s n="adj"/></l><r>مالي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e><p><l>militari<s n="adj"/></l><r>عسكري<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+     <e><p><l>preżenti<s n="adj"/></l><r>حاضر<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+     <e><p><l>preċedenti<s n="adj"/></l><r>سابق<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+     <e><p><l>segwenti<s n="adj"/></l><r>تال<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
 
 
      <!-- SECTION: Interjections -->
@@ -7088,6 +7148,7 @@
      <!-- SECTION: Abbreviations -->
 
      <e><p><l>Dr<s n="abbr"/></l><r>د<s n="abbr"/></r></p></e>
+     <e><p><l>km<s n="abbr"/></l><r>كم<s n="abbr"/></r></p></e>
      <e><p><l>pm<s n="abbr"/></l><r>بعد<b/>الظهر<s n="adv"/></r></p></e>
      <e><p><l>am<s n="abbr"/></l><r>قبل<b/>الظهر<s n="adv"/></r></p></e>
 <!--     <e><p><l>Fr<s n="abbr"/></l><r><s n=""/></r></p></e> -->
@@ -7100,9 +7161,7 @@
      <e r="LR"><p><l>llum<s n="adv"/></l><r>اليوم<s n="adv"/></r></p></e>
      <e><p><l>ilbieraħ<s n="adv"/></l><r>امس<s n="adv"/></r></p></e>
      <e r="LR"><p><l>il-bieraħ<s n="adv"/></l><r>امس<s n="adv"/></r></p></e>
-     <e c="  0"><p><l>barra<s n="adv"/></l><r>بالإضافة<b/>إلى<s n="adv"/></r></p></e>
-     <e slr="1" r="LR"><p><l>barra<s n="adv"/></l><r>خارجا<s n="adv"/></r></p></e>
-     <e r="RL"><p><l>barra<s n="adv"/></l><r>خارجا<s n="adv"/></r></p></e>
+     <e><p><l>barra<s n="adv"/></l><r>خارجا<s n="adv"/></r></p></e>
      <e><p><l>il<b/>barra<s n="adv"/></l><r>الخارج<s n="adv"/></r></p></e>
      <e><p><l>flimkien<s n="adv"/></l><r>معا<s n="adv"/></r></p></e>
      <e r="LR"><p><l>ovvjament<s n="adv"/></l><r>طبعا<s n="adv"/></r></p></e> <!-- ברור -->
@@ -7283,6 +7342,8 @@
      <e><p><l>f'daqqa<s n="adv"/></l><r>فجأة<s n="adv"/></r></p></e> <!-- في حين or sth like that? -->
      <e><p><l>filgħodu<s n="adv"/></l><r>صباحا<s n="adv"/></r></p></e>
      <e><p><l>filgħaxija<s n="adv"/></l><r>مساء<s n="adv"/></r></p></e>
+     <e><p><l>intant<s n="adv"/></l><r>في<b/>الوقت<b/>نفسه<s n="adv"/></r></p></e>
+
 
      <!-- SECTION: Verbs -->
 
