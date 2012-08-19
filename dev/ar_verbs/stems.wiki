@@ -638,6 +638,8 @@
 |-
 | أمر || vblex || firsthamza || 1 || || order || ء-م-ر || a-a || a-u || tv || 
 |-
+| ولد || vblex || firstw || 1 || || give٠birth || و-ل-د || a-a || a-i || tv || 
+|-
 | أثر || vblex || firsthamza || 2 || || influence || ء-ث-ر || || || iv ||
 |-
 | آمن || vblex || firsthamza || 4 || || believe || ء-م-ن || || || iv ||

@@ -745,6 +745,7 @@
      <e><p><l>forma<s n="n"/><s n="f"/></l><r>شكل<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>deċiżjoni<s n="n"/><s n="f"/></l><r>قرار<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>informazzjoni<s n="n"/><s n="f"/></l><r>خبر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e r="LR"><p><l>aħbar<s n="n"/><s n="f"/></l><r>خبر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e c="  0" r="LR"><p><l>proċess<s n="n"/><s n="m"/></l><r>عملية<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e> <!-- علية is rather operation -->
      <e slr="1" r="LR"><p><l>proċess<s n="n"/><s n="m"/></l><r>محاكمة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e r="RL"><p><l>proċess<s n="n"/><s n="m"/></l><r>محاكمة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -1287,6 +1288,7 @@
      <e c="  0"><p><l>altar<s n="n"/><s n="m"/></l><r>هيكل<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e slr="1" r="LR"><p><l>altar<s n="n"/><s n="m"/></l><r>مذبح<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>aċċident<s n="n"/><s n="m"/></l><r>حادث<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e r="LR"><p><l>inċident<s n="n"/><s n="m"/></l><r>حادث<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>abilità<s n="n"/><s n="f"/></l><r>قدرة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>kuntrast<s n="n"/><s n="m"/></l><r>تباين<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e r="LR"><p><l>kriterju<s n="n"/><s n="m"/></l><r>معيار<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -2520,9 +2522,12 @@
      <e><p><l>tul<s n="n"/><s n="m"/></l><r>طول<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>flawt<s n="n"/><s n="m"/></l><r>مزمار<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>sajjetta<s n="n"/><s n="f"/></l><r>صاعقة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
-     <e><p><l>naħa<s n="n"/><s n="f"/></l><r>ناحية<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
-
-
+     <e><p><l>naħa<s n="n"/><s n="f"/></l><r>ناحية<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>  <!-- جهة ?  -->
+     <e><p><l>utent<s n="n"/><s n="m"/></l><r>مستخدم<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+      <e><p><l>Għawdxi<s n="n"/><s n="m"/></l><r>ساكن<g><b/>غوزو</g><s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+      <e><p><l>Għawdxi<s n="n"/></l><r>ساكنة<g><b/>غوزو</g><s n="n"/><s n="f"/><s n="aa"/></r></p><par n="f_sg_m_pl_f"/><par n="nocase_nom_gen_acc"/></e>
+     <e><p><l>dħul<s n="n"/><s n="m"/><s n="sg"/></l><r>دخول<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
+     <e><p><l>nofsinhar<s n="n"/><s n="m"/></l><r>ظهر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="sg_sg_du_pl"/><par n="nocase_nom_gen_acc"/></e>
 
      <!-- SECTION: Proper nouns -->
 
@@ -2630,7 +2635,7 @@
      <e><p><l>L-Imsida<s n="np"/><s n="top"/><s n="f"/></l><r>الإمسيدا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>L-Imtarfa<s n="np"/><s n="top"/><s n="f"/></l><r>الإمترفا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>L-Isla<s n="np"/><s n="top"/><s n="f"/></l><r>الإسلا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
-     <e><p><l>Għawdex<s n="np"/><s n="top"/><s n="f"/></l><r>عودش<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e><p><l>Għawdex<s n="np"/><s n="top"/><s n="f"/></l><r>غوزو<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>Sliema<s n="np"/><s n="top"/><s n="f"/></l><r>سليما<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>Santa<b/>Luċija<s n="np"/><s n="top"/><s n="f"/></l><r>سانتا<b/>لوسيا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>San<b/>Pawl<b/>tat-Tarġa<s n="np"/><s n="top"/><s n="f"/></l><r>سان<b/>بول<b/>تترجا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -3128,6 +3133,7 @@
     <e><p><l>von<b/>Neumann<s n="np"/><s n="cog"/><s n="mf"/></l><r>فون<b/>نيومان<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
     <e><p><l>von<b/>Fersen<s n="np"/><s n="cog"/><s n="mf"/></l><r>فون<b/>فرسن<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
     <e><p><l>von<b/>Lobkowitz<s n="np"/><s n="cog"/><s n="mf"/></l><r>فون<b/>لوبكوفيتس<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Pullicino<s n="np"/><s n="cog"/><s n="mf"/></l><r>بوليتشينو<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
 
 <!-- TODO add org in mt, gen, num etc -->
     <e><p><l>Olimpjadi<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></l><r>أولمبياد<s n="np"/><s n="al"/><s n="m"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
@@ -7068,6 +7074,7 @@
      <e><p><l>bgħid<s n="adj"/></l><r>بعيد<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>futur<s n="adj"/></l><r>مستقبلي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>integrali<s n="adj"/></l><r>متكامل<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+     <e><p><l>finanzjarju<s n="adj"/></l><r>مالي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
 
 
      <!-- SECTION: Interjections -->
@@ -7274,7 +7281,8 @@
      <e><p><l>biżżejjed<s n="adv"/></l><r>بالكفاية<s n="adv"/></r></p></e>
      <e><p><l>ta'<b/>wara<s n="adv"/></l><r>بعد<b/>ذلك<s n="adv"/></r></p></e>
      <e><p><l>f'daqqa<s n="adv"/></l><r>فجأة<s n="adv"/></r></p></e> <!-- في حين or sth like that? -->
-
+     <e><p><l>filgħodu<s n="adv"/></l><r>صباحا<s n="adv"/></r></p></e>
+     <e><p><l>filgħaxija<s n="adv"/></l><r>مساء<s n="adv"/></r></p></e>
 
      <!-- SECTION: Verbs -->
 
@@ -7914,6 +7922,8 @@
      <e r="RL"><p><l>skorja<s n="vblex"/><s n="tv"/></l><r>سجل<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
      <e><p><l>tella'<s n="vblex"/><s n="tv"/></l><r>صاغ<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>  <!-- hm, isn't it rather 'to raise'? -->
      <e r="RL"><p><l>tella'<s n="vblex"/><s n="tv"/></l><r>صاغ<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
+     <e><p><l>wieled<s n="vblex"/><s n="tv"/></l><r>ولد<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> 
+     <e><p><l>twieled<s n="vblex"/><s n="iv"/></l><r>ولد<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
 
 
 

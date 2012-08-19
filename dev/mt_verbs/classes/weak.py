@@ -239,6 +239,7 @@ def weak_patt2_pres(root, vowels, tv): #{
 
 	# no first vowel elision in forms with suffixes? 
 	forms['pres.p3.m.sg'] = weak_vowel_forms('i' + r[0] + v[0] + r[1] + r[1] + v[1] , 'i' + r[0] + v[0] + r[1] + r[1] + presuff_vowel , '-', tv);
+	forms['pres.p3.m.sg'] += weak_vowel_forms('j' + r[0] + v[0] + r[1] + r[1] + v[1] , 'j' + r[0] + v[0] + r[1] + r[1] + presuff_vowel , 'LR', tv);
 	forms['pres.p3.f.sg'] = weak_vowel_forms('t' + r[0] + v[0] + r[1] + r[1] + v[1] , 't' + r[0] + v[0] + r[1] + r[1] + presuff_vowel , '-', tv);
 	forms['pres.p2.mf.sg'] = weak_vowel_forms('t' + r[0] + v[0] + r[1] + r[1] + v[1] , 't' + r[0] + v[0] + r[1] + r[1] + presuff_vowel , '-', tv);
 	forms['pres.p1.mf.sg'] = weak_vowel_forms('in' + r[0] + v[0] + r[1] + r[1] + v[1] , 'in' + r[0] + v[0] + r[1] + r[1] + presuff_vowel , '-', tv);
@@ -246,6 +247,7 @@ def weak_patt2_pres(root, vowels, tv): #{
 	suffix = 'u'
 
 	forms['pres.p3.mf.pl'] = weak_vowel_forms('i' + r[0] + v[0] + r[1] + r[1] + suffix, 'i' + r[0] + v[0] + r[1] + r[1] + suffix, '-', tv);
+	forms['pres.p3.mf.pl'] += weak_vowel_forms('j' + r[0] + v[0] + r[1] + r[1] + suffix, 'j' + r[0] + v[0] + r[1] + r[1] + suffix, 'LR', tv);
 	forms['pres.p2.mf.pl'] = weak_vowel_forms('t' + r[0] + v[0] + r[1] + r[1] + suffix, 't' + r[0] + v[0] + r[1] + r[1] + suffix, '-', tv);	
 	forms['pres.p1.mf.pl'] = weak_vowel_forms('in' + r[0] + v[0] + r[1] + r[1] + suffix, 'in' + r[0] + v[0] + r[1] + r[1] + suffix, '-', tv);
 

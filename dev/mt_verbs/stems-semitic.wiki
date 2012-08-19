@@ -301,6 +301,8 @@
 |-
 | qiegħed || vblex || strong || 3a || put,place || q-għ-d || || || tv ||  || m 
 |-
+| wieled || vblex || strong || 3a || give٠birth || w-l-d || || || tv ||  || m 
+|-
 | ħares || vblex || strong || 3b || look || ħ-r-s || || || iv ||  || m
 |-
 | twieġeb || vblex || strong || 6a || be٠answered || w-ġ-b || || || iv ||  || 
@@ -308,6 +310,8 @@
 | ttieħed || vblex || strong || 6a || be٠taken || t-ħ-d || || || iv ||  || mi 
 |-
 | tqiegħed || vblex || strong || 6a || be٠put || q-għ-d || || || iv ||  || 
+|-
+| twieled || vblex || strong || 6a || be٠born || w-l-d || || || iv ||  || mi 
 |-
 | nħareġ || vblex || strong || 7a || be٠taken٠out || ħ-r-ġ || a-e || a-e || iv ||  || 
 |-

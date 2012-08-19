@@ -256,26 +256,26 @@ def irregular_forms (stem): #{
 		forms['past.p1.mf.pl'] = irreg_vowel_forms('morna', 'mornie', '-');
 
 		forms['pres.p3.m.sg'] = irreg_consonant_forms('imur', 'imur', 'LR', 'ek');
-		forms['pres.p3.m.sg'] = irreg_consonant_forms('jmur', 'jmur', 'LR', 'ek');
-		forms['pres.p3.m.sg'] = irreg_consonant_forms('imur', 'imur', 'RL', 'ek');
+		forms['pres.p3.m.sg'] += irreg_consonant_forms('jmur', 'jmur', 'LR', 'ek');
+		forms['pres.p3.m.sg'] += irreg_consonant_forms('imur', 'imur', 'RL', 'ek');
 
 		forms['pres.p3.f.sg'] = irreg_consonant_forms('tmur', 'tmur', '-', 'ek');
 		forms['pres.p2.mf.sg'] = irreg_consonant_forms('tmur', 'tmur', '-', 'ek');
 
 		# there is also 1 ^inmorru/*inmorru$
 		forms['pres.p1.mf.sg'] = irreg_consonant_forms('immur', 'immur', 'LR', 'ek');
-		forms['pres.p1.mf.sg'] = irreg_consonant_forms('mmur', 'mmur', 'LR', 'ek');
-		forms['pres.p1.mf.sg'] = irreg_consonant_forms('immur', 'immur', 'RL', 'ek');
+		forms['pres.p1.mf.sg'] += irreg_consonant_forms('mmur', 'mmur', 'LR', 'ek');
+		forms['pres.p1.mf.sg'] += irreg_consonant_forms('immur', 'immur', 'RL', 'ek');
 
 		forms['pres.p3.mf.pl'] = irreg_vowel_forms('imorru', 'imorru', 'LR');
-		forms['pres.p3.mf.pl'] = irreg_vowel_forms('jmorru', 'jmorru', 'LR');
-		forms['pres.p3.mf.pl'] = irreg_vowel_forms('imorru', 'imorru', 'RL');
+		forms['pres.p3.mf.pl'] += irreg_vowel_forms('jmorru', 'jmorru', 'LR');
+		forms['pres.p3.mf.pl'] += irreg_vowel_forms('imorru', 'imorru', 'RL');
 
 		forms['pres.p2.mf.pl'] = irreg_vowel_forms('tmorru', 'tmorru', '-');
 
 		forms['pres.p1.mf.pl'] = irreg_vowel_forms('immorru', 'immorru', 'LR');
-		forms['pres.p1.mf.pl'] = irreg_vowel_forms('mmorru', 'mmorru', 'LR');
-		forms['pres.p1.mf.pl'] = irreg_vowel_forms('immorru', 'immorru', 'RL');
+		forms['pres.p1.mf.pl'] += irreg_vowel_forms('mmorru', 'mmorru', 'LR');
+		forms['pres.p1.mf.pl'] += irreg_vowel_forms('immorru', 'immorru', 'RL');
 
 		forms['imp.p2.mf.sg'] = irreg_consonant_forms('mur', 'mur', '-', 'ek');
 		forms['imp.p2.mf.pl'] = irreg_vowel_forms('morru', 'morru', '-');
