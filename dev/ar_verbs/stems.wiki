@@ -604,6 +604,8 @@
 |-
 | أخفى || vblex || defective || 4 || || hide || خ-ف-ي || || || tv || 
 |-
+| أوحى || vblex || defective || 4 || || inspire || و-ح-ي || || || iv || 
+|-
 | تعافى || vblex || defective || 6 || || recover || ع-ف-و || || || iv || 
 |-
 | التقى || vblex || defective || 8 || || meet || ل-ق-ي || || || iv || 

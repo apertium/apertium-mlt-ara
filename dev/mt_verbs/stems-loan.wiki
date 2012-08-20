@@ -133,4 +133,6 @@
 | iċċelebra || vblex || loan || double_cons || celebrate || ċċelebr ||  || a || tv || ċelebrat
 |-
 | irrealizza || vblex || loan || double_cons || realise || rrealizz ||  || a || tv || realizzat
+|-
+| ispira || vblex || loan || first_vowel || inspire || ispir ||  || a || tv || ispirat
 |}

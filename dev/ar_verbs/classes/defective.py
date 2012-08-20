@@ -1381,8 +1381,8 @@ def main(stem): #{
 	elif stem['theme'] == '4' : #{
 		forms.update(defective_patt4_past(stem['root'], stem['trans']));
 		forms.update(defective_patt4_impf(stem['root'], stem['trans']));
-		if stem['trans'] == 'tv':
-			forms.update(defective_patt4_pp(stem['root']));
+		# if stem['trans'] == 'tv':
+		forms.update(defective_patt4_pp(stem['root']));
 		forms.update(defective_patt4_pprs(stem['root']));
 	#}
 	elif stem['theme'] == '5' : #{

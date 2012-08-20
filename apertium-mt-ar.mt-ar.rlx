@@ -24,6 +24,8 @@ LIST PL = pl;
 LIST NOUNSG = (n sg);
 LIST NOUNPL = (n pl);
 
+LIST NOUNPX = (n px1sg) (n px2sg) (n px3sg_m) (n px3sg_f) (n px1pl) (n px2pl) (n px3pl);
+
 LIST VRBSG = (vblex sg) (vaux sg);
 LIST VRBPL = (vblex pl) (vaux pl);
 
@@ -62,6 +64,7 @@ SELECT:r4 REL IF
         (0 CNJSUB)
         (0 REL) ;
 # oops.. 'fis-sens _li_ l-Misilmin jaħsbu li hu miktub direttament minn Alla'
+# so, should be somehow refined
 
 
 SELECT:r5 CNJSUB IF
@@ -161,3 +164,6 @@ SELECT:r19 PRN IF
         (0 DET)
         (0 PRN)
         (NOT 1 NOUN LINK NOT 1 DETDEF);
+
+REMOVE:r20 NOUNPX IF
+	(-1 DETDEF)

@@ -56,6 +56,7 @@
     <def-attr n="nbr">
       <attr-item tags="sg"/>
       <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
       <attr-item tags="ND"/>
     </def-attr>
     <def-attr n="case">
@@ -377,6 +378,13 @@
    </rule>
 
 
+   <rule comment="REGLA: rel"> 
+     <pattern>
+       <pattern-item n="rel"/>
+     </pattern>
+     <action>
+     </action>
+   </rule>
 
   </section-rules>
 

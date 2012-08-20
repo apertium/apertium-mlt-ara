@@ -2976,7 +2976,7 @@
 
 
     <!-- temporal solution: should be ليس (verb) + prep + suff -->
-    <rule comment="rule 48: neg + preposition + pronominal suffix">
+    <rule comment="rule 49: neg + preposition + pronominal suffix">
        <pattern>
          <!-- <pattern-item n="ma_neg"/> -->
          <pattern-item n="prep"/>
@@ -3004,7 +3004,7 @@
     </rule> 
 
 
-    <rule comment="rule 49: artic np"> <!-- no article with proper nouns -->
+    <rule comment="rule 50: artic np"> <!-- no article with proper nouns -->
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="non-np"/>
@@ -3038,7 +3038,7 @@
     </rule>
 
 
-    <rule comment="rule 50: artic np"> <!-- no article with proper nouns -->
+    <rule comment="rule 51: artic np"> <!-- no article with proper nouns -->
        <pattern>
 	 <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -3082,7 +3082,7 @@
 
 
 
-    <rule comment="rule 51: għal membri ta' din konfederazzjoni"> 
+    <rule comment="rule 52: għal membri ta' din konfederazzjoni"> 
        <pattern>
          <pattern-item n="prep"/>	 
          <pattern-item n="non-np"/>
@@ -3145,17 +3145,32 @@
 
 
 <!-- in fact, there will be a rather complex set of rules for deleting الذي or setting gen, num and case   -->
-    <rule comment="rule 52: deleting li">
+    <rule comment="rule 53: deleting li">
        <pattern>
          <pattern-item n="rel"/>
        </pattern>
        <action>
+         <out>
+	   <chunk name="li">
+	     <tags>
+	       <tag><lit-tag v="rel"/></tag>
+	       <tag><clip pos="1" side="tl" part="gen"/></tag>
+	       <tag><clip pos="1" side="tl" part="nbr"/></tag>
+	     </tags>
+             <lu>
+               <clip pos="1" side="tl" part="lemh"/>
+               <clip pos="1" side="tl" part="a_rel"/>
+               <clip pos="1" side="tl" part="gen" link-to="2"/>
+               <clip pos="1" side="tl" part="nbr" link-to="3"/>
+               <clip pos="1" side="tl" part="lemq"/>
+             </lu>
+          </chunk></out>
        </action>
     </rule>
 
 
 
-    <rule comment="rule 53: li with def. noun"> 
+    <rule comment="rule 54: li with def. noun"> 
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="nom"/>
@@ -3189,7 +3204,7 @@
     </rule>
 
 
-    <rule comment="rule 54: li with indef">  <!-- TODO: not quite: poss. suffixes! --> 
+    <rule comment="rule 55: li with indef">  <!-- TODO: not quite: poss. suffixes! --> 
        <pattern>
          <pattern-item n="nom"/>
          <pattern-item n="rel"/>
@@ -3213,7 +3228,7 @@
 
 
     <!-- TODO: unless pasv -->
-    <rule comment="rule 55: dir object in accusativ ">
+    <rule comment="rule 56: dir object in accusativ ">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="nom"/>
@@ -3248,7 +3263,7 @@
     </rule> 
 
 
-    <rule comment="rule 56: dir object in accusativ ">
+    <rule comment="rule 57: dir object in accusativ ">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="nom"/>
@@ -3296,7 +3311,7 @@
 
 
 <!-- hey, should be det, but _not_ article -->
-    <rule comment="rule 57: prep + gen "> 
+    <rule comment="rule 58: prep + gen "> 
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="nom"/>
@@ -3336,7 +3351,7 @@
     </rule>
 
 
-    <rule comment="rule 58: prep + gen ">
+    <rule comment="rule 59: prep + gen ">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -3369,7 +3384,7 @@
 
 
 
-    <rule comment="rule 59: prep + gen ">
+    <rule comment="rule 60: prep + gen ">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -3421,7 +3436,7 @@
 
 
 
-    <rule comment="rule 60: fil-kamp tal-mużika popolari">
+    <rule comment="rule 61: fil-kamp tal-mużika popolari">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -3487,7 +3502,7 @@
 
 
 
-    <rule comment="rule 61: dir object in accusative">
+    <rule comment="rule 62: dir object in accusative">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="d_obj"/>
@@ -3536,32 +3551,67 @@
     </rule> 
 
 
-    <rule comment="rule 62: mt ġie + pp = ar pass voice">
+    <rule comment="rule 63: mt ġie + pp = ar pass voice">
        <pattern>
          <pattern-item n="gie"/>
          <pattern-item n="pp"/>
        </pattern>
        <action>
-         <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
-         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
-           <lu>
-             <clip pos="2" side="tl" part="lemh"/>
-             <clip pos="2" side="tl" part="a_verb"/>
-             <clip pos="2" side="tl" part="a_trans"/>
-             <lit-tag v="pasv"/>
-             <clip pos="1" side="tl" part="temps"/>
-             <clip pos="1" side="tl" part="pers"/>
-             <var n="genero"/>
-             <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="2" side="tl" part="lemq"/>
-           </lu>
-         </chunk></out>
+	 <choose>
+	   <when>
+	     <test><equal><clip pos="2" side="tl" part="a_trans"/><lit-tag v="tv"/></equal></test>
+           <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+           <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+             <lu>
+               <clip pos="2" side="tl" part="lemh"/>
+               <clip pos="2" side="tl" part="a_verb"/>
+               <clip pos="2" side="tl" part="a_trans"/>
+               <lit-tag v="pasv"/>
+               <clip pos="1" side="tl" part="temps"/>
+               <clip pos="1" side="tl" part="pers"/>
+               <var n="genero"/>
+               <clip pos="1" side="tl" part="nbr"/>
+               <clip pos="2" side="tl" part="lemq"/>
+             </lu>
+           </chunk></out>
+	   </when>
+	   <otherwise>
+	   <!-- hey, or maybe we can always have كان + pp -->
+           <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+           <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+             <lu>
+	       <lit v="كان"/>
+	       <lit-tag v="vaux"/>
+	       <lit-tag v="iv"/>
+	       <lit-tag v="actv"/>
+               <clip pos="1" side="tl" part="temps"/>
+               <clip pos="1" side="tl" part="pers"/>
+               <var n="genero"/>
+               <clip pos="1" side="tl" part="nbr"/>
+               <clip pos="1" side="tl" part="lemq"/>
+             </lu>
+	     <b/>
+             <lu>
+               <clip pos="2" side="tl" part="lemh"/>
+               <clip pos="2" side="tl" part="a_verb"/>
+               <clip pos="2" side="tl" part="a_trans"/>
+               <clip pos="2" side="tl" part="a_voice"/> 
+               <clip pos="2" side="tl" part="a_particip"/>
+               <var n="genero"/>
+<!--               <clip pos="1" side="tl" part="gen"/>   -->
+               <clip pos="1" side="tl" part="nbr"/>
+	       <lit-tag v="acc"/>
+               <clip pos="2" side="tl" part="lemq"/>
+             </lu>
+           </chunk></out>
+	   </otherwise>
+	  </choose>
        </action>
     </rule> 
 
 
     <!-- should be one rule for nouns in sg, another for pl nouns -->
-    <rule comment="rule 63: prep + gen ">
+    <rule comment="rule 64: prep + gen ">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -3606,7 +3656,7 @@
 
 
     <!-- that's only form mt verb + prep -> ar verb + prep; what if mt verb + prep -> ar verb + d.o.? -->
-    <rule comment="rule 64: mt verbs with 'minn' prep.">
+    <rule comment="rule 65: mt verbs with 'minn' prep.">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="minn_pr"/>
@@ -3663,7 +3713,7 @@
 
 
     <!-- that's only form mt verb + prep -> ar verb + prep; what if mt verb + prep -> ar verb + d.o.? -->
-    <rule comment="rule 65: mt verbs with 'fi' prep.">
+    <rule comment="rule 66: mt verbs with 'fi' prep.">
        <pattern>
          <pattern-item n="detdem"/>
          <pattern-item n="vrb"/>
@@ -3748,7 +3798,7 @@
     </rule> 
 
  
-    <rule comment="rule 66: prep + pron and noun in gen">
+    <rule comment="rule 67: prep + pron and noun in gen">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="det"/>
@@ -3793,7 +3843,7 @@
     </rule> 
 
 
-    <rule comment="rule 67: past or subj cnjsub - mt pres will be ar subjunctive mood">
+    <rule comment="rule 68: past or subj cnjsub - mt pres will be ar subjunctive mood">
        <pattern>
          <pattern-item n="past_subj_cnjsub"/>
          <pattern-item n="vrbpres"/>
@@ -3842,7 +3892,7 @@
 
 
 
-    <rule comment="rule 68: past or subj cnjsub - mt past remains">
+    <rule comment="rule 69: past or subj cnjsub - mt past remains">
        <pattern>
          <pattern-item n="past_subj_cnjsub"/>
          <pattern-item n="vrbpast"/>
@@ -3891,7 +3941,7 @@
 
 
 
-    <rule comment="rule 69: most of sth">
+    <rule comment="rule 70: most of sth">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="detqnt_comp"/>
@@ -3923,7 +3973,7 @@
 
 
 
-    <rule comment="rule 70: relative sentence">
+    <rule comment="rule 71: relative sentence">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="nom"/>
@@ -4003,7 +4053,7 @@
 
 
 <!-- in fact it's pointless to add more rules in t1x.. --> 
-    <rule comment="rule 68: noun and verb agreement">
+    <rule comment="rule 72: noun and verb agreement">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="nom"/>
@@ -4051,7 +4101,7 @@
     </rule> 
 
 
-    <rule comment="rule 69: prep + pron and noun in gen">
+    <rule comment="rule 73: prep + pron and noun in gen">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="detind"/>
@@ -4111,7 +4161,7 @@
 
 
 
-    <rule comment="rule 70: prep + pron and noun in gen">
+    <rule comment="rule 74: prep + pron and noun in gen">
        <pattern>
 	 <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -4155,7 +4205,7 @@
 
 
 
-    <rule comment="rule 71: Il-format tal-festival"> 
+    <rule comment="rule 75: Il-format tal-festival"> 
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="non-np"/>
@@ -4196,7 +4246,7 @@
     </rule>
 
 
-    <rule comment="rule 72: kien (pres?) + past">
+    <rule comment="rule 76: kien (pres?) + past">
        <pattern>
          <pattern-item n="kien"/>
          <pattern-item n="vrbpast"/>
@@ -4246,7 +4296,7 @@
      </rule>
 -->
 
-    <rule comment="rule 73: kien neg">
+    <rule comment="rule 77: kien neg">
        <pattern>
          <pattern-item n="ma_neg"/>
          <pattern-item n="kienpres"/>
@@ -4292,7 +4342,7 @@
 -->
 
 
-    <rule comment="rule 75: verb">
+    <rule comment="rule 78: verb">
        <pattern>
          <pattern-item n="detdem"/>
          <pattern-item n="vrb"/>
@@ -4324,7 +4374,7 @@
     </rule>
 
 
-   <rule comment="rule 76: prep + pron and noun in gen">
+   <rule comment="rule 79: prep + pron and noun in gen">
        <pattern>
 	 <pattern-item n="two_num"/>
          <pattern-item n="non-np"/>
@@ -4345,7 +4395,7 @@
     </rule>
 
 
-   <rule comment="rule 77: relattivament adv">
+   <rule comment="rule 80: relattivament adv">
       <pattern>
 	<pattern-item n="mod_adv"/>
         <pattern-item n="adv"/>
@@ -4367,7 +4417,7 @@
 <!-- story3 rules  -->
 
 
-   <rule comment="rule 78: L-istorja ta' pajjiżna turina">
+   <rule comment="rule 81: L-istorja ta' pajjiżna turina">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="non-np"/>
@@ -4434,7 +4484,7 @@
 
 
    <!-- just an idea what to do with ta'... - my favourite Middle Egyptian (that is, hieroglyphic) construction, btw; yeah, but agreement still needed -->
-   <rule comment="rule 79: ta' oriġini Semitiċi">
+   <rule comment="rule 82: ta' oriġini Semitiċi">
        <pattern>
          <pattern-item n="ta_pr"/>
          <pattern-item n="non-np"/>
@@ -4468,7 +4518,7 @@
     </rule>
 
 
-   <rule comment="rule 80: għal sekli sħaħ">
+   <rule comment="rule 83: għal sekli sħaħ">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="non-np"/>
@@ -4506,7 +4556,7 @@
     </rule>
 
 
-   <rule comment="rule 81: Dawn il-ħakmiet influwenzaw">  <!-- det -->
+   <rule comment="rule 84: Dawn il-ħakmiet influwenzaw">  <!-- det -->
        <pattern>
          <pattern-item n="pron"/>
          <pattern-item n="artic"/>
@@ -4572,7 +4622,7 @@
     </rule>
 
 
-   <rule comment="rule 82: lill-poplu tagħna">
+   <rule comment="rule 85: lill-poplu tagħna">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -4601,7 +4651,7 @@
     </rule>
 
 
-   <rule comment="rule 83: bosta oqsma">
+   <rule comment="rule 86: bosta oqsma">
        <pattern>
          <pattern-item n="detqnt"/>
          <pattern-item n="non-np"/>
@@ -4635,7 +4685,7 @@
     </rule>
 
 
-    <rule comment="rule 84: s-sisien ta' lsienna"> 
+    <rule comment="rule 87: s-sisien ta' lsienna"> 
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="non-np"/>
@@ -4684,7 +4734,7 @@
     </rule>
 
 
-   <rule comment="rule 85: bosta forom grammatikali"> 
+   <rule comment="rule 88: bosta forom grammatikali"> 
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="detqnt"/>
@@ -4762,7 +4812,7 @@
     </rule>
 
 
-   <rule comment="rule 86: bħal forom verbali, aġġettivali u nominali"> 
+   <rule comment="rule 89: bħal forom verbali, aġġettivali u nominali"> 
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="non-np"/>
@@ -4837,7 +4887,7 @@
     </rule>
 
 
-   <rule comment="rule 87: L-ewwel perijodu storiku assoċjat"> 
+   <rule comment="rule 90: L-ewwel perijodu storiku assoċjat"> 
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="numord"/>
@@ -4923,7 +4973,7 @@
     </rule>
 
 
-    <rule comment="rule 88: l-perijodu ta' żmien il-Feniċi"> 
+    <rule comment="rule 91: l-perijodu ta' żmien il-Feniċi"> 
        <pattern>
 	 <pattern-item n="artic"/>
          <pattern-item n="non-np"/>
@@ -4976,7 +5026,7 @@
     </rule> 
 
 
-   <rule comment="rule 89: superlative, l-akbar effett"> 
+   <rule comment="rule 92: superlative, l-akbar effett"> 
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="adjcomp"/>
@@ -5009,7 +5059,7 @@
     </rule>
 
 
-    <rule comment="rule 90: kien + acc, kienu razza ta' nies Semitika">
+    <rule comment="rule 93: kien + acc, kienu razza ta' nies Semitika">
 <!-- hey, sth with the rule is wrong, I get كانوا عنصر ناس ساميين, but it's better then كانوا عنصر ناس ساميا. Plus standard article problems, btw -->
        <pattern>
          <pattern-item n="kien"/>
@@ -5102,7 +5152,7 @@
     </rule> 
 
 
-    <rule comment="rule 91 (story1): qed">
+    <rule comment="rule 94 (story1): qed">
        <pattern>
          <pattern-item n="qed"/>
          <pattern-item n="vrb"/>
@@ -5127,7 +5177,7 @@
     </rule>
 
 
-    <rule comment="rule 92:  (52 + adj, dir object in acc), taw għamla definita">
+    <rule comment="rule 95:  (52 + adj, dir object in acc), taw għamla definita">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="nom"/>
@@ -5176,7 +5226,7 @@
     </rule> 
 
  
-    <rule comment="rule 93: superlative, l-eqdem saff lingwistiku"> 
+    <rule comment="rule 96: superlative, l-eqdem saff lingwistiku"> 
       <pattern>
         <pattern-item n="artic"/>
         <pattern-item n="adjcomp"/>
@@ -5223,7 +5273,7 @@
 
 
 
-    <rule comment="rule 94: minn dik Ortodossa"> 
+    <rule comment="rule 97: minn dik Ortodossa"> 
       <pattern>
         <pattern-item n="prep"/>
         <pattern-item n="detdem"/>
@@ -5264,7 +5314,7 @@
   </rule>
 
 
-    <rule comment="rule 95: xi kliem"> 
+    <rule comment="rule 98: xi kliem"> 
       <pattern>
         <pattern-item n="xi"/>
         <pattern-item n="nompl"/>
@@ -5301,7 +5351,7 @@
   </rule>
 
 
-    <rule comment="rule 96: xi nomi Semitiċi"> 
+    <rule comment="rule 99: xi nomi Semitiċi"> 
       <pattern>
         <pattern-item n="xi"/>
         <pattern-item n="nompl"/>
@@ -5359,7 +5409,7 @@
     </action>
   </rule>
 
-    <rule comment="rule 97: xi forma"> 
+    <rule comment="rule 100: xi forma"> 
       <pattern>
         <pattern-item n="xi"/>
         <pattern-item n="nomsg"/>
@@ -5388,7 +5438,7 @@
   </rule>
 
 
-    <rule comment="rule 98:  (91 + pp, dir object in acc), insibu kliem primittiv marbut">
+    <rule comment="rule 101:  (91 + pp, dir object in acc), insibu kliem primittiv marbut">
        <pattern>
          <pattern-item n="vrb"/>
          <pattern-item n="nom"/>
@@ -5455,7 +5505,7 @@
     </rule> 
 
 
-   <rule comment="rule 99: l-aktar"> <!-- prn?? -->
+   <rule comment="rule 102: l-aktar"> <!-- prn?? -->
      <pattern>
        <pattern-item n="artic"/>
        <pattern-item n="detqnt_comp"/>
@@ -5480,7 +5530,7 @@
   </rule>
 
 
-    <rule comment="rule 100:  xi ismijiet ta' postijiet u lokalitajiet"> 
+    <rule comment="rule 103:  xi ismijiet ta' postijiet u lokalitajiet"> 
       <pattern>
         <pattern-item n="xi"/>
         <pattern-item n="nompl"/>
@@ -5554,7 +5604,7 @@
   </rule>
 
 
-    <rule comment="rule 101:  Xi ismijiet ta' rħula u bliet Maltin"> 
+    <rule comment="rule 104:  Xi ismijiet ta' rħula u bliet Maltin"> 
       <pattern>
         <pattern-item n="xi"/>
         <pattern-item n="nompl"/>
@@ -5650,7 +5700,7 @@
   </rule>
 
 
-    <rule comment="rule 102:  f'bosta oqsma fosthom"> 
+    <rule comment="rule 105:  f'bosta oqsma fosthom"> 
       <pattern>
         <pattern-item n="detqnt"/>
         <pattern-item n="non-np"/>
@@ -5703,7 +5753,7 @@
    </rule>
 
 
-   <rule comment="rule 103: (82', st. cstr, not artic - and with rel), Bosta ismijiet ta' annimali u ħut li">
+   <rule comment="rule 106: (82', st. cstr, not artic - and with rel), Bosta ismijiet ta' annimali u ħut li">
        <pattern>
          <pattern-item n="detqnt"/>
          <pattern-item n="non-np"/>
@@ -5792,7 +5842,7 @@
     </rule>
 
 
-    <rule comment="rule 104: (42' verb direct object suffix, with cnjsub: add prn) li niddeskrivuhom ">  <!-- FIX: only for إن، أن, لكن، كأن، ليت، لعل -->
+    <rule comment="rule 107: (42' verb direct object suffix, with cnjsub: add prn) li niddeskrivuhom ">  <!-- FIX: only for إن، أن, لكن، كأن، ليت، لعل -->
        <pattern>
          <pattern-item n="cnjsub"/>
          <pattern-item n="vrb"/>
@@ -5839,7 +5889,7 @@
     </rule> 
 
 
-   <rule comment="rule 105: fost, fosthom kliem"> <!-- in fact should be based on prev. noun -->
+   <rule comment="rule 108: fost, fosthom kliem"> <!-- in fact should be based on prev. noun -->
        <pattern>
          <pattern-item n="fost_pr"/>
          <pattern-item n="u_prn"/>
@@ -5880,7 +5930,7 @@
     </rule>
 
 
-   <rule comment="rule 106: l-ismijiet tal-frott l-aktar bażiċi "> <!-- prn?? -->
+   <rule comment="rule 109: l-ismijiet tal-frott l-aktar bażiċi "> <!-- prn?? -->
      <pattern>
        <pattern-item n="artic"/>
        <pattern-item n="non-np"/>
@@ -5950,7 +6000,7 @@
   </rule>
 
 
-   <rule comment="rule 107: ismijiet li jibdew">
+   <rule comment="rule 110: ismijiet li jibdew">
      <pattern>
        <pattern-item n="non-np"/>
        <pattern-item n="rel"/>
@@ -5988,7 +6038,7 @@
     </rule>
 
 
-   <rule comment="rule 108: L-influwenza tal-l-Morfoloġija Semitika hija"> 
+   <rule comment="rule 111: L-influwenza tal-l-Morfoloġija Semitika hija"> 
      <pattern>
        <pattern-item n="artic"/>
        <pattern-item n="non-np"/>
@@ -6073,7 +6123,7 @@
     </rule>
 
 
-    <rule comment="rule 109: xi forma jew oħra"> 
+    <rule comment="rule 112: xi forma jew oħra"> 
       <pattern>
         <pattern-item n="xi"/>
         <pattern-item n="nomsg"/>
@@ -6115,7 +6165,7 @@
   </rule>
 
 
-    <rule comment="rule 110: In-nomi ewlenin huma l-aktar bażiċi"> 
+    <rule comment="rule 113: In-nomi ewlenin huma l-aktar bażiċi"> 
       <pattern>
         <pattern-item n="artic"/>
         <pattern-item n="non-np"/>
@@ -6201,7 +6251,7 @@
 
 
     <!-- should be both def. or both undef. ... -->
-    <rule comment="rule 111: (55 + noun, prep + gen), tal-femminil singular ">
+    <rule comment="rule 114: (55 + noun, prep + gen), tal-femminil singular ">
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>  <!-- artic here, so it's not st.cstr. -->
@@ -6238,7 +6288,7 @@
     </rule> 
 
 
-    <rule comment="rule 112: (2 + adv + vrb) In-nomi mnisslin x'aktarx mnisslin">
+    <rule comment="rule 115: (2 + adv + vrb) In-nomi mnisslin x'aktarx mnisslin">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="nom"/>
@@ -6301,7 +6351,7 @@
     </rule>
 
 
-    <rule comment="rule 113: Fil-qasam ta' metalli">  
+    <rule comment="rule 116: Fil-qasam ta' metalli">  
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -6348,7 +6398,7 @@
     </rule> 
 
 
-    <rule comment="rule 114: fil-forma tad-diminuttiv">  
+    <rule comment="rule 117: fil-forma tad-diminuttiv">  
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -6396,7 +6446,7 @@
     </rule> 
 
 
-    <rule comment="rule 115: n-nomi Semitiċi huma kklassifikati"> 
+    <rule comment="rule 118: n-nomi Semitiċi huma kklassifikati"> 
       <pattern>
         <pattern-item n="artic"/>
         <pattern-item n="non-np"/>
@@ -6467,7 +6517,7 @@
     </rule>
 
 
-    <rule comment="rule 116: ok, last rule, this one is really stupid (not only this one) - in-nomi mimmati huma nomi ta' post"> 
+    <rule comment="rule 119: ok, last rule, this one is really stupid (not only this one) - in-nomi mimmati huma nomi ta' post"> 
       <pattern>
         <pattern-item n="artic"/>
         <pattern-item n="non-np"/>
@@ -6550,7 +6600,7 @@
     </rule>
 
 
-    <rule comment="rule 117: xi nomi Semitiċi"> 
+    <rule comment="rule 120: xi nomi Semitiċi"> 
       <pattern>
         <pattern-item n="non-np"/>
         <pattern-item n="ta_pr"/>	
@@ -6613,7 +6663,7 @@
   </rule>
 
 
-    <rule comment="rule 118: xi forma jew oħra"> 
+    <rule comment="rule 121: xi forma jew oħra"> 
       <pattern>
         <pattern-item n="xi"/>
         <pattern-item n="nomsg"/>
@@ -6664,7 +6714,7 @@
 
   <!-- numerals -->
 
-    <rule comment="rule 119: three - ten"> 
+    <rule comment="rule 122: three - ten"> 
       <pattern>
         <pattern-item n="units"/>
         <pattern-item n="non-np"/>
@@ -6717,7 +6767,7 @@
     </rule>
 
 
-    <rule comment="rule 120: teens"> 
+    <rule comment="rule 123: teens"> 
       <pattern>
         <pattern-item n="teens"/>
         <pattern-item n="non-np"/>
@@ -6770,7 +6820,7 @@
 
 
 
-    <rule comment="rule 121: tens"> 
+    <rule comment="rule 124: tens"> 
       <pattern>
         <pattern-item n="tens"/>
         <pattern-item n="nom"/>
@@ -6811,7 +6861,7 @@
     </rule>
 
 
-    <rule comment="rule 122: tens with units"> 
+    <rule comment="rule 125: tens with units"> 
       <pattern>
         <pattern-item n="units"/>
         <pattern-item n="cnjcoo"/>
@@ -6879,7 +6929,7 @@
     </rule>
 
 
-    <rule comment="rule 123: hundreds"> 
+    <rule comment="rule 126: hundreds"> 
       <pattern>
         <pattern-item n="hundreds"/>
         <pattern-item n="nom"/>
@@ -6920,7 +6970,7 @@
   </rule>
 
 
-    <rule comment="rule 124: ordinal numbers"> 
+    <rule comment="rule 127: ordinal numbers"> 
       <pattern>
         <pattern-item n="artic"/>
         <pattern-item n="numord"/>
@@ -6974,7 +7024,7 @@
   </rule>
 
 
-    <rule comment="rule 125: (2') artic np + adj gender and number agreement">
+    <rule comment="rule 128: (2') artic np + adj gender and number agreement">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="np"/>
@@ -7023,7 +7073,7 @@
     </rule>
 
 
-    <rule comment="rule 126: Qurgħan huwa l-ktieb l-imqaddes tal-Iżlam">
+    <rule comment="rule 129: Qurgħan huwa l-ktieb l-imqaddes tal-Iżlam">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="non-np"/>
@@ -7094,7 +7144,7 @@
 
 
 
-    <rule comment="rule 127: il-verżjoni Għarbija hi l-veru Koran">
+    <rule comment="rule 130: il-verżjoni Għarbija hi l-veru Koran">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="adj"/>
@@ -7153,7 +7203,7 @@
     </rule>
 
 
-    <rule comment="rule 128: u ilu jinqara b'dan l-ilsien biss għal aktar minn 1,400 sena">
+    <rule comment="rule 131: u ilu jinqara b'dan l-ilsien biss għal aktar minn 1,400 sena">
        <pattern>
          <pattern-item n="detdem"/>
          <pattern-item n="artic"/>
@@ -7196,7 +7246,7 @@
     </rule>
 
 
-    <rule comment="rule 129: (114') Il-Misilmin iqisu l-Koran bħala Il-Kelma t'Alla.">  
+    <rule comment="rule 132: (114') Il-Misilmin iqisu l-Koran bħala Il-Kelma t'Alla.">  
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="artic"/>
@@ -7253,7 +7303,7 @@
 
 
 
-    <rule comment="rule 130: Dawn il-kotba huma bħal dizzjunarji tal-Koran.">  
+    <rule comment="rule 133: Dawn il-kotba huma bħal dizzjunarji tal-Koran.">  
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="non-np"/>
@@ -7309,7 +7359,7 @@
     </rule> 
 
 
-    <rule comment="rule 131: l-Koran kien imħabbar għall-ewwel darba lil Muħammed mill-Arkanġlu Gabriel f'għar fil-muntanji ta' Hira fil-Mekka, u mbagħad matul it-23 sena ta' wara sa mewtu.">   <!-- for now, there should be 1 rule of this kind per num grup (units, teens, tens etc); also, maybe السنوات الخمس construction should be used here, not خمس سنوات -->
+    <rule comment="rule 134: l-Koran kien imħabbar għall-ewwel darba lil Muħammed mill-Arkanġlu Gabriel f'għar fil-muntanji ta' Hira fil-Mekka, u mbagħad matul it-23 sena ta' wara sa mewtu.">   <!-- for now, there should be 1 rule of this kind per num grup (units, teens, tens etc); also, maybe السنوات الخمس construction should be used here, not خمس سنوات -->
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="digitnum"/>
@@ -7351,7 +7401,7 @@
     </rule> 
 
 
-    <rule comment="rule 132: Il-Koran ma kienx miktub kollu f'daqqa f'għamla ta' ktieb meta Muħammed kien għadu ħaj">
+    <rule comment="rule 135: Il-Koran ma kienx miktub kollu f'daqqa f'għamla ta' ktieb meta Muħammed kien għadu ħaj">
        <pattern>
          <pattern-item n="ma_neg"/>
          <pattern-item n="vrbpast"/>
@@ -7414,7 +7464,7 @@
 
 
 
-    <rule comment="rule 133: imma kien miżmum bil-kelma u kitbiet qsar biex iffakkru">
+    <rule comment="rule 136: imma kien miżmum bil-kelma u kitbiet qsar biex iffakkru">
        <pattern>
          <pattern-item n="kien"/>
          <pattern-item n="particip"/>
@@ -7481,7 +7531,7 @@
 
 
 
-    <rule comment="rule 134: Il-Koran ma kienx miktub kollu f'daqqa f'għamla ta' ktieb meta Muħammed kien għadu ħaj">
+    <rule comment="rule 137: Il-Koran ma kienx miktub kollu f'daqqa f'għamla ta' ktieb meta Muħammed kien għadu ħaj">
        <pattern>   <!-- hm, that's past of 'għad' -->
          <pattern-item n="kien"/>
          <pattern-item n="għad"/>
@@ -7536,7 +7586,7 @@
     </rule> 
 
 
-    <rule comment="rule 135: irranġa li l-Koran jinkiteb f'għamla ta' ktieb">  
+    <rule comment="rule 138: irranġa li l-Koran jinkiteb f'għamla ta' ktieb">  
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="non-np"/>
@@ -7594,7 +7644,7 @@
     </rule> 
 
 
-    <rule comment="rule 136: kompla jirfina l-forma miktuba tiegħu">
+    <rule comment="rule 139: kompla jirfina l-forma miktuba tiegħu">
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="non-np"/>
@@ -7648,7 +7698,7 @@
     </rule>
 
 
-    <rule comment="rule 137: Uthman, li kien it-tielet kalif, kompla jirfina l-forma miktuba tiegħu.">  <!-- ok, so it was comma problem --> 
+    <rule comment="rule 140: Uthman, li kien it-tielet kalif, kompla jirfina l-forma miktuba tiegħu.">  <!-- ok, so it was comma problem --> 
        <pattern>
          <pattern-item n="np"/>
          <pattern-item n="rel"/>
@@ -7711,7 +7761,7 @@
     </rule> 
 
 
-    <rule comment="rule 138: pronouns">  <!-- should I have animacy tag here? -->
+    <rule comment="rule 141: pronouns">  <!-- should I have animacy tag here? -->
        <pattern>
          <pattern-item n="prep"/>
          <pattern-item n="pron"/>
@@ -7741,7 +7791,7 @@
 
 
     <!-- TODO: check whether forms without 'ma' are used -->
-    <rule comment="rule 139: ليس">  
+    <rule comment="rule 142: ليس">  
        <pattern>
          <pattern-item n="ma_neg"/>
          <pattern-item n="freepron"/>
@@ -7775,7 +7825,7 @@
     </rule>
 
 
-    <rule comment="rule 15: verb">
+    <rule comment="rule 143: verb">
        <pattern>
          <pattern-item n="vaux"/>
        </pattern>
@@ -7806,6 +7856,136 @@
          </out>
        </action>
      </rule>
+
+     <!-- story5 -->
+
+
+    <rule comment="rule 144: minn fuq il-mezzi tax-xandir tisma’ _l-mużika ta’ għamla differenti_"> 
+       <pattern>
+         <pattern-item n="artic"/>
+         <pattern-item n="non-np"/>
+         <pattern-item n="ta_pr"/>
+         <pattern-item n="non-np"/>
+         <pattern-item n="adj"/>  
+       </pattern>
+       <action>
+	 <!-- is it possible to have both artic. and poss. suffix ?? -->
+         <call-macro n="set_gen_nbr_case"><with-param pos="2"/></call-macro>
+         <call-macro n="set_px_gen"><with-param pos="4"/></call-macro>
+         <call-macro n="adjf_concord2"><with-param pos="2"/><with-param pos="5"/></call-macro>
+	 <out>
+	   <chunk name="art_n_art_adj_n">
+	     <tags>
+	       <tag><lit-tag v="SN"/></tag>
+	       <tag><clip pos="2" side="tl" part="gen"/></tag>
+	       <tag><clip pos="2" side="tl" part="a_anim"/></tag>
+	       <tag><clip pos="2" side="tl" part="nbr"/></tag>
+	       <tag><clip pos="2" side="tl" part="case"/></tag>
+	       <tag><lit-tag v="def"/></tag>
+	     </tags>
+  	     <mlu>
+               <lu>
+                 <clip pos="1" side="tl" part="whole"/>
+               </lu>
+               <lu>
+                 <clip pos="2" side="tl" part="lemh"/>
+                 <clip pos="2" side="tl" part="a_nom"/>
+                 <clip pos="2" side="tl" part="gen"/>
+                 <clip pos="2" side="tl" part="a_anim"/>
+                 <clip pos="2" side="tl" part="nbr"/>
+                 <clip pos="2" side="tl" part="case" link-to="5"/>
+                 <lit-tag v="artic"/>
+                 <clip pos="2" side="tl" part="lemq"/>
+               </lu>
+	     </mlu>
+	     <b/>
+  	     <mlu>
+               <lu>
+                 <clip pos="1" side="tl" part="whole"/>
+               </lu>
+               <lu>
+                 <clip pos="5" side="tl" part="lemh"/>
+                 <clip pos="5" side="tl" part="a_adj"/>
+                 <clip pos="5" side="tl" part="gen"/>
+                 <clip pos="5" side="tl" part="nbr"/>
+                 <clip pos="5" side="tl" part="case" link-to="5"/>
+                 <lit-tag v="cstr"/>   <!-- or artic? - false idafa... -->
+                 <clip pos="5" side="tl" part="lemq"/>
+               </lu>
+	     </mlu>
+	     <b/>
+  	     <mlu>
+               <lu>
+                 <clip pos="1" side="tl" part="whole"/>
+               </lu>
+               <lu>
+                 <clip pos="4" side="tl" part="lemh"/>
+                 <clip pos="4" side="tl" part="a_nom"/>
+                 <clip pos="4" side="tl" part="gen"/>
+                 <clip pos="4" side="tl" part="a_anim"/>
+                 <clip pos="4" side="tl" part="nbr"/>
+                 <lit-tag v="gen"/>
+<!--                 <clip pos="4" side="tl" part="poss"/>  -->
+                 <lit-tag v="artic"/>
+                 <clip pos="4" side="tl" part="lemq"/>
+               </lu>
+	     </mlu>
+	   </chunk>
+	 </out>
+       </action>
+    </rule>
+
+
+   <rule comment="rule 145: Madwar id-dinja kollha, eluf ta’ nies jattendu għal kunċerti minn gruppi, orkestri, baned u _għal spettakli kbar mużikali_, bħal opri, operetti u balletti">
+       <pattern>
+         <pattern-item n="prep"/>
+         <pattern-item n="non-np"/>
+         <pattern-item n="adj"/>
+         <pattern-item n="adj"/>
+       </pattern>
+       <action>
+         <call-macro n="myf_concord2">
+           <with-param pos="2"/>
+           <with-param pos="3"/>
+         </call-macro>
+         <call-macro n="myf_concord2">
+           <with-param pos="2"/>
+           <with-param pos="4"/>
+         </call-macro>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="a_anim"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <lit-tag v="gen"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="3" side="tl" part="lem"/>
+             <clip pos="3" side="tl" part="a_adj"/>
+             <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="nbr"/>
+             <lit-tag v="gen"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="4" side="tl" part="lem"/>
+             <clip pos="4" side="tl" part="a_adj"/>
+             <clip pos="4" side="tl" part="gen"/>
+             <clip pos="4" side="tl" part="nbr"/>
+             <lit-tag v="gen"/>
+           </lu>
+         </chunk></out>
+       </action>
+    </rule>
+
 
 
   </section-rules>
