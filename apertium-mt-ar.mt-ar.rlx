@@ -167,3 +167,13 @@ SELECT:r19 PRN IF
 
 REMOVE:r20 NOUNPX IF
 	(-1 DETDEF)
+
+SELECT:r21 VRBPL IF
+        (0 VRBPL)
+        (0 VRBSG) 
+        (1 VRBPL);
+
+SELECT:r21 VRBPL IF
+        (0 VRBPL)
+        (0 VRBSG LINK 0/1 PRN) 
+        (1 CNJSUB);

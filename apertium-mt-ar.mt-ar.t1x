@@ -475,6 +475,7 @@
     <def-var n="numero"/>
     <def-var n="genero"/>
     <def-var n="person"/>
+    <def-var n="px"/>
   </section-def-vars>
 
 
@@ -887,6 +888,55 @@
       </when></choose>
     </def-macro> 
 
+
+    <!-- we should have possessive suffixes treated as pronominal suffixes (used with verbs and prepositions)! -->
+    <def-macro n="prn_suff_to_px" npar="1">      
+      <choose>
+        <when>
+          <test><equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p3"/></equal></test>
+          <choose>
+            <when>
+              <test><equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="sg"/></equal></test>
+              <choose>
+                <when>
+                  <test><equal><clip pos="1" side="tl" part="gen"/><lit-tag v="f"/></equal></test>
+                  <let><var n="px"/><lit-tag v="px3sg_f"/></let>
+		</when>
+		<otherwise>
+                  <let><var n="px"/><lit-tag v="px3sg_m"/></let>
+		</otherwise>
+	      </choose>
+	    </when>
+	    <otherwise>
+              <let><var n="px"/><lit-tag v="px3pl_m"/></let>
+	    </otherwise>
+	  </choose>
+	</when>
+        <when>
+          <test><equal><clip pos="1" side="tl" part="pers"/><lit-tag v="p2"/></equal></test>
+          <choose>
+            <when>
+              <test><equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="sg"/></equal></test>
+              <let><var n="px"/><lit-tag v="px2sg_m"/></let>
+	    </when>
+	    <otherwise>
+              <let><var n="px"/><lit-tag v="px2pl_m"/></let>
+	    </otherwise>
+	  </choose>
+	</when>
+	<otherwise>  <!-- p1 -->
+          <choose>
+            <when>
+              <test><equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="sg"/></equal></test>
+              <let><var n="px"/><lit-tag v="px1sg"/></let>
+	    </when>
+	    <otherwise>
+              <let><var n="px"/><lit-tag v="px1pl"/></let>
+	    </otherwise>
+	  </choose>
+	</otherwise>
+      </choose>
+    </def-macro>
 
   </section-def-macros>
 
@@ -4631,6 +4681,7 @@
          <pattern-item n="u_prn"/>
        </pattern>
        <action>
+         <call-macro n="prn_suff_to_px"><with-param pos="5"/></call-macro>
          <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
@@ -4643,7 +4694,8 @@
              <clip pos="3" side="tl" part="a_anim"/>
              <clip pos="3" side="tl" part="nbr"/>
              <lit-tag v="gen"/>
-             <lit-tag v="px1pl"/>   <!-- TODO: add macro or sth to set poss. suffixes properly!!! -->
+             <var n="px"/>
+<!--             <lit-tag v="px1pl"/>    TODO: add macro or sth to set poss. suffixes properly!!! -->
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
          </chunk></out>
@@ -5026,7 +5078,7 @@
     </rule> 
 
 
-   <rule comment="rule 92: superlative, l-akbar effett"> 
+    <rule comment="rule 92: superlative, l-akbar effett">  
        <pattern>
          <pattern-item n="artic"/>
          <pattern-item n="adjcomp"/>
@@ -5049,7 +5101,8 @@
              <clip pos="3" side="tl" part="a_nom"/>
              <clip pos="3" side="tl" part="gen"/>
              <clip pos="3" side="tl" part="a_anim"/>
-             <clip pos="3" side="tl" part="nbr"/>
+<!--             <clip pos="3" side="tl" part="nbr"/> -->
+             <lit-tag v="sg"/>
              <lit-tag v="gen"/>
              <lit-tag v="artic"/>
              <clip pos="3" side="tl" part="lemq"/>
@@ -5855,14 +5908,15 @@
 	   <lu>      
 	     <clip pos="1" side="tl" part="whole"/>
 	   </lu>
-	   <b/>
+<!-- TODO: but 'x'aktarx li niddeskrivuhom b'lessiku Semitiku' - إننا -->
+<!--	   <b/>
            <lu>
              <lit v="prpers"/>
              <lit-tag v="prn"/>
              <clip pos="2" side="tl" part="pers"/>
              <var n="genero"/>
              <clip pos="2" side="tl" part="nbr"/>
-	   </lu>
+	   </lu> -->
 	   <b/>
 	   <mlu>
              <lu>
@@ -7986,6 +8040,50 @@
        </action>
     </rule>
 
+
+   <rule comment="rule 146: superlative, B’hekk insibu li _l-ibgħad missirijietna_ bdew jirriproduċu l-ħsejjes"> 
+       <pattern>
+         <pattern-item n="cnjsub"/>
+         <pattern-item n="artic"/>
+         <pattern-item n="adjcomp"/>
+         <pattern-item n="nom_px"/>
+       </pattern>
+       <action>
+         <call-macro n="set_gen_nbr_case"><with-param pos="3"/></call-macro> 
+         <call-macro n="set_px_gen"><with-param pos="3"/></call-macro>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+         <lu>
+           <clip pos="1" side="tl" part="whole"/>
+         </lu>
+	 <b/>
+         <lu>
+           <clip pos="4" side="tl" part="lemh"/>
+           <clip pos="4" side="tl" part="a_nom"/>
+           <clip pos="4" side="tl" part="gen"/>
+           <clip pos="4" side="tl" part="a_anim"/>
+           <clip pos="4" side="tl" part="nbr"/>
+           <lit-tag v="acc"/>
+           <clip pos="4" side="tl" part="poss"/>
+           <clip pos="4" side="tl" part="lemq"/>
+         </lu>
+	 <b/>
+	 <mlu>
+	   <lu>
+             <clip pos="2" side="tl" part="whole"/>
+           </lu>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_adj"/>
+             <clip pos="3" side="tl" part="comp"/>
+<!--             <clip pos="3" side="tl" part="gen"/>  --> <!-- some adj have different gen & nbr comp forms! -->
+<!--             <clip pos="3" side="tl" part="nbr"/>  -->
+	     <lit-tag v="nom"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+	 </mlu>
+         </chunk></out>
+       </action>
+    </rule>
 
 
   </section-rules>

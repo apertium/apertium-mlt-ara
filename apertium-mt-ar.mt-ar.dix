@@ -2501,7 +2501,9 @@
      <e><p><l>daqqaq<s n="n"/><s n="m"/></l><r>عازف<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>daqqaq<s n="n"/></l><r>عازفة<s n="n"/><s n="f"/><s n="aa"/></r></p><par n="f_sg_m_pl_f"/><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>għolja<s n="n"/><s n="f"/></l><r>تل<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
-     <e><p><l>bebbux<s n="n"/><s n="m"/><s n="sg"/></l><r>حلزون<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
+     <e><p><l>bebbux<s n="n"/><s n="m"/></l><r>صدف<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="sg_sg_du_pl"/><par n="nocase_nom_gen_acc"/></e>
+     <e slr="1" r="LR"><p><l>bebbux<s n="n"/><s n="m"/><s n="sg"/></l><r>حلزون<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
+     <e r="RL"><p><l>bebbux<s n="n"/><s n="m"/><s n="sg"/></l><r>حلزون<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>bebbuxa<s n="n"/><s n="f"/></l><r>حلزونة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>korda<s n="n"/><s n="f"/></l><r>وتر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>perkussjoni<s n="n"/><s n="f"/></l><r>آلة<g><b/>النقر</g><s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
