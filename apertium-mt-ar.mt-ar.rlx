@@ -61,6 +61,8 @@ SELECT:r4 REL IF
         (-1 NOUN)
         (0 CNJSUB)
         (0 REL) ;
+# oops.. 'fis-sens _li_ l-Misilmin jaħsbu li hu miktub direttament minn Alla'
+
 
 SELECT:r5 CNJSUB IF
         (-1 ADV)

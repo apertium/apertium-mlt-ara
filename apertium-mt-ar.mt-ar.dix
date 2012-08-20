@@ -299,7 +299,7 @@
      <e><p><l>daqshekk<s n="cnjadv"/></l><r>هكذا<s n="cnjadv"/></r></p></e>
      <e><p><l>per<b/>eżempju<s n="cnjadv"/></l><r>مثلا<s n="cnjadv"/></r></p></e>
      <e><p><l>żgur<b/>li<s n="cnjadv"/></l><r>بالتأكيد<s n="adv"/></r></p></e>
-
+     <e><p><l>jiġifieri<s n="cnjadv"/></l><r>أي<s n="cnjadv"/></r></p></e>
 
      <!-- SECTION: Prepositions -->
 
@@ -2543,6 +2543,7 @@
      <e><p><l>ikel<s n="n"/><s n="m"/></l><r>طعام<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="sg_sg_du_pl"/><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>serje<s n="n"/><s n="f"/></l><r>مسلسل<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>metru<s n="n"/><s n="m"/></l><r>متر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e><p><l>kilometru<s n="n"/><s n="m"/></l><r>كيلومتر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
 
      <!-- SECTION: Proper nouns -->
 
@@ -3160,7 +3161,10 @@
     <e><p><l>Schrödinger<s n="np"/><s n="cog"/><s n="mf"/></l><r>شرودنغر<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
     <e><p><l>Vassalli<s n="np"/><s n="cog"/><s n="mf"/></l><r>فسالي<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
     <e><p><l>Vassallo<s n="np"/><s n="cog"/><s n="mf"/></l><r>فسالو<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
-
+    <e><p><l>Gatt<s n="np"/><s n="cog"/><s n="mf"/></l><r>غات<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Agius<s n="np"/><s n="cog"/><s n="mf"/></l><r>أغيوس<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Cachia<s n="np"/><s n="cog"/><s n="mf"/></l><r>كاتشا<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Cachia<b/>Caruana<s n="np"/><s n="cog"/><s n="mf"/></l><r>كاتشا<b/>كروانا<s n="np"/><s n="cog"/><s n="mf"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
 
 
 <!-- TODO add org in mt, gen, num etc -->
@@ -5936,7 +5940,7 @@
     <e><p><l>Belġju<s n="np"/><s n="top"/><s n="m"/></l><r>بلجيكا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
     <e><p><l>Bolonja<s n="np"/><s n="top"/><s n="f"/></l><r>بولونيا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
     <e><p><l>Bulgarija<s n="np"/><s n="top"/><s n="f"/></l><r>بلغاريا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
-    <e><p><l>Ċipru<s n="np"/><s n="top"/><s n="f"/></l><r>قبرص<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+    <e><p><l>Ċipru<s n="np"/><s n="top"/><s n="m"/></l><r>قبرص<s n="np"/><s n="top"/><s n="m"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
     <e><p><l>Firenze<s n="np"/><s n="top"/><s n="f"/></l><r>فلورنسا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
     <e><p><l>Indja<s n="np"/><s n="top"/><s n="f"/></l><r>الهند<s n="np"/><s n="top"/><s n="m"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
     <e><p><l>Iskozja<s n="np"/><s n="top"/><s n="f"/></l><r>أسكتلندا<s n="np"/><s n="top"/><s n="f"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -6572,6 +6576,7 @@
      <e><p><l>alternattiv<s n="adj"/></l><r>خياري<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e> <!-- that's rather 'optional' -->
      <e><p><l>awstraljan<s n="adj"/></l><r>أسترالي<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>akkużat<s n="adj"/></l><r>متهم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
+     <e r="LR"><p><l>mixli<s n="adj"/></l><r>متهم<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>superjur<s n="adj"/></l><r>متفوق<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>spanjol<s n="adj"/></l><r>أسباني<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
      <e><p><l>stabbilit<s n="adj"/></l><r>مستقر<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
@@ -7135,6 +7140,7 @@
      <e><p><l>preżenti<s n="adj"/></l><r>حاضر<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e><p><l>preċedenti<s n="adj"/></l><r>سابق<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
      <e><p><l>segwenti<s n="adj"/></l><r>تال<s n="adj"/></r></p><par n="mf_sp_m_f_sg_pl"/></e>
+     <e><p><l>ħati<s n="adj"/></l><r>مذنب<s n="adj"/></r></p><par n="mf_pl_m_f_pl"/></e>
 
 
      <!-- SECTION: Interjections -->

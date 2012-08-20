@@ -27,6 +27,10 @@
       <cat-item tags="SN.p3.*.*" lemma="freeprn"/>
     </def-cat>
 
+    <def-cat n="rel">
+      <cat-item tags="rel.*"/>
+    </def-cat>
+
   </section-def-cats>
 
   <section-def-attrs>
@@ -330,6 +334,48 @@
        </out>
      </action>
    </rule>
+
+
+   <rule comment="REGLA: SN rel"> 
+     <pattern>
+       <pattern-item n="SN"/>
+       <pattern-item n="rel"/>
+     </pattern>
+     <action>
+       <out>
+	 <chunk>
+	   <clip pos="1" part="lem"/>
+ 	   <clip pos="1" part="tags"/>
+	   <clip pos="1" part="chcontent"/>
+ 	 </chunk>
+       </out>
+       <choose>
+	 <when>
+	   <test><equal><clip pos="1" part="defnes"/><lit-tag v="def"/></equal></test>
+	   <choose>
+	     <when>
+	       <test><and>
+	         <not><equal><clip pos="1" part="gen"/><lit-tag v="mf"/></equal></not> 
+	         <not><equal><clip pos="1" part="gen"/><lit-tag v="GD"/></equal></not>
+	       </and></test>
+               <call-macro n="set_last_n"><with-param pos="1"/></call-macro>
+	       <let><clip pos="2" part="gen"/><var n="last_gen"/></let>
+	       <let><clip pos="2" part="nbr"/><var n="last_nbr"/></let>
+	     </when>
+	   </choose>
+           <out>
+	     <b/>
+	     <chunk>
+	       <clip pos="2" part="lem"/>
+ 	       <clip pos="2" part="tags"/>
+	       <clip pos="2" part="chcontent"/>
+ 	     </chunk>
+           </out>
+	 </when>
+       </choose>
+     </action>
+   </rule>
+
 
 
   </section-rules>
