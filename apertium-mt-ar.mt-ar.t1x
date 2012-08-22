@@ -156,6 +156,7 @@
       <cat-item tags="vaux.iv.pprs.*" lemma="qagħad"/>
 <!--      <cat-item tags="vaux.iv.pres.*" lemma="qagħad"/>  -->
     </def-cat>
+
     <def-cat n="neg">
       <cat-item tags="neg"/>
     </def-cat>
@@ -513,6 +514,15 @@
     <def-list n="kontra__verbs" c="mt verbs with 'kontra' prepostions translated to ar verbs without preposition">
       <list-item v="نافس"/>
     </def-list>
+
+    <def-list n="dir_obj_to_subj_verbs" c="what is dir. obj. in  mt, becomes subject in ar">
+      <list-item v="أعجب"/>
+    </def-list>
+
+    <def-list n="indir_obj_to_subj_verbs" c="what is indir. obj. in  mt, becomes subject in ar">
+      <list-item v="نجح"/>
+    </def-list>
+
 
   </section-def-lists>
 
@@ -2881,35 +2891,57 @@
 	   </when> 
 	 </choose>
 
-         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
-           <lu>
-             <clip pos="1" side="tl" part="lemh"/>
-             <clip pos="1" side="tl" part="a_verb"/>
-             <clip pos="1" side="tl" part="a_trans"/>
-             <clip pos="1" side="tl" part="a_voice"/>
-             <clip pos="1" side="tl" part="temps"/>
-<!--             <clip pos="1" side="tl" part="mood"/>  -->
-             <clip pos="1" side="tl" part="pers"/>
-             <var n="genero"/>
-             <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="lemq"/>
-           </lu>
-	   <b/>
-	   <mlu>
-	     <lu>
-               <lit v="ل"/>
-               <lit-tag v="pr"/>
-	     </lu>
-	     <lu>
-               <lit v="ه"/>
-               <clip pos="2" side="tl" part="a_prn"/>
-               <clip pos="2" side="tl" part="pers"/>
-               <clip pos="2" side="tl" part="gen"/>
-               <clip pos="2" side="tl" part="nbr"/>
-             </lu>
-	   </mlu>
-	 </chunk></out>
-       </action>
+	 <choose>
+	   <when>
+	     <test><in><clip pos="1" side="tl" part="lem"/><list n="indir_obj_to_subj_verbs"/></in></test>
+	     <let><clip pos="1" side="tl" part="pers"/><clip pos="2" side="tl" part="pers"/></let>
+	     <let><clip pos="1" side="tl" part="gen"/><clip pos="2" side="tl" part="gen"/></let>
+	     <let><clip pos="1" side="tl" part="nbr"/><clip pos="2" side="tl" part="nbr"/></let>
+             <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+               <lu>
+                <clip pos="1" side="tl" part="lemh"/>
+                <clip pos="1" side="tl" part="a_verb"/>
+                <clip pos="1" side="tl" part="a_trans"/>
+                <clip pos="1" side="tl" part="a_voice"/>
+                <clip pos="1" side="tl" part="temps"/>
+                <clip pos="1" side="tl" part="pers"/>
+                <var n="genero"/>
+                <clip pos="1" side="tl" part="nbr"/>
+                <clip pos="1" side="tl" part="lemq"/>
+              </lu>
+  	    </chunk></out>
+	  </when>
+	  <otherwise> 
+            <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+              <lu>
+                <clip pos="1" side="tl" part="lemh"/>
+                <clip pos="1" side="tl" part="a_verb"/>
+                <clip pos="1" side="tl" part="a_trans"/>
+                <clip pos="1" side="tl" part="a_voice"/>
+                <clip pos="1" side="tl" part="temps"/>
+                <clip pos="1" side="tl" part="pers"/>
+                <var n="genero"/>
+                <clip pos="1" side="tl" part="nbr"/>
+                <clip pos="1" side="tl" part="lemq"/>
+              </lu>
+	      <b/>
+	      <mlu>
+   	        <lu>
+                  <lit v="ل"/>
+                <lit-tag v="pr"/>
+	        </lu>
+	        <lu>
+                  <lit v="ه"/>
+                  <clip pos="2" side="tl" part="a_prn"/>
+                  <clip pos="2" side="tl" part="pers"/>
+                  <clip pos="2" side="tl" part="gen"/>
+                  <clip pos="2" side="tl" part="nbr"/>
+                </lu>
+	      </mlu>
+	    </chunk></out>
+	  </otherwise>
+	</choose>
+      </action>
     </rule> 
 
 
@@ -3750,9 +3782,7 @@
 	 <choose>
 	   <when>
 	     <test>
-	       <in caseless="yes">
-		 <clip pos="1" side="tl" part="lem"/><list n="minn_bi_verbs"/>
-	       </in>
+	       <in><clip pos="1" side="tl" part="lem"/><list n="minn_bi_verbs"/></in>
 	     </test>
 	     <let><clip pos="2" side="tl" part="lem"/><lit v="ب"/></let> 
 	   </when> 
@@ -8445,7 +8475,7 @@
        </action>
     </rule>
 
-    <rule comment="rule 58: prep + gen "> 
+    <rule comment="rule 153: مثلا Bħal f’kull ħaġa oħra,"> 
        <pattern>
          <pattern-item n="nom"/>
 	 <pattern-item n="postdet"/>  
@@ -8470,6 +8500,30 @@
     </rule>
 
 
+    <rule comment="rule 154: B’hekk il-bniedem ntebah li zokk vojt, meta kien jonfoh fih, seta’ jbiddel _il-ħoss tiegħu_"> 
+       <pattern>
+         <pattern-item n="artic"/>
+         <pattern-item n="non-np"/>
+         <pattern-item n="ta_pr"/>
+         <pattern-item n="u_prn"/>
+       </pattern>
+       <action>
+         <call-macro n="set_gen_nbr_case"><with-param pos="2"/></call-macro>
+         <call-macro n="prn_suff_to_px"><with-param pos="4"/></call-macro>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="a_anim"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <lit-tag v="nom"/>
+             <var n="px"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+         </chunk></out>
+       </action>
+    </rule>
 
   </section-rules>
 

@@ -271,6 +271,7 @@
      <e r="RL"><p><l>iżda<s n="cnjcoo"/></l><r>بل<s n="cnjcoo"/></r></p></e> 
      <e r="LR"><p><l>però<s n="cnjcoo"/></l><r>لكن<s n="cnjcoo"/></r></p></e>
 
+
      <e><p><l>għalkemm<s n="cnjcoo"/></l><r>رغم<b/>أن<s n="cnjsub"/></r></p></e>
 
 
@@ -300,6 +301,9 @@
      <e><p><l>per<b/>eżempju<s n="cnjadv"/></l><r>مثلا<s n="cnjadv"/></r></p></e>
      <e><p><l>żgur<b/>li<s n="cnjadv"/></l><r>بالتأكيد<s n="adv"/></r></p></e>
      <e><p><l>jiġifieri<s n="cnjadv"/></l><r>أي<s n="cnjadv"/></r></p></e>
+     <e><p><l>kemm-il<b/>darba<s n="cnjadv"/></l><r>كل<b/>مرة<s n="cnjadv"/></r></p></e>
+     <e><p><l>biss<s n="cnjadv"/></l><r>ولكن<s n="cnjadv"/></r></p></e>
+
 
      <!-- SECTION: Prepositions -->
 
@@ -941,7 +945,8 @@
      <e><p><l>pakkett<s n="n"/><s n="m"/></l><r>رزمة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>baħar<s n="n"/><s n="m"/></l><r>بحر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>Ġermaniż<s n="n"/><s n="m"/></l><r>ألماني<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
-     <e c="  0"><p><l>funzjoni<s n="n"/><s n="f"/></l><r>وظيفة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e><p><l>impjieg<s n="n"/><s n="m"/></l><r>وظيفة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e c="  0" r="LR"><p><l>funzjoni<s n="n"/><s n="f"/></l><r>وظيفة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e slr="1" r="LR"><p><l>funzjoni<s n="n"/><s n="f"/></l><r>دالة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e r="RL"><p><l>funzjoni<s n="n"/><s n="f"/></l><r>دالة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>simbolu<s n="n"/><s n="m"/></l><r>رمز<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -7670,7 +7675,8 @@
      <e><p><l>heres<s n="vblex"/><s n="tv"/></l><r>هرس<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e> <!-- s/ż -->
      <e><p><l>therreż<s n="vblex"/><s n="iv"/></l><r>هرس<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
      <e><p><l>ħolom<s n="vblex"/><s n="iv"/></l><r>حلم<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e> <!-- tv? -->
-     <e><p><l>ħoloq<s n="vblex"/><s n="iv"/></l><r>خلق<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e> <!-- that's passive voice -->
+     <e><p><l>nħoloq<s n="vblex"/><s n="iv"/></l><r>خلق<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e> 
+     <e r="LR"><p><l>ħoloq<s n="vblex"/><s n="iv"/></l><r>خلق<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e> <!-- that's passive voice -->
      <e><p><l>kanta<s n="vblex"/><s n="tv"/></l><r>غنى<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e r="RL"><p><l>kanta<s n="vblex"/><s n="tv"/></l><r>غنى<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
      <e><p><l>każbar<s n="vblex"/><s n="tv"/></l><r>أوسخ<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>

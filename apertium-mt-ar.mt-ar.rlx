@@ -15,6 +15,7 @@ LIST PRES = (pres);
 LIST IMP = (imp);
 
 LIST CNJSUB = cnjsub;
+LIST CNJADV = cnjadv;
 LIST REL = rel;
 LIST ITG = itg;
 
@@ -206,3 +207,14 @@ SELECT:r27 POSTDET IF
         (0 PRN)
         (0 POSTDET) 
         (-1 NOUN);
+
+SELECT:r27 NOUNPL IF
+        (0 NOUNPL)
+        (0 NOUNPX); 
+# OYKOYN! any better idea for "u b’hekk insibu l-ewwel għamliet ta’ flawti." ?
+
+SELECT:r27 ADV IF
+        (0 ADV)
+        (0 CNJADV)
+	(NOT -1 BOS); 
+# "biss": "only" vs "however"
