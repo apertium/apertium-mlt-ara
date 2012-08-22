@@ -1537,6 +1537,7 @@
                <clip pos="1" side="tl" part="temps" link-to="5"/>
                <clip pos="1" side="tl" part="pers" link-to="6"/>
              </lu>
+	     <b/>
            </chunk>
 	   <b/>
 	   <chunk name="prep_prn"> 
@@ -1545,7 +1546,7 @@
                <tag><clip pos="1" side="tl" part="pers"/></tag>
                <tag><clip pos="1" side="tl" part="gen"/></tag>
                <tag><clip pos="1" side="tl" part="nbr"/></tag>
- 	     </tags>
+ 	     </tags> 
   	     <mlu>
 	       <lu>
                  <lit v="عند"/>
@@ -1555,7 +1556,7 @@
                  <lit v="ه"/>
                  <lit-tag v="prn"/>
                  <clip pos="1" side="tl" part="pers"/>
-                 <clip pos="1" side="tl" part="gen" link-to="3"/>
+                 <clip pos="1" side="tl" part="gen" link-to="3"/> 
                  <clip pos="1" side="tl" part="nbr" link-to="4"/>
                </lu>
   	     </mlu>
@@ -2904,9 +2905,12 @@
                 <clip pos="1" side="tl" part="a_trans"/>
                 <clip pos="1" side="tl" part="a_voice"/>
                 <clip pos="1" side="tl" part="temps"/>
-                <clip pos="1" side="tl" part="pers"/>
+		<clip pos="2" side="tl" part="pers"/>
+		<clip pos="2" side="tl" part="gen"/>
+		<clip pos="2" side="tl" part="nbr"/>
+<!--                <clip pos="1" side="tl" part="pers"/>
                 <var n="genero"/>
-                <clip pos="1" side="tl" part="nbr"/>
+                <clip pos="1" side="tl" part="nbr"/>  -->
                 <clip pos="1" side="tl" part="lemq"/>
               </lu>
   	    </chunk></out>
@@ -8427,7 +8431,7 @@
     </rule>
 
 
-    <rule comment="rule 152: Biss, dan il-fenomenu li sar hekk integrali mal-ħajja tagħna l-bnedmin, minn fejn kellu l-bidu">
+    <rule comment="rule 152: Biss, _dan il-fenomenu li_ sar hekk integrali mal-ħajja tagħna l-bnedmin, minn fejn kellu l-bidu">
        <pattern>
          <pattern-item n="detdem"/>
          <pattern-item n="artic"/>
@@ -8521,6 +8525,147 @@
              <var n="px"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
+         </chunk></out>
+       </action>
+    </rule>
+
+
+    <rule comment="rule 155: kellu ('to have') past + obj: Biss, dan il-fenomenu li sar hekk integrali mal-ħajja tagħna l-bnedmin, minn fejn _kellu l-bidu_">
+       <pattern>
+         <pattern-item n="kellupast"/>
+         <pattern-item n="artic"/>
+         <pattern-item n="non-np"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro> 
+         <call-macro n="set_gen_nbr_case"><with-param pos="3"/></call-macro>
+	 <let><var n="genero"/><clip pos="1" side="tl" part="gen"/></let>
+	 <let><var n="numero"/><clip pos="1" side="tl" part="nbr"/></let>
+         <call-macro n="verbf_concord2"><with-param pos="1"/><with-param pos="3"/></call-macro>
+         <out>
+	   <chunk name="kien">  
+ 	     <tags>
+ 	       <tag><lit-tag v="SV"/></tag>
+               <tag><lit-tag v="actv"/></tag>  <!-- hm -->
+ 	       <tag><lit-tag v="past"/></tag>
+ 	       <tag><lit-tag v="p3"/></tag>
+ 	       <tag><clip pos="1" side="tl" part="gen"/></tag>
+   	       <tag><clip pos="1" side="tl" part="nbr"/></tag>
+ 	     </tags>
+             <lu>
+  	       <lit v="كان"/>
+	       <lit-tag v="vaux"/>
+	       <lit-tag v="iv"/> 
+	       <lit-tag v="actv"/> 
+  	       <lit-tag v="past"/>
+	       <lit-tag v="p3"/>
+               <clip pos="1" side="tl" part="gen" link-to="5"/>
+               <clip pos="1" side="tl" part="nbr" link-to="6"/>
+             </lu>
+           </chunk>
+	   <b/>
+	   <chunk name="prep_prn"> 
+ 	     <tags>
+ 	       <tag><lit-tag v="SP"/></tag>
+               <tag><clip pos="1" side="tl" part="pers"/></tag>
+               <tag><var n="genero"/></tag>
+               <tag><var n="numero"/></tag>
+ 	     </tags>
+  	     <mlu>
+	       <lu>
+                 <lit v="عند"/>
+                 <lit-tag v="pr"/>
+	       </lu>
+	       <lu>
+                 <lit v="ه"/>
+                 <lit-tag v="prn"/>
+                 <clip pos="1" side="tl" part="pers"/>
+                 <var n="genero"/>
+                 <var n="numero"/>
+               </lu>
+  	     </mlu>
+           </chunk>
+	   <b/>
+	   <chunk name="art_n">
+	     <tags>
+	       <tag><lit-tag v="SN"/></tag>
+	       <tag><clip pos="3" side="tl" part="gen"/></tag>
+	       <tag><clip pos="3" side="tl" part="a_anim"/></tag>
+	       <tag><clip pos="3" side="tl" part="nbr"/></tag>
+	       <tag><clip pos="3" side="tl" part="case"/></tag>
+	       <tag><lit-tag v="def"/></tag>
+	     </tags>
+  	     <mlu>
+               <lu>
+                 <clip pos="2" side="tl" part="whole"/>
+               </lu>
+	       <lu>
+	         <clip pos="3" side="tl" part="lemh"/>
+                 <clip pos="3" side="tl" part="a_nom"/>
+                 <clip pos="3" side="tl" part="gen"/>
+                 <clip pos="3" side="tl" part="a_anim"/>
+                 <clip pos="3" side="tl" part="nbr"/>
+	         <clip pos="3" side="tl" part="case" link-to="5"/>
+                 <lit-tag v="artic"/>
+ 	         <clip pos="3" side="tl" part="lemq"/>
+ 	       </lu>
+  	     </mlu>
+	   </chunk>
+	 </out>
+       </action>
+    </rule>
+
+
+   <!-- This one is really interesting. Actually, I don't know if there is one solution that would work in every case, adjective maybe? the one used below, with 'ك', is almost certainly not the best one -->
+   <!-- Hm, even more interesting than I first thought: there is no second ta', it's not "l-ħajja tagħna tal-bnedmin", but "l-ħajja tagħna l-bnedmin"! So what is it? complete misunderstanding of the construct state? --> 
+
+   <rule comment="rule 156: dan il-fenomenu li sar hekk integrali mal-ħajja tagħna l-bnedmin">
+       <pattern>
+         <pattern-item n="prep"/>
+         <pattern-item n="artic"/>
+         <pattern-item n="non-np"/>
+         <pattern-item n="ta_pr"/>
+         <pattern-item n="u_prn"/>
+         <pattern-item n="artic"/>
+         <pattern-item n="non-np"/>
+       </pattern>
+       <action>
+         <call-macro n="prn_suff_to_px"><with-param pos="5"/></call-macro>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_nom"/>
+             <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="a_anim"/>
+             <clip pos="3" side="tl" part="nbr"/>
+             <lit-tag v="gen"/>
+             <var n="px"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+	   <mlu>
+	     <lu>
+	       <lit v="ك"/>
+	       <lit-tag v="pr"/>
+	     </lu>
+             <lu>
+               <clip pos="6" side="tl" part="whole"/>
+             </lu>
+             <lu>
+               <clip pos="7" side="tl" part="lemh"/>
+               <clip pos="7" side="tl" part="a_nom"/>
+               <clip pos="7" side="tl" part="gen"/>
+               <clip pos="7" side="tl" part="a_anim"/>
+               <clip pos="7" side="tl" part="nbr"/>
+               <lit-tag v="gen"/>
+               <lit-tag v="artic"/>
+               <clip pos="7" side="tl" part="lemq"/>
+             </lu>
+	   </mlu>
          </chunk></out>
        </action>
     </rule>

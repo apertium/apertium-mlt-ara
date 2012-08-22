@@ -159,7 +159,7 @@
  	  <test><and>   <!-- that's what happens when verb goes first -->
 	    <!-- well, not quite: add nn.pl fix -->
  	    <equal><clip pos="1" part="pers"/><lit-tag v="p3"/></equal>
- 	    <equal><clip pos="1" part="nbr"/><clip pos="2" part="nbr"/></equal>
+ 	    <equal><clip pos="1" part="nbr"/><clip pos="2" part="nbr"/></equal> 
  	    <equal><clip pos="2" part="defnes"/><lit-tag v="def"/></equal>
  	  </and></test>
 	  <let><clip pos="1" part="nbr"/><lit-tag v="sg"/></let>

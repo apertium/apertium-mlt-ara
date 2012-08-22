@@ -21,7 +21,7 @@
 |-
 | ħaqar || vblex || strong || 1 || oppress || ħ-q-r || a-a || a-a || tv ||  || ma
 |-
-| ħalaq || vblex || strong || 1 || create || ħ-l-q || a-a || a-a || tv ||  || ma
+| ħalaq || vblex || strong || 1 || create || ħ-l-q || a-a || o-o || tv ||  || ma
 |-
 | ħaraq || vblex || strong || 1 || burn || ħ-r-q || a-a || a-a || tv ||  || ma
 |-
@@ -273,8 +273,6 @@
 |-
 | korob || vblex || strong || 1 || groan || k-r-b || o-o || o-o || iv ||  ||
 |-
-| ħoloq || vblex || strong || 1 || be·created || ħ-l-q || o-o || o-o || iv ||  || ma
-|-
 | forogħ || vblex || strong || 1 || ebb || f-r-għ || o-o || o-o || iv ||  || mi
 |-
 | kotor || vblex || strong || 1 || abound || k-t-r || o-o || o-o || iv ||  || ma
@@ -296,6 +294,8 @@
 | ħakem || vblex || strong || 1 || govern || ħ-k-m || a-e || a-e || tv ||  || ma
 |-
 | xebaħ || vblex || strong || 1 || resemble || x-b-ħ || e-a || i-a || tv ||  || mi
+|-
+| ħoloq || vblex || strong || 1 || be·created || ħ-l-q || o-o || || iv ||  ||
 |-
 | wieġeb || vblex || strong || 3a || answer || w-ġ-b || || || tv ||  || 
 |-
@@ -396,6 +396,8 @@
 | ngħaqad || vblex || strong || 7a || be٠joined || għ-q-d || a-a || a-a || iv ||  ||
 |-
 | nħakem || vblex || strong || 7a || be٠ruled || ħ-k-m || a-e || a-e || iv ||  ||
+|-
+| nħoloq || vblex || strong || 1 || be·created || ħ-l-q || o-o || o-o || iv ||  ||
 |-
 | ntgħażel || vblex || strong || 7b || be٠chosen || għ-ż-l || a-e || a-e || iv ||  || 
 |-
