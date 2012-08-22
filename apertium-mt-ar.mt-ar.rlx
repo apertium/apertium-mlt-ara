@@ -29,8 +29,13 @@ LIST NOUNPX = (n px1sg) (n px2sg) (n px3sg_m) (n px3sg_f) (n px1pl) (n px2pl) (n
 LIST VRBSG = (vblex sg) (vaux sg);
 LIST VRBPL = (vblex pl) (vaux pl);
 
+
 LIST BOS = (>>>) ;
 LIST EOS = (<<<) ;
+
+
+LIST TAPREP = ("ta'" pr);
+LIST POSTDET = ("ieħor" det);
 
 
 SET SENTBOUNDARY = CNJSUB | REL | ITG | EOS;
@@ -160,22 +165,44 @@ SELECT:r19 ADV IF
         (0 PREP)
         (1 PREP);
 
-SELECT:r19 PRN IF
+SELECT:r20 DET IF
         (0 DET)
         (0 PRN)
-        (NOT 1 NOUN LINK NOT 1 DETDEF);
+        (1 DETDEF);
 
-REMOVE:r20 NOUNPX IF
+SELECT:r21 DET IF
+        (0 DET)
+        (0 PRN)
+        (1 NOUN);
+
+SELECT:r22 DET IF
+        (0 DET)
+        (0 PRN)
+        (1 ADJ);
+
+REMOVE:r23 NOUNPX IF
 	(-1 DETDEF)
 
-SELECT:r21 VRBPL IF
+SELECT:r24 VRBPL IF
         (0 VRBPL)
         (0 VRBSG) 
         (1 VRBPL);
 
-SELECT:r22 VRBPL IF
+SELECT:r25 VRBPL IF
         (0 VRBPL)
         (0 VRBSG LINK 0/1 PRN) 
         (1 CNJSUB);
 # typical sg+prn.3.m.sg vs pl problem
 
+# this sucks, but what boundary should be used?
+# - not (NOT *-1 NOUN BARRIER SENTBOUNDARY)
+SELECT:r26 NOUN IF
+        (0 NOUN)
+        (0 ADJ) 
+        (1 ADJ)
+        (2 TAPREP);
+
+SELECT:r27 POSTDET IF
+        (0 PRN)
+        (0 POSTDET) 
+        (-1 NOUN);

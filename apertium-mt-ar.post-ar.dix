@@ -10,9 +10,6 @@
     <pardef n="letters">
       <!-- all letters should be put here -->
       <e>
-        <i>أ</i>
-      </e>
-      <e>
         <i>ا</i>
       </e>
       <e>
@@ -20,6 +17,9 @@
       </e>
       <e>
         <i>إ</i>
+      </e>
+      <e>
+        <i>آ</i>
       </e>
       <e>
         <i>ب</i>
@@ -115,6 +115,15 @@
   </pardefs>
 
   <section id="main" type="standard">
+
+      <e>
+        <p>
+          <l><a/>ال<b/></l>
+          <r>ال</r>
+        </p>
+        <par n="letters"/>
+      </e> 
+
       <e>
         <p>
           <l><a/>ل<b/>ال</l>
@@ -144,6 +153,7 @@
         </p> 
         <par n="letters"/>
       </e>
+
       <e>
         <p>
           <l><a/>ل<b/><b/></l>

@@ -963,7 +963,8 @@
      <e><p><l>tellieqa<s n="n"/><s n="f"/></l><r>سباق<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>lvant<s n="n"/><s n="m"/></l><r>شرق<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>stadju<s n="n"/><s n="m"/></l><r>مرحلة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
-     <e c="  0"><p><l>riflessjoni<s n="n"/><s n="f"/></l><r>انعكاس<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e><p><l>rifless<s n="n"/><s n="m"/></l><r>انعكاس<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e> 
+     <e c="  0" r="LR"><p><l>riflessjoni<s n="n"/><s n="f"/></l><r>انعكاس<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e> <!-- hm, strange, I would expect 'riflessjoni' to be rather 'reflection' ('thinking') -->
      <e slr="1"><p><l>riflessjoni<s n="n"/><s n="f"/></l><r>تفكير<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>reazzjoni<s n="n"/><s n="f"/></l><r>رد<b/>فعل<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>okkażjoni<s n="n"/><s n="f"/></l><r>مناسبة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>

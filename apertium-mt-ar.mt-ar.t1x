@@ -3392,7 +3392,6 @@
     </rule> 
 
 
-<!-- hey, should be det, but _not_ article -->
     <rule comment="rule 58: prep + gen "> 
        <pattern>
          <pattern-item n="prep"/>
@@ -8330,6 +8329,147 @@
          </out>
        </action>
     </rule>
+
+
+    <!-- hm, really strange; but of course it is possible to use more or less anything as a noun; this mt example corresponds is exactly "takie coś" in Polish -->
+    <!-- also, it seems that in mt "that" is often used when "this" would be used in ar -->
+    <rule comment="rule 150: sakemm minn _dik ix-xi ħaġa_ jirnexxielu joħloq ħaġa ġdida"> 
+       <pattern>
+         <pattern-item n="prep"/>
+         <pattern-item n="det"/>
+         <pattern-item n="artic"/>
+         <pattern-item n="pron"/>
+       </pattern>
+       <action>
+         <call-macro n="adjf_concord2"><with-param pos="4"/><with-param pos="2"/></call-macro>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="whole"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="3" side="tl" part="whole"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="4" side="tl" part="whole"/>
+           </lu>
+         </chunk></out>
+       </action>
+    </rule>
+
+
+    <rule comment="rule 151: F’kull ġurnata, minn fuq il-mezzi tax-xandir tisma’ l-mużika ta’ għamla differenti, _dik klassika_, _dik romantika_, _dik moderna_ u ta’ tipi oħra"> 
+       <pattern>
+         <pattern-item n="det"/>
+         <pattern-item n="adj"/>
+       </pattern>
+       <action>
+         <call-macro n="adjf_concord2"><with-param pos="1"/><with-param pos="2"/></call-macro>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+	   <b/>
+           <mlu>
+             <lu>
+               <lit v="ال"/>
+               <lit-tag v="det"/>
+               <lit-tag v="def"/>
+             </lu>
+             <lu>
+               <clip pos="2" side="tl" part="lemh"/>
+               <clip pos="2" side="tl" part="a_adj"/>
+               <clip pos="2" side="tl" part="comp"/>
+               <clip pos="2" side="tl" part="gen"/>
+               <clip pos="2" side="tl" part="nbr"/>
+               <lit-tag v="nom"/>
+	       <lit-tag v="artic"/>
+               <clip pos="2" side="tl" part="lemq"/>
+             </lu>
+           </mlu>
+         </chunk></out>
+       </action>
+    </rule>
+
+
+    <rule comment="rule 152: Biss, dan il-fenomenu li sar hekk integrali mal-ħajja tagħna l-bnedmin, minn fejn kellu l-bidu">
+       <pattern>
+         <pattern-item n="detdem"/>
+         <pattern-item n="artic"/>
+         <pattern-item n="non-np"/>
+         <pattern-item n="rel"/>
+       </pattern>
+       <action>
+         <call-macro n="set_gen_nbr_case"><with-param pos="3"/></call-macro>
+         <call-macro n="myf_concord2"><with-param pos="3"/><with-param pos="1"/></call-macro>
+         <call-macro n="myf_concord2"><with-param pos="3"/><with-param pos="4"/></call-macro>
+         <out>
+	   <chunk name="det_art_n">
+	     <tags>
+	       <tag><lit-tag v="SN"/></tag>
+	       <tag><clip pos="3" side="tl" part="gen"/></tag>
+	       <tag><clip pos="3" side="tl" part="a_anim"/></tag>
+	       <tag><clip pos="3" side="tl" part="nbr"/></tag>
+	       <tag><clip pos="3" side="tl" part="case"/></tag>
+	       <tag><lit-tag v="def"/></tag>
+	     </tags>
+             <lu>
+               <clip pos="1" side="tl" part="whole"/>
+             </lu>
+	     <b/>
+  	     <mlu>
+               <lu>
+                 <clip pos="2" side="tl" part="whole"/>
+               </lu>
+               <lu>
+                 <clip pos="3" side="tl" part="lemh"/>
+                 <clip pos="3" side="tl" part="a_nom"/>
+                 <clip pos="3" side="tl" part="gen"/>
+                 <clip pos="3" side="tl" part="a_anim"/>
+                 <clip pos="3" side="tl" part="nbr"/>
+                 <clip pos="3" side="tl" part="case" link-to="5"/>
+                 <clip pos="3" side="tl" part="lemq"/>
+               </lu>
+	     </mlu>
+	     <b/>
+             <lu>
+               <clip pos="4" side="tl" part="whole"/>
+             </lu>
+	   </chunk>
+         </out>
+       </action>
+    </rule>
+
+    <rule comment="rule 58: prep + gen "> 
+       <pattern>
+         <pattern-item n="nom"/>
+	 <pattern-item n="postdet"/>  
+       </pattern>
+       <action>
+         <call-macro n="set_gen_nbr_case"><with-param pos="1"/></call-macro>
+         <call-macro n="set_gen_nbr_case"><with-param pos="2"/></call-macro>
+         <call-macro n="myf_concord2">
+           <with-param pos="1"/>
+           <with-param pos="2"/>
+	 </call-macro>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="whole"/>
+           </lu>
+	 </chunk></out>
+       </action>
+    </rule>
+
+
 
   </section-rules>
 
