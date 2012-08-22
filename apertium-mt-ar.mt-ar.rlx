@@ -173,7 +173,9 @@ SELECT:r21 VRBPL IF
         (0 VRBSG) 
         (1 VRBPL);
 
-SELECT:r21 VRBPL IF
+SELECT:r22 VRBPL IF
         (0 VRBPL)
         (0 VRBSG LINK 0/1 PRN) 
         (1 CNJSUB);
+# typical sg+prn.3.m.sg vs pl problem
+

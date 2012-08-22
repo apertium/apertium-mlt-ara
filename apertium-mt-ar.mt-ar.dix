@@ -681,7 +681,9 @@
      <e slr="2" r="LR"><p><l>denb<s n="n"/><s n="m"/></l><r>ذنب<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e r="RL"><p><l>denb<s n="n"/><s n="m"/></l><r>ذنب<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>politika<s n="n"/><s n="f"/></l><r>سياسة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
-     <e><p><l>triq<s n="n"/><s n="f"/></l><r>شارع<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e c="  0"><p><l>triq<s n="n"/><s n="f"/></l><r>طريق<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e slr="1" r="LR"><p><l>triq<s n="n"/><s n="f"/></l><r>شارع<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e r="RL"><p><l>triq<s n="n"/><s n="f"/></l><r>شارع<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e slr="1" r="LR"><p><l>triq<s n="n"/><s n="f"/></l><r>مسار<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e r="RL"><p><l>triq<s n="n"/><s n="f"/></l><r>مسار<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>partita<s n="n"/><s n="f"/></l><r>مباراة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -1119,7 +1121,7 @@
      <e><p><l>spiża<s n="n"/><s n="f"/></l><r>كلفة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e c="  0"><p><l>sodda<s n="n"/><s n="f"/></l><r>سرير<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e slr="1"><p><l>sodda<s n="n"/><s n="f"/></l><r>فراش<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
-     <e><p><l>rotta<s n="n"/><s n="f"/></l><r>طريق<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e r="LR"><p><l>rotta<s n="n"/><s n="f"/></l><r>طريق<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>prominenza<s n="n"/><s n="f"/></l><r>شهرة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>prijorità<s n="n"/><s n="f"/></l><r>أولوية<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>preparazzjoni<s n="n"/><s n="f"/></l><r>إعداد<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -2506,7 +2508,7 @@
      <e r="RL"><p><l>bebbux<s n="n"/><s n="m"/><s n="sg"/></l><r>حلزون<s n="n"/><s n="m"/><s n="nn"/><s n="sg"/></r></p><par n="nocase_nom_gen_acc"/></e>
      <e><p><l>bebbuxa<s n="n"/><s n="f"/></l><r>حلزونة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>korda<s n="n"/><s n="f"/></l><r>وتر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
-     <e><p><l>perkussjoni<s n="n"/><s n="f"/></l><r>آلة<g><b/>النقر</g><s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e><p><l>perkussjoni<s n="n"/><s n="f"/></l><r>آلة<b/>نقر<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>nifs<s n="n"/><s n="m"/></l><r>تنفس<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e r="LR"><p><l>maġija<s n="n"/><s n="f"/></l><r>سحر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>maġik<s n="n"/><s n="m"/></l><r>سحر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -2547,6 +2549,9 @@
      <e><p><l>serje<s n="n"/><s n="f"/></l><r>مسلسل<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>metru<s n="n"/><s n="m"/></l><r>متر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>kilometru<s n="n"/><s n="m"/></l><r>كيلومتر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e><p><l>strument<g><b/>tan-nifs</g><s n="n"/><s n="m"/></l><r>آلة<b/>نفخ<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e r="LR"><p><l>strument<g><b/>tal-perkussjoni</g><s n="n"/><s n="m"/></l><r>آلة<b/>نقر<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+
 
      <!-- SECTION: Proper nouns -->
 
@@ -7421,8 +7426,9 @@
      <e><p><l>feraħ<s n="vblex"/><s n="iv"/></l><r>فرح<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>xorob<s n="vblex"/><s n="tv"/></l><r>شرب<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>nxtorob<s n="vblex"/><s n="iv"/></l><r>شرب<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
-     <e c="  0"><p><l>wasal<s n="vblex"/><s n="iv"/></l><r>حان<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
-     <e slr="1"><p><l>wasal<s n="vblex"/><s n="iv"/></l><r>وصل<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
+     <e c="  0"><p><l>wasal<s n="vblex"/><s n="iv"/></l><r>وصل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e slr="1" r="LR"><p><l>wasal<s n="vblex"/><s n="iv"/></l><r>حان<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
+     <e r="RL"><p><l>wasal<s n="vblex"/><s n="iv"/></l><r>حان<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>sama<s n="vblex"/><s n="tv"/></l><r>سمع<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>nstama<s n="vblex"/><s n="iv"/></l><r>سمع<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
      <e><p><l>issemma<s n="vblex"/><s n="iv"/></l><r>استمع<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
@@ -7693,7 +7699,7 @@
      <e slr="1"><p><l>naqas<s n="vblex"/><s n="iv"/></l><r>نقص<s n="vblex"/><s n="iv"/><s n="actv"/></r></p></e>
      <e><p><l>naqas<s n="vblex"/><s n="tv"/></l><r>نقص<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e r="RL"><p><l>naqas<s n="vblex"/><s n="tv"/></l><r>نقص<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
-     <e><p><l>laħaq<s n="vblex"/><s n="tv"/></l><r>وصل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
+     <e r="LR"><p><l>laħaq<s n="vblex"/><s n="tv"/></l><r>وصل<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>ntlaħaq<s n="vblex"/><s n="iv"/></l><r>وصل<s n="vblex"/><s n="tv"/><s n="pasv"/></r></p></e>
      <e r="LR"><p><l>qala<s n="vblex"/><s n="tv"/></l><r>كسب<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>
      <e><p><l>qata<s n="vblex"/><s n="tv"/></l><r>قطع<s n="vblex"/><s n="tv"/><s n="actv"/></r></p></e>

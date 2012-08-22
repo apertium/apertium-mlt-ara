@@ -266,7 +266,24 @@
     <def-cat n="postdet">
       <cat-item tags="det.ind.*" lemma="ieħor"/>
     </def-cat>
-
+    <def-cat n="det_px">
+       <cat-item tags="det.*.*.*.px1sg"/>
+       <cat-item tags="det.*.*.*.px2sg"/> <!-- maltese-only -->
+       <cat-item tags="det.*.*.*.px2sg_m"/> <!-- arabic-only -->
+       <cat-item tags="det.*.*.*.px2sg_f"/> <!-- arabic-only -->
+       <cat-item tags="det.*.*.*.px3sg"/>
+       <cat-item tags="det.*.*.*.px3sg_m"/>
+       <cat-item tags="det.*.*.*.px3sg_f"/>
+       <cat-item tags="det.*.*.*.px1pl"/>
+       <cat-item tags="det.*.*.*.px2du"/> <!-- arabic only -->
+       <cat-item tags="det.*.*.*.px2pl"/> <!-- maltese only -->
+       <cat-item tags="det.*.*.*.px2pl_m"/> <!-- arabic only -->
+       <cat-item tags="det.*.*.*.px2pl_f"/> <!-- arabic only -->
+       <cat-item tags="det.*.*.*.px3du"/>
+       <cat-item tags="det.*.*.*.px3pl"/> <!-- maltese only -->
+       <cat-item tags="det.*.*.*.px3pl_m"/> <!-- arabic only -->
+       <cat-item tags="det.*.*.*.px3pl_f"/>
+    </def-cat>
 
     <!-- numerals -->
 
@@ -310,6 +327,10 @@
       <cat-item tags="num.mf.*" lemma="miljun"/>
       <cat-item tags="num.mf.*" lemma="biljun"/>
       <cat-item tags="num.mf.*" lemma="triljun"/>
+    </def-cat>
+
+    <def-cat n="num_pl">  
+      <cat-item tags="num.*.pl"/>
     </def-cat>
 
   </section-def-cats>
@@ -3219,7 +3240,6 @@
     </rule>
 
 
-
     <rule comment="rule 54: li with def. noun"> 
        <pattern>
          <pattern-item n="artic"/>
@@ -3229,27 +3249,39 @@
        <action>
 	 <call-macro n="set_gen_nbr_case"><with-param pos="2"/></call-macro>
 	 <call-macro n="adjf_concord2"><with-param pos="2"/><with-param pos="3"/></call-macro>
-         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
-           <mlu>
+         <out>
+ 	   <chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+             <mlu>
+               <lu>
+                 <clip pos="1" side="tl" part="whole"/>
+               </lu>
+               <lu>
+                 <clip pos="2" side="tl" part="lemh"/>
+                 <clip pos="2" side="tl" part="a_nom"/>
+                 <clip pos="2" side="tl" part="gen"/>
+                 <clip pos="2" side="tl" part="a_anim"/>
+                 <clip pos="2" side="tl" part="nbr"/>
+                 <clip pos="2" side="tl" part="case"/>
+                 <lit-tag v="artic"/>
+                 <clip pos="2" side="tl" part="lemq"/>
+               </lu>
+             </mlu>
+	   </chunk>
+ 	   <b/>
+	   <chunk name="art_n_rel">
+	     <tags>
+	       <tag><lit-tag v="SN"/></tag>
+	       <tag><clip pos="2" side="tl" part="gen"/></tag>
+	       <tag><clip pos="2" side="tl" part="a_anim"/></tag>
+	       <tag><clip pos="2" side="tl" part="nbr"/></tag>
+	       <tag><clip pos="2" side="tl" part="case"/></tag>
+	       <tag><lit-tag v="def"/></tag>
+	     </tags>
              <lu>
-               <clip pos="1" side="tl" part="whole"/>
+               <clip pos="3" side="tl" part="whole"/>
              </lu>
-             <lu>
-               <clip pos="2" side="tl" part="lemh"/>
-               <clip pos="2" side="tl" part="a_nom"/>
-               <clip pos="2" side="tl" part="gen"/>
-               <clip pos="2" side="tl" part="a_anim"/>
-               <clip pos="2" side="tl" part="nbr"/>
-               <clip pos="2" side="tl" part="case"/>
-               <lit-tag v="artic"/>
-               <clip pos="2" side="tl" part="lemq"/>
-             </lu>
-           </mlu>
-	   <b/>
-           <lu>
-             <clip pos="3" side="tl" part="whole"/>
-           </lu>
-	 </chunk></out>
+	   </chunk>
+         </out>
        </action>
     </rule>
 
@@ -4695,7 +4727,6 @@
              <clip pos="3" side="tl" part="nbr"/>
              <lit-tag v="gen"/>
              <var n="px"/>
-<!--             <lit-tag v="px1pl"/>    TODO: add macro or sth to set poss. suffixes properly!!! -->
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
          </chunk></out>
@@ -8085,6 +8116,220 @@
        </action>
     </rule>
 
+<!-- that's how it will be written one day, now we have det + px tags :((( 
+   <rule comment="rule 147: Madwar _id-dinja kollha_, eluf ta’ nies jattendu għal kunċerti"> 
+       <pattern>
+         <pattern-item n="artic"/>
+         <pattern-item n="non-np"/>
+         <pattern-item n="det"/>
+         <pattern-item n="u_prn"/>
+       </pattern>
+       <action>
+         <call-macro n="set_gen_nbr_case"><with-param pos="2"/></call-macro>
+	 <choose>  
+	   <when>
+	     <test><and>
+	     <equal><clip pos="4" side="tl" part="pers"/><lit-tag v="p3"/></equal>
+	     <equal><clip pos="2" side="tl" part="gen"/><clip pos="2" side="tl" part="gen"/></equal>
+	     <equal><clip pos="2" side="tl" part="nbr"/><clip pos="2" side="tl" part="nbr"/></equal>
+	     </and></test>
+             <call-macro n="adjf_concord2"><with-param pos="2"/><with-param pos="4"/></call-macro>
+	   </when>
+	 </choose>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+	 <mlu>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="a_anim"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="a_case"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	 </mlu>
+	 <b/>
+	 <mlu>
+	   <lu>
+             <clip pos="3" side="tl" part="whole"/>
+           </lu>
+	 <mlu>
+	   <lu>
+             <clip pos="4" side="tl" part="whole"/>
+           </lu>
+	 </mlu>
+         </chunk></out>
+       </action>
+    </rule>
+-->
+
+
+   <rule comment="rule 147: Madwar _id-dinja kollha_, eluf ta’ nies jattendu għal kunċerti"> 
+       <pattern>
+         <pattern-item n="prep"/>
+         <pattern-item n="artic"/>
+         <pattern-item n="non-np"/>
+         <pattern-item n="det_px"/>
+       </pattern>
+       <action>
+         <call-macro n="set_gen_nbr_case"><with-param pos="3"/></call-macro>
+	 <choose>  
+	   <when>
+	     <test><and>
+	        <equal><clip pos="3" side="tl" part="nbr"/><lit-tag v="sg"/></equal>
+	        <equal><clip pos="3" side="tl" part="gen"/><lit-tag v="f"/></equal>
+	     </and></test>
+	     <let><clip pos="4" side="tl" part="poss"/><lit-tag v="px3sg_f"/></let>
+           </when>
+	   <when>
+	     <test><and>
+	        <equal><clip pos="3" side="tl" part="nbr"/><lit-tag v="sg"/></equal>
+	        <equal><clip pos="3" side="tl" part="gen"/><lit-tag v="m"/></equal>
+	     </and></test>
+	     <let><clip pos="4" side="tl" part="poss"/><lit-tag v="px3sg_m"/></let>
+           </when>
+	   <when>
+	     <test><and>
+	        <equal><clip pos="3" side="tl" part="a_anim"/><lit-tag v="aa"/></equal>
+	        <equal><clip pos="3" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
+	        <equal><clip pos="3" side="tl" part="gen"/><lit-tag v="f"/></equal>
+	     </and></test>
+	     <let><clip pos="4" side="tl" part="poss"/><lit-tag v="px3pl_f"/></let>
+           </when>
+	   <when>
+	     <test><and>
+	        <equal><clip pos="3" side="tl" part="a_anim"/><lit-tag v="aa"/></equal>
+	        <equal><clip pos="3" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
+	        <equal><clip pos="3" side="tl" part="gen"/><lit-tag v="m"/></equal>
+	     </and></test>
+	     <let><clip pos="4" side="tl" part="poss"/><lit-tag v="px3pl_m"/></let>
+           </when>
+	   <otherwise>
+	     <let><clip pos="4" side="tl" part="poss"/><lit-tag v="px3sg_f"/></let>
+	   </otherwise>
+	 </choose>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+         <lu>
+           <clip pos="1" side="tl" part="whole"/>
+         </lu>
+	 <b/>
+	 <mlu>
+           <lu>
+             <clip pos="2" side="tl" part="whole"/>
+           </lu>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_nom"/>
+             <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="a_anim"/>
+             <clip pos="3" side="tl" part="nbr"/>
+             <lit-tag v="gen"/>
+             <lit-tag v="artic"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+	 </mlu>
+	 <b/>
+	 <lu>
+           <clip pos="4" side="tl" part="whole"/>
+         </lu>
+         </chunk></out>
+       </action>
+    </rule>
+
+
+   <rule comment="rule 148: Madwar id-dinja kollha, _eluf ta’ nies_ jattendu għal kunċerti"> 
+       <pattern>
+         <pattern-item n="num_pl"/>  <!-- only pl?? -->
+         <pattern-item n="ta_pr"/>
+         <pattern-item n="non-np"/>
+       </pattern>
+       <action>
+         <call-macro n="set_gen_nbr_case"><with-param pos="3"/></call-macro>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+         <lu>
+           <clip pos="1" side="tl" part="lemh"/>
+           <clip pos="1" side="tl" part="a_num"/>
+           <clip pos="1" side="tl" part="gen"/>
+           <clip pos="1" side="tl" part="nbr"/>
+	   <lit-tag v="nom"/>
+           <clip pos="1" side="tl" part="lemq"/>
+         </lu>
+	 <b/>
+	 <lu>
+	   <lit v="من"/>
+	   <lit-tag v="pr"/>
+	 </lu>
+	 <b/>
+	 <mlu>
+	   <lu>
+             <lit v="ال"/>
+             <lit-tag v="det"/>
+             <lit-tag v="def"/>
+	   </lu>
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/>
+             <clip pos="3" side="tl" part="a_nom"/>
+             <clip pos="3" side="tl" part="gen"/>
+             <clip pos="3" side="tl" part="a_anim"/>
+             <lit-tag v="pl"/>
+             <lit-tag v="gen"/>
+             <lit-tag v="artic"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+	 </mlu>
+         </chunk></out>
+       </action>
+    </rule>
+
+
+   <rule comment="rule 149: B’hekk insibu li l-ibgħad missirijietna bdew jirriproduċu l-ħsejjes li _kienu jixbħu_ dak li jisimgħu fuq l-għoljiet"> 
+       <pattern>
+         <pattern-item n="kienpast"/>  <!-- only pl?? -->
+         <pattern-item n="vrb"/>
+       </pattern>
+       <action>
+         <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro>
+         <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro>
+	 <out>
+  	   <chunk name="verb">
+ 	     <tags>
+ 	       <tag><lit-tag v="SV"/></tag>
+               <tag><clip pos="2" side="tl" part="a_voice"/></tag> 
+ 	       <tag><clip pos="1" side="tl" part="temps"/></tag>
+ 	       <tag><clip pos="1" side="tl" part="pers"/></tag>
+ 	       <tag><clip pos="1" side="tl" part="gen"/></tag>
+   	       <tag><clip pos="1" side="tl" part="nbr"/></tag>
+ 	     </tags>
+ 	     <lu>
+               <clip pos="1" side="tl" part="lemh"/>
+               <clip pos="1" side="tl" part="a_verb"/>
+               <clip pos="1" side="tl" part="a_trans"/>
+               <clip pos="1" side="tl" part="a_voice"/>
+               <clip pos="1" side="tl" part="temps"/>
+               <clip pos="1" side="tl" part="pers"/>
+               <clip pos="1" side="tl" part="gen" link-to="5"/>
+               <clip pos="1" side="tl" part="nbr" link-to="6"/>
+               <clip pos="1" side="tl" part="lemq"/>
+ 	     </lu>
+	     <b/>
+ 	     <lu>
+               <clip pos="2" side="tl" part="lemh"/>
+               <clip pos="2" side="tl" part="a_verb"/>
+               <clip pos="2" side="tl" part="a_trans"/>
+               <clip pos="2" side="tl" part="a_voice"/>
+               <clip pos="2" side="tl" part="temps"/>
+               <clip pos="2" side="tl" part="pers"/>
+               <clip pos="2" side="tl" part="gen" link-to="5"/>
+               <clip pos="2" side="tl" part="nbr" link-to="6"/>
+               <clip pos="2" side="tl" part="lemq"/>
+ 	     </lu>
+ 	   </chunk>
+         </out>
+       </action>
+    </rule>
 
   </section-rules>
 
