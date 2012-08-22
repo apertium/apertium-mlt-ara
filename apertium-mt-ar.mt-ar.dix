@@ -1835,7 +1835,7 @@
       <e><p><l>benefattur<s n="n"/><s n="m"/></l><r>فاعل<b/>خير<s n="n"/><s n="m"/><s n="aa"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
       <e><p><l>berġa<s n="n"/><s n="f"/></l><r>عيادة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
       <e><p><l>beritta<s n="n"/><s n="f"/></l><r>قلنسوة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
-      <e><p><l>betbut<s n="n"/><s n="m"/></l><r>مزمار<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+      <e r="LR"><p><l>betbut<s n="n"/><s n="m"/></l><r>مزمار<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
       <e r="LR"><p><l>beżbuża<s n="n"/><s n="f"/></l><r>خصلة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
       <e><p><l>beżżula<s n="n"/><s n="f"/></l><r>حلمة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e> <!-- ثدي ? -->
       <e><p><l>bezzun<s n="n"/><s n="m"/></l><r>كعكة<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
@@ -2557,6 +2557,7 @@
      <e><p><l>kilometru<s n="n"/><s n="m"/></l><r>كيلومتر<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e><p><l>strument<g><b/>tan-nifs</g><s n="n"/><s n="m"/></l><r>آلة<b/>نفخ<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
      <e r="LR"><p><l>strument<g><b/>tal-perkussjoni</g><s n="n"/><s n="m"/></l><r>آلة<b/>نقر<s n="n"/><s n="f"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
+     <e><p><l>kwadru<s n="n"/><s n="m"/></l><r>مربع<s n="n"/><s n="m"/><s n="nn"/></r></p><par n="nbr_nocase_nom_gen_acc"/></e>
 
 
      <!-- SECTION: Proper nouns -->
