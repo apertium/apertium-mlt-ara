@@ -4305,6 +4305,7 @@
          <pattern-item n="u_prn"/>
        </pattern>
        <action>
+         <call-macro n="prn_suff_to_px"><with-param pos="8"/></call-macro>
          <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
            <lu>
              <clip pos="1" side="tl" part="whole"/>
@@ -4328,7 +4329,7 @@
              <clip pos="6" side="tl" part="a_anim"/>
              <clip pos="6" side="tl" part="nbr"/>
              <lit-tag v="gen"/>
-             <lit-tag v="px3sg_m"/>     <!-- TODO: add a macro and set everything properly! -->
+             <var n="px"/> 
              <clip pos="6" side="tl" part="lemq"/>
            </lu>
 	 </chunk></out>
@@ -8455,7 +8456,7 @@
 
     <rule comment="rule 151: F’kull ġurnata, minn fuq il-mezzi tax-xandir tisma’ l-mużika ta’ għamla differenti, _dik klassika_, _dik romantika_, _dik moderna_ u ta’ tipi oħra"> 
        <pattern>
-         <pattern-item n="det"/>
+         <pattern-item n="detdem"/>
          <pattern-item n="adj"/>
        </pattern>
        <action>
@@ -8914,7 +8915,157 @@
        </action>
     </rule> 
 
+
+    <rule comment="rule 161: tista’ tgħid li fl-oqsma kollha ta’ l-arti, ftit baqgħalna _tifkiriet tal-mużika tagħhom_">  
+       <pattern>
+         <pattern-item n="prep"/>
+         <pattern-item n="non-np"/>
+         <pattern-item n="ta_pr"/>
+         <pattern-item n="artic"/>
+         <pattern-item n="non-np"/>
+         <pattern-item n="ta_pr"/>
+         <pattern-item n="u_prn"/>
+       </pattern>
+       <action>
+         <call-macro n="set_gen_nbr_case"><with-param pos="2"/></call-macro>
+         <call-macro n="set_gen_nbr_case"><with-param pos="5"/></call-macro>
+         <call-macro n="prn_suff_to_px"><with-param pos="7"/></call-macro>
+	 <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="gen"/>
+             <clip pos="2" side="tl" part="a_anim"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <lit-tag v="gen"/>
+             <lit-tag v="cstr"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+	   <b/>
+           <lu>
+             <clip pos="5" side="tl" part="lemh"/>
+             <clip pos="5" side="tl" part="a_nom"/>
+             <clip pos="5" side="tl" part="gen"/>
+             <clip pos="5" side="tl" part="a_anim"/>
+             <clip pos="5" side="tl" part="nbr"/>
+             <lit-tag v="gen"/>
+             <var n="px"/>
+             <clip pos="5" side="tl" part="lemq"/>
+           </lu>
+         </chunk></out>
+       </action>
+    </rule> 
+
+
+   <rule comment="rule 162: Barra minn hekk, f’bosta drammi Griegi niltaqgħu mal-kor li kellu jkanta siltiet mid-dramm">
+       <pattern>
+         <pattern-item n="detqnt"/>
+         <pattern-item n="non-np"/>
+         <pattern-item n="adj"/>
+       </pattern>
+       <action>
+         <call-macro n="f_concord1"><with-param pos="1"/></call-macro>
+         <call-macro n="set_gen_nbr_case"><with-param pos="2"/></call-macro>
+         <call-macro n="set_gen_nbr_case"><with-param pos="3"/></call-macro>
+         <call-macro n="adjf_concord2"><with-param pos="2"/><with-param pos="3"/></call-macro>
+         <out><chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+	   <b/>
+	   <mlu>
+	     <lu>
+               <lit v="ال"/>
+               <lit-tag v="det"/>
+               <lit-tag v="def"/>
+	     </lu>
+             <lu>
+               <clip pos="2" side="tl" part="lemh"/>
+               <clip pos="2" side="tl" part="a_nom"/>
+               <clip pos="2" side="tl" part="gen"/>
+               <clip pos="2" side="tl" part="a_anim"/>
+               <clip pos="2" side="tl" part="nbr"/>
+               <lit-tag v="gen"/>
+               <lit-tag v="artic"/>
+               <clip pos="2" side="tl" part="lemq"/>
+             </lu>
+	   </mlu>
+	   <b/>
+	   <mlu>
+	     <lu>
+               <lit v="ال"/>
+               <lit-tag v="det"/>
+               <lit-tag v="def"/>
+	     </lu>
+             <lu>
+               <clip pos="3" side="tl" part="lemh"/>
+               <clip pos="3" side="tl" part="a_adj"/>
+               <clip pos="3" side="tl" part="comp"/>
+               <clip pos="3" side="tl" part="gen"/>
+               <clip pos="3" side="tl" part="nbr"/>
+               <lit-tag v="gen"/>
+               <lit-tag v="artic"/>
+               <clip pos="3" side="tl" part="lemq"/>
+             </lu>
+	   </mlu>
+         </chunk></out>
+       </action>
+    </rule>
+
     <!-- just great: there is +/- "have to" construction ("I have to go") in mt! -->
+    <!-- hm; not only: it's also sth like "his/her/its role is to..." -->
+    <!-- :(( --> 
+
+   <rule comment="rule 163: Barra minn hekk, f’bosta drammi Griegi niltaqgħu mal-kor li _kellu jkanta_ siltiet mid-dramm">
+       <pattern>
+         <pattern-item n="kellupast"/>
+         <pattern-item n="vrbpres"/>
+       </pattern>
+       <action>  <!-- check if gender/number/person are the same? -->
+         <call-macro n="modify_verb_and_genero"><with-param pos="1"/></call-macro> 
+         <call-macro n="modify_verb_and_genero"><with-param pos="2"/></call-macro> 
+         <call-macro n="prn_suff_to_px"><with-param pos="1"/></call-macro> <!-- hm, should work; I didn't expect such a conversion -->
+	 <let><clip pos="2" side="tl" part="temps"/><lit-tag v="apocop"/></let>
+         <out>
+	   <chunk name="cht1x"><tags><tag><lit-tag v="St1x"/></tag></tags>
+             <lu>
+  	       <lit v="كان"/>
+	       <lit-tag v="vaux"/>
+	       <lit-tag v="iv"/> 
+	       <lit-tag v="actv"/> 
+  	       <lit-tag v="past"/>
+	       <lit-tag v="p3"/>
+               <lit-tag v="m"/>
+               <lit-tag v="sg"/>
+             </lu>
+	     <b/>
+             <lu>
+  	       <lit v="دور"/>
+	       <lit-tag v="n"/>
+	       <lit-tag v="m"/> 
+	       <lit-tag v="nn"/>
+	       <lit-tag v="sg"/> 
+  	       <lit-tag v="nom"/>
+	       <var n="px"/>
+             </lu>
+	     <b/>
+             <lu>
+  	       <lit v="أن"/>
+	       <lit-tag v="cnjsub"/>
+             </lu>
+	     <b/>
+             <lu>
+               <clip pos="2" side="tl" part="whole"/>
+             </lu>
+           </chunk>
+	 </out>
+       </action>
+    </rule>
+
 
   </section-rules>
 
