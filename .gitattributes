@@ -72,8 +72,10 @@ dev/story/story4.gt.txt -text svneol=unset#application/octet-stream
 dev/story/story4.mt.txt -text
 dev/story/story4.mtar.posted.txt -text svneol=unset#application/octet-stream
 dev/story/story4.mtar.txt -text svneol=unset#application/octet-stream
+dev/story/story5.gt.posted.txt -text svneol=unset#application/octet-stream
 dev/story/story5.gt.txt -text svneol=unset#application/octet-stream
 dev/story/story5.mt.txt -text
+dev/story/story5.mtar.posted.txt -text svneol=unset#application/octet-stream
 dev/story/story5.mtar.txt -text svneol=unset#application/octet-stream
 dev/testvoc-summary.ar-mt.txt -text
 dev/testvoc-summary.mt-ar.txt -text
