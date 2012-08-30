@@ -6,8 +6,8 @@ AC_PREREQ(2.52)
 m4_define([required_apertium_version], [3.2.0])
 m4_define([required_lttolbox_version], [3.1.2])
 
-AC_INIT([apertium-mt-he], [0.1.0], [sagie@maoz.info])
-AM_INIT_AUTOMAKE([apertium-mt-he], [0.1.0], no-define)
+AC_INIT([apertium-mt-ar], [0.1.0], [mfronczak@gmail.com])
+AM_INIT_AUTOMAKE([apertium-mt-ar], [0.1.0], no-define)
 AC_PROG_LN_S
 AC_PROG_AWK
 # todo: only needed if we use a config.in file--should we?
