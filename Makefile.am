@@ -82,10 +82,16 @@ $(PREFIX2).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 
 EXTRA_DIST=$(BASENAME).$(LANG1).dix $(BASENAME).$(PREFIX1).dix \
 	   $(BASENAME).$(LANG2).dix $(BASENAME).post-$(LANG2).dix \
+	   $(BASENAME).post-$(LANG1).dix \
            $(PREFIX1).prob \
+	   $(BASENAME).$(PREFIX1).rlx \
 	   $(BASENAME).$(PREFIX1).t1x \
 	   $(BASENAME).$(PREFIX1).t2x \
 	   $(BASENAME).$(PREFIX1).t3x \
+	   $(BASENAME).$(PREFIX2).t1x \
+	   $(BASENAME).$(LANG1).acx \
+	   $(BASENAME).$(LANG2).acx \
+	   lexchoicebil.xsl \
 	   modes.xml
 
 apertium_mt_ardir=$(prefix)/share/apertium/$(BASENAME)/
@@ -109,10 +115,12 @@ install-data-local:
 	mv modes.bak modes
 	test -d $(DESTDIR)$(apertium_mt_modesdir) || mkdir $(DESTDIR)$(apertium_mt_modesdir)
 	$(INSTALL_DATA) $(PREFIX1).mode $(DESTDIR)$(apertium_mt_modesdir)
-	rm $(PREFIX1).mode
+	$(INSTALL_DATA) $(PREFIX2).mode $(DESTDIR)$(apertium_mt_modesdir)
+	rm $(PREFIX1).mode $(PREFIX2).mode
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(DESTDIR)$(apertium_mt_ardir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t2x $(DESTDIR)$(apertium_mt_ardir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x $(DESTDIR)$(apertium_mt_ardir)
+	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t1x $(DESTDIR)$(apertium_mt_ardir)
 
 
 CLEANFILES = $(TARGETS_COMMON)
