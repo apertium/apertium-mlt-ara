@@ -195,7 +195,7 @@
         <file name="ar-mt.automorf.bin"/>
       </program>
       <program name="apertium-tagger -g $2">
-        <file name="ar-mt.prob"/>
+        <file name="mt-ar.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -228,7 +228,7 @@
         <file name="ar-mt.automorf.bin"/>
       </program>
       <program name="apertium-tagger -g $2">
-        <file name="ar-mt.prob"/>
+        <file name="mt-ar.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
     </pipeline>
@@ -240,7 +240,7 @@
         <file name="ar-mt.automorf.bin"/>
       </program>
       <program name="apertium-tagger -g $2">
-        <file name="ar-mt.prob"/>
+        <file name="mt-ar.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -255,7 +255,7 @@
         <file name="ar-mt.automorf.bin"/>
       </program>
       <program name="apertium-tagger -g $2">
-        <file name="ar-mt.prob"/>
+        <file name="mt-ar.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
@@ -274,7 +274,7 @@
         <file name="ar-mt.automorf.bin"/>
       </program>
       <program name="apertium-tagger -g $2">
-        <file name="ar-mt.prob"/>
+        <file name="mt-ar.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
