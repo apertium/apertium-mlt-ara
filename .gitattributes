@@ -19,6 +19,7 @@
 /apertium-mlt-ara.mlt.tsx -text
 /apertium-mlt-ara.post-ara.dix -text
 /apertium-mlt-ara.post-mlt.dix -text
+/apertium-mlt-ara.translit.dix -text
 /autogen.sh -text
 /configure.ac -text
 dev/ar_verbs/classes/__init__.py -text
