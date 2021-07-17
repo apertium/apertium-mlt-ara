@@ -1,0 +1,10 @@
+{
+    "mlt-ara-pending": {
+        "input": "mlt-ara-pending-input.txt",
+        "mode": "mlt-ara"
+    },
+    "mlt-ara-regression": {
+        "input": "mlt-ara-regression-input.txt",
+        "mode": "mlt-ara"
+    }
+}

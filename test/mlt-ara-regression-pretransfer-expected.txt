@@ -1,0 +1,18 @@
+[-SZtbz3dBnbZ#0] ^sitt<num><mf><sp>$ ^sena<n><f><pl>$^.<sent>$
+[/-SZtbz3dBnbZ]
+[Bn9f0RH7QpZ6#0] ^tli<num><mf><sp>$ ^u<cnjcoo>$ ^tletin<num><mf><sp>$ ^ktieb<n><m><sg>$^.<sent>$
+[/Bn9f0RH7QpZ6]
+[M8UkkjK2zpfP#0] ^l<det><def><mf><sp>$ ^ktieb<n><m><sg>$^.<sent>$
+[/M8UkkjK2zpfP]
+[NARJNAGz-dL3#0] ^ktieb<n><m><sg>$^.<sent>$
+[/NARJNAGz-dL3]
+[WNJGKcYDwYn-#0] ^tli<num><mf><sp>$ ^u<cnjcoo>$ ^tletin<num><mf><sp>$ ^lingwa<n><f><sg>$^.<sent>$
+[/WNJGKcYDwYn-]
+[XcvN8AQzyc5U#0] ^tnax<num><mf><sp>$ ^ktieb<n><m><sg>$^.<sent>$
+[/XcvN8AQzyc5U]
+[iYBQDIkUzGQi#0] ^Fejn<adv><itg>$ ^ħa<vblex><tv><imp><p2><mf><sg>$ ^Ġakbu<np><ant><m><sg>$^?<sent>$
+[/iYBQDIkUzGQi]
+[itfO0r7A8nHm#0] ^tnax<num><mf><sp>$ ^lingwa<n><f><sg>$^.<sent>$
+[/itfO0r7A8nHm]
+[wr2SqcpmeD4d#0] ^dar<n><f><sg>$ ^kbir<adj><f><sg>$^.<sent>$
+[/wr2SqcpmeD4d]

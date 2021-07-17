@@ -1,0 +1,2 @@
+[iYBQDIkUzGQi#0] ^default<default>{^أين<adv><itg>$}$ ^verb<SV><actv><imp><p2><m><sg>{^أخذ<vblex><tv><actv><imp><p2><5><6>$}$ ^np<SN><m><sg><CD><def>{^جيمس<np><ant><m><sg><nom>$}$^default<default>{^؟<sent>$}$
+[/iYBQDIkUzGQi]

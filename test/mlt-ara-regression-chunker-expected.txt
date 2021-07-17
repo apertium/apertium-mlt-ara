@@ -1,0 +1,18 @@
+[-SZtbz3dBnbZ#0] ^num_n<SN><f><nn><pl><nom><ind>{^ستة<num><f><sp><5><cstr>$ ^سنة<n><f><nn><pl><gen>$}$^default<default>{^.<sent>$}$
+[/-SZtbz3dBnbZ]
+[Bn9f0RH7QpZ6#0] ^num_n<SN><m><nn><pl><nom><ind>{^ثلاثة<num><m><sp><5>$ ^و<cnjcoo>$ ^ثلاثون<num><mf><sp><5>$ ^كتاب<n><m><nn><sg><acc>$}$^default<default>{^.<sent>$}$
+[/Bn9f0RH7QpZ6]
+[M8UkkjK2zpfP#0] ^art_n<SN><m><nn><sg><nom><def>{^ال<det><def>+كتاب<n><m><nn><sg><5><artic>$}$^default<default>{^.<sent>$}$
+[/M8UkkjK2zpfP]
+[NARJNAGz-dL3#0] ^n<SN><m><nn><sg><nom><ind>{^كتاب<n><m><nn><sg><5>$}$^default<default>{^.<sent>$}$
+[/NARJNAGz-dL3]
+[WNJGKcYDwYn-#0] ^num_n<SN><f><nn><pl><nom><ind>{^ثلاثة<num><f><sp><5>$ ^و<cnjcoo>$ ^ثلاثون<num><mf><sp><5>$ ^لغة<n><f><nn><sg><acc>$}$^default<default>{^.<sent>$}$
+[/WNJGKcYDwYn-]
+[XcvN8AQzyc5U#0] ^num_n<SN><m><nn><pl><nom><ind>{^اثنا عشر<num><m><sp><5>$ ^كتاب<n><m><nn><sg><acc>$}$^default<default>{^.<sent>$}$
+[/XcvN8AQzyc5U]
+[iYBQDIkUzGQi#0] ^default<default>{^أين<adv><itg>$}$ ^verb<SV><actv><imp><p2><m><sg>{^أخذ<vblex><tv><actv><imp><p2><5><6>$}$ ^np<SN><m><sg><CD><def>{^جيمس<np><ant><m><sg><nom>$}$^default<default>{^؟<sent>$}$
+[/iYBQDIkUzGQi]
+[itfO0r7A8nHm#0] ^num_n<SN><f><nn><pl><nom><ind>{^اثنا عشر<num><f><sp><5>$ ^لغة<n><f><nn><sg><acc>$}$^default<default>{^.<sent>$}$
+[/itfO0r7A8nHm]
+[wr2SqcpmeD4d#0] ^n_adj<SN><m><nn><sg><nom><ind>{^بيت<n><m><nn><sg><5>$ ^كبير<adj><m><sg><5>$}$^default<default>{^.<sent>$}$
+[/wr2SqcpmeD4d]

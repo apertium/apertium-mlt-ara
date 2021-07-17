@@ -1,0 +1,18 @@
+[-SZtbz3dBnbZ#0] ^ستة<num><f><sp><nom><cstr>$ ^سنة<n><f><nn><pl><gen>$^.<sent>$
+[/-SZtbz3dBnbZ]
+[Bn9f0RH7QpZ6#0] ^ثلاثة<num><m><sp><nom>$ ^و<cnjcoo>$ ^ثلاثون<num><mf><sp><nom>$ ^كتاب<n><m><nn><sg><acc>$^.<sent>$
+[/Bn9f0RH7QpZ6]
+[M8UkkjK2zpfP#0] ^ال<det><def>+كتاب<n><m><nn><sg><nom><artic>$^.<sent>$
+[/M8UkkjK2zpfP]
+[NARJNAGz-dL3#0] ^كتاب<n><m><nn><sg><nom>$^.<sent>$
+[/NARJNAGz-dL3]
+[WNJGKcYDwYn-#0] ^ثلاثة<num><f><sp><nom>$ ^و<cnjcoo>$ ^ثلاثون<num><mf><sp><nom>$ ^لغة<n><f><nn><sg><acc>$^.<sent>$
+[/WNJGKcYDwYn-]
+[XcvN8AQzyc5U#0] ^اثنا عشر<num><m><sp><nom>$ ^كتاب<n><m><nn><sg><acc>$^.<sent>$
+[/XcvN8AQzyc5U]
+[iYBQDIkUzGQi#0] ^أين<adv><itg>$ ^أخذ<vblex><tv><actv><imp><p2><m><sg>$ ^جيمس<np><ant><m><sg><nom>$^؟<sent>$
+[/iYBQDIkUzGQi]
+[itfO0r7A8nHm#0] ^اثنا عشر<num><f><sp><nom>$ ^لغة<n><f><nn><sg><acc>$^.<sent>$
+[/itfO0r7A8nHm]
+[wr2SqcpmeD4d#0] ^بيت<n><m><nn><sg><nom>$ ^كبير<adj><m><sg><nom>$^.<sent>$
+[/wr2SqcpmeD4d]

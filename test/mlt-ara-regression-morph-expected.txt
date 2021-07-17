@@ -1,0 +1,18 @@
+[-SZtbz3dBnbZ#0] ^sitt/sitt<num><mf><sp>/sitt<num><ord><mf><sp>$ ^snin/sena<n><f><pl>$^./.<sent>$
+[/-SZtbz3dBnbZ]
+[Bn9f0RH7QpZ6#0] ^tliet/tli<num><mf><sp>$ ^u/u<cnjcoo>$ ^tletin/tletin<num><mf><sp>/tletin<num><ord><mf><sp>$ ^ktieb/ktieb<n><m><sg>$^./.<sent>$
+[/Bn9f0RH7QpZ6]
+[M8UkkjK2zpfP#0] ^il-/l<det><def><mf><sp>$ ^ktieb/ktieb<n><m><sg>$^./.<sent>$
+[/M8UkkjK2zpfP]
+[NARJNAGz-dL3#0] ^ktieb/ktieb<n><m><sg>$^./.<sent>$
+[/NARJNAGz-dL3]
+[WNJGKcYDwYn-#0] ^tliet/tli<num><mf><sp>$ ^u/u<cnjcoo>$ ^tletin/tletin<num><mf><sp>/tletin<num><ord><mf><sp>$ ^lingwa/lingwa<n><f><sg>$^./.<sent>$
+[/WNJGKcYDwYn-]
+[XcvN8AQzyc5U#0] ^tnax-il/tnax<num><mf><sp>$ ^ktieb/ktieb<n><m><sg>$^./.<sent>$
+[/XcvN8AQzyc5U]
+[iYBQDIkUzGQi#0] ^Fejn/fejn<adv><itg>$ ^hu/ħu<n><m><sg>/free<prn><p3><m><sg>/ħa<vblex><tv><imp><p2><mf><sg>$ ^Ġakbu/Ġakbu<np><ant><m><sg>$^?/?<sent>$
+[/iYBQDIkUzGQi]
+[itfO0r7A8nHm#0] ^tnax-il/tnax<num><mf><sp>$ ^lingwa/lingwa<n><f><sg>$^./.<sent>$
+[/itfO0r7A8nHm]
+[wr2SqcpmeD4d#0] ^dar/dar<n><f><sg>/dar<vblex><iv><past><p3><m><sg>$ ^kbira/kbir<adj><f><sg>$^./.<sent>$
+[/wr2SqcpmeD4d]
